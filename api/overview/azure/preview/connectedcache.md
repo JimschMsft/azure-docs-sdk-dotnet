@@ -1,7 +1,7 @@
 ---
 title: Azure Connectedcache SDK for .NET
 description: Reference for Azure Connectedcache SDK for .NET
-ms.date: 02/06/2026
+ms.date: 02/09/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: connectedcache
