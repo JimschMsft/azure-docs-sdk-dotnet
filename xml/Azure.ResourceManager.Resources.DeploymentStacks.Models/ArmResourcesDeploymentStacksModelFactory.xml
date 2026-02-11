@@ -1,0 +1,763 @@
+<Type Name="ArmResourcesDeploymentStacksModelFactory" FullName="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory">
+  <TypeSignature Language="C#" Value="public static class ArmResourcesDeploymentStacksModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArmResourcesDeploymentStacksModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArmResourcesDeploymentStacksModelFactory" />
+  <TypeSignature Language="F#" Value="type ArmResourcesDeploymentStacksModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeploymentExtensionConfig">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig DeploymentExtensionConfig (System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; additionalProperties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig DeploymentExtensionConfig(class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; additionalProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentExtensionConfig(System.Collections.Generic.IDictionary{System.String,System.BinaryData})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentExtensionConfig (Optional additionalProperties As IDictionary(Of String, BinaryData) = Nothing) As DeploymentExtensionConfig" />
+      <MemberSignature Language="F#" Value="static member DeploymentExtensionConfig : System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentExtensionConfig additionalProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="additionalProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="additionalProperties" />
+        <summary> The configuration of a deployment extension. The keys of this object should align with the extension config schema. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackAdditionalErrorInfo">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo DeploymentStackAdditionalErrorInfo (string type = default, BinaryData info = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo DeploymentStackAdditionalErrorInfo(string type, class System.BinaryData info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackAdditionalErrorInfo(System.String,System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackAdditionalErrorInfo (Optional type As String = Nothing, Optional info As BinaryData = Nothing) As DeploymentStackAdditionalErrorInfo" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackAdditionalErrorInfo : string * BinaryData -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackAdditionalErrorInfo (type, info)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="info" Type="System.BinaryData" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The additional info type. </param>
+        <param name="info"> The additional info. </param>
+        <summary> The resource management error additional info. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackData DeploymentStackData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResponseError error = default, BinaryData template = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; parameters = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink parametersLink = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt; extensionConfigs = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt; externalInputs = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt; externalInputDefinitions = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage actionOnUnmanage = default, string deploymentScope = default, string description = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings denySettings = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState? provisioningState = default, string correlationId = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel? validationLevel = default, bool? bypassStackOutOfSyncError = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; detachedResources = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; deletedResources = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended&gt; failedResources = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference&gt; resources = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt; deploymentExtensions = default, string deploymentId = default, BinaryData outputs = default, TimeSpan? duration = default, string debugSettingDetailLevel = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackData DeploymentStackData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResponseError error, class System.BinaryData template, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; parameters, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink parametersLink, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt; extensionConfigs, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt; externalInputs, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt; externalInputDefinitions, class Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage actionOnUnmanage, string deploymentScope, string description, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings denySettings, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState&gt; provisioningState, string correlationId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt; validationLevel, valuetype System.Nullable`1&lt;bool&gt; bypassStackOutOfSyncError, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; detachedResources, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; deletedResources, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended&gt; failedResources, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference&gt; resources, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt; deploymentExtensions, string deploymentId, class System.BinaryData outputs, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; duration, string debugSettingDetailLevel, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResponseError,System.BinaryData,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem},Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig},System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput},System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition},Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage,System.String,System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings,System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState},System.String,System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel},System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension},System.String,System.BinaryData,System.Nullable{System.TimeSpan},System.String,System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional error As ResponseError = Nothing, Optional template As BinaryData = Nothing, Optional templateLink As DeploymentStacksTemplateLink = Nothing, Optional parameters As IDictionary(Of String, DeploymentParameterItem) = Nothing, Optional parametersLink As DeploymentStacksParametersLink = Nothing, Optional extensionConfigs As IDictionary(Of String, DeploymentExtensionConfig) = Nothing, Optional externalInputs As IDictionary(Of String, DeploymentExternalInput) = Nothing, Optional externalInputDefinitions As IDictionary(Of String, DeploymentExternalInputDefinition) = Nothing, Optional actionOnUnmanage As ActionOnUnmanage = Nothing, Optional deploymentScope As String = Nothing, Optional description As String = Nothing, Optional denySettings As DeploymentStackDenySettings = Nothing, Optional provisioningState As Nullable(Of DeploymentStackProvisioningState) = Nothing, Optional correlationId As String = Nothing, Optional validationLevel As Nullable(Of DeploymentStackValidationLevel) = Nothing, Optional bypassStackOutOfSyncError As Nullable(Of Boolean) = Nothing, Optional detachedResources As IEnumerable(Of DeploymentStackResourceReference) = Nothing, Optional deletedResources As IEnumerable(Of DeploymentStackResourceReference) = Nothing, Optional failedResources As IEnumerable(Of DeploymentStackResourceReferenceExtended) = Nothing, Optional resources As IEnumerable(Of DeploymentStackManagedResourceReference) = Nothing, Optional deploymentExtensions As IEnumerable(Of DeploymentExtension) = Nothing, Optional deploymentId As String = Nothing, Optional outputs As BinaryData = Nothing, Optional duration As Nullable(Of TimeSpan) = Nothing, Optional debugSettingDetailLevel As String = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As DeploymentStackData" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResponseError * BinaryData * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt; * Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage * string * string * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState&gt; * string * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt; * Nullable&lt;bool&gt; * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended&gt; * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference&gt; * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt; * string * BinaryData * Nullable&lt;TimeSpan&gt; * string * Nullable&lt;Azure.Core.AzureLocation&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackData" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackData (id, name, resourceType, systemData, error, template, templateLink, parameters, parametersLink, extensionConfigs, externalInputs, externalInputDefinitions, actionOnUnmanage, deploymentScope, description, denySettings, provisioningState, correlationId, validationLevel, bypassStackOutOfSyncError, detachedResources, deletedResources, failedResources, resources, deploymentExtensions, deploymentId, outputs, duration, debugSettingDetailLevel, location, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="error" Type="Azure.ResponseError" />
+        <Parameter Name="template" Type="System.BinaryData" />
+        <Parameter Name="templateLink" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt;" />
+        <Parameter Name="parametersLink" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink" />
+        <Parameter Name="extensionConfigs" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt;" />
+        <Parameter Name="externalInputs" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt;" />
+        <Parameter Name="externalInputDefinitions" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt;" />
+        <Parameter Name="actionOnUnmanage" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage" />
+        <Parameter Name="deploymentScope" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="denySettings" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState&gt;" />
+        <Parameter Name="correlationId" Type="System.String" />
+        <Parameter Name="validationLevel" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt;" />
+        <Parameter Name="bypassStackOutOfSyncError" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="detachedResources" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt;" />
+        <Parameter Name="deletedResources" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt;" />
+        <Parameter Name="failedResources" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended&gt;" />
+        <Parameter Name="resources" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference&gt;" />
+        <Parameter Name="deploymentExtensions" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt;" />
+        <Parameter Name="deploymentId" Type="System.String" />
+        <Parameter Name="outputs" Type="System.BinaryData" />
+        <Parameter Name="duration" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="debugSettingDetailLevel" Type="System.String" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="error"> The error detail. </param>
+        <param name="template"> The template content. You use this element when you want to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both. </param>
+        <param name="templateLink"> The URI of the template. Use either the templateLink property or the template property, but not both. </param>
+        <param name="parameters"> Name and value pairs that define the deployment parameters for the template. Use this element when providing the parameter values directly in the request, rather than linking to an existing parameter file. Use either the parametersLink property or the parameters property, but not both. </param>
+        <param name="parametersLink"> The URI of parameters file. Use this element to link to an existing parameters file. Use either the parametersLink property or the parameters property, but not both. </param>
+        <param name="extensionConfigs"> The deployment extension configs. Keys of this object are extension aliases as defined in the deployment template. </param>
+        <param name="externalInputs"> External input values, used by external tooling for parameter evaluation. </param>
+        <param name="externalInputDefinitions"> External input definitions, used by external tooling to define expected external input values. </param>
+        <param name="actionOnUnmanage"> Defines the behavior of resources that are no longer managed after the Deployment stack is updated or deleted. </param>
+        <param name="deploymentScope"> The scope at which the initial deployment should be created. If a scope is not specified, it will default to the scope of the deployment stack. Valid scopes are: management group (format: '/providers/Microsoft.Management/managementGroups/{managementGroupId}'), subscription (format: '/subscriptions/{subscriptionId}'), resource group (format: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'). </param>
+        <param name="description"> Deployment stack description. Max length of 4096 characters. </param>
+        <param name="denySettings"> Defines how resources deployed by the stack are locked. </param>
+        <param name="provisioningState"> State of the deployment stack. </param>
+        <param name="correlationId"> The correlation id of the last Deployment stack upsert or delete operation. It is in GUID format and is used for tracing. </param>
+        <param name="validationLevel"> The validation level of the deployment stack. </param>
+        <param name="bypassStackOutOfSyncError"> Flag to bypass service errors that indicate the stack resource list is not correctly synchronized. </param>
+        <param name="detachedResources"> An array of resources that were detached during the most recent Deployment stack update. Detached means that the resource was removed from the template, but no relevant deletion operations were specified. So, the resource still exists while no longer being associated with the stack. </param>
+        <param name="deletedResources"> An array of resources that were deleted during the most recent Deployment stack update. Deleted means that the resource was removed from the template and relevant deletion operations were specified. </param>
+        <param name="failedResources"> An array of resources that failed to reach goal state during the most recent update. Each resourceId is accompanied by an error message. </param>
+        <param name="resources"> An array of resources currently managed by the deployment stack. </param>
+        <param name="deploymentExtensions"> The extensions used during deployment. Contains extension data for all extensible resources managed by the stack. </param>
+        <param name="deploymentId"> The resourceId of the deployment resource created by the deployment stack. </param>
+        <param name="outputs"> The outputs of the deployment resource created by the deployment stack. </param>
+        <param name="duration"> The duration of the last successful Deployment stack update. </param>
+        <param name="debugSettingDetailLevel"> Specifies the type of information to log for debugging. The permitted values are none, requestContent, responseContent, or both requestContent and responseContent separated by a comma. The default is none. When setting this value, carefully consider the type of information that is being passed in during deployment. By logging information about the request or response, sensitive data that is retrieved through the deployment operations could potentially be exposed. </param>
+        <param name="location"> The geo-location where the resource lives. Required for subscription and management group scoped stacks. The location is inherited from the resource group for resource group scoped stacks. </param>
+        <param name="tags"> Resource tags. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackDenySettings">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings DeploymentStackDenySettings (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettingsMode mode = default, System.Collections.Generic.IEnumerable&lt;string&gt; excludedPrincipals = default, System.Collections.Generic.IEnumerable&lt;string&gt; excludedActions = default, bool? applyToChildScopes = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings DeploymentStackDenySettings(valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettingsMode mode, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excludedPrincipals, class System.Collections.Generic.IEnumerable`1&lt;string&gt; excludedActions, valuetype System.Nullable`1&lt;bool&gt; applyToChildScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackDenySettings(Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettingsMode,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackDenySettings (Optional mode As DeploymentStackDenySettingsMode = Nothing, Optional excludedPrincipals As IEnumerable(Of String) = Nothing, Optional excludedActions As IEnumerable(Of String) = Nothing, Optional applyToChildScopes As Nullable(Of Boolean) = Nothing) As DeploymentStackDenySettings" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackDenySettings : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettingsMode * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackDenySettings (mode, excludedPrincipals, excludedActions, applyToChildScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettingsMode" />
+        <Parameter Name="excludedPrincipals" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="excludedActions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="applyToChildScopes" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="mode"> denySettings Mode that defines denied actions. </param>
+        <param name="excludedPrincipals"> List of AAD principal IDs excluded from the lock. Up to 5 principals are permitted. </param>
+        <param name="excludedActions"> List of role-based management operations that are excluded from the denySettings. Up to 200 actions are permitted. If the denySetting mode is set to 'denyWriteAndDelete', then the following actions are automatically appended to 'excludedActions': '*\/read' and 'Microsoft.Authorization/locks/delete'. If the denySetting mode is set to 'denyDelete', then the following actions are automatically appended to 'excludedActions': 'Microsoft.Authorization/locks/delete'. Duplicate actions will be removed. </param>
+        <param name="applyToChildScopes"> DenySettings will be applied to child resource scopes of every managed resource with a deny assignment. </param>
+        <summary> Defines how resources deployed by the Deployment stack are locked. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackManagedResourceReference">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference DeploymentStackManagedResourceReference (Azure.Core.ResourceIdentifier id = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension = default, Azure.Core.ResourceType? type = default, BinaryData identifiers = default, string apiVersion = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourceStatusMode? status = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode? denyStatus = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference DeploymentStackManagedResourceReference(class Azure.Core.ResourceIdentifier id, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension, valuetype System.Nullable`1&lt;valuetype Azure.Core.ResourceType&gt; type, class System.BinaryData identifiers, string apiVersion, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourceStatusMode&gt; status, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt; denyStatus) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackManagedResourceReference(Azure.Core.ResourceIdentifier,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension,System.Nullable{Azure.Core.ResourceType},System.BinaryData,System.String,System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourceStatusMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackManagedResourceReference (Optional id As ResourceIdentifier = Nothing, Optional extension As DeploymentExtension = Nothing, Optional type As Nullable(Of ResourceType) = Nothing, Optional identifiers As BinaryData = Nothing, Optional apiVersion As String = Nothing, Optional status As Nullable(Of ResourceStatusMode) = Nothing, Optional denyStatus As Nullable(Of DeploymentStackDenyStatusMode) = Nothing) As DeploymentStackManagedResourceReference" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackManagedResourceReference : Azure.Core.ResourceIdentifier * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension * Nullable&lt;Azure.Core.ResourceType&gt; * BinaryData * string * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourceStatusMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackManagedResourceReference (id, extension, type, identifiers, apiVersion, status, denyStatus)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="extension" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.Core.ResourceType&gt;" />
+        <Parameter Name="identifiers" Type="System.BinaryData" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourceStatusMode&gt;" />
+        <Parameter Name="denyStatus" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ARM Resource ID of a resource managed by the deployment stack. </param>
+        <param name="extension"> The extension the resource was deployed with. </param>
+        <param name="type"> The resource type. </param>
+        <param name="identifiers"> The extensible resource identifiers. </param>
+        <param name="apiVersion"> The API version the resource was deployed with. </param>
+        <param name="status"> Current management state of the resource in the deployment stack. </param>
+        <param name="denyStatus"> denyAssignment settings applied to the resource. </param>
+        <summary> The managed resource model. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackManagedResourceReference" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackResourceReference">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference DeploymentStackResourceReference (Azure.Core.ResourceIdentifier id = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension = default, Azure.Core.ResourceType? type = default, BinaryData identifiers = default, string apiVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference DeploymentStackResourceReference(class Azure.Core.ResourceIdentifier id, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension, valuetype System.Nullable`1&lt;valuetype Azure.Core.ResourceType&gt; type, class System.BinaryData identifiers, string apiVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackResourceReference(Azure.Core.ResourceIdentifier,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension,System.Nullable{Azure.Core.ResourceType},System.BinaryData,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackResourceReference (Optional id As ResourceIdentifier = Nothing, Optional extension As DeploymentExtension = Nothing, Optional type As Nullable(Of ResourceType) = Nothing, Optional identifiers As BinaryData = Nothing, Optional apiVersion As String = Nothing) As DeploymentStackResourceReference" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackResourceReference : Azure.Core.ResourceIdentifier * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension * Nullable&lt;Azure.Core.ResourceType&gt; * BinaryData * string -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackResourceReference (id, extension, type, identifiers, apiVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="extension" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.Core.ResourceType&gt;" />
+        <Parameter Name="identifiers" Type="System.BinaryData" />
+        <Parameter Name="apiVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ARM Resource ID of a resource managed by the deployment stack. </param>
+        <param name="extension"> The extension the resource was deployed with. </param>
+        <param name="type"> The resource type. </param>
+        <param name="identifiers"> The extensible resource identifiers. </param>
+        <param name="apiVersion"> The API version the resource was deployed with. </param>
+        <summary> The resourceId model. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackResourceReferenceExtended">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended DeploymentStackResourceReferenceExtended (Azure.Core.ResourceIdentifier id = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension = default, Azure.Core.ResourceType? type = default, BinaryData identifiers = default, string apiVersion = default, Azure.ResponseError error = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended DeploymentStackResourceReferenceExtended(class Azure.Core.ResourceIdentifier id, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension, valuetype System.Nullable`1&lt;valuetype Azure.Core.ResourceType&gt; type, class System.BinaryData identifiers, string apiVersion, class Azure.ResponseError error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackResourceReferenceExtended(Azure.Core.ResourceIdentifier,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension,System.Nullable{Azure.Core.ResourceType},System.BinaryData,System.String,Azure.ResponseError)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackResourceReferenceExtended (Optional id As ResourceIdentifier = Nothing, Optional extension As DeploymentExtension = Nothing, Optional type As Nullable(Of ResourceType) = Nothing, Optional identifiers As BinaryData = Nothing, Optional apiVersion As String = Nothing, Optional error As ResponseError = Nothing) As DeploymentStackResourceReferenceExtended" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackResourceReferenceExtended : Azure.Core.ResourceIdentifier * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension * Nullable&lt;Azure.Core.ResourceType&gt; * BinaryData * string * Azure.ResponseError -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackResourceReferenceExtended (id, extension, type, identifiers, apiVersion, error)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="extension" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.Core.ResourceType&gt;" />
+        <Parameter Name="identifiers" Type="System.BinaryData" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="error" Type="Azure.ResponseError" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ARM Resource ID of a resource managed by the deployment stack. </param>
+        <param name="extension"> The extension the resource was deployed with. </param>
+        <param name="type"> The resource type. </param>
+        <param name="identifiers"> The extensible resource identifiers. </param>
+        <param name="apiVersion"> The API version the resource was deployed with. </param>
+        <param name="error"> The error detail. </param>
+        <summary> The resourceId extended model. This is used to document failed resources with a resourceId and a corresponding error. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReferenceExtended" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksChangeBase">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase DeploymentStacksChangeBase (string before = default, string after = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase DeploymentStacksChangeBase(string before, string after) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeBase(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksChangeBase (Optional before As String = Nothing, Optional after As String = Nothing) As DeploymentStacksChangeBase" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksChangeBase : string * string -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeBase (before, after)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="before" Type="System.String" />
+        <Parameter Name="after" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="before"> The predicted value before the deployment is executed. </param>
+        <param name="after"> The predicted value after the deployment is executed. </param>
+        <summary> Base model for properties with the before-and-after property values. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksChangeBaseDenyStatusMode">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode DeploymentStacksChangeBaseDenyStatusMode (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode? before = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode? after = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode DeploymentStacksChangeBaseDenyStatusMode(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt; before, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt; after) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeBaseDenyStatusMode(System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksChangeBaseDenyStatusMode (Optional before As Nullable(Of DeploymentStackDenyStatusMode) = Nothing, Optional after As Nullable(Of DeploymentStackDenyStatusMode) = Nothing) As DeploymentStacksChangeBaseDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksChangeBaseDenyStatusMode : Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeBaseDenyStatusMode (before, after)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="before" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;" />
+        <Parameter Name="after" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="before"> The predicted value before the deployment is executed. </param>
+        <param name="after"> The predicted value after the deployment is executed. </param>
+        <summary> Base model for properties with the before-and-after property values. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksChangeBaseDeploymentStacksManagementStatus">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus DeploymentStacksChangeBaseDeploymentStacksManagementStatus (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus? before = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus? after = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus DeploymentStacksChangeBaseDeploymentStacksManagementStatus(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus&gt; before, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus&gt; after) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeBaseDeploymentStacksManagementStatus(System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksChangeBaseDeploymentStacksManagementStatus (Optional before As Nullable(Of DeploymentStacksManagementStatus) = Nothing, Optional after As Nullable(Of DeploymentStacksManagementStatus) = Nothing) As DeploymentStacksChangeBaseDeploymentStacksManagementStatus" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksChangeBaseDeploymentStacksManagementStatus : Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeBaseDeploymentStacksManagementStatus (before, after)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="before" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus&gt;" />
+        <Parameter Name="after" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksManagementStatus&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="before"> The predicted value before the deployment is executed. </param>
+        <param name="after"> The predicted value after the deployment is executed. </param>
+        <summary> Base model for properties with the before-and-after property values. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksChangeDelta">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta DeploymentStacksChangeDelta (BinaryData before = default, BinaryData after = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; delta = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta DeploymentStacksChangeDelta(class System.BinaryData before, class System.BinaryData after, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; delta) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeDelta(System.BinaryData,System.BinaryData,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksChangeDelta (Optional before As BinaryData = Nothing, Optional after As BinaryData = Nothing, Optional delta As IEnumerable(Of DeploymentStacksWhatIfPropertyChange) = Nothing) As DeploymentStacksChangeDelta" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksChangeDelta : BinaryData * BinaryData * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeDelta (before, after, delta)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="before" Type="System.BinaryData" />
+        <Parameter Name="after" Type="System.BinaryData" />
+        <Parameter Name="delta" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="before"> The predicted value before the deployment is executed. </param>
+        <param name="after"> The predicted value after the deployment is executed. </param>
+        <param name="delta"> The predicted changes to the properties.". </param>
+        <summary> Model to show the before-and-after property values, along with the delta between them. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksChangeDeltaDenySettings">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings DeploymentStacksChangeDeltaDenySettings (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings before = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings after = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; delta = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings DeploymentStacksChangeDeltaDenySettings(class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings before, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings after, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; delta) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeDeltaDenySettings(Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksChangeDeltaDenySettings (Optional before As DeploymentStackDenySettings = Nothing, Optional after As DeploymentStackDenySettings = Nothing, Optional delta As IEnumerable(Of DeploymentStacksWhatIfPropertyChange) = Nothing) As DeploymentStacksChangeDeltaDenySettings" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksChangeDeltaDenySettings : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksChangeDeltaDenySettings (before, after, delta)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="before" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings" />
+        <Parameter Name="after" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings" />
+        <Parameter Name="delta" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="before"> The predicted value before the deployment is executed. </param>
+        <param name="after"> The predicted value after the deployment is executed. </param>
+        <param name="delta"> The predicted changes to the properties.". </param>
+        <summary> Model to show the before-and-after property values, along with the delta between them. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksDiagnostic">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic DeploymentStacksDiagnostic (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnosticLevel level = default, string code = default, string message = default, string target = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo&gt; additionalInfo = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic DeploymentStacksDiagnostic(valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnosticLevel level, string code, string message, string target, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo&gt; additionalInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksDiagnostic(Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnosticLevel,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksDiagnostic (Optional level As DeploymentStacksDiagnosticLevel = Nothing, Optional code As String = Nothing, Optional message As String = Nothing, Optional target As String = Nothing, Optional additionalInfo As IEnumerable(Of DeploymentStackAdditionalErrorInfo) = Nothing) As DeploymentStacksDiagnostic" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksDiagnostic : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnosticLevel * string * string * string * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksDiagnostic (level, code, message, target, additionalInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="level" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnosticLevel" />
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="additionalInfo" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackAdditionalErrorInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="level"> Denotes the additional response level. </param>
+        <param name="code"> The error code. </param>
+        <param name="message"> The error message. </param>
+        <param name="target"> The error target. </param>
+        <param name="additionalInfo"> Additional error information. </param>
+        <summary> The error additional info. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksWhatIfChange">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange DeploymentStacksWhatIfChange (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange&gt; resourceChanges = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings denySettingsChange = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase deploymentScopeChange = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange DeploymentStacksWhatIfChange(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange&gt; resourceChanges, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings denySettingsChange, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase deploymentScopeChange) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksWhatIfChange(System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange},Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksWhatIfChange (Optional resourceChanges As IEnumerable(Of DeploymentStacksWhatIfResourceChange) = Nothing, Optional denySettingsChange As DeploymentStacksChangeDeltaDenySettings = Nothing, Optional deploymentScopeChange As DeploymentStacksChangeBase = Nothing) As DeploymentStacksWhatIfChange" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksWhatIfChange : seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange&gt; * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksWhatIfChange (resourceChanges, denySettingsChange, deploymentScopeChange)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceChanges" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange&gt;" />
+        <Parameter Name="denySettingsChange" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDeltaDenySettings" />
+        <Parameter Name="deploymentScopeChange" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBase" />
+      </Parameters>
+      <Docs>
+        <param name="resourceChanges"> List of resource changes predicted by What-If operation. </param>
+        <param name="denySettingsChange"> Predicted changes to the deployment stack deny settings. </param>
+        <param name="deploymentScopeChange"> Predicted changes to the deployment scope for the deployment stack. </param>
+        <summary> Changes predicted to the deployment stack as a result of the what-if operation. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksWhatIfPropertyChange">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange DeploymentStacksWhatIfPropertyChange (BinaryData before = default, BinaryData after = default, string path = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChangeType changeType = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; children = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange DeploymentStacksWhatIfPropertyChange(class System.BinaryData before, class System.BinaryData after, string path, valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChangeType changeType, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; children) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksWhatIfPropertyChange(System.BinaryData,System.BinaryData,System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChangeType,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksWhatIfPropertyChange (Optional before As BinaryData = Nothing, Optional after As BinaryData = Nothing, Optional path As String = Nothing, Optional changeType As DeploymentStacksWhatIfPropertyChangeType = Nothing, Optional children As IEnumerable(Of DeploymentStacksWhatIfPropertyChange) = Nothing) As DeploymentStacksWhatIfPropertyChange" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksWhatIfPropertyChange : BinaryData * BinaryData * string * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChangeType * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksWhatIfPropertyChange (before, after, path, changeType, children)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="before" Type="System.BinaryData" />
+        <Parameter Name="after" Type="System.BinaryData" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="changeType" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChangeType" />
+        <Parameter Name="children" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="before"> The predicted value before the deployment is executed. </param>
+        <param name="after"> The predicted value after the deployment is executed. </param>
+        <param name="path"> Type of change that will be made to the resource when the deployment is executed. </param>
+        <param name="changeType"> Type of change that will be made to the resource when the deployment is executed. </param>
+        <param name="children"> Nested property changes. </param>
+        <summary> The predicted change to the resource property. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfPropertyChange" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStacksWhatIfResourceChange">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange DeploymentStacksWhatIfResourceChange (Azure.Core.ResourceIdentifier id = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension = default, Azure.Core.ResourceType? type = default, BinaryData identifiers = default, string apiVersion = default, string deploymentId = default, string symbolicName = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeType changeType = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeCertainty changeCertainty = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus managementStatusChange = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode denyStatusChange = default, string unsupportedReason = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta resourceConfigurationChanges = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange DeploymentStacksWhatIfResourceChange(class Azure.Core.ResourceIdentifier id, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension extension, valuetype System.Nullable`1&lt;valuetype Azure.Core.ResourceType&gt; type, class System.BinaryData identifiers, string apiVersion, string deploymentId, string symbolicName, valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeType changeType, valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeCertainty changeCertainty, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus managementStatusChange, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode denyStatusChange, string unsupportedReason, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta resourceConfigurationChanges) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksWhatIfResourceChange(Azure.Core.ResourceIdentifier,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension,System.Nullable{Azure.Core.ResourceType},System.BinaryData,System.String,System.String,System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeType,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeCertainty,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode,System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStacksWhatIfResourceChange (Optional id As ResourceIdentifier = Nothing, Optional extension As DeploymentExtension = Nothing, Optional type As Nullable(Of ResourceType) = Nothing, Optional identifiers As BinaryData = Nothing, Optional apiVersion As String = Nothing, Optional deploymentId As String = Nothing, Optional symbolicName As String = Nothing, Optional changeType As DeploymentStacksWhatIfChangeType = Nothing, Optional changeCertainty As DeploymentStacksWhatIfChangeCertainty = Nothing, Optional managementStatusChange As DeploymentStacksChangeBaseDeploymentStacksManagementStatus = Nothing, Optional denyStatusChange As DeploymentStacksChangeBaseDenyStatusMode = Nothing, Optional unsupportedReason As String = Nothing, Optional resourceConfigurationChanges As DeploymentStacksChangeDelta = Nothing) As DeploymentStacksWhatIfResourceChange" />
+      <MemberSignature Language="F#" Value="static member DeploymentStacksWhatIfResourceChange : Azure.Core.ResourceIdentifier * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension * Nullable&lt;Azure.Core.ResourceType&gt; * BinaryData * string * string * string * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeType * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeCertainty * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode * string * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStacksWhatIfResourceChange (id, extension, type, identifiers, apiVersion, deploymentId, symbolicName, changeType, changeCertainty, managementStatusChange, denyStatusChange, unsupportedReason, resourceConfigurationChanges)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="extension" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.Core.ResourceType&gt;" />
+        <Parameter Name="identifiers" Type="System.BinaryData" />
+        <Parameter Name="apiVersion" Type="System.String" />
+        <Parameter Name="deploymentId" Type="System.String" />
+        <Parameter Name="symbolicName" Type="System.String" />
+        <Parameter Name="changeType" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeType" />
+        <Parameter Name="changeCertainty" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChangeCertainty" />
+        <Parameter Name="managementStatusChange" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDeploymentStacksManagementStatus" />
+        <Parameter Name="denyStatusChange" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeBaseDenyStatusMode" />
+        <Parameter Name="unsupportedReason" Type="System.String" />
+        <Parameter Name="resourceConfigurationChanges" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksChangeDelta" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The ARM Resource ID of a resource managed by the deployment stack. </param>
+        <param name="extension"> The extension the resource was deployed with. </param>
+        <param name="type"> The resource type. </param>
+        <param name="identifiers"> The extensible resource identifiers. </param>
+        <param name="apiVersion"> The API version the resource was deployed with. </param>
+        <param name="deploymentId"> The resource id of the Deployment responsible for this change. </param>
+        <param name="symbolicName"> The symbolic name of the resource being changed. </param>
+        <param name="changeType"> Type of change that will be made to the resource when the deployment is executed. </param>
+        <param name="changeCertainty"> The confidence level of the predicted change. </param>
+        <param name="managementStatusChange"> The predicted changes to the deployment stack management status of the resource. </param>
+        <param name="denyStatusChange"> The predicted changes to the deployment stack deny status of the resource. </param>
+        <param name="unsupportedReason"> The explanation about why the resource is unsupported by What-If. </param>
+        <param name="resourceConfigurationChanges"> The predicted changes to the resource configuration. </param>
+        <summary> Information about a single resource change predicted by What-If operation. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfResourceChange" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackTemplateExportResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackTemplateExportResult DeploymentStackTemplateExportResult (BinaryData template = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackTemplateExportResult DeploymentStackTemplateExportResult(class System.BinaryData template, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackTemplateExportResult(System.BinaryData,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackTemplateExportResult (Optional template As BinaryData = Nothing, Optional templateLink As DeploymentStacksTemplateLink = Nothing) As DeploymentStackTemplateExportResult" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackTemplateExportResult : BinaryData * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackTemplateExportResult" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackTemplateExportResult (template, templateLink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackTemplateExportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="template" Type="System.BinaryData" />
+        <Parameter Name="templateLink" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink" />
+      </Parameters>
+      <Docs>
+        <param name="template"> The template content. Use this element to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both. </param>
+        <param name="templateLink"> The URI of the template. Use either the templateLink property or the template property, but not both. </param>
+        <summary> Export Template specific properties of the Deployment stack. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackTemplateExportResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackValidateProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties DeploymentStackValidateProperties (Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage actionOnUnmanage = default, string correlationId = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings denySettings = default, string deploymentScope = default, string description = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; parameters = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; validatedResources = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt; deploymentExtensions = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel? validationLevel = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties DeploymentStackValidateProperties(class Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage actionOnUnmanage, string correlationId, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings denySettings, string deploymentScope, string description, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; parameters, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; validatedResources, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt; deploymentExtensions, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt; validationLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackValidateProperties(Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage,System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings,System.String,System.String,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem},Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackValidateProperties (Optional actionOnUnmanage As ActionOnUnmanage = Nothing, Optional correlationId As String = Nothing, Optional denySettings As DeploymentStackDenySettings = Nothing, Optional deploymentScope As String = Nothing, Optional description As String = Nothing, Optional parameters As IDictionary(Of String, DeploymentParameterItem) = Nothing, Optional templateLink As DeploymentStacksTemplateLink = Nothing, Optional validatedResources As IEnumerable(Of DeploymentStackResourceReference) = Nothing, Optional deploymentExtensions As IEnumerable(Of DeploymentExtension) = Nothing, Optional validationLevel As Nullable(Of DeploymentStackValidationLevel) = Nothing) As DeploymentStackValidateProperties" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackValidateProperties : Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage * string * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings * string * string * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt; * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackValidateProperties (actionOnUnmanage, correlationId, denySettings, deploymentScope, description, parameters, templateLink, validatedResources, deploymentExtensions, validationLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actionOnUnmanage" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage" />
+        <Parameter Name="correlationId" Type="System.String" />
+        <Parameter Name="denySettings" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings" />
+        <Parameter Name="deploymentScope" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt;" />
+        <Parameter Name="templateLink" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink" />
+        <Parameter Name="validatedResources" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackResourceReference&gt;" />
+        <Parameter Name="deploymentExtensions" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtension&gt;" />
+        <Parameter Name="validationLevel" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="actionOnUnmanage"> Defines the behavior of resources that are no longer managed after the Deployment stack is updated or deleted. </param>
+        <param name="correlationId"> The correlation id of the Deployment stack validate operation. It is in GUID format and is used for tracing. </param>
+        <param name="denySettings"> The Deployment stack deny settings. </param>
+        <param name="deploymentScope"> The Deployment stack deployment scope. </param>
+        <param name="description"> The Deployment stack validation description. </param>
+        <param name="parameters"> Deployment parameters. </param>
+        <param name="templateLink"> The URI of the template. </param>
+        <param name="validatedResources"> The array of resources that were validated. </param>
+        <param name="deploymentExtensions"> The deployment extensions. </param>
+        <param name="validationLevel"> The validation level of the deployment stack. </param>
+        <summary> The Deployment stack validation result details. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackValidateResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateResult DeploymentStackValidateResult (Azure.Core.ResourceIdentifier id = default, Azure.Core.ResourceType resourceType = default, string name = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResponseError error = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateResult DeploymentStackValidateResult(class Azure.Core.ResourceIdentifier id, valuetype Azure.Core.ResourceType resourceType, string name, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResponseError error, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackValidateResult(Azure.Core.ResourceIdentifier,Azure.Core.ResourceType,System.String,Azure.ResourceManager.Models.SystemData,Azure.ResponseError,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackValidateResult (Optional id As ResourceIdentifier = Nothing, Optional resourceType As ResourceType = Nothing, Optional name As String = Nothing, Optional systemData As SystemData = Nothing, Optional error As ResponseError = Nothing, Optional properties As DeploymentStackValidateProperties = Nothing) As DeploymentStackValidateResult" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackValidateResult : Azure.Core.ResourceIdentifier * Azure.Core.ResourceType * string * Azure.ResourceManager.Models.SystemData * Azure.ResponseError * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateResult" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackValidateResult (id, resourceType, name, systemData, error, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="error" Type="Azure.ResponseError" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateProperties" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="name"> Name of this resource. </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="error"> The error detail. </param>
+        <param name="properties"> The validation result details. </param>
+        <summary> The Deployment stack validation result. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidateResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackWhatIfResultData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData DeploymentStackWhatIfResultData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties properties = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData DeploymentStackWhatIfResultData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties properties, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackWhatIfResultData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties,System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackWhatIfResultData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As DeploymentStackWhatIfResultProperties = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As DeploymentStackWhatIfResultData" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackWhatIfResultData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties * Nullable&lt;Azure.Core.AzureLocation&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackWhatIfResultData (id, name, resourceType, systemData, properties, location, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <param name="location"> The geo-location where the resource lives. Required for subscription and management group scoped stacks. The location is inherited from the resource group for resource group scoped stacks. </param>
+        <param name="tags"> Resource tags. </param>
+        <summary> Deployment stack object. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStackWhatIfResultProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties DeploymentStackWhatIfResultProperties (Azure.ResponseError error = default, BinaryData template = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; parameters = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink parametersLink = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt; extensionConfigs = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt; externalInputs = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt; externalInputDefinitions = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage actionOnUnmanage = default, string debugSettingDetailLevel = default, string deploymentScope = default, string description = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings denySettings = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState? provisioningState = default, string correlationId = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel? validationLevel = default, Azure.Core.ResourceIdentifier deploymentStackResourceId = default, DateTimeOffset? deploymentStackLastModifiedOn = default, TimeSpan retentionInterval = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange changes = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic&gt; diagnostics = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties DeploymentStackWhatIfResultProperties(class Azure.ResponseError error, class System.BinaryData template, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink templateLink, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; parameters, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink parametersLink, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt; extensionConfigs, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt; externalInputs, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt; externalInputDefinitions, class Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage actionOnUnmanage, string debugSettingDetailLevel, string deploymentScope, string description, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings denySettings, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState&gt; provisioningState, string correlationId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt; validationLevel, class Azure.Core.ResourceIdentifier deploymentStackResourceId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; deploymentStackLastModifiedOn, valuetype System.TimeSpan retentionInterval, class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange changes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic&gt; diagnostics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackWhatIfResultProperties(Azure.ResponseError,System.BinaryData,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem},Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig},System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput},System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition},Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage,System.String,System.String,System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings,System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState},System.String,System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel},Azure.Core.ResourceIdentifier,System.Nullable{System.DateTimeOffset},System.TimeSpan,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeploymentStackWhatIfResultProperties (Optional error As ResponseError = Nothing, Optional template As BinaryData = Nothing, Optional templateLink As DeploymentStacksTemplateLink = Nothing, Optional parameters As IDictionary(Of String, DeploymentParameterItem) = Nothing, Optional parametersLink As DeploymentStacksParametersLink = Nothing, Optional extensionConfigs As IDictionary(Of String, DeploymentExtensionConfig) = Nothing, Optional externalInputs As IDictionary(Of String, DeploymentExternalInput) = Nothing, Optional externalInputDefinitions As IDictionary(Of String, DeploymentExternalInputDefinition) = Nothing, Optional actionOnUnmanage As ActionOnUnmanage = Nothing, Optional debugSettingDetailLevel As String = Nothing, Optional deploymentScope As String = Nothing, Optional description As String = Nothing, Optional denySettings As DeploymentStackDenySettings = Nothing, Optional provisioningState As Nullable(Of DeploymentStackProvisioningState) = Nothing, Optional correlationId As String = Nothing, Optional validationLevel As Nullable(Of DeploymentStackValidationLevel) = Nothing, Optional deploymentStackResourceId As ResourceIdentifier = Nothing, Optional deploymentStackLastModifiedOn As Nullable(Of DateTimeOffset) = Nothing, Optional retentionInterval As TimeSpan = Nothing, Optional changes As DeploymentStacksWhatIfChange = Nothing, Optional diagnostics As IEnumerable(Of DeploymentStacksDiagnostic) = Nothing) As DeploymentStackWhatIfResultProperties" />
+      <MemberSignature Language="F#" Value="static member DeploymentStackWhatIfResultProperties : Azure.ResponseError * BinaryData * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt; * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt; * Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage * string * string * string * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState&gt; * string * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt; * Azure.Core.ResourceIdentifier * Nullable&lt;DateTimeOffset&gt; * TimeSpan * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange * seq&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic&gt; -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.ArmResourcesDeploymentStacksModelFactory.DeploymentStackWhatIfResultProperties (error, template, templateLink, parameters, parametersLink, extensionConfigs, externalInputs, externalInputDefinitions, actionOnUnmanage, debugSettingDetailLevel, deploymentScope, description, denySettings, provisioningState, correlationId, validationLevel, deploymentStackResourceId, deploymentStackLastModifiedOn, retentionInterval, changes, diagnostics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="Azure.ResponseError" />
+        <Parameter Name="template" Type="System.BinaryData" />
+        <Parameter Name="templateLink" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksTemplateLink" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentParameterItem&gt;" />
+        <Parameter Name="parametersLink" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksParametersLink" />
+        <Parameter Name="extensionConfigs" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExtensionConfig&gt;" />
+        <Parameter Name="externalInputs" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInput&gt;" />
+        <Parameter Name="externalInputDefinitions" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentExternalInputDefinition&gt;" />
+        <Parameter Name="actionOnUnmanage" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.ActionOnUnmanage" />
+        <Parameter Name="debugSettingDetailLevel" Type="System.String" />
+        <Parameter Name="deploymentScope" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="denySettings" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenySettings" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackProvisioningState&gt;" />
+        <Parameter Name="correlationId" Type="System.String" />
+        <Parameter Name="validationLevel" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackValidationLevel&gt;" />
+        <Parameter Name="deploymentStackResourceId" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="deploymentStackLastModifiedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="retentionInterval" Type="System.TimeSpan" />
+        <Parameter Name="changes" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksWhatIfChange" />
+        <Parameter Name="diagnostics" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStacksDiagnostic&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="error"> The error detail. </param>
+        <param name="template"> The template content. You use this element when you want to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both. </param>
+        <param name="templateLink"> The URI of the template. Use either the templateLink property or the template property, but not both. </param>
+        <param name="parameters"> Name and value pairs that define the deployment parameters for the template. Use this element when providing the parameter values directly in the request, rather than linking to an existing parameter file. Use either the parametersLink property or the parameters property, but not both. </param>
+        <param name="parametersLink"> The URI of parameters file. Use this element to link to an existing parameters file. Use either the parametersLink property or the parameters property, but not both. </param>
+        <param name="extensionConfigs"> The deployment extension configs. Keys of this object are extension aliases as defined in the deployment template. </param>
+        <param name="externalInputs"> External input values, used by external tooling for parameter evaluation. </param>
+        <param name="externalInputDefinitions"> External input definitions, used by external tooling to define expected external input values. </param>
+        <param name="actionOnUnmanage"> Defines the behavior of resources that are no longer managed after the Deployment stack is updated or deleted. </param>
+        <param name="debugSettingDetailLevel"> Specifies the type of information to log for debugging. The permitted values are none, requestContent, responseContent, or both requestContent and responseContent separated by a comma. The default is none. When setting this value, carefully consider the type of information that is being passed in during deployment. By logging information about the request or response, sensitive data that is retrieved through the deployment operations could potentially be exposed. </param>
+        <param name="deploymentScope"> The scope at which the initial deployment should be created. If a scope is not specified, it will default to the scope of the deployment stack. Valid scopes are: management group (format: '/providers/Microsoft.Management/managementGroups/{managementGroupId}'), subscription (format: '/subscriptions/{subscriptionId}'), resource group (format: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}'). </param>
+        <param name="description"> Deployment stack description. Max length of 4096 characters. </param>
+        <param name="denySettings"> Defines how resources deployed by the stack are locked. </param>
+        <param name="provisioningState"> State of the deployment stack. </param>
+        <param name="correlationId"> The correlation id of the last Deployment stack upsert or delete operation. It is in GUID format and is used for tracing. </param>
+        <param name="validationLevel"> The validation level of the deployment stack. </param>
+        <param name="deploymentStackResourceId"> The deployment stack id to use as the basis for comparison. </param>
+        <param name="deploymentStackLastModifiedOn"> The timestamp for when the deployment stack was last modified. This can be used to determine if the what-if data is still current. </param>
+        <param name="retentionInterval"> The interval to persist the deployment stack what-if result in ISO 8601 format. </param>
+        <param name="changes"> All of the changes predicted by the deployment stack what-if operation. </param>
+        <param name="diagnostics"> List of resource diagnostics detected by What-If operation. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackWhatIfResultProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

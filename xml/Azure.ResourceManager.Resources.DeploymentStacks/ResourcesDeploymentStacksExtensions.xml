@@ -1,0 +1,277 @@
+<Type Name="ResourcesDeploymentStacksExtensions" FullName="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions">
+  <TypeSignature Language="C#" Value="public static class ResourcesDeploymentStacksExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResourcesDeploymentStacksExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ResourcesDeploymentStacksExtensions" />
+  <TypeSignature Language="F#" Value="type ResourcesDeploymentStacksExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.Resources.DeploymentStacks. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDeploymentStack">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt; GetDeploymentStack (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier scope, string deploymentStackName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt; GetDeploymentStack(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier scope, string deploymentStackName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStack(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStack (client As ArmClient, scope As ResourceIdentifier, deploymentStackName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeploymentStackResource)" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStack : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt;" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStack (client, scope, deploymentStackName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="deploymentStackName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="deploymentStackName"> Name of the deployment stack. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the Deployment stack with the given name.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStack(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentStackAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt;&gt; GetDeploymentStackAsync (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier scope, string deploymentStackName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt;&gt; GetDeploymentStackAsync(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier scope, string deploymentStackName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackAsync(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStackAsync (client As ArmClient, scope As ResourceIdentifier, deploymentStackName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeploymentStackResource))" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStackAsync : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt;&gt;" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackAsync (client, scope, deploymentStackName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="deploymentStackName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="deploymentStackName"> Name of the deployment stack. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the Deployment stack with the given name.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStackAsync(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentStackResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource GetDeploymentStackResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource GetDeploymentStackResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStackResource (client As ArmClient, id As ResourceIdentifier) As DeploymentStackResource" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStackResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStackResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentStacks">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackCollection GetDeploymentStacks (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackCollection GetDeploymentStacks(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStacks(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStacks (client As ArmClient, scope As ResourceIdentifier) As DeploymentStackCollection" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStacks : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackCollection" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStacks (client, scope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <summary>
+            Gets a collection of <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackCollection" /> objects within the specified scope.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStacks(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a collection of <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackResource" /> objects. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentStackWhatIfResult">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; GetDeploymentStackWhatIfResult (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier scope, string deploymentStacksWhatIfResultName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; GetDeploymentStackWhatIfResult(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier scope, string deploymentStacksWhatIfResultName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResult(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStackWhatIfResult (client As ArmClient, scope As ResourceIdentifier, deploymentStacksWhatIfResultName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeploymentStackWhatIfResultResource)" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStackWhatIfResult : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResult (client, scope, deploymentStacksWhatIfResultName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="deploymentStacksWhatIfResultName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="deploymentStacksWhatIfResultName"> Name of the deployment stack what-if result. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the Deployment stack with the given name.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStackWhatIfResult(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentStackWhatIfResultAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; GetDeploymentStackWhatIfResultAsync (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier scope, string deploymentStacksWhatIfResultName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; GetDeploymentStackWhatIfResultAsync(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier scope, string deploymentStacksWhatIfResultName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResultAsync(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStackWhatIfResultAsync (client As ArmClient, scope As ResourceIdentifier, deploymentStacksWhatIfResultName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeploymentStackWhatIfResultResource))" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStackWhatIfResultAsync : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResultAsync (client, scope, deploymentStacksWhatIfResultName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="deploymentStacksWhatIfResultName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="deploymentStacksWhatIfResultName"> Name of the deployment stack what-if result. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the Deployment stack with the given name.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStackWhatIfResultAsync(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentStackWhatIfResultResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource GetDeploymentStackWhatIfResultResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource GetDeploymentStackWhatIfResultResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResultResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStackWhatIfResultResource (client As ArmClient, id As ResourceIdentifier) As DeploymentStackWhatIfResultResource" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStackWhatIfResultResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResultResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStackWhatIfResultResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeploymentStackWhatIfResults">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultCollection GetDeploymentStackWhatIfResults (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultCollection GetDeploymentStackWhatIfResults(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResults(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDeploymentStackWhatIfResults (client As ArmClient, scope As ResourceIdentifier) As DeploymentStackWhatIfResultCollection" />
+      <MemberSignature Language="F#" Value="static member GetDeploymentStackWhatIfResults : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultCollection" Usage="Azure.ResourceManager.Resources.DeploymentStacks.ResourcesDeploymentStacksExtensions.GetDeploymentStackWhatIfResults (client, scope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <summary>
+            Gets a collection of <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultCollection" /> objects within the specified scope.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.Resources.DeploymentStacks.Mocking.MockableResourcesDeploymentStacksArmClient.GetDeploymentStackWhatIfResults(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a collection of <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" /> objects. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

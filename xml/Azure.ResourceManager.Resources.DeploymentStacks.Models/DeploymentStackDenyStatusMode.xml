@@ -1,0 +1,394 @@
+<Type Name="DeploymentStackDenyStatusMode" FullName="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode">
+  <TypeSignature Language="C#" Value="public readonly struct DeploymentStackDenyStatusMode : IEquatable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DeploymentStackDenyStatusMode extends System.ValueType implements class System.IEquatable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DeploymentStackDenyStatusMode&#xA;Implements IEquatable(Of DeploymentStackDenyStatusMode)" />
+  <TypeSignature Language="F#" Value="type DeploymentStackDenyStatusMode = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> denyAssignment settings applied to the resource. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeploymentStackDenyStatusMode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode : string -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="new Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyDelete">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode DenyDelete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode DenyDelete" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.DenyDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DenyDelete As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member DenyDelete : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.DenyDelete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Authorized users are able to read and modify the resources, but cannot delete. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyWriteAndDelete">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode DenyWriteAndDelete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode DenyWriteAndDelete" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.DenyWriteAndDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DenyWriteAndDelete As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member DenyWriteAndDelete : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.DenyWriteAndDelete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Authorized users can only read from a resource, but cannot modify or delete it. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.Equals(Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As DeploymentStackDenyStatusMode) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode -&gt; bool" Usage="deploymentStackDenyStatusMode.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="deploymentStackDenyStatusMode.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="deploymentStackDenyStatusMode.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inapplicable">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode Inapplicable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode Inapplicable" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.Inapplicable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Inapplicable As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member Inapplicable : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.Inapplicable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> denyAssignments are not supported on resources outside the scope of the deployment stack. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode None { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode None" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.None" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member None : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.None" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> No denyAssignments have been applied. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSupported">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode NotSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode NotSupported" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.NotSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NotSupported As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member NotSupported : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.NotSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Resource type does not support denyAssignments. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode left, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode left, valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.op_Equality(Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As DeploymentStackDenyStatusMode, right As DeploymentStackDenyStatusMode) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />
+        <Parameter Name="right" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />
+      </Parameters>
+      <Docs>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" /> values are the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.op_Implicit(System.String)~Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value. </param>
+        <summary> Converts a string to a <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode? (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt; op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.op_Implicit(System.String)~System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As Nullable(Of DeploymentStackDenyStatusMode)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode left, Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode left, valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.op_Inequality(Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode,Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As DeploymentStackDenyStatusMode, right As DeploymentStackDenyStatusMode) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode * Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode -&gt; bool" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />
+        <Parameter Name="right" Type="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" />
+      </Parameters>
+      <Docs>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" /> values are not the same. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovedBySystem">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode RemovedBySystem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode RemovedBySystem" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.RemovedBySystem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RemovedBySystem As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member RemovedBySystem : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.RemovedBySystem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Deny assignment has been removed by Azure due to a resource management change (management group move, etc.). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="deploymentStackDenyStatusMode.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>The fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode Unknown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode Unknown" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Unknown As DeploymentStackDenyStatusMode" />
+      <MemberSignature Language="F#" Value="static member Unknown : Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode" Usage="Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode.Unknown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.Models.DeploymentStackDenyStatusMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The denyAssignment status is unknown. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

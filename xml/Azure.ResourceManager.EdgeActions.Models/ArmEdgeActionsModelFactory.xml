@@ -43,30 +43,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EdgeActionAttachmentResult">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionAttachmentResult EdgeActionAttachmentResult (string edgeActionId = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionAttachmentResult EdgeActionAttachmentResult(string edgeActionId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionAttachmentResult(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionAttachmentResult (Optional edgeActionId As String = Nothing) As EdgeActionAttachmentResult" />
-      <MemberSignature Language="F#" Value="static member EdgeActionAttachmentResult : string -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionAttachmentResult" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionAttachmentResult edgeActionId" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.EdgeActions</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.EdgeActions.Models.EdgeActionAttachmentResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="edgeActionId" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="edgeActionId"> Non changing guid to identity edge action. </param>
-        <summary> Edge action attachment response. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.EdgeActions.Models.EdgeActionAttachmentResult" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="EdgeActionData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.EdgeActionData EdgeActionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionProperties properties = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionSkuType sku = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.EdgeActionData EdgeActionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.EdgeActions.Models.EdgeActionProperties properties, class Azure.ResourceManager.EdgeActions.Models.EdgeActionSkuType sku) cil managed" />
@@ -141,12 +117,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EdgeActionExecutionFilterPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterPatch EdgeActionExecutionFilterPatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterUpdateProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterPatch EdgeActionExecutionFilterPatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterUpdateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionExecutionFilterPatch(System.Collections.Generic.IDictionary{System.String,System.String},Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionExecutionFilterPatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional properties As EdgeActionExecutionFilterUpdateProperties = Nothing) As EdgeActionExecutionFilterPatch" />
+      <MemberSignature Language="F#" Value="static member EdgeActionExecutionFilterPatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterUpdateProperties -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterPatch" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionExecutionFilterPatch (tags, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeActions</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterUpdateProperties" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> Resource tags. </param>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <summary> The type used for update operations of the EdgeActionExecutionFilter. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EdgeActionExecutionFilterProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterProperties EdgeActionExecutionFilterProperties (Azure.Core.ResourceIdentifier versionId = default, DateTimeOffset lastUpdatedOn = default, string executionFilterIdentifierHeaderName = default, string executionFilterIdentifierHeaderValue = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState? provisioningState = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterProperties EdgeActionExecutionFilterProperties(class Azure.Core.ResourceIdentifier versionId, valuetype System.DateTimeOffset lastUpdatedOn, string executionFilterIdentifierHeaderName, string executionFilterIdentifierHeaderValue, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; provisioningState) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionExecutionFilterProperties(Azure.Core.ResourceIdentifier,System.DateTimeOffset,System.String,System.String,System.Nullable{Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionExecutionFilterProperties (Optional versionId As ResourceIdentifier = Nothing, Optional lastUpdatedOn As DateTimeOffset = Nothing, Optional executionFilterIdentifierHeaderName As String = Nothing, Optional executionFilterIdentifierHeaderValue As String = Nothing, Optional provisioningState As Nullable(Of EdgeActionProvisioningState) = Nothing) As EdgeActionExecutionFilterProperties" />
-      <MemberSignature Language="F#" Value="static member EdgeActionExecutionFilterProperties : Azure.Core.ResourceIdentifier * DateTimeOffset * string * string * Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterProperties" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionExecutionFilterProperties (versionId, lastUpdatedOn, executionFilterIdentifierHeaderName, executionFilterIdentifierHeaderValue, provisioningState)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterProperties EdgeActionExecutionFilterProperties (Azure.Core.ResourceIdentifier versionId = default, DateTimeOffset? lastUpdatedOn = default, string executionFilterIdentifierHeaderName = default, string executionFilterIdentifierHeaderValue = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterProperties EdgeActionExecutionFilterProperties(class Azure.Core.ResourceIdentifier versionId, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdatedOn, string executionFilterIdentifierHeaderName, string executionFilterIdentifierHeaderValue, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionExecutionFilterProperties(Azure.Core.ResourceIdentifier,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Nullable{Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionExecutionFilterProperties (Optional versionId As ResourceIdentifier = Nothing, Optional lastUpdatedOn As Nullable(Of DateTimeOffset) = Nothing, Optional executionFilterIdentifierHeaderName As String = Nothing, Optional executionFilterIdentifierHeaderValue As String = Nothing, Optional provisioningState As Nullable(Of EdgeActionProvisioningState) = Nothing) As EdgeActionExecutionFilterProperties" />
+      <MemberSignature Language="F#" Value="static member EdgeActionExecutionFilterProperties : Azure.Core.ResourceIdentifier * Nullable&lt;DateTimeOffset&gt; * string * string * Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterProperties" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionExecutionFilterProperties (versionId, lastUpdatedOn, executionFilterIdentifierHeaderName, executionFilterIdentifierHeaderValue, provisioningState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EdgeActions</AssemblyName>
@@ -157,7 +159,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="versionId" Type="Azure.Core.ResourceIdentifier" />
-        <Parameter Name="lastUpdatedOn" Type="System.DateTimeOffset" />
+        <Parameter Name="lastUpdatedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
         <Parameter Name="executionFilterIdentifierHeaderName" Type="System.String" />
         <Parameter Name="executionFilterIdentifierHeaderValue" Type="System.String" />
         <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt;" />
@@ -170,6 +172,34 @@
         <param name="provisioningState"> The provisioning state. </param>
         <summary> Properties for edge action execution filter. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.EdgeActions.Models.EdgeActionExecutionFilterProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdgeActionPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionPatch EdgeActionPatch (Azure.ResourceManager.EdgeActions.Models.EdgeActionPropertiesUpdate properties = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionSkuTypeUpdate sku = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionPatch EdgeActionPatch(class Azure.ResourceManager.EdgeActions.Models.EdgeActionPropertiesUpdate properties, class Azure.ResourceManager.EdgeActions.Models.EdgeActionSkuTypeUpdate sku, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionPatch(Azure.ResourceManager.EdgeActions.Models.EdgeActionPropertiesUpdate,Azure.ResourceManager.EdgeActions.Models.EdgeActionSkuTypeUpdate,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionPatch (Optional properties As EdgeActionPropertiesUpdate = Nothing, Optional sku As EdgeActionSkuTypeUpdate = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As EdgeActionPatch" />
+      <MemberSignature Language="F#" Value="static member EdgeActionPatch : Azure.ResourceManager.EdgeActions.Models.EdgeActionPropertiesUpdate * Azure.ResourceManager.EdgeActions.Models.EdgeActionSkuTypeUpdate * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionPatch" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionPatch (properties, sku, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeActions</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.EdgeActions.Models.EdgeActionPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="Azure.ResourceManager.EdgeActions.Models.EdgeActionPropertiesUpdate" />
+        <Parameter Name="sku" Type="Azure.ResourceManager.EdgeActions.Models.EdgeActionSkuTypeUpdate" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <param name="sku"> The sku type of the edge action. </param>
+        <param name="tags"> Resource tags. </param>
+        <summary> The type used for update operations of the EdgeAction. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.EdgeActions.Models.EdgeActionPatch" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,12 +265,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EdgeActionVersionPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionPatch EdgeActionVersionPatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionUpdateProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionPatch EdgeActionVersionPatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionUpdateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionVersionPatch(System.Collections.Generic.IDictionary{System.String,System.String},Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionVersionPatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional properties As EdgeActionVersionUpdateProperties = Nothing) As EdgeActionVersionPatch" />
+      <MemberSignature Language="F#" Value="static member EdgeActionVersionPatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionUpdateProperties -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionPatch" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionVersionPatch (tags, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.EdgeActions</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionUpdateProperties" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> Resource tags. </param>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <summary> The type used for update operations of the EdgeActionVersion. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EdgeActionVersionProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionProperties EdgeActionVersionProperties (Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType deploymentType = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus validationStatus = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState? provisioningState = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion isDefaultVersion = default, DateTimeOffset lastPackageUpdatedOn = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionProperties EdgeActionVersionProperties(valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType deploymentType, valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus validationStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; provisioningState, valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion isDefaultVersion, valuetype System.DateTimeOffset lastPackageUpdatedOn) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionVersionProperties(Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType,Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus,System.Nullable{Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState},Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion,System.DateTimeOffset)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionVersionProperties (Optional deploymentType As EdgeActionVersionDeploymentType = Nothing, Optional validationStatus As EdgeActionVersionValidationStatus = Nothing, Optional provisioningState As Nullable(Of EdgeActionProvisioningState) = Nothing, Optional isDefaultVersion As EdgeActionIsDefaultVersion = Nothing, Optional lastPackageUpdatedOn As DateTimeOffset = Nothing) As EdgeActionVersionProperties" />
-      <MemberSignature Language="F#" Value="static member EdgeActionVersionProperties : Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType * Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus * Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; * Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion * DateTimeOffset -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionProperties" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionVersionProperties (deploymentType, validationStatus, provisioningState, isDefaultVersion, lastPackageUpdatedOn)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionProperties EdgeActionVersionProperties (Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType deploymentType = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus? validationStatus = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState? provisioningState = default, Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion isDefaultVersion = default, DateTimeOffset? lastPackageUpdatedOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionProperties EdgeActionVersionProperties(valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType deploymentType, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus&gt; validationStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; provisioningState, valuetype Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion isDefaultVersion, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastPackageUpdatedOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionVersionProperties(Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType,System.Nullable{Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus},System.Nullable{Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState},Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion,System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EdgeActionVersionProperties (Optional deploymentType As EdgeActionVersionDeploymentType = Nothing, Optional validationStatus As Nullable(Of EdgeActionVersionValidationStatus) = Nothing, Optional provisioningState As Nullable(Of EdgeActionProvisioningState) = Nothing, Optional isDefaultVersion As EdgeActionIsDefaultVersion = Nothing, Optional lastPackageUpdatedOn As Nullable(Of DateTimeOffset) = Nothing) As EdgeActionVersionProperties" />
+      <MemberSignature Language="F#" Value="static member EdgeActionVersionProperties : Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType * Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus&gt; * Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt; * Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionProperties" Usage="Azure.ResourceManager.EdgeActions.Models.ArmEdgeActionsModelFactory.EdgeActionVersionProperties (deploymentType, validationStatus, provisioningState, isDefaultVersion, lastPackageUpdatedOn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.EdgeActions</AssemblyName>
@@ -251,10 +307,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="deploymentType" Type="Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionDeploymentType" />
-        <Parameter Name="validationStatus" Type="Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus" />
+        <Parameter Name="validationStatus" Type="System.Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionVersionValidationStatus&gt;" />
         <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.EdgeActions.Models.EdgeActionProvisioningState&gt;" />
         <Parameter Name="isDefaultVersion" Type="Azure.ResourceManager.EdgeActions.Models.EdgeActionIsDefaultVersion" />
-        <Parameter Name="lastPackageUpdatedOn" Type="System.DateTimeOffset" />
+        <Parameter Name="lastPackageUpdatedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
         <param name="deploymentType"> The deployment type. </param>

@@ -1,0 +1,702 @@
+<Type Name="DeploymentStackWhatIfResultResource" FullName="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource">
+  <TypeSignature Language="C#" Value="public class DeploymentStackWhatIfResultResource : Azure.ResourceManager.ArmResource, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeploymentStackWhatIfResultResource extends Azure.ResourceManager.ArmResource implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeploymentStackWhatIfResultResource&#xA;Inherits ArmResource&#xA;Implements IJsonModel(Of DeploymentStackWhatIfResultData), IPersistableModel(Of DeploymentStackWhatIfResultData)" />
+  <TypeSignature Language="F#" Value="type DeploymentStackWhatIfResultResource = class&#xA;    inherit ArmResource&#xA;    interface IJsonModel&lt;DeploymentStackWhatIfResultData&gt;&#xA;    interface IPersistableModel&lt;DeploymentStackWhatIfResultData&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A class representing a DeploymentStackWhatIfResult along with the instance operations that can be performed on it.
+            If you have a <see cref="T:Azure.Core.ResourceIdentifier" /> you can construct a <see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" /> from an instance of <see cref="T:Azure.ResourceManager.ArmClient" /> using the GetResource method.
+            Otherwise you can get one from its parent resource <see cref="T:Azure.ResourceManager.ArmResource" /> using the GetDeploymentStackWhatIfResults method.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeploymentStackWhatIfResultResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of DeploymentStackWhatIfResultResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTag">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; AddTag (string key, string value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; AddTag(string key, string value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.AddTag(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddTag (key As String, value As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeploymentStackWhatIfResultResource)" />
+      <MemberSignature Language="F#" Value="abstract member AddTag : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&#xA;override this.AddTag : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;" Usage="deploymentStackWhatIfResultResource.AddTag (key, value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="value"> The value for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Add a tag to the current resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTagAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; AddTagAsync (string key, string value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; AddTagAsync(string key, string value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.AddTagAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddTagAsync (key As String, value As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeploymentStackWhatIfResultResource))" />
+      <MemberSignature Language="F#" Value="abstract member AddTagAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;&#xA;override this.AddTagAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;" Usage="deploymentStackWhatIfResultResource.AddTagAsync (key, value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="value"> The value for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Add a tag to the current resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResourceIdentifier">
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string scope, string deploymentStacksWhatIfResultName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string scope, string deploymentStacksWhatIfResultName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.CreateResourceIdentifier(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (scope As String, deploymentStacksWhatIfResultName As String) As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.CreateResourceIdentifier (scope, deploymentStacksWhatIfResultName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.String" />
+        <Parameter Name="deploymentStacksWhatIfResultName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope. </param>
+        <param name="deploymentStacksWhatIfResultName"> The deploymentStacksWhatIfResultName. </param>
+        <summary> Generate the resource identifier for this resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData Data" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Data As DeploymentStackWhatIfResultData" />
+      <MemberSignature Language="F#" Value="member this.Data : Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData" Usage="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the data representing this Feature. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation Delete (Azure.WaitUntil waitUntil, Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode? unmanageActionResources = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode? unmanageActionResourceGroups = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode? unmanageActionManagementGroups = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction? unmanageActionResourcesWithoutDeleteSupport = default, bool? bypassStackOutOfSyncError = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation Delete(valuetype Azure.WaitUntil waitUntil, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt; unmanageActionResources, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt; unmanageActionResourceGroups, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt; unmanageActionManagementGroups, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt; unmanageActionResourcesWithoutDeleteSupport, valuetype System.Nullable`1&lt;bool&gt; bypassStackOutOfSyncError, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.Delete(Azure.WaitUntil,System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (waitUntil As WaitUntil, Optional unmanageActionResources As Nullable(Of UnmanageActionResourceMode) = Nothing, Optional unmanageActionResourceGroups As Nullable(Of UnmanageActionResourceGroupMode) = Nothing, Optional unmanageActionManagementGroups As Nullable(Of UnmanageActionManagementGroupMode) = Nothing, Optional unmanageActionResourcesWithoutDeleteSupport As Nullable(Of ResourcesWithoutDeleteSupportAction) = Nothing, Optional bypassStackOutOfSyncError As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation" />
+      <MemberSignature Language="F#" Value="abstract member Delete : Azure.WaitUntil * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&#xA;override this.Delete : Azure.WaitUntil * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation" Usage="deploymentStackWhatIfResultResource.Delete (waitUntil, unmanageActionResources, unmanageActionResourceGroups, unmanageActionManagementGroups, unmanageActionResourcesWithoutDeleteSupport, bypassStackOutOfSyncError, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="unmanageActionResources" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt;" />
+        <Parameter Name="unmanageActionResourceGroups" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt;" />
+        <Parameter Name="unmanageActionManagementGroups" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt;" />
+        <Parameter Name="unmanageActionResourcesWithoutDeleteSupport" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt;" />
+        <Parameter Name="bypassStackOutOfSyncError" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="unmanageActionResources"> Flag to indicate delete rather than detach for unmanaged resources. </param>
+        <param name="unmanageActionResourceGroups"> Flag to indicate delete rather than detach for unmanaged resource groups. </param>
+        <param name="unmanageActionManagementGroups"> Flag to indicate delete rather than detach for unmanaged management groups. </param>
+        <param name="unmanageActionResourcesWithoutDeleteSupport"> Some resources do not support deletion.  This flag will denote how the stack should handle those resources. </param>
+        <param name="bypassStackOutOfSyncError"> Flag to bypass service errors that indicate the stack resource list is not correctly synchronized. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Deletes a Deployment stack by name at the specified scope. When operation completes, status code 200 returned without content.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt; DeleteAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode? unmanageActionResources = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode? unmanageActionResourceGroups = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode? unmanageActionManagementGroups = default, Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction? unmanageActionResourcesWithoutDeleteSupport = default, bool? bypassStackOutOfSyncError = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation&gt; DeleteAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt; unmanageActionResources, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt; unmanageActionResourceGroups, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt; unmanageActionManagementGroups, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt; unmanageActionResourcesWithoutDeleteSupport, valuetype System.Nullable`1&lt;bool&gt; bypassStackOutOfSyncError, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.DeleteAsync(Azure.WaitUntil,System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode},System.Nullable{Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (waitUntil As WaitUntil, Optional unmanageActionResources As Nullable(Of UnmanageActionResourceMode) = Nothing, Optional unmanageActionResourceGroups As Nullable(Of UnmanageActionResourceGroupMode) = Nothing, Optional unmanageActionManagementGroups As Nullable(Of UnmanageActionManagementGroupMode) = Nothing, Optional unmanageActionResourcesWithoutDeleteSupport As Nullable(Of ResourcesWithoutDeleteSupportAction) = Nothing, Optional bypassStackOutOfSyncError As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : Azure.WaitUntil * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;&#xA;override this.DeleteAsync : Azure.WaitUntil * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt; * Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;" Usage="deploymentStackWhatIfResultResource.DeleteAsync (waitUntil, unmanageActionResources, unmanageActionResourceGroups, unmanageActionManagementGroups, unmanageActionResourcesWithoutDeleteSupport, bypassStackOutOfSyncError, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="unmanageActionResources" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceMode&gt;" />
+        <Parameter Name="unmanageActionResourceGroups" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionResourceGroupMode&gt;" />
+        <Parameter Name="unmanageActionManagementGroups" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.UnmanageActionManagementGroupMode&gt;" />
+        <Parameter Name="unmanageActionResourcesWithoutDeleteSupport" Type="System.Nullable&lt;Azure.ResourceManager.Resources.DeploymentStacks.Models.ResourcesWithoutDeleteSupportAction&gt;" />
+        <Parameter Name="bypassStackOutOfSyncError" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="unmanageActionResources"> Flag to indicate delete rather than detach for unmanaged resources. </param>
+        <param name="unmanageActionResourceGroups"> Flag to indicate delete rather than detach for unmanaged resource groups. </param>
+        <param name="unmanageActionManagementGroups"> Flag to indicate delete rather than detach for unmanaged management groups. </param>
+        <param name="unmanageActionResourcesWithoutDeleteSupport"> Some resources do not support deletion.  This flag will denote how the stack should handle those resources. </param>
+        <param name="bypassStackOutOfSyncError"> Flag to bypass service errors that indicate the stack resource list is not correctly synchronized. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Deletes a Deployment stack by name at the specified scope. When operation completes, status code 200 returned without content.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; Get (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; Get(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.Get(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeploymentStackWhatIfResultResource)" />
+      <MemberSignature Language="F#" Value="abstract member Get : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&#xA;override this.Get : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;" Usage="deploymentStackWhatIfResultResource.Get cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the Deployment stack with the given name.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_Get. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; GetAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; GetAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.GetAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeploymentStackWhatIfResultResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;&#xA;override this.GetAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;" Usage="deploymentStackWhatIfResultResource.GetAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the Deployment stack with the given name.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_Get. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasData">
+      <MemberSignature Language="C#" Value="public virtual bool HasData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasData" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.HasData" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasData As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasData : bool" Usage="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.HasData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets whether or not the current instance has data. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveTag">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; RemoveTag (string key, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; RemoveTag(string key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.RemoveTag(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveTag (key As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeploymentStackWhatIfResultResource)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveTag : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&#xA;override this.RemoveTag : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;" Usage="deploymentStackWhatIfResultResource.RemoveTag (key, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Removes a tag by key from the resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveTagAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; RemoveTagAsync (string key, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; RemoveTagAsync(string key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.RemoveTagAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoveTagAsync (key As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeploymentStackWhatIfResultResource))" />
+      <MemberSignature Language="F#" Value="abstract member RemoveTagAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;&#xA;override this.RemoveTagAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;" Usage="deploymentStackWhatIfResultResource.RemoveTagAsync (key, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="key"> The key for the tag. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Removes a tag by key from the resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceType">
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.ResourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.ResourceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the resource type for the operations. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTags">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; SetTags (System.Collections.Generic.IDictionary&lt;string,string&gt; tags, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; SetTags(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.SetTags(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetTags (tags As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing) As Response(Of DeploymentStackWhatIfResultResource)" />
+      <MemberSignature Language="F#" Value="abstract member SetTags : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&#xA;override this.SetTags : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;" Usage="deploymentStackWhatIfResultResource.SetTags (tags, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The tags to set on the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Replace the tags on the resource with the given set. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTagsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; SetTagsAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; tags, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; SetTagsAsync(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.SetTagsAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SetTagsAsync (tags As IDictionary(Of String, String), Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DeploymentStackWhatIfResultResource))" />
+      <MemberSignature Language="F#" Value="abstract member SetTagsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;&#xA;override this.SetTagsAsync : System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;" Usage="deploymentStackWhatIfResultResource.SetTagsAsync (tags, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The tags to set on the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Replace the tags on the resource with the given set. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tags" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData IJsonModel&lt;DeploymentStackWhatIfResultData&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#Resources#DeploymentStacks#DeploymentStackWhatIfResultData&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As DeploymentStackWhatIfResultData Implements IJsonModel(Of DeploymentStackWhatIfResultData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData" Usage="deploymentStackWhatIfResultResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The reader for deserializing the model. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;DeploymentStackWhatIfResultData&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#Resources#DeploymentStacks#DeploymentStackWhatIfResultData&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of DeploymentStackWhatIfResultData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="deploymentStackWhatIfResultResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The writer to serialize the model to. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData IPersistableModel&lt;DeploymentStackWhatIfResultData&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#Resources#DeploymentStacks#DeploymentStackWhatIfResultData&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As DeploymentStackWhatIfResultData Implements IPersistableModel(Of DeploymentStackWhatIfResultData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData" Usage="deploymentStackWhatIfResultResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The binary data to be processed. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;DeploymentStackWhatIfResultData&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#Resources#DeploymentStacks#DeploymentStackWhatIfResultData&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of DeploymentStackWhatIfResultData).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="deploymentStackWhatIfResultResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;DeploymentStackWhatIfResultData&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#Resources#DeploymentStacks#DeploymentStackWhatIfResultData&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of DeploymentStackWhatIfResultData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="deploymentStackWhatIfResultResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; Update(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.Update(Azure.WaitUntil,Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, data As DeploymentStackWhatIfResultData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DeploymentStackWhatIfResultResource)" />
+      <MemberSignature Language="F#" Value="abstract member Update : Azure.WaitUntil * Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&#xA;override this.Update : Azure.WaitUntil * Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;" Usage="deploymentStackWhatIfResultResource.Update (waitUntil, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="data" Type="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="data"> Resource create parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Update a DeploymentStackWhatIfResult.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; UpdateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.UpdateAsync(Azure.WaitUntil,Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, data As DeploymentStackWhatIfResultData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DeploymentStackWhatIfResultResource))" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;" Usage="deploymentStackWhatIfResultResource.UpdateAsync (waitUntil, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="data" Type="Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="data"> Resource create parameters. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Update a DeploymentStackWhatIfResult.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WhatIf">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; WhatIf (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt; WhatIf(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.WhatIf(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WhatIf (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DeploymentStackWhatIfResultResource)" />
+      <MemberSignature Language="F#" Value="abstract member WhatIf : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&#xA;override this.WhatIf : Azure.WaitUntil * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;" Usage="deploymentStackWhatIfResultResource.WhatIf (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Returns property-level changes that will be made by the deployment if executed.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}/whatIf. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_WhatIf. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WhatIfAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; WhatIfAsync (Azure.WaitUntil waitUntil, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt; WhatIfAsync(valuetype Azure.WaitUntil waitUntil, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource.WhatIfAsync(Azure.WaitUntil,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WhatIfAsync (waitUntil As WaitUntil, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DeploymentStackWhatIfResultResource))" />
+      <MemberSignature Language="F#" Value="abstract member WhatIfAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;&#xA;override this.WhatIfAsync : Azure.WaitUntil * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;" Usage="deploymentStackWhatIfResultResource.WhatIfAsync (waitUntil, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.DeploymentStacks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Returns property-level changes that will be made by the deployment if executed.
+            <list type="bullet"><item><term> Request Path. </term><description> /{scope}/providers/Microsoft.Resources/deploymentStacksWhatIfResults/{deploymentStacksWhatIfResultName}/whatIf. </description></item><item><term> Operation Id. </term><description> DeploymentStacksWhatIfAtScope_WhatIf. </description></item><item><term> Default Api Version. </term><description> 2025-07-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Resources.DeploymentStacks.DeploymentStackWhatIfResultResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
