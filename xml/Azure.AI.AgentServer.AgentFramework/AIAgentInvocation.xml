@@ -20,6 +20,7 @@
   </Attributes>
   <Docs>
     <param name="agent">The AI agent to invoke.</param>
+    <param name="threadRepository">Optional repository for managing agent threads.</param>
     <summary>
             Provides an implementation of agent invocation using the Microsoft Agents AI framework.
             </summary>
@@ -27,11 +28,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AIAgentInvocation (Microsoft.Agents.AI.AIAgent agent);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Agents.AI.AIAgent agent) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.AIAgentInvocation.#ctor(Microsoft.Agents.AI.AIAgent)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (agent As AIAgent)" />
-      <MemberSignature Language="F#" Value="new Azure.AI.AgentServer.AgentFramework.AIAgentInvocation : Microsoft.Agents.AI.AIAgent -&gt; Azure.AI.AgentServer.AgentFramework.AIAgentInvocation" Usage="new Azure.AI.AgentServer.AgentFramework.AIAgentInvocation agent" />
+      <MemberSignature Language="C#" Value="public AIAgentInvocation (Microsoft.Agents.AI.AIAgent agent, Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository? threadRepository = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Agents.AI.AIAgent agent, class Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository threadRepository) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.AIAgentInvocation.#ctor(Microsoft.Agents.AI.AIAgent,Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (agent As AIAgent, Optional threadRepository As IAgentThreadRepository = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.AgentServer.AgentFramework.AIAgentInvocation : Microsoft.Agents.AI.AIAgent * Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository -&gt; Azure.AI.AgentServer.AgentFramework.AIAgentInvocation" Usage="new Azure.AI.AgentServer.AgentFramework.AIAgentInvocation (agent, threadRepository)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
@@ -39,9 +40,18 @@
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="agent" Type="Microsoft.Agents.AI.AIAgent" />
+        <Parameter Name="threadRepository" Type="Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="agent">The AI agent to invoke.</param>
+        <param name="threadRepository">Optional repository for managing agent threads.</param>
         <summary>
             Provides an implementation of agent invocation using the Microsoft Agents AI framework.
             </summary>
@@ -49,18 +59,28 @@
       </Docs>
     </Member>
     <Member MemberName="DoInvokeStreamAsync">
-      <MemberSignature Language="C#" Value="protected override Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator&lt;Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt; DoInvokeStreamAsync (Azure.AI.AgentServer.Responses.Invocation.AgentRunContext context, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator`1&lt;class Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt; DoInvokeStreamAsync(class Azure.AI.AgentServer.Responses.Invocation.AgentRunContext context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;(Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator&lt;Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt; Generator, Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt; PostInvoke)&gt; DoInvokeStreamAsync (Azure.AI.AgentServer.Responses.Invocation.AgentRunContext context, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;valuetype System.ValueTuple`2&lt;class Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator`1&lt;class Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt;, class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task&gt;&gt;&gt; DoInvokeStreamAsync(class Azure.AI.AgentServer.Responses.Invocation.AgentRunContext context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.AIAgentInvocation.DoInvokeStreamAsync(Azure.AI.AgentServer.Responses.Invocation.AgentRunContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function DoInvokeStreamAsync (context As AgentRunContext, cancellationToken As CancellationToken) As INestedStreamEventGenerator(Of Response)" />
-      <MemberSignature Language="F#" Value="override this.DoInvokeStreamAsync : Azure.AI.AgentServer.Responses.Invocation.AgentRunContext * System.Threading.CancellationToken -&gt; Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator&lt;Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt;" Usage="aIAgentInvocation.DoInvokeStreamAsync (context, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function DoInvokeStreamAsync (context As AgentRunContext, cancellationToken As CancellationToken) As Task(Of ValueTuple(Of INestedStreamEventGenerator(Of Response), Func(Of CancellationToken, Task)))" />
+      <MemberSignature Language="F#" Value="override this.DoInvokeStreamAsync : Azure.AI.AgentServer.Responses.Invocation.AgentRunContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;ValueTuple&lt;Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator&lt;Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt;, Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&gt;&gt;&gt;" Usage="aIAgentInvocation.DoInvokeStreamAsync (context, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator&lt;Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt;</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ValueTuple&lt;Azure.AI.AgentServer.Responses.Invocation.Stream.INestedStreamEventGenerator&lt;Azure.AI.AgentServer.Contracts.Generated.Responses.Response&gt;,System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt;&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 0, 1, 1, 1, 1 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 0, 1, 1, 1, 1 })&gt;]</AttributeName>
+          </Attribute>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Generator", "PostInvoke" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Generator", "PostInvoke" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
       </ReturnValue>
       <Parameters>
         <Parameter Name="context" Type="Azure.AI.AgentServer.Responses.Invocation.AgentRunContext" />

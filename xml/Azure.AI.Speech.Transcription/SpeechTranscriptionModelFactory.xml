@@ -1,0 +1,261 @@
+<Type Name="SpeechTranscriptionModelFactory" FullName="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory">
+  <TypeSignature Language="C#" Value="public static class SpeechTranscriptionModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SpeechTranscriptionModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class SpeechTranscriptionModelFactory" />
+  <TypeSignature Language="F#" Value="type SpeechTranscriptionModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelCombinedPhrases">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.ChannelCombinedPhrases ChannelCombinedPhrases (int? channel = default, string text = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.ChannelCombinedPhrases ChannelCombinedPhrases(valuetype System.Nullable`1&lt;int32&gt; channel, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.ChannelCombinedPhrases(System.Nullable{System.Int32},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ChannelCombinedPhrases (Optional channel As Nullable(Of Integer) = Nothing, Optional text As String = Nothing) As ChannelCombinedPhrases" />
+      <MemberSignature Language="F#" Value="static member ChannelCombinedPhrases : Nullable&lt;int&gt; * string -&gt; Azure.AI.Speech.Transcription.ChannelCombinedPhrases" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.ChannelCombinedPhrases (channel, text)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.ChannelCombinedPhrases</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channel" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channel"> The 0-based channel index. Only present if channel separation is enabled. </param>
+        <param name="text"> The complete transcribed text for the channel. </param>
+        <summary> The full transcript per channel. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.ChannelCombinedPhrases" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnhancedModeProperties">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.EnhancedModeProperties EnhancedModeProperties (bool? enabled = default, string task = default, string targetLanguage = default, System.Collections.Generic.IEnumerable&lt;string&gt; prompt = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.EnhancedModeProperties EnhancedModeProperties(valuetype System.Nullable`1&lt;bool&gt; enabled, string task, string targetLanguage, class System.Collections.Generic.IEnumerable`1&lt;string&gt; prompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.EnhancedModeProperties(System.Nullable{System.Boolean},System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnhancedModeProperties (Optional enabled As Nullable(Of Boolean) = Nothing, Optional task As String = Nothing, Optional targetLanguage As String = Nothing, Optional prompt As IEnumerable(Of String) = Nothing) As EnhancedModeProperties" />
+      <MemberSignature Language="F#" Value="static member EnhancedModeProperties : Nullable&lt;bool&gt; * string * string * seq&lt;string&gt; -&gt; Azure.AI.Speech.Transcription.EnhancedModeProperties" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.EnhancedModeProperties (enabled, task, targetLanguage, prompt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.EnhancedModeProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="task" Type="System.String" />
+        <Parameter Name="targetLanguage" Type="System.String" />
+        <Parameter Name="prompt" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="enabled"> Enable enhanced mode for transcription. This is automatically set to true when task, targetLanguage, or prompt are specified. </param>
+        <param name="task"> Task type for enhanced mode. </param>
+        <param name="targetLanguage"> Target language for enhanced mode. </param>
+        <param name="prompt"> A list of user prompts. </param>
+        <summary> Enhanced mode properties for transcription. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.EnhancedModeProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhraseListProperties">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.PhraseListProperties PhraseListProperties (System.Collections.Generic.IEnumerable&lt;string&gt; phrases = default, float? biasingWeight = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.PhraseListProperties PhraseListProperties(class System.Collections.Generic.IEnumerable`1&lt;string&gt; phrases, valuetype System.Nullable`1&lt;float32&gt; biasingWeight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.PhraseListProperties(System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PhraseListProperties (Optional phrases As IEnumerable(Of String) = Nothing, Optional biasingWeight As Nullable(Of Single) = Nothing) As PhraseListProperties" />
+      <MemberSignature Language="F#" Value="static member PhraseListProperties : seq&lt;string&gt; * Nullable&lt;single&gt; -&gt; Azure.AI.Speech.Transcription.PhraseListProperties" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.PhraseListProperties (phrases, biasingWeight)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.PhraseListProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="phrases" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="biasingWeight" Type="System.Nullable&lt;System.Single&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="phrases"> List of phrases for recognition. </param>
+        <param name="biasingWeight"> Biasing weight for phrase list (0.0-2.0). </param>
+        <summary> Phrase list properties for transcription. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.PhraseListProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranscribedPhrase">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.TranscribedPhrase TranscribedPhrase (int? channel = default, int? speaker = default, int offsetMilliseconds = 0, int durationMilliseconds = 0, string text = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Speech.Transcription.TranscribedWord&gt; words = default, string locale = default, float confidence = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.TranscribedPhrase TranscribedPhrase(valuetype System.Nullable`1&lt;int32&gt; channel, valuetype System.Nullable`1&lt;int32&gt; speaker, int32 offsetMilliseconds, int32 durationMilliseconds, string text, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Speech.Transcription.TranscribedWord&gt; words, string locale, float32 confidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscribedPhrase(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{Azure.AI.Speech.Transcription.TranscribedWord},System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranscribedPhrase (Optional channel As Nullable(Of Integer) = Nothing, Optional speaker As Nullable(Of Integer) = Nothing, Optional offsetMilliseconds As Integer = 0, Optional durationMilliseconds As Integer = 0, Optional text As String = Nothing, Optional words As IEnumerable(Of TranscribedWord) = Nothing, Optional locale As String = Nothing, Optional confidence As Single = 0) As TranscribedPhrase" />
+      <MemberSignature Language="F#" Value="static member TranscribedPhrase : Nullable&lt;int&gt; * Nullable&lt;int&gt; * int * int * string * seq&lt;Azure.AI.Speech.Transcription.TranscribedWord&gt; * string * single -&gt; Azure.AI.Speech.Transcription.TranscribedPhrase" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscribedPhrase (channel, speaker, offsetMilliseconds, durationMilliseconds, text, words, locale, confidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscribedPhrase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channel" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="speaker" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="offsetMilliseconds" Type="System.Int32" />
+        <Parameter Name="durationMilliseconds" Type="System.Int32" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="words" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Speech.Transcription.TranscribedWord&gt;" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="confidence" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="channel"> The 0-based channel index. Only present if channel separation is enabled. </param>
+        <param name="speaker"> A unique integer number that is assigned to each speaker detected in the audio without particular order. Only present if speaker diarization is enabled. </param>
+        <param name="offsetMilliseconds"> The start offset of the phrase in milliseconds. </param>
+        <param name="durationMilliseconds"> The duration of the phrase in milliseconds. </param>
+        <param name="text"> The transcribed text of the phrase. </param>
+        <param name="words"> The words that make up the phrase. Only present if word-level timestamps are enabled. </param>
+        <param name="locale"> The locale of the phrase. </param>
+        <param name="confidence"> The confidence value for the phrase. </param>
+        <summary> A transcribed phrase. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.TranscribedPhrase" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranscribedWord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.TranscribedWord TranscribedWord (string text = default, int offsetMilliseconds = 0, int durationMilliseconds = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.TranscribedWord TranscribedWord(string text, int32 offsetMilliseconds, int32 durationMilliseconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscribedWord(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranscribedWord (Optional text As String = Nothing, Optional offsetMilliseconds As Integer = 0, Optional durationMilliseconds As Integer = 0) As TranscribedWord" />
+      <MemberSignature Language="F#" Value="static member TranscribedWord : string * int * int -&gt; Azure.AI.Speech.Transcription.TranscribedWord" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscribedWord (text, offsetMilliseconds, durationMilliseconds)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscribedWord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="offsetMilliseconds" Type="System.Int32" />
+        <Parameter Name="durationMilliseconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text"> The recognized word, including punctuation. </param>
+        <param name="offsetMilliseconds"> The start offset of the word in milliseconds. </param>
+        <param name="durationMilliseconds"> The duration of the word in milliseconds. </param>
+        <summary> Time-stamped word in the display form. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.TranscribedWord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranscriptionDiarizationOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions TranscriptionDiarizationOptions (bool? enabled = default, int? maxSpeakers = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions TranscriptionDiarizationOptions(valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Nullable`1&lt;int32&gt; maxSpeakers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscriptionDiarizationOptions(System.Nullable{System.Boolean},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranscriptionDiarizationOptions (Optional enabled As Nullable(Of Boolean) = Nothing, Optional maxSpeakers As Nullable(Of Integer) = Nothing) As TranscriptionDiarizationOptions" />
+      <MemberSignature Language="F#" Value="static member TranscriptionDiarizationOptions : Nullable&lt;bool&gt; * Nullable&lt;int&gt; -&gt; Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscriptionDiarizationOptions (enabled, maxSpeakers)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="maxSpeakers" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="enabled"> Enable speaker diarization. This is automatically set to true when maxSpeakers is specified. </param>
+        <param name="maxSpeakers"> Gets or sets a hint for the maximum number of speakers for diarization. Must be greater than 1 and less than 36. </param>
+        <summary> The Speaker Diarization settings. Diarization settings must be specified to enable speaker diarization. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranscriptionOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.TranscriptionOptions TranscriptionOptions (Uri audioUri = default, System.Collections.Generic.IEnumerable&lt;string&gt; locales = default, System.Collections.Generic.IDictionary&lt;string,Uri&gt; models = default, Azure.AI.Speech.Transcription.ProfanityFilterMode? profanityFilterMode = default, Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions diarizationOptions = default, System.Collections.Generic.IEnumerable&lt;int&gt; activeChannels = default, Azure.AI.Speech.Transcription.EnhancedModeProperties enhancedMode = default, Azure.AI.Speech.Transcription.PhraseListProperties phraseList = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.TranscriptionOptions TranscriptionOptions(class System.Uri audioUri, class System.Collections.Generic.IEnumerable`1&lt;string&gt; locales, class System.Collections.Generic.IDictionary`2&lt;string, class System.Uri&gt; models, valuetype System.Nullable`1&lt;valuetype Azure.AI.Speech.Transcription.ProfanityFilterMode&gt; profanityFilterMode, class Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions diarizationOptions, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; activeChannels, class Azure.AI.Speech.Transcription.EnhancedModeProperties enhancedMode, class Azure.AI.Speech.Transcription.PhraseListProperties phraseList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscriptionOptions(System.Uri,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IDictionary{System.String,System.Uri},System.Nullable{Azure.AI.Speech.Transcription.ProfanityFilterMode},Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions,System.Collections.Generic.IEnumerable{System.Int32},Azure.AI.Speech.Transcription.EnhancedModeProperties,Azure.AI.Speech.Transcription.PhraseListProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranscriptionOptions (Optional audioUri As Uri = Nothing, Optional locales As IEnumerable(Of String) = Nothing, Optional models As IDictionary(Of String, Uri) = Nothing, Optional profanityFilterMode As Nullable(Of ProfanityFilterMode) = Nothing, Optional diarizationOptions As TranscriptionDiarizationOptions = Nothing, Optional activeChannels As IEnumerable(Of Integer) = Nothing, Optional enhancedMode As EnhancedModeProperties = Nothing, Optional phraseList As PhraseListProperties = Nothing) As TranscriptionOptions" />
+      <MemberSignature Language="F#" Value="static member TranscriptionOptions : Uri * seq&lt;string&gt; * System.Collections.Generic.IDictionary&lt;string, Uri&gt; * Nullable&lt;Azure.AI.Speech.Transcription.ProfanityFilterMode&gt; * Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions * seq&lt;int&gt; * Azure.AI.Speech.Transcription.EnhancedModeProperties * Azure.AI.Speech.Transcription.PhraseListProperties -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscriptionOptions (audioUri, locales, models, profanityFilterMode, diarizationOptions, activeChannels, enhancedMode, phraseList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioUri" Type="System.Uri" />
+        <Parameter Name="locales" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="models" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Uri&gt;" />
+        <Parameter Name="profanityFilterMode" Type="System.Nullable&lt;Azure.AI.Speech.Transcription.ProfanityFilterMode&gt;" />
+        <Parameter Name="diarizationOptions" Type="Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions" />
+        <Parameter Name="activeChannels" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="enhancedMode" Type="Azure.AI.Speech.Transcription.EnhancedModeProperties" />
+        <Parameter Name="phraseList" Type="Azure.AI.Speech.Transcription.PhraseListProperties" />
+      </Parameters>
+      <Docs>
+        <param name="audioUri"> The URL of the audio to be transcribed. The audio must be shorter than 2 hours in audio duration and smaller than 250 MB in size. If both Audio and AudioUrl are provided, Audio is used. </param>
+        <param name="locales"> A list of possible locales for the transcription. If not specified, the locale of the speech in the audio is detected automatically from all supported locales. </param>
+        <param name="models"> Maps some or all candidate locales to a model URI to be used for transcription. If no mapping is given, the default model for the locale is used. </param>
+        <param name="profanityFilterMode"> Mode of profanity filtering. </param>
+        <param name="diarizationOptions"> Mode of diarization. </param>
+        <param name="activeChannels"> The 0-based indices of the channels to be transcribed separately. If not specified, multiple channels are merged and transcribed jointly. Only up to two channels are supported. </param>
+        <param name="enhancedMode"> Enhanced mode properties. </param>
+        <param name="phraseList"> Phrase list properties. </param>
+        <summary> Metadata for a transcription request. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.TranscriptionOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranscriptionResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Speech.Transcription.TranscriptionResult TranscriptionResult (int durationMilliseconds = 0, System.Collections.Generic.IEnumerable&lt;Azure.AI.Speech.Transcription.ChannelCombinedPhrases&gt; combinedPhrases = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Speech.Transcription.TranscribedPhrase&gt; phrases = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Speech.Transcription.TranscriptionResult TranscriptionResult(int32 durationMilliseconds, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Speech.Transcription.ChannelCombinedPhrases&gt; combinedPhrases, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Speech.Transcription.TranscribedPhrase&gt; phrases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscriptionResult(System.Int32,System.Collections.Generic.IEnumerable{Azure.AI.Speech.Transcription.ChannelCombinedPhrases},System.Collections.Generic.IEnumerable{Azure.AI.Speech.Transcription.TranscribedPhrase})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TranscriptionResult (Optional durationMilliseconds As Integer = 0, Optional combinedPhrases As IEnumerable(Of ChannelCombinedPhrases) = Nothing, Optional phrases As IEnumerable(Of TranscribedPhrase) = Nothing) As TranscriptionResult" />
+      <MemberSignature Language="F#" Value="static member TranscriptionResult : int * seq&lt;Azure.AI.Speech.Transcription.ChannelCombinedPhrases&gt; * seq&lt;Azure.AI.Speech.Transcription.TranscribedPhrase&gt; -&gt; Azure.AI.Speech.Transcription.TranscriptionResult" Usage="Azure.AI.Speech.Transcription.SpeechTranscriptionModelFactory.TranscriptionResult (durationMilliseconds, combinedPhrases, phrases)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="durationMilliseconds" Type="System.Int32" />
+        <Parameter Name="combinedPhrases" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Speech.Transcription.ChannelCombinedPhrases&gt;" />
+        <Parameter Name="phrases" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Speech.Transcription.TranscribedPhrase&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="durationMilliseconds"> The duration of the audio in milliseconds. </param>
+        <param name="combinedPhrases"> The full transcript for each channel. </param>
+        <param name="phrases"> The transcription results segmented into phrases. </param>
+        <summary> The result of the transcribe operation. </summary>
+        <returns> A new <see cref="T:Azure.AI.Speech.Transcription.TranscriptionResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

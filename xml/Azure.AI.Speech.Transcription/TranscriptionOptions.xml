@@ -1,0 +1,488 @@
+<Type Name="TranscriptionOptions" FullName="Azure.AI.Speech.Transcription.TranscriptionOptions">
+  <TypeSignature Language="C#" Value="public class TranscriptionOptions : System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TranscriptionOptions extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.AI.Speech.Transcription.TranscriptionOptions&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.AI.Speech.Transcription.TranscriptionOptions&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Speech.Transcription.TranscriptionOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class TranscriptionOptions&#xA;Implements IJsonModel(Of TranscriptionOptions), IPersistableModel(Of TranscriptionOptions)" />
+  <TypeSignature Language="F#" Value="type TranscriptionOptions = class&#xA;    interface IJsonModel&lt;TranscriptionOptions&gt;&#xA;    interface IPersistableModel&lt;TranscriptionOptions&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> Metadata for a transcription request. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranscriptionOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Speech.Transcription.TranscriptionOptions" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranscriptionOptions (System.IO.Stream audioStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream audioStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (audioStream As Stream)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Speech.Transcription.TranscriptionOptions : System.IO.Stream -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions" Usage="new Azure.AI.Speech.Transcription.TranscriptionOptions audioStream" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="audioStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="audioStream"> The audio stream to be transcribed. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Speech.Transcription.TranscriptionOptions" /> with an audio stream. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranscriptionOptions (Uri audioUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri audioUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (audioUri As Uri)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Speech.Transcription.TranscriptionOptions : Uri -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions" Usage="new Azure.AI.Speech.Transcription.TranscriptionOptions audioUri" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="audioUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="audioUri"> The URL of the audio to be transcribed. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Speech.Transcription.TranscriptionOptions" /> with an audio URI. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveChannels">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;int&gt; ActiveChannels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;int32&gt; ActiveChannels" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.ActiveChannels" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveChannels As IList(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ActiveChannels : System.Collections.Generic.IList&lt;int&gt;" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.ActiveChannels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The 0-based indices of the channels to be transcribed separately. If not specified, multiple channels are merged and transcribed jointly. Only up to two channels are supported. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AudioUri">
+      <MemberSignature Language="C#" Value="public Uri AudioUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AudioUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.AudioUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.AudioUri : Uri" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.AudioUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The URL of the audio to be transcribed. The audio must be shorter than 2 hours in audio duration and smaller than 250 MB in size. If both Audio and AudioUrl are provided, Audio is used. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiarizationOptions">
+      <MemberSignature Language="C#" Value="public Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions DiarizationOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions DiarizationOptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.DiarizationOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiarizationOptions As TranscriptionDiarizationOptions" />
+      <MemberSignature Language="F#" Value="member this.DiarizationOptions : Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions with get, set" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.DiarizationOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionDiarizationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Mode of diarization. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnhancedMode">
+      <MemberSignature Language="C#" Value="public Azure.AI.Speech.Transcription.EnhancedModeProperties EnhancedMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Speech.Transcription.EnhancedModeProperties EnhancedMode" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.EnhancedMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnhancedMode As EnhancedModeProperties" />
+      <MemberSignature Language="F#" Value="member this.EnhancedMode : Azure.AI.Speech.Transcription.EnhancedModeProperties with get, set" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.EnhancedMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.EnhancedModeProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Enhanced mode properties. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.Speech.Transcription.TranscriptionOptions JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.Speech.Transcription.TranscriptionOptions JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As TranscriptionOptions" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions" Usage="transcriptionOptions.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="transcriptionOptions.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locales">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; Locales { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; Locales" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.Locales" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locales As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Locales : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.Locales" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> A list of possible locales for the transcription. If not specified, the locale of the speech in the audio is detected automatically from all supported locales. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Models">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Uri&gt; Models { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Uri&gt; Models" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.Models" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Models As IDictionary(Of String, Uri)" />
+      <MemberSignature Language="F#" Value="member this.Models : System.Collections.Generic.IDictionary&lt;string, Uri&gt;" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.Models" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Maps some or all candidate locales to a model URI to be used for transcription. If no mapping is given, the default model for the locale is used. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.AI.Speech.Transcription.TranscriptionOptions PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.Speech.Transcription.TranscriptionOptions PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As TranscriptionOptions" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions" Usage="transcriptionOptions.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="transcriptionOptions.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhraseList">
+      <MemberSignature Language="C#" Value="public Azure.AI.Speech.Transcription.PhraseListProperties PhraseList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Speech.Transcription.PhraseListProperties PhraseList" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.PhraseList" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhraseList As PhraseListProperties" />
+      <MemberSignature Language="F#" Value="member this.PhraseList : Azure.AI.Speech.Transcription.PhraseListProperties with get, set" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.PhraseList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.PhraseListProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Phrase list properties. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfanityFilterMode">
+      <MemberSignature Language="C#" Value="public Azure.AI.Speech.Transcription.ProfanityFilterMode? ProfanityFilterMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.Speech.Transcription.ProfanityFilterMode&gt; ProfanityFilterMode" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.Speech.Transcription.TranscriptionOptions.ProfanityFilterMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProfanityFilterMode As Nullable(Of ProfanityFilterMode)" />
+      <MemberSignature Language="F#" Value="member this.ProfanityFilterMode : Nullable&lt;Azure.AI.Speech.Transcription.ProfanityFilterMode&gt; with get, set" Usage="Azure.AI.Speech.Transcription.TranscriptionOptions.ProfanityFilterMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.Speech.Transcription.ProfanityFilterMode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Mode of profanity filtering. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Speech.Transcription.TranscriptionOptions IJsonModel&lt;TranscriptionOptions&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Speech.Transcription.TranscriptionOptions System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Speech#Transcription#TranscriptionOptions&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As TranscriptionOptions Implements IJsonModel(Of TranscriptionOptions).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions" Usage="transcriptionOptions.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;TranscriptionOptions&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.System#ClientModel#Primitives#IJsonModel&lt;Azure#AI#Speech#Transcription#TranscriptionOptions&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of TranscriptionOptions).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="transcriptionOptions.System.ClientModel.Primitives.IJsonModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.AI.Speech.Transcription.TranscriptionOptions IPersistableModel&lt;TranscriptionOptions&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.AI.Speech.Transcription.TranscriptionOptions System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Speech#Transcription#TranscriptionOptions&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As TranscriptionOptions Implements IPersistableModel(Of TranscriptionOptions).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.AI.Speech.Transcription.TranscriptionOptions" Usage="transcriptionOptions.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Speech.Transcription.TranscriptionOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;TranscriptionOptions&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Speech#Transcription#TranscriptionOptions&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of TranscriptionOptions).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="transcriptionOptions.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;TranscriptionOptions&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Speech.Transcription.TranscriptionOptions.System#ClientModel#Primitives#IPersistableModel&lt;Azure#AI#Speech#Transcription#TranscriptionOptions&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of TranscriptionOptions).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="transcriptionOptions.System.ClientModel.Primitives.IPersistableModel&lt;Azure.AI.Speech.Transcription.TranscriptionOptions&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Speech.Transcription</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

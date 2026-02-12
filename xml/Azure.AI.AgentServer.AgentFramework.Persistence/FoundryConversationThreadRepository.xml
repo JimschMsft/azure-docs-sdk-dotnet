@@ -1,0 +1,132 @@
+<Type Name="FoundryConversationThreadRepository" FullName="Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository">
+  <TypeSignature Language="C#" Value="public class FoundryConversationThreadRepository : Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FoundryConversationThreadRepository extends System.Object implements class Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository" />
+  <TypeSignature Language="VB.NET" Value="Public Class FoundryConversationThreadRepository&#xA;Implements IAgentThreadRepository" />
+  <TypeSignature Language="F#" Value="type FoundryConversationThreadRepository = class&#xA;    interface IAgentThreadRepository" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Thread repository that hydrates thread messages from Foundry Conversations API.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FoundryConversationThreadRepository (Uri projectEndpoint, Azure.Core.TokenCredential credential);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri projectEndpoint, class Azure.Core.TokenCredential credential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository.#ctor(System.Uri,Azure.Core.TokenCredential)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (projectEndpoint As Uri, credential As TokenCredential)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository : Uri * Azure.Core.TokenCredential -&gt; Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository" Usage="new Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository (projectEndpoint, credential)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectEndpoint" Type="System.Uri" />
+        <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
+      </Parameters>
+      <Docs>
+        <param name="projectEndpoint">The Foundry project endpoint.</param>
+        <param name="credential">The token credential used to fetch conversation items.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Agents.AI.AgentThread&gt; Get (string conversationId, Microsoft.Agents.AI.AIAgent? agent = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Agents.AI.AgentThread&gt; Get(string conversationId, class Microsoft.Agents.AI.AIAgent agent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository.Get(System.String,Microsoft.Agents.AI.AIAgent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (conversationId As String, Optional agent As AIAgent = Nothing) As Task(Of AgentThread)" />
+      <MemberSignature Language="F#" Value="abstract member Get : string * Microsoft.Agents.AI.AIAgent -&gt; System.Threading.Tasks.Task&lt;Microsoft.Agents.AI.AgentThread&gt;&#xA;override this.Get : string * Microsoft.Agents.AI.AIAgent -&gt; System.Threading.Tasks.Task&lt;Microsoft.Agents.AI.AgentThread&gt;" Usage="foundryConversationThreadRepository.Get (conversationId, agent)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository.Get(System.String,Microsoft.Agents.AI.AIAgent)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Agents.AI.AgentThread&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="agent" Type="Microsoft.Agents.AI.AIAgent">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID for the thread.</param>
+        <param name="agent">
+            Optional. Agent instance to associate with the thread.
+            If provided, this agent will be used for the thread.
+            </param>
+        <summary>
+            Gets an AgentThread instance based on the provided conversation ID.
+            </summary>
+        <returns>
+            An AgentThread instance associated with the given conversation ID.
+            It the convertsation ID does not exist, a new AgentThread is created and returned.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Set (string conversationId, Microsoft.Agents.AI.AgentThread thread);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task Set(string conversationId, class Microsoft.Agents.AI.AgentThread thread) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Persistence.FoundryConversationThreadRepository.Set(System.String,Microsoft.Agents.AI.AgentThread)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Set (conversationId As String, thread As AgentThread) As Task" />
+      <MemberSignature Language="F#" Value="abstract member Set : string * Microsoft.Agents.AI.AgentThread -&gt; System.Threading.Tasks.Task&#xA;override this.Set : string * Microsoft.Agents.AI.AgentThread -&gt; System.Threading.Tasks.Task" Usage="foundryConversationThreadRepository.Set (conversationId, thread)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Azure.AI.AgentServer.AgentFramework.Persistence.IAgentThreadRepository.Set(System.String,Microsoft.Agents.AI.AgentThread)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="thread" Type="Microsoft.Agents.AI.AgentThread" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">The conversation Id related to the AgentThread.</param>
+        <param name="thread">AgentThread instance.</param>
+        <summary>
+            Sets the AgentThread instance for the given conversation ID.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
