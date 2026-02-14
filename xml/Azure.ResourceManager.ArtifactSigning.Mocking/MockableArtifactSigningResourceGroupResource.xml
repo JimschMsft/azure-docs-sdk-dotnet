@@ -1,0 +1,122 @@
+<Type Name="MockableArtifactSigningResourceGroupResource" FullName="Azure.ResourceManager.ArtifactSigning.Mocking.MockableArtifactSigningResourceGroupResource">
+  <TypeSignature Language="C#" Value="public class MockableArtifactSigningResourceGroupResource : Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MockableArtifactSigningResourceGroupResource extends Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ArtifactSigning.Mocking.MockableArtifactSigningResourceGroupResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class MockableArtifactSigningResourceGroupResource&#xA;Inherits ArmResource" />
+  <TypeSignature Language="F#" Value="type MockableArtifactSigningResourceGroupResource = class&#xA;    inherit ArmResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ArtifactSigning</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MockableArtifactSigningResourceGroupResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArtifactSigning.Mocking.MockableArtifactSigningResourceGroupResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ArtifactSigning</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of MockableArtifactSigningResourceGroupResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactSigningAccount">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt; GetArtifactSigningAccount (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt; GetArtifactSigningAccount(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArtifactSigning.Mocking.MockableArtifactSigningResourceGroupResource.GetArtifactSigningAccount(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArtifactSigningAccount (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ArtifactSigningAccountResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetArtifactSigningAccount : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;&#xA;override this.GetArtifactSigningAccount : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;" Usage="mockableArtifactSigningResourceGroupResource.GetArtifactSigningAccount (accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ArtifactSigning</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="accountName"> Artifact Signing account name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get an artifact Signing Account.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CodeSigning/codeSigningAccounts/{accountName}. </description></item><item><term> Operation Id. </term><description> CodeSigningAccounts_Get. </description></item><item><term> Default Api Version. </term><description> 2025-10-13. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactSigningAccountAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;&gt; GetArtifactSigningAccountAsync (string accountName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;&gt; GetArtifactSigningAccountAsync(string accountName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArtifactSigning.Mocking.MockableArtifactSigningResourceGroupResource.GetArtifactSigningAccountAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArtifactSigningAccountAsync (accountName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ArtifactSigningAccountResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetArtifactSigningAccountAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;&gt;&#xA;override this.GetArtifactSigningAccountAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;&gt;" Usage="mockableArtifactSigningResourceGroupResource.GetArtifactSigningAccountAsync (accountName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ArtifactSigning</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accountName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="accountName"> Artifact Signing account name. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get an artifact Signing Account.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CodeSigning/codeSigningAccounts/{accountName}. </description></item><item><term> Operation Id. </term><description> CodeSigningAccounts_Get. </description></item><item><term> Default Api Version. </term><description> 2025-10-13. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accountName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="accountName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArtifactSigningAccounts">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountCollection GetArtifactSigningAccounts ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountCollection GetArtifactSigningAccounts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArtifactSigning.Mocking.MockableArtifactSigningResourceGroupResource.GetArtifactSigningAccounts" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArtifactSigningAccounts () As ArtifactSigningAccountCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetArtifactSigningAccounts : unit -&gt; Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountCollection&#xA;override this.GetArtifactSigningAccounts : unit -&gt; Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountCollection" Usage="mockableArtifactSigningResourceGroupResource.GetArtifactSigningAccounts " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ArtifactSigning</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArtifactSigning.ArtifactSigningAccountCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of ArtifactSigningAccounts in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of ArtifactSigningAccounts and their operations over a ArtifactSigningAccountResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

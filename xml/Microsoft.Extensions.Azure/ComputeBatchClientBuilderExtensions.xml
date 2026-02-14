@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Extension methods to add <see cref="T:Azure.Compute.Batch.BatchClient" /> to client builder. </summary>
+    <summary> Extension methods to add clients to <see cref="T:Azure.Core.Extensions.IAzureClientBuilder`2" />. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,8 +45,44 @@
       <Docs>
         <typeparam name="TBuilder">To be added.</typeparam>
         <param name="builder"> The builder to register with. </param>
-        <param name="endpoint"> Batch account endpoint (for example: https://batchaccount.eastus2.batch.azure.com). </param>
-        <summary> Registers a <see cref="T:Azure.Compute.Batch.BatchClient" /> instance. </summary>
+        <param name="endpoint" />
+        <summary> Registers a <see cref="T:Azure.Compute.Batch.BatchClient" /> client with the specified <see cref="T:Azure.Core.Extensions.IAzureClientBuilder`2" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBatchClient&lt;TBuilder&gt;">
+      <MemberSignature Language="C#" Value="public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Compute.Batch.BatchClient,Azure.Compute.Batch.BatchClientOptions&gt; AddBatchClient&lt;TBuilder&gt; (this TBuilder builder, Uri endpoint, Azure.AzureNamedKeyCredential credential) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilder;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.Extensions.IAzureClientBuilder`2&lt;class Azure.Compute.Batch.BatchClient, class Azure.Compute.Batch.BatchClientOptions&gt; AddBatchClient&lt;(class Azure.Core.Extensions.IAzureClientFactoryBuilder) TBuilder&gt;(!!TBuilder builder, class System.Uri endpoint, class Azure.AzureNamedKeyCredential credential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Azure.ComputeBatchClientBuilderExtensions.AddBatchClient``1(``0,System.Uri,Azure.AzureNamedKeyCredential)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBatchClient(Of TBuilder As IAzureClientFactoryBuilder) (builder As TBuilder, endpoint As Uri, credential As AzureNamedKeyCredential) As IAzureClientBuilder(Of BatchClient, BatchClientOptions)" />
+      <MemberSignature Language="F#" Value="static member AddBatchClient : 'Builder * Uri * Azure.AzureNamedKeyCredential -&gt; Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Compute.Batch.BatchClient, Azure.Compute.Batch.BatchClientOptions&gt; (requires 'Builder :&gt; Azure.Core.Extensions.IAzureClientFactoryBuilder)" Usage="Microsoft.Extensions.Azure.ComputeBatchClientBuilderExtensions.AddBatchClient (builder, endpoint, credential)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Compute.Batch</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Compute.Batch.BatchClient,Azure.Compute.Batch.BatchClientOptions&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBuilder">
+          <Constraints>
+            <InterfaceName>Azure.Core.Extensions.IAzureClientFactoryBuilder</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="TBuilder" RefType="this" />
+        <Parameter Name="endpoint" Type="System.Uri" />
+        <Parameter Name="credential" Type="Azure.AzureNamedKeyCredential" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBuilder">To be added.</typeparam>
+        <param name="builder"> The builder to register with. </param>
+        <param name="endpoint" />
+        <param name="credential" />
+        <summary> Registers a <see cref="T:Azure.Compute.Batch.BatchClient" /> client with the specified <see cref="T:Azure.Core.Extensions.IAzureClientBuilder`2" />. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,8 +117,8 @@
         <typeparam name="TBuilder">To be added.</typeparam>
         <typeparam name="TConfiguration">To be added.</typeparam>
         <param name="builder"> The builder to register with. </param>
-        <param name="configuration"> The configuration values. </param>
-        <summary> Registers a <see cref="T:Azure.Compute.Batch.BatchClient" /> instance. </summary>
+        <param name="configuration"> The configuration to use for the client. </param>
+        <summary> Registers a <see cref="T:Azure.Compute.Batch.BatchClient" /> client with the specified <see cref="T:Azure.Core.Extensions.IAzureClientBuilder`2" />. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
