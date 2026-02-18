@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> The CodeTransparency service client. </summary>
+    <summary> The CodeTransparencyClient. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,8 +49,8 @@
         <Parameter Name="credential" Type="Azure.AzureKeyCredential" />
       </Parameters>
       <Docs>
-        <param name="endpoint"> The <see cref="T:System.Uri" /> to use. </param>
-        <param name="credential"> A credential used to authenticate to an Azure Service. </param>
+        <param name="endpoint"> Service endpoint. </param>
+        <param name="credential"> A credential used to authenticate to the service. </param>
         <summary> Initializes a new instance of CodeTransparencyClient. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -197,21 +197,12 @@
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get receipt
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetEntry(System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetEntry and parse the result.
 <code><![CDATA[
@@ -224,6 +215,11 @@ Response response = client.GetEntry("2.131", null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntry">
@@ -246,14 +242,10 @@ Console.WriteLine(result.ToString());
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get receipt. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetEntry.
 <code><![CDATA[
@@ -263,6 +255,11 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = client.GetEntry("2.131");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntryAsync">
@@ -285,21 +282,12 @@ Response<BinaryData> response = client.GetEntry("2.131");
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get receipt
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetEntryAsync(System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetEntryAsync and parse the result.
 <code><![CDATA[
@@ -312,6 +300,11 @@ Response response = await client.GetEntryAsync("2.131", null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntryAsync">
@@ -334,14 +327,10 @@ Console.WriteLine(result.ToString());
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get receipt. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetEntryAsync.
 <code><![CDATA[
@@ -351,6 +340,11 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = await client.GetEntryAsync("2.131");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntryStatement">
@@ -373,21 +367,12 @@ Response<BinaryData> response = await client.GetEntryAsync("2.131");
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get the transparent statement consisting of the signed statement and the receipt embedded in the header
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetEntryStatement(System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetEntryStatement and parse the result.
 <code><![CDATA[
@@ -400,6 +385,11 @@ Response response = client.GetEntryStatement("2.131", null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntryStatement">
@@ -422,14 +412,10 @@ Console.WriteLine(result.ToString());
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get the transparent statement consisting of the signed statement and the receipt embedded in the header. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetEntryStatement.
 <code><![CDATA[
@@ -439,6 +425,11 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = client.GetEntryStatement("2.131");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntryStatementAsync">
@@ -461,21 +452,12 @@ Response<BinaryData> response = client.GetEntryStatement("2.131");
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get the transparent statement consisting of the signed statement and the receipt embedded in the header
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetEntryStatementAsync(System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetEntryStatementAsync and parse the result.
 <code><![CDATA[
@@ -488,6 +470,11 @@ Response response = await client.GetEntryStatementAsync("2.131", null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntryStatementAsync">
@@ -510,14 +497,10 @@ Console.WriteLine(result.ToString());
       </Parameters>
       <Docs>
         <param name="entryId"> ID of the entry to retrieve. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get the transparent statement consisting of the signed statement and the receipt embedded in the header. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entryId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetEntryStatementAsync.
 <code><![CDATA[
@@ -527,6 +510,11 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = await client.GetEntryStatementAsync("2.131");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entryId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entryId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperation">
@@ -549,21 +537,12 @@ Response<BinaryData> response = await client.GetEntryStatementAsync("2.131");
       </Parameters>
       <Docs>
         <param name="operationId"> ID of the operation to retrieve. </param>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get status of the long running registration operation, mandatory in IETF SCITT draft
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetOperation(System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="operationId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetOperation and parse the result.
 <code><![CDATA[
@@ -576,6 +555,11 @@ Response response = client.GetOperation("2.131", null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperation">
@@ -598,14 +582,10 @@ Console.WriteLine(result.ToString());
       </Parameters>
       <Docs>
         <param name="operationId"> ID of the operation to retrieve. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get status of the long running registration operation, mandatory in IETF SCITT draft. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="operationId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetOperation.
 <code><![CDATA[
@@ -615,6 +595,11 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = client.GetOperation("2.131");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperationAsync">
@@ -637,21 +622,12 @@ Response<BinaryData> response = client.GetOperation("2.131");
       </Parameters>
       <Docs>
         <param name="operationId"> ID of the operation to retrieve. </param>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get status of the long running registration operation, mandatory in IETF SCITT draft
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetOperationAsync(System.String,System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="operationId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetOperationAsync and parse the result.
 <code><![CDATA[
@@ -664,6 +640,11 @@ Response response = await client.GetOperationAsync("2.131", null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetOperationAsync">
@@ -686,14 +667,10 @@ Console.WriteLine(result.ToString());
       </Parameters>
       <Docs>
         <param name="operationId"> ID of the operation to retrieve. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get status of the long running registration operation, mandatory in IETF SCITT draft. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="operationId" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
         <example>
 This sample shows how to call GetOperationAsync.
 <code><![CDATA[
@@ -703,6 +680,11 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = await client.GetOperationAsync("2.131");
 ]]></code></example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="operationId" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationId" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetPublicKeys">
@@ -723,17 +705,12 @@ Response<BinaryData> response = await client.GetOperationAsync("2.131");
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get the public keys used by the service to sign receipts, mentioned in IETF SCITT draft as part of jwks_uri implementation
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetPublicKeys(System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetPublicKeys and parse the result.
 <code><![CDATA[
@@ -746,6 +723,7 @@ Response response = client.GetPublicKeys(null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("keys")[0].GetProperty("kty").ToString());
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetPublicKeys">
@@ -766,7 +744,7 @@ Console.WriteLine(result.GetProperty("keys")[0].GetProperty("kty").ToString());
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get the public keys used by the service to sign receipts, mentioned in IETF SCITT draft as part of jwks_uri implementation. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -779,6 +757,7 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<JwksDocument> response = client.GetPublicKeys();
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetPublicKeysAsync">
@@ -799,17 +778,12 @@ Response<JwksDocument> response = client.GetPublicKeys();
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get the public keys used by the service to sign receipts, mentioned in IETF SCITT draft as part of jwks_uri implementation
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetPublicKeysAsync(System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetPublicKeysAsync and parse the result.
 <code><![CDATA[
@@ -822,6 +796,7 @@ Response response = await client.GetPublicKeysAsync(null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("keys")[0].GetProperty("kty").ToString());
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetPublicKeysAsync">
@@ -842,7 +817,7 @@ Console.WriteLine(result.GetProperty("keys")[0].GetProperty("kty").ToString());
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get the public keys used by the service to sign receipts, mentioned in IETF SCITT draft as part of jwks_uri implementation. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -855,6 +830,7 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<JwksDocument> response = await client.GetPublicKeysAsync();
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetTransparencyConfigCbor">
@@ -875,17 +851,12 @@ Response<JwksDocument> response = await client.GetPublicKeysAsync();
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get the transparency service configuration, mandatory in IETF SCITT draft
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetTransparencyConfigCbor(System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetTransparencyConfigCbor and parse the result.
 <code><![CDATA[
@@ -898,6 +869,7 @@ Response response = client.GetTransparencyConfigCbor(null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetTransparencyConfigCbor">
@@ -918,7 +890,7 @@ Console.WriteLine(result.ToString());
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get the transparency service configuration, mandatory in IETF SCITT draft. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -931,6 +903,7 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = client.GetTransparencyConfigCbor();
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetTransparencyConfigCborAsync">
@@ -951,17 +924,12 @@ Response<BinaryData> response = client.GetTransparencyConfigCbor();
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <param name="context"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get the transparency service configuration, mandatory in IETF SCITT draft
-            <list type="bullet"><item><description>
-            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
-            </description></item><item><description>
-            Please try the simpler <see cref="M:Azure.Security.CodeTransparency.CodeTransparencyClient.GetTransparencyConfigCborAsync(System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
-            </description></item></list></summary>
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
 This sample shows how to call GetTransparencyConfigCborAsync and parse the result.
 <code><![CDATA[
@@ -974,6 +942,7 @@ Response response = await client.GetTransparencyConfigCborAsync(null);
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.ToString());
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetTransparencyConfigCborAsync">
@@ -994,7 +963,7 @@ Console.WriteLine(result.ToString());
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get the transparency service configuration, mandatory in IETF SCITT draft. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1007,6 +976,7 @@ CodeTransparencyClient client = new CodeTransparencyClient(endpoint, credential)
 
 Response<BinaryData> response = await client.GetTransparencyConfigCborAsync();
 ]]></code></example>
+        <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">
