@@ -1,0 +1,109 @@
+<Type Name="LlmInterimResponseConfig" FullName="Azure.AI.VoiceLive.LlmInterimResponseConfig">
+  <TypeSignature Language="C#" Value="public class LlmInterimResponseConfig : Azure.AI.VoiceLive.InterimResponseConfigBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LlmInterimResponseConfig extends Azure.AI.VoiceLive.InterimResponseConfigBase" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.VoiceLive.LlmInterimResponseConfig" />
+  <TypeSignature Language="VB.NET" Value="Public Class LlmInterimResponseConfig&#xA;Inherits InterimResponseConfigBase" />
+  <TypeSignature Language="F#" Value="type LlmInterimResponseConfig = class&#xA;    inherit InterimResponseConfigBase" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.AI.VoiceLive.InterimResponseConfigBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Configuration for interim responses using AI-generated content from a language model.
+            These responses provide contextually appropriate user feedback during delays in voice interactions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LlmInterimResponseConfig ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.LlmInterimResponseConfig.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instructions">
+      <MemberSignature Language="C#" Value="public string Instructions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Instructions" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.LlmInterimResponseConfig.Instructions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Instructions As String" />
+      <MemberSignature Language="F#" Value="member this.Instructions : string with get, set" Usage="Azure.AI.VoiceLive.LlmInterimResponseConfig.Instructions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the instructions that guide the language model in generating appropriate interim responses.
+            These instructions should specify the tone, style, and content constraints for the responses.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxCompletionTokens">
+      <MemberSignature Language="C#" Value="public int? MaxCompletionTokens { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxCompletionTokens" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.LlmInterimResponseConfig.MaxCompletionTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxCompletionTokens As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxCompletionTokens : Nullable&lt;int&gt; with get, set" Usage="Azure.AI.VoiceLive.LlmInterimResponseConfig.MaxCompletionTokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum number of tokens the language model can use when generating interim responses.
+            This helps control the length and cost of generated responses.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public string Model { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Model" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.LlmInterimResponseConfig.Model" />
+      <MemberSignature Language="VB.NET" Value="Public Property Model As String" />
+      <MemberSignature Language="F#" Value="member this.Model : string with get, set" Usage="Azure.AI.VoiceLive.LlmInterimResponseConfig.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the language model to use for generating interim responses.
+            For example: "gpt-4", "gpt-4-mini", etc.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

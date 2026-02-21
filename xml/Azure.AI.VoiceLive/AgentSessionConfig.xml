@@ -1,0 +1,190 @@
+<Type Name="AgentSessionConfig" FullName="Azure.AI.VoiceLive.AgentSessionConfig">
+  <TypeSignature Language="C#" Value="public class AgentSessionConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AgentSessionConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.VoiceLive.AgentSessionConfig" />
+  <TypeSignature Language="VB.NET" Value="Public Class AgentSessionConfig" />
+  <TypeSignature Language="F#" Value="type AgentSessionConfig = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Configuration for creating a session with an agent as the main AI actor.
+            When using an agent session, the agent's configuration (tools, instructions,
+            temperature, etc.) is managed in the Foundry portal, not in session code.
+            </summary>
+    <remarks>
+            This is distinct from <see cref="T:Azure.AI.VoiceLive.VoiceLiveToolDefinition" /> which represents agent tools
+            that can be added to model-centric sessions.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AgentSessionConfig (string agentName, string projectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string agentName, string projectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.AgentSessionConfig.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (agentName As String, projectName As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.VoiceLive.AgentSessionConfig : string * string -&gt; Azure.AI.VoiceLive.AgentSessionConfig" Usage="new Azure.AI.VoiceLive.AgentSessionConfig (agentName, projectName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="agentName" Type="System.String" />
+        <Parameter Name="projectName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="agentName">The name of the Foundry agent to use.</param>
+        <param name="projectName">The name of the Azure AI project which the agent belongs to.</param>
+        <summary>
+            Initializes a new instance of <see cref="T:Azure.AI.VoiceLive.AgentSessionConfig" />.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="agentName" /> or <paramref name="projectName" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="agentName" /> or <paramref name="projectName" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentName">
+      <MemberSignature Language="C#" Value="public string AgentName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AgentName" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.AgentSessionConfig.AgentName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AgentName As String" />
+      <MemberSignature Language="F#" Value="member this.AgentName : string with get, set" Usage="Azure.AI.VoiceLive.AgentSessionConfig.AgentName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the Foundry agent to use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentVersion">
+      <MemberSignature Language="C#" Value="public string? AgentVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AgentVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.AgentSessionConfig.AgentVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property AgentVersion As String" />
+      <MemberSignature Language="F#" Value="member this.AgentVersion : string with get, set" Usage="Azure.AI.VoiceLive.AgentSessionConfig.AgentVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The version of the agent to use. If not specified, the latest version will be used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationIdentityClientId">
+      <MemberSignature Language="C#" Value="public string? AuthenticationIdentityClientId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationIdentityClientId" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.AgentSessionConfig.AuthenticationIdentityClientId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthenticationIdentityClientId As String" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationIdentityClientId : string with get, set" Usage="Azure.AI.VoiceLive.AgentSessionConfig.AuthenticationIdentityClientId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The client ID of a user-assigned managed identity used for authenticating to the Foundry Agent service.
+            If not specified, the system-assigned managed identity will be used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationId">
+      <MemberSignature Language="C#" Value="public string? ConversationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConversationId" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.AgentSessionConfig.ConversationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationId As String" />
+      <MemberSignature Language="F#" Value="member this.ConversationId : string with get, set" Usage="Azure.AI.VoiceLive.AgentSessionConfig.ConversationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The conversation ID to continue. If not specified, a new conversation will be created.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoundryResourceOverride">
+      <MemberSignature Language="C#" Value="public string? FoundryResourceOverride { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FoundryResourceOverride" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.AgentSessionConfig.FoundryResourceOverride" />
+      <MemberSignature Language="VB.NET" Value="Public Property FoundryResourceOverride As String" />
+      <MemberSignature Language="F#" Value="member this.FoundryResourceOverride : string with get, set" Usage="Azure.AI.VoiceLive.AgentSessionConfig.FoundryResourceOverride" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Foundry resource name to use for cross-resource agent mode.
+            When set, the agent service endpoint will use this resource instead of the one from the connection URL.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectName">
+      <MemberSignature Language="C#" Value="public string ProjectName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProjectName" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.AgentSessionConfig.ProjectName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectName As String" />
+      <MemberSignature Language="F#" Value="member this.ProjectName : string with get, set" Usage="Azure.AI.VoiceLive.AgentSessionConfig.ProjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the Azure AI project which the agent belongs to.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

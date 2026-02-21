@@ -1,0 +1,301 @@
+<Type Name="ConfigurationExtensions" FullName="Azure.Identity.ConfigurationExtensions">
+  <TypeSignature Language="C#" Value="public static class ConfigurationExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConfigurationExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Identity.ConfigurationExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ConfigurationExtensions" />
+  <TypeSignature Language="F#" Value="type ConfigurationExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Identity</AssemblyName>
+    <AssemblyVersion>1.18.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides extension methods for <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> interface.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddAzureClient&lt;TClient,TSettings&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.Hosting.IHostApplicationBuilder AddAzureClient&lt;TClient,TSettings&gt; (this Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string sectionName) where TClient : class where TSettings : System.ClientModel.Primitives.ClientSettings, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.Hosting.IHostApplicationBuilder AddAzureClient&lt;class TClient, .ctor (class System.ClientModel.Primitives.ClientSettings) TSettings&gt;(class Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string sectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Identity.ConfigurationExtensions.AddAzureClient``2(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddAzureClient(Of TClient As Class, TSettings As Class) (host As IHostApplicationBuilder, sectionName As String) As IHostApplicationBuilder" />
+      <MemberSignature Language="F#" Value="static member AddAzureClient : Microsoft.Extensions.Hosting.IHostApplicationBuilder * string -&gt; Microsoft.Extensions.Hosting.IHostApplicationBuilder (requires 'Client : null and 'Settings :&gt; System.ClientModel.Primitives.ClientSettings and 'Settings : (new : unit -&gt; 'Settings))" Usage="Azure.Identity.ConfigurationExtensions.AddAzureClient (host, sectionName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Identity</AssemblyName>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Hosting.IHostApplicationBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TClient">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSettings">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>System.ClientModel.Primitives.ClientSettings</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="host" Type="Microsoft.Extensions.Hosting.IHostApplicationBuilder" RefType="this" />
+        <Parameter Name="sectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TClient">The type of Azure client.</typeparam>
+        <typeparam name="TSettings">The type of <see cref="T:System.ClientModel.Primitives.ClientSettings" />.</typeparam>
+        <param name="host">The <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" /> to add to.</param>
+        <param name="sectionName">The section of <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> to use.</param>
+        <summary>
+            Adds a singleton Azure client of the specified type to the <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" />'s service collection.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAzureClient&lt;TClient,TSettings&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.Hosting.IHostApplicationBuilder AddAzureClient&lt;TClient,TSettings&gt; (this Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string sectionName, Action&lt;TSettings&gt; configureSettings) where TClient : class where TSettings : System.ClientModel.Primitives.ClientSettings, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.Hosting.IHostApplicationBuilder AddAzureClient&lt;class TClient, .ctor (class System.ClientModel.Primitives.ClientSettings) TSettings&gt;(class Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string sectionName, class System.Action`1&lt;!!TSettings&gt; configureSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Identity.ConfigurationExtensions.AddAzureClient``2(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.String,System.Action{``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddAzureClient(Of TClient As Class, TSettings As Class) (host As IHostApplicationBuilder, sectionName As String, configureSettings As Action(Of TSettings)) As IHostApplicationBuilder" />
+      <MemberSignature Language="F#" Value="static member AddAzureClient : Microsoft.Extensions.Hosting.IHostApplicationBuilder * string * Action&lt;'Settings (requires 'Settings :&gt; System.ClientModel.Primitives.ClientSettings and 'Settings : (new : unit -&gt; 'Settings))&gt; -&gt; Microsoft.Extensions.Hosting.IHostApplicationBuilder (requires 'Client : null and 'Settings :&gt; System.ClientModel.Primitives.ClientSettings and 'Settings : (new : unit -&gt; 'Settings))" Usage="Azure.Identity.ConfigurationExtensions.AddAzureClient (host, sectionName, configureSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Identity</AssemblyName>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Hosting.IHostApplicationBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TClient">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSettings">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>System.ClientModel.Primitives.ClientSettings</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="host" Type="Microsoft.Extensions.Hosting.IHostApplicationBuilder" RefType="this" />
+        <Parameter Name="sectionName" Type="System.String" />
+        <Parameter Name="configureSettings" Type="System.Action&lt;TSettings&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TClient">The type of Azure client.</typeparam>
+        <typeparam name="TSettings">The type of <see cref="T:System.ClientModel.Primitives.ClientSettings" />.</typeparam>
+        <param name="host">The <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" /> to add to.</param>
+        <param name="sectionName">The section of <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> to use.</param>
+        <param name="configureSettings">Factory method to modify the <typeparamref name="TSettings" /> after they are created.</param>
+        <summary>
+            Adds a singleton Azure client of the specified type to the <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" />'s service collection.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddKeyedAzureClient&lt;TClient,TSettings&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.Hosting.IHostApplicationBuilder AddKeyedAzureClient&lt;TClient,TSettings&gt; (this Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string key, string sectionName) where TClient : class where TSettings : System.ClientModel.Primitives.ClientSettings, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.Hosting.IHostApplicationBuilder AddKeyedAzureClient&lt;class TClient, .ctor (class System.ClientModel.Primitives.ClientSettings) TSettings&gt;(class Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string key, string sectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Identity.ConfigurationExtensions.AddKeyedAzureClient``2(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddKeyedAzureClient(Of TClient As Class, TSettings As Class) (host As IHostApplicationBuilder, key As String, sectionName As String) As IHostApplicationBuilder" />
+      <MemberSignature Language="F#" Value="static member AddKeyedAzureClient : Microsoft.Extensions.Hosting.IHostApplicationBuilder * string * string -&gt; Microsoft.Extensions.Hosting.IHostApplicationBuilder (requires 'Client : null and 'Settings :&gt; System.ClientModel.Primitives.ClientSettings and 'Settings : (new : unit -&gt; 'Settings))" Usage="Azure.Identity.ConfigurationExtensions.AddKeyedAzureClient (host, key, sectionName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Identity</AssemblyName>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Hosting.IHostApplicationBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TClient">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSettings">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>System.ClientModel.Primitives.ClientSettings</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="host" Type="Microsoft.Extensions.Hosting.IHostApplicationBuilder" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="sectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TClient">The type of Azure client.</typeparam>
+        <typeparam name="TSettings">The type of <see cref="T:System.ClientModel.Primitives.ClientSettings" />.</typeparam>
+        <param name="host">The <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" /> to add to.</param>
+        <param name="key">The unique key to register as.</param>
+        <param name="sectionName">The section of <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> to use.</param>
+        <summary>
+            Adds a keyed singleton Azure client of the specified type to the <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" />'s service collection.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddKeyedAzureClient&lt;TClient,TSettings&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.Hosting.IHostApplicationBuilder AddKeyedAzureClient&lt;TClient,TSettings&gt; (this Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string key, string sectionName, Action&lt;TSettings&gt; configureSettings) where TClient : class where TSettings : System.ClientModel.Primitives.ClientSettings, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.Hosting.IHostApplicationBuilder AddKeyedAzureClient&lt;class TClient, .ctor (class System.ClientModel.Primitives.ClientSettings) TSettings&gt;(class Microsoft.Extensions.Hosting.IHostApplicationBuilder host, string key, string sectionName, class System.Action`1&lt;!!TSettings&gt; configureSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Identity.ConfigurationExtensions.AddKeyedAzureClient``2(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.String,System.String,System.Action{``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddKeyedAzureClient(Of TClient As Class, TSettings As Class) (host As IHostApplicationBuilder, key As String, sectionName As String, configureSettings As Action(Of TSettings)) As IHostApplicationBuilder" />
+      <MemberSignature Language="F#" Value="static member AddKeyedAzureClient : Microsoft.Extensions.Hosting.IHostApplicationBuilder * string * string * Action&lt;'Settings (requires 'Settings :&gt; System.ClientModel.Primitives.ClientSettings and 'Settings : (new : unit -&gt; 'Settings))&gt; -&gt; Microsoft.Extensions.Hosting.IHostApplicationBuilder (requires 'Client : null and 'Settings :&gt; System.ClientModel.Primitives.ClientSettings and 'Settings : (new : unit -&gt; 'Settings))" Usage="Azure.Identity.ConfigurationExtensions.AddKeyedAzureClient (host, key, sectionName, configureSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Identity</AssemblyName>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Hosting.IHostApplicationBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TClient">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TSettings">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>System.ClientModel.Primitives.ClientSettings</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="host" Type="Microsoft.Extensions.Hosting.IHostApplicationBuilder" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="sectionName" Type="System.String" />
+        <Parameter Name="configureSettings" Type="System.Action&lt;TSettings&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TClient">The type of Azure client.</typeparam>
+        <typeparam name="TSettings">The type of <see cref="T:System.ClientModel.Primitives.ClientSettings" />.</typeparam>
+        <param name="host">The <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" /> to add to.</param>
+        <param name="key">The unique key to register as.</param>
+        <param name="sectionName">The section of <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> to use.</param>
+        <param name="configureSettings">Factory method to modify the <typeparamref name="TSettings" /> after they are created.</param>
+        <summary>
+            Adds a keyed singleton Azure client of the specified type to the <see cref="T:Microsoft.Extensions.Hosting.IHostApplicationBuilder" />'s service collection.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAzureClientSettings&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetAzureClientSettings&lt;T&gt; (this Microsoft.Extensions.Configuration.IConfiguration configuration, string sectionName) where T : System.ClientModel.Primitives.ClientSettings, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetAzureClientSettings&lt;.ctor (class System.ClientModel.Primitives.ClientSettings) T&gt;(class Microsoft.Extensions.Configuration.IConfiguration configuration, string sectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Identity.ConfigurationExtensions.GetAzureClientSettings``1(Microsoft.Extensions.Configuration.IConfiguration,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAzureClientSettings(Of T As {ClientSettingsNew}) (configuration As IConfiguration, sectionName As String) As T" />
+      <MemberSignature Language="F#" Value="static member GetAzureClientSettings : Microsoft.Extensions.Configuration.IConfiguration * string -&gt; 'T (requires 'T :&gt; System.ClientModel.Primitives.ClientSettings and 'T : (new : unit -&gt; 'T))" Usage="Azure.Identity.ConfigurationExtensions.GetAzureClientSettings (configuration, sectionName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Identity</AssemblyName>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>System.ClientModel.Primitives.ClientSettings</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" RefType="this" />
+        <Parameter Name="sectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of <see cref="T:System.ClientModel.Primitives.ClientSettings" /> to create.</typeparam>
+        <param name="configuration">The <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> to bind the properties of <typeparamref name="T" /> from.</param>
+        <param name="sectionName">The section of <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> to bind from.</param>
+        <summary>
+            Creates an instance of <typeparamref name="T" /> and sets its properties from the specified <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithAzureCredential">
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.Hosting.IHostApplicationBuilder WithAzureCredential (this System.ClientModel.Primitives.IClientBuilder clientBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.Hosting.IHostApplicationBuilder WithAzureCredential(class System.ClientModel.Primitives.IClientBuilder clientBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Identity.ConfigurationExtensions.WithAzureCredential(System.ClientModel.Primitives.IClientBuilder)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithAzureCredential (clientBuilder As IClientBuilder) As IHostApplicationBuilder" />
+      <MemberSignature Language="F#" Value="static member WithAzureCredential : System.ClientModel.Primitives.IClientBuilder -&gt; Microsoft.Extensions.Hosting.IHostApplicationBuilder" Usage="Azure.Identity.ConfigurationExtensions.WithAzureCredential clientBuilder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Identity</AssemblyName>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Hosting.IHostApplicationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientBuilder" Type="System.ClientModel.Primitives.IClientBuilder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="clientBuilder">The <see cref="T:System.ClientModel.Primitives.IClientBuilder" /> to add the credential to.</param>
+        <summary>
+            Registers a credential factory to return a <see cref="T:Azure.Core.TokenCredential" /> to use for the current <see cref="T:System.ClientModel.Primitives.IClientBuilder" />.
+            If the same credential configuration has already been registered, the existing credential instance is reused.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithAzureCredential&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T WithAzureCredential&lt;T&gt; (this T settings) where T : System.ClientModel.Primitives.ClientSettings;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T WithAzureCredential&lt;(class System.ClientModel.Primitives.ClientSettings) T&gt;(!!T settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Identity.ConfigurationExtensions.WithAzureCredential``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WithAzureCredential(Of T As ClientSettings) (settings As T) As T" />
+      <MemberSignature Language="F#" Value="static member WithAzureCredential : 'T -&gt; 'T (requires 'T :&gt; System.ClientModel.Primitives.ClientSettings)" Usage="Azure.Identity.ConfigurationExtensions.WithAzureCredential settings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Identity</AssemblyName>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.ClientModel.Primitives.ClientSettings</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="settings" Type="T" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of <see cref="T:System.ClientModel.Primitives.ClientSettings" />.</typeparam>
+        <param name="settings">The <see cref="T:System.ClientModel.Primitives.ClientSettings" /> instance.</param>
+        <summary>
+            Sets the <see cref="P:System.ClientModel.Primitives.ClientSettings.CredentialProvider" /> to an instance of <see cref="T:Azure.Core.TokenCredential" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

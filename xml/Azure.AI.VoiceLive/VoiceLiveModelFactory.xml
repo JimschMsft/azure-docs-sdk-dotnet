@@ -189,17 +189,25 @@
       </Docs>
     </Member>
     <Member MemberName="AvatarConfiguration">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AvatarConfiguration AvatarConfiguration (System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.IceServer&gt; iceServers = default, string character = default, string style = default, bool customized = false, Azure.AI.VoiceLive.VideoParams video = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AvatarConfiguration AvatarConfiguration (System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.IceServer&gt; iceServers = default, string character = default, string style = default, bool customized = false, Azure.AI.VoiceLive.VideoParams video = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AvatarConfiguration AvatarConfiguration(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.IceServer&gt; iceServers, string character, string style, bool customized, class Azure.AI.VoiceLive.VideoParams video) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AvatarConfiguration(System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.IceServer},System.String,System.String,System.Boolean,Azure.AI.VoiceLive.VideoParams)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AvatarConfiguration (Optional iceServers As IEnumerable(Of IceServer) = Nothing, Optional character As String = Nothing, Optional style As String = Nothing, Optional customized As Boolean = false, Optional video As VideoParams = Nothing) As AvatarConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AvatarConfiguration (Optional iceServers As IEnumerable(Of IceServer) = Nothing, Optional character As String = Nothing, Optional style As String = Nothing, Optional customized As Boolean = false, Optional video As VideoParams = Nothing) As AvatarConfiguration" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member AvatarConfiguration : seq&lt;Azure.AI.VoiceLive.IceServer&gt; * string * string * bool * Azure.AI.VoiceLive.VideoParams -&gt; Azure.AI.VoiceLive.AvatarConfiguration" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AvatarConfiguration (iceServers, character, style, customized, video)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AvatarConfiguration AvatarConfiguration (System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.IceServer&gt; iceServers, string character, string style, bool customized, Azure.AI.VoiceLive.VideoParams video);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AvatarConfiguration (iceServers As IEnumerable(Of IceServer), character As String, style As String, customized As Boolean, video As VideoParams) As AvatarConfiguration" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.AvatarConfiguration</ReturnType>
       </ReturnValue>
@@ -216,6 +224,44 @@
         <param name="style"> Optional avatar style, such as emotional tone or speaking style. </param>
         <param name="customized"> Indicates whether the avatar is customized or not. </param>
         <param name="video"> Optional video configuration including resolution, bitrate, and codec. </param>
+        <summary> Configuration for avatar streaming and behavior during the session. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AvatarConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AvatarConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AvatarConfiguration AvatarConfiguration (Azure.AI.VoiceLive.AvatarConfigTypes? type = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.IceServer&gt; iceServers = default, string character = default, string style = default, Azure.AI.VoiceLive.PhotoAvatarBaseModes? model = default, bool customized = false, Azure.AI.VoiceLive.VideoParams video = default, Azure.AI.VoiceLive.AvatarOutputProtocol? outputProtocol = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AvatarConfiguration AvatarConfiguration(valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.AvatarConfigTypes&gt; type, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.IceServer&gt; iceServers, string character, string style, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.PhotoAvatarBaseModes&gt; model, bool customized, class Azure.AI.VoiceLive.VideoParams video, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.AvatarOutputProtocol&gt; outputProtocol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AvatarConfiguration(System.Nullable{Azure.AI.VoiceLive.AvatarConfigTypes},System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.IceServer},System.String,System.String,System.Nullable{Azure.AI.VoiceLive.PhotoAvatarBaseModes},System.Boolean,Azure.AI.VoiceLive.VideoParams,System.Nullable{Azure.AI.VoiceLive.AvatarOutputProtocol})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AvatarConfiguration (Optional type As Nullable(Of AvatarConfigTypes) = Nothing, Optional iceServers As IEnumerable(Of IceServer) = Nothing, Optional character As String = Nothing, Optional style As String = Nothing, Optional model As Nullable(Of PhotoAvatarBaseModes) = Nothing, Optional customized As Boolean = false, Optional video As VideoParams = Nothing, Optional outputProtocol As Nullable(Of AvatarOutputProtocol) = Nothing) As AvatarConfiguration" />
+      <MemberSignature Language="F#" Value="static member AvatarConfiguration : Nullable&lt;Azure.AI.VoiceLive.AvatarConfigTypes&gt; * seq&lt;Azure.AI.VoiceLive.IceServer&gt; * string * string * Nullable&lt;Azure.AI.VoiceLive.PhotoAvatarBaseModes&gt; * bool * Azure.AI.VoiceLive.VideoParams * Nullable&lt;Azure.AI.VoiceLive.AvatarOutputProtocol&gt; -&gt; Azure.AI.VoiceLive.AvatarConfiguration" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AvatarConfiguration (type, iceServers, character, style, model, customized, video, outputProtocol)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.AvatarConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.AI.VoiceLive.AvatarConfigTypes&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="iceServers" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.IceServer&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="character" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="style" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="model" Type="System.Nullable&lt;Azure.AI.VoiceLive.PhotoAvatarBaseModes&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="customized" Type="System.Boolean" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="video" Type="Azure.AI.VoiceLive.VideoParams" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputProtocol" Type="System.Nullable&lt;Azure.AI.VoiceLive.AvatarOutputProtocol&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="type"> Type of avatar to use. </param>
+        <param name="iceServers"> Optional list of ICE servers to use for WebRTC connection establishment. </param>
+        <param name="character"> The character name or ID used for the avatar. </param>
+        <param name="style"> Optional avatar style, such as emotional tone or speaking style. </param>
+        <param name="model"> Base model to use for the avatar. Required for photo avatar. </param>
+        <param name="customized"> Indicates whether the avatar is customized or not. </param>
+        <param name="video"> Optional video configuration including resolution, bitrate, and codec. </param>
+        <param name="outputProtocol"> Output protocol for avatar streaming. Default is 'webrtc'. </param>
         <summary> Configuration for avatar streaming and behavior during the session. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.AvatarConfiguration" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -265,17 +311,25 @@
       </Docs>
     </Member>
     <Member MemberName="AzurePersonalVoice">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice (string name = default, float? temperature = default, Azure.AI.VoiceLive.PersonalVoiceModels model = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice (string name = default, float? temperature = default, Azure.AI.VoiceLive.PersonalVoiceModels model = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice(string name, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype Azure.AI.VoiceLive.PersonalVoiceModels model) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice(System.String,System.Nullable{System.Single},Azure.AI.VoiceLive.PersonalVoiceModels)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzurePersonalVoice (Optional name As String = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional model As PersonalVoiceModels = Nothing) As AzurePersonalVoice" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzurePersonalVoice (Optional name As String = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional model As PersonalVoiceModels = Nothing) As AzurePersonalVoice" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member AzurePersonalVoice : string * Nullable&lt;single&gt; * Azure.AI.VoiceLive.PersonalVoiceModels -&gt; Azure.AI.VoiceLive.AzurePersonalVoice" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice (name, temperature, model)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice (string name, float? temperature, Azure.AI.VoiceLive.PersonalVoiceModels model);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzurePersonalVoice (name As String, temperature As Nullable(Of Single), model As PersonalVoiceModels) As AzurePersonalVoice" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.AzurePersonalVoice</ReturnType>
       </ReturnValue>
@@ -288,6 +342,48 @@
         <param name="name"> Voice name cannot be empty. </param>
         <param name="temperature"> Temperature must be between 0.0 and 1.0. </param>
         <param name="model"> Underlying neural model to use for personal voice. </param>
+        <summary> Azure personal voice configuration. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.AzurePersonalVoice" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzurePersonalVoice">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice (string name = default, float? temperature = default, Azure.AI.VoiceLive.PersonalVoiceModels model = default, string customLexiconUrl = default, System.Collections.Generic.IEnumerable&lt;string&gt; preferLocales = default, string locale = default, string style = default, string pitch = default, string rate = default, string volume = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.AzurePersonalVoice AzurePersonalVoice(string name, valuetype System.Nullable`1&lt;float32&gt; temperature, valuetype Azure.AI.VoiceLive.PersonalVoiceModels model, string customLexiconUrl, class System.Collections.Generic.IEnumerable`1&lt;string&gt; preferLocales, string locale, string style, string pitch, string rate, string volume) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice(System.String,System.Nullable{System.Single},Azure.AI.VoiceLive.PersonalVoiceModels,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzurePersonalVoice (Optional name As String = Nothing, Optional temperature As Nullable(Of Single) = Nothing, Optional model As PersonalVoiceModels = Nothing, Optional customLexiconUrl As String = Nothing, Optional preferLocales As IEnumerable(Of String) = Nothing, Optional locale As String = Nothing, Optional style As String = Nothing, Optional pitch As String = Nothing, Optional rate As String = Nothing, Optional volume As String = Nothing) As AzurePersonalVoice" />
+      <MemberSignature Language="F#" Value="static member AzurePersonalVoice : string * Nullable&lt;single&gt; * Azure.AI.VoiceLive.PersonalVoiceModels * string * seq&lt;string&gt; * string * string * string * string * string -&gt; Azure.AI.VoiceLive.AzurePersonalVoice" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.AzurePersonalVoice (name, temperature, model, customLexiconUrl, preferLocales, locale, style, pitch, rate, volume)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.AzurePersonalVoice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="temperature" Type="System.Nullable&lt;System.Single&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="model" Type="Azure.AI.VoiceLive.PersonalVoiceModels" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="customLexiconUrl" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="preferLocales" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="locale" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="style" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="pitch" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="rate" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="volume" Type="System.String" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Voice name cannot be empty. </param>
+        <param name="temperature"> Temperature must be between 0.0 and 1.0. </param>
+        <param name="model"> Underlying neural model to use for personal voice. </param>
+        <param name="customLexiconUrl" />
+        <param name="preferLocales" />
+        <param name="locale" />
+        <param name="style" />
+        <param name="pitch" />
+        <param name="rate" />
+        <param name="volume" />
         <summary> Azure personal voice configuration. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.AzurePersonalVoice" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -571,17 +667,25 @@
       </Docs>
     </Member>
     <Member MemberName="CachedTokenDetails">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.CachedTokenDetails CachedTokenDetails (int textTokens = 0, int audioTokens = 0);" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.CachedTokenDetails CachedTokenDetails (int textTokens = 0, int audioTokens = 0);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.CachedTokenDetails CachedTokenDetails(int32 textTokens, int32 audioTokens) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.CachedTokenDetails(System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CachedTokenDetails (Optional textTokens As Integer = 0, Optional audioTokens As Integer = 0) As CachedTokenDetails" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CachedTokenDetails (Optional textTokens As Integer = 0, Optional audioTokens As Integer = 0) As CachedTokenDetails" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member CachedTokenDetails : int * int -&gt; Azure.AI.VoiceLive.CachedTokenDetails" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.CachedTokenDetails (textTokens, audioTokens)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.CachedTokenDetails CachedTokenDetails (int textTokens, int audioTokens);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CachedTokenDetails (textTokens As Integer, audioTokens As Integer) As CachedTokenDetails" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.CachedTokenDetails</ReturnType>
       </ReturnValue>
@@ -592,6 +696,34 @@
       <Docs>
         <param name="textTokens"> Number of cached text tokens. </param>
         <param name="audioTokens"> Number of cached audio tokens. </param>
+        <summary> Details of output token usage. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.CachedTokenDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CachedTokenDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.CachedTokenDetails CachedTokenDetails (int textTokens = 0, int audioTokens = 0, int imageTokens = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.CachedTokenDetails CachedTokenDetails(int32 textTokens, int32 audioTokens, int32 imageTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.CachedTokenDetails(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CachedTokenDetails (Optional textTokens As Integer = 0, Optional audioTokens As Integer = 0, Optional imageTokens As Integer = 0) As CachedTokenDetails" />
+      <MemberSignature Language="F#" Value="static member CachedTokenDetails : int * int * int -&gt; Azure.AI.VoiceLive.CachedTokenDetails" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.CachedTokenDetails (textTokens, audioTokens, imageTokens)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.CachedTokenDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textTokens" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="audioTokens" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="imageTokens" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="textTokens"> Number of cached text tokens. </param>
+        <param name="audioTokens"> Number of cached audio tokens. </param>
+        <param name="imageTokens"> Number of cached image tokens. </param>
         <summary> Details of output token usage. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.CachedTokenDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -801,17 +933,25 @@
       </Docs>
     </Member>
     <Member MemberName="InputTokenDetails">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.InputTokenDetails InputTokenDetails (int cachedTokens = 0, int textTokens = 0, int audioTokens = 0, Azure.AI.VoiceLive.CachedTokenDetails cachedTokensDetails = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.InputTokenDetails InputTokenDetails (int cachedTokens = 0, int textTokens = 0, int audioTokens = 0, Azure.AI.VoiceLive.CachedTokenDetails cachedTokensDetails = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.InputTokenDetails InputTokenDetails(int32 cachedTokens, int32 textTokens, int32 audioTokens, class Azure.AI.VoiceLive.CachedTokenDetails cachedTokensDetails) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.InputTokenDetails(System.Int32,System.Int32,System.Int32,Azure.AI.VoiceLive.CachedTokenDetails)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function InputTokenDetails (Optional cachedTokens As Integer = 0, Optional textTokens As Integer = 0, Optional audioTokens As Integer = 0, Optional cachedTokensDetails As CachedTokenDetails = Nothing) As InputTokenDetails" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InputTokenDetails (Optional cachedTokens As Integer = 0, Optional textTokens As Integer = 0, Optional audioTokens As Integer = 0, Optional cachedTokensDetails As CachedTokenDetails = Nothing) As InputTokenDetails" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member InputTokenDetails : int * int * int * Azure.AI.VoiceLive.CachedTokenDetails -&gt; Azure.AI.VoiceLive.InputTokenDetails" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.InputTokenDetails (cachedTokens, textTokens, audioTokens, cachedTokensDetails)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.InputTokenDetails InputTokenDetails (int cachedTokens, int textTokens, int audioTokens, Azure.AI.VoiceLive.CachedTokenDetails cachedTokensDetails);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InputTokenDetails (cachedTokens As Integer, textTokens As Integer, audioTokens As Integer, cachedTokensDetails As CachedTokenDetails) As InputTokenDetails" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.AI.VoiceLive.InputTokenDetails</ReturnType>
       </ReturnValue>
@@ -825,6 +965,38 @@
         <param name="cachedTokens"> Number of cached tokens used in the input. </param>
         <param name="textTokens"> Number of text tokens used in the input. </param>
         <param name="audioTokens"> Number of audio tokens used in the input. </param>
+        <param name="cachedTokensDetails"> Details of cached token usage. </param>
+        <summary> Details of input token usage. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.InputTokenDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputTokenDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.InputTokenDetails InputTokenDetails (int cachedTokens = 0, int textTokens = 0, int audioTokens = 0, int imageTokens = 0, Azure.AI.VoiceLive.CachedTokenDetails cachedTokensDetails = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.InputTokenDetails InputTokenDetails(int32 cachedTokens, int32 textTokens, int32 audioTokens, int32 imageTokens, class Azure.AI.VoiceLive.CachedTokenDetails cachedTokensDetails) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.InputTokenDetails(System.Int32,System.Int32,System.Int32,System.Int32,Azure.AI.VoiceLive.CachedTokenDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InputTokenDetails (Optional cachedTokens As Integer = 0, Optional textTokens As Integer = 0, Optional audioTokens As Integer = 0, Optional imageTokens As Integer = 0, Optional cachedTokensDetails As CachedTokenDetails = Nothing) As InputTokenDetails" />
+      <MemberSignature Language="F#" Value="static member InputTokenDetails : int * int * int * int * Azure.AI.VoiceLive.CachedTokenDetails -&gt; Azure.AI.VoiceLive.InputTokenDetails" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.InputTokenDetails (cachedTokens, textTokens, audioTokens, imageTokens, cachedTokensDetails)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.InputTokenDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cachedTokens" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="textTokens" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="audioTokens" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="imageTokens" Type="System.Int32" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cachedTokensDetails" Type="Azure.AI.VoiceLive.CachedTokenDetails" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="cachedTokens"> Number of cached tokens used in the input. </param>
+        <param name="textTokens"> Number of text tokens used in the input. </param>
+        <param name="audioTokens"> Number of audio tokens used in the input. </param>
+        <param name="imageTokens"> Number of image tokens used in the input. </param>
         <param name="cachedTokensDetails"> Details of cached token usage. </param>
         <summary> Details of input token usage. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.InputTokenDetails" /> instance for mocking. </returns>
@@ -938,7 +1110,6 @@
         <param name="name"> The name of the OpenAI voice. </param>
         <summary>
             OpenAI voice configuration with explicit type field.
-            
             This provides a unified interface for OpenAI voices, complementing the
             existing string-based OAIVoice for backward compatibility.
             </summary>
@@ -1060,6 +1231,32 @@
         <param name="transcript" />
         <summary> An audio content part for a request. </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.RequestAudioContentPart" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestImageContentPart">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.RequestImageContentPart RequestImageContentPart (string url = default, Azure.AI.VoiceLive.RequestImageContentPartDetail? detail = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.RequestImageContentPart RequestImageContentPart(string url, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.RequestImageContentPartDetail&gt; detail) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.RequestImageContentPart(System.String,System.Nullable{Azure.AI.VoiceLive.RequestImageContentPartDetail})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RequestImageContentPart (Optional url As String = Nothing, Optional detail As Nullable(Of RequestImageContentPartDetail) = Nothing) As RequestImageContentPart" />
+      <MemberSignature Language="F#" Value="static member RequestImageContentPart : string * Nullable&lt;Azure.AI.VoiceLive.RequestImageContentPartDetail&gt; -&gt; Azure.AI.VoiceLive.RequestImageContentPart" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.RequestImageContentPart (url, detail)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.RequestImageContentPart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="detail" Type="System.Nullable&lt;Azure.AI.VoiceLive.RequestImageContentPartDetail&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="url" />
+        <param name="detail" />
+        <summary> Input image content part. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.RequestImageContentPart" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1411,7 +1608,6 @@
         <param name="object"> The object type, must be `realtime.response`. </param>
         <param name="status">
             The final status of the response.
-            
             One of: `completed`, `cancelled`, `failed`, `incomplete`, or `in_progress`.
             </param>
         <param name="statusDetails"> Additional details about the status. </param>
@@ -1474,9 +1670,141 @@
         <param name="object" />
         <summary>
             Base for any response item; discriminated by `type`.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.SessionResponseMessageItem" />, <see cref="T:Azure.AI.VoiceLive.ResponseFunctionCallItem" />, and <see cref="T:Azure.AI.VoiceLive.ResponseFunctionCallOutputItem" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.SessionResponseMessageItem" />, <see cref="T:Azure.AI.VoiceLive.ResponseFunctionCallItem" />, <see cref="T:Azure.AI.VoiceLive.ResponseFunctionCallOutputItem" />, <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpListToolItem" />, <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpCallItem" />, <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpApprovalRequestItem" />, and <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpApprovalResponseItem" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionResponseItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionResponseMcpApprovalRequestItem">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionResponseMcpApprovalRequestItem SessionResponseMcpApprovalRequestItem (string id = default, string object = default, string arguments = default, string name = default, string serverLabel = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionResponseMcpApprovalRequestItem SessionResponseMcpApprovalRequestItem(string id, string object, string arguments, string name, string serverLabel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpApprovalRequestItem(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionResponseMcpApprovalRequestItem (Optional id As String = Nothing, Optional object As String = Nothing, Optional arguments As String = Nothing, Optional name As String = Nothing, Optional serverLabel As String = Nothing) As SessionResponseMcpApprovalRequestItem" />
+      <MemberSignature Language="F#" Value="static member SessionResponseMcpApprovalRequestItem : string * string * string * string * string -&gt; Azure.AI.VoiceLive.SessionResponseMcpApprovalRequestItem" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpApprovalRequestItem (id, object, arguments, name, serverLabel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponseMcpApprovalRequestItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="object" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="arguments" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="serverLabel" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id" />
+        <param name="object" />
+        <param name="arguments"> The arguments for the tool call. </param>
+        <param name="name"> The name of the tool to call. </param>
+        <param name="serverLabel"> The label of the server that provides the tool. </param>
+        <summary> A response item that represents a request for approval to call an MCP tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpApprovalRequestItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionResponseMcpApprovalResponseItem">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionResponseMcpApprovalResponseItem SessionResponseMcpApprovalResponseItem (string id = default, string object = default, string approvalRequestId = default, bool approve = false, string reason = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionResponseMcpApprovalResponseItem SessionResponseMcpApprovalResponseItem(string id, string object, string approvalRequestId, bool approve, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpApprovalResponseItem(System.String,System.String,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionResponseMcpApprovalResponseItem (Optional id As String = Nothing, Optional object As String = Nothing, Optional approvalRequestId As String = Nothing, Optional approve As Boolean = false, Optional reason As String = Nothing) As SessionResponseMcpApprovalResponseItem" />
+      <MemberSignature Language="F#" Value="static member SessionResponseMcpApprovalResponseItem : string * string * string * bool * string -&gt; Azure.AI.VoiceLive.SessionResponseMcpApprovalResponseItem" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpApprovalResponseItem (id, object, approvalRequestId, approve, reason)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponseMcpApprovalResponseItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="object" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="approvalRequestId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="approve" Type="System.Boolean" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="reason" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id" />
+        <param name="object" />
+        <param name="approvalRequestId"> The ID of the approval request. </param>
+        <param name="approve"> Whether the tool call was approved. </param>
+        <param name="reason"> The reason for the approval decision. </param>
+        <summary> A response item that represents a response to an MCP approval request. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpApprovalResponseItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionResponseMcpCallItem">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionResponseMcpCallItem SessionResponseMcpCallItem (string id = default, string object = default, string approvalRequestId = default, string arguments = default, string serverLabel = default, string name = default, string output = default, BinaryData error = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionResponseMcpCallItem SessionResponseMcpCallItem(string id, string object, string approvalRequestId, string arguments, string serverLabel, string name, string output, class System.BinaryData error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpCallItem(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionResponseMcpCallItem (Optional id As String = Nothing, Optional object As String = Nothing, Optional approvalRequestId As String = Nothing, Optional arguments As String = Nothing, Optional serverLabel As String = Nothing, Optional name As String = Nothing, Optional output As String = Nothing, Optional error As BinaryData = Nothing) As SessionResponseMcpCallItem" />
+      <MemberSignature Language="F#" Value="static member SessionResponseMcpCallItem : string * string * string * string * string * string * string * BinaryData -&gt; Azure.AI.VoiceLive.SessionResponseMcpCallItem" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpCallItem (id, object, approvalRequestId, arguments, serverLabel, name, output, error)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponseMcpCallItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="object" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="approvalRequestId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="arguments" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="serverLabel" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="output" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="error" Type="System.BinaryData" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id" />
+        <param name="object" />
+        <param name="approvalRequestId"> The ID of the approval request, if any. </param>
+        <param name="arguments"> The arguments for the tool call. </param>
+        <param name="serverLabel"> The label of the server that provides the tool. </param>
+        <param name="name"> The name of the tool to call. </param>
+        <param name="output"> The output of the tool call. </param>
+        <param name="error"> The error, if any, from the tool call. </param>
+        <summary> A response item that represents a call to an MCP tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpCallItem" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionResponseMcpListToolItem">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionResponseMcpListToolItem SessionResponseMcpListToolItem (string id = default, string object = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveMcpTool&gt; tools = default, string serverLabel = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionResponseMcpListToolItem SessionResponseMcpListToolItem(string id, string object, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.VoiceLiveMcpTool&gt; tools, string serverLabel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpListToolItem(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.AI.VoiceLive.VoiceLiveMcpTool},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionResponseMcpListToolItem (Optional id As String = Nothing, Optional object As String = Nothing, Optional tools As IEnumerable(Of VoiceLiveMcpTool) = Nothing, Optional serverLabel As String = Nothing) As SessionResponseMcpListToolItem" />
+      <MemberSignature Language="F#" Value="static member SessionResponseMcpListToolItem : string * string * seq&lt;Azure.AI.VoiceLive.VoiceLiveMcpTool&gt; * string -&gt; Azure.AI.VoiceLive.SessionResponseMcpListToolItem" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionResponseMcpListToolItem (id, object, tools, serverLabel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionResponseMcpListToolItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="object" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tools" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveMcpTool&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="serverLabel" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id" />
+        <param name="object" />
+        <param name="tools"> The tools available on the server. </param>
+        <param name="serverLabel"> The label of the server that provides the tools. </param>
+        <summary> A response item that lists the tools available on an MCP server. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionResponseMcpListToolItem" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1537,7 +1865,7 @@
         <param name="eventId" />
         <summary>
             A voicelive server event.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.SessionUpdateError" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateSessionCreated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateSessionUpdated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateAvatarConnecting" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferCommitted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferCleared" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferSpeechStarted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferSpeechStopped" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemCreated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemInputAudioTranscriptionCompleted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemInputAudioTranscriptionFailed" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemTruncated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseCreated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseOutputItemAdded" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseOutputItemDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseContentPartAdded" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseContentPartDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseTextDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseTextDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTranscriptDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTranscriptDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationBlendshapeDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationBlendshapeDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTimestampDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTimestampDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationVisemeDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationVisemeDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemInputAudioTranscriptionDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemRetrieved" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseFunctionCallArgumentsDelta" />, and <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseFunctionCallArgumentsDone" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.SessionUpdateError" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateSessionCreated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateSessionUpdated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateAvatarConnecting" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferCommitted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferCleared" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferSpeechStarted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferSpeechStopped" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemCreated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemInputAudioTranscriptionCompleted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemInputAudioTranscriptionFailed" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemTruncated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseCreated" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseOutputItemAdded" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseOutputItemDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseContentPartAdded" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseContentPartDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseTextDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseTextDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTranscriptDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTranscriptDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationBlendshapeDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationBlendshapeDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTimestampDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAudioTimestampDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationVisemeDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseAnimationVisemeDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemInputAudioTranscriptionDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemRetrieved" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseFunctionCallArgumentsDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseFunctionCallArgumentsDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateMcpListToolsInProgress" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateMcpListToolsCompleted" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateMcpListToolsFailed" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDelta" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDone" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallInProgress" />, <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallCompleted" />, and <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallFailed" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdate" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -1599,13 +1927,13 @@
         <param name="item" />
         <summary>
             Returned when a conversation item is created. There are several scenarios that produce this event:
-            - The server is generating a Response, which if successful will produce
+            <list type="bullet"><item><description>The server is generating a Response, which if successful will produce</description></item></list>
             either one or two Items, which will be of type `message`
             (role `assistant`) or type `function_call`.
-            - The input audio buffer has been committed, either by the client or the
+            <list type="bullet"><item><description>The input audio buffer has been committed, either by the client or the</description></item></list>
             server (in `server_vad` mode). The server will take the content of the
             input audio buffer and add it to a new user message Item.
-            - The client has sent a `conversation.item.create` event to add a new Item
+            <list type="bullet"><item><description>The client has sent a `conversation.item.create` event to add a new Item</description></item></list>
             to the Conversation.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemCreated" /> instance for mocking. </returns>
@@ -1613,11 +1941,15 @@
       </Docs>
     </Member>
     <Member MemberName="SessionUpdateConversationItemDeleted">
-      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted SessionUpdateConversationItemDeleted (string itemId = default, string eventId = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted SessionUpdateConversationItemDeleted(string itemId, string eventId) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted SessionUpdateConversationItemDeleted (string itemId = default, string eventId = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted SessionUpdateConversationItemDeleted(string itemId, string eventId) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemDeleted(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateConversationItemDeleted (Optional itemId As String = Nothing, Optional eventId As String = Nothing) As SessionUpdateConversationItemDeleted" />
-      <MemberSignature Language="F#" Value="static member SessionUpdateConversationItemDeleted : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemDeleted (itemId, eventId)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateConversationItemDeleted (Optional itemId As String = Nothing, Optional eventId As String = Nothing) As SessionUpdateConversationItemDeleted" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateConversationItemDeleted : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemDeleted (itemId, eventId)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted SessionUpdateConversationItemDeleted (string eventId = default, string itemId = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted SessionUpdateConversationItemDeleted(string eventId, string itemId) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateConversationItemDeleted (Optional eventId As String = Nothing, Optional itemId As String = Nothing) As SessionUpdateConversationItemDeleted" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateConversationItemDeleted : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateConversationItemDeleted (eventId, itemId)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
@@ -1628,12 +1960,14 @@
         <ReturnType>Azure.AI.VoiceLive.SessionUpdateConversationItemDeleted</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="itemId" Type="System.String" />
-        <Parameter Name="eventId" Type="System.String" />
+        <Parameter Name="itemId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="eventId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="itemId"> The ID of the item that was deleted. </param>
         <param name="eventId" />
+        <param name="itemId"> The ID of the item that was deleted. </param>
         <summary>
             Returned when an item in the conversation is deleted by the client with a
             `conversation.item.delete` event. This event is used to synchronize the
@@ -1807,10 +2141,10 @@
         <param name="eventId" />
         <summary>
             Returned when an earlier assistant audio message item is truncated by the
-            client with a `conversation.item.truncate` event. This event is used to
-            synchronize the server's understanding of the audio with the client's playback.
-            This action will truncate the audio and remove the server-side text transcript
-            to ensure there is no text in the context that hasn't been heard by the user.
+                        client with a `conversation.item.truncate` event. This event is used to
+                        synchronize the server's understanding of the audio with the client's playback.
+                        This action will truncate the audio and remove the server-side text transcript
+                        to ensure there is no text in the context that hasn't been heard by the user.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateConversationItemTruncated" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -2020,6 +2354,84 @@
             event with the user message item that is created from the audio buffer.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateInputAudioBufferSpeechStopped" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateMcpListToolsCompleted">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateMcpListToolsCompleted SessionUpdateMcpListToolsCompleted (string eventId = default, string itemId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateMcpListToolsCompleted SessionUpdateMcpListToolsCompleted(string eventId, string itemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateMcpListToolsCompleted(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateMcpListToolsCompleted (Optional eventId As String = Nothing, Optional itemId As String = Nothing) As SessionUpdateMcpListToolsCompleted" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateMcpListToolsCompleted : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateMcpListToolsCompleted" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateMcpListToolsCompleted (eventId, itemId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateMcpListToolsCompleted</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="itemId"> The item ID. </param>
+        <summary> MCP list tools completed message. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateMcpListToolsCompleted" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateMcpListToolsFailed">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateMcpListToolsFailed SessionUpdateMcpListToolsFailed (string eventId = default, string itemId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateMcpListToolsFailed SessionUpdateMcpListToolsFailed(string eventId, string itemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateMcpListToolsFailed(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateMcpListToolsFailed (Optional eventId As String = Nothing, Optional itemId As String = Nothing) As SessionUpdateMcpListToolsFailed" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateMcpListToolsFailed : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateMcpListToolsFailed" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateMcpListToolsFailed (eventId, itemId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateMcpListToolsFailed</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="itemId"> The item ID. </param>
+        <summary> MCP list tools failed message. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateMcpListToolsFailed" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateMcpListToolsInProgress">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateMcpListToolsInProgress SessionUpdateMcpListToolsInProgress (string eventId = default, string itemId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateMcpListToolsInProgress SessionUpdateMcpListToolsInProgress(string eventId, string itemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateMcpListToolsInProgress(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateMcpListToolsInProgress (Optional eventId As String = Nothing, Optional itemId As String = Nothing) As SessionUpdateMcpListToolsInProgress" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateMcpListToolsInProgress : string * string -&gt; Azure.AI.VoiceLive.SessionUpdateMcpListToolsInProgress" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateMcpListToolsInProgress (eventId, itemId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateMcpListToolsInProgress</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="itemId"> The item ID. </param>
+        <summary> MCP list tools in progress message. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateMcpListToolsInProgress" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2638,6 +3050,156 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SessionUpdateResponseMcpCallArgumentsDelta">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDelta SessionUpdateResponseMcpCallArgumentsDelta (string eventId = default, string delta = default, string itemId = default, string responseId = default, int outputIndex = 0, string obfuscation = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDelta SessionUpdateResponseMcpCallArgumentsDelta(string eventId, string delta, string itemId, string responseId, int32 outputIndex, string obfuscation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallArgumentsDelta(System.String,System.String,System.String,System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateResponseMcpCallArgumentsDelta (Optional eventId As String = Nothing, Optional delta As String = Nothing, Optional itemId As String = Nothing, Optional responseId As String = Nothing, Optional outputIndex As Integer = 0, Optional obfuscation As String = Nothing) As SessionUpdateResponseMcpCallArgumentsDelta" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateResponseMcpCallArgumentsDelta : string * string * string * string * int * string -&gt; Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDelta" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallArgumentsDelta (eventId, delta, itemId, responseId, outputIndex, obfuscation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDelta</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="delta" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="responseId" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputIndex" Type="System.Int32" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="obfuscation" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="delta"> The delta of the arguments. </param>
+        <param name="itemId"> The ID of the item associated with the event. </param>
+        <param name="responseId"> The ID of the response associated with the event. </param>
+        <param name="outputIndex"> The index of the output associated with the event. </param>
+        <param name="obfuscation"> The obfuscation of the arguments. </param>
+        <summary> Represents a delta update of the arguments for an MCP tool call. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDelta" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateResponseMcpCallArgumentsDone">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDone SessionUpdateResponseMcpCallArgumentsDone (string eventId = default, string itemId = default, string responseId = default, int outputIndex = 0, string arguments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDone SessionUpdateResponseMcpCallArgumentsDone(string eventId, string itemId, string responseId, int32 outputIndex, string arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallArgumentsDone(System.String,System.String,System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateResponseMcpCallArgumentsDone (Optional eventId As String = Nothing, Optional itemId As String = Nothing, Optional responseId As String = Nothing, Optional outputIndex As Integer = 0, Optional arguments As String = Nothing) As SessionUpdateResponseMcpCallArgumentsDone" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateResponseMcpCallArgumentsDone : string * string * string * int * string -&gt; Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDone" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallArgumentsDone (eventId, itemId, responseId, outputIndex, arguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDone</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="responseId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputIndex" Type="System.Int32" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="arguments" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="itemId"> The ID of the item associated with the event. </param>
+        <param name="responseId"> The ID of the response associated with the event. </param>
+        <param name="outputIndex"> The index of the output associated with the event. </param>
+        <param name="arguments"> The full arguments for the tool call. </param>
+        <summary> Indicates the completion of the arguments for an MCP tool call. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallArgumentsDone" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateResponseMcpCallCompleted">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseMcpCallCompleted SessionUpdateResponseMcpCallCompleted (string eventId = default, string itemId = default, int outputIndex = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseMcpCallCompleted SessionUpdateResponseMcpCallCompleted(string eventId, string itemId, int32 outputIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallCompleted(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateResponseMcpCallCompleted (Optional eventId As String = Nothing, Optional itemId As String = Nothing, Optional outputIndex As Integer = 0) As SessionUpdateResponseMcpCallCompleted" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateResponseMcpCallCompleted : string * string * int -&gt; Azure.AI.VoiceLive.SessionUpdateResponseMcpCallCompleted" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallCompleted (eventId, itemId, outputIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateResponseMcpCallCompleted</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputIndex" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="itemId"> The ID of the item associated with the event. </param>
+        <param name="outputIndex"> The index of the output associated with the event. </param>
+        <summary> Indicates the MCP call has completed. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallCompleted" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateResponseMcpCallFailed">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseMcpCallFailed SessionUpdateResponseMcpCallFailed (string eventId = default, string itemId = default, int outputIndex = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseMcpCallFailed SessionUpdateResponseMcpCallFailed(string eventId, string itemId, int32 outputIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallFailed(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateResponseMcpCallFailed (Optional eventId As String = Nothing, Optional itemId As String = Nothing, Optional outputIndex As Integer = 0) As SessionUpdateResponseMcpCallFailed" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateResponseMcpCallFailed : string * string * int -&gt; Azure.AI.VoiceLive.SessionUpdateResponseMcpCallFailed" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallFailed (eventId, itemId, outputIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateResponseMcpCallFailed</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputIndex" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="itemId"> The ID of the item associated with the event. </param>
+        <param name="outputIndex"> The index of the output associated with the event. </param>
+        <summary> Indicates the MCP call has failed. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallFailed" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionUpdateResponseMcpCallInProgress">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseMcpCallInProgress SessionUpdateResponseMcpCallInProgress (string eventId = default, string itemId = default, int outputIndex = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseMcpCallInProgress SessionUpdateResponseMcpCallInProgress(string eventId, string itemId, int32 outputIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallInProgress(System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SessionUpdateResponseMcpCallInProgress (Optional eventId As String = Nothing, Optional itemId As String = Nothing, Optional outputIndex As Integer = 0) As SessionUpdateResponseMcpCallInProgress" />
+      <MemberSignature Language="F#" Value="static member SessionUpdateResponseMcpCallInProgress : string * string * int -&gt; Azure.AI.VoiceLive.SessionUpdateResponseMcpCallInProgress" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.SessionUpdateResponseMcpCallInProgress (eventId, itemId, outputIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionUpdateResponseMcpCallInProgress</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="itemId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputIndex" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="eventId" />
+        <param name="itemId"> The ID of the item associated with the event. </param>
+        <param name="outputIndex"> The index of the output associated with the event. </param>
+        <summary> Indicates the MCP call running. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.SessionUpdateResponseMcpCallInProgress" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SessionUpdateResponseOutputItemAdded">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionUpdateResponseOutputItemAdded SessionUpdateResponseOutputItemAdded (string eventId = default, string responseId = default, int outputIndex = 0, Azure.AI.VoiceLive.SessionResponseItem item = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionUpdateResponseOutputItemAdded SessionUpdateResponseOutputItemAdded(string eventId, string responseId, int32 outputIndex, class Azure.AI.VoiceLive.SessionResponseItem item) cil managed" />
@@ -3061,7 +3623,7 @@
         <param name="type" />
         <summary>
             Base for any content part; discriminated by `type`.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.RequestTextContentPart" />, <see cref="T:Azure.AI.VoiceLive.RequestAudioContentPart" />, <see cref="T:Azure.AI.VoiceLive.ResponseTextContentPart" />, and <see cref="T:Azure.AI.VoiceLive.ResponseAudioContentPart" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.RequestImageContentPart" />, <see cref="T:Azure.AI.VoiceLive.RequestTextContentPart" />, <see cref="T:Azure.AI.VoiceLive.RequestAudioContentPart" />, <see cref="T:Azure.AI.VoiceLive.ResponseTextContentPart" />, and <see cref="T:Azure.AI.VoiceLive.ResponseAudioContentPart" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveContentPart" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -3129,6 +3691,70 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="VoiceLiveMcpServerDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveMcpServerDefinition VoiceLiveMcpServerDefinition (string serverLabel = default, string serverUrl = default, string authorization = default, System.Collections.Generic.IDictionary&lt;string,string&gt; headers = default, System.Collections.Generic.IEnumerable&lt;string&gt; allowedTools = default, BinaryData requireApproval = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveMcpServerDefinition VoiceLiveMcpServerDefinition(string serverLabel, string serverUrl, string authorization, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; headers, class System.Collections.Generic.IEnumerable`1&lt;string&gt; allowedTools, class System.BinaryData requireApproval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveMcpServerDefinition(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{System.String},System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VoiceLiveMcpServerDefinition (Optional serverLabel As String = Nothing, Optional serverUrl As String = Nothing, Optional authorization As String = Nothing, Optional headers As IDictionary(Of String, String) = Nothing, Optional allowedTools As IEnumerable(Of String) = Nothing, Optional requireApproval As BinaryData = Nothing) As VoiceLiveMcpServerDefinition" />
+      <MemberSignature Language="F#" Value="static member VoiceLiveMcpServerDefinition : string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * seq&lt;string&gt; * BinaryData -&gt; Azure.AI.VoiceLive.VoiceLiveMcpServerDefinition" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveMcpServerDefinition (serverLabel, serverUrl, authorization, headers, allowedTools, requireApproval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.VoiceLiveMcpServerDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serverLabel" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="serverUrl" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="authorization" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="headers" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="allowedTools" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="requireApproval" Type="System.BinaryData" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="serverLabel" />
+        <param name="serverUrl" />
+        <param name="authorization" />
+        <param name="headers" />
+        <param name="allowedTools" />
+        <param name="requireApproval" />
+        <summary> The definition of an MCP server as used by the voicelive endpoint. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveMcpServerDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VoiceLiveMcpTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveMcpTool VoiceLiveMcpTool (string name = default, string description = default, BinaryData inputSchema = default, BinaryData annotations = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveMcpTool VoiceLiveMcpTool(string name, string description, class System.BinaryData inputSchema, class System.BinaryData annotations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveMcpTool(System.String,System.String,System.BinaryData,System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VoiceLiveMcpTool (Optional name As String = Nothing, Optional description As String = Nothing, Optional inputSchema As BinaryData = Nothing, Optional annotations As BinaryData = Nothing) As VoiceLiveMcpTool" />
+      <MemberSignature Language="F#" Value="static member VoiceLiveMcpTool : string * string * BinaryData * BinaryData -&gt; Azure.AI.VoiceLive.VoiceLiveMcpTool" Usage="Azure.AI.VoiceLive.VoiceLiveModelFactory.VoiceLiveMcpTool (name, description, inputSchema, annotations)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.VoiceLiveMcpTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="inputSchema" Type="System.BinaryData" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="annotations" Type="System.BinaryData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the tool. </param>
+        <param name="description"> The description of the tool. </param>
+        <param name="inputSchema"> The input schema for the tool. </param>
+        <param name="annotations"> The annotations for the tool. </param>
+        <summary> Represents a mcp tool definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveMcpTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="VoiceLiveSessionOptions">
       <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.VoiceLiveSessionOptions VoiceLiveSessionOptions (string model = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.InteractionModality&gt; modalities = default, Azure.AI.VoiceLive.AnimationOptions animation = default, Azure.AI.VoiceLive.VoiceProvider voice = default, string instructions = default, int? inputAudioSamplingRate = default, Azure.AI.VoiceLive.InputAudioFormat? inputAudioFormat = default, Azure.AI.VoiceLive.OutputAudioFormat? outputAudioFormat = default, Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction = default, Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation = default, Azure.AI.VoiceLive.AvatarConfiguration avatar = default, Azure.AI.VoiceLive.AudioInputTranscriptionOptions inputAudioTranscription = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools = default, Azure.AI.VoiceLive.ToolChoiceOption toolChoice = default, float? temperature = default, Azure.AI.VoiceLive.MaxResponseOutputTokensOption maxResponseOutputTokens = default, BinaryData turnDetection = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.VoiceLiveSessionOptions VoiceLiveSessionOptions(string model, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.InteractionModality&gt; modalities, class Azure.AI.VoiceLive.AnimationOptions animation, class Azure.AI.VoiceLive.VoiceProvider voice, string instructions, valuetype System.Nullable`1&lt;int32&gt; inputAudioSamplingRate, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.InputAudioFormat&gt; inputAudioFormat, valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.OutputAudioFormat&gt; outputAudioFormat, class Azure.AI.VoiceLive.AudioNoiseReduction inputAudioNoiseReduction, class Azure.AI.VoiceLive.AudioEchoCancellation inputAudioEchoCancellation, class Azure.AI.VoiceLive.AvatarConfiguration avatar, class Azure.AI.VoiceLive.AudioInputTranscriptionOptions inputAudioTranscription, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.VoiceLive.AudioTimestampType&gt; outputAudioTimestampTypes, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.VoiceLive.VoiceLiveToolDefinition&gt; tools, class Azure.AI.VoiceLive.ToolChoiceOption toolChoice, valuetype System.Nullable`1&lt;float32&gt; temperature, class Azure.AI.VoiceLive.MaxResponseOutputTokensOption maxResponseOutputTokens, class System.BinaryData turnDetection) cil managed" />
@@ -3172,11 +3798,7 @@
         <param name="instructions"> Optional instructions to guide the model's behavior throughout the session. </param>
         <param name="inputAudioSamplingRate">
             Input audio sampling rate in Hz. Available values:
-            
-            - For pcm16: 8000, 16000, 24000
-            
-            - For g711_alaw/g711_ulaw: 8000
-            </param>
+            <list type="bullet"><item><description>For pcm16: 8000, 16000, 24000</description></item></list><list type="bullet"><item><description>For g711_alaw/g711_ulaw: 8000</description></item></list></param>
         <param name="inputAudioFormat"> Input audio format. Default is 'pcm16'. </param>
         <param name="outputAudioFormat"> Output audio format. Default is 'pcm16'. </param>
         <param name="inputAudioNoiseReduction"> Configuration for input audio noise reduction. </param>
@@ -3216,7 +3838,7 @@
         <param name="type" />
         <summary>
             The base representation of a voicelive tool definition.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.VoiceLiveFunctionDefinition" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.VoiceLive.VoiceLiveFunctionDefinition" /> and <see cref="T:Azure.AI.VoiceLive.VoiceLiveMcpServerDefinition" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.VoiceLive.VoiceLiveToolDefinition" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>

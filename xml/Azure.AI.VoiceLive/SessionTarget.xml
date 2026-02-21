@@ -1,0 +1,270 @@
+<Type Name="SessionTarget" FullName="Azure.AI.VoiceLive.SessionTarget">
+  <TypeSignature Language="C#" Value="public class SessionTarget" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionTarget extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.VoiceLive.SessionTarget" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionTarget" />
+  <TypeSignature Language="F#" Value="type SessionTarget = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Target for a Voice Live session, specifying either a model or an agent.
+            </summary>
+    <remarks>
+            Use <see cref="M:Azure.AI.VoiceLive.SessionTarget.FromModel(System.String)" /> for model-centric sessions where the LLM is the main actor.
+            Use <see cref="M:Azure.AI.VoiceLive.SessionTarget.FromAgent(Azure.AI.VoiceLive.AgentSessionConfig)" /> for agent-centric sessions where the agent is the main actor.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Agent">
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.AgentSessionConfig? Agent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.VoiceLive.AgentSessionConfig Agent" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionTarget.Agent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Agent As AgentSessionConfig" />
+      <MemberSignature Language="F#" Value="member this.Agent : Azure.AI.VoiceLive.AgentSessionConfig" Usage="Azure.AI.VoiceLive.SessionTarget.Agent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.AgentSessionConfig</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The agent configuration for agent-centric sessions.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromAgent">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionTarget FromAgent (Azure.AI.VoiceLive.AgentSessionConfig agentConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionTarget FromAgent(class Azure.AI.VoiceLive.AgentSessionConfig agentConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionTarget.FromAgent(Azure.AI.VoiceLive.AgentSessionConfig)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromAgent (agentConfig As AgentSessionConfig) As SessionTarget" />
+      <MemberSignature Language="F#" Value="static member FromAgent : Azure.AI.VoiceLive.AgentSessionConfig -&gt; Azure.AI.VoiceLive.SessionTarget" Usage="Azure.AI.VoiceLive.SessionTarget.FromAgent agentConfig" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agentConfig" Type="Azure.AI.VoiceLive.AgentSessionConfig" />
+      </Parameters>
+      <Docs>
+        <param name="agentConfig">The agent configuration to use for the session.</param>
+        <summary>
+            Creates a session target for an agent-centric session.
+            </summary>
+        <returns>A SessionTarget configured for an agent session.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="agentConfig" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromModel">
+      <MemberSignature Language="C#" Value="public static Azure.AI.VoiceLive.SessionTarget FromModel (string model);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.VoiceLive.SessionTarget FromModel(string model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionTarget.FromModel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromModel (model As String) As SessionTarget" />
+      <MemberSignature Language="F#" Value="static member FromModel : string -&gt; Azure.AI.VoiceLive.SessionTarget" Usage="Azure.AI.VoiceLive.SessionTarget.FromModel model" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="model">The model name to use for the session (e.g., "gpt-4o-realtime-preview").</param>
+        <summary>
+            Creates a session target for a model-centric session.
+            </summary>
+        <returns>A SessionTarget configured for a model session.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="model" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="model" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAgentSession">
+      <MemberSignature Language="C#" Value="public bool IsAgentSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAgentSession" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionTarget.IsAgentSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAgentSession As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAgentSession : bool" Usage="Azure.AI.VoiceLive.SessionTarget.IsAgentSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this target specifies an agent session.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAgentSessionTarget">
+      <MemberSignature Language="C#" Value="public bool IsAgentSessionTarget ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAgentSessionTarget() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionTarget.IsAgentSessionTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsAgentSessionTarget () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAgentSessionTarget : unit -&gt; bool" Usage="sessionTarget.IsAgentSessionTarget " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Checks if this SessionTarget specifies an agent session.
+            </summary>
+        <returns>True if the target specifies an agent session.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsModelSession">
+      <MemberSignature Language="C#" Value="public bool IsModelSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsModelSession" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionTarget.IsModelSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsModelSession As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsModelSession : bool" Usage="Azure.AI.VoiceLive.SessionTarget.IsModelSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this target specifies a model session.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsModelSessionTarget">
+      <MemberSignature Language="C#" Value="public bool IsModelSessionTarget ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsModelSessionTarget() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionTarget.IsModelSessionTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsModelSessionTarget () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsModelSessionTarget : unit -&gt; bool" Usage="sessionTarget.IsModelSessionTarget " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Checks if this SessionTarget specifies a model session.
+            </summary>
+        <returns>True if the target specifies a model session.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public string? Model { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Model" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.SessionTarget.Model" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Model As String" />
+      <MemberSignature Language="F#" Value="member this.Model : string" Usage="Azure.AI.VoiceLive.SessionTarget.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The model name for model-centric sessions.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.AI.VoiceLive.SessionTarget (Azure.AI.VoiceLive.AgentSessionConfig agentConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Azure.AI.VoiceLive.SessionTarget op_Implicit(class Azure.AI.VoiceLive.AgentSessionConfig agentConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionTarget.op_Implicit(Azure.AI.VoiceLive.AgentSessionConfig)~Azure.AI.VoiceLive.SessionTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (agentConfig As AgentSessionConfig) As SessionTarget" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Azure.AI.VoiceLive.AgentSessionConfig -&gt; Azure.AI.VoiceLive.SessionTarget" Usage="Azure.AI.VoiceLive.SessionTarget.op_Implicit agentConfig" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agentConfig" Type="Azure.AI.VoiceLive.AgentSessionConfig" />
+      </Parameters>
+      <Docs>
+        <param name="agentConfig">The agent configuration.</param>
+        <summary>
+            Implicit conversion from AgentSessionConfig to SessionTarget for agent sessions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.AI.VoiceLive.SessionTarget (string model);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Azure.AI.VoiceLive.SessionTarget op_Implicit(string model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.SessionTarget.op_Implicit(System.String)~Azure.AI.VoiceLive.SessionTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (model As String) As SessionTarget" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Azure.AI.VoiceLive.SessionTarget" Usage="Azure.AI.VoiceLive.SessionTarget.op_Implicit model" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.VoiceLive.SessionTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="model">The model name.</param>
+        <summary>
+            Implicit conversion from string to SessionTarget for model sessions.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
