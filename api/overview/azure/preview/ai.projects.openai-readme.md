@@ -1,12 +1,12 @@
 ---
 title: Azure AI Projects OpenAI client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.Projects.OpenAI, ai
-ms.date: 12/13/2025
+ms.date: 02/25/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: ai
 ---
-# Azure AI Projects OpenAI client library for .NET - version 1.0.0-beta.5 
+# Azure AI Projects OpenAI client library for .NET - version 2.0.0-beta.1 
 
 
 Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecosystem of models, tools, and capabilities from OpenAI, Microsoft, and other LLM providers.
@@ -29,14 +29,16 @@ Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecos
   - [Service API versions](#service-api-versions)
   - [Select a service API version](#select-a-service-api-version)
 - [Additional concepts](#additional-concepts)
-- [Examples]
+- [Examples](#examples)
   - [Prompt Agents](#prompt-agents)
     - [Agents](#agents)
     - [Responses](#responses)
     - [Conversations](#conversations)
+    - [Logging](#logging)
   - [Published Agents](#published-agents)
   - [Container App](#container-app)
-    - 
+  - [Hosted Agents](#hosted-agents)
+  - [Structured Output](#structured-output)
   - [File search](#file-search)
   - [Code interpreter](#code-interpreter)
   - [Computer use](#computer-use)
@@ -52,21 +54,20 @@ Develop Agents using the Azure AI Foundry platform, leveraging an extensive ecos
     - [Create Azure Playwright workspace](#create-azure-playwright-workspace)
     - [Configure Microsoft Foundry](#configure-microsoft-foundry)
     - [Using Browser automation tool](#using-browser-automation-tool)
-  - [SharePoint tool](#sharepoint-tool)
-  - [Fabric Data Agent tool](#fabric-data-agent-tool)
+  - [SharePoint tool](#sharepoint)
+  - [Fabric Data Agent tool](#fabric)
     - [Create a Fabric Capacity](#create-a-fabric-capacity)
     - [Create a Lakehouse data repository](#create-a-lakehouse-data-repository)
     - [Add a data agent to the Fabric](#add-a-data-agent-to-the-fabric)
     - [Create a Fabric connection in Microsoft Foundry](#create-a-fabric-connection-in-microsoft-foundry)
     - [Using Microsoft Fabric tool](#using-microsoft-fabric-tool)
-  - [A2ATool](#a2atool)
+  - [A2APreviewTool](#a2atool)
     - [Create a connection to A2A agent](#create-a-connection-to-a2a-agent)
       - [Classic Microsoft Foundry](#classic-microsoft-foundry)
       - [New Microsoft Foundry](#new-microsoft-foundry)
     - [Using A2A Tool](#using-a2a-tool)
-- [Tracing](#tracing)
-  - [Tracing to Azure Monitor](#tracing-to-azure-monitor)
-  - [Tracing to Console](#tracing-to-console)
+  - [Memory search tool](#memory-search-tool)
+  - [Azure Function tool](#azure-function-tool)
 - [Troubleshooting](#troubleshooting)
 - [Next steps](#next-steps)
 - [Contributing](#contributing)
@@ -151,7 +152,7 @@ ProjectResponsesClient responseClient = projectClient.OpenAI.GetProjectResponses
 ResponseResult response = await responseClient.CreateResponseAsync("What is the size of France in square miles?");
 ```
 
-In the most of code snippets we will show only asynchronous sample for brevity. Please refer individual [samples](https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI/samples) for both synchronous and asynchronous code.
+In the most of code snippets we will show only asynchronous sample for brevity. Please refer individual [samples][samples] for both synchronous and asynchronous code.
 
 ## Examples
 
@@ -327,6 +328,109 @@ List<ResponseItem> items = [];
 ResponseResult response = await responseClient.CreateResponseAsync(responseOptions);
 ```
 
+### Logging
+
+Logging ofservice requests and responses may be a useful tool for troubleshooting of the issues.
+It can be implemented through custom policy. In the example bwlow we implement `LoggingPolicy` by inheriting the `PipelinePolicy`.
+This class implements two methods `Process` and `ProcessAsync`. The Azure pipeline calls the chain of policies, where the preceding
+one calls the next policy, hence by placing calls to `ProcessMessage` method before and after `ProcessNext` we can print request
+and response. The `ProcessMessage` method contains logic to show the contents of web request and response along with headers and URI paths.
+
+```C# Snippet:Sample_LoggingPolicy_AgentsLogging
+public class LoggingPolicy : PipelinePolicy
+{
+    private static void ProcessMessage(PipelineMessage message)
+    {
+        if (message.Request is not null && message.Response is null)
+        {
+            Console.WriteLine($"{message?.Request?.Method} URI: {message?.Request?.Uri}");
+            Console.WriteLine($"--- New request ---");
+            IEnumerable<string> headerPairs = message?.Request?.Headers?.Select(header => $"\n    {header.Key}={(header.Key.ToLower().Contains("auth") ? "***" : header.Value)}");
+            string headers = string.Join("", headerPairs);
+            Console.WriteLine($"Request headers:{headers}");
+            if (message.Request?.Content != null)
+            {
+                string contentType = "Unknown Content Type";
+                if (message.Request.Headers?.TryGetValue("Content-Type", out contentType) == true
+                    && contentType == "application/json")
+                {
+                    using MemoryStream stream = new();
+                    message.Request.Content.WriteTo(stream, default);
+                    stream.Position = 0;
+                    using StreamReader reader = new(stream);
+                    string requestDump = reader.ReadToEnd();
+                    stream.Position = 0;
+                    requestDump = Regex.Replace(requestDump, @"""data"":[\\w\\r\\n]*""[^""]*""", @"""data"":""...""");
+                    // Make sure JSON string is properly formatted.
+                    JsonSerializerOptions jsonOptions = new()
+                    {
+                        WriteIndented = true,
+                    };
+                    JsonElement jsonElement = JsonSerializer.Deserialize<JsonElement>(requestDump);
+                    Console.WriteLine("--- Begin request content ---");
+                    Console.WriteLine(JsonSerializer.Serialize(jsonElement, jsonOptions));
+                    Console.WriteLine("--- End request content ---");
+                }
+                else
+                {
+                    string length = message.Request.Content.TryComputeLength(out long numberLength)
+                        ? $"{numberLength} bytes"
+                        : "unknown length";
+                    Console.WriteLine($"<< Non-JSON content: {contentType} >> {length}");
+                }
+            }
+        }
+        if (message.Response != null)
+        {
+            IEnumerable<string> headerPairs = message?.Response?.Headers?.Select(header => $"\n    {header.Key}={(header.Key.ToLower().Contains("auth") ? "***" : header.Value)}");
+            string headers = string.Join("", headerPairs);
+            Console.WriteLine($"Response headers:{headers}");
+            if (message.BufferResponse)
+            {
+                message.Response.BufferContent();
+                Console.WriteLine("--- Begin response content ---");
+                Console.WriteLine(message.Response.Content?.ToString());
+                Console.WriteLine("--- End of response content ---");
+            }
+            else
+            {
+                Console.WriteLine("--- Response (unbuffered, content not rendered) ---");
+            }
+        }
+    }
+
+    public LoggingPolicy(){}
+
+    public override void Process(PipelineMessage message, IReadOnlyList<PipelinePolicy> pipeline, int currentIndex)
+    {
+        ProcessMessage(message); // for request
+        ProcessNext(message, pipeline, currentIndex);
+        ProcessMessage(message); // for response
+    }
+
+    public override async ValueTask ProcessAsync(PipelineMessage message, IReadOnlyList<PipelinePolicy> pipeline, int currentIndex)
+    {
+        ProcessMessage(message); // for request
+        await ProcessNextAsync(message, pipeline, currentIndex);
+        ProcessMessage(message); // for response
+    }
+}
+```
+
+To apply the policy to the pipeline, we create `AIProjectClientOptions` object
+containing  `LoggingPolicy`, inform the pipeline to execute this policy by call
+and set the option while instantiating `AIProjectClient` that we will consequently use.
+
+```C# Snippet:Sample_CreateClient_AgentsLogging
+string RAW_PROJECT_ENDPOINT = Environment.GetEnvironmentVariable("PROJECT_ENDPOINT")
+    ?? throw new InvalidOperationException("Missing environment variable 'PROJECT_ENDPOINT'");
+string MODEL_DEPLOYMENT = Environment.GetEnvironmentVariable("MODEL_DEPLOYMENT_NAME")
+    ?? throw new InvalidOperationException("Missing environment variable 'MODEL_DEPLOYMENT_NAME'");
+AIProjectClientOptions options = new();
+options.AddPolicy(new LoggingPolicy(), PipelinePosition.PerCall);
+AIProjectClient projectClient = new(new Uri(RAW_PROJECT_ENDPOINT), new AzureCliCredential(), options: options);
+```
+
 ### Published Agents
 
 Published Agents are available outside the Microsoft Foundry and can be used by external applications.
@@ -362,6 +466,12 @@ Console.WriteLine(response.GetOutputText());
 
 ### Container App
 
+**Note:** This feature is in the preview, to use it, please disable the `AAIP001` warning.
+
+```C#
+#pragma warning disable AAIP001
+```
+
 [Azure Container App](https://learn.microsoft.com/azure/container-apps/ai-integration) may act as an agent if it implements the OpenAI-like protocol. Azure.AI.Projects.OpenAI allow you to interact with these applications as with regular agents. The main difference is that in this case agent needs to be created with `ContainerAppAgentDefinition`. This agent can be used in responses API as a regular agent.
 
 ```C# Snippet:Sample_CreateContainerApp_ContainerApp_Async
@@ -371,6 +481,111 @@ AgentVersion containerAgentVersion = await projectClient.Agents.CreateAgentVersi
         containerProtocolVersions: [new ProtocolVersionRecord(protocol: AgentCommunicationMethod.Responses, version: "1")],
         containerAppResourceId: containerAppResourceId,
         ingressSubdomainSuffix: ingressSubdomainSuffix)));
+```
+
+### Hosted Agents
+
+**Note:** This feature is in the preview, to use it, please disable the `AAIP001` warning.
+
+```C#
+#pragma warning disable AAIP001
+```
+
+Hosted agents simplify the custom agent deployment on fully controlled environment [see more](https://learn.microsoft.com/azure/ai-foundry/agents/concepts/hosted-agents).
+
+To create the hosted agent, please use the `ImageBasedHostedAgentDefinition` while creating the AgentVersion object.
+
+```C# Snippet:Sample_ImageBasedHostedAgentDefinition_HostedAgent
+private static  HostedAgentDefinition GetAgentDefinition(string dockerImage, string modelDeploymentName, string accountId, string applicationInsightConnectionString, string projectEndpoint)
+{
+    HostedAgentDefinition agentDefinition = new(
+        containerProtocolVersions: [new ProtocolVersionRecord(AgentCommunicationMethod.ActivityProtocol, "v1")],
+        cpu: "1",
+        memory: "2Gi"
+    )
+    {
+        EnvironmentVariables = {
+            { "AZURE_OPENAI_ENDPOINT", $"https://{accountId}.cognitiveservices.azure.com/" },
+            { "AZURE_OPENAI_CHAT_DEPLOYMENT_NAME", modelDeploymentName },
+            // Optional variables, used for logging
+            { "APPLICATIONINSIGHTS_CONNECTION_STRING", applicationInsightConnectionString },
+            { "AGENT_PROJECT_RESOURCE_ID", projectEndpoint },
+        },
+        Image = dockerImage,
+    };
+    return agentDefinition;
+}
+```
+
+The created agent needs to be deployed using [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
+
+```bash
+az login
+az cognitiveservices agent start --account-name ACCOUNTNAME --project-name PROJECTNAME --name myHostedAgent --agent-version 1
+```
+
+After the deployment is complete, this Agent can be used for calling responses.
+
+Agent deletion should be done through Azure CLI.
+
+```bash
+az cognitiveservices agent delete-deployment --account-name ACCOUNTNAME --project-name PROJECTNAME --name myHostedAgent --agent-version 1
+az cognitiveservices agent delete --account-name ACCOUNTNAME --project-name PROJECTNAME --name myHostedAgent --agent-version 1
+```
+
+### Structured Output
+
+The Agent can be instructed to give the response in JSON format, compliant with the provided scheme.
+
+For example, if we have the scheme as the one below:
+
+```C# Snippet:Sample_Schema_StructuredOutput
+private static readonly BinaryData s_calendatSchema = BinaryData.FromObjectAsJson(
+    new {
+        additionalProperties = false,
+        properties = new {
+            name = new {
+                title = "Name",
+                type = "string"
+            },
+            date = new {
+                description = "Date in YYYY-MM-DD format",
+                title = "Date",
+                type = "string"
+            },
+            participants = new {
+                items = new { type = "string" },
+                title = "Participants",
+                type = "array"
+            }
+        },
+        required = new List<string> { "name", "date", "participants" },
+        title ="CalendarEvent",
+        type = "object",
+    }
+);
+```
+
+We can provide it to the Agent through `TextOptions` property of `PromptAgentDefinition` to get the Agent output in JSON format.
+
+```C# Snippet:Sample_CreateAgent_StructuredOutput_Async
+var textOptions = new ResponseTextOptions()
+{
+    TextFormat = ResponseTextFormat.CreateJsonSchemaFormat(
+        jsonSchemaFormatName: "Calendar",
+        jsonSchema: s_calendatSchema
+    )
+};
+PromptAgentDefinition agentDefinition = new(model: MODEL_DEPLOYMENT)
+{
+    Instructions = "You are a helpful assistant that extracts calendar event information from the input user messages," +
+                   "and returns it in the desired structured output format.",
+    TextOptions = textOptions
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition)
+);
 ```
 
 ### File search
@@ -793,7 +1008,7 @@ AzureAISearchToolIndex index = new()
 PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
 {
     Instructions = "You are a helpful assistant. You must always provide citations for answers using the tool and render them as: `\u3010message_idx:search_idx\u2020source\u3011`.",
-    Tools = { new AzureAISearchAgentTool(new AzureAISearchToolOptions(indexes: [index])) }
+    Tools = { new AzureAISearchTool(new AzureAISearchToolOptions(indexes: [index])) }
 };
 AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
     agentName: "myAgent",
@@ -896,11 +1111,11 @@ Console.WriteLine($"{text}{annotation}");
 ### Bing Grounding
 
 To support the response returned by the Agent, Bing grounding can be used. To implement it,
-create the `BingGroundingAgentTool` and use it in `PromptAgentDefinition` object.
+create the `BingGroundingTool` and use it in `PromptAgentDefinition` object.
 
 ```C# Snippet:Sample_CreateAgent_BingGrounding_Sync
 AIProjectConnection bingConnectionName = projectClient.Connections.GetConnection(connectionName: connectionName);
-BingGroundingAgentTool bingGroundingAgentTool = new(new BingGroundingSearchToolOptions(
+BingGroundingTool bingGroundingAgentTool = new(new BingGroundingSearchToolOptions(
     searchConfigurations: [new BingGroundingSearchConfiguration(projectConnectionId: bingConnectionName.Id)]
     )
 );
@@ -959,17 +1174,17 @@ await foreach (StreamingResponseUpdate streamResponse in responseClient.CreateRe
 Console.WriteLine($"{text}{annotation}");
 ```
 
-### Bing Custom Search
+### Bing Custom Search (preview)<a id="bing-custom-search"></a>
 
 Along with bing grounding, Agents can use the custom search. To implement it,
-create the `BingCustomSearchAgentTool` and use it in `PromptAgentDefinition` object. The
+create the `BingCustomSearchPreviewTool` and use it in `PromptAgentDefinition` object. The
 use of this tool is like Bing Grounding, however it requires ID of Grounding with Bing
 Custom Search and the name of a search configuration. In this scenario, we use Bing to search
 en.wikipedia.org. This configuration is called "wikipedia" its search URL is configured through Azure.
 
 ```C# Snippet:Sample_CreateAgent_CustomBingSearch_Async
 AIProjectConnection bingConnectionName = await projectClient.Connections.GetConnectionAsync(connectionName: connectionName);
-BingCustomSearchAgentTool customBingSearchAgentTool = new(new BingCustomSearchToolParameters(
+BingCustomSearchPreviewTool customBingSearchAgentTool = new(new BingCustomSearchToolParameters(
     searchConfigurations: [new BingCustomSearchConfiguration(projectConnectionId: bingConnectionName.Id, instanceName: customInstanceName)]
     )
 );
@@ -1024,7 +1239,7 @@ while (nextResponseOptions is not null)
         {
             nextResponseOptions = new CreateResponseOptions()
             {
-                PreviousResponseId = latestResponse.PreviousResponseId,
+                PreviousResponseId = latestResponse.Id,
             };
             if (string.Equals(mcpToolCall.ServerLabel, "api-specs"))
             {
@@ -1072,17 +1287,17 @@ handled the same way as described in the MCP tool section.
 
 ### OpenAPI tool
 OpenAPI tool allows Agent to get information from Web services using [OpenAPI Specification](https://en.wikipedia.org/wiki/OpenAPI_Specification).
-To use the OpenAPI tool, we need to Create the `OpenAPIFunctionDefinition` object and provide the specification file to its constructor. `OpenAPIAgentTool` contains a `Description` property, serving as a hint when this tool should be used.
+To use the OpenAPI tool, we need to Create the `OpenAPIFunctionDefinition` object and provide the specification file to its constructor. `OpenAPITool` contains a `Description` property, serving as a hint when this tool should be used.
 
 ```C# Snippet:Sample_CreateAgent_OpenAPI_Async
 string filePath = GetFile();
 OpenAPIFunctionDefinition toolDefinition = new(
     name: "get_weather",
-    spec: BinaryData.FromBytes(BinaryData.FromBytes(File.ReadAllBytes(filePath))),
-    auth: new OpenAPIAnonymousAuthenticationDetails()
+    specificationBytes: BinaryData.FromBytes(File.ReadAllBytes(filePath)),
+    authentication: new OpenAPIAnonymousAuthenticationDetails()
 );
 toolDefinition.Description = "Retrieve weather information for a location.";
-OpenAPIAgentTool openapiTool = new(toolDefinition);
+OpenAPITool openapiTool = new(toolDefinition);
 
 PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
 {
@@ -1116,13 +1331,13 @@ string filePath = GetFile();
 AIProjectConnection tripadvisorConnection = projectClient.Connections.GetConnection("tripadvisor");
 OpenAPIFunctionDefinition toolDefinition = new(
     name: "tripadvisor",
-    spec: BinaryData.FromBytes(BinaryData.FromBytes(File.ReadAllBytes(filePath))),
-    auth: new OpenAPIProjectConnectionAuthenticationDetails(new OpenAPIProjectConnectionSecurityScheme(
+    specificationBytes: BinaryData.FromBytes(File.ReadAllBytes(filePath)),
+    authentication: new OpenAPIProjectConnectionAuthenticationDetails(new OpenAPIProjectConnectionSecurityScheme(
         projectConnectionId: tripadvisorConnection.Id
     ))
 );
 toolDefinition.Description = "Trip Advisor API to get travel information.";
-OpenAPIAgentTool openapiTool = new(toolDefinition);
+OpenAPITool openapiTool = new(toolDefinition);
 
 PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
 {
@@ -1152,7 +1367,7 @@ ResponseResult response = await responseClient.CreateResponseAsync(responseOptio
 Console.WriteLine(response.GetOutputText());
 ```
 
-### Browser automation
+### Browser automation (preview)<a id="browser-automation"></a>
 
 Playwright is a Node.js library for browser automation. Microsoft provides the [Azure Playwright workspace](https://learn.microsoft.com/javascript/api/overview/azure/playwright-readme), which can execute Playwright-based tasks triggered by an Agent using the BrowserAutomationAgentTool.
 
@@ -1189,7 +1404,7 @@ To use Azure Playwright workspace we need to create agent with `BrowserAutomatio
 
 ```C# Snippet:Sample_CreateAgent_BrowserAutomotion_Async
 AIProjectConnection playwrightConnection = await projectClient.Connections.GetConnectionAsync(playwrightConnectionName);
-BrowserAutomationAgentTool playwrightTool = new(
+BrowserAutomationPreviewTool playwrightTool = new(
     new BrowserAutomationToolParameters(
         new BrowserAutomationToolConnectionParameters(playwrightConnection.Id)
     ));
@@ -1230,8 +1445,8 @@ await foreach (StreamingResponseUpdate update in responseClient.CreateResponseSt
 }
 ```
 
-### SharePoint tool
-`SharepointAgentTool` allows Agent to access SharePoint pages to get the data context. Use the SharePoint connection name as it is shown in the connections section of Microsoft Foundry to get the connection. Get the connection ID to initialize the `SharePointGroundingToolOptions`, which will be used to create `SharepointAgentTool`.
+### SharePoint tool (preview)<a id="sharepoint"></a>
+`SharepointPreviewTool` allows Agent to access SharePoint pages to get the data context. Use the SharePoint connection name as it is shown in the connections section of Microsoft Foundry to get the connection. Get the connection ID to initialize the `SharePointGroundingToolOptions`, which will be used to create `SharepointPreviewTool`.
 
 ```C# Snippet:Sample_CreateAgent_Sharepoint_Async
 AIProjectConnection sharepointConnection = await projectClient.Connections.GetConnectionAsync(sharepointConnectionName);
@@ -1242,7 +1457,7 @@ SharePointGroundingToolOptions sharepointToolOption = new()
 PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
 {
     Instructions = "You are a helpful assistant.",
-    Tools = { new SharepointAgentTool(sharepointToolOption), }
+    Tools = { new SharepointPreviewTool(sharepointToolOption), }
 };
 AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
     agentName: "myAgent",
@@ -1293,7 +1508,7 @@ Assert.That(response.Status, Is.EqualTo(ResponseStatus.Completed));
 Console.WriteLine($"{response.GetOutputText()}{GetFormattedAnnotation(response)}");
 ```
 
-### Fabric Data Agent tool
+### Fabric Data Agent tool (preview) <a id="fabric"></a>
 
 As a prerequisite to this example, we will need to create Microsoft Fabric with Lakehouse data repository. Please see the end-to end tutorials on using Microsoft Fabric [here](https://learn.microsoft.com/fabric/fundamentals/end-to-end-tutorials) for more information.
 
@@ -1334,7 +1549,7 @@ After we have created the Fabric data Agent, we can connect fabric to our Micros
 
 #### Using Microsoft Fabric tool
 
-To use the Agent with Microsoft Fabric tool, we need to include `MicrosoftFabricAgentTool` into `PromptAgentDefinition`.
+To use the Agent with Microsoft Fabric tool, we need to include `MicrosoftFabricPreviewTool` into `PromptAgentDefinition`.
 
 ```C# Snippet:Sample_CreateAgent_Fabric_Async
 AIProjectConnection fabricConnection = await projectClient.Connections.GetConnectionAsync(fabricConnectionName);
@@ -1345,14 +1560,14 @@ FabricDataAgentToolOptions fabricToolOption = new()
 PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
 {
     Instructions = "You are a helpful assistant.",
-    Tools = { new MicrosoftFabricAgentTool(fabricToolOption), }
+    Tools = { new MicrosoftFabricPreviewTool(fabricToolOption), }
 };
 AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
     agentName: "myAgent",
     options: new(agentDefinition));
 ```
 
-### A2ATool
+### A2APreviewTool (preview)<a id="a2atool"></a>
 
 The [A2A or Agent2Agent](https://a2a-protocol.org/latest/) protocol is designed to enable seamless communication between agents. In the scenario below we assume that we have the application endpoint, which complies  with A2A; the authentication is happening through header `x-api-key` value.
 
@@ -1384,11 +1599,11 @@ If we are using the Agent2agent connection, we do not need to provide the endpoi
 
 #### Using A2A Tool
 
-To use the Agent with A2A tool, we need to include `A2ATool` into `PromptAgentDefinition`.
+To use the Agent with A2A tool, we need to include `A2APreviewTool` into `PromptAgentDefinition`.
 
 ```C# Snippet:Sample_CreateAgent_AgentToAgent_Async
 AIProjectConnection a2aConnection = projectClient.Connections.GetConnection(a2aConnectionName);
-A2ATool a2aTool = new()
+A2APreviewTool a2aTool = new()
 {
     ProjectConnectionId = a2aConnection.Id
 };
@@ -1410,62 +1625,176 @@ AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
     options: new(agentDefinition));
 ```
 
-## Tracing
-**Note:** The tracing functionality is currently in preview with limited scope. Only agent creation operations generate dedicated gen_ai traces currently. As a preview feature, the trace structure including spans, attributes, and events may change in future releases.
+### Memory search tool (preview)<a id="memory-search-tool"></a>
 
-You can add an Application Insights Azure resource to your Azure AI Foundry project. See the Tracing tab in your AI Foundry project. If one was enabled, you use the Application Insights connection string, configure your Agents, and observe the full execution path through Azure Monitor. Typically, you might want to start tracing before you create an Agent.
+Memory in Foundry Agent Service is a managed, long-term memory solution. It enables Agent continuity across sessions, devices, and workflows.
+Agents can use Memory Stores by defining `MemorySearchPreviewTool` in `PromptAgentDefinition`.
 
-Tracing requires enabling OpenTelemetry support. One way to do this is to set the `AZURE_EXPERIMENTAL_ENABLE_ACTIVITY_SOURCE` environment variable value to `true`. You can also enable the feature with the following code:
-```C# Snippet:EnableActivitySourceToGetAgentTraces
-AppContext.SetSwitch("Azure.Experimental.EnableActivitySource", true);
+```C# Snippet:Sample_CreateAgentWithTool_MemoryTool_Async
+agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a prompt agent capable to access memorized conversation.",
+};
+agentDefinition.Tools.Add(new MemorySearchPreviewTool(memoryStoreName: memoryStore.Name, scope: scope));
+AgentVersion agentVersionWithMemory = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "agentWithMemory",
+    options: new(agentDefinition));
 ```
 
-To enabled content recording, set the `OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT` environment variable to `true`. Content in this context refers to chat message content, function call tool related function names, function parameter names and values. Alternatively, you can control content recording with the following code:
-```C# Snippet:DisableContentRecordingForAgentTraces
-AppContext.SetSwitch("Azure.Experimental.TraceGenAIMessageContent", false);
+### Azure Function tool
+#### Prerequisites
+To make a function call we need to create and deploy the Azure function. In the code snippet below, we have an example of function on C# which can be used by the agent.
+
+```C#
+namespace FunctionProj
+{
+    public class Response
+    {
+        public required string Value { get; set; }
+        public required string CorrelationId { get; set; }
+    }
+
+    public class Arguments
+    {
+        public required string CorrelationId { get; set; }
+    }
+
+    public class Foo
+    {
+        private readonly ILogger<Foo> _logger;
+
+        public Foo(ILogger<Foo> logger)
+        {
+            _logger = logger;
+        }
+
+        [Function("Foo")]
+        [QueueOutput("azure-function-tool-output", Connection = "AzureWebJobsStorage")]
+        public string Run([QueueTrigger("azure-function-foo-input")] Arguments input, FunctionContext executionContext)
+        {
+            var logger = executionContext.GetLogger("Foo");
+            logger.LogInformation("C# Queue function processed a request.");
+
+            var response = new Response
+            {
+                Value = "Bar",
+                // Important! Correlation ID must match the input correlation ID.
+                CorrelationId = input.CorrelationId
+            };
+
+            return JsonSerializer.Serialize(response);
+        }
+    }
+}
 ```
-Set the value to `true` to enable content recording.
 
-### Tracing to Azure Monitor
-First, set the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable to point to your Azure Monitor resource. You can also retrieve the connection string programmatically using the Azure AI Projects client library (Azure.AI.Projects) by calling the `Telemetry.GetApplicationInsightsConnectionString()` method on the `AIProjectClient` class.
+In this code we define function input and output class: `Arguments` and `Response` respectively. These two data classes will be serialized in JSON. It is important that these both contain field `CorrelationId`, which is the same between input and output.
 
-For tracing to Azure Monitor from your application, the preferred option is to use Azure.Monitor.OpenTelemetry.AspNetCore. Install the package with [NuGet](https://www.nuget.org/ ):
+**Note:** The Azure Function may be only used in standard agent setup. Please follow the [instruction](https://github.com/azure-ai-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/41-standard-agent-setup) to deploy an agent, capable of calling Azure Functions.
+In our example the function will be stored in the storage account, created with the AI hub. For that we need to allow key access to that storage. In Azure portal go to Storage account > Settings > Configuration and set "Allow storage account key access" to Enabled. If it is not done, the error will be displayed "The remote server returned an error: (403) Forbidden." To create the function resource that will host our function, install [azure-cli](https://pypi.org/project/azure-cli/) python package and run the next command:
+
 ```shell
-dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
+pip install -U azure-cli
+az login
+az functionapp create --resource-group your-resource-group --consumption-plan-location region --runtime dotnet-isolated --functions-version 4 --name function_name --storage-account storage_account_already_present_in_resource_group --app-insights existing_or_new_application_insights_name
 ```
 
-More information about using the Azure.Monitor.OpenTelemetry.AspNetCore package can be found [here](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.5/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/README.md ).
+This function writes data to the output queue and hence needs to be authenticated to Azure, so we will need to assign the function system identity and provide it `Storage Queue Data Contributor`. To do that in Azure portal select the function, located in `your-resource-group` resource group and in Settings>Identity, switch it on and click Save. After that assign the `Storage Queue Data Contributor` permission on storage account used by our function (`storage_account_already_present_in_resource_group` in the script above) for just assigned System Managed identity.
 
-Another option is to use Azure.Monitor.OpenTelemetry.Exporter package. Install the package with [NuGet](https://www.nuget.org/ )
-```shell
-dotnet add package Azure.Monitor.OpenTelemetry.Exporter
+Now we will create the function itself. Install [.NET](https://dotnet.microsoft.com/download) and [Core Tools](https://go.microsoft.com/fwlink/?linkid=2174087) and create the function project using next commands.
+```
+func init FunctionProj --worker-runtime dotnet-isolated --target-framework net8.0
+cd FunctionProj
+func new --name foo --template "HTTP trigger" --authlevel "anonymous"
+dotnet add package Azure.Identity
+dotnet add package Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues --prerelease
 ```
 
-Here is an example how to set up tracing to Azure monitor using Azure.Monitor.OpenTelemetry.Exporter:
-```C# Snippet:AgentTelemetrySetupTracingToAzureMonitor
-var tracerProvider = Sdk.CreateTracerProviderBuilder()
-    .AddSource("Azure.AI.Projects.Persistent.*")
-    .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("AgentTracingSample"))
-    .AddAzureMonitorTraceExporter().Build();
+**Note:** There is a "Azure Queue Storage trigger", however the attempt to use it results in error for now.
+We have created a project, containing HTTP-triggered azure function with the logic in `Foo.cs` file. As far as we need to trigger Azure function by a new message in the queue, we will replace the content of a Foo.cs by the C# sample code above.
+To deploy the function run the command from dotnet project folder:
+
+```
+func azure functionapp publish function_name
 ```
 
-
-### Tracing to Console
-
-For tracing to console from your application, install the OpenTelemetry.Exporter.Console with [NuGet](https://www.nuget.org/ ):
-
-```shell
-dotnet add package OpenTelemetry.Exporter.Console
+In the `storage_account_already_present_in_resource_group` select the `Queue service` and create two queues: `azure-function-foo-input` and `azure-function-tool-output`. Note that the same queues are used in our sample. To check that the function is working, place the next message into the `azure-function-foo-input` and replace `storage_account_already_present_in_resource_group` by the actual resource group name, or just copy the output queue address.
+```json
+{
+  "OutputQueueUri": "https://storage_account_already_present_in_resource_group.queue.core.windows.net/azure-function-tool-output",
+  "CorrelationId": "42"
+}
 ```
 
+After the processing, the output queue should contain the message with the following contents:
+```json
+{
+  "Value": "Bar",
+  "CorrelationId": "42"
+}
+```
+Please note that the input `CorrelationId` is the same as output.
+*Hint:* Place multiple messages to input queue and keep second internet browser window with the output queue open, hit the refresh button on the portal user interface, so that you will not miss the message. If the function completed with error the message instead gets into the `azure-function-foo-input-poison` queue. If that happened, please check your setup.
+After we have tested the function and made sure it works, please make sure that the Azure AI Project have the next roles for the storage account: `Storage Account Contributor`, `Storage Blob Data Contributor`, `Storage File Data Privileged Contributor`, `Storage Queue Data Contributor` and `Storage Table Data Contributor`. Now the function is ready to be used by the agent.
 
-Here is an example how to set up tracing to console:
-```C# Snippet:AgentTelemetrySetupTracingToConsole
-var tracerProvider = Sdk.CreateTracerProviderBuilder()
-                .AddSource("Azure.AI.Projects.Persistent.*") // Add the required sources name
-                .SetResourceBuilder(OpenTelemetry.Resources.ResourceBuilder.CreateDefault().AddService("AgentTracingSample"))
-                .AddConsoleExporter() // Export traces to the console
-                .Build();
+#### Using Agent with Azure Function
+
+To use agent with Azure Function we need to create `AzureFunctionTool`, containing the description
+of an Azure Function.
+
+```C# Snippet:Sample_AzureFunctionTool_AzureFunction
+public class Sample_AzureFunction : ProjectsOpenAITestBase
+{
+    private static AzureFunctionTool GetFunctionTool(string storageQueueUri)
+    {
+        AzureFunctionDefinitionFunction functionDefinition = new(
+            name: "foo",
+            parameters: BinaryData.FromObjectAsJson(
+                new
+                {
+                    Type = "object",
+                    Properties = new
+                    {
+                        query = new
+                        {
+                            Type = "string",
+                            Description = "The question to ask.",
+                        }
+                    }
+                },
+                new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase }
+            )
+        )
+        {
+            Description = "Get answers from the foo bot.",
+        };
+        return new AzureFunctionTool(
+            new AzureFunctionDefinition(
+                function: functionDefinition,
+                inputBinding: new AzureFunctionBinding(
+                    new AzureFunctionStorageQueue(queueServiceEndpoint: storageQueueUri, queueName: "azure-function-foo-input")),
+                outputBinding: new AzureFunctionBinding(
+                    new AzureFunctionStorageQueue(queueServiceEndpoint: storageQueueUri, queueName: "azure-function-tool-output"))
+                )
+            );
+    }
+```
+
+This tool should be used by `PromptAgentDefinition` so Agent can use the Azure Function when required.
+
+```C# Snippet:Sample_CreateAgent_AzureFunction_Async
+PromptAgentDefinition agentDefinition = new(model: modelDeploymentName)
+{
+    Instructions = "You are a helpful support agent. Use the provided function any "
+        + "time the prompt contains the string 'What would foo say?'. When you invoke "
+        + "the function, ALWAYS specify the output queue uri parameter as "
+        + $"'{storageQueueUri}/azure-function-tool-output'. Always responds with "
+        + "\"Foo says\" and then the response from the tool.",
+    Tools = { GetFunctionTool(storageQueueUri) },
+};
+AgentVersion agentVersion = await projectClient.Agents.CreateAgentVersionAsync(
+    agentName: "myAgent",
+    options: new(agentDefinition));
 ```
 
 ## Troubleshooting
@@ -1489,7 +1818,7 @@ To further diagnose and troubleshoot issues, you can enable logging following th
 
 ## Next steps
 
-Beyond the introductory scenarios discussed, the AI Agents client library offers support for additional scenarios to help take advantage of the full feature set of the AI services.  To help explore some of these scenarios, the AI Agents client library offers a set of samples to serve as an illustration for common scenarios.  Please see the [Samples](https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI/samples)
+Beyond the introductory scenarios discussed, the AI Agents client library offers support for additional scenarios to help take advantage of the full feature set of the AI services.  To help explore some of these scenarios, the AI Agents client library offers a set of samples to serve as an illustration for common scenarios.  Please see the [Samples][samples]
 
 ## Contributing
 
@@ -1503,18 +1832,14 @@ See the [Azure SDK CONTRIBUTING.md][aiprojects_contrib] for details on building,
 
 <!-- LINKS -->
 [ClientResultException]: https://learn.microsoft.com/dotnet/api/system.clientmodel.clientresultexception
-<!-- replace  feature/ai-foundry/agents-v2 -> main -->
-[samples]: https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI/samples
-<!-- remove "Persistent" -->
-[api_ref_docs]: https://learn.microsoft.com/dotnet/api/overview/azure/ai.agents.persistent-readme
-<!-- replace with https://www.nuget.org/packages/Azure.AI.Projects.OpenAI/ -->
-[nuget]: https://dev.azure.com/azure-sdk/public/_artifacts/feed/azure-sdk-for-net/NuGet/Azure.AI.Projects.OpenAI
-<!-- replace  feature/ai-foundry/agents-v2 -> main -->
-[source_code]: https://github.com/Azure/azure-sdk-for-net/tree/feature/ai-foundry/agents-v2/sdk/ai/Azure.AI.Projects.OpenAI
-[product_doc]: https://learn.microsoft.com//azure/ai-foundry/
+[samples]: https://aka.ms/azsdk/Azure.AI.Projects.OpenAI/net/samples
+[api_ref_docs]: https://aka.ms/azsdk/azure-ai-projects-v2/api-reference-2025-11-15-preview
+[nuget]: https://www.nuget.org/packages/Azure.AI.Projects.OpenAI/
+[source_code]: https://aka.ms/azsdk/Azure.AI.Projects.OpenAI/net/code
+[product_doc]: https://aka.ms/azsdk/azure-ai-projects-v2/product-doc
 [azure_identity]: https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
 [azure_identity_dac]: https://learn.microsoft.com/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet
-[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_1.0.0-beta.5/CONTRIBUTING.md
+[aiprojects_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Projects.OpenAI_2.0.0-beta.1/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [code_of_conduct_faq]: https://opensource.microsoft.com/codeofconduct/faq/
