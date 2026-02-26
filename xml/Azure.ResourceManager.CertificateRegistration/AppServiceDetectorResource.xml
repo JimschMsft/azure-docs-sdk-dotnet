@@ -1,0 +1,344 @@
+<Type Name="AppServiceDetectorResource" FullName="Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource">
+  <TypeSignature Language="C#" Value="public class AppServiceDetectorResource : Azure.ResourceManager.ArmResource, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppServiceDetectorResource extends Azure.ResourceManager.ArmResource implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppServiceDetectorResource&#xA;Inherits ArmResource&#xA;Implements IJsonModel(Of AppServiceDetectorData), IPersistableModel(Of AppServiceDetectorData)" />
+  <TypeSignature Language="F#" Value="type AppServiceDetectorResource = class&#xA;    inherit ArmResource&#xA;    interface IJsonModel&lt;AppServiceDetectorData&gt;&#xA;    interface IPersistableModel&lt;AppServiceDetectorData&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A class representing a AppServiceDetector along with the instance operations that can be performed on it.
+            If you have a <see cref="T:Azure.Core.ResourceIdentifier" /> you can construct a <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource" /> from an instance of <see cref="T:Azure.ResourceManager.ArmClient" /> using the GetResource method.
+            Otherwise you can get one from its parent resource <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource" /> using the GetAppServiceDetectors method.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AppServiceDetectorResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of AppServiceDetectorResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResourceIdentifier">
+      <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string certificateOrderName, string detectorName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string certificateOrderName, string detectorName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResourceIdentifier (subscriptionId As String, resourceGroupName As String, certificateOrderName As String, detectorName As String) As ResourceIdentifier" />
+      <MemberSignature Language="F#" Value="static member CreateResourceIdentifier : string * string * string * string -&gt; Azure.Core.ResourceIdentifier" Usage="Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.CreateResourceIdentifier (subscriptionId, resourceGroupName, certificateOrderName, detectorName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionId" Type="System.String" />
+        <Parameter Name="resourceGroupName" Type="System.String" />
+        <Parameter Name="certificateOrderName" Type="System.String" />
+        <Parameter Name="detectorName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionId"> The subscriptionId. </param>
+        <param name="resourceGroupName"> The resourceGroupName. </param>
+        <param name="certificateOrderName"> The certificateOrderName. </param>
+        <param name="detectorName"> The detectorName. </param>
+        <summary> Generate the resource identifier for this resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData Data" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Data As AppServiceDetectorData" />
+      <MemberSignature Language="F#" Value="member this.Data : Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData" Usage="Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the data representing this Feature. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt; Get (DateTimeOffset? startOn = default, DateTimeOffset? endOn = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt; Get(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endOn, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.Get(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (Optional startOn As Nullable(Of DateTimeOffset) = Nothing, Optional endOn As Nullable(Of DateTimeOffset) = Nothing, Optional timeGrain As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of AppServiceDetectorResource)" />
+      <MemberSignature Language="F#" Value="abstract member Get : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;&#xA;override this.Get : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;" Usage="appServiceDetectorResource.Get (startOn, endOn, timeGrain, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="endOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="timeGrain" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="startOn"> The start time for detector response. </param>
+        <param name="endOn"> The end time for the detector response. </param>
+        <param name="timeGrain"> The time grain for the detector response. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Microsoft.CertificateRegistration call to get a detector response from App Lens.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/detectors/{detectorName}. </description></item><item><term> Operation Id. </term><description> CertificateOrdersDiagnostics_GetAppServiceCertificateOrderDetectorResponse. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;&gt; GetAsync (DateTimeOffset? startOn = default, DateTimeOffset? endOn = default, string timeGrain = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;&gt; GetAsync(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endOn, string timeGrain, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.GetAsync(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAsync (Optional startOn As Nullable(Of DateTimeOffset) = Nothing, Optional endOn As Nullable(Of DateTimeOffset) = Nothing, Optional timeGrain As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of AppServiceDetectorResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;&gt;&#xA;override this.GetAsync : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;&gt;" Usage="appServiceDetectorResource.GetAsync (startOn, endOn, timeGrain, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="endOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="timeGrain" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="startOn"> The start time for detector response. </param>
+        <param name="endOn"> The end time for the detector response. </param>
+        <param name="timeGrain"> The time grain for the detector response. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Microsoft.CertificateRegistration call to get a detector response from App Lens.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/detectors/{detectorName}. </description></item><item><term> Operation Id. </term><description> CertificateOrdersDiagnostics_GetAppServiceCertificateOrderDetectorResponse. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasData">
+      <MemberSignature Language="C#" Value="public virtual bool HasData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasData" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.HasData" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasData As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasData : bool" Usage="Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.HasData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets whether or not the current instance has data. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceType">
+      <MemberSignature Language="C#" Value="public static readonly Azure.Core.ResourceType ResourceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Azure.Core.ResourceType ResourceType" />
+      <MemberSignature Language="DocId" Value="F:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.ResourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceType As ResourceType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ResourceType : Azure.Core.ResourceType" Usage="Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.ResourceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the resource type for the operations. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData IJsonModel&lt;AppServiceDetectorData&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#CertificateRegistration#AppServiceDetectorData&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As AppServiceDetectorData Implements IJsonModel(Of AppServiceDetectorData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData" Usage="appServiceDetectorResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The reader for deserializing the model. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;AppServiceDetectorData&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#CertificateRegistration#AppServiceDetectorData&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of AppServiceDetectorData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="appServiceDetectorResource.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The writer to serialize the model to. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData IPersistableModel&lt;AppServiceDetectorData&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#CertificateRegistration#AppServiceDetectorData&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As AppServiceDetectorData Implements IPersistableModel(Of AppServiceDetectorData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData" Usage="appServiceDetectorResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The binary data to be processed. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;AppServiceDetectorData&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#CertificateRegistration#AppServiceDetectorData&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of AppServiceDetectorData).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="appServiceDetectorResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;AppServiceDetectorData&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#CertificateRegistration#AppServiceDetectorData&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of AppServiceDetectorData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="appServiceDetectorResource.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.CertificateRegistration.AppServiceDetectorData&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

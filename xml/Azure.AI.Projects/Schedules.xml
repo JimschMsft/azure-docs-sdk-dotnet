@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +26,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,33 +35,33 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt; CreateOrUpdate (string id, Azure.AI.Projects.Schedule schedule, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.Schedule&gt; CreateOrUpdate(string id, class Azure.AI.Projects.Schedule schedule, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt; CreateOrUpdate (string id, Azure.AI.Projects.Schedule resource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.Schedule&gt; CreateOrUpdate(string id, class Azure.AI.Projects.Schedule resource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.CreateOrUpdate(System.String,Azure.AI.Projects.Schedule,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (id As String, schedule As Schedule, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of Schedule)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&#xA;override this.CreateOrUpdate : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;" Usage="schedules.CreateOrUpdate (id, schedule, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (id As String, resource As Schedule, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of Schedule)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&#xA;override this.CreateOrUpdate : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;" Usage="schedules.CreateOrUpdate (id, resource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="schedule" Type="Azure.AI.Projects.Schedule" />
+        <Parameter Name="resource" Type="Azure.AI.Projects.Schedule" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="id"> Identifier of the schedule. </param>
-        <param name="schedule"> Schedule resource. </param>
+        <param name="resource"> The resource instance. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
-        <summary> Create or update a schedule by id. </summary>
+        <summary> Create or update operation template. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="id" /> or <paramref name="schedule" /> is null. </exception>
+          <paramref name="id" /> or <paramref name="resource" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="id" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
@@ -75,7 +76,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -90,7 +91,7 @@
         <param name="content"> The content to send as the body of the request. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
-            [Protocol Method] Create or update a schedule by id.
+            [Protocol Method] Create or update operation template.
             <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
@@ -102,33 +103,33 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt; CreateOrUpdateAsync (string id, Azure.AI.Projects.Schedule schedule, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.Schedule&gt;&gt; CreateOrUpdateAsync(string id, class Azure.AI.Projects.Schedule schedule, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt; CreateOrUpdateAsync (string id, Azure.AI.Projects.Schedule resource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.Schedule&gt;&gt; CreateOrUpdateAsync(string id, class Azure.AI.Projects.Schedule resource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.CreateOrUpdateAsync(System.String,Azure.AI.Projects.Schedule,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (id As String, schedule As Schedule, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of Schedule))" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt;" Usage="schedules.CreateOrUpdateAsync (id, schedule, cancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (id As String, resource As Schedule, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of Schedule))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.AI.Projects.Schedule * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt;" Usage="schedules.CreateOrUpdateAsync (id, resource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="schedule" Type="Azure.AI.Projects.Schedule" />
+        <Parameter Name="resource" Type="Azure.AI.Projects.Schedule" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="id"> Identifier of the schedule. </param>
-        <param name="schedule"> Schedule resource. </param>
+        <param name="resource"> The resource instance. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
-        <summary> Create or update a schedule by id. </summary>
+        <summary> Create or update operation template. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="id" /> or <paramref name="schedule" /> is null. </exception>
+          <paramref name="id" /> or <paramref name="resource" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="id" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
@@ -143,7 +144,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -158,7 +159,7 @@
         <param name="content"> The content to send as the body of the request. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
-            [Protocol Method] Create or update a schedule by id.
+            [Protocol Method] Create or update operation template.
             <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
@@ -178,7 +179,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -211,7 +212,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -242,7 +243,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -275,7 +276,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -306,7 +307,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -339,7 +340,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;</ReturnType>
@@ -362,50 +363,27 @@
       </Docs>
     </Member>
     <Member MemberName="GetAll">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetAll (System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetAll(class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAll(System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (options As RequestOptions) As CollectionResult" />
-      <MemberSignature Language="F#" Value="abstract member GetAll : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetAll : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="schedules.GetAll options" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.Schedule&gt; GetAll (Azure.AI.Projects.ScheduleTaskType? type = default, bool? enabled = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.Schedule&gt; GetAll(valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ScheduleTaskType&gt; type, valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAll(System.Nullable{Azure.AI.Projects.ScheduleTaskType},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (Optional type As Nullable(Of ScheduleTaskType) = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of Schedule)" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.Schedule&gt;&#xA;override this.GetAll : Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.Schedule&gt;" Usage="schedules.GetAll (type, enabled, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
-      </Parameters>
-      <Docs>
-        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary>
-            [Protocol Method] List all schedules.
-            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
-        <returns> The response returned from the service. </returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAll">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.Schedule&gt; GetAll (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.Schedule&gt; GetAll(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAll(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of Schedule)" />
-      <MemberSignature Language="F#" Value="abstract member GetAll : System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.Schedule&gt;&#xA;override this.GetAll : System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.Schedule&gt;" Usage="schedules.GetAll cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.Schedule&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt;" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> List all schedules. </summary>
         <returns>To be added.</returns>
@@ -413,24 +391,28 @@
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetAllAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync (System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync(class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAllAsync(System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (options As RequestOptions) As AsyncCollectionResult" />
-      <MemberSignature Language="F#" Value="abstract member GetAllAsync : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetAllAsync : System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="schedules.GetAllAsync options" />
+    <Member MemberName="GetAll">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetAll (string type, bool? enabled, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetAll(string type, valuetype System.Nullable`1&lt;bool&gt; enabled, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAll(System.String,System.Nullable{System.Boolean},System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAll (type As String, enabled As Nullable(Of Boolean), options As RequestOptions) As CollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetAll : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="schedules.GetAll (type, enabled, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
+        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] List all schedules.
@@ -441,26 +423,61 @@
       </Docs>
     </Member>
     <Member MemberName="GetAllAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.Schedule&gt; GetAllAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.Schedule&gt; GetAllAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAllAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of Schedule)" />
-      <MemberSignature Language="F#" Value="abstract member GetAllAsync : System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.Schedule&gt;&#xA;override this.GetAllAsync : System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.Schedule&gt;" Usage="schedules.GetAllAsync cancellationToken" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.Schedule&gt; GetAllAsync (Azure.AI.Projects.ScheduleTaskType? type = default, bool? enabled = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.Schedule&gt; GetAllAsync(valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ScheduleTaskType&gt; type, valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAllAsync(System.Nullable{Azure.AI.Projects.ScheduleTaskType},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (Optional type As Nullable(Of ScheduleTaskType) = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of Schedule)" />
+      <MemberSignature Language="F#" Value="abstract member GetAllAsync : Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.Schedule&gt;&#xA;override this.GetAllAsync : Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.Schedule&gt;" Usage="schedules.GetAllAsync (type, enabled, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.Schedule&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt;" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> List all schedules. </summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync (string type, bool? enabled, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetAllAsync(string type, valuetype System.Nullable`1&lt;bool&gt; enabled, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetAllAsync(System.String,System.Nullable{System.Boolean},System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllAsync (type As String, enabled As Nullable(Of Boolean), options As RequestOptions) As AsyncCollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAllAsync : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetAllAsync : string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="schedules.GetAllAsync (type, enabled, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] List all schedules.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
       </Docs>
@@ -474,7 +491,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -507,7 +524,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.Schedule&gt;&gt;</ReturnType>
@@ -538,7 +555,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -549,8 +566,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="scheduleId"> Identifier of the schedule. </param>
-        <param name="runId"> Identifier of the schedule run. </param>
+        <param name="scheduleId"> The unique identifier of the schedule. </param>
+        <param name="runId"> The unique identifier of the schedule run. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get a schedule run by id.
@@ -573,7 +590,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.ScheduleRun&gt;</ReturnType>
@@ -584,8 +601,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="scheduleId"> Identifier of the schedule. </param>
-        <param name="runId"> Identifier of the schedule run. </param>
+        <param name="scheduleId"> The unique identifier of the schedule. </param>
+        <param name="runId"> The unique identifier of the schedule run. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get a schedule run by id. </summary>
         <returns>To be added.</returns>
@@ -606,7 +623,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -617,8 +634,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
-        <param name="scheduleId"> Identifier of the schedule. </param>
-        <param name="runId"> Identifier of the schedule run. </param>
+        <param name="scheduleId"> The unique identifier of the schedule. </param>
+        <param name="runId"> The unique identifier of the schedule run. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Get a schedule run by id.
@@ -641,7 +658,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.ScheduleRun&gt;&gt;</ReturnType>
@@ -652,8 +669,8 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="scheduleId"> Identifier of the schedule. </param>
-        <param name="runId"> Identifier of the schedule run. </param>
+        <param name="scheduleId"> The unique identifier of the schedule. </param>
+        <param name="runId"> The unique identifier of the schedule run. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Get a schedule run by id. </summary>
         <returns>To be added.</returns>
@@ -666,30 +683,32 @@
       </Docs>
     </Member>
     <Member MemberName="GetRuns">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetRuns (string id, System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetRuns(string id, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRuns(System.String,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuns (id As String, options As RequestOptions) As CollectionResult" />
-      <MemberSignature Language="F#" Value="abstract member GetRuns : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetRuns : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="schedules.GetRuns (id, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt; GetRuns (string id, Azure.AI.Projects.ScheduleTaskType? type = default, bool? enabled = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.ScheduleRun&gt; GetRuns(string id, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ScheduleTaskType&gt; type, valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRuns(System.String,System.Nullable{Azure.AI.Projects.ScheduleTaskType},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuns (id As String, Optional type As Nullable(Of ScheduleTaskType) = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of ScheduleRun)" />
+      <MemberSignature Language="F#" Value="abstract member GetRuns : string * Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;&#xA;override this.GetRuns : string * Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;" Usage="schedules.GetRuns (id, type, enabled, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
+        <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt;" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="id"> Identifier of the schedule. </param>
-        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary>
-            [Protocol Method] List all schedule runs.
-            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
-        <returns> The response returned from the service. </returns>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
+        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
+        <summary> List all schedule runs. </summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="id" /> is null. </exception>
@@ -699,56 +718,29 @@
       </Docs>
     </Member>
     <Member MemberName="GetRuns">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt; GetRuns (string id, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.ScheduleRun&gt; GetRuns(string id, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRuns(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuns (id As String, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of ScheduleRun)" />
-      <MemberSignature Language="F#" Value="abstract member GetRuns : string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;&#xA;override this.GetRuns : string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;" Usage="schedules.GetRuns (id, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetRuns (string id, string type, bool? enabled, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetRuns(string id, string type, valuetype System.Nullable`1&lt;bool&gt; enabled, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRuns(System.String,System.String,System.Nullable{System.Boolean},System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuns (id As String, type As String, enabled As Nullable(Of Boolean), options As RequestOptions) As CollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetRuns : string * string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetRuns : string * string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="schedules.GetRuns (id, type, enabled, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;</ReturnType>
+        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="id"> Identifier of the schedule. </param>
-        <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
-        <summary> List all schedule runs. </summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="id" /> is null. </exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="id" /> is an empty string, and was expected to be non-empty. </exception>
-        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetRunsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetRunsAsync (string id, System.ClientModel.Primitives.RequestOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetRunsAsync(string id, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRunsAsync(System.String,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRunsAsync (id As String, options As RequestOptions) As AsyncCollectionResult" />
-      <MemberSignature Language="F#" Value="abstract member GetRunsAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetRunsAsync : string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="schedules.GetRunsAsync (id, options)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="id"> Identifier of the schedule. </param>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] List all schedule runs.
@@ -763,28 +755,69 @@
       </Docs>
     </Member>
     <Member MemberName="GetRunsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt; GetRunsAsync (string id, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.ScheduleRun&gt; GetRunsAsync(string id, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRunsAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRunsAsync (id As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of ScheduleRun)" />
-      <MemberSignature Language="F#" Value="abstract member GetRunsAsync : string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;&#xA;override this.GetRunsAsync : string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;" Usage="schedules.GetRunsAsync (id, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt; GetRunsAsync (string id, Azure.AI.Projects.ScheduleTaskType? type = default, bool? enabled = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.ScheduleRun&gt; GetRunsAsync(string id, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ScheduleTaskType&gt; type, valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRunsAsync(System.String,System.Nullable{Azure.AI.Projects.ScheduleTaskType},System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRunsAsync (id As String, Optional type As Nullable(Of ScheduleTaskType) = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of ScheduleRun)" />
+      <MemberSignature Language="F#" Value="abstract member GetRunsAsync : string * Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;&#xA;override this.GetRunsAsync : string * Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt; * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;" Usage="schedules.GetRunsAsync (id, type, enabled, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.ScheduleRun&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.AI.Projects.ScheduleTaskType&gt;" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="id"> Identifier of the schedule. </param>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> List all schedule runs. </summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="id" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="id" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRunsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetRunsAsync (string id, string type, bool? enabled, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetRunsAsync(string id, string type, valuetype System.Nullable`1&lt;bool&gt; enabled, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Schedules.GetRunsAsync(System.String,System.String,System.Nullable{System.Boolean},System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRunsAsync (id As String, type As String, enabled As Nullable(Of Boolean), options As RequestOptions) As AsyncCollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetRunsAsync : string * string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetRunsAsync : string * string * Nullable&lt;bool&gt; * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="schedules.GetRunsAsync (id, type, enabled, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Identifier of the schedule. </param>
+        <param name="type"> Filter by the type of schedule. </param>
+        <param name="enabled"> Filter by the enabled status. </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] List all schedule runs.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="id" /> is null. </exception>
@@ -802,7 +835,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.ClientPipeline</ReturnType>

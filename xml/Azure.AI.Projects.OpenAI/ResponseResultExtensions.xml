@@ -2,11 +2,12 @@
   <TypeSignature Language="C#" Value="public static class ResponseResultExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResponseResultExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Azure.AI.Projects.OpenAI.ResponseResultExtensions" />
-  <TypeSignature Language="VB.NET" Value="Public Class ResponseResultExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ResponseResultExtensions" />
   <TypeSignature Language="F#" Value="type ResponseResultExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,16 +18,76 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="CreateResponse">
+      <MemberSignature Language="C#" Value="public static System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt; CreateResponse (this OpenAI.Responses.ResponsesClient responseClient, Azure.AI.Projects.OpenAI.ProjectConversation conversation, Azure.AI.Projects.OpenAI.AgentReference agentRef, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt; CreateResponse(class OpenAI.Responses.ResponsesClient responseClient, class Azure.AI.Projects.OpenAI.ProjectConversation conversation, class Azure.AI.Projects.OpenAI.AgentReference agentRef, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ResponseResultExtensions.CreateResponse(OpenAI.Responses.ResponsesClient,Azure.AI.Projects.OpenAI.ProjectConversation,Azure.AI.Projects.OpenAI.AgentReference,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateResponse (responseClient As ResponsesClient, conversation As ProjectConversation, agentRef As AgentReference, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of ResponseResult)" />
+      <MemberSignature Language="F#" Value="static member CreateResponse : OpenAI.Responses.ResponsesClient * Azure.AI.Projects.OpenAI.ProjectConversation * Azure.AI.Projects.OpenAI.AgentReference * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;" Usage="Azure.AI.Projects.OpenAI.ResponseResultExtensions.CreateResponse (responseClient, conversation, agentRef, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="responseClient" Type="OpenAI.Responses.ResponsesClient" RefType="this" />
+        <Parameter Name="conversation" Type="Azure.AI.Projects.OpenAI.ProjectConversation" />
+        <Parameter Name="agentRef" Type="Azure.AI.Projects.OpenAI.AgentReference" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="responseClient">To be added.</param>
+        <param name="conversation">To be added.</param>
+        <param name="agentRef">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponseAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync (this OpenAI.Responses.ResponsesClient responseClient, Azure.AI.Projects.OpenAI.ProjectConversation conversation, Azure.AI.Projects.OpenAI.AgentReference agentRef, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class OpenAI.Responses.ResponseResult&gt;&gt; CreateResponseAsync(class OpenAI.Responses.ResponsesClient responseClient, class Azure.AI.Projects.OpenAI.ProjectConversation conversation, class Azure.AI.Projects.OpenAI.AgentReference agentRef, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ResponseResultExtensions.CreateResponseAsync(OpenAI.Responses.ResponsesClient,Azure.AI.Projects.OpenAI.ProjectConversation,Azure.AI.Projects.OpenAI.AgentReference,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateResponseAsync (responseClient As ResponsesClient, conversation As ProjectConversation, agentRef As AgentReference, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of ResponseResult))" />
+      <MemberSignature Language="F#" Value="static member CreateResponseAsync : OpenAI.Responses.ResponsesClient * Azure.AI.Projects.OpenAI.ProjectConversation * Azure.AI.Projects.OpenAI.AgentReference * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;" Usage="Azure.AI.Projects.OpenAI.ResponseResultExtensions.CreateResponseAsync (responseClient, conversation, agentRef, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;OpenAI.Responses.ResponseResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="responseClient" Type="OpenAI.Responses.ResponsesClient" RefType="this" />
+        <Parameter Name="conversation" Type="Azure.AI.Projects.OpenAI.ProjectConversation" />
+        <Parameter Name="agentRef" Type="Azure.AI.Projects.OpenAI.AgentReference" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="responseClient">To be added.</param>
+        <param name="conversation">To be added.</param>
+        <param name="agentRef">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="get_Agent">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.AgentReference get_Agent (OpenAI.Responses.ResponseResult response);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.AgentReference get_Agent(class OpenAI.Responses.ResponseResult response) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ResponseResultExtensions.get_Agent(OpenAI.Responses.ResponseResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function get_Agent (response As ResponseResult) As AgentReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function get_Agent (response As ResponseResult) As AgentReference" />
       <MemberSignature Language="F#" Value="static member get_Agent : OpenAI.Responses.ResponseResult -&gt; Azure.AI.Projects.OpenAI.AgentReference" Usage="Azure.AI.Projects.OpenAI.ResponseResultExtensions.get_Agent response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OpenAI.AgentReference</ReturnType>
@@ -45,12 +106,12 @@
       <MemberSignature Language="C#" Value="public static string get_AgentConversationId (OpenAI.Responses.ResponseResult response);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string get_AgentConversationId(class OpenAI.Responses.ResponseResult response) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.ResponseResultExtensions.get_AgentConversationId(OpenAI.Responses.ResponseResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function get_AgentConversationId (response As ResponseResult) As String" />
+      <MemberSignature Language="VB.NET" Value="Public Function get_AgentConversationId (response As ResponseResult) As String" />
       <MemberSignature Language="F#" Value="static member get_AgentConversationId : OpenAI.Responses.ResponseResult -&gt; string" Usage="Azure.AI.Projects.OpenAI.ResponseResultExtensions.get_AgentConversationId response" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

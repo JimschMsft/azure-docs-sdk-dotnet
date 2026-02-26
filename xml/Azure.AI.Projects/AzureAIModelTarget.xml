@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.AI.Projects.Target</BaseTypeName>
@@ -27,6 +28,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AzureAIModelTarget ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIModelTarget.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.AzureAIModelTarget" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="JsonModelCreateCore">
       <MemberSignature Language="C#" Value="protected override Azure.AI.Projects.Target JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.Projects.Target JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
@@ -36,7 +53,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.Target</ReturnType>
@@ -62,7 +79,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -79,15 +96,15 @@
       </Docs>
     </Member>
     <Member MemberName="Model">
-      <MemberSignature Language="C#" Value="public string Model { get; }" />
+      <MemberSignature Language="C#" Value="public string Model { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Model" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AzureAIModelTarget.Model" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Model As String" />
-      <MemberSignature Language="F#" Value="member this.Model : string" Usage="Azure.AI.Projects.AzureAIModelTarget.Model" />
+      <MemberSignature Language="VB.NET" Value="Public Property Model As String" />
+      <MemberSignature Language="F#" Value="member this.Model : string with get, set" Usage="Azure.AI.Projects.AzureAIModelTarget.Model" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -107,7 +124,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.Target</ReturnType>
@@ -133,7 +150,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -149,15 +166,15 @@
       </Docs>
     </Member>
     <Member MemberName="SamplingParams">
-      <MemberSignature Language="C#" Value="public Azure.AI.Projects.ModelSamplingParams SamplingParams { get; }" />
+      <MemberSignature Language="C#" Value="public Azure.AI.Projects.ModelSamplingParams SamplingParams { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.ModelSamplingParams SamplingParams" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AzureAIModelTarget.SamplingParams" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SamplingParams As ModelSamplingParams" />
-      <MemberSignature Language="F#" Value="member this.SamplingParams : Azure.AI.Projects.ModelSamplingParams" Usage="Azure.AI.Projects.AzureAIModelTarget.SamplingParams" />
+      <MemberSignature Language="VB.NET" Value="Public Property SamplingParams As ModelSamplingParams" />
+      <MemberSignature Language="F#" Value="member this.SamplingParams : Azure.AI.Projects.ModelSamplingParams with get, set" Usage="Azure.AI.Projects.AzureAIModelTarget.SamplingParams" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ModelSamplingParams</ReturnType>
@@ -180,7 +197,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AzureAIModelTarget</ReturnType>
@@ -209,7 +226,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -237,7 +254,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AzureAIModelTarget</ReturnType>
@@ -266,7 +283,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -293,7 +310,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

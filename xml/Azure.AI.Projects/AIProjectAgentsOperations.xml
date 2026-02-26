@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +26,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,15 +35,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAgent">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult CreateAgent (System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult CreateAgent(class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgent(System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgent (content As BinaryContent, Optional options As RequestOptions = Nothing) As ClientResult" />
-      <MemberSignature Language="F#" Value="abstract member CreateAgent : System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.CreateAgent : System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="aIProjectAgentsOperations.CreateAgent (content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult CreateAgent (System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult CreateAgent(class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgent(System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgent (content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As ClientResult" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgent : System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.CreateAgent : System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="aIProjectAgentsOperations.CreateAgent (content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -55,10 +56,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Creates the agent.
@@ -71,15 +74,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAgentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; CreateAgentAsync (System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; CreateAgentAsync(class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentAsync(System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentAsync (content As BinaryContent, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
-      <MemberSignature Language="F#" Value="abstract member CreateAgentAsync : System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.CreateAgentAsync : System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="aIProjectAgentsOperations.CreateAgentAsync (content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; CreateAgentAsync (System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; CreateAgentAsync(class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentAsync(System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentAsync (content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgentAsync : System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.CreateAgentAsync : System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="aIProjectAgentsOperations.CreateAgentAsync (content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -92,10 +95,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Creates the agent.
@@ -116,7 +121,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -153,7 +158,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -182,15 +187,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAgentVersion">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt; CreateAgentVersion (string agentName, Azure.AI.Projects.AgentVersionCreationOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.OpenAI.AgentVersion&gt; CreateAgentVersion(string agentName, class Azure.AI.Projects.AgentVersionCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersion(System.String,Azure.AI.Projects.AgentVersionCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersion (agentName As String, options As AgentVersionCreationOptions, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of AgentVersion)" />
-      <MemberSignature Language="F#" Value="abstract member CreateAgentVersion : string * Azure.AI.Projects.AgentVersionCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&#xA;override this.CreateAgentVersion : string * Azure.AI.Projects.AgentVersionCreationOptions * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;" Usage="aIProjectAgentsOperations.CreateAgentVersion (agentName, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt; CreateAgentVersion (string agentName, Azure.AI.Projects.AgentVersionCreationOptions options, string foundryFeatures = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.OpenAI.AgentVersion&gt; CreateAgentVersion(string agentName, class Azure.AI.Projects.AgentVersionCreationOptions options, string foundryFeatures, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersion(System.String,Azure.AI.Projects.AgentVersionCreationOptions,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersion (agentName As String, options As AgentVersionCreationOptions, Optional foundryFeatures As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of AgentVersion)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgentVersion : string * Azure.AI.Projects.AgentVersionCreationOptions * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&#xA;override this.CreateAgentVersion : string * Azure.AI.Projects.AgentVersionCreationOptions * string * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;" Usage="aIProjectAgentsOperations.CreateAgentVersion (agentName, options, foundryFeatures, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;</ReturnType>
@@ -198,11 +203,13 @@
       <Parameters>
         <Parameter Name="agentName" Type="System.String" />
         <Parameter Name="options" Type="Azure.AI.Projects.AgentVersionCreationOptions" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="agentName"> The name of the agent for which a new version should be created. </param>
         <param name="options"> Options, including the definition, for the new agent version to create. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Create a new agent version. </summary>
         <returns>To be added.</returns>
@@ -215,15 +222,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAgentVersion">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult CreateAgentVersion (string agentName, System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult CreateAgentVersion(string agentName, class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersion(System.String,System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersion (agentName As String, content As BinaryContent, Optional options As RequestOptions = Nothing) As ClientResult" />
-      <MemberSignature Language="F#" Value="abstract member CreateAgentVersion : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.CreateAgentVersion : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="aIProjectAgentsOperations.CreateAgentVersion (agentName, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult CreateAgentVersion (string agentName, System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult CreateAgentVersion(string agentName, class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersion(System.String,System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersion (agentName As String, content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As ClientResult" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgentVersion : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.CreateAgentVersion : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="aIProjectAgentsOperations.CreateAgentVersion (agentName, content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -237,11 +244,13 @@
       <Parameters>
         <Parameter Name="agentName" Type="System.String" />
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="agentName"> The name of the agent to create/modify. </param>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Create a new agent version.
@@ -256,15 +265,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAgentVersionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt; CreateAgentVersionAsync (string agentName, Azure.AI.Projects.AgentVersionCreationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt; CreateAgentVersionAsync(string agentName, class Azure.AI.Projects.AgentVersionCreationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersionAsync(System.String,Azure.AI.Projects.AgentVersionCreationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersionAsync (agentName As String, Optional options As AgentVersionCreationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of AgentVersion))" />
-      <MemberSignature Language="F#" Value="abstract member CreateAgentVersionAsync : string * Azure.AI.Projects.AgentVersionCreationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt;&#xA;override this.CreateAgentVersionAsync : string * Azure.AI.Projects.AgentVersionCreationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt;" Usage="aIProjectAgentsOperations.CreateAgentVersionAsync (agentName, options, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt; CreateAgentVersionAsync (string agentName, Azure.AI.Projects.AgentVersionCreationOptions options = default, string foundryFeatures = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt; CreateAgentVersionAsync(string agentName, class Azure.AI.Projects.AgentVersionCreationOptions options, string foundryFeatures, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersionAsync(System.String,Azure.AI.Projects.AgentVersionCreationOptions,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersionAsync (agentName As String, Optional options As AgentVersionCreationOptions = Nothing, Optional foundryFeatures As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of AgentVersion))" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgentVersionAsync : string * Azure.AI.Projects.AgentVersionCreationOptions * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt;&#xA;override this.CreateAgentVersionAsync : string * Azure.AI.Projects.AgentVersionCreationOptions * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt;" Usage="aIProjectAgentsOperations.CreateAgentVersionAsync (agentName, options, foundryFeatures, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt;</ReturnType>
@@ -272,11 +281,13 @@
       <Parameters>
         <Parameter Name="agentName" Type="System.String" />
         <Parameter Name="options" Type="Azure.AI.Projects.AgentVersionCreationOptions" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="agentName"> The name of the agent for which a new version should be created. </param>
         <param name="options"> Options, including the definition, for the new agent version to create. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Create a new agent version. </summary>
         <returns>To be added.</returns>
@@ -289,15 +300,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateAgentVersionAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; CreateAgentVersionAsync (string agentName, System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; CreateAgentVersionAsync(string agentName, class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersionAsync(System.String,System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersionAsync (agentName As String, content As BinaryContent, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
-      <MemberSignature Language="F#" Value="abstract member CreateAgentVersionAsync : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.CreateAgentVersionAsync : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="aIProjectAgentsOperations.CreateAgentVersionAsync (agentName, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; CreateAgentVersionAsync (string agentName, System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; CreateAgentVersionAsync(string agentName, class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.CreateAgentVersionAsync(System.String,System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAgentVersionAsync (agentName As String, content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAgentVersionAsync : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.CreateAgentVersionAsync : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="aIProjectAgentsOperations.CreateAgentVersionAsync (agentName, content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -311,11 +322,13 @@
       <Parameters>
         <Parameter Name="agentName" Type="System.String" />
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="agentName"> The name of the agent to create/modify. </param>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Create a new agent version.
@@ -338,7 +351,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -379,7 +392,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;</ReturnType>
@@ -409,7 +422,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -450,7 +463,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt;</ReturnType>
@@ -480,7 +493,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -519,7 +532,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -550,7 +563,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -589,7 +602,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -620,7 +633,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -661,7 +674,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -694,7 +707,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -735,7 +748,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -768,7 +781,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -807,7 +820,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentRecord&gt;</ReturnType>
@@ -838,7 +851,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -877,7 +890,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentRecord&gt;&gt;</ReturnType>
@@ -908,7 +921,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.AgentRecord&gt;</ReturnType>
@@ -948,6 +961,57 @@
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetAgents">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetAgents (string kind, int? limit, string order, string after, string before, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetAgents(string kind, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.GetAgents(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAgents (kind As String, limit As Nullable(Of Integer), order As String, after As String, before As String, options As RequestOptions) As CollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAgents : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetAgents : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="aIProjectAgentsOperations.GetAgents (kind, limit, order, after, before, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="order" Type="System.String" />
+        <Parameter Name="after" Type="System.String" />
+        <Parameter Name="before" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Filter agents by kind. If not provided, all agents are returned. </param>
+        <param name="limit">
+            A limit on the number of objects to be returned. Limit can range between 1 and 100, and the
+            default is 20.
+            </param>
+        <param name="order">
+            Sort order by the `created_at` timestamp of the objects. `asc` for ascending order and`desc`
+            for descending order.
+            </param>
+        <param name="after">
+            A cursor for use in pagination. `after` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include after=obj_foo in order to fetch the next page of the list.
+            </param>
+        <param name="before">
+            A cursor for use in pagination. `before` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include before=obj_foo in order to fetch the previous page of the list.
+            </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] Returns the list of all agents.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetAgentsAsync">
       <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.AgentRecord&gt; GetAgentsAsync (Azure.AI.Projects.AgentKind? kind = default, int? limit = default, Azure.AI.Projects.AgentListOrder? order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.OpenAI.AgentRecord&gt; GetAgentsAsync(valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AgentKind&gt; kind, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AgentListOrder&gt; order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -957,7 +1021,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.AgentRecord&gt;</ReturnType>
@@ -997,6 +1061,57 @@
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetAgentsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetAgentsAsync (string kind, int? limit, string order, string after, string before, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetAgentsAsync(string kind, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.GetAgentsAsync(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAgentsAsync (kind As String, limit As Nullable(Of Integer), order As String, after As String, before As String, options As RequestOptions) As AsyncCollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAgentsAsync : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetAgentsAsync : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="aIProjectAgentsOperations.GetAgentsAsync (kind, limit, order, after, before, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="order" Type="System.String" />
+        <Parameter Name="after" Type="System.String" />
+        <Parameter Name="before" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Filter agents by kind. If not provided, all agents are returned. </param>
+        <param name="limit">
+            A limit on the number of objects to be returned. Limit can range between 1 and 100, and the
+            default is 20.
+            </param>
+        <param name="order">
+            Sort order by the `created_at` timestamp of the objects. `asc` for ascending order and`desc`
+            for descending order.
+            </param>
+        <param name="after">
+            A cursor for use in pagination. `after` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include after=obj_foo in order to fetch the next page of the list.
+            </param>
+        <param name="before">
+            A cursor for use in pagination. `before` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include before=obj_foo in order to fetch the previous page of the list.
+            </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] Returns the list of all agents.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetAgentVersion">
       <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult GetAgentVersion (string agentName, string agentVersion, System.ClientModel.Primitives.RequestOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult GetAgentVersion(string agentName, string agentVersion, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
@@ -1006,7 +1121,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1047,7 +1162,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;</ReturnType>
@@ -1080,7 +1195,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1121,7 +1236,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;&gt;</ReturnType>
@@ -1154,7 +1269,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;</ReturnType>
@@ -1198,6 +1313,61 @@
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetAgentVersions">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.CollectionResult GetAgentVersions (string agentName, int? limit, string order, string after, string before, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.CollectionResult GetAgentVersions(string agentName, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.GetAgentVersions(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAgentVersions (agentName As String, limit As Nullable(Of Integer), order As String, after As String, before As String, options As RequestOptions) As CollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAgentVersions : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult&#xA;override this.GetAgentVersions : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.CollectionResult" Usage="aIProjectAgentsOperations.GetAgentVersions (agentName, limit, order, after, before, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agentName" Type="System.String" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="order" Type="System.String" />
+        <Parameter Name="after" Type="System.String" />
+        <Parameter Name="before" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="agentName"> The name of the agent to retrieve versions for. </param>
+        <param name="limit">
+            A limit on the number of objects to be returned. Limit can range between 1 and 100, and the
+            default is 20.
+            </param>
+        <param name="order">
+            Sort order by the `created_at` timestamp of the objects. `asc` for ascending order and`desc`
+            for descending order.
+            </param>
+        <param name="after">
+            A cursor for use in pagination. `after` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include after=obj_foo in order to fetch the next page of the list.
+            </param>
+        <param name="before">
+            A cursor for use in pagination. `before` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include before=obj_foo in order to fetch the previous page of the list.
+            </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] Returns the list of versions of an agent.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="agentName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="agentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetAgentVersionsAsync">
       <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt; GetAgentVersionsAsync (string agentName, int? limit = default, Azure.AI.Projects.AgentListOrder? order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.OpenAI.AgentVersion&gt; GetAgentVersionsAsync(string agentName, valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AgentListOrder&gt; order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -1207,7 +1377,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.OpenAI.AgentVersion&gt;</ReturnType>
@@ -1251,6 +1421,61 @@
         <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetAgentVersionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.Primitives.AsyncCollectionResult GetAgentVersionsAsync (string agentName, int? limit, string order, string after, string before, System.ClientModel.Primitives.RequestOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.Primitives.AsyncCollectionResult GetAgentVersionsAsync(string agentName, valuetype System.Nullable`1&lt;int32&gt; limit, string order, string after, string before, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.GetAgentVersionsAsync(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAgentVersionsAsync (agentName As String, limit As Nullable(Of Integer), order As String, after As String, before As String, options As RequestOptions) As AsyncCollectionResult" />
+      <MemberSignature Language="F#" Value="abstract member GetAgentVersionsAsync : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult&#xA;override this.GetAgentVersionsAsync : string * Nullable&lt;int&gt; * string * string * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.Primitives.AsyncCollectionResult" Usage="aIProjectAgentsOperations.GetAgentVersionsAsync (agentName, limit, order, after, before, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agentName" Type="System.String" />
+        <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="order" Type="System.String" />
+        <Parameter Name="after" Type="System.String" />
+        <Parameter Name="before" Type="System.String" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="agentName"> The name of the agent to retrieve versions for. </param>
+        <param name="limit">
+            A limit on the number of objects to be returned. Limit can range between 1 and 100, and the
+            default is 20.
+            </param>
+        <param name="order">
+            Sort order by the `created_at` timestamp of the objects. `asc` for ascending order and`desc`
+            for descending order.
+            </param>
+        <param name="after">
+            A cursor for use in pagination. `after` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include after=obj_foo in order to fetch the next page of the list.
+            </param>
+        <param name="before">
+            A cursor for use in pagination. `before` is an object ID that defines your place in the list.
+            For instance, if you make a list request and receive 100 objects, ending with obj_foo, your
+            subsequent call can include before=obj_foo in order to fetch the previous page of the list.
+            </param>
+        <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
+        <summary>
+            [Protocol Method] Returns the list of versions of an agent.
+            <list type="bullet"><item><description> This <see href="https://aka.ms/azsdk/net/protocol-methods">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios. </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="agentName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="agentName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ClientModel.ClientResultException"> Service returned a non-success status code. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="Pipeline">
       <MemberSignature Language="C#" Value="public System.ClientModel.Primitives.ClientPipeline Pipeline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ClientModel.Primitives.ClientPipeline Pipeline" />
@@ -1260,7 +1485,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.ClientPipeline</ReturnType>
@@ -1272,15 +1497,15 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAgent">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult UpdateAgent (string agentName, System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult UpdateAgent(string agentName, class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.UpdateAgent(System.String,System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAgent (agentName As String, content As BinaryContent, Optional options As RequestOptions = Nothing) As ClientResult" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAgent : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.UpdateAgent : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="aIProjectAgentsOperations.UpdateAgent (agentName, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult UpdateAgent (string agentName, System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult UpdateAgent(string agentName, class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.UpdateAgent(System.String,System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAgent (agentName As String, content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As ClientResult" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAgent : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.UpdateAgent : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="aIProjectAgentsOperations.UpdateAgent (agentName, content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1294,11 +1519,13 @@
       <Parameters>
         <Parameter Name="agentName" Type="System.String" />
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="agentName"> The name of the agent to retrieve. </param>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Updates the agent by adding a new version if there are any changes to the agent definition.
@@ -1314,15 +1541,15 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAgentAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; UpdateAgentAsync (string agentName, System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; UpdateAgentAsync(string agentName, class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.UpdateAgentAsync(System.String,System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAgentAsync (agentName As String, content As BinaryContent, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
-      <MemberSignature Language="F#" Value="abstract member UpdateAgentAsync : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.UpdateAgentAsync : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="aIProjectAgentsOperations.UpdateAgentAsync (agentName, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; UpdateAgentAsync (string agentName, System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; UpdateAgentAsync(string agentName, class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectAgentsOperations.UpdateAgentAsync(System.String,System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAgentAsync (agentName As String, content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAgentAsync : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.UpdateAgentAsync : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="aIProjectAgentsOperations.UpdateAgentAsync (agentName, content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1336,11 +1563,13 @@
       <Parameters>
         <Parameter Name="agentName" Type="System.String" />
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="agentName"> The name of the agent to retrieve. </param>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures">Optional experimental features to be used.</param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Updates the agent by adding a new version if there are any changes to the agent definition.
@@ -1364,7 +1593,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1406,7 +1635,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

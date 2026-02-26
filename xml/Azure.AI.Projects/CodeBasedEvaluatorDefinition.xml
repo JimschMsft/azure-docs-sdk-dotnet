@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.AI.Projects.EvaluatorDefinition</BaseTypeName>
@@ -36,7 +37,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="codeText" Type="System.String" />
@@ -49,6 +50,32 @@
           <paramref name="codeText" /> is null. </exception>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeBasedEvaluatorDefinition (BinaryData initParameters, BinaryData dataSchema, System.Collections.Generic.IDictionary&lt;string,Azure.AI.Projects.EvaluatorMetric&gt; metrics, string codeText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.BinaryData initParameters, class System.BinaryData dataSchema, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.AI.Projects.EvaluatorMetric&gt; metrics, string codeText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.CodeBasedEvaluatorDefinition.#ctor(System.BinaryData,System.BinaryData,System.Collections.Generic.IDictionary{System.String,Azure.AI.Projects.EvaluatorMetric},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initParameters As BinaryData, dataSchema As BinaryData, metrics As IDictionary(Of String, EvaluatorMetric), codeText As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Projects.CodeBasedEvaluatorDefinition : BinaryData * BinaryData * System.Collections.Generic.IDictionary&lt;string, Azure.AI.Projects.EvaluatorMetric&gt; * string -&gt; Azure.AI.Projects.CodeBasedEvaluatorDefinition" Usage="new Azure.AI.Projects.CodeBasedEvaluatorDefinition (initParameters, dataSchema, metrics, codeText)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="initParameters" Type="System.BinaryData" />
+        <Parameter Name="dataSchema" Type="System.BinaryData" />
+        <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.AI.Projects.EvaluatorMetric&gt;" />
+        <Parameter Name="codeText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="initParameters"> The JSON schema (Draft 2020-12) for the evaluator's input parameters. This includes parameters like type, properties, required. </param>
+        <param name="dataSchema"> The JSON schema (Draft 2020-12) for the evaluator's input data. This includes parameters like type, properties, required. </param>
+        <param name="metrics"> List of output metrics produced by this evaluator. </param>
+        <param name="codeText"> Inline code text for the evaluator. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.CodeBasedEvaluatorDefinition" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CodeText">
       <MemberSignature Language="C#" Value="public string CodeText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CodeText" />
@@ -58,7 +85,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -78,7 +105,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluatorDefinition</ReturnType>
@@ -104,7 +131,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -129,7 +156,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluatorDefinition</ReturnType>
@@ -155,7 +182,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -182,7 +209,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.CodeBasedEvaluatorDefinition</ReturnType>
@@ -211,7 +238,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -239,7 +266,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.CodeBasedEvaluatorDefinition</ReturnType>
@@ -268,7 +295,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -295,7 +322,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

@@ -1,0 +1,326 @@
+<Type Name="CertificateRegistrationExtensions" FullName="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions">
+  <TypeSignature Language="C#" Value="public static class CertificateRegistrationExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CertificateRegistrationExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module CertificateRegistrationExtensions" />
+  <TypeSignature Language="F#" Value="type CertificateRegistrationExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.CertificateRegistration. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAppServiceCertificateOrder">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt; GetAppServiceCertificateOrder (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string certificateOrderName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt; GetAppServiceCertificateOrder(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string certificateOrderName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrder(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceCertificateOrder (resourceGroupResource As ResourceGroupResource, certificateOrderName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of AppServiceCertificateOrderResource)" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceCertificateOrder : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrder (resourceGroupResource, certificateOrderName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="certificateOrderName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="certificateOrderName"> Name of the certificate order.. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get a certificate order.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationResourceGroupResource.GetAppServiceCertificateOrder(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceCertificateOrderAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;&gt; GetAppServiceCertificateOrderAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string certificateOrderName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;&gt; GetAppServiceCertificateOrderAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string certificateOrderName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrderAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceCertificateOrderAsync (resourceGroupResource As ResourceGroupResource, certificateOrderName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of AppServiceCertificateOrderResource))" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceCertificateOrderAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;&gt;" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrderAsync (resourceGroupResource, certificateOrderName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="certificateOrderName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="certificateOrderName"> Name of the certificate order.. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get a certificate order.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationResourceGroupResource.GetAppServiceCertificateOrderAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceCertificateOrderResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource GetAppServiceCertificateOrderResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource GetAppServiceCertificateOrderResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrderResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceCertificateOrderResource (client As ArmClient, id As ResourceIdentifier) As AppServiceCertificateOrderResource" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceCertificateOrderResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrderResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationArmClient.GetAppServiceCertificateOrderResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceCertificateOrders">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderCollection GetAppServiceCertificateOrders (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderCollection GetAppServiceCertificateOrders(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrders(Azure.ResourceManager.Resources.ResourceGroupResource)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceCertificateOrders (resourceGroupResource As ResourceGroupResource) As AppServiceCertificateOrderCollection" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceCertificateOrders : Azure.ResourceManager.Resources.ResourceGroupResource -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderCollection" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrders resourceGroupResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <summary>
+            Gets a collection of AppServiceCertificateOrders in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationResourceGroupResource.GetAppServiceCertificateOrders" /> instead. </description></item></summary>
+        <returns> An object representing collection of AppServiceCertificateOrders and their operations over a AppServiceCertificateOrderResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceCertificateOrders">
+      <MemberSignature Language="C#" Value="public static Azure.Pageable&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt; GetAppServiceCertificateOrders (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Pageable`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt; GetAppServiceCertificateOrders(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrders(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceCertificateOrders (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of AppServiceCertificateOrderResource)" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceCertificateOrders : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrders (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for List all certificate orders in a subscription.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationSubscriptionResource.GetAppServiceCertificateOrders(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceCertificateOrdersAsync">
+      <MemberSignature Language="C#" Value="public static Azure.AsyncPageable&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt; GetAppServiceCertificateOrdersAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt; GetAppServiceCertificateOrdersAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrdersAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceCertificateOrdersAsync (subscriptionResource As SubscriptionResource, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of AppServiceCertificateOrderResource)" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceCertificateOrdersAsync : Azure.ResourceManager.Resources.SubscriptionResource * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateOrdersAsync (subscriptionResource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for List all certificate orders in a subscription.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationSubscriptionResource.GetAppServiceCertificateOrdersAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceCertificateResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CertificateRegistration.AppServiceCertificateResource GetAppServiceCertificateResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateResource GetAppServiceCertificateResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceCertificateResource (client As ArmClient, id As ResourceIdentifier) As AppServiceCertificateResource" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceCertificateResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceCertificateResource" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceCertificateResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CertificateRegistration.AppServiceCertificateResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceCertificateResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationArmClient.GetAppServiceCertificateResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceCertificateResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceDetectorResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource GetAppServiceDetectorResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource GetAppServiceDetectorResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceDetectorResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppServiceDetectorResource (client As ArmClient, id As ResourceIdentifier) As AppServiceDetectorResource" />
+      <MemberSignature Language="F#" Value="static member GetAppServiceDetectorResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.GetAppServiceDetectorResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationArmClient.GetAppServiceDetectorResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.CertificateRegistration.AppServiceDetectorResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatePurchaseInformation">
+      <MemberSignature Language="C#" Value="public static Azure.Response ValidatePurchaseInformation (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response ValidatePurchaseInformation(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.ValidatePurchaseInformation(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ValidatePurchaseInformation (subscriptionResource As SubscriptionResource, data As AppServiceCertificateOrderData, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="static member ValidatePurchaseInformation : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData * System.Threading.CancellationToken -&gt; Azure.Response" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.ValidatePurchaseInformation (subscriptionResource, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="data" Type="Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="data"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Validate information for a certificate order.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationSubscriptionResource.ValidatePurchaseInformation(Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatePurchaseInformationAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&gt; ValidatePurchaseInformationAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ValidatePurchaseInformationAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, class Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.ValidatePurchaseInformationAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ValidatePurchaseInformationAsync (subscriptionResource As SubscriptionResource, data As AppServiceCertificateOrderData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="static member ValidatePurchaseInformationAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="Azure.ResourceManager.CertificateRegistration.CertificateRegistrationExtensions.ValidatePurchaseInformationAsync (subscriptionResource, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.CertificateRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="data" Type="Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="data"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Validate information for a certificate order.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.CertificateRegistration.Mocking.MockableCertificateRegistrationSubscriptionResource.ValidatePurchaseInformationAsync(Azure.ResourceManager.CertificateRegistration.AppServiceCertificateOrderData,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

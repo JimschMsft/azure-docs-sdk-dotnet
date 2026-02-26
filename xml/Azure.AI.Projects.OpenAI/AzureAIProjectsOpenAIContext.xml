@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ClientModel.Primitives.ModelReaderWriterContext</BaseTypeName>
@@ -14,16 +15,20 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2ATool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2ATool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2APreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2APreviewTool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2AToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2AToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2AToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.A2AToolCallOutput))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentDefinition))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentDefinition))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentInfo))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentInfo))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentObjectVersions))]</AttributeName>
@@ -42,10 +47,6 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentResponseItem))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentResponseItemSource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentResponseItemSource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentStructuredOutputsResponseItem))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentStructuredOutputsResponseItem))&gt;]</AttributeName>
     </Attribute>
@@ -58,12 +59,44 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentVersion))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentWorkflowActionResponseItem))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentWorkflowActionResponseItem))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentWorkflowPreviewActionResponseItem))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AgentWorkflowPreviewActionResponseItem))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchAgentTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchCreateFileOperation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchCreateFileOperation))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchDeleteFileOperation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchDeleteFileOperation))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchDeleteFileOperationParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchDeleteFileOperationParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchOperationParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchOperationParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchUpdateFileOperation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchUpdateFileOperation))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchUpdateFileOperationParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ApplyPatchUpdateFileOperationParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchTool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchToolCallOutput))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchToolIndex))]</AttributeName>
@@ -72,10 +105,6 @@
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchToolOptions))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureAISearchToolOptions))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionAgentTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionBinding))]</AttributeName>
@@ -94,20 +123,36 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionStorageQueue))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchAgentTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionTool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.AzureFunctionToolCallOutput))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchConfiguration))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchConfiguration))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchPreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchPreviewTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingAgentTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingCustomSearchToolParameters))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingSearchConfiguration))]</AttributeName>
@@ -118,8 +163,28 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingSearchToolOptions))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationAgentTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingTool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BingGroundingToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationPreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationPreviewTool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationToolCallOutput))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.BrowserAutomationToolConnectionParameters))]</AttributeName>
@@ -138,340 +203,464 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ChatSummaryMemoryItem))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ClickParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ClickParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CompactResource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CompactResource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CompactResponseMethodPublicBody))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CompactResponseMethodPublicBody))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ComputerCallSafetyCheckParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ComputerCallSafetyCheckParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ComputerScreenshotImage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ComputerScreenshotImage))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ContainerApplicationAgentDefinition))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ContainerApplicationAgentDefinition))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ContainerFileCitationBody))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ContainerFileCitationBody))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ContentFilterConfiguration))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ContentFilterConfiguration))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CustomGrammarFormatParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CustomGrammarFormatParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CustomTextFormatParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CustomTextFormatParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CustomToolParamFormat))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.CustomToolParamFormat))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.DoubleClickAction))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.DoubleClickAction))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Drag))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Drag))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.DragPoint))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.DragPoint))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FabricDataAgentToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FabricDataAgentToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FabricDataAgentToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FabricDataAgentToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FabricDataAgentToolOptions))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FabricDataAgentToolOptions))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FileCitationBody))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FileCitationBody))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FilePath))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FilePath))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FileSearchToolCallResults))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FileSearchToolCallResults))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FoundryOpenAIError))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FoundryOpenAIError))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionAndCustomToolCallOutputInputFileContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionAndCustomToolCallOutputInputFileContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionAndCustomToolCallOutputInputImageContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionAndCustomToolCallOutputInputImageContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionAndCustomToolCallOutputInputTextContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionAndCustomToolCallOutputInputTextContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellAction))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellAction))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellActionParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellActionParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputContentParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputContentParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputExitOutcome))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputExitOutcome))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputExitOutcomeParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputExitOutcomeParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputOutcome))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputOutcome))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputOutcomeParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputOutcomeParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputTimeoutOutcome))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputTimeoutOutcome))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputTimeoutOutcomeParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.FunctionShellCallOutputTimeoutOutcomeParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.HostedAgentDefinition))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.HostedAgentDefinition))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ImageBasedHostedAgentDefinition))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ImageBasedHostedAgentDefinition))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.HybridSearchOptions))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.HybridSearchOptions))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAgentResponse))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAgentResponse))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContent))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAgentResponseError))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAgentResponseError))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContentInputFileContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContentInputFileContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContentInputImageContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContentInputImageContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContentInputTextContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputContentInputTextContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItem))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItem))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemApplyPatchToolCallItemParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemApplyPatchToolCallItemParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemApplyPatchToolCallOutputItemParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemApplyPatchToolCallOutputItemParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCodeInterpreterToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCodeInterpreterToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCompactionSummaryItemParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCompactionSummaryItemParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemComputerCallOutputItemParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemComputerCallOutputItemParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemComputerToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemComputerToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCustomToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCustomToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCustomToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemCustomToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFileSearchToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFileSearchToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionCallOutputItemParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionCallOutputItemParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionShellCallItemParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionShellCallItemParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionShellCallOutputItemParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionShellCallOutputItemParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemFunctionToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemImageGenToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemImageGenToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemLocalShellToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemLocalShellToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemLocalShellToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemLocalShellToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpApprovalRequest))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpApprovalRequest))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpApprovalResponse))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpApprovalResponse))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpListTools))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpListTools))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemMcpToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemOutputMessage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemOutputMessage))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemReasoningItem))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemReasoningItem))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemWebSearchToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InputItemWebSearchToolCall))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotation))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotation))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotationFileCitation))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotationFileCitation))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalApplyPatchCreateFileOperationParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalApplyPatchCreateFileOperationParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotationFilePath))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotationFilePath))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalApplyPatchFileOperation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalApplyPatchFileOperation))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotationUrlCitation))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalAnnotationUrlCitation))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalApplyPatchToolParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalApplyPatchToolParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalApproximateLocation))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalApproximateLocation))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterOutput))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterOutput))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterContainerAuto))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterContainerAuto))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterOutputImage))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterOutputImage))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterOutputImage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterOutputImage))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterOutputLogs))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterOutputLogs))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterOutputLogs))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterOutputLogs))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCodeInterpreterTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterToolAuto))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterToolAuto))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalComparisonFilter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalComparisonFilter))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterToolCallItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterToolCallItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCodeInterpreterToolCallItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComparisonFilter))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComparisonFilter))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCompoundFilter))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCompoundFilter))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCompoundFilter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCompoundFilter))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerAction))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerAction))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionClick))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionClick))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalComputerUsePreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalComputerUsePreviewTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionDoubleClick))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionDoubleClick))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionDrag))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionDrag))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionKeyPress))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionKeyPress))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionMove))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionMove))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionScreenshot))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionScreenshot))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionScroll))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionScroll))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionTypeKeys))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionTypeKeys))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionWait))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerActionWait))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemOutput))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemOutput))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemOutputComputerScreenshot))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemOutputComputerScreenshot))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallOutputItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallSafetyCheck))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerToolCallSafetyCheck))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerUsePreviewTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalComputerUsePreviewTool))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.InternalConversationList))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.InternalConversationList))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCoordinate))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalCoordinate))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCustomToolParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalCustomToolParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalEasyInputMessage))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalEasyInputMessage))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFileSearchTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFileSearchTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchToolCallItemParam))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFunctionAndCustomToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFunctionAndCustomToolCallOutput))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchToolCallItemParamResult))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchToolCallItemParamResult))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFunctionShellToolParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFunctionShellToolParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchToolCallItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFileSearchToolCallItemResource))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFunctionTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalFunctionTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionTool))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallOutputItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallOutputItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallOutputItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalFunctionToolCallOutputItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenTool))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenToolCallItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenToolCallItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenToolCallItemResource))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalImageGenTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalImageGenTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenToolInputImageMask))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalImageGenToolInputImageMask))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContent))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContent))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalInputFileContentParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalInputFileContentParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputAudio))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputAudio))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalInputImageContentParamAutoParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalInputImageContentParamAutoParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputFile))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputFile))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalInputTextContentParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalInputTextContentParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputImage))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputImage))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputText))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentInputText))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentOutputAudio))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentOutputAudio))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentOutputText))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentOutputText))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentRefusal))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemContentRefusal))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemReferenceItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalItemReferenceItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLocalShellToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLocalShellToolCallItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLocalShellToolCallOutputItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLocalShellToolCallOutputItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLocation))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLocation))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalLocalShellTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalLocalShellTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLogProb))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalLogProb))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalRequestItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalRequestItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalRequestItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalRequestItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalResponseItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalResponseItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalResponseItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPApprovalResponseItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPCallItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPCallItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPCallItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPListToolsItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPListToolsItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPListToolsItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPListToolsItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPListToolsTool))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPListToolsTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMCPTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMCPTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolAllowedTools1))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolAllowedTools1))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMCPToolFilter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMCPToolFilter))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolRequireApproval1))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolRequireApproval1))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMCPToolRequireApproval))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMCPToolRequireApproval))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolRequireApprovalAlways))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolRequireApprovalAlways))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMetadataContainer))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalMetadataContainer))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolRequireApprovalNever))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalMCPToolRequireApprovalNever))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemApplyPatchToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemApplyPatchToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemApplyPatchToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemApplyPatchToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemCodeInterpreterToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemCodeInterpreterToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemCompactionBody))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemCompactionBody))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemComputerToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemComputerToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemCustomToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemCustomToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFileSearchToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFileSearchToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFunctionShellCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFunctionShellCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFunctionShellCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFunctionShellCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFunctionToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemFunctionToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemImageGenToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemImageGenToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemLocalShellToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemLocalShellToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemMcpApprovalRequest))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemMcpApprovalRequest))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemMcpListTools))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemMcpListTools))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemMcpToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemMcpToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemOutputMessage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemOutputMessage))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemReasoningItem))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemReasoningItem))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemWebSearchToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputItemWebSearchToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputMessageContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputMessageContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputMessageContentOutputTextContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalOutputMessageContentOutputTextContent))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalRankingOptions))]</AttributeName>
@@ -482,108 +671,16 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoning))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemParam))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseFormatJsonSchemaSchema))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseFormatJsonSchemaSchema))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemResource))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalSummaryTextObject))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalSummaryTextObject))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemSummaryPart))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemSummaryPart))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemSummaryTextPart))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalReasoningItemSummaryTextPart))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesAssistantMessageItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesAssistantMessageItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesAssistantMessageItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesAssistantMessageItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesDeveloperMessageItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesDeveloperMessageItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesDeveloperMessageItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesDeveloperMessageItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesMessageItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesMessageItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesMessageItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesMessageItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesSystemMessageItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesSystemMessageItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesSystemMessageItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesSystemMessageItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesUserMessageItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesUserMessageItemParam))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesUserMessageItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponsesUserMessageItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfiguration))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfiguration))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfigurationJsonObject))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfigurationJsonObject))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfigurationJsonSchema))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfigurationJsonSchema))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfigurationText))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalResponseTextFormatConfigurationText))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObject))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObject))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectCodeInterpreter))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectCodeInterpreter))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectComputer))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectComputer))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectFileSearch))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectFileSearch))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectFunction))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectFunction))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectImageGen))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectImageGen))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectMCP))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectMCP))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectWebSearch))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalToolChoiceObjectWebSearch))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalToolChoiceParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalToolChoiceParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalTopLogProb))]</AttributeName>
@@ -594,48 +691,44 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalVectorStoreFileAttributes))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchAction))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchAction))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchActionFind))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchActionFind))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchActionFind))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchActionFind))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchActionOpenPage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchActionOpenPage))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchActionOpenPage))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchActionOpenPage))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchActionSearch))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchActionSearch))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchActionSearch))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchActionSearch))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchPreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchPreviewTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchPreviewTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchPreviewTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.InternalWebSearchTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchToolCallItemParam))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ItemReferenceParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ItemReferenceParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchToolCallItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.InternalWebSearchToolCallItemResource))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.KeyPressAction))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.KeyPressAction))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellAgentTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellExecAction))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellExecAction))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellAgentToolExecutionAction))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellAgentToolExecutionAction))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MCPListToolsToolAnnotations))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MCPListToolsToolAnnotations))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellToolCallAgentResponseItem))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellToolCallAgentResponseItem))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellToolCallOutputAgentResponseItem))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.LocalShellToolCallOutputAgentResponseItem))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MCPListToolsToolInputSchema))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MCPListToolsToolInputSchema))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemoryItem))]</AttributeName>
@@ -646,12 +739,8 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchItem))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchTool))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchToolCallItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchToolCallItemParam))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchPreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchPreviewTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchToolCallResponseItem))]</AttributeName>
@@ -662,16 +751,16 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MemorySearchToolOptions))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MicrosoftFabricAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MicrosoftFabricAgentTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MicrosoftFabricPreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.MicrosoftFabricPreviewTool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Move))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Move))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OAuthConsentRequestResponseItem))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OAuthConsentRequestResponseItem))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIAgentTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIAnonymousAuthenticationDetails))]</AttributeName>
@@ -694,8 +783,8 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIManagedAuthenticationDetails))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenApiManagedSecurityScheme))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenApiManagedSecurityScheme))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIManagedSecurityScheme))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIManagedSecurityScheme))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIProjectConnectionAuthenticationDetails))]</AttributeName>
@@ -706,6 +795,22 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPIProjectConnectionSecurityScheme))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPITool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenAPITool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenApiToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenApiToolCall))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenApiToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OpenApiToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OutputMessageContentRefusalContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.OutputMessageContentRefusalContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProjectConversation))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProjectConversation))&gt;]</AttributeName>
     </Attribute>
@@ -714,12 +819,8 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProjectConversationCreationOptions))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProjectConversationUpdateOptions))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProjectConversationUpdateOptions))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.Prompt))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.Prompt))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProjectWebSearchConfiguration))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProjectWebSearchConfiguration))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.PromptAgentDefinition))]</AttributeName>
@@ -730,40 +831,52 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ProtocolVersionRecord))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseConversation1))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseConversation1))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ReasoningTextContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ReasoningTextContent))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseIncompleteDetails1))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseIncompleteDetails1))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ResponseUsage))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ResponseUsage))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponsePromptVariables))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponsePromptVariables))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ResponseUsageInputTokensDetails))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ResponseUsageInputTokensDetails))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseText))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseText))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ResponseUsageOutputTokensDetails))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ResponseUsageOutputTokensDetails))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseUsage))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseUsage))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Screenshot))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Screenshot))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseUsageInputTokensDetails))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseUsageInputTokensDetails))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Scroll))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Scroll))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseUsageOutputTokensDetails))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.ResponseUsageOutputTokensDetails))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointGroundingToolCall))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointGroundingToolCall))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointAgentTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointAgentTool))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointGroundingToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointGroundingToolCallOutput))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharePointGroundingToolOptions))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharePointGroundingToolOptions))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointPreviewTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SharepointPreviewTool))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SpecificApplyPatchParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SpecificApplyPatchParam))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SpecificFunctionShellParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.SpecificFunctionShellParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.StructuredInputDefinition))]</AttributeName>
@@ -774,48 +887,108 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.StructuredOutputDefinition))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceAllowed))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceAllowed))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceCodeInterpreter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceCodeInterpreter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceComputerUsePreview))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceComputerUsePreview))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceCustom))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceCustom))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceFileSearch))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceFileSearch))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceFunction))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceFunction))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceImageGeneration))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceImageGeneration))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceMCP))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceMCP))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceWebSearchPreview))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceWebSearchPreview))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceWebSearchPreview20250311))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolChoiceWebSearchPreview20250311))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolProjectConnection))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.ToolProjectConnection))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Type))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Type))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownAgentDefinition))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownAgentDefinition))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownAnnotation))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownAnnotation))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownAgentResponseItem))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownAgentResponseItem))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownCodeInterpreterOutput))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownCodeInterpreterOutput))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownAnnotation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownAnnotation))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownComputerAction))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownComputerAction))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownApplyPatchOperationParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownApplyPatchOperationParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownComputerToolCallOutputItemOutput))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownComputerToolCallOutputItemOutput))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownComputerAction))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownComputerAction))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownHostedAgentDefinition))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownHostedAgentDefinition))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownCustomToolParamFormat))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownCustomToolParamFormat))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownItemContent))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownItemContent))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownFunctionShellCallOutputOutcome))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownFunctionShellCallOutputOutcome))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownItemParam))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownFunctionShellCallOutputOutcomeParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownFunctionShellCallOutputOutcomeParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownItemResource))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInputContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInputContent))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownLocation))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownLocation))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInputItem))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInputItem))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalApplyPatchFileOperation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalApplyPatchFileOperation))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalFunctionAndCustomToolCallOutput))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalFunctionAndCustomToolCallOutput))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalOutputMessageContent))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalOutputMessageContent))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalToolChoiceParam))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownInternalToolChoiceParam))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownMemoryItem))]</AttributeName>
@@ -826,40 +999,36 @@
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownOpenAPIAuthenticationDetails))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownReasoningItemSummaryPart))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownReasoningItemSummaryPart))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownTool))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UnknownTool))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownResponsesMessageItemParam))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownResponsesMessageItemParam))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UpdateConversationRequest))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UpdateConversationRequest))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownResponsesMessageItemResource))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownResponsesMessageItemResource))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownResponseTextFormatConfiguration))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownResponseTextFormatConfiguration))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownTool))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownTool))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownToolChoiceObject))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownToolChoiceObject))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownWebSearchAction))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.UnknownWebSearchAction))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UrlCitationBody))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.UrlCitationBody))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.UserProfileMemoryItem))]</AttributeName>
       <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.UserProfileMemoryItem))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.WebSearchActionSearchSources))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(OpenAI.WebSearchActionSearchSources))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Wait))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.Wait))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.WebSearchActionSearchSources))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.WebSearchActionSearchSources))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.WebSearchApproximateLocation))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.WebSearchApproximateLocation))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.WebSearchToolFilters))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.WebSearchToolFilters))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[System.ClientModel.Primitives.ModelReaderWriterBuildable(typeof(Azure.AI.Projects.OpenAI.WorkflowAgentDefinition))]</AttributeName>
@@ -882,7 +1051,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OpenAI.AzureAIProjectsOpenAIContext</ReturnType>
@@ -902,7 +1071,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +26,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -34,15 +35,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt; CreateOrUpdate (string id, Azure.AI.Projects.EvaluationRule evaluationRule, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.EvaluationRule&gt; CreateOrUpdate(string id, class Azure.AI.Projects.EvaluationRule evaluationRule, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdate(System.String,Azure.AI.Projects.EvaluationRule,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (id As String, evaluationRule As EvaluationRule, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of EvaluationRule)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.AI.Projects.EvaluationRule * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&#xA;override this.CreateOrUpdate : string * Azure.AI.Projects.EvaluationRule * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;" Usage="evaluationRules.CreateOrUpdate (id, evaluationRule, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt; CreateOrUpdate (string id, Azure.AI.Projects.EvaluationRule evaluationRule, Azure.AI.Projects.FoundryFeaturesOptInKeys? foundryFeatures = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.EvaluationRule&gt; CreateOrUpdate(string id, class Azure.AI.Projects.EvaluationRule evaluationRule, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.FoundryFeaturesOptInKeys&gt; foundryFeatures, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdate(System.String,Azure.AI.Projects.EvaluationRule,System.Nullable{Azure.AI.Projects.FoundryFeaturesOptInKeys},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (id As String, evaluationRule As EvaluationRule, Optional foundryFeatures As Nullable(Of FoundryFeaturesOptInKeys) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ClientResult(Of EvaluationRule)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * Azure.AI.Projects.EvaluationRule * Nullable&lt;Azure.AI.Projects.FoundryFeaturesOptInKeys&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&#xA;override this.CreateOrUpdate : string * Azure.AI.Projects.EvaluationRule * Nullable&lt;Azure.AI.Projects.FoundryFeaturesOptInKeys&gt; * System.Threading.CancellationToken -&gt; System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;" Usage="evaluationRules.CreateOrUpdate (id, evaluationRule, foundryFeatures, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;</ReturnType>
@@ -50,11 +51,13 @@
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="evaluationRule" Type="Azure.AI.Projects.EvaluationRule" />
+        <Parameter Name="foundryFeatures" Type="System.Nullable&lt;Azure.AI.Projects.FoundryFeaturesOptInKeys&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="id"> Unique identifier for the evaluation rule. </param>
         <param name="evaluationRule"> Evaluation rule resource. </param>
+        <param name="foundryFeatures"> A feature flag opt-in required when using preview operations or modifying persisted preview resources. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Create or update an evaluation rule. </summary>
         <returns>To be added.</returns>
@@ -67,15 +70,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult CreateOrUpdate (string id, System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult CreateOrUpdate(string id, class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdate(System.String,System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (id As String, content As BinaryContent, Optional options As RequestOptions = Nothing) As ClientResult" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.CreateOrUpdate : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="evaluationRules.CreateOrUpdate (id, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.ClientResult CreateOrUpdate (string id, System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.ClientResult CreateOrUpdate(string id, class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdate(System.String,System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (id As String, content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As ClientResult" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult&#xA;override this.CreateOrUpdate : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.ClientModel.ClientResult" Usage="evaluationRules.CreateOrUpdate (id, content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -83,11 +86,13 @@
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="id"> Unique identifier for the evaluation rule. </param>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures"> A feature flag opt-in required when using preview operations or modifying persisted preview resources. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Create or update an evaluation rule.
@@ -102,15 +107,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt; CreateOrUpdateAsync (string id, Azure.AI.Projects.EvaluationRule evaluationRule, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.EvaluationRule&gt;&gt; CreateOrUpdateAsync(string id, class Azure.AI.Projects.EvaluationRule evaluationRule, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdateAsync(System.String,Azure.AI.Projects.EvaluationRule,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (id As String, evaluationRule As EvaluationRule, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of EvaluationRule))" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.AI.Projects.EvaluationRule * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.AI.Projects.EvaluationRule * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt;" Usage="evaluationRules.CreateOrUpdateAsync (id, evaluationRule, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt; CreateOrUpdateAsync (string id, Azure.AI.Projects.EvaluationRule evaluationRule, Azure.AI.Projects.FoundryFeaturesOptInKeys? foundryFeatures = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult`1&lt;class Azure.AI.Projects.EvaluationRule&gt;&gt; CreateOrUpdateAsync(string id, class Azure.AI.Projects.EvaluationRule evaluationRule, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.FoundryFeaturesOptInKeys&gt; foundryFeatures, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdateAsync(System.String,Azure.AI.Projects.EvaluationRule,System.Nullable{Azure.AI.Projects.FoundryFeaturesOptInKeys},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (id As String, evaluationRule As EvaluationRule, Optional foundryFeatures As Nullable(Of FoundryFeaturesOptInKeys) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ClientResult(Of EvaluationRule))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * Azure.AI.Projects.EvaluationRule * Nullable&lt;Azure.AI.Projects.FoundryFeaturesOptInKeys&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt;&#xA;override this.CreateOrUpdateAsync : string * Azure.AI.Projects.EvaluationRule * Nullable&lt;Azure.AI.Projects.FoundryFeaturesOptInKeys&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt;" Usage="evaluationRules.CreateOrUpdateAsync (id, evaluationRule, foundryFeatures, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt;</ReturnType>
@@ -118,11 +123,13 @@
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="evaluationRule" Type="Azure.AI.Projects.EvaluationRule" />
+        <Parameter Name="foundryFeatures" Type="System.Nullable&lt;Azure.AI.Projects.FoundryFeaturesOptInKeys&gt;" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="id"> Unique identifier for the evaluation rule. </param>
         <param name="evaluationRule"> Evaluation rule resource. </param>
+        <param name="foundryFeatures"> A feature flag opt-in required when using preview operations or modifying persisted preview resources. </param>
         <param name="cancellationToken"> The cancellation token that can be used to cancel the operation. </param>
         <summary> Create or update an evaluation rule. </summary>
         <returns>To be added.</returns>
@@ -135,15 +142,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; CreateOrUpdateAsync (string id, System.ClientModel.BinaryContent content, System.ClientModel.Primitives.RequestOptions options = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; CreateOrUpdateAsync(string id, class System.ClientModel.BinaryContent content, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdateAsync(System.String,System.ClientModel.BinaryContent,System.ClientModel.Primitives.RequestOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (id As String, content As BinaryContent, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.CreateOrUpdateAsync : string * System.ClientModel.BinaryContent * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="evaluationRules.CreateOrUpdateAsync (id, content, options)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt; CreateOrUpdateAsync (string id, System.ClientModel.BinaryContent content, string foundryFeatures = default, System.ClientModel.Primitives.RequestOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.ClientModel.ClientResult&gt; CreateOrUpdateAsync(string id, class System.ClientModel.BinaryContent content, string foundryFeatures, class System.ClientModel.Primitives.RequestOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.EvaluationRules.CreateOrUpdateAsync(System.String,System.ClientModel.BinaryContent,System.String,System.ClientModel.Primitives.RequestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (id As String, content As BinaryContent, Optional foundryFeatures As String = Nothing, Optional options As RequestOptions = Nothing) As Task(Of ClientResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;&#xA;override this.CreateOrUpdateAsync : string * System.ClientModel.BinaryContent * string * System.ClientModel.Primitives.RequestOptions -&gt; System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;" Usage="evaluationRules.CreateOrUpdateAsync (id, content, foundryFeatures, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -151,11 +158,13 @@
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="content" Type="System.ClientModel.BinaryContent" />
+        <Parameter Name="foundryFeatures" Type="System.String" />
         <Parameter Name="options" Type="System.ClientModel.Primitives.RequestOptions" />
       </Parameters>
       <Docs>
         <param name="id"> Unique identifier for the evaluation rule. </param>
         <param name="content"> The content to send as the body of the request. </param>
+        <param name="foundryFeatures"> A feature flag opt-in required when using preview operations or modifying persisted preview resources. </param>
         <param name="options"> The request options, which can override default behaviors of the client pipeline on a per-call basis. </param>
         <summary>
             [Protocol Method] Create or update an evaluation rule.
@@ -178,7 +187,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -211,7 +220,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -242,7 +251,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -275,7 +284,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -306,7 +315,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult</ReturnType>
@@ -339,7 +348,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;</ReturnType>
@@ -370,7 +379,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.CollectionResult&lt;Azure.AI.Projects.EvaluationRule&gt;</ReturnType>
@@ -401,7 +410,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.CollectionResult</ReturnType>
@@ -434,7 +443,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.EvaluationRule&gt;</ReturnType>
@@ -465,7 +474,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.AsyncCollectionResult</ReturnType>
@@ -498,7 +507,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&gt;</ReturnType>
@@ -531,7 +540,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ClientModel.ClientResult&lt;Azure.AI.Projects.EvaluationRule&gt;&gt;</ReturnType>
@@ -562,7 +571,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ClientModel.Primitives.ClientPipeline</ReturnType>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,19 +29,45 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OpenAPIFunctionDefinition (string name, BinaryData spec, Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails auth);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.BinaryData spec, class Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails auth) cil managed" />
+      <MemberSignature Language="C#" Value="public OpenAPIFunctionDefinition (string name, BinaryData specificationBytes, Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails authentication);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.BinaryData specificationBytes, class Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails authentication) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition.#ctor(System.String,System.BinaryData,Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, spec As BinaryData, auth As OpenAPIAuthenticationDetails)" />
-      <MemberSignature Language="F#" Value="new Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition : string * BinaryData * Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails -&gt; Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition" Usage="new Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition (name, spec, auth)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, specificationBytes As BinaryData, authentication As OpenAPIAuthenticationDetails)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition : string * BinaryData * Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails -&gt; Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition" Usage="new Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition (name, specificationBytes, authentication)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="spec" Type="System.BinaryData" />
+        <Parameter Name="specificationBytes" Type="System.BinaryData" />
+        <Parameter Name="authentication" Type="Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the function to be called. </param>
+        <param name="specificationBytes"> The openapi function shape, described as a JSON Schema object. </param>
+        <param name="authentication"> Open API authentication details. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" />, <paramref name="specificationBytes" /> or <paramref name="authentication" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpenAPIFunctionDefinition (string name, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; spec, Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails auth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; spec, class Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails auth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData},Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, spec As IDictionary(Of String, BinaryData), auth As OpenAPIAuthenticationDetails)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition : string * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; * Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails -&gt; Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition" Usage="new Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition (name, spec, auth)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="spec" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
         <Parameter Name="auth" Type="Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails" />
       </Parameters>
       <Docs>
@@ -62,7 +89,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OpenAI.OpenAPIAuthenticationDetails</ReturnType>
@@ -82,7 +109,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
@@ -102,7 +129,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -122,7 +149,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.AI.Projects.OpenAI.OpenAPIFunctionEntry&gt;</ReturnType>
@@ -142,7 +169,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition</ReturnType>
@@ -168,7 +195,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -193,7 +220,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -213,7 +240,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition</ReturnType>
@@ -239,7 +266,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -255,23 +282,23 @@
       </Docs>
     </Member>
     <Member MemberName="Spec">
-      <MemberSignature Language="C#" Value="public BinaryData Spec { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Spec" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; Spec { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; Spec" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition.Spec" />
-      <MemberSignature Language="VB.NET" Value="Public Property Spec As BinaryData" />
-      <MemberSignature Language="F#" Value="member this.Spec : BinaryData with get, set" Usage="Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition.Spec" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Spec As IDictionary(Of String, BinaryData)" />
+      <MemberSignature Language="F#" Value="member this.Spec : System.Collections.Generic.IDictionary&lt;string, BinaryData&gt;" Usage="Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition.Spec" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.BinaryData</ReturnType>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
             The openapi function shape, described as a JSON Schema object.
-            <para> To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para>
+            <para> To assign an object to the value of this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para>
             Examples:
             <list type="bullet"><item><term> BinaryData.FromObjectAsJson("foo"). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromString("\"foo\""). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromObjectAsJson(new { key = "value" }). </term><description> Creates a payload of { "key": "value" }. </description></item><item><term> BinaryData.FromString("{\"key\": \"value\"}"). </term><description> Creates a payload of { "key": "value" }. </description></item></list></para></summary>
         <value>To be added.</value>
@@ -290,7 +317,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition</ReturnType>
@@ -319,7 +346,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -347,7 +374,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OpenAI.OpenAPIFunctionDefinition</ReturnType>
@@ -376,7 +403,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -403,7 +430,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects.OpenAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

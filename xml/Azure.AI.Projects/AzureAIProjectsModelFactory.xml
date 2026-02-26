@@ -9,6 +9,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,6 +20,32 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="AgentClusterInsightRequest">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AgentClusterInsightRequest AgentClusterInsightRequest (string agentName = default, Azure.AI.Projects.InsightModelConfiguration modelConfiguration = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AgentClusterInsightRequest AgentClusterInsightRequest(string agentName, class Azure.AI.Projects.InsightModelConfiguration modelConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AgentClusterInsightRequest(System.String,Azure.AI.Projects.InsightModelConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentClusterInsightRequest (Optional agentName As String = Nothing, Optional modelConfiguration As InsightModelConfiguration = Nothing) As AgentClusterInsightRequest" />
+      <MemberSignature Language="F#" Value="static member AgentClusterInsightRequest : string * Azure.AI.Projects.InsightModelConfiguration -&gt; Azure.AI.Projects.AgentClusterInsightRequest" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AgentClusterInsightRequest (agentName, modelConfiguration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.AgentClusterInsightRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agentName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="modelConfiguration" Type="Azure.AI.Projects.InsightModelConfiguration" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="agentName"> Identifier for the agent. </param>
+        <param name="modelConfiguration"> Configuration of the model used in the insight generation. </param>
+        <summary> Insights on set of Agent Evaluation Results. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.AgentClusterInsightRequest" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AgentClusterInsightResult">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AgentClusterInsightResult AgentClusterInsightResult (Azure.AI.Projects.ClusterInsightResult clusterInsight = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AgentClusterInsightResult AgentClusterInsightResult(class Azure.AI.Projects.ClusterInsightResult clusterInsight) cil managed" />
@@ -28,7 +55,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AgentClusterInsightResult</ReturnType>
@@ -43,50 +70,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AgentClusterInsightsRequest">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AgentClusterInsightsRequest AgentClusterInsightsRequest (string agentName = default, Azure.AI.Projects.InsightModelConfiguration modelConfiguration = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AgentClusterInsightsRequest AgentClusterInsightsRequest(string agentName, class Azure.AI.Projects.InsightModelConfiguration modelConfiguration) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AgentClusterInsightsRequest(System.String,Azure.AI.Projects.InsightModelConfiguration)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentClusterInsightsRequest (Optional agentName As String = Nothing, Optional modelConfiguration As InsightModelConfiguration = Nothing) As AgentClusterInsightsRequest" />
-      <MemberSignature Language="F#" Value="static member AgentClusterInsightsRequest : string * Azure.AI.Projects.InsightModelConfiguration -&gt; Azure.AI.Projects.AgentClusterInsightsRequest" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AgentClusterInsightsRequest (agentName, modelConfiguration)" />
+    <Member MemberName="AgenticIdentityPreviewCredentials">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AgenticIdentityPreviewCredentials AgenticIdentityPreviewCredentials ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AgenticIdentityPreviewCredentials AgenticIdentityPreviewCredentials() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AgenticIdentityPreviewCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgenticIdentityPreviewCredentials () As AgenticIdentityPreviewCredentials" />
+      <MemberSignature Language="F#" Value="static member AgenticIdentityPreviewCredentials : unit -&gt; Azure.AI.Projects.AgenticIdentityPreviewCredentials" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AgenticIdentityPreviewCredentials " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.AgentClusterInsightsRequest</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="agentName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="modelConfiguration" Type="Azure.AI.Projects.InsightModelConfiguration" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="agentName"> Identifier for the agent. </param>
-        <param name="modelConfiguration"> Configuration of the model used in the insight generation. </param>
-        <summary> Insights on set of Agent Evaluation Results. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.AgentClusterInsightsRequest" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AgenticIdentityCredentials">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AgenticIdentityCredentials AgenticIdentityCredentials ();" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AgenticIdentityCredentials AgenticIdentityCredentials() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AgenticIdentityCredentials" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AgenticIdentityCredentials () As AgenticIdentityCredentials" />
-      <MemberSignature Language="F#" Value="static member AgenticIdentityCredentials : unit -&gt; Azure.AI.Projects.AgenticIdentityCredentials" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AgenticIdentityCredentials " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.AgenticIdentityCredentials</ReturnType>
+        <ReturnType>Azure.AI.Projects.AgenticIdentityPreviewCredentials</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary> Agentic identity credential definition. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.AgenticIdentityCredentials" /> instance for mocking. </returns>
+        <returns> A new <see cref="T:Azure.AI.Projects.AgenticIdentityPreviewCredentials" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +100,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AgentManifestOptions</ReturnType>
@@ -115,7 +116,6 @@
             Set of 16 key-value pairs that can be attached to an object. This can be
             useful for storing additional information about the object in a structured
             format, and querying for objects via API or the dashboard.
-            
             Keys are strings with a maximum length of 64 characters. Values are strings
             with a maximum length of 512 characters.
             </param>
@@ -128,21 +128,21 @@
       </Docs>
     </Member>
     <Member MemberName="AgentTaxonomyInput">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AgentTaxonomyInput AgentTaxonomyInput (Azure.AI.Projects.AzureAIAgentTarget target = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.RiskCategory&gt; riskCategories = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AgentTaxonomyInput AgentTaxonomyInput(class Azure.AI.Projects.AzureAIAgentTarget target, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Projects.RiskCategory&gt; riskCategories) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AgentTaxonomyInput(Azure.AI.Projects.AzureAIAgentTarget,System.Collections.Generic.IEnumerable{Azure.AI.Projects.RiskCategory})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentTaxonomyInput (Optional target As AzureAIAgentTarget = Nothing, Optional riskCategories As IEnumerable(Of RiskCategory) = Nothing) As AgentTaxonomyInput" />
-      <MemberSignature Language="F#" Value="static member AgentTaxonomyInput : Azure.AI.Projects.AzureAIAgentTarget * seq&lt;Azure.AI.Projects.RiskCategory&gt; -&gt; Azure.AI.Projects.AgentTaxonomyInput" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AgentTaxonomyInput (target, riskCategories)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AgentTaxonomyInput AgentTaxonomyInput (Azure.AI.Projects.Target target = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.RiskCategory&gt; riskCategories = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AgentTaxonomyInput AgentTaxonomyInput(class Azure.AI.Projects.Target target, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Projects.RiskCategory&gt; riskCategories) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AgentTaxonomyInput(Azure.AI.Projects.Target,System.Collections.Generic.IEnumerable{Azure.AI.Projects.RiskCategory})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentTaxonomyInput (Optional target As Target = Nothing, Optional riskCategories As IEnumerable(Of RiskCategory) = Nothing) As AgentTaxonomyInput" />
+      <MemberSignature Language="F#" Value="static member AgentTaxonomyInput : Azure.AI.Projects.Target * seq&lt;Azure.AI.Projects.RiskCategory&gt; -&gt; Azure.AI.Projects.AgentTaxonomyInput" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AgentTaxonomyInput (target, riskCategories)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AgentTaxonomyInput</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="target" Type="Azure.AI.Projects.AzureAIAgentTarget" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="target" Type="Azure.AI.Projects.Target" Index="0" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="riskCategories" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.RiskCategory&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
@@ -163,7 +163,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectBlobReference</ReturnType>
@@ -192,7 +192,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnection</ReturnType>
@@ -229,7 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionApiKeyCredential</ReturnType>
@@ -254,7 +254,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionBaseCredential</ReturnType>
@@ -266,7 +266,7 @@
         <param name="type"> The type of credential used by the connection. </param>
         <summary>
             A base class for connection credentials
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.AIProjectConnectionApiKeyCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionEntraIdCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionCustomCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionSasCredential" />, <see cref="T:Azure.AI.Projects.NoAuthenticationCredentials" />, and <see cref="T:Azure.AI.Projects.AgenticIdentityCredentials" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.AIProjectConnectionApiKeyCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionEntraIdCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionCustomCredential" />, <see cref="T:Azure.AI.Projects.AIProjectConnectionSasCredential" />, <see cref="T:Azure.AI.Projects.NoAuthenticationCredentials" />, and <see cref="T:Azure.AI.Projects.AgenticIdentityPreviewCredentials" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.AIProjectConnectionBaseCredential" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -282,7 +282,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionCustomCredential</ReturnType>
@@ -307,7 +307,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionEntraIdCredential</ReturnType>
@@ -329,7 +329,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectConnectionSasCredential</ReturnType>
@@ -354,7 +354,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectCosmosDBIndex</ReturnType>
@@ -397,7 +397,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectDataset</ReturnType>
@@ -441,7 +441,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectDeployment</ReturnType>
@@ -471,7 +471,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectIndex</ReturnType>
@@ -509,7 +509,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AIProjectIndexFieldMapping</ReturnType>
@@ -543,7 +543,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AzureAIAgentTarget</ReturnType>
@@ -562,32 +562,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AzureAIAssistantTarget">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AzureAIAssistantTarget AzureAIAssistantTarget (string id = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.ToolDescription&gt; toolDescriptions = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AzureAIAssistantTarget AzureAIAssistantTarget(string id, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.ToolDescription&gt; toolDescriptions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.AzureAIAssistantTarget(System.String,System.Collections.Generic.IEnumerable{Azure.AI.Projects.ToolDescription})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureAIAssistantTarget (Optional id As String = Nothing, Optional toolDescriptions As IEnumerable(Of ToolDescription) = Nothing) As AzureAIAssistantTarget" />
-      <MemberSignature Language="F#" Value="static member AzureAIAssistantTarget : string * seq&lt;Azure.AI.Projects.ToolDescription&gt; -&gt; Azure.AI.Projects.AzureAIAssistantTarget" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.AzureAIAssistantTarget (id, toolDescriptions)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.AzureAIAssistantTarget</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="toolDescriptions" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.ToolDescription&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The unique identifier of the Azure AI Assistant. </param>
-        <param name="toolDescriptions"> The descriptions of tools available to the assistant. </param>
-        <summary> Represents a target specifying an Azure AI Assistant (Agent V1) endpoint, including its id. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.AzureAIAssistantTarget" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="AzureAIModelTarget">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.AzureAIModelTarget AzureAIModelTarget (string model = default, Azure.AI.Projects.ModelSamplingParams samplingParams = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.AzureAIModelTarget AzureAIModelTarget(string model, class Azure.AI.Projects.ModelSamplingParams samplingParams) cil managed" />
@@ -597,7 +571,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AzureAIModelTarget</ReturnType>
@@ -624,7 +598,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AzureAISearchIndex</ReturnType>
@@ -662,7 +636,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.AzureOpenAIModelConfiguration</ReturnType>
@@ -687,7 +661,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.BlobReferenceSasCredential</ReturnType>
@@ -712,7 +686,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -744,7 +718,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ChartCoordinate</ReturnType>
@@ -772,7 +746,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ChatSummaryMemoryItem</ReturnType>
@@ -802,7 +776,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ClusterInsightResult</ReturnType>
@@ -817,13 +791,10 @@
         <param name="clusters"> List of clusters identified in the insights. </param>
         <param name="coordinates">
               Optional mapping of IDs to 2D coordinates used by the UX for visualization.
-            
               The map keys are string identifiers (for example, a cluster id or a sample id)
               and the values are the coordinates and visual size for rendering on a 2D chart.
-            
               This property is omitted unless the client requests coordinates (for example,
               by passing `includeCoordinates=true` as a query parameter).
-            
               Example:
               ```
               {
@@ -831,7 +802,6 @@
                 "sample-123": { "x": 18, "y": 22, "size": 4 }
               }
               ```
-            
               Coordinates are intended only for client-side visualization and do not
               modify the canonical insights results.
             </param>
@@ -849,7 +819,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ClusterTokenUsage</ReturnType>
@@ -877,7 +847,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.CodeBasedEvaluatorDefinition</ReturnType>
@@ -898,6 +868,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CodeInterpreterContainerAuto">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.CodeInterpreterContainerAuto CodeInterpreterContainerAuto (System.Collections.Generic.IEnumerable&lt;string&gt; fileIds = default, Azure.AI.Projects.ContainerMemoryLimit? memoryLimit = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.CodeInterpreterContainerAuto CodeInterpreterContainerAuto(class System.Collections.Generic.IEnumerable`1&lt;string&gt; fileIds, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ContainerMemoryLimit&gt; memoryLimit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.CodeInterpreterContainerAuto(System.Collections.Generic.IEnumerable{System.String},System.Nullable{Azure.AI.Projects.ContainerMemoryLimit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CodeInterpreterContainerAuto (Optional fileIds As IEnumerable(Of String) = Nothing, Optional memoryLimit As Nullable(Of ContainerMemoryLimit) = Nothing) As CodeInterpreterContainerAuto" />
+      <MemberSignature Language="F#" Value="static member CodeInterpreterContainerAuto : seq&lt;string&gt; * Nullable&lt;Azure.AI.Projects.ContainerMemoryLimit&gt; -&gt; Azure.AI.Projects.CodeInterpreterContainerAuto" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.CodeInterpreterContainerAuto (fileIds, memoryLimit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.CodeInterpreterContainerAuto</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="memoryLimit" Type="System.Nullable&lt;Azure.AI.Projects.ContainerMemoryLimit&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="fileIds"> An optional list of uploaded files to make available to your code. </param>
+        <param name="memoryLimit" />
+        <summary> CodeInterpreterToolAuto. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.CodeInterpreterContainerAuto" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ContinuousEvaluationRuleAction">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ContinuousEvaluationRuleAction ContinuousEvaluationRuleAction (string evalId = default, int? maxHourlyRuns = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ContinuousEvaluationRuleAction ContinuousEvaluationRuleAction(string evalId, valuetype System.Nullable`1&lt;int32&gt; maxHourlyRuns) cil managed" />
@@ -907,7 +903,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ContinuousEvaluationRuleAction</ReturnType>
@@ -933,7 +929,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.CreateAgentVersionFromManifestRequest</ReturnType>
@@ -949,7 +945,6 @@
             Set of 16 key-value pairs that can be attached to an object. This can be
             useful for storing additional information about the object in a structured
             format, and querying for objects via API or the dashboard.
-            
             Keys are strings with a maximum length of 64 characters. Values are strings
             with a maximum length of 512 characters.
             </param>
@@ -970,7 +965,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.CronTrigger</ReturnType>
@@ -1000,7 +995,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.DailyRecurrenceSchedule</ReturnType>
@@ -1025,7 +1020,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.DatasetCredential</ReturnType>
@@ -1049,7 +1044,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.DeleteMemoryStoreResponse</ReturnType>
@@ -1076,7 +1071,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EmbeddingConfiguration</ReturnType>
@@ -1093,32 +1088,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EvalCompareReport">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvalCompareReport EvalCompareReport (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.EvalRunResultComparison&gt; comparisons = default, string method = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvalCompareReport EvalCompareReport(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.EvalRunResultComparison&gt; comparisons, string method) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvalCompareReport(System.Collections.Generic.IEnumerable{Azure.AI.Projects.EvalRunResultComparison},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EvalCompareReport (Optional comparisons As IEnumerable(Of EvalRunResultComparison) = Nothing, Optional method As String = Nothing) As EvalCompareReport" />
-      <MemberSignature Language="F#" Value="static member EvalCompareReport : seq&lt;Azure.AI.Projects.EvalRunResultComparison&gt; * string -&gt; Azure.AI.Projects.EvalCompareReport" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvalCompareReport (comparisons, method)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.EvalCompareReport</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="comparisons" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.EvalRunResultComparison&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="method" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="comparisons"> Comparison results for each treatment run against the baseline. </param>
-        <param name="method"> The statistical method used for comparison. </param>
-        <summary> Insights from the evaluation comparison. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.EvalCompareReport" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="EvalResult">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvalResult EvalResult (string name = default, string type = default, float score = 0, bool passed = false);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvalResult EvalResult(string name, string type, float32 score, bool passed) cil managed" />
@@ -1128,7 +1097,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvalResult</ReturnType>
@@ -1158,7 +1127,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvalRunResultCompareItem</ReturnType>
@@ -1190,7 +1159,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvalRunResultComparison</ReturnType>
@@ -1222,7 +1191,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvalRunResultSummary</ReturnType>
@@ -1243,19 +1212,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EvaluationComparisonRequest">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluationComparisonRequest EvaluationComparisonRequest (string evalId = default, string baselineRunId = default, System.Collections.Generic.IEnumerable&lt;string&gt; treatmentRunIds = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluationComparisonRequest EvaluationComparisonRequest(string evalId, string baselineRunId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; treatmentRunIds) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationComparisonRequest(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EvaluationComparisonRequest (Optional evalId As String = Nothing, Optional baselineRunId As String = Nothing, Optional treatmentRunIds As IEnumerable(Of String) = Nothing) As EvaluationComparisonRequest" />
-      <MemberSignature Language="F#" Value="static member EvaluationComparisonRequest : string * string * seq&lt;string&gt; -&gt; Azure.AI.Projects.EvaluationComparisonRequest" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationComparisonRequest (evalId, baselineRunId, treatmentRunIds)" />
+    <Member MemberName="EvaluationComparisonInsightRequest">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluationComparisonInsightRequest EvaluationComparisonInsightRequest (string evalId = default, string baselineRunId = default, System.Collections.Generic.IEnumerable&lt;string&gt; treatmentRunIds = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluationComparisonInsightRequest EvaluationComparisonInsightRequest(string evalId, string baselineRunId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; treatmentRunIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationComparisonInsightRequest(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EvaluationComparisonInsightRequest (Optional evalId As String = Nothing, Optional baselineRunId As String = Nothing, Optional treatmentRunIds As IEnumerable(Of String) = Nothing) As EvaluationComparisonInsightRequest" />
+      <MemberSignature Language="F#" Value="static member EvaluationComparisonInsightRequest : string * string * seq&lt;string&gt; -&gt; Azure.AI.Projects.EvaluationComparisonInsightRequest" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationComparisonInsightRequest (evalId, baselineRunId, treatmentRunIds)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.EvaluationComparisonRequest</ReturnType>
+        <ReturnType>Azure.AI.Projects.EvaluationComparisonInsightRequest</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="evalId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
@@ -1267,7 +1236,33 @@
         <param name="baselineRunId"> The baseline run ID for comparison. </param>
         <param name="treatmentRunIds"> List of treatment run IDs for comparison. </param>
         <summary> Evaluation Comparison Request. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.EvaluationComparisonRequest" /> instance for mocking. </returns>
+        <returns> A new <see cref="T:Azure.AI.Projects.EvaluationComparisonInsightRequest" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluationComparisonInsightResult">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluationComparisonInsightResult EvaluationComparisonInsightResult (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.EvalRunResultComparison&gt; comparisons = default, string method = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluationComparisonInsightResult EvaluationComparisonInsightResult(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.EvalRunResultComparison&gt; comparisons, string method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationComparisonInsightResult(System.Collections.Generic.IEnumerable{Azure.AI.Projects.EvalRunResultComparison},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EvaluationComparisonInsightResult (Optional comparisons As IEnumerable(Of EvalRunResultComparison) = Nothing, Optional method As String = Nothing) As EvaluationComparisonInsightResult" />
+      <MemberSignature Language="F#" Value="static member EvaluationComparisonInsightResult : seq&lt;Azure.AI.Projects.EvalRunResultComparison&gt; * string -&gt; Azure.AI.Projects.EvaluationComparisonInsightResult" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationComparisonInsightResult (comparisons, method)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.EvaluationComparisonInsightResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparisons" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.EvalRunResultComparison&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="method" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="comparisons"> Comparison results for each treatment run against the baseline. </param>
+        <param name="method"> The statistical method used for comparison. </param>
+        <summary> Insights from the evaluation comparison. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.EvaluationComparisonInsightResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1280,7 +1275,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationResultSample</ReturnType>
@@ -1310,7 +1305,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationRule</ReturnType>
@@ -1348,7 +1343,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationRuleAction</ReturnType>
@@ -1360,7 +1355,7 @@
         <param name="type"> Type of the evaluation action. </param>
         <summary>
             Evaluation action model.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.ContinuousEvaluationRuleAction" /> and <see cref="T:Azure.AI.Projects.HumanEvaluationRuleAction" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.ContinuousEvaluationRuleAction" /> and <see cref="T:Azure.AI.Projects.HumanEvaluationPreviewRuleAction" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.EvaluationRuleAction" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -1375,7 +1370,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationRuleFilter</ReturnType>
@@ -1390,6 +1385,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EvaluationRunClusterInsightRequest">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluationRunClusterInsightRequest EvaluationRunClusterInsightRequest (string evalId = default, System.Collections.Generic.IEnumerable&lt;string&gt; runIds = default, Azure.AI.Projects.InsightModelConfiguration modelConfiguration = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluationRunClusterInsightRequest EvaluationRunClusterInsightRequest(string evalId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; runIds, class Azure.AI.Projects.InsightModelConfiguration modelConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationRunClusterInsightRequest(System.String,System.Collections.Generic.IEnumerable{System.String},Azure.AI.Projects.InsightModelConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EvaluationRunClusterInsightRequest (Optional evalId As String = Nothing, Optional runIds As IEnumerable(Of String) = Nothing, Optional modelConfiguration As InsightModelConfiguration = Nothing) As EvaluationRunClusterInsightRequest" />
+      <MemberSignature Language="F#" Value="static member EvaluationRunClusterInsightRequest : string * seq&lt;string&gt; * Azure.AI.Projects.InsightModelConfiguration -&gt; Azure.AI.Projects.EvaluationRunClusterInsightRequest" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationRunClusterInsightRequest (evalId, runIds, modelConfiguration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.EvaluationRunClusterInsightRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evalId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="runIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="modelConfiguration" Type="Azure.AI.Projects.InsightModelConfiguration" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="evalId"> Evaluation Id for the insights. </param>
+        <param name="runIds"> List of evaluation run IDs for the insights. </param>
+        <param name="modelConfiguration"> Configuration of the model used in the insight generation. </param>
+        <summary> Insights on set of Evaluation Results. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.EvaluationRunClusterInsightRequest" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EvaluationRunClusterInsightResult">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluationRunClusterInsightResult EvaluationRunClusterInsightResult (Azure.AI.Projects.ClusterInsightResult clusterInsight = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluationRunClusterInsightResult EvaluationRunClusterInsightResult(class Azure.AI.Projects.ClusterInsightResult clusterInsight) cil managed" />
@@ -1399,7 +1422,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationRunClusterInsightResult</ReturnType>
@@ -1414,34 +1437,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EvaluationRunClusterInsightsRequest">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluationRunClusterInsightsRequest EvaluationRunClusterInsightsRequest (string evalId = default, System.Collections.Generic.IEnumerable&lt;string&gt; runIds = default, Azure.AI.Projects.InsightModelConfiguration modelConfiguration = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluationRunClusterInsightsRequest EvaluationRunClusterInsightsRequest(string evalId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; runIds, class Azure.AI.Projects.InsightModelConfiguration modelConfiguration) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationRunClusterInsightsRequest(System.String,System.Collections.Generic.IEnumerable{System.String},Azure.AI.Projects.InsightModelConfiguration)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EvaluationRunClusterInsightsRequest (Optional evalId As String = Nothing, Optional runIds As IEnumerable(Of String) = Nothing, Optional modelConfiguration As InsightModelConfiguration = Nothing) As EvaluationRunClusterInsightsRequest" />
-      <MemberSignature Language="F#" Value="static member EvaluationRunClusterInsightsRequest : string * seq&lt;string&gt; * Azure.AI.Projects.InsightModelConfiguration -&gt; Azure.AI.Projects.EvaluationRunClusterInsightsRequest" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluationRunClusterInsightsRequest (evalId, runIds, modelConfiguration)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.EvaluationRunClusterInsightsRequest</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="evalId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="runIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="modelConfiguration" Type="Azure.AI.Projects.InsightModelConfiguration" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="evalId"> Evaluation Id for the insights. </param>
-        <param name="runIds"> List of evaluation run IDs for the insights. </param>
-        <param name="modelConfiguration"> Configuration of the model used in the insight generation. </param>
-        <summary> Insights on set of Evaluation Results. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.EvaluationRunClusterInsightsRequest" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="EvaluationScheduleTask">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluationScheduleTask EvaluationScheduleTask (System.Collections.Generic.IDictionary&lt;string,string&gt; configuration = default, string evalId = default, Azure.AI.Projects.EvaluationScheduleTaskEvalRun evalRun = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluationScheduleTask EvaluationScheduleTask(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; configuration, string evalId, class Azure.AI.Projects.EvaluationScheduleTaskEvalRun evalRun) cil managed" />
@@ -1451,7 +1446,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationScheduleTask</ReturnType>
@@ -1479,7 +1474,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationScheduleTaskEvalRun</ReturnType>
@@ -1500,7 +1495,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationTaxonomy</ReturnType>
@@ -1538,7 +1533,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluationTaxonomyInput</ReturnType>
@@ -1565,7 +1560,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluatorDefinition</ReturnType>
@@ -1598,7 +1593,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluatorMetric</ReturnType>
@@ -1622,15 +1617,15 @@
       </Docs>
     </Member>
     <Member MemberName="EvaluatorVersion">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluatorVersion EvaluatorVersion (string displayName = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.AI.Projects.EvaluatorType evaluatorType = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.EvaluatorCategory&gt; categories = default, Azure.AI.Projects.EvaluatorDefinition definition = default, string createdBy = default, long createdAt = 0, long modifiedAt = 0, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluatorVersion EvaluatorVersion(string displayName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype Azure.AI.Projects.EvaluatorType evaluatorType, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Projects.EvaluatorCategory&gt; categories, class Azure.AI.Projects.EvaluatorDefinition definition, string createdBy, int64 createdAt, int64 modifiedAt, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluatorVersion(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Azure.AI.Projects.EvaluatorType,System.Collections.Generic.IEnumerable{Azure.AI.Projects.EvaluatorCategory},Azure.AI.Projects.EvaluatorDefinition,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function EvaluatorVersion (Optional displayName As String = Nothing, Optional metadata As IDictionary(Of String, String) = Nothing, Optional evaluatorType As EvaluatorType = Nothing, Optional categories As IEnumerable(Of EvaluatorCategory) = Nothing, Optional definition As EvaluatorDefinition = Nothing, Optional createdBy As String = Nothing, Optional createdAt As Long = 0, Optional modifiedAt As Long = 0, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As EvaluatorVersion" />
-      <MemberSignature Language="F#" Value="static member EvaluatorVersion : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.AI.Projects.EvaluatorType * seq&lt;Azure.AI.Projects.EvaluatorCategory&gt; * Azure.AI.Projects.EvaluatorDefinition * string * int64 * int64 * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.EvaluatorVersion" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluatorVersion (displayName, metadata, evaluatorType, categories, definition, createdBy, createdAt, modifiedAt, id, name, version, description, tags)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.EvaluatorVersion EvaluatorVersion (string displayName = default, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, Azure.AI.Projects.EvaluatorType evaluatorType = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.EvaluatorCategory&gt; categories = default, Azure.AI.Projects.EvaluatorDefinition definition = default, string createdBy = default, string createdAt = default, string modifiedAt = default, string id = default, string name = default, string version = default, string description = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.EvaluatorVersion EvaluatorVersion(string displayName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, valuetype Azure.AI.Projects.EvaluatorType evaluatorType, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.AI.Projects.EvaluatorCategory&gt; categories, class Azure.AI.Projects.EvaluatorDefinition definition, string createdBy, string createdAt, string modifiedAt, string id, string name, string version, string description, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluatorVersion(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Azure.AI.Projects.EvaluatorType,System.Collections.Generic.IEnumerable{Azure.AI.Projects.EvaluatorCategory},Azure.AI.Projects.EvaluatorDefinition,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EvaluatorVersion (Optional displayName As String = Nothing, Optional metadata As IDictionary(Of String, String) = Nothing, Optional evaluatorType As EvaluatorType = Nothing, Optional categories As IEnumerable(Of EvaluatorCategory) = Nothing, Optional definition As EvaluatorDefinition = Nothing, Optional createdBy As String = Nothing, Optional createdAt As String = Nothing, Optional modifiedAt As String = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As EvaluatorVersion" />
+      <MemberSignature Language="F#" Value="static member EvaluatorVersion : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.AI.Projects.EvaluatorType * seq&lt;Azure.AI.Projects.EvaluatorCategory&gt; * Azure.AI.Projects.EvaluatorDefinition * string * string * string * string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.AI.Projects.EvaluatorVersion" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.EvaluatorVersion (displayName, metadata, evaluatorType, categories, definition, createdBy, createdAt, modifiedAt, id, name, version, description, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.EvaluatorVersion</ReturnType>
@@ -1642,8 +1637,8 @@
         <Parameter Name="categories" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.EvaluatorCategory&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="definition" Type="Azure.AI.Projects.EvaluatorDefinition" Index="4" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="createdBy" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="createdAt" Type="System.Int64" Index="6" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="modifiedAt" Type="System.Int64" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="createdAt" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="modifiedAt" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="id" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="name" Type="System.String" Index="9" FrameworkAlternate="azure-dotnet-preview" />
         <Parameter Name="version" Type="System.String" Index="10" FrameworkAlternate="azure-dotnet-preview" />
@@ -1679,7 +1674,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.FileDataset</ReturnType>
@@ -1718,7 +1713,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.FolderDataset</ReturnType>
@@ -1756,7 +1751,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.HourlyRecurrenceSchedule</ReturnType>
@@ -1768,19 +1763,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HumanEvaluationRuleAction">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.HumanEvaluationRuleAction HumanEvaluationRuleAction (string templateId = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.HumanEvaluationRuleAction HumanEvaluationRuleAction(string templateId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.HumanEvaluationRuleAction(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function HumanEvaluationRuleAction (Optional templateId As String = Nothing) As HumanEvaluationRuleAction" />
-      <MemberSignature Language="F#" Value="static member HumanEvaluationRuleAction : string -&gt; Azure.AI.Projects.HumanEvaluationRuleAction" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.HumanEvaluationRuleAction templateId" />
+    <Member MemberName="HumanEvaluationPreviewRuleAction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.HumanEvaluationPreviewRuleAction HumanEvaluationPreviewRuleAction (string templateId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.HumanEvaluationPreviewRuleAction HumanEvaluationPreviewRuleAction(string templateId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.HumanEvaluationPreviewRuleAction(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HumanEvaluationPreviewRuleAction (Optional templateId As String = Nothing) As HumanEvaluationPreviewRuleAction" />
+      <MemberSignature Language="F#" Value="static member HumanEvaluationPreviewRuleAction : string -&gt; Azure.AI.Projects.HumanEvaluationPreviewRuleAction" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.HumanEvaluationPreviewRuleAction templateId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.HumanEvaluationRuleAction</ReturnType>
+        <ReturnType>Azure.AI.Projects.HumanEvaluationPreviewRuleAction</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="templateId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
@@ -1788,7 +1783,89 @@
       <Docs>
         <param name="templateId"> Human evaluation template Id. </param>
         <summary> Evaluation rule action for human evaluation. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.HumanEvaluationRuleAction" /> instance for mocking. </returns>
+        <returns> A new <see cref="T:Azure.AI.Projects.HumanEvaluationPreviewRuleAction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputFileContentParam">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.InputFileContentParam InputFileContentParam (string fileId = default, string filename = default, string fileData = default, Uri fileUrl = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.InputFileContentParam InputFileContentParam(string fileId, string filename, string fileData, class System.Uri fileUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.InputFileContentParam(System.String,System.String,System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InputFileContentParam (Optional fileId As String = Nothing, Optional filename As String = Nothing, Optional fileData As String = Nothing, Optional fileUrl As Uri = Nothing) As InputFileContentParam" />
+      <MemberSignature Language="F#" Value="static member InputFileContentParam : string * string * string * Uri -&gt; Azure.AI.Projects.InputFileContentParam" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.InputFileContentParam (fileId, filename, fileData, fileUrl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.InputFileContentParam</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="filename" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="fileData" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="fileUrl" Type="System.Uri" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="fileId" />
+        <param name="filename" />
+        <param name="fileData" />
+        <param name="fileUrl" />
+        <summary> Input file. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.InputFileContentParam" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputImageContentParamAutoParam">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.InputImageContentParamAutoParam InputImageContentParamAutoParam (Uri imageUrl = default, string fileId = default, Azure.AI.Projects.DetailEnum? detail = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.InputImageContentParamAutoParam InputImageContentParamAutoParam(class System.Uri imageUrl, string fileId, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.DetailEnum&gt; detail) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.InputImageContentParamAutoParam(System.Uri,System.String,System.Nullable{Azure.AI.Projects.DetailEnum})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InputImageContentParamAutoParam (Optional imageUrl As Uri = Nothing, Optional fileId As String = Nothing, Optional detail As Nullable(Of DetailEnum) = Nothing) As InputImageContentParamAutoParam" />
+      <MemberSignature Language="F#" Value="static member InputImageContentParamAutoParam : Uri * string * Nullable&lt;Azure.AI.Projects.DetailEnum&gt; -&gt; Azure.AI.Projects.InputImageContentParamAutoParam" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.InputImageContentParamAutoParam (imageUrl, fileId, detail)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.InputImageContentParamAutoParam</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageUrl" Type="System.Uri" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="fileId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="detail" Type="System.Nullable&lt;Azure.AI.Projects.DetailEnum&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="imageUrl" />
+        <param name="fileId" />
+        <param name="detail" />
+        <summary> Input image. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.InputImageContentParamAutoParam" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputTextContentParam">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.InputTextContentParam InputTextContentParam (string text = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.InputTextContentParam InputTextContentParam(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.InputTextContentParam(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InputTextContentParam (Optional text As String = Nothing) As InputTextContentParam" />
+      <MemberSignature Language="F#" Value="static member InputTextContentParam : string -&gt; Azure.AI.Projects.InputTextContentParam" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.InputTextContentParam text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.InputTextContentParam</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="text"> The text input to the model. </param>
+        <summary> Input text. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.InputTextContentParam" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1801,7 +1878,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.Insight</ReturnType>
@@ -1835,7 +1912,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightCluster</ReturnType>
@@ -1873,7 +1950,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightModelConfiguration</ReturnType>
@@ -1897,7 +1974,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightRequest</ReturnType>
@@ -1909,7 +1986,7 @@
         <param name="type"> The type of request. </param>
         <summary>
             The request of the insights report.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.EvaluationRunClusterInsightsRequest" />, <see cref="T:Azure.AI.Projects.AgentClusterInsightsRequest" />, and <see cref="T:Azure.AI.Projects.EvaluationComparisonRequest" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.EvaluationRunClusterInsightRequest" />, <see cref="T:Azure.AI.Projects.AgentClusterInsightRequest" />, and <see cref="T:Azure.AI.Projects.EvaluationComparisonInsightRequest" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.InsightRequest" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -1924,7 +2001,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightResult</ReturnType>
@@ -1936,7 +2013,7 @@
         <param name="type"> The type of insights result. </param>
         <summary>
             The result of the insights.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.EvalCompareReport" />, <see cref="T:Azure.AI.Projects.EvaluationRunClusterInsightResult" />, and <see cref="T:Azure.AI.Projects.AgentClusterInsightResult" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.EvaluationComparisonInsightResult" />, <see cref="T:Azure.AI.Projects.EvaluationRunClusterInsightResult" />, and <see cref="T:Azure.AI.Projects.AgentClusterInsightResult" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.InsightResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -1951,7 +2028,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightSample</ReturnType>
@@ -1984,7 +2061,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightScheduleTask</ReturnType>
@@ -2010,7 +2087,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightsMetadata</ReturnType>
@@ -2036,7 +2113,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.InsightSummary</ReturnType>
@@ -2069,7 +2146,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ManagedAzureAISearchIndex</ReturnType>
@@ -2094,6 +2171,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MCPToolFilter">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MCPToolFilter MCPToolFilter (System.Collections.Generic.IEnumerable&lt;string&gt; toolNames = default, bool? readOnly = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MCPToolFilter MCPToolFilter(class System.Collections.Generic.IEnumerable`1&lt;string&gt; toolNames, valuetype System.Nullable`1&lt;bool&gt; readOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.MCPToolFilter(System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MCPToolFilter (Optional toolNames As IEnumerable(Of String) = Nothing, Optional readOnly As Nullable(Of Boolean) = Nothing) As MCPToolFilter" />
+      <MemberSignature Language="F#" Value="static member MCPToolFilter : seq&lt;string&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.Projects.MCPToolFilter" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.MCPToolFilter (toolNames, readOnly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.MCPToolFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="readOnly" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="toolNames"> List of allowed tool names. </param>
+        <param name="readOnly">
+            Indicates whether or not a tool modifies data or is read-only. If an
+              MCP server is [annotated with `readOnlyHint`](https://modelcontextprotocol.io/specification/2025-06-18/schema#toolannotations-readonlyhint),
+              it will match this filter.
+            </param>
+        <summary> MCP tool filter. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.MCPToolFilter" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MCPToolRequireApproval">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MCPToolRequireApproval MCPToolRequireApproval (Azure.AI.Projects.MCPToolFilter always = default, Azure.AI.Projects.MCPToolFilter never = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MCPToolRequireApproval MCPToolRequireApproval(class Azure.AI.Projects.MCPToolFilter always, class Azure.AI.Projects.MCPToolFilter never) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.MCPToolRequireApproval(Azure.AI.Projects.MCPToolFilter,Azure.AI.Projects.MCPToolFilter)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MCPToolRequireApproval (Optional always As MCPToolFilter = Nothing, Optional never As MCPToolFilter = Nothing) As MCPToolRequireApproval" />
+      <MemberSignature Language="F#" Value="static member MCPToolRequireApproval : Azure.AI.Projects.MCPToolFilter * Azure.AI.Projects.MCPToolFilter -&gt; Azure.AI.Projects.MCPToolRequireApproval" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.MCPToolRequireApproval (always, never)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.MCPToolRequireApproval</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="always" Type="Azure.AI.Projects.MCPToolFilter" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="never" Type="Azure.AI.Projects.MCPToolFilter" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="always" />
+        <param name="never" />
+        <summary> The MCPToolRequireApproval. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.MCPToolRequireApproval" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MemoryItem">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MemoryItem MemoryItem (string memoryId = default, DateTimeOffset updatedAt = default, string scope = default, string content = default, string kind = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MemoryItem MemoryItem(string memoryId, valuetype System.DateTimeOffset updatedAt, string scope, string content, string kind) cil managed" />
@@ -2103,7 +2236,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryItem</ReturnType>
@@ -2138,7 +2271,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryOperation</ReturnType>
@@ -2164,7 +2297,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemorySearchItem</ReturnType>
@@ -2188,7 +2321,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemorySearchResultOptions</ReturnType>
@@ -2212,7 +2345,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryStore</ReturnType>
@@ -2248,7 +2381,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryStoreDefaultDefinition</ReturnType>
@@ -2276,7 +2409,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryStoreDefaultOptions</ReturnType>
@@ -2304,7 +2437,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryStoreDefinition</ReturnType>
@@ -2331,7 +2464,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryStoreDeleteScopeResponse</ReturnType>
@@ -2351,26 +2484,26 @@
       </Docs>
     </Member>
     <Member MemberName="MemoryStoreOperationUsage">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MemoryStoreOperationUsage MemoryStoreOperationUsage (int embeddingTokens = 0, int inputTokens = 0, Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails inputTokensDetails = default, int outputTokens = 0, Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails outputTokensDetails = default, int totalTokens = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MemoryStoreOperationUsage MemoryStoreOperationUsage(int32 embeddingTokens, int32 inputTokens, class Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails inputTokensDetails, int32 outputTokens, class Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails outputTokensDetails, int32 totalTokens) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsage(System.Int32,System.Int32,Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails,System.Int32,Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MemoryStoreOperationUsage (Optional embeddingTokens As Integer = 0, Optional inputTokens As Integer = 0, Optional inputTokensDetails As MemoryStoreOperationUsageInputTokensDetails = Nothing, Optional outputTokens As Integer = 0, Optional outputTokensDetails As MemoryStoreOperationUsageOutputTokensDetails = Nothing, Optional totalTokens As Integer = 0) As MemoryStoreOperationUsage" />
-      <MemberSignature Language="F#" Value="static member MemoryStoreOperationUsage : int * int * Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails * int * Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails * int -&gt; Azure.AI.Projects.MemoryStoreOperationUsage" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsage (embeddingTokens, inputTokens, inputTokensDetails, outputTokens, outputTokensDetails, totalTokens)" />
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MemoryStoreOperationUsage MemoryStoreOperationUsage (int embeddingTokens = 0, long inputTokens = 0, Azure.AI.Projects.ResponseUsageInputTokensDetails inputTokensDetails = default, long outputTokens = 0, Azure.AI.Projects.ResponseUsageOutputTokensDetails outputTokensDetails = default, long totalTokens = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MemoryStoreOperationUsage MemoryStoreOperationUsage(int32 embeddingTokens, int64 inputTokens, class Azure.AI.Projects.ResponseUsageInputTokensDetails inputTokensDetails, int64 outputTokens, class Azure.AI.Projects.ResponseUsageOutputTokensDetails outputTokensDetails, int64 totalTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsage(System.Int32,System.Int64,Azure.AI.Projects.ResponseUsageInputTokensDetails,System.Int64,Azure.AI.Projects.ResponseUsageOutputTokensDetails,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MemoryStoreOperationUsage (Optional embeddingTokens As Integer = 0, Optional inputTokens As Long = 0, Optional inputTokensDetails As ResponseUsageInputTokensDetails = Nothing, Optional outputTokens As Long = 0, Optional outputTokensDetails As ResponseUsageOutputTokensDetails = Nothing, Optional totalTokens As Long = 0) As MemoryStoreOperationUsage" />
+      <MemberSignature Language="F#" Value="static member MemoryStoreOperationUsage : int * int64 * Azure.AI.Projects.ResponseUsageInputTokensDetails * int64 * Azure.AI.Projects.ResponseUsageOutputTokensDetails * int64 -&gt; Azure.AI.Projects.MemoryStoreOperationUsage" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsage (embeddingTokens, inputTokens, inputTokensDetails, outputTokens, outputTokensDetails, totalTokens)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryStoreOperationUsage</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="embeddingTokens" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="inputTokens" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="inputTokensDetails" Type="Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="outputTokens" Type="System.Int32" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="outputTokensDetails" Type="Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="totalTokens" Type="System.Int32" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="inputTokens" Type="System.Int64" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="inputTokensDetails" Type="Azure.AI.Projects.ResponseUsageInputTokensDetails" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputTokens" Type="System.Int64" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="outputTokensDetails" Type="Azure.AI.Projects.ResponseUsageOutputTokensDetails" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="totalTokens" Type="System.Int64" Index="5" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="embeddingTokens"> The number of embedding tokens. </param>
@@ -2384,57 +2517,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MemoryStoreOperationUsageInputTokensDetails">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails MemoryStoreOperationUsageInputTokensDetails (int cachedTokens = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails MemoryStoreOperationUsageInputTokensDetails(int32 cachedTokens) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsageInputTokensDetails(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MemoryStoreOperationUsageInputTokensDetails (Optional cachedTokens As Integer = 0) As MemoryStoreOperationUsageInputTokensDetails" />
-      <MemberSignature Language="F#" Value="static member MemoryStoreOperationUsageInputTokensDetails : int -&gt; Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsageInputTokensDetails cachedTokens" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cachedTokens" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="cachedTokens">
-            The number of tokens that were retrieved from the cache.
-            [More on prompt caching](https://platform.openai.com/docs/guides/prompt-caching).
-            </param>
-        <summary> The MemoryStoreOperationUsageInputTokensDetails. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.MemoryStoreOperationUsageInputTokensDetails" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MemoryStoreOperationUsageOutputTokensDetails">
-      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails MemoryStoreOperationUsageOutputTokensDetails (int reasoningTokens = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails MemoryStoreOperationUsageOutputTokensDetails(int32 reasoningTokens) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsageOutputTokensDetails(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MemoryStoreOperationUsageOutputTokensDetails (Optional reasoningTokens As Integer = 0) As MemoryStoreOperationUsageOutputTokensDetails" />
-      <MemberSignature Language="F#" Value="static member MemoryStoreOperationUsageOutputTokensDetails : int -&gt; Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.MemoryStoreOperationUsageOutputTokensDetails reasoningTokens" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="reasoningTokens" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="reasoningTokens"> The number of reasoning tokens. </param>
-        <summary> The MemoryStoreOperationUsageOutputTokensDetails. </summary>
-        <returns> A new <see cref="T:Azure.AI.Projects.MemoryStoreOperationUsageOutputTokensDetails" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="MemoryStoreSearchResponse">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.MemoryStoreSearchResponse MemoryStoreSearchResponse (string searchId = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.MemorySearchItem&gt; memories = default, Azure.AI.Projects.MemoryStoreOperationUsage usage = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.MemoryStoreSearchResponse MemoryStoreSearchResponse(string searchId, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.MemorySearchItem&gt; memories, class Azure.AI.Projects.MemoryStoreOperationUsage usage) cil managed" />
@@ -2444,7 +2526,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryStoreSearchResponse</ReturnType>
@@ -2472,7 +2554,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MemoryUpdateResultDetails</ReturnType>
@@ -2499,7 +2581,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ModelDeployment</ReturnType>
@@ -2536,7 +2618,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ModelDeploymentSku</ReturnType>
@@ -2568,7 +2650,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ModelSamplingParams</ReturnType>
@@ -2598,7 +2680,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.MonthlyRecurrenceSchedule</ReturnType>
@@ -2623,7 +2705,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.NoAuthenticationCredentials</ReturnType>
@@ -2644,7 +2726,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.OneTimeTrigger</ReturnType>
@@ -2671,7 +2753,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.PendingUploadConfiguration</ReturnType>
@@ -2698,7 +2780,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2733,7 +2815,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.PendingUploadResult</ReturnType>
@@ -2762,7 +2844,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2798,7 +2880,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.PromptBasedEvaluatorDefinition</ReturnType>
@@ -2828,7 +2910,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.RecurrenceSchedule</ReturnType>
@@ -2855,7 +2937,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.RecurrenceTrigger</ReturnType>
@@ -2887,7 +2969,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.RedTeam</ReturnType>
@@ -2922,6 +3004,54 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ResponseUsageInputTokensDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ResponseUsageInputTokensDetails ResponseUsageInputTokensDetails (long cachedTokens = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ResponseUsageInputTokensDetails ResponseUsageInputTokensDetails(int64 cachedTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ResponseUsageInputTokensDetails(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResponseUsageInputTokensDetails (Optional cachedTokens As Long = 0) As ResponseUsageInputTokensDetails" />
+      <MemberSignature Language="F#" Value="static member ResponseUsageInputTokensDetails : int64 -&gt; Azure.AI.Projects.ResponseUsageInputTokensDetails" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ResponseUsageInputTokensDetails cachedTokens" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ResponseUsageInputTokensDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cachedTokens" Type="System.Int64" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="cachedTokens" />
+        <summary> The ResponseUsageInputTokensDetails. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ResponseUsageInputTokensDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseUsageOutputTokensDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ResponseUsageOutputTokensDetails ResponseUsageOutputTokensDetails (long reasoningTokens = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ResponseUsageOutputTokensDetails ResponseUsageOutputTokensDetails(int64 reasoningTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ResponseUsageOutputTokensDetails(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResponseUsageOutputTokensDetails (Optional reasoningTokens As Long = 0) As ResponseUsageOutputTokensDetails" />
+      <MemberSignature Language="F#" Value="static member ResponseUsageOutputTokensDetails : int64 -&gt; Azure.AI.Projects.ResponseUsageOutputTokensDetails" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ResponseUsageOutputTokensDetails reasoningTokens" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ResponseUsageOutputTokensDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reasoningTokens" Type="System.Int64" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="reasoningTokens" />
+        <summary> The ResponseUsageOutputTokensDetails. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ResponseUsageOutputTokensDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Schedule">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Schedule Schedule (string id = default, string displayName = default, string description = default, bool enabled = false, Azure.AI.Projects.ScheduleProvisioningStatus? provisioningStatus = default, Azure.AI.Projects.Trigger trigger = default, Azure.AI.Projects.ScheduleTask task = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; systemData = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Schedule Schedule(string id, string displayName, string description, bool enabled, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.ScheduleProvisioningStatus&gt; provisioningStatus, class Azure.AI.Projects.Trigger trigger, class Azure.AI.Projects.ScheduleTask task, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; systemData) cil managed" />
@@ -2931,7 +3061,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.Schedule</ReturnType>
@@ -2973,7 +3103,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ScheduleRun</ReturnType>
@@ -3007,7 +3137,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ScheduleTask</ReturnType>
@@ -3027,6 +3157,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SpecificApplyPatchParam">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.SpecificApplyPatchParam SpecificApplyPatchParam ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.SpecificApplyPatchParam SpecificApplyPatchParam() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.SpecificApplyPatchParam" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SpecificApplyPatchParam () As SpecificApplyPatchParam" />
+      <MemberSignature Language="F#" Value="static member SpecificApplyPatchParam : unit -&gt; Azure.AI.Projects.SpecificApplyPatchParam" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.SpecificApplyPatchParam " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.SpecificApplyPatchParam</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Specific apply patch tool choice. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.SpecificApplyPatchParam" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpecificFunctionShellParam">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.SpecificFunctionShellParam SpecificFunctionShellParam ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.SpecificFunctionShellParam SpecificFunctionShellParam() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.SpecificFunctionShellParam" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SpecificFunctionShellParam () As SpecificFunctionShellParam" />
+      <MemberSignature Language="F#" Value="static member SpecificFunctionShellParam : unit -&gt; Azure.AI.Projects.SpecificFunctionShellParam" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.SpecificFunctionShellParam " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.SpecificFunctionShellParam</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Specific shell tool choice. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.SpecificFunctionShellParam" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Target">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Target Target (string type = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Target Target(string type) cil managed" />
@@ -3036,7 +3208,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.Target</ReturnType>
@@ -3048,7 +3220,7 @@
         <param name="type"> The type of target. </param>
         <summary>
             Base class for targets with discriminator support.
-            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.AzureAIAgentTarget" />, <see cref="T:Azure.AI.Projects.AzureAIModelTarget" />, and <see cref="T:Azure.AI.Projects.AzureAIAssistantTarget" />.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.AzureAIModelTarget" /> and <see cref="T:Azure.AI.Projects.AzureAIAgentTarget" />.
             </summary>
         <returns> A new <see cref="T:Azure.AI.Projects.Target" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -3063,7 +3235,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.TargetConfig</ReturnType>
@@ -3090,7 +3262,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.TaxonomyCategory</ReturnType>
@@ -3124,7 +3296,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.TaxonomySubCategory</ReturnType>
@@ -3147,6 +3319,294 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ToolChoiceAllowed">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceAllowed ToolChoiceAllowed (Azure.AI.Projects.ToolChoiceAllowedMode mode = Azure.AI.Projects.ToolChoiceAllowedMode.Auto, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.IDictionary&lt;string,BinaryData&gt;&gt; tools = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceAllowed ToolChoiceAllowed(valuetype Azure.AI.Projects.ToolChoiceAllowedMode mode, class System.Collections.Generic.IEnumerable`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt;&gt; tools) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceAllowed(Azure.AI.Projects.ToolChoiceAllowedMode,System.Collections.Generic.IEnumerable{System.Collections.Generic.IDictionary{System.String,System.BinaryData}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceAllowed (Optional mode As ToolChoiceAllowedMode = Azure.AI.Projects.ToolChoiceAllowedMode.Auto, Optional tools As IEnumerable(Of IDictionary(Of String, BinaryData)) = Nothing) As ToolChoiceAllowed" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceAllowed : Azure.AI.Projects.ToolChoiceAllowedMode * seq&lt;System.Collections.Generic.IDictionary&lt;string, BinaryData&gt;&gt; -&gt; Azure.AI.Projects.ToolChoiceAllowed" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceAllowed (mode, tools)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceAllowed</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="Azure.AI.Projects.ToolChoiceAllowedMode" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tools" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="mode">
+            Constrains the tools available to the model to a pre-defined set.
+              `auto` allows the model to pick from among the allowed tools and generate a
+              message.
+              `required` requires the model to call one or more of the allowed tools.
+            </param>
+        <param name="tools">
+            A list of tool definitions that the model should be allowed to call.
+              For the Responses API, the list of tool definitions might look like:
+              ```json
+              [
+                { "type": "function", "name": "get_weather" },
+                { "type": "mcp", "server_label": "deepwiki" },
+                { "type": "image_generation" }
+              ]
+              ```
+            </param>
+        <summary> Allowed tools. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceAllowed" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceCodeInterpreter">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceCodeInterpreter ToolChoiceCodeInterpreter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceCodeInterpreter ToolChoiceCodeInterpreter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceCodeInterpreter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceCodeInterpreter () As ToolChoiceCodeInterpreter" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceCodeInterpreter : unit -&gt; Azure.AI.Projects.ToolChoiceCodeInterpreter" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceCodeInterpreter " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceCodeInterpreter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates that the model should use a built-in tool to generate a response.
+            [Learn more about built-in tools](https://platform.openai.com/docs/guides/tools).
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceCodeInterpreter" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceComputerUsePreview">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceComputerUsePreview ToolChoiceComputerUsePreview ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceComputerUsePreview ToolChoiceComputerUsePreview() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceComputerUsePreview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceComputerUsePreview () As ToolChoiceComputerUsePreview" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceComputerUsePreview : unit -&gt; Azure.AI.Projects.ToolChoiceComputerUsePreview" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceComputerUsePreview " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceComputerUsePreview</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates that the model should use a built-in tool to generate a response.
+            [Learn more about built-in tools](https://platform.openai.com/docs/guides/tools).
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceComputerUsePreview" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceCustom">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceCustom ToolChoiceCustom (string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceCustom ToolChoiceCustom(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceCustom(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceCustom (Optional name As String = Nothing) As ToolChoiceCustom" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceCustom : string -&gt; Azure.AI.Projects.ToolChoiceCustom" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceCustom name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceCustom</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the custom tool to call. </param>
+        <summary> Custom tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceCustom" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceFileSearch">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceFileSearch ToolChoiceFileSearch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceFileSearch ToolChoiceFileSearch() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceFileSearch" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceFileSearch () As ToolChoiceFileSearch" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceFileSearch : unit -&gt; Azure.AI.Projects.ToolChoiceFileSearch" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceFileSearch " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceFileSearch</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates that the model should use a built-in tool to generate a response.
+            [Learn more about built-in tools](https://platform.openai.com/docs/guides/tools).
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceFileSearch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceFunction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceFunction ToolChoiceFunction (string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceFunction ToolChoiceFunction(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceFunction(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceFunction (Optional name As String = Nothing) As ToolChoiceFunction" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceFunction : string -&gt; Azure.AI.Projects.ToolChoiceFunction" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceFunction name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceFunction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the function to call. </param>
+        <summary> Function tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceFunction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceImageGeneration">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceImageGeneration ToolChoiceImageGeneration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceImageGeneration ToolChoiceImageGeneration() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceImageGeneration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceImageGeneration () As ToolChoiceImageGeneration" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceImageGeneration : unit -&gt; Azure.AI.Projects.ToolChoiceImageGeneration" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceImageGeneration " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceImageGeneration</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates that the model should use a built-in tool to generate a response.
+            [Learn more about built-in tools](https://platform.openai.com/docs/guides/tools).
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceImageGeneration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceMCP">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceMCP ToolChoiceMCP (string serverLabel = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceMCP ToolChoiceMCP(string serverLabel, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceMCP(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceMCP (Optional serverLabel As String = Nothing, Optional name As String = Nothing) As ToolChoiceMCP" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceMCP : string * string -&gt; Azure.AI.Projects.ToolChoiceMCP" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceMCP (serverLabel, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceMCP</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serverLabel" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="serverLabel"> The label of the MCP server to use. </param>
+        <param name="name" />
+        <summary> MCP tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceMCP" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceParam">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceParam ToolChoiceParam (string type = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceParam ToolChoiceParam(string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceParam(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceParam (Optional type As String = Nothing) As ToolChoiceParam" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceParam : string -&gt; Azure.AI.Projects.ToolChoiceParam" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceParam type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceParam</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="type" />
+        <summary>
+            How the model should select which tool (or tools) to use when generating
+            a response. See the `tools` parameter to see how to specify which tools
+            the model can call.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.ToolChoiceAllowed" />, <see cref="T:Azure.AI.Projects.ToolChoiceFunction" />, <see cref="T:Azure.AI.Projects.ToolChoiceMCP" />, <see cref="T:Azure.AI.Projects.ToolChoiceCustom" />, <see cref="T:Azure.AI.Projects.SpecificApplyPatchParam" />, <see cref="T:Azure.AI.Projects.SpecificFunctionShellParam" />, <see cref="T:Azure.AI.Projects.ToolChoiceFileSearch" />, <see cref="T:Azure.AI.Projects.ToolChoiceWebSearchPreview" />, <see cref="T:Azure.AI.Projects.ToolChoiceComputerUsePreview" />, <see cref="T:Azure.AI.Projects.ToolChoiceWebSearchPreview20250311" />, <see cref="T:Azure.AI.Projects.ToolChoiceImageGeneration" />, and <see cref="T:Azure.AI.Projects.ToolChoiceCodeInterpreter" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceParam" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceWebSearchPreview">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceWebSearchPreview ToolChoiceWebSearchPreview ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceWebSearchPreview ToolChoiceWebSearchPreview() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceWebSearchPreview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceWebSearchPreview () As ToolChoiceWebSearchPreview" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceWebSearchPreview : unit -&gt; Azure.AI.Projects.ToolChoiceWebSearchPreview" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceWebSearchPreview " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceWebSearchPreview</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates that the model should use a built-in tool to generate a response.
+            [Learn more about built-in tools](https://platform.openai.com/docs/guides/tools).
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceWebSearchPreview" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolChoiceWebSearchPreview20250311">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolChoiceWebSearchPreview20250311 ToolChoiceWebSearchPreview20250311 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolChoiceWebSearchPreview20250311 ToolChoiceWebSearchPreview20250311() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceWebSearchPreview20250311" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolChoiceWebSearchPreview20250311 () As ToolChoiceWebSearchPreview20250311" />
+      <MemberSignature Language="F#" Value="static member ToolChoiceWebSearchPreview20250311 : unit -&gt; Azure.AI.Projects.ToolChoiceWebSearchPreview20250311" Usage="Azure.AI.Projects.AzureAIProjectsModelFactory.ToolChoiceWebSearchPreview20250311 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.ToolChoiceWebSearchPreview20250311</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Indicates that the model should use a built-in tool to generate a response.
+            [Learn more about built-in tools](https://platform.openai.com/docs/guides/tools).
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.ToolChoiceWebSearchPreview20250311" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ToolDescription">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.ToolDescription ToolDescription (string name = default, string description = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.ToolDescription ToolDescription(string name, string description) cil managed" />
@@ -3156,7 +3616,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.ToolDescription</ReturnType>
@@ -3182,7 +3642,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.Trigger</ReturnType>
@@ -3209,7 +3669,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.UserProfileMemoryItem</ReturnType>
@@ -3239,7 +3699,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.Projects.WeeklyRecurrenceSchedule</ReturnType>
