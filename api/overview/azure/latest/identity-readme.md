@@ -1,12 +1,12 @@
 ---
 title: Azure Identity client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Identity, entra-id
-ms.date: 11/19/2025
+ms.date: 02/26/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: entra-id
 ---
-# Azure Identity client library for .NET - version 1.17.1 
+# Azure Identity client library for .NET - version 1.18.0 
 
 
 The Azure Identity library provides [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) token-based authentication support across the Azure SDK. It provides a set of [`TokenCredential`](https://learn.microsoft.com/dotnet/api/azure.core.tokencredential?view=azure-dotnet) implementations that can be used to construct Azure SDK clients that support Microsoft Entra token authentication.
@@ -116,6 +116,45 @@ While `DefaultAzureCredential` is generally the quickest way to authenticate app
 
 As of version 1.8.0, `ManagedIdentityCredential` supports [token caching](#token-caching).
 
+## Identity binding mode (WorkloadIdentityCredential)
+
+`WorkloadIdentityCredential` supports an opt-in identity binding mode to work around [Entra ID's limit on federated identity credentials (FICs)](https://learn.microsoft.com/entra/workload-id/workload-identity-federation-considerations#federated-identity-credential-considerations) per managed identity. When enabled via the `IsAzureProxyEnabled` option, the credential redirects token requests to an AKS-provided proxy that handles the FIC exchange centrally, allowing multiple pods to share the same identity without hitting FIC limits.
+
+**Note:** This feature is only available when using `WorkloadIdentityCredential` directly. It is not supported by `DefaultAzureCredential` or `ManagedIdentityCredential`.
+
+### Usage
+
+```C# Snippet:WorkloadIdentityCredentialWithIdentityBinding
+var credential = new WorkloadIdentityCredential(new WorkloadIdentityCredentialOptions
+{
+    IsAzureProxyEnabled = true  // Enable identity binding mode
+});
+```
+
+When enabled, the credential reads these environment variables (typically configured by AKS):
+
+* `AZURE_KUBERNETES_TOKEN_PROXY` - Base HTTPS URL for the proxy endpoint
+* `AZURE_KUBERNETES_CA_FILE` - Path to PEM bundle with proxy CA certificates
+* `AZURE_KUBERNETES_CA_DATA` - PEM-encoded CA bundle (mutually exclusive with `AZURE_KUBERNETES_CA_FILE `)
+* `AZURE_KUBERNETES_SNI_NAME` - TLS Server Name Indication (optional)
+
+The credential validates the configuration at construction time and throws `InvalidOperationException` if the configuration is invalid or incomplete.
+
+### Migration from ManagedIdentityCredential
+
+If you're currently using `ManagedIdentityCredential` for workload identity in AKS and need to use identity binding mode, migrate to `WorkloadIdentityCredential`:
+
+```C# Snippet:MigrationToWorkloadIdentityCredential
+// Before (no identity binding support):
+// var credential = new ManagedIdentityCredential(ManagedIdentityId.SystemAssigned);
+
+// After (with identity binding support):
+var credential = new WorkloadIdentityCredential(new WorkloadIdentityCredentialOptions
+{
+    IsAzureProxyEnabled = true
+});
+```
+
 ## Sovereign cloud configuration
 
 By default, credentials authenticate to the Microsoft Entra endpoint for the Azure Public Cloud. To access resources in other clouds, such as Azure US Government or a private cloud, use one of the following solutions:
@@ -151,7 +190,7 @@ Not all credentials require this configuration. Credentials that authenticate th
 |-|-|-|
 |[`EnvironmentCredential`][ref_EnvironmentCredential]|Authenticates a service principal or user via credential information specified in [environment variables](#environment-variables).||
 |[`ManagedIdentityCredential`][ref_ManagedIdentityCredential]|Authenticates the managed identity of an Azure resource.|[user-assigned managed identity][uami_doc]<br>[system-assigned managed identity][sami_doc]|
-|[`WorkloadIdentityCredential`][ref_WorkloadIdentityCredential]|Supports [Microsoft Entra Workload ID](https://learn.microsoft.com/azure/aks/workload-identity-overview) on Kubernetes.||
+|[`WorkloadIdentityCredential`][ref_WorkloadIdentityCredential]|Supports [Microsoft Entra Workload ID](https://learn.microsoft.com/azure/aks/workload-identity-overview) on Kubernetes. Supports [identity binding mode](#identity-binding-mode-workloadidentitycredential) to work around FIC limits in AKS.||
 
 ### Authenticate service principals
 
@@ -229,7 +268,7 @@ As of version 1.10.0, accessing resources protected by [Continuous Access Evalua
 * Improve resilience and performance.
 * Reduce the number of requests made to Microsoft Entra ID to obtain access tokens.
 
-The Azure Identity library offers both in-memory and persistent disk caching. For more information, see the [token caching documentation](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/sdk/identity/Azure.Identity/samples/TokenCache.md).
+The Azure Identity library offers both in-memory and persistent disk caching. For more information, see the [token caching documentation](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.18.0/sdk/identity/Azure.Identity/samples/TokenCache.md).
 
 ## Brokered authentication
 
@@ -237,7 +276,7 @@ An authentication broker is an app that runs on a user's machine and manages the
 
 ## Troubleshooting
 
-See the [troubleshooting guide](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/sdk/identity/Azure.Identity/TROUBLESHOOTING.md).
+See the [troubleshooting guide](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.18.0/sdk/identity/Azure.Identity/TROUBLESHOOTING.md).
 
 ### Error handling
 
@@ -264,7 +303,7 @@ For more information on handling errors from failed requests to Microsoft Entra 
 
 ### Logging
 
-See [Enable and configure logging](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/sdk/identity/Azure.Identity/TROUBLESHOOTING.md#enable-and-configure-logging).
+See [Enable and configure logging](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.18.0/sdk/identity/Azure.Identity/TROUBLESHOOTING.md#enable-and-configure-logging).
 
 ### Thread safety
 
@@ -272,10 +311,10 @@ We guarantee that all credential instance methods are thread-safe and independen
 
 ### Additional concepts
 
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/sdk/core/Azure.Core/samples/Diagnostics.md) |
-[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/sdk/core/Azure.Core/README.md#mocking) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.18.0/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.18.0/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.18.0/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.18.0/sdk/core/Azure.Core/README.md#mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 
 ## Next steps
@@ -301,14 +340,14 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 <!-- LINKS -->
 [azure_cli]: https://learn.microsoft.com/cli/azure
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
-[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.17.1/sdk/identity/Azure.Identity/src
+[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.18.0/sdk/identity/Azure.Identity/src
 [package]: https://www.nuget.org/packages/Azure.Identity
 [entraid_doc]: https://learn.microsoft.com/entra/identity/
 [entraid_err_doc]: https://learn.microsoft.com/entra/identity-platform/reference-error-codes
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [code_of_conduct_faq]: https://opensource.microsoft.com/codeofconduct/faq/
-[blobs_client_library]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.17.1/sdk/storage/Azure.Storage.Blobs
-[azure_core_library]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.17.1/sdk/core/Azure.Core
+[blobs_client_library]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.18.0/sdk/storage/Azure.Storage.Blobs
+[azure_core_library]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Identity_1.18.0/sdk/core/Azure.Core
 [identity_api_docs]: https://learn.microsoft.com/dotnet/api/azure.identity?view=azure-dotnet
 [ctc_overview]: https://aka.ms/azsdk/net/identity/credential-chains#chainedtokencredential-overview
 [dac_overview]: https://aka.ms/azsdk/net/identity/credential-chains#defaultazurecredential-overview
