@@ -1,12 +1,13 @@
 ---
-title: 
+title: Azure Provisioning AppConfiguration client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.AppConfiguration, provisioning
-ms.date: 10/05/2024
+ms.date: 02/27/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure.Provisioning.AppConfiguration client library for .NET
+# Azure Provisioning AppConfiguration client library for .NET - version 1.2.0-beta.1 
+
 
 Azure.Provisioning.AppConfiguration simplifies declarative resource provisioning in .NET.
 
@@ -17,7 +18,7 @@ Azure.Provisioning.AppConfiguration simplifies declarative resource provisioning
 Install the client library for .NET with [NuGet](https://www.nuget.org/ ):
 
 ```dotnetcli
-dotnet add package Azure.Provisioning.AppConfiguration --prerelease
+dotnet add package Azure.Provisioning.AppConfiguration
 ```
 
 ### Prerequisites
@@ -29,6 +30,54 @@ dotnet add package Azure.Provisioning.AppConfiguration --prerelease
 ## Key concepts
 
 This library allows you to specify your infrastructure in a declarative style using dotnet.  You can then use azd to deploy your infrastructure to Azure directly without needing to write or maintain bicep or arm templates.
+
+## Examples
+
+### Create a Basic AppConfiguration Resource
+
+This example demonstrates how to create an App Configuration store with a feature flag, based on the [Azure quickstart template](https://github.com/Azure/azure-quickstart-templates/blob/master/quickstarts/microsoft.appconfiguration/app-configuration-store-ff/main.bicep).
+
+```C# Snippet:AppConfigurationStoreFF
+Infrastructure infra = new();
+
+ProvisioningParameter featureFlagKey =
+    new(nameof(featureFlagKey), typeof(string))
+    {
+        Value = "FeatureFlagSample",
+        Description = "Specifies the key of the feature flag."
+    };
+infra.Add(featureFlagKey);
+
+AppConfigurationStore configStore =
+    new(nameof(configStore), AppConfigurationStore.ResourceVersions.V2022_05_01)
+    {
+        SkuName = "Standard",
+    };
+infra.Add(configStore);
+
+ProvisioningVariable flag =
+    new(nameof(flag), typeof(object))
+    {
+        Value =
+            new BicepDictionary<object>
+            {
+                { "id", featureFlagKey },
+                { "description", "A simple feature flag." },
+                { "enabled", true }
+            }
+    };
+infra.Add(flag);
+
+AppConfigurationKeyValue featureFlag =
+    new(nameof(featureFlag), AppConfigurationKeyValue.ResourceVersions.V2022_05_01)
+    {
+        Parent = configStore,
+        Name = BicepFunction.Interpolate($".appconfig.featureflag~2F{featureFlagKey}"),
+        ContentType = "application/vnd.microsoft.appconfig.ff+json;charset=utf-8",
+        Value = BicepFunction.AsString(flag)
+    };
+infra.Add(featureFlag);
+```
 
 ## Troubleshooting
 
@@ -58,7 +107,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.AppConfiguration_1.0.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.AppConfiguration_1.2.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
