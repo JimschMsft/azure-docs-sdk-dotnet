@@ -1,0 +1,99 @@
+<Type Name="AudioVisualSource" FullName="Azure.AI.ContentUnderstanding.AudioVisualSource">
+  <TypeSignature Language="C#" Value="public class AudioVisualSource : Azure.AI.ContentUnderstanding.ContentSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioVisualSource extends Azure.AI.ContentUnderstanding.ContentSource" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.ContentUnderstanding.AudioVisualSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class AudioVisualSource&#xA;Inherits ContentSource" />
+  <TypeSignature Language="F#" Value="type AudioVisualSource = class&#xA;    inherit ContentSource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.AI.ContentUnderstanding.ContentSource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a parsed audio/visual source in the format <c>AV(time[,x,y,w,h])</c>.
+            </summary>
+    <remarks>
+            The time is in milliseconds on the wire but exposed as a <see cref="T:System.TimeSpan" />.
+            The bounding box (x, y, width, height) is optional and present only when spatial
+            information is available (e.g., face detection).
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BoundingBox">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle? BoundingBox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Drawing.Rectangle&gt; BoundingBox" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.AudioVisualSource.BoundingBox" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundingBox As Nullable(Of Rectangle)" />
+      <MemberSignature Language="F#" Value="member this.BoundingBox : Nullable&lt;System.Drawing.Rectangle&gt;" Usage="Azure.AI.ContentUnderstanding.AudioVisualSource.BoundingBox" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Drawing.Rectangle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the bounding box (x, y, width, height) in pixel coordinates,
+            or <c>null</c> if no spatial information is available (e.g., audio-only).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.AudioVisualSource[] Parse (string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.AudioVisualSource[] Parse(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.AudioVisualSource.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As AudioVisualSource()" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; Azure.AI.ContentUnderstanding.AudioVisualSource[]" Usage="Azure.AI.ContentUnderstanding.AudioVisualSource.Parse source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.AudioVisualSource[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source"> The source string (may contain <c>;</c> delimiters). </param>
+        <summary>
+            Parses a source string containing one or more audio/visual source segments separated by <c>;</c>.
+            </summary>
+        <returns> An array of <see cref="T:Azure.AI.ContentUnderstanding.AudioVisualSource" /> instances. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is null. </exception>
+        <exception cref="T:System.FormatException"> Any segment is not in the expected format. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="public TimeSpan Time { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Time" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.AudioVisualSource.Time" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Time As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Time : TimeSpan" Usage="Azure.AI.ContentUnderstanding.AudioVisualSource.Time" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the timestamp. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

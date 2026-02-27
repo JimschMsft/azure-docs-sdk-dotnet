@@ -1,0 +1,117 @@
+<Type Name="ContentSource" FullName="Azure.AI.ContentUnderstanding.ContentSource">
+  <TypeSignature Language="C#" Value="public abstract class ContentSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContentSource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.ContentUnderstanding.ContentSource" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContentSource" />
+  <TypeSignature Language="F#" Value="type ContentSource = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a parsed grounding source that identifies the position of a field value in the content.
+            This is the base class for <see cref="T:Azure.AI.ContentUnderstanding.DocumentSource" /> and <see cref="T:Azure.AI.ContentUnderstanding.AudioVisualSource" />.
+            </summary>
+    <remarks>
+            Source strings are encoded in the format <c>PREFIX(params)</c> with multiple regions separated by <c>;</c>.
+            Supported prefixes:
+            <list type="bullet"><item><c>D(page,x1,y1,...,x4,y4)</c> — document region with page number and polygon coordinates</item><item><c>AV(time[,x,y,w,h])</c> — audio/visual region with timestamp and optional bounding box</item></list></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ContentSource (string rawValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string rawValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentSource.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (rawValue As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.ContentUnderstanding.ContentSource : string -&gt; Azure.AI.ContentUnderstanding.ContentSource" Usage="new Azure.AI.ContentUnderstanding.ContentSource rawValue" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rawValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rawValue"> The raw source string. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.ContentUnderstanding.ContentSource" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Azure.AI.ContentUnderstanding.ContentSource[] Parse (string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.ContentUnderstanding.ContentSource[] Parse(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentSource.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As ContentSource()" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; Azure.AI.ContentUnderstanding.ContentSource[]" Usage="Azure.AI.ContentUnderstanding.ContentSource.Parse source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentSource[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source"> The source string to parse (may contain <c>;</c> delimiters). </param>
+        <summary>
+            Parses a source string that may contain one or more segments separated by <c>;</c>.
+            </summary>
+        <returns> An array of parsed <see cref="T:Azure.AI.ContentUnderstanding.ContentSource" /> instances. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is null. </exception>
+        <exception cref="T:System.FormatException"> Any segment has an unrecognized prefix or is malformed. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RawValue">
+      <MemberSignature Language="C#" Value="public string RawValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RawValue" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.ContentSource.RawValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawValue As String" />
+      <MemberSignature Language="F#" Value="member this.RawValue : string" Usage="Azure.AI.ContentUnderstanding.ContentSource.RawValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the raw source string. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.ContentUnderstanding.ContentSource.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="contentSource.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -23,7 +23,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary> Detected audio/visual content segment. </summary>
+    <summary>
+            Customizations for <see cref="T:Azure.AI.ContentUnderstanding.AudioVisualContentSegment" /> to expose time properties as <see cref="T:System.TimeSpan" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,6 +45,26 @@
       </ReturnValue>
       <Docs>
         <summary> Classified content category. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTime">
+      <MemberSignature Language="C#" Value="public TimeSpan EndTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan EndTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.AudioVisualContentSegment.EndTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.EndTime : TimeSpan" Usage="Azure.AI.ContentUnderstanding.AudioVisualContentSegment.EndTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the end time of the segment. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,6 +226,26 @@
       </ReturnValue>
       <Docs>
         <summary> Span of the segment in the markdown content. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public TimeSpan StartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan StartTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.AudioVisualContentSegment.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.StartTime : TimeSpan" Usage="Azure.AI.ContentUnderstanding.AudioVisualContentSegment.StartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the start time of the segment. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

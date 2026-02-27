@@ -176,6 +176,52 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Sources">
+      <MemberSignature Language="C#" Value="public Azure.AI.ContentUnderstanding.ContentSource[]? Sources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.ContentUnderstanding.ContentSource[] Sources" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.ContentUnderstanding.ContentField.Sources" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sources As ContentSource()" />
+      <MemberSignature Language="F#" Value="member this.Sources : Azure.AI.ContentUnderstanding.ContentSource[]" Usage="Azure.AI.ContentUnderstanding.ContentField.Sources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.ContentUnderstanding</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.ContentUnderstanding.ContentSource[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the parsed sources that identify the position of the field value in the content.
+            Returns <c>null</c> if no source information is available.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            The source is encoded as a string (e.g., <c>"D(1,0.5712,...)"</c>) in the service response.
+            This property parses it into strongly-typed <see cref="T:Azure.AI.ContentUnderstanding.ContentSource" /> instances:
+            <see cref="T:Azure.AI.ContentUnderstanding.DocumentSource" /> for document regions or <see cref="T:Azure.AI.ContentUnderstanding.AudioVisualSource" /> for audio/video regions.
+            </para>
+          <para>
+            Multiple regions separated by <c>;</c> are returned as separate array elements.
+            </para>
+        </remarks>
+        <example>
+          <code>
+            ContentField field = result.Fields["CustomerName"];
+            if (field.Sources != null)
+            {
+                foreach (var source in field.Sources)
+                {
+                    if (source is DocumentSource doc)
+                        Console.WriteLine($"Page {doc.PageNumber}, polygon: {string.Join(", ", doc.Polygon)}");
+                }
+            }
+            </code>
+        </example>
+        <exception cref="T:System.FormatException"> The source string has an unrecognized prefix or is malformed. </exception>
+      </Docs>
+    </Member>
     <Member MemberName="Spans">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.AI.ContentUnderstanding.ContentSpan&gt; Spans { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.AI.ContentUnderstanding.ContentSpan&gt; Spans" />
@@ -354,27 +400,25 @@
         <summary>
              Gets the value of the field, regardless of its type.
              Returns the appropriate typed value for each field type:
-             - <see cref="T:Azure.AI.ContentUnderstanding.StringField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.StringField.ValueString" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.NumberField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.NumberField.ValueNumber" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.IntegerField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.IntegerField.ValueInteger" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.DateField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.DateField.ValueDate" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.TimeField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.TimeField.ValueTime" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.BooleanField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.BooleanField.ValueBoolean" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.ObjectField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ObjectField.ValueObject" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.ArrayField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ArrayField.ValueArray" />
-             - <see cref="T:Azure.AI.ContentUnderstanding.JsonField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.JsonField.ValueJson" /></summary>
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentStringField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentStringField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentNumberField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentNumberField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentIntegerField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentIntegerField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentDateTimeOffsetField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentDateTimeOffsetField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentTimeField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentTimeField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentBooleanField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentBooleanField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentObjectField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentObjectField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentArrayField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentArrayField.Value" />
+             - <see cref="T:Azure.AI.ContentUnderstanding.ContentJsonField" />: returns <see cref="P:Azure.AI.ContentUnderstanding.ContentJsonField.Value" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
         <example>
           <code>
              // Simple field access
-             var customerName = documentContent.Fields["CustomerName"].Value?.ToString();
+             var customerName = result.Fields["CustomerName"].Value?.ToString();
             
-             // Nested object access
-             // Note: Use ValueObject (not Value) to access nested fields because Value returns object,
-             // which cannot be indexed with []. ValueObject is the IDictionary&lt;string, ContentField&gt;.
-             var totalAmountObj = (ObjectField)documentContent.Fields["TotalAmount"];
-             var amount = totalAmountObj.ValueObject["Amount"].Value;
+             // Nested object access via indexer
+             var totalAmount = (ContentObjectField)result.Fields["TotalAmount"];
+             var amount = totalAmount["Amount"].Value;
              </code>
         </example>
       </Docs>
