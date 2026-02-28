@@ -1,12 +1,13 @@
 ---
-title: 
+title: Azure Provisioning KeyVault client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.KeyVault, provisioning
-ms.date: 10/05/2024
+ms.date: 02/28/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure.Provisioning.KeyVault client library for .NET
+# Azure Provisioning KeyVault client library for .NET - version 1.2.0-beta.1 
+
 
 Azure.Provisioning.KeyVault simplifies declarative resource provisioning in .NET.
 
@@ -17,7 +18,7 @@ Azure.Provisioning.KeyVault simplifies declarative resource provisioning in .NET
 Install the client library for .NET with [NuGet](https://www.nuget.org/ ):
 
 ```dotnetcli
-dotnet add package Azure.Provisioning.KeyVault --prerelease
+dotnet add package Azure.Provisioning.KeyVault
 ```
 
 ### Prerequisites
@@ -29,6 +30,93 @@ dotnet add package Azure.Provisioning.KeyVault --prerelease
 ## Key concepts
 
 This library allows you to specify your infrastructure in a declarative style using dotnet.  You can then use azd to deploy your infrastructure to Azure directly without needing to write or maintain bicep or arm templates.
+
+## Examples
+
+### Create a Basic Key Vault With Secret
+
+This example demonstrates how to create a Key Vault and store a secret, based on the [Azure quickstart template](https://github.com/Azure/azure-quickstart-templates/blob/master/quickstarts/microsoft.keyvault/key-vault-create/main.bicep).
+
+```C# Snippet:KeyVaultBasic
+Infrastructure infra = new();
+
+ProvisioningParameter skuName =
+    new(nameof(skuName), typeof(string))
+    {
+        Value = KeyVaultSkuName.Standard,
+        Description = "Vault type"
+    };
+infra.Add(skuName);
+
+ProvisioningParameter secretValue =
+    new(nameof(secretValue), typeof(string))
+    {
+        Description = "Specifies the value of the secret that you want to create.",
+        IsSecure = true
+    };
+infra.Add(secretValue);
+
+ProvisioningParameter objectId =
+    new(nameof(objectId), typeof(string))
+    {
+        Description = "Specifies the object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault."
+    };
+infra.Add(objectId);
+
+ProvisioningVariable tenantId =
+    new(nameof(tenantId), typeof(string))
+    {
+        Value = BicepFunction.GetSubscription().TenantId
+    };
+infra.Add(tenantId);
+
+KeyVaultService kv =
+    new(nameof(kv), KeyVaultService.ResourceVersions.V2023_07_01)
+    {
+        Properties =
+            new KeyVaultProperties
+            {
+                Sku = new KeyVaultSku { Name = skuName, Family = KeyVaultSkuFamily.A, },
+                TenantId = tenantId,
+                EnableSoftDelete = true,
+                SoftDeleteRetentionInDays = 90,
+                AccessPolicies =
+                {
+                    new KeyVaultAccessPolicy
+                    {
+                        ObjectId = objectId,
+                        TenantId = tenantId,
+                        Permissions =
+                            new IdentityAccessPermissions
+                            {
+                                Keys = { IdentityAccessKeyPermission.List },
+                                Secrets = { IdentityAccessSecretPermission.List }
+                            }
+                    }
+                },
+                NetworkRuleSet =
+                    new KeyVaultNetworkRuleSet
+                    {
+                        DefaultAction = KeyVaultNetworkRuleAction.Allow,
+                        Bypass = KeyVaultNetworkRuleBypassOption.AzureServices
+                    }
+            }
+    };
+infra.Add(kv);
+
+KeyVaultSecret secret =
+    new(nameof(secret), KeyVaultSecret.ResourceVersions.V2023_07_01)
+    {
+        Parent = kv,
+        Name = "myDarkNecessities",
+        Properties = new SecretProperties { Value = secretValue }
+    };
+infra.Add(secret);
+
+infra.Add(new ProvisioningOutput("name", typeof(string)) { Value = kv.Name });
+infra.Add(new ProvisioningOutput("resourceId", typeof(string)) { Value = kv.Id });
+infra.Add(new ProvisioningOutput("vaultUri", typeof(string)) { Value = kv.Properties.VaultUri });
+```
 
 ## Troubleshooting
 
@@ -58,7 +146,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.KeyVault_1.0.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.KeyVault_1.2.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 

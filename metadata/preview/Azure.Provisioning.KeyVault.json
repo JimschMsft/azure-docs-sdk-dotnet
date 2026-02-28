@@ -1,6 +1,6 @@
 {
   "Name": "Azure.Provisioning.KeyVault",
-  "Version": "1.0.0-beta.1",
+  "Version": "1.2.0-beta.1",
   "DevVersion": null,
   "DirectoryPath": "sdk/provisioning/Azure.Provisioning.KeyVault",
   "ServiceDirectory": "provisioning",
@@ -10,9 +10,22 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "Azure.Provisioning.KeyVault",
-  "ReleaseStatus": "2024-10-04",
+  "ReleaseStatus": "2026-02-28",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
+  "ArtifactDetails": {
+    "triggeringPaths": [
+      "/sdk/provisioning/ci.data.yml"
+    ],
+    "safeName": "AzureProvisioningKeyVault",
+    "name": "Azure.Provisioning.KeyVault",
+    "createReleaseStage": "${{ parameters.release_Azure_Provisioning_KeyVault }}"
+  },
+  "CIParameters": {
+    "CIMatrixConfigs": [],
+    "BuildSnippets": true
+  },
+  "SpecProjectPath": null,
   "Namespaces": [
     "Azure.Provisioning.KeyVault"
   ]
