@@ -7,14 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
     <summary>
-            Storage type for the server. Allowed values are Premium_LRS and
-            PremiumV2_LRS, and default is Premium_LRS if not specified.
+            Type of storage assigned to a server. Allowed values are Premium_LRS,
+            PremiumV2_LRS, or UltraSSD_LRS. If not specified, it defaults to
+            Premium_LRS.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -29,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -56,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -70,6 +74,33 @@
       <Docs>
         <summary>
             PremiumV2_LRS.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UltraSSDLRS">
+      <MemberSignature Language="C#" Value="UltraSSDLRS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersStorageType UltraSSDLRS = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersStorageType.UltraSSDLRS" />
+      <MemberSignature Language="VB.NET" Value="UltraSSDLRS" />
+      <MemberSignature Language="F#" Value="UltraSSDLRS = 2" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersStorageType.UltraSSDLRS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="UltraSSD_LRS")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="UltraSSD_LRS")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersStorageType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            UltraSSD_LRS.
             </summary>
       </Docs>
     </Member>

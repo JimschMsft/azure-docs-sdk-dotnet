@@ -384,6 +384,16 @@
       - Azure.AI.Language.QuestionAnswering
       - Azure.AI.Language.QuestionAnswering.Authoring
       - Microsoft.Extensions.Azure
+    - name: Question Answering Authoring
+      children:
+      - Azure.AI.Language.QuestionAnswering.Authoring
+      - Microsoft.Extensions.Azure
+      landingPageType: Service
+    - name: Question Answering
+      children:
+      - Azure.AI.Language.QuestionAnswering.Inference
+      - Microsoft.Extensions.Azure
+      landingPageType: Service
     - name: Text Authoring
       children:
       - Azure.AI.Language.Text.Authoring
@@ -407,6 +417,11 @@
       - Azure.AI.Projects
       - Azure.Core.Foundations
       - OpenAI
+    - name: AI Projects - OpenAI
+      children:
+      - Azure.AI.Projects
+      - Azure.AI.Projects.OpenAI
+      landingPageType: Service
     - name: Text Analytics
       href: ~/api/overview/azure/latest/ai.textanalytics-readme.md
       children:
@@ -774,6 +789,15 @@
         - Azure.ResourceManager.Cdn
         - Azure.ResourceManager.Cdn.Mocking
         - Azure.ResourceManager.Cdn.Models
+  - name: Content Understanding
+    href: ~/api/overview/azure/latest/content-understanding.md
+    landingPageType: Service
+    items:
+    - name: Content Understanding
+      href: ~/api/overview/azure/latest/ai.contentunderstanding-readme.md
+      children:
+      - Azure.AI.ContentUnderstanding
+      - Microsoft.Extensions.Azure
   - name: Core
     href: ~/api/overview/azure/latest/core.md
     landingPageType: Service
@@ -2770,30 +2794,6 @@
         - Azure.ResourceManager.TrafficManager
         - Azure.ResourceManager.TrafficManager.Mocking
         - Azure.ResourceManager.TrafficManager.Models
-  - name: unknown
-    href: ~/api/overview/azure/latest/unknown.md
-    landingPageType: Service
-    items:
-    - name: unknown
-      href: ~/api/overview/azure/latest/ai.contentunderstanding-readme.md
-      children:
-      - Azure.AI.ContentUnderstanding
-      - Microsoft.Extensions.Azure
-    - name: unknown
-      children:
-      - Azure.AI.Language.QuestionAnswering.Authoring
-      - Microsoft.Extensions.Azure
-      landingPageType: Service
-    - name: unknown
-      children:
-      - Azure.AI.Language.QuestionAnswering.Inference
-      - Microsoft.Extensions.Azure
-      landingPageType: Service
-    - name: unknown
-      children:
-      - Azure.AI.Projects
-      - Azure.AI.Projects.OpenAI
-      landingPageType: Service
   - name: Voice Services
     href: ~/api/overview/azure/latest/voice-services.md
     landingPageType: Service
@@ -2896,10 +2896,6 @@
           children:
           - Azure.Core.Amqp
         - name: Core
-          href: ~/api/overview/azure/latest/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
-        - name: Core
           href: ~/api/overview/azure/latest/core-readme.md
           children:
           - Azure
@@ -2911,6 +2907,10 @@
           - Azure.Core.Pipeline
           - Azure.Core.Serialization
           - Azure.Messaging
+        - name: Core
+          href: ~/api/overview/azure/latest/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/latest/microsoft.azure.core.spatial-readme.md
           children:

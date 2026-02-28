@@ -7,14 +7,15 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
     <summary>
-            Sets the promote options for a replica server. This is a write only
-            property.
+            Data synchronization option to use when processing the operation specified
+            in the promoteMode property. This property is write only.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -29,9 +30,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
           <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="forced")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="forced")&gt;]</AttributeName>
         </Attribute>
@@ -42,7 +44,8 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>
-            forced.
+            The operation will not wait for data in the read replica to be
+            synchronized with its source server, before it initiates the operation.
             </summary>
       </Docs>
     </Member>
@@ -56,9 +59,10 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
           <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="planned")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="planned")&gt;]</AttributeName>
         </Attribute>
@@ -69,7 +73,8 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>
-            planned.
+            The operation will wait for data in the read replica to be fully
+            synchronized with its source server, before it initiates the operation.
             </summary>
       </Docs>
     </Member>

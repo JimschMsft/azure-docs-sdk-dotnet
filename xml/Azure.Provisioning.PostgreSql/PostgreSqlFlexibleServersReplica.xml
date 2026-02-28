@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,13 +49,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Replicas allowed for a server.
+            Maximum number of read replicas allowed for a server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -69,6 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -92,14 +96,18 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.ReadReplicaPromoteMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Sets the promote mode for a replica server. This is a write only
-            property.
+            Type of operation to apply on the read replica. This property is write
+            only. Standalone means that the read replica will be promoted to a
+            standalone server, and will become a completely independent entity
+            from the replication set. Switchover means that the read replica will
+            roles with the primary server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -115,14 +123,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.ReplicationPromoteOption&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Sets the promote options for a replica server. This is a write only
-            property.
+            Data synchronization option to use when processing the operation
+            specified in the promoteMode property. This property is write only.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -138,15 +147,17 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersReplicationState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the replication state of a replica server. This property is
-            returned only for replicas api call. Supported values are Active,
-            Catchup, Provisioning, Updating, Broken, Reconfiguring.
+            Indicates the replication state of a read replica. This property is
+            returned only when the target server is a read replica. Possible
+            values are Active, Broken, Catchup, Provisioning, Reconfiguring, and
+            Updating.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -162,13 +173,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerReplicationRole&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Used to indicate role of the server in replication set.
+            Role of the server in a replication set.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

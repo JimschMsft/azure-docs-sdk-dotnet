@@ -11,6 +11,7 @@
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +31,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccessRule</ReturnType>
@@ -56,7 +57,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccessRuleProperties</ReturnType>
@@ -134,8 +135,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete and will be removed in a future release.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete and will be removed in a future release.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountCertificateCreateOrUpdateContent</ReturnType>
       </ReturnValue>
@@ -228,8 +239,18 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete and will be removed in a future release.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete and will be removed in a future release.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountCertificateData</ReturnType>
       </ReturnValue>
@@ -280,7 +301,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountCreateOrUpdateContent</ReturnType>
@@ -304,7 +325,7 @@
         <param name="autoStorage"> The properties related to the auto-storage account. </param>
         <param name="poolAllocationMode"> The pool allocation mode also affects how clients may authenticate to the Batch Service API. If the mode is BatchService, clients may authenticate using access keys or Microsoft Entra ID. If the mode is UserSubscription, clients must use Microsoft Entra ID. The default is BatchService. </param>
         <param name="keyVaultReference"> A reference to the Azure key vault associated with the Batch account. </param>
-        <param name="publicNetworkAccess"> If not specified, the default value is 'enabled'. </param>
+        <param name="publicNetworkAccess"> The network access type for operating on the resources in the Batch account. </param>
         <param name="networkProfile"> The network profile only takes effect when publicNetworkAccess is enabled. </param>
         <param name="encryption"> Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using a Microsoft managed key. For additional control, a customer-managed key can be used instead. </param>
         <param name="allowedAuthenticationModes"> List of allowed authentication modes for the Batch account that can be used to authenticate with the data plane. This does not affect authentication with the control plane. </param>
@@ -392,7 +413,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountData</ReturnType>
@@ -434,7 +455,7 @@
         <param name="provisioningState"> The provisioned state of the resource. </param>
         <param name="poolAllocationMode"> The allocation mode for creating pools in the Batch account. </param>
         <param name="keyVaultReference"> Identifies the Azure key vault associated with a Batch account. </param>
-        <param name="publicNetworkAccess"> If not specified, the default value is 'enabled'. </param>
+        <param name="publicNetworkAccess"> The network access type for operating on the resources in the Batch account. </param>
         <param name="networkProfile"> The network profile only takes effect when publicNetworkAccess is enabled. </param>
         <param name="privateEndpointConnections"> List of private endpoint connections associated with the Batch account. </param>
         <param name="autoStorage"> Contains information about the auto-storage account associated with a Batch account. </param>
@@ -488,16 +509,58 @@
       </Docs>
     </Member>
     <Member MemberName="BatchAccountDetectorData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchAccountDetectorData BatchAccountDetectorData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string value = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchAccountDetectorData BatchAccountDetectorData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string value = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchAccountDetectorData BatchAccountDetectorData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchAccountDetectorData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchAccountDetectorData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional value As String = Nothing) As BatchAccountDetectorData" />
+      <MemberSignature Language="F#" Value="static member BatchAccountDetectorData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * string -&gt; Azure.ResourceManager.Batch.BatchAccountDetectorData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchAccountDetectorData (id, name, resourceType, systemData, etag, tags, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Batch.BatchAccountDetectorData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="value" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="etag"> The ETag of the resource, used for concurrency statements. </param>
+        <param name="tags"> The tags of the resource. </param>
+        <param name="value"> A base64 encoded string that represents the content of a detector. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Batch.BatchAccountDetectorData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Batch.BatchAccountDetectorData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchAccountDetectorData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchAccountDetectorData BatchAccountDetectorData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, string value, Azure.ETag? etag, System.Collections.Generic.IDictionary&lt;string,string&gt; tags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchAccountDetectorData BatchAccountDetectorData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, string value, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchAccountDetectorData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.String,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchAccountDetectorData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional value As String = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As BatchAccountDetectorData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchAccountDetectorData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, value As String, etag As Nullable(Of ETag), tags As IDictionary(Of String, String)) As BatchAccountDetectorData" />
       <MemberSignature Language="F#" Value="static member BatchAccountDetectorData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * string * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.Batch.BatchAccountDetectorData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchAccountDetectorData (id, name, resourceType, systemData, value, etag, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountDetectorData</ReturnType>
       </ReturnValue>
@@ -533,7 +596,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountEndpointDependency</ReturnType>
@@ -562,7 +625,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountKeys</ReturnType>
@@ -591,7 +654,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountOutboundEnvironmentEndpoint</ReturnType>
@@ -618,7 +681,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun</ReturnType>
@@ -638,6 +701,90 @@
       </Docs>
     </Member>
     <Member MemberName="BatchAccountPoolData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchAccountPoolData BatchAccountPoolData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string displayName = default, DateTimeOffset? lastModifiedOn = default, DateTimeOffset? createdOn = default, Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState? provisioningState = default, DateTimeOffset? provisioningStateTransitOn = default, Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState? allocationState = default, DateTimeOffset? allocationStateTransitionOn = default, string vmSize = default, Azure.ResourceManager.Batch.Models.BatchVmConfiguration deploymentVmConfiguration = default, int? currentDedicatedNodes = default, int? currentLowPriorityNodes = default, Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings scaleSettings = default, Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun autoScaleRun = default, Azure.ResourceManager.Batch.Models.InterNodeCommunicationState? interNodeCommunication = default, Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration networkConfiguration = default, int? taskSlotsPerNode = default, Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy taskSchedulingPolicy = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchUserAccount&gt; userAccounts = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem&gt; metadata = default, Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask startTask = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference&gt; applicationPackages = default, Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus resizeOperationStatus = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchMountConfiguration&gt; mountConfiguration = default, Azure.ResourceManager.Batch.Models.UpgradePolicy upgradePolicy = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchAccountPoolData BatchAccountPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Models.ManagedServiceIdentity identity, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string displayName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; provisioningStateTransitOn, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState&gt; allocationState, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; allocationStateTransitionOn, string vmSize, class Azure.ResourceManager.Batch.Models.BatchVmConfiguration deploymentVmConfiguration, valuetype System.Nullable`1&lt;int32&gt; currentDedicatedNodes, valuetype System.Nullable`1&lt;int32&gt; currentLowPriorityNodes, class Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings scaleSettings, class Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun autoScaleRun, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.InterNodeCommunicationState&gt; interNodeCommunication, class Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration networkConfiguration, valuetype System.Nullable`1&lt;int32&gt; taskSlotsPerNode, class Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy taskSchedulingPolicy, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchUserAccount&gt; userAccounts, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem&gt; metadata, class Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask startTask, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference&gt; applicationPackages, class Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus resizeOperationStatus, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchMountConfiguration&gt; mountConfiguration, class Azure.ResourceManager.Batch.Models.UpgradePolicy upgradePolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchAccountPoolData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Models.ManagedServiceIdentity,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState},System.Nullable{System.DateTimeOffset},System.Nullable{Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState},System.Nullable{System.DateTimeOffset},System.String,Azure.ResourceManager.Batch.Models.BatchVmConfiguration,System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings,Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun,System.Nullable{Azure.ResourceManager.Batch.Models.InterNodeCommunicationState},Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration,System.Nullable{System.Int32},Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchUserAccount},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem},Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference},Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchMountConfiguration},Azure.ResourceManager.Batch.Models.UpgradePolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchAccountPoolData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional displayName As String = Nothing, Optional lastModifiedOn As Nullable(Of DateTimeOffset) = Nothing, Optional createdOn As Nullable(Of DateTimeOffset) = Nothing, Optional provisioningState As Nullable(Of BatchAccountPoolProvisioningState) = Nothing, Optional provisioningStateTransitOn As Nullable(Of DateTimeOffset) = Nothing, Optional allocationState As Nullable(Of BatchAccountPoolAllocationState) = Nothing, Optional allocationStateTransitionOn As Nullable(Of DateTimeOffset) = Nothing, Optional vmSize As String = Nothing, Optional deploymentVmConfiguration As BatchVmConfiguration = Nothing, Optional currentDedicatedNodes As Nullable(Of Integer) = Nothing, Optional currentLowPriorityNodes As Nullable(Of Integer) = Nothing, Optional scaleSettings As BatchAccountPoolScaleSettings = Nothing, Optional autoScaleRun As BatchAccountPoolAutoScaleRun = Nothing, Optional interNodeCommunication As Nullable(Of InterNodeCommunicationState) = Nothing, Optional networkConfiguration As BatchNetworkConfiguration = Nothing, Optional taskSlotsPerNode As Nullable(Of Integer) = Nothing, Optional taskSchedulingPolicy As BatchTaskSchedulingPolicy = Nothing, Optional userAccounts As IEnumerable(Of BatchUserAccount) = Nothing, Optional metadata As IEnumerable(Of BatchAccountPoolMetadataItem) = Nothing, Optional startTask As BatchAccountPoolStartTask = Nothing, Optional applicationPackages As IEnumerable(Of BatchApplicationPackageReference) = Nothing, Optional resizeOperationStatus As BatchResizeOperationStatus = Nothing, Optional mountConfiguration As IEnumerable(Of BatchMountConfiguration) = Nothing, Optional upgradePolicy As UpgradePolicy = Nothing) As BatchAccountPoolData" />
+      <MemberSignature Language="F#" Value="static member BatchAccountPoolData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.Models.ManagedServiceIdentity * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState&gt; * Nullable&lt;DateTimeOffset&gt; * string * Azure.ResourceManager.Batch.Models.BatchVmConfiguration * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings * Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun * Nullable&lt;Azure.ResourceManager.Batch.Models.InterNodeCommunicationState&gt; * Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration * Nullable&lt;int&gt; * Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy * seq&lt;Azure.ResourceManager.Batch.Models.BatchUserAccount&gt; * seq&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem&gt; * Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask * seq&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference&gt; * Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus * seq&lt;Azure.ResourceManager.Batch.Models.BatchMountConfiguration&gt; * Azure.ResourceManager.Batch.Models.UpgradePolicy -&gt; Azure.ResourceManager.Batch.BatchAccountPoolData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchAccountPoolData (id, name, resourceType, systemData, identity, etag, tags, displayName, lastModifiedOn, createdOn, provisioningState, provisioningStateTransitOn, allocationState, allocationStateTransitionOn, vmSize, deploymentVmConfiguration, currentDedicatedNodes, currentLowPriorityNodes, scaleSettings, autoScaleRun, interNodeCommunication, networkConfiguration, taskSlotsPerNode, taskSchedulingPolicy, userAccounts, metadata, startTask, applicationPackages, resizeOperationStatus, mountConfiguration, upgradePolicy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Batch.BatchAccountPoolData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="displayName" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="lastModifiedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="createdOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningStateTransitOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="11" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="allocationState" Type="System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState&gt;" Index="12" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="allocationStateTransitionOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="13" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="vmSize" Type="System.String" Index="14" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deploymentVmConfiguration" Type="Azure.ResourceManager.Batch.Models.BatchVmConfiguration" Index="15" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="currentDedicatedNodes" Type="System.Nullable&lt;System.Int32&gt;" Index="16" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="currentLowPriorityNodes" Type="System.Nullable&lt;System.Int32&gt;" Index="17" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="scaleSettings" Type="Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings" Index="18" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="autoScaleRun" Type="Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun" Index="19" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="interNodeCommunication" Type="System.Nullable&lt;Azure.ResourceManager.Batch.Models.InterNodeCommunicationState&gt;" Index="20" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="networkConfiguration" Type="Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration" Index="21" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="taskSlotsPerNode" Type="System.Nullable&lt;System.Int32&gt;" Index="22" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="taskSchedulingPolicy" Type="Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy" Index="23" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="userAccounts" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchUserAccount&gt;" Index="24" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem&gt;" Index="25" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="startTask" Type="Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask" Index="26" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="applicationPackages" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference&gt;" Index="27" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resizeOperationStatus" Type="Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus" Index="28" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="mountConfiguration" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchMountConfiguration&gt;" Index="29" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="upgradePolicy" Type="Azure.ResourceManager.Batch.Models.UpgradePolicy" Index="30" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="identity"> The type of identity used for the Batch Pool. Current supported identity types: UserAssigned, None. </param>
+        <param name="etag"> The ETag of the resource, used for concurrency statements. </param>
+        <param name="tags"> The tags of the resource. </param>
+        <param name="displayName"> The display name need not be unique and can contain any Unicode characters up to a maximum length of 1024. </param>
+        <param name="lastModifiedOn"> This is the last time at which the pool level data, such as the targetDedicatedNodes or autoScaleSettings, changed. It does not factor in node-level changes such as a compute node changing state. </param>
+        <param name="createdOn"> The creation time of the pool. </param>
+        <param name="provisioningState"> The current state of the pool. </param>
+        <param name="provisioningStateTransitOn"> The time at which the pool entered its current state. </param>
+        <param name="allocationState"> Whether the pool is resizing. </param>
+        <param name="allocationStateTransitionOn"> The time at which the pool entered its current allocation state. </param>
+        <param name="vmSize"> For information about available VM sizes, see Sizes for Virtual Machines in Azure (https://learn.microsoft.com/azure/virtual-machines/sizes/overview). Batch supports all Azure VM sizes except STANDARD_A0 and those with premium storage (STANDARD_GS, STANDARD_DS, and STANDARD_DSV2 series). </param>
+        <param name="deploymentVmConfiguration"> Deployment configuration properties. </param>
+        <param name="currentDedicatedNodes"> The number of dedicated compute nodes currently in the pool. </param>
+        <param name="currentLowPriorityNodes"> The number of Spot/low-priority compute nodes currently in the pool. </param>
+        <param name="scaleSettings"> Defines the desired size of the pool. This can either be 'fixedScale' where the requested targetDedicatedNodes is specified, or 'autoScale' which defines a formula which is periodically reevaluated. If this property is not specified, the pool will have a fixed scale with 0 targetDedicatedNodes. </param>
+        <param name="autoScaleRun"> This property is set only if the pool automatically scales, i.e. autoScaleSettings are used. </param>
+        <param name="interNodeCommunication"> This imposes restrictions on which nodes can be assigned to the pool. Enabling this value can reduce the chance of the requested number of nodes to be allocated in the pool. If not specified, this value defaults to 'Disabled'. </param>
+        <param name="networkConfiguration"> The network configuration for a pool. </param>
+        <param name="taskSlotsPerNode"> The default value is 1. The maximum value is the smaller of 4 times the number of cores of the vmSize of the pool or 256. </param>
+        <param name="taskSchedulingPolicy"> If not specified, the default is spread. </param>
+        <param name="userAccounts"> The list of user accounts to be created on each node in the pool. </param>
+        <param name="metadata"> The Batch service does not assign any meaning to metadata; it is solely for the use of user code. </param>
+        <param name="startTask"> In an PATCH (update) operation, this property can be set to an empty object to remove the start task from the pool. </param>
+        <param name="applicationPackages"> Changes to application package references affect all new compute nodes joining the pool, but do not affect compute nodes that are already in the pool until they are rebooted or reimaged. There is a maximum of 10 application package references on any given pool. </param>
+        <param name="resizeOperationStatus"> Describes either the current operation (if the pool AllocationState is Resizing) or the previously completed operation (if the AllocationState is Steady). </param>
+        <param name="mountConfiguration"> This supports Azure Files, NFS, CIFS/SMB, and Blobfuse. </param>
+        <param name="upgradePolicy"> Describes an upgrade policy - automatic, manual, or rolling. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Batch.BatchAccountPoolData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Batch.BatchAccountPoolData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchAccountPoolData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchAccountPoolData BatchAccountPoolData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, Azure.ResourceManager.Models.ManagedServiceIdentity identity, string displayName, DateTimeOffset? lastModifiedOn, DateTimeOffset? createdOn, Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState? provisioningState, DateTimeOffset? provisioningStateTransitOn, Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState? allocationState, DateTimeOffset? allocationStateTransitionOn, string vmSize, Azure.ResourceManager.Batch.Models.BatchDeploymentConfiguration deploymentConfiguration, int? currentDedicatedNodes, int? currentLowPriorityNodes, Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings scaleSettings, Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun autoScaleRun, Azure.ResourceManager.Batch.Models.InterNodeCommunicationState? interNodeCommunication, Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration networkConfiguration, int? taskSlotsPerNode, Azure.ResourceManager.Batch.Models.BatchNodeFillType? taskSchedulingNodeFillType, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchUserAccount&gt; userAccounts, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem&gt; metadata, Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask startTask, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchCertificateReference&gt; certificates, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference&gt; applicationPackages, System.Collections.Generic.IEnumerable&lt;string&gt; applicationLicenses, Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus resizeOperationStatus, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.Batch.Models.BatchMountConfiguration&gt; mountConfiguration, Azure.ResourceManager.Batch.Models.NodeCommunicationMode? targetNodeCommunicationMode, Azure.ResourceManager.Batch.Models.NodeCommunicationMode? currentNodeCommunicationMode, Azure.ETag? etag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchAccountPoolData BatchAccountPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.Models.ManagedServiceIdentity identity, string displayName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; provisioningStateTransitOn, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState&gt; allocationState, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; allocationStateTransitionOn, string vmSize, class Azure.ResourceManager.Batch.Models.BatchDeploymentConfiguration deploymentConfiguration, valuetype System.Nullable`1&lt;int32&gt; currentDedicatedNodes, valuetype System.Nullable`1&lt;int32&gt; currentLowPriorityNodes, class Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings scaleSettings, class Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun autoScaleRun, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.InterNodeCommunicationState&gt; interNodeCommunication, class Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration networkConfiguration, valuetype System.Nullable`1&lt;int32&gt; taskSlotsPerNode, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchNodeFillType&gt; taskSchedulingNodeFillType, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchUserAccount&gt; userAccounts, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem&gt; metadata, class Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask startTask, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchCertificateReference&gt; certificates, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference&gt; applicationPackages, class System.Collections.Generic.IEnumerable`1&lt;string&gt; applicationLicenses, class Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus resizeOperationStatus, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.Batch.Models.BatchMountConfiguration&gt; mountConfiguration, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.NodeCommunicationMode&gt; targetNodeCommunicationMode, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.NodeCommunicationMode&gt; currentNodeCommunicationMode, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchAccountPoolData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.Models.ManagedServiceIdentity,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState},System.Nullable{System.DateTimeOffset},System.Nullable{Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState},System.Nullable{System.DateTimeOffset},System.String,Azure.ResourceManager.Batch.Models.BatchDeploymentConfiguration,System.Nullable{System.Int32},System.Nullable{System.Int32},Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings,Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun,System.Nullable{Azure.ResourceManager.Batch.Models.InterNodeCommunicationState},Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration,System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.Batch.Models.BatchNodeFillType},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchUserAccount},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem},Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchCertificateReference},System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference},System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus,System.Collections.Generic.IEnumerable{Azure.ResourceManager.Batch.Models.BatchMountConfiguration},System.Nullable{Azure.ResourceManager.Batch.Models.NodeCommunicationMode},System.Nullable{Azure.ResourceManager.Batch.Models.NodeCommunicationMode},System.Nullable{Azure.ETag})" />
@@ -647,7 +794,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -838,8 +985,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountPoolData</ReturnType>
       </ReturnValue>
@@ -966,16 +1119,62 @@
       </Docs>
     </Member>
     <Member MemberName="BatchApplicationData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchApplicationData BatchApplicationData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string displayName = default, bool? allowUpdates = default, string defaultVersion = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchApplicationData BatchApplicationData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string displayName = default, bool? allowUpdates = default, string defaultVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchApplicationData BatchApplicationData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string displayName, valuetype System.Nullable`1&lt;bool&gt; allowUpdates, string defaultVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchApplicationData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional displayName As String = Nothing, Optional allowUpdates As Nullable(Of Boolean) = Nothing, Optional defaultVersion As String = Nothing) As BatchApplicationData" />
+      <MemberSignature Language="F#" Value="static member BatchApplicationData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;bool&gt; * string -&gt; Azure.ResourceManager.Batch.BatchApplicationData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationData (id, name, resourceType, systemData, etag, tags, displayName, allowUpdates, defaultVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Batch.BatchApplicationData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="displayName" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="allowUpdates" Type="System.Nullable&lt;System.Boolean&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="defaultVersion" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="etag"> The ETag of the resource, used for concurrency statements. </param>
+        <param name="tags"> The tags of the resource. </param>
+        <param name="displayName"> The display name for the application. </param>
+        <param name="allowUpdates"> A value indicating whether packages within the application may be overwritten using the same version string. </param>
+        <param name="defaultVersion"> The package to use if a client requests the application but does not specify a version. This property can only be set to the name of an existing package. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Batch.BatchApplicationData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Batch.BatchApplicationData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchApplicationData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchApplicationData BatchApplicationData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, string displayName, bool? allowUpdates, string defaultVersion, Azure.ETag? etag, System.Collections.Generic.IDictionary&lt;string,string&gt; tags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchApplicationData BatchApplicationData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, string displayName, valuetype System.Nullable`1&lt;bool&gt; allowUpdates, string defaultVersion, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.String,System.Nullable{System.Boolean},System.String,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchApplicationData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional displayName As String = Nothing, Optional allowUpdates As Nullable(Of Boolean) = Nothing, Optional defaultVersion As String = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As BatchApplicationData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchApplicationData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, displayName As String, allowUpdates As Nullable(Of Boolean), defaultVersion As String, etag As Nullable(Of ETag), tags As IDictionary(Of String, String)) As BatchApplicationData" />
       <MemberSignature Language="F#" Value="static member BatchApplicationData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * string * Nullable&lt;bool&gt; * string * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.Batch.BatchApplicationData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationData (id, name, resourceType, systemData, displayName, allowUpdates, defaultVersion, etag, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchApplicationData</ReturnType>
       </ReturnValue>
@@ -1048,16 +1247,66 @@
       </Docs>
     </Member>
     <Member MemberName="BatchApplicationPackageData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchApplicationPackageData BatchApplicationPackageData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Batch.Models.BatchApplicationPackageState? state = default, string format = default, Uri storageUri = default, DateTimeOffset? storageUriExpireOn = default, DateTimeOffset? lastActivatedOn = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchApplicationPackageData BatchApplicationPackageData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.Batch.Models.BatchApplicationPackageState? state = default, string format = default, Uri storageUri = default, DateTimeOffset? storageUriExpireOn = default, DateTimeOffset? lastActivatedOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchApplicationPackageData BatchApplicationPackageData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchApplicationPackageState&gt; state, string format, class System.Uri storageUri, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; storageUriExpireOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastActivatedOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationPackageData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.ResourceManager.Batch.Models.BatchApplicationPackageState},System.String,System.Uri,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchApplicationPackageData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional state As Nullable(Of BatchApplicationPackageState) = Nothing, Optional format As String = Nothing, Optional storageUri As Uri = Nothing, Optional storageUriExpireOn As Nullable(Of DateTimeOffset) = Nothing, Optional lastActivatedOn As Nullable(Of DateTimeOffset) = Nothing) As BatchApplicationPackageData" />
+      <MemberSignature Language="F#" Value="static member BatchApplicationPackageData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageState&gt; * string * Uri * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.ResourceManager.Batch.BatchApplicationPackageData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationPackageData (id, name, resourceType, systemData, etag, tags, state, format, storageUri, storageUriExpireOn, lastActivatedOn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Batch.BatchApplicationPackageData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="state" Type="System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageState&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="format" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="storageUri" Type="System.Uri" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="storageUriExpireOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="lastActivatedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="etag"> The ETag of the resource, used for concurrency statements. </param>
+        <param name="tags"> The tags of the resource. </param>
+        <param name="state"> The current state of the application package. </param>
+        <param name="format"> The format of the application package, if the package is active. </param>
+        <param name="storageUri"> The URL for the application package in Azure Storage. </param>
+        <param name="storageUriExpireOn"> The UTC time at which the Azure Storage URL will expire. </param>
+        <param name="lastActivatedOn"> The time at which the package was last activated, if the package is active. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Batch.BatchApplicationPackageData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Batch.BatchApplicationPackageData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchApplicationPackageData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchApplicationPackageData BatchApplicationPackageData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, Azure.ResourceManager.Batch.Models.BatchApplicationPackageState? state, string format, Uri storageUri, DateTimeOffset? storageUriExpireOn, DateTimeOffset? lastActivatedOn, Azure.ETag? etag, System.Collections.Generic.IDictionary&lt;string,string&gt; tags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchApplicationPackageData BatchApplicationPackageData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchApplicationPackageState&gt; state, string format, class System.Uri storageUri, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; storageUriExpireOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastActivatedOn, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationPackageData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ResourceManager.Batch.Models.BatchApplicationPackageState},System.String,System.Uri,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchApplicationPackageData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional state As Nullable(Of BatchApplicationPackageState) = Nothing, Optional format As String = Nothing, Optional storageUri As Uri = Nothing, Optional storageUriExpireOn As Nullable(Of DateTimeOffset) = Nothing, Optional lastActivatedOn As Nullable(Of DateTimeOffset) = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As BatchApplicationPackageData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchApplicationPackageData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, state As Nullable(Of BatchApplicationPackageState), format As String, storageUri As Uri, storageUriExpireOn As Nullable(Of DateTimeOffset), lastActivatedOn As Nullable(Of DateTimeOffset), etag As Nullable(Of ETag), tags As IDictionary(Of String, String)) As BatchApplicationPackageData" />
       <MemberSignature Language="F#" Value="static member BatchApplicationPackageData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageState&gt; * string * Uri * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.Batch.BatchApplicationPackageData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchApplicationPackageData (id, name, resourceType, systemData, state, format, storageUri, storageUriExpireOn, lastActivatedOn, etag, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchApplicationPackageData</ReturnType>
       </ReturnValue>
@@ -1101,7 +1350,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchEndpointDetail</ReturnType>
@@ -1126,7 +1375,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchIPRule</ReturnType>
@@ -1153,7 +1402,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchLocationQuota</ReturnType>
@@ -1177,7 +1426,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchNameAvailabilityContent</ReturnType>
@@ -1204,7 +1453,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchNameAvailabilityResult</ReturnType>
@@ -1264,16 +1513,64 @@
       </Docs>
     </Member>
     <Member MemberName="BatchPrivateEndpointConnectionData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData BatchPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState? provisioningState = default, Azure.Core.ResourceIdentifier privateEndpointId = default, System.Collections.Generic.IEnumerable&lt;string&gt; groupIds = default, Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState connectionState = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData BatchPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState? provisioningState = default, Azure.Core.ResourceIdentifier privateEndpointId = default, System.Collections.Generic.IEnumerable&lt;string&gt; groupIds = default, Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState connectionState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData BatchPrivateEndpointConnectionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState&gt; provisioningState, class Azure.Core.ResourceIdentifier privateEndpointId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; groupIds, class Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState connectionState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateEndpointConnectionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState},Azure.Core.ResourceIdentifier,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchPrivateEndpointConnectionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional provisioningState As Nullable(Of BatchPrivateEndpointConnectionProvisioningState) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional groupIds As IEnumerable(Of String) = Nothing, Optional connectionState As BatchPrivateLinkServiceConnectionState = Nothing) As BatchPrivateEndpointConnectionData" />
+      <MemberSignature Language="F#" Value="static member BatchPrivateEndpointConnectionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState&gt; * Azure.Core.ResourceIdentifier * seq&lt;string&gt; * Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState -&gt; Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateEndpointConnectionData (id, name, resourceType, systemData, etag, tags, provisioningState, privateEndpointId, groupIds, connectionState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointId" Type="Azure.Core.ResourceIdentifier" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="groupIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionState" Type="Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState" Index="9" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="etag"> The ETag of the resource, used for concurrency statements. </param>
+        <param name="tags"> The tags of the resource. </param>
+        <param name="provisioningState"> The provisioning state of the private endpoint connection. </param>
+        <param name="privateEndpointId"> The private endpoint of the private endpoint connection. </param>
+        <param name="groupIds"> The value has one and only one group id. </param>
+        <param name="connectionState"> The private link service connection state of the private endpoint connection. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchPrivateEndpointConnectionData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData BatchPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState? provisioningState, Azure.Core.ResourceIdentifier privateEndpointId, System.Collections.Generic.IEnumerable&lt;string&gt; groupIds, Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState connectionState, Azure.ETag? etag, System.Collections.Generic.IDictionary&lt;string,string&gt; tags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData BatchPrivateEndpointConnectionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState&gt; provisioningState, class Azure.Core.ResourceIdentifier privateEndpointId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; groupIds, class Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState connectionState, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateEndpointConnectionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState},Azure.Core.ResourceIdentifier,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchPrivateEndpointConnectionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional provisioningState As Nullable(Of BatchPrivateEndpointConnectionProvisioningState) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional groupIds As IEnumerable(Of String) = Nothing, Optional connectionState As BatchPrivateLinkServiceConnectionState = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As BatchPrivateEndpointConnectionData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchPrivateEndpointConnectionData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, provisioningState As Nullable(Of BatchPrivateEndpointConnectionProvisioningState), privateEndpointId As ResourceIdentifier, groupIds As IEnumerable(Of String), connectionState As BatchPrivateLinkServiceConnectionState, etag As Nullable(Of ETag), tags As IDictionary(Of String, String)) As BatchPrivateEndpointConnectionData" />
       <MemberSignature Language="F#" Value="static member BatchPrivateEndpointConnectionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ResourceManager.Batch.Models.BatchPrivateEndpointConnectionProvisioningState&gt; * Azure.Core.ResourceIdentifier * seq&lt;string&gt; * Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateEndpointConnectionData (id, name, resourceType, systemData, provisioningState, privateEndpointId, groupIds, connectionState, etag, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchPrivateEndpointConnectionData</ReturnType>
       </ReturnValue>
@@ -1344,16 +1641,62 @@
       </Docs>
     </Member>
     <Member MemberName="BatchPrivateLinkResourceData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchPrivateLinkResourceData BatchPrivateLinkResourceData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string groupId = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchPrivateLinkResourceData BatchPrivateLinkResourceData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string groupId = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchPrivateLinkResourceData BatchPrivateLinkResourceData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string groupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredMembers, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredZoneNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateLinkResourceData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchPrivateLinkResourceData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional groupId As String = Nothing, Optional requiredMembers As IEnumerable(Of String) = Nothing, Optional requiredZoneNames As IEnumerable(Of String) = Nothing) As BatchPrivateLinkResourceData" />
+      <MemberSignature Language="F#" Value="static member BatchPrivateLinkResourceData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * seq&lt;string&gt; * seq&lt;string&gt; -&gt; Azure.ResourceManager.Batch.BatchPrivateLinkResourceData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateLinkResourceData (id, name, resourceType, systemData, etag, tags, groupId, requiredMembers, requiredZoneNames)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Batch.BatchPrivateLinkResourceData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="groupId" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="requiredMembers" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="requiredZoneNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="etag"> The ETag of the resource, used for concurrency statements. </param>
+        <param name="tags"> The tags of the resource. </param>
+        <param name="groupId"> The group id is used to establish the private link connection. </param>
+        <param name="requiredMembers"> The list of required members that are used to establish the private link connection. </param>
+        <param name="requiredZoneNames"> The list of required zone names for the private DNS resource name. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.Batch.BatchPrivateLinkResourceData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.Batch.BatchPrivateLinkResourceData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchPrivateLinkResourceData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.BatchPrivateLinkResourceData BatchPrivateLinkResourceData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, string groupId, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames, Azure.ETag? etag, System.Collections.Generic.IDictionary&lt;string,string&gt; tags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.BatchPrivateLinkResourceData BatchPrivateLinkResourceData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, string groupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredMembers, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredZoneNames, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateLinkResourceData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchPrivateLinkResourceData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional groupId As String = Nothing, Optional requiredMembers As IEnumerable(Of String) = Nothing, Optional requiredZoneNames As IEnumerable(Of String) = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As BatchPrivateLinkResourceData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchPrivateLinkResourceData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, groupId As String, requiredMembers As IEnumerable(Of String), requiredZoneNames As IEnumerable(Of String), etag As Nullable(Of ETag), tags As IDictionary(Of String, String)) As BatchPrivateLinkResourceData" />
       <MemberSignature Language="F#" Value="static member BatchPrivateLinkResourceData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * string * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.Batch.BatchPrivateLinkResourceData" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchPrivateLinkResourceData (id, name, resourceType, systemData, groupId, requiredMembers, requiredZoneNames, etag, tags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchPrivateLinkResourceData</ReturnType>
       </ReturnValue>
@@ -1393,7 +1736,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchPrivateLinkServiceConnectionState</ReturnType>
@@ -1421,7 +1764,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchProvisioningIssue</ReturnType>
@@ -1447,7 +1790,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchProvisioningIssueProperties</ReturnType>
@@ -1480,7 +1823,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus</ReturnType>
@@ -1506,16 +1849,22 @@
       </Docs>
     </Member>
     <Member MemberName="BatchResourceAssociation">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.Models.BatchResourceAssociation BatchResourceAssociation (string name = default, Azure.ResourceManager.Batch.Models.ResourceAssociationAccessMode? accessMode = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.Models.BatchResourceAssociation BatchResourceAssociation (string name, Azure.ResourceManager.Batch.Models.ResourceAssociationAccessMode? accessMode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.Models.BatchResourceAssociation BatchResourceAssociation(string name, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Batch.Models.ResourceAssociationAccessMode&gt; accessMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchResourceAssociation(System.String,System.Nullable{Azure.ResourceManager.Batch.Models.ResourceAssociationAccessMode})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchResourceAssociation (Optional name As String = Nothing, Optional accessMode As Nullable(Of ResourceAssociationAccessMode) = Nothing) As BatchResourceAssociation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BatchResourceAssociation (name As String, accessMode As Nullable(Of ResourceAssociationAccessMode)) As BatchResourceAssociation" />
       <MemberSignature Language="F#" Value="static member BatchResourceAssociation : string * Nullable&lt;Azure.ResourceManager.Batch.Models.ResourceAssociationAccessMode&gt; -&gt; Azure.ResourceManager.Batch.Models.BatchResourceAssociation" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.BatchResourceAssociation (name, accessMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchResourceAssociation</ReturnType>
       </ReturnValue>
@@ -1541,7 +1890,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchSkuCapability</ReturnType>
@@ -1595,7 +1944,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchSupportedSku</ReturnType>
@@ -1626,7 +1975,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchVmFamilyCoreQuota</ReturnType>
@@ -1644,16 +1993,22 @@
       </Docs>
     </Member>
     <Member MemberName="NetworkSecurityPerimeter">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.Models.NetworkSecurityPerimeter NetworkSecurityPerimeter (Azure.Core.ResourceIdentifier id = default, Guid? perimeterGuid = default, Azure.Core.AzureLocation? location = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.Batch.Models.NetworkSecurityPerimeter NetworkSecurityPerimeter (Azure.Core.ResourceIdentifier id, Guid? perimeterGuid, Azure.Core.AzureLocation? location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.Batch.Models.NetworkSecurityPerimeter NetworkSecurityPerimeter(class Azure.Core.ResourceIdentifier id, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; perimeterGuid, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.NetworkSecurityPerimeter(Azure.Core.ResourceIdentifier,System.Nullable{System.Guid},System.Nullable{Azure.Core.AzureLocation})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetworkSecurityPerimeter (Optional id As ResourceIdentifier = Nothing, Optional perimeterGuid As Nullable(Of Guid) = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing) As NetworkSecurityPerimeter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetworkSecurityPerimeter (id As ResourceIdentifier, perimeterGuid As Nullable(Of Guid), location As Nullable(Of AzureLocation)) As NetworkSecurityPerimeter" />
       <MemberSignature Language="F#" Value="static member NetworkSecurityPerimeter : Azure.Core.ResourceIdentifier * Nullable&lt;Guid&gt; * Nullable&lt;Azure.Core.AzureLocation&gt; -&gt; Azure.ResourceManager.Batch.Models.NetworkSecurityPerimeter" Usage="Azure.ResourceManager.Batch.Models.ArmBatchModelFactory.NetworkSecurityPerimeter (id, perimeterGuid, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.NetworkSecurityPerimeter</ReturnType>
       </ReturnValue>
@@ -1680,7 +2035,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.NetworkSecurityPerimeterConfigurationData</ReturnType>
@@ -1712,7 +2067,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.NetworkSecurityPerimeterConfigurationProperties</ReturnType>
@@ -1744,7 +2099,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.NetworkSecurityProfile</ReturnType>

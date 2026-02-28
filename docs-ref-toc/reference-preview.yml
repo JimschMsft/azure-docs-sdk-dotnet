@@ -419,6 +419,48 @@
       children:
       - Azure.AI.Agents.Persistent
       - Microsoft.Extensions.Azure
+    - name: AI Agent Server - Agent Framework
+      href: ~/api/overview/azure/preview/ai.agentserver.agentframework-readme.md
+      children:
+      - Azure.AI.AgentServer.AgentFramework
+      - Azure.AI.AgentServer.AgentFramework.Converters
+      - Azure.AI.AgentServer.AgentFramework.Extensions
+      - Azure.AI.AgentServer.AgentFramework.Persistence
+    - name: AI Agent Server - Contracts
+      href: ~/api/overview/azure/preview/ai.agentserver.contracts-readme.md
+      children:
+      - Azure.AI.AgentServer.Contracts.Generated
+      - Azure.AI.AgentServer.Contracts.Generated.Agents
+      - Azure.AI.AgentServer.Contracts.Generated.Agents.WorkflowAgents
+      - Azure.AI.AgentServer.Contracts.Generated.Common
+      - Azure.AI.AgentServer.Contracts.Generated.Conversations
+      - Azure.AI.AgentServer.Contracts.Generated.MemoryStore
+      - Azure.AI.AgentServer.Contracts.Generated.OpenAI
+      - Azure.AI.AgentServer.Contracts.Generated.Responses
+    - name: AI Agent Server - Core
+      href: ~/api/overview/azure/preview/ai.agentserver.core-readme.md
+      children:
+      - Azure.AI.AgentServer.Core.Common
+      - Azure.AI.AgentServer.Core.Common.Http.Json
+      - Azure.AI.AgentServer.Core.Common.Http.ServerSentEvent
+      - Azure.AI.AgentServer.Core.Common.Id
+      - Azure.AI.AgentServer.Core.Context
+      - Azure.AI.AgentServer.Core.HealthCheck
+      - Azure.AI.AgentServer.Core.Responses.Conversations
+      - Azure.AI.AgentServer.Core.Server
+      - Azure.AI.AgentServer.Core.Server.Middleware
+      - Azure.AI.AgentServer.Core.Telemetry
+      - Azure.AI.AgentServer.Core.Tools
+      - Azure.AI.AgentServer.Core.Tools.Exceptions
+      - Azure.AI.AgentServer.Core.Tools.Models
+      - Azure.AI.AgentServer.Core.Tools.Runtime
+      - Azure.AI.AgentServer.Core.Tools.Runtime.Catalog
+      - Azure.AI.AgentServer.Core.Tools.Runtime.Facade
+      - Azure.AI.AgentServer.Core.Tools.Runtime.Invocation
+      - Azure.AI.AgentServer.Core.Tools.Runtime.User
+      - Azure.AI.AgentServer.Responses.Endpoint
+      - Azure.AI.AgentServer.Responses.Invocation
+      - Azure.AI.AgentServer.Responses.Invocation.Stream
     - name: Anomaly Detector
       href: ~/api/overview/azure/preview/ai.anomalydetector-readme.md
       children:
@@ -465,6 +507,16 @@
       - Azure.AI.Language.QuestionAnswering.Authoring
       - Microsoft.Extensions.Azure
       landingPageType: Service
+    - name: Question Answering Authoring
+      href: ~/api/overview/azure/preview/ai.language.questionanswering.authoring-readme.md
+      children:
+      - Azure.AI.Language.QuestionAnswering.Authoring
+      - Microsoft.Extensions.Azure
+    - name: Question Answering
+      href: ~/api/overview/azure/preview/ai.language.questionanswering.inference-readme.md
+      children:
+      - Azure.AI.Language.QuestionAnswering.Inference
+      - Microsoft.Extensions.Azure
     - name: Language Text
       href: ~/api/overview/azure/preview/ai.language.text-readme.md
       children:
@@ -496,6 +548,11 @@
       - Azure.AI.Projects
       - Azure.Core.Foundations
       - OpenAI
+    - name: AI Projects - OpenAI
+      href: ~/api/overview/azure/preview/ai.projects.openai-readme.md
+      children:
+      - Azure.AI.Projects
+      - Azure.AI.Projects.OpenAI
     - name: Text Analytics
       children:
       - Azure.AI.TextAnalytics
@@ -873,6 +930,15 @@
         - Azure.ResourceManager.Cdn
         - Azure.ResourceManager.Cdn.Mocking
         - Azure.ResourceManager.Cdn.Models
+  - name: Content Understanding
+    href: ~/api/overview/azure/preview/content-understanding.md
+    landingPageType: Service
+    items:
+    - name: Content Understanding
+      href: ~/api/overview/azure/preview/ai.contentunderstanding-readme.md
+      children:
+      - Azure.AI.ContentUnderstanding
+      - Microsoft.Extensions.Azure
   - name: Core
     href: ~/api/overview/azure/preview/core.md
     landingPageType: Service
@@ -2492,6 +2558,10 @@
         href: ~/api/overview/azure/preview/provisioning.postgresql-readme.md
         children:
         - Azure.Provisioning.PostgreSql
+      - name: Provisioning - Private DNS
+        href: ~/api/overview/azure/preview/provisioning.privatedns-readme.md
+        children:
+        - Azure.Provisioning.PrivateDns
       - name: Provisioning - Redis
         href: ~/api/overview/azure/preview/provisioning.redis-readme.md
         children:
@@ -3290,78 +3360,6 @@
         - Azure.ResourceManager.TrustedSigning
         - Azure.ResourceManager.TrustedSigning.Mocking
         - Azure.ResourceManager.TrustedSigning.Models
-  - name: unknown
-    href: ~/api/overview/azure/preview/unknown.md
-    landingPageType: Service
-    items:
-    - name: unknown
-      href: ~/api/overview/azure/preview/ai.agentserver.agentframework-readme.md
-      children:
-      - Azure.AI.AgentServer.AgentFramework
-      - Azure.AI.AgentServer.AgentFramework.Converters
-      - Azure.AI.AgentServer.AgentFramework.Extensions
-      - Azure.AI.AgentServer.AgentFramework.Persistence
-    - name: unknown
-      href: ~/api/overview/azure/preview/ai.agentserver.contracts-readme.md
-      children:
-      - Azure.AI.AgentServer.Contracts.Generated
-      - Azure.AI.AgentServer.Contracts.Generated.Agents
-      - Azure.AI.AgentServer.Contracts.Generated.Agents.WorkflowAgents
-      - Azure.AI.AgentServer.Contracts.Generated.Common
-      - Azure.AI.AgentServer.Contracts.Generated.Conversations
-      - Azure.AI.AgentServer.Contracts.Generated.MemoryStore
-      - Azure.AI.AgentServer.Contracts.Generated.OpenAI
-      - Azure.AI.AgentServer.Contracts.Generated.Responses
-    - name: unknown
-      href: ~/api/overview/azure/preview/ai.agentserver.core-readme.md
-      children:
-      - Azure.AI.AgentServer.Core.Common
-      - Azure.AI.AgentServer.Core.Common.Http.Json
-      - Azure.AI.AgentServer.Core.Common.Http.ServerSentEvent
-      - Azure.AI.AgentServer.Core.Common.Id
-      - Azure.AI.AgentServer.Core.Context
-      - Azure.AI.AgentServer.Core.HealthCheck
-      - Azure.AI.AgentServer.Core.Responses.Conversations
-      - Azure.AI.AgentServer.Core.Server
-      - Azure.AI.AgentServer.Core.Server.Middleware
-      - Azure.AI.AgentServer.Core.Telemetry
-      - Azure.AI.AgentServer.Core.Tools
-      - Azure.AI.AgentServer.Core.Tools.Exceptions
-      - Azure.AI.AgentServer.Core.Tools.Models
-      - Azure.AI.AgentServer.Core.Tools.Runtime
-      - Azure.AI.AgentServer.Core.Tools.Runtime.Catalog
-      - Azure.AI.AgentServer.Core.Tools.Runtime.Facade
-      - Azure.AI.AgentServer.Core.Tools.Runtime.Invocation
-      - Azure.AI.AgentServer.Core.Tools.Runtime.User
-      - Azure.AI.AgentServer.Responses.Endpoint
-      - Azure.AI.AgentServer.Responses.Invocation
-      - Azure.AI.AgentServer.Responses.Invocation.Stream
-    - name: unknown
-      href: ~/api/overview/azure/preview/ai.contentunderstanding-readme.md
-      children:
-      - Azure.AI.ContentUnderstanding
-      - Microsoft.Extensions.Azure
-    - name: unknown
-      href: ~/api/overview/azure/preview/ai.language.questionanswering.authoring-readme.md
-      children:
-      - Azure.AI.Language.QuestionAnswering.Authoring
-      - Microsoft.Extensions.Azure
-    - name: unknown
-      href: ~/api/overview/azure/preview/ai.language.questionanswering.inference-readme.md
-      children:
-      - Azure.AI.Language.QuestionAnswering.Inference
-      - Microsoft.Extensions.Azure
-    - name: unknown
-      href: ~/api/overview/azure/preview/ai.projects.openai-readme.md
-      children:
-      - Azure.AI.Projects
-      - Azure.AI.Projects.OpenAI
-    - name: Management
-      items:
-      - name: unknown
-        href: ~/api/overview/azure/preview/provisioning.privatedns-readme.md
-        children:
-        - Azure.Provisioning.PrivateDns
   - name: Virtualenclaves
     href: ~/api/overview/azure/preview/virtualenclaves.md
     landingPageType: Service
@@ -3459,10 +3457,6 @@
         landingPageType: Service
         items:
         - name: Core
-          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
-        - name: Core
           children:
           - Azure
           - Azure.Core
@@ -3474,6 +3468,10 @@
           - Azure.Core.Serialization
           - Azure.Messaging
           landingPageType: Service
+        - name: Core
+          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/preview/microsoft.azure.core.spatial-readme.md
           children:

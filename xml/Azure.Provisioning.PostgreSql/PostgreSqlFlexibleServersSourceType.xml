@@ -7,19 +7,50 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
     <summary>
-            Migration source server type : OnPremises, AWS, GCP, AzureVM,
-            PostgreSQLSingleServer, AWS_RDS, AWS_AURORA, AWS_EC2, GCP_CloudSQL,
-            GCP_AlloyDB, GCP_Compute, or EDB.
+            Source server type used for the migration: ApsaraDB_RDS, AWS, AWS_AURORA,
+            AWS_EC2, AWS_RDS, AzureVM, Crunchy_PostgreSQL, Digital_Ocean_Droplets,
+            Digital_Ocean_PostgreSQL, EDB, EDB_Oracle_Server, EDB_PostgreSQL, GCP,
+            GCP_AlloyDB, GCP_CloudSQL, GCP_Compute, Heroku_PostgreSQL, Huawei_Compute,
+            Huawei_RDS, OnPremises, PostgreSQLCosmosDB, PostgreSQLFlexibleServer,
+            PostgreSQLSingleServer, or Supabase_PostgreSQL.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="ApsaraDBRDS">
+      <MemberSignature Language="C#" Value="ApsaraDBRDS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType ApsaraDBRDS = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.ApsaraDBRDS" />
+      <MemberSignature Language="VB.NET" Value="ApsaraDBRDS" />
+      <MemberSignature Language="F#" Value="ApsaraDBRDS = 20" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.ApsaraDBRDS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="ApsaraDB_RDS")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="ApsaraDB_RDS")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>
+            ApsaraDB_RDS.
+            </summary>
+      </Docs>
+    </Member>
     <Member MemberName="AWS">
       <MemberSignature Language="C#" Value="AWS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType AWS = int32(1)" />
@@ -30,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
@@ -51,6 +83,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -78,6 +111,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -105,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -132,6 +167,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -149,6 +185,87 @@
             </summary>
       </Docs>
     </Member>
+    <Member MemberName="CrunchyPostgreSQL">
+      <MemberSignature Language="C#" Value="CrunchyPostgreSQL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType CrunchyPostgreSQL = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.CrunchyPostgreSQL" />
+      <MemberSignature Language="VB.NET" Value="CrunchyPostgreSQL" />
+      <MemberSignature Language="F#" Value="CrunchyPostgreSQL = 19" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.CrunchyPostgreSQL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Crunchy_PostgreSQL")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Crunchy_PostgreSQL")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>
+            Crunchy_PostgreSQL.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DigitalOceanDroplets">
+      <MemberSignature Language="C#" Value="DigitalOceanDroplets" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType DigitalOceanDroplets = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.DigitalOceanDroplets" />
+      <MemberSignature Language="VB.NET" Value="DigitalOceanDroplets" />
+      <MemberSignature Language="F#" Value="DigitalOceanDroplets = 21" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.DigitalOceanDroplets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Digital_Ocean_Droplets")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Digital_Ocean_Droplets")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>
+            Digital_Ocean_Droplets.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DigitalOceanPostgreSQL">
+      <MemberSignature Language="C#" Value="DigitalOceanPostgreSQL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType DigitalOceanPostgreSQL = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.DigitalOceanPostgreSQL" />
+      <MemberSignature Language="VB.NET" Value="DigitalOceanPostgreSQL" />
+      <MemberSignature Language="F#" Value="DigitalOceanPostgreSQL = 22" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.DigitalOceanPostgreSQL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Digital_Ocean_PostgreSQL")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Digital_Ocean_PostgreSQL")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>
+            Digital_Ocean_PostgreSQL.
+            </summary>
+      </Docs>
+    </Member>
     <Member MemberName="EDB">
       <MemberSignature Language="C#" Value="EDB" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType EDB = int32(11)" />
@@ -159,6 +276,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
@@ -167,6 +285,60 @@
       <Docs>
         <summary>
             EDB.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EDBOracleServer">
+      <MemberSignature Language="C#" Value="EDBOracleServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType EDBOracleServer = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.EDBOracleServer" />
+      <MemberSignature Language="VB.NET" Value="EDBOracleServer" />
+      <MemberSignature Language="F#" Value="EDBOracleServer = 12" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.EDBOracleServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="EDB_Oracle_Server")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="EDB_Oracle_Server")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>
+            EDB_Oracle_Server.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EDBPostgreSQL">
+      <MemberSignature Language="C#" Value="EDBPostgreSQL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType EDBPostgreSQL = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.EDBPostgreSQL" />
+      <MemberSignature Language="VB.NET" Value="EDBPostgreSQL" />
+      <MemberSignature Language="F#" Value="EDBPostgreSQL = 13" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.EDBPostgreSQL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="EDB_PostgreSQL")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="EDB_PostgreSQL")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>
+            EDB_PostgreSQL.
             </summary>
       </Docs>
     </Member>
@@ -180,6 +352,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
@@ -201,6 +374,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -228,6 +402,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -255,6 +430,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -272,6 +448,87 @@
             </summary>
       </Docs>
     </Member>
+    <Member MemberName="HerokuPostgreSQL">
+      <MemberSignature Language="C#" Value="HerokuPostgreSQL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType HerokuPostgreSQL = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.HerokuPostgreSQL" />
+      <MemberSignature Language="VB.NET" Value="HerokuPostgreSQL" />
+      <MemberSignature Language="F#" Value="HerokuPostgreSQL = 18" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.HerokuPostgreSQL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Heroku_PostgreSQL")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Heroku_PostgreSQL")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>18</MemberValue>
+      <Docs>
+        <summary>
+            Heroku_PostgreSQL.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HuaweiCompute">
+      <MemberSignature Language="C#" Value="HuaweiCompute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType HuaweiCompute = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.HuaweiCompute" />
+      <MemberSignature Language="VB.NET" Value="HuaweiCompute" />
+      <MemberSignature Language="F#" Value="HuaweiCompute = 17" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.HuaweiCompute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Huawei_Compute")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Huawei_Compute")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>
+            Huawei_Compute.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HuaweiRDS">
+      <MemberSignature Language="C#" Value="HuaweiRDS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType HuaweiRDS = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.HuaweiRDS" />
+      <MemberSignature Language="VB.NET" Value="HuaweiRDS" />
+      <MemberSignature Language="F#" Value="HuaweiRDS = 16" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.HuaweiRDS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Huawei_RDS")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Huawei_RDS")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>
+            Huawei_RDS.
+            </summary>
+      </Docs>
+    </Member>
     <Member MemberName="OnPremises">
       <MemberSignature Language="C#" Value="OnPremises" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType OnPremises = int32(0)" />
@@ -282,6 +539,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
@@ -290,6 +548,48 @@
       <Docs>
         <summary>
             OnPremises.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PostgreSQLCosmosDB">
+      <MemberSignature Language="C#" Value="PostgreSQLCosmosDB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType PostgreSQLCosmosDB = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.PostgreSQLCosmosDB" />
+      <MemberSignature Language="VB.NET" Value="PostgreSQLCosmosDB" />
+      <MemberSignature Language="F#" Value="PostgreSQLCosmosDB = 15" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.PostgreSQLCosmosDB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>
+            PostgreSQLCosmosDB.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PostgreSQLFlexibleServer">
+      <MemberSignature Language="C#" Value="PostgreSQLFlexibleServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType PostgreSQLFlexibleServer = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.PostgreSQLFlexibleServer" />
+      <MemberSignature Language="VB.NET" Value="PostgreSQLFlexibleServer" />
+      <MemberSignature Language="F#" Value="PostgreSQLFlexibleServer = 14" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.PostgreSQLFlexibleServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>
+            PostgreSQLFlexibleServer.
             </summary>
       </Docs>
     </Member>
@@ -303,6 +603,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
@@ -311,6 +612,33 @@
       <Docs>
         <summary>
             PostgreSQLSingleServer.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupabasePostgreSQL">
+      <MemberSignature Language="C#" Value="SupabasePostgreSQL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType SupabasePostgreSQL = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.SupabasePostgreSQL" />
+      <MemberSignature Language="VB.NET" Value="SupabasePostgreSQL" />
+      <MemberSignature Language="F#" Value="SupabasePostgreSQL = 23" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType.SupabasePostgreSQL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="Supabase_PostgreSQL")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="Supabase_PostgreSQL")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>
+            Supabase_PostgreSQL.
             </summary>
       </Docs>
     </Member>

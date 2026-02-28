@@ -18,6 +18,7 @@
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
@@ -33,6 +34,16 @@
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-dotnet">
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="azure-dotnet">
+      <AttributeName Language="C#">[System.Obsolete("This type is obsolete and will be removed in a future release.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This type is obsolete and will be removed in a future release.", false)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             A class representing the BatchAccountCertificate data model.
@@ -50,7 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -68,13 +79,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResponseError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> This is only returned when the certificate provisioningState is 'Failed'. </summary>
+        <summary> The error which occurred while deleting the certificate. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +100,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
@@ -110,14 +121,39 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountCertificateFormat&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The format of the certificate - either Pfx or Cer. If omitted, the default is Pfx. </summary>
+        <summary> The format of the certificate - either Pfx or Cer. </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.BatchAccountCertificateData.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="batchAccountCertificateData.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +167,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountCertificateProvisioningState&gt;</ReturnType>
@@ -152,7 +188,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -173,13 +209,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountCertificateProvisioningState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets the provisioning state. </summary>
+        <summary> The provisioned state of the resource. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,7 +230,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -215,7 +251,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -238,7 +274,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountCertificateData</ReturnType>
@@ -270,7 +306,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -301,7 +337,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountCertificateData</ReturnType>
@@ -333,7 +369,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -342,11 +378,11 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
-            <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param></summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+            </summary>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,7 +398,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -389,7 +425,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -410,7 +446,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -428,13 +464,7 @@
       <Docs>
         <summary>
             This must match the thumbprint from the name.
-            <para>
-            To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />.
-            </para><para>
-            To assign an already formated json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />.
-            </para><para>
-            Examples:
-            <list type="bullet"><item><term>BinaryData.FromObjectAsJson("foo")</term><description>Creates a payload of "foo".</description></item><item><term>BinaryData.FromString("\"foo\"")</term><description>Creates a payload of "foo".</description></item><item><term>BinaryData.FromObjectAsJson(new { key = "value" })</term><description>Creates a payload of { "key": "value" }.</description></item><item><term>BinaryData.FromString("{\"key\": \"value\"}")</term><description>Creates a payload of { "key": "value" }.</description></item></list></para></summary>
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -449,13 +479,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> This must match the first portion of the certificate name. Currently required to be 'SHA1'. </summary>
+        <summary> The algorithm of the certificate thumbprint. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -470,13 +500,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> This must match the thumbprint from the name. </summary>
+        <summary> The thumbprint of the certificate. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

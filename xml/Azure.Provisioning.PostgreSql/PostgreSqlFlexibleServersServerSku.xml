@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
@@ -14,7 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Sku information related properties of a server.
+            Compute information of a server.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -70,14 +73,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The name of the sku, typically, tier + family + cores, e.g.
-            Standard_D4s_v3.
+            Compute tier and size of the database server. This object is empty for
+            an Azure Database for PostgreSQL single server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -93,13 +97,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerSkuTier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The tier of the particular SKU, e.g. Burstable.
+            Tier of the compute assigned to a server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

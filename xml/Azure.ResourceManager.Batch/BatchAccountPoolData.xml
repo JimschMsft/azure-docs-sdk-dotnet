@@ -18,6 +18,7 @@
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
@@ -50,7 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -68,7 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolAllocationState&gt;</ReturnType>
@@ -89,7 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -110,13 +111,25 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete and will be removed in a future release.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete and will be removed in a future release.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The list of application licenses must be a subset of available Batch service application licenses. If a license is requested which is not supported, pool creation will fail. </summary>
+        <summary>
+            The list of application licenses must be a subset of available Batch service application licenses.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +144,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Batch.Models.BatchApplicationPackageReference&gt;</ReturnType>
@@ -152,7 +165,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountPoolAutoScaleRun</ReturnType>
@@ -173,17 +186,26 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete and will be removed in a future release. Please use the Azure KeyVault Extension instead.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete and will be removed in a future release. Please use the Azure KeyVault Extension instead.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Batch.Models.BatchCertificateReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-             For Windows compute nodes, the Batch service installs the certificates to the specified certificate store and location. For Linux compute nodes, the certificates are stored in a directory inside the task working directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the task to query for this location. For certificates with visibility of 'remoteUser', a 'certs' directory is created in the user's home directory (e.g., /home/{user-name}/certs) and certificates are placed in that directory.
-            
-             Warning: This property is deprecated and will be removed after February, 2024. Please use the [Azure KeyVault Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide) instead.
-             </summary>
+            For Windows compute nodes, the Batch service installs the certificates to the specified certificate store and location.
+            Warning: This property is deprecated and will be removed after February, 2024. Please use the Azure KeyVault Extension instead.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,7 +220,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -219,7 +241,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -240,7 +262,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -261,8 +283,18 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete and will be removed in a future release. NodeCommunicationMode has been removed from the Batch service.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete and will be removed in a future release. NodeCommunicationMode has been removed from the Batch service.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.NodeCommunicationMode&gt;</ReturnType>
       </ReturnValue>
@@ -282,7 +314,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchDeploymentConfiguration</ReturnType>
@@ -302,7 +334,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchVmConfiguration</ReturnType>
@@ -323,7 +355,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -344,7 +376,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ETag&gt;</ReturnType>
@@ -365,7 +397,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Models.ManagedServiceIdentity</ReturnType>
@@ -386,7 +418,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.InterNodeCommunicationState&gt;</ReturnType>
@@ -394,6 +426,31 @@
       <Docs>
         <summary> This imposes restrictions on which nodes can be assigned to the pool. Enabling this value can reduce the chance of the requested number of nodes to be allocated in the pool. If not specified, this value defaults to 'Disabled'. </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Batch.BatchAccountPoolData.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="batchAccountPoolData.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,7 +464,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -428,7 +485,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolMetadataItem&gt;</ReturnType>
@@ -449,7 +506,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Batch.Models.BatchMountConfiguration&gt;</ReturnType>
@@ -470,7 +527,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchNetworkConfiguration</ReturnType>
@@ -491,7 +548,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchAccountPoolProvisioningState&gt;</ReturnType>
@@ -512,7 +569,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -533,7 +590,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchResizeOperationStatus</ReturnType>
@@ -554,13 +611,23 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete and will be removed in a future release.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete and will be removed in a future release.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The user-defined tags to be associated with the Azure Batch Pool. When specified, these tags are propagated to the backing Azure resources associated with the pool. This property can only be specified when the Batch account was created with the poolAllocationMode property set to 'UserSubscription'. </summary>
+        <summary> The tags of the resource. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -575,7 +642,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountPoolScaleSettings</ReturnType>
@@ -596,7 +663,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchAccountPoolStartTask</ReturnType>
@@ -619,7 +686,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountPoolData</ReturnType>
@@ -651,7 +718,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -682,7 +749,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.BatchAccountPoolData</ReturnType>
@@ -714,7 +781,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -723,11 +790,11 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
-            <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param></summary>
-        <returns>The format that the model uses when communicating with the serivce.</returns>
+            </summary>
+        <returns>The format that the model uses when communicating with the service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,7 +810,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -770,7 +837,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -791,8 +858,18 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete and will be removed in a future release. NodeCommunicationMode has been removed from the Batch service.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete and will be removed in a future release. NodeCommunicationMode has been removed from the Batch service.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.NodeCommunicationMode&gt;</ReturnType>
       </ReturnValue>
@@ -812,13 +889,43 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Obsolete("This property is obsolete and will be removed in a future release. Use TaskSchedulingPolicy instead.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is obsolete and will be removed in a future release. Use TaskSchedulingPolicy instead.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.Batch.Models.BatchNodeFillType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> How tasks should be distributed across compute nodes. </summary>
+        <summary> If not specified, the default is spread. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskSchedulingPolicy">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy TaskSchedulingPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy TaskSchedulingPolicy" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Batch.BatchAccountPoolData.TaskSchedulingPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property TaskSchedulingPolicy As BatchTaskSchedulingPolicy" />
+      <MemberSignature Language="F#" Value="member this.TaskSchedulingPolicy : Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy with get, set" Usage="Azure.ResourceManager.Batch.BatchAccountPoolData.TaskSchedulingPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Batch.Models.BatchTaskSchedulingPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> If not specified, the default is spread. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -833,7 +940,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -853,7 +960,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.UpgradePolicy</ReturnType>
@@ -874,7 +981,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.Batch.Models.BatchUserAccount&gt;</ReturnType>
@@ -895,13 +1002,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> For information about available VM sizes, see Sizes for Virtual Machines (Linux) (https://azure.microsoft.com/documentation/articles/virtual-machines-linux-sizes/) or Sizes for Virtual Machines (Windows) (https://azure.microsoft.com/documentation/articles/virtual-machines-windows-sizes/). Batch supports all Azure VM sizes except STANDARD_A0 and those with premium storage (STANDARD_GS, STANDARD_DS, and STANDARD_DSV2 series). </summary>
+        <summary> For information about available VM sizes, see Sizes for Virtual Machines in Azure (https://learn.microsoft.com/azure/virtual-machines/sizes/overview). Batch supports all Azure VM sizes except STANDARD_A0 and those with premium storage (STANDARD_GS, STANDARD_DS, and STANDARD_DSV2 series). </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -7,15 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
     <summary>
-            Gets the replication state of a replica server. This property is returned
-            only for replicas api call. Supported values are Active, Catchup,
-            Provisioning, Updating, Broken, Reconfiguring.
+            Indicates the replication state of a read replica. This property is
+            returned only when the target server is a read replica. Possible  values
+            are Active, Broken, Catchup, Provisioning, Reconfiguring, and Updating.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersReplicationState</ReturnType>
@@ -37,7 +39,8 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>
-            Active.
+            The read replica server is fully synchronized and actively replicating
+            data from the primary server.
             </summary>
       </Docs>
     </Member>
@@ -51,6 +54,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersReplicationState</ReturnType>
@@ -58,7 +62,7 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>
-            Broken.
+            Replication has failed or been interrupted.
             </summary>
       </Docs>
     </Member>
@@ -72,6 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersReplicationState</ReturnType>
@@ -79,7 +84,8 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>
-            Catchup.
+            The read replica server is behind the primary server and is currently
+            catching up with pending changes.
             </summary>
       </Docs>
     </Member>
@@ -93,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersReplicationState</ReturnType>
@@ -100,7 +107,8 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>
-            Provisioning.
+            The read replica server is being created and is in process of getting
+            initialized.
             </summary>
       </Docs>
     </Member>
@@ -114,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersReplicationState</ReturnType>
@@ -121,7 +130,8 @@
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>
-            Reconfiguring.
+            The read replica server is being reconfigured, possibly due to changes
+            in source or settings.
             </summary>
       </Docs>
     </Member>
@@ -135,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersReplicationState</ReturnType>
@@ -142,7 +153,8 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>
-            Updating.
+            The read replica server is undergoing some changes it can be changing
+            compute size of promoting it to primary server.
             </summary>
       </Docs>
     </Member>

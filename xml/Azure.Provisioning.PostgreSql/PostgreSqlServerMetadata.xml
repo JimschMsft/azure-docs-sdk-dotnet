@@ -1,21 +1,17 @@
 <Type Name="PostgreSqlServerMetadata" FullName="Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata">
-  <TypeSignature Language="C#" Value="public class PostgreSqlServerMetadata : Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlServerMetadata extends Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class PostgreSqlServerMetadata : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlServerMetadata extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata" />
-  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlServerMetadata&#xA;Inherits ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type PostgreSqlServerMetadata = class&#xA;    inherit ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class PostgreSqlServerMetadata : Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlServerMetadata extends Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlServerMetadata&#xA;Inherits ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type PostgreSqlServerMetadata = class&#xA;    inherit ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlServerMetadata&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type PostgreSqlServerMetadata = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -33,8 +29,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -75,8 +72,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -99,43 +96,40 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersServerSku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            SKU for the database server. This object is empty for PG single server.
+            Compute tier and size of the database server. This object is empty for
+            an Azure Database for PostgreSQL single server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.ServerSku? Sku { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.ServerSku Sku" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.ServerSku? Sku { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.ServerSku Sku" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sku As ServerSku" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.PostgreSql.ServerSku" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata.Sku" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.ServerSku&gt; Sku { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.ServerSku&gt; Sku" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sku As BicepValue(Of ServerSku)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.ServerSku&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata.Sku" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sku As ServerSku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.PostgreSql.ServerSku" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata.Sku" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.PostgreSql.ServerSku</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.ServerSku&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.ServerSku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -154,15 +148,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Storage size in MB for database server.
+            Storage size (in MB) for database server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -177,15 +171,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Version for database engine.
+            Major version of PostgreSQL database engine.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

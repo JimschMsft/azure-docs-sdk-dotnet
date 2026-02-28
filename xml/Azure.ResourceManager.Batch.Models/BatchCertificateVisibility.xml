@@ -14,12 +14,23 @@
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-dotnet">
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="azure-dotnet">
+      <AttributeName Language="C#">[System.Obsolete("This type is obsolete and will be removed in a future release.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This type is obsolete and will be removed in a future release.", false)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary> The BatchCertificateVisibility. </summary>
+    <summary> Which user accounts on the compute node should have access to the private data of the certificate. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +44,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchCertificateVisibility</ReturnType>
@@ -53,14 +64,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchCertificateVisibility</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary> The certificate should be visible to the user account under which the start task is run. Note that if AutoUser Scope is Pool for both the StartTask and a Task, this certificate will be visible to the Task as well. </summary>
+        <summary> The certificate should be visible to the user account under which the start task is run. </summary>
       </Docs>
     </Member>
     <Member MemberName="Task">
@@ -73,7 +84,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Batch</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>1.6.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Batch.Models.BatchCertificateVisibility</ReturnType>

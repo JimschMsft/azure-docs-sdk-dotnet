@@ -1,21 +1,17 @@
 <Type Name="PostgreSqlFlexibleServerNetwork" FullName="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerNetwork">
-  <TypeSignature Language="C#" Value="public class PostgreSqlFlexibleServerNetwork : Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlFlexibleServerNetwork extends Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class PostgreSqlFlexibleServerNetwork : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlFlexibleServerNetwork extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerNetwork" />
-  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlFlexibleServerNetwork&#xA;Inherits ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type PostgreSqlFlexibleServerNetwork = class&#xA;    inherit ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class PostgreSqlFlexibleServerNetwork : Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlFlexibleServerNetwork extends Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlFlexibleServerNetwork&#xA;Inherits ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type PostgreSqlFlexibleServerNetwork = class&#xA;    inherit ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlFlexibleServerNetwork&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type PostgreSqlFlexibleServerNetwork = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -33,8 +29,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,18 +73,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Delegated subnet arm resource id. This is required to be passed during
-            create, in case we want the server to be VNET injected, i.e. Private
-            access server. During update, pass this only if we want to update the
-            value for Private DNS zone.
+            Resource identifier of the delegated subnet. Required during creation
+            of a new server, in case you want the server to be integrated into
+            your own virtual network. For an update operation, you only have to
+            provide this property if you want to change the value assigned for the
+            private DNS zone.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -102,44 +100,44 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Private dns zone arm resource id. This is required to be passed during
-            create, in case we want the server to be VNET injected, i.e. Private
-            access server. During update, pass this only if we want to update the
-            value for Private DNS zone.
+            Identifier of the private DNS zone. Required during creation of a new
+            server, in case you want the server to be integrated into your own
+            virtual network. For an update operation, you only have to provide
+            this property if you want to change the value assigned for the private
+            DNS zone.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PublicNetworkAccess">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt; PublicNetworkAccess { get; set; }" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt; PublicNetworkAccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt; PublicNetworkAccess" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerNetwork.PublicNetworkAccess" />
-      <MemberSignature Language="VB.NET" Value="Public Property PublicNetworkAccess As BicepValue(Of PostgreSqlFlexibleServerPublicNetworkAccessState)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.PublicNetworkAccess : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt; with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerNetwork.PublicNetworkAccess" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt; PublicNetworkAccess { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicNetworkAccess As BicepValue(Of PostgreSqlFlexibleServerPublicNetworkAccessState)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.PublicNetworkAccess : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerNetwork.PublicNetworkAccess" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicNetworkAccess As BicepValue(Of PostgreSqlFlexibleServerPublicNetworkAccessState)" />
+      <MemberSignature Language="F#" Value="member this.PublicNetworkAccess : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt; with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerNetwork.PublicNetworkAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServerPublicNetworkAccessState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            public network access is enabled or not.
+            Indicates if public network access is enabled or not. This is only
+            supported for servers that are not integrated into a virtual network
+            which is owned and provided by customer when server is deployed.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

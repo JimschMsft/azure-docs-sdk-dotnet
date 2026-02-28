@@ -1,21 +1,17 @@
 <Type Name="PostgreSqlMigration" FullName="Azure.Provisioning.PostgreSql.PostgreSqlMigration">
-  <TypeSignature Language="C#" Value="public class PostgreSqlMigration : Azure.Provisioning.Primitives.ProvisionableResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlMigration extends Azure.Provisioning.Primitives.ProvisionableResource" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class PostgreSqlMigration : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlMigration extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.PostgreSql.PostgreSqlMigration" />
-  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlMigration&#xA;Inherits ProvisionableResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type PostgreSqlMigration = class&#xA;    inherit ProvisionableResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class PostgreSqlMigration : Azure.Provisioning.Primitives.Resource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlMigration extends Azure.Provisioning.Primitives.Resource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlMigration&#xA;Inherits Resource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type PostgreSqlMigration = class&#xA;    inherit Resource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlMigration&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type PostgreSqlMigration = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.Primitives.Resource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -26,34 +22,23 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PostgreSqlMigration (string bicepIdentifier, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public PostgreSqlMigration (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.PostgreSql.PostgreSqlMigration.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.PostgreSql.PostgreSqlMigration : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlMigration" Usage="new Azure.Provisioning.PostgreSql.PostgreSqlMigration (bicepIdentifier, resourceVersion)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public PostgreSqlMigration (string identifierName, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.PostgreSql.PostgreSqlMigration : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlMigration" Usage="new Azure.Provisioning.PostgreSql.PostgreSqlMigration (identifierName, resourceVersion)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.PostgreSql.PostgreSqlMigration : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlMigration" Usage="new Azure.Provisioning.PostgreSql.PostgreSqlMigration (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="bicepIdentifier" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="identifierName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceVersion" Type="System.String" Index="1" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="bicepIdentifier">
-            The the Bicep identifier name of the PostgreSqlMigration resource.
-            This can be used to refer to the resource in expressions, but is not
-            the Azure name of the resource.  This value can contain letters,
-            numbers, and underscores.
-            </param>
-        <param name="identifierName">
             The the Bicep identifier name of the PostgreSqlMigration resource.
             This can be used to refer to the resource in expressions, but is not
             the Azure name of the resource.  This value can contain letters,
@@ -75,44 +60,38 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationCancel&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            To trigger cancel for entire migration we need to send this flag as
-            True.
+            Indicates if cancel must be triggered for the entire migration.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentStatus">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus CurrentStatus { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus CurrentStatus" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus CurrentStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus CurrentStatus" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlMigration.CurrentStatus" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentStatus As PostgreSqlMigrationStatus" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.CurrentStatus : Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.CurrentStatus" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus&gt; CurrentStatus { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus&gt; CurrentStatus" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentStatus As BicepValue(Of PostgreSqlMigrationStatus)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.CurrentStatus : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.CurrentStatus" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentStatus As PostgreSqlMigrationStatus" />
+      <MemberSignature Language="F#" Value="member this.CurrentStatus : Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.CurrentStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlMigrationStatus</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Current status of migration.
+            Current status of a migration.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -127,16 +106,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When you want to trigger cancel for specific databases send cancel flag
-            as True and database names in this array.
+            When you want to trigger cancel for specific databases set
+            'triggerCutover' to 'True' and the names of the
+            specific databases in this array.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -151,15 +131,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Number of databases to migrate.
+            Names of databases to migrate.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -174,16 +154,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When you want to trigger cutover for specific databases send
-            triggerCutover flag as True and database names in this array.
+            When you want to trigger cutover for specific databases set
+            'triggerCutover' to 'True' and the names of the
+            specific databases in this array.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -199,6 +180,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -212,37 +194,26 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.PostgreSql.PostgreSqlMigration FromExisting (string bicepIdentifier, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.PostgreSql.PostgreSqlMigration FromExisting(string bicepIdentifier, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.PostgreSql.PostgreSqlMigration FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.PostgreSql.PostgreSqlMigration FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.PostgreSql.PostgreSqlMigration.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As PostgreSqlMigration" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlMigration" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.FromExisting (bicepIdentifier, resourceVersion)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.PostgreSql.PostgreSqlMigration FromExisting (string identifierName, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.PostgreSql.PostgreSqlMigration FromExisting(string identifierName, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As PostgreSqlMigration" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlMigration" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.FromExisting (identifierName, resourceVersion)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As PostgreSqlMigration" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlMigration" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlMigration</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bicepIdentifier" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="identifierName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceVersion" Type="System.String" Index="1" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="bicepIdentifier">
-            The the Bicep identifier name of the PostgreSqlMigration resource.
-            This can be used to refer to the resource in expressions, but is not
-            the Azure name of the resource.  This value can contain letters,
-            numbers, and underscores.
-            </param>
-        <param name="identifierName">
             The the Bicep identifier name of the PostgreSqlMigration resource.
             This can be used to refer to the resource in expressions, but is not
             the Azure name of the resource.  This value can contain letters,
@@ -265,8 +236,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
@@ -288,8 +259,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -312,13 +283,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.MigrateRolesEnum&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            To migrate roles and permissions we need to send this flag as True.
+            Indicates if roles and permissions must be migrated.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -333,15 +305,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            ID for migration, a GUID.
+            Identifier of a migration.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -357,13 +329,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            ResourceId of the private endpoint migration instance.
+            Identifier of the private endpoint migration instance.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -378,15 +351,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            There are two types of migration modes Online and Offline.
+            Mode used to perform the migration: Online or Offline.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -402,13 +375,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.MigrationOption&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            This indicates the supported Migration option for the migration.
+            Supported option for a migration.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -423,15 +397,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            End time in UTC for migration window.
+            End time (UTC) for migration window.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -446,15 +420,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Start time in UTC for migration window.
+            Start time (UTC) for migration window.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -469,15 +443,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The name of the migration.
+            Name of migration.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -492,18 +466,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationOverwriteDbsInTarget&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates whether the databases on the target server can be
-            overwritten, if already present. If set to False, the migration
-            workflow will wait for a confirmation, if it detects that the database
-            already exists.
+            Indicates if databases on the target server can be overwritten when
+            already present. If set to 'False', when the migration
+            workflow detects that the database already exists on the target
+            server, it will wait for a confirmation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -518,8 +492,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServer</ReturnType>
@@ -533,24 +507,19 @@
       </Docs>
     </Member>
     <Member MemberName="SecretParameters">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters SecretParameters { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters SecretParameters" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters SecretParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters SecretParameters" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlMigration.SecretParameters" />
-      <MemberSignature Language="VB.NET" Value="Public Property SecretParameters As PostgreSqlMigrationSecretParameters" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.SecretParameters : Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SecretParameters" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters&gt; SecretParameters { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters&gt; SecretParameters" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property SecretParameters As BicepValue(Of PostgreSqlMigrationSecretParameters)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.SecretParameters : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters&gt; with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SecretParameters" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecretParameters As PostgreSqlMigrationSecretParameters" />
+      <MemberSignature Language="F#" Value="member this.SecretParameters : Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SecretParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlMigrationSecretParameters</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -569,15 +538,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationLogicalReplicationOnSourceDb&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates whether to setup LogicalReplicationOnSourceDb, if needed.
+            Indicates whether to setup logical replication on source server, if
+            needed.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -592,45 +562,40 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Source server fully qualified domain name (FQDN) or IP address. It is a
-            optional value, if customer provide it, migration service will always
-            use it for connection.
+            Fully qualified domain name (FQDN) or IP address of the source server.
+            This property is optional. When provided, the migration service will
+            always use it to connect to the source server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceDbServerMetadata">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata SourceDbServerMetadata { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata SourceDbServerMetadata" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata SourceDbServerMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata SourceDbServerMetadata" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlMigration.SourceDbServerMetadata" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceDbServerMetadata As PostgreSqlServerMetadata" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.SourceDbServerMetadata : Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SourceDbServerMetadata" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt; SourceDbServerMetadata { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt; SourceDbServerMetadata" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceDbServerMetadata As BicepValue(Of PostgreSqlServerMetadata)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.SourceDbServerMetadata : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SourceDbServerMetadata" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceDbServerMetadata As PostgreSqlServerMetadata" />
+      <MemberSignature Language="F#" Value="member this.SourceDbServerMetadata : Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SourceDbServerMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Metadata of the source database server.
+            Metadata of source database server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -645,17 +610,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            ResourceId of the source database server in case the sourceType is
-            PostgreSQLSingleServer. For other source types this should be
-            ipaddress:port@username or hostname:port@username.
+            Identifier of the source database server resource, when
+            'sourceType' is 'PostgreSQLSingleServer'. For
+            other source types this must be set to ipaddress:port@username or
+            hostname:port@username.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -671,15 +637,20 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSourceType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            migration source server type : OnPremises, AWS, GCP, AzureVM,
-            PostgreSQLSingleServer, AWS_RDS, AWS_AURORA, AWS_EC2, GCP_CloudSQL,
-            GCP_AlloyDB, GCP_Compute, or EDB.
+            Source server type used for the migration: ApsaraDB_RDS, AWS,
+            AWS_AURORA, AWS_EC2, AWS_RDS, AzureVM, Crunchy_PostgreSQL,
+            Digital_Ocean_Droplets, Digital_Ocean_PostgreSQL, EDB,
+            EDB_Oracle_Server, EDB_PostgreSQL, GCP, GCP_AlloyDB, GCP_CloudSQL,
+            GCP_Compute, Heroku_PostgreSQL, Huawei_Compute, Huawei_RDS,
+            OnPremises, PostgreSQLCosmosDB, PostgreSQLFlexibleServer,
+            PostgreSQLSingleServer, or Supabase_PostgreSQL.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -695,14 +666,16 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlFlexibleServersSslMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            SSL modes for migration. Default SSL mode for PostgreSQLSingleServer is
-            VerifyFull and Prefer for other source types.
+            SSL mode used by a migration. Default SSL mode for
+            'PostgreSQLSingleServer' is 'VerifyFull'. Default
+            SSL mode for other source types is 'Prefer'.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -717,39 +690,34 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationStartDataMigration&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Indicates whether the data migration should start right away.
+            Indicates if data migration must start right away.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlMigration.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SystemData" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SystemData" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Resources.SystemData</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -768,8 +736,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepDictionary&lt;System.String&gt;</ReturnType>
@@ -791,45 +759,40 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Target server fully qualified domain name (FQDN) or IP address. It is a
-            optional value, if customer provide it, migration service will always
-            use it for connection.
+            Fully qualified domain name (FQDN) or IP address of the target server.
+            This property is optional. When provided, the migration service will
+            always use it to connect to the target server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetDbServerMetadata">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata TargetDbServerMetadata { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata TargetDbServerMetadata" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata TargetDbServerMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata TargetDbServerMetadata" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlMigration.TargetDbServerMetadata" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetDbServerMetadata As PostgreSqlServerMetadata" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.TargetDbServerMetadata : Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.TargetDbServerMetadata" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt; TargetDbServerMetadata { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt; TargetDbServerMetadata" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetDbServerMetadata As BicepValue(Of PostgreSqlServerMetadata)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.TargetDbServerMetadata : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.TargetDbServerMetadata" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetDbServerMetadata As PostgreSqlServerMetadata" />
+      <MemberSignature Language="F#" Value="member this.TargetDbServerMetadata : Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata" Usage="Azure.Provisioning.PostgreSql.PostgreSqlMigration.TargetDbServerMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlServerMetadata</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Metadata of the target database server.
+            Metadata of target database server.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -844,15 +807,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            ResourceId of the source database server.
+            Identifier of the target database server resource.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -867,16 +830,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlMigrationTriggerCutover&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            To trigger cutover for entire migration we need to send this flag as
-            True.
+            Indicates if cutover must be triggered for the entire migration.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
