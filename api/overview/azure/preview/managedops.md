@@ -1,0 +1,11 @@
+---
+title: Azure Managedops SDK for .NET
+description: Reference for Azure Managedops SDK for .NET
+ms.date: 03/02/2026
+ms.topic: reference
+ms.devlang: dotnet
+ms.service: managedops
+---
+# Azure Managedops SDK for .NET - preview
+## Packages - preview
+[!INCLUDE [packages](managedops-index.md)]
