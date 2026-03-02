@@ -1,12 +1,12 @@
 ---
 title: Azure Provisioning Kusto client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.Kusto, provisioning
-ms.date: 09/05/2025
+ms.date: 03/02/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure Provisioning Kusto client library for .NET - version 1.0.0-beta.1 
+# Azure Provisioning Kusto client library for .NET - version 1.0.0-beta.2 
 
 
 Azure.Provisioning.Kusto simplifies declarative resource provisioning in .NET.
@@ -18,7 +18,7 @@ Azure.Provisioning.Kusto simplifies declarative resource provisioning in .NET.
 Install the client library for .NET with [NuGet](https://www.nuget.org/ ):
 
 ```dotnetcli
-dotnet add package Azure.Provisioning.Kusto
+dotnet add package Azure.Provisioning.Kusto --prerelease
 ```
 
 ### Prerequisites
@@ -475,7 +475,7 @@ KustoEventGridDataConnection eventConnection = new("eventConnection", KustoDataC
     Location = location,
     DependsOn = { kustoScript },
     BlobStorageEventType = BlobStorageEventType.MicrosoftStorageBlobCreated,
-    ConsumerGroup = kustoConsumerGroup.Name,
+    ConsumerGroup = kustoConsumerGroup.Name.ToBicepExpression(),
     DataFormat = KustoEventGridDataFormat.Csv,
     EventGridResourceId = newBlobSubscription.Id,
     EventHubResourceId = eventHub.Id,
@@ -515,7 +515,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Kusto_1.0.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Kusto_1.0.0-beta.2/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
