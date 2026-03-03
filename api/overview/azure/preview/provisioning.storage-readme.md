@@ -1,12 +1,12 @@
 ---
-title: Azure Provisioning client library for .NET
+title: Azure Provisioning Storage client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.Storage, provisioning
-ms.date: 10/05/2024
+ms.date: 03/03/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure Provisioning client library for .NET - version 1.0.0-beta.1 
+# Azure Provisioning Storage client library for .NET - version 1.2.0-beta.1 
 
 
 Azure.Provisioning.Storage simplifies declarative resource provisioning in .NET for Azure Storage.
@@ -18,7 +18,7 @@ Azure.Provisioning.Storage simplifies declarative resource provisioning in .NET 
 Install the client library for .NET with [NuGet](https://www.nuget.org/ ):
 
 ```dotnetcli
-dotnet add package Azure.Provisioning.Storage --prerelease
+dotnet add package Azure.Provisioning.Storage
 ```
 
 ### Prerequisites
@@ -30,6 +30,25 @@ dotnet add package Azure.Provisioning.Storage --prerelease
 ## Key concepts
 
 This library allows you to specify your infrastructure in a declarative style using dotnet.  You can then use azd to deploy your infrastructure to Azure directly without needing to write or maintain bicep or arm templates.
+
+## Examples
+
+### Create a Basic Storage Account
+
+This example demonstrates how to create a storage account with recommended security settings and hierarchical namespace enabled for Azure Data Lake Storage Gen2.
+
+```C# Snippet:StorageAccountBasic
+Infrastructure infra = new();
+
+StorageAccount storage = new("storage", StorageAccount.ResourceVersions.V2023_01_01)
+{
+    Kind = StorageKind.StorageV2,
+    Sku = { Name = StorageSkuName.StandardLrs },
+    IsHnsEnabled = true,
+    AllowBlobPublicAccess = false
+};
+infra.Add(storage);
+```
 
 ## Troubleshooting
 
@@ -59,7 +78,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Storage_1.0.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Storage_1.2.0-beta.1/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
