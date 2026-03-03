@@ -1,12 +1,13 @@
 ---
-title: 
+title: Azure Provisioning ContainerService client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.ContainerService, provisioning
-ms.date: 06/25/2025
+ms.date: 03/03/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure.Provisioning.ContainerService client library for .NET
+# Azure Provisioning ContainerService client library for .NET - version 1.0.0-beta.5 
+
 
 Azure.Provisioning.ContainerService simplifies declarative resource provisioning in .NET.
 
@@ -29,6 +30,54 @@ dotnet add package Azure.Provisioning.ContainerService --prerelease
 ## Key concepts
 
 This library allows you to specify your infrastructure in a declarative style using dotnet.  You can then use azd to deploy your infrastructure to Azure directly without needing to write or maintain bicep or arm templates.
+
+## Examples
+
+### Create An AKS Cluster
+
+This example demonstrates how to create an Azure Kubernetes Service (AKS) cluster with SSH authentication and system agent pool, based on the [Azure quickstart template](https://github.com/Azure/azure-quickstart-templates/blob/master/quickstarts/microsoft.kubernetes/aks/main.bicep).
+
+```C# Snippet:ContainerServiceBasic
+Infrastructure infra = new();
+
+ProvisioningParameter dnsPrefix = new(nameof(dnsPrefix), typeof(string));
+infra.Add(dnsPrefix);
+
+ProvisioningParameter linuxAdminUsername = new(nameof(linuxAdminUsername), typeof(string));
+infra.Add(linuxAdminUsername);
+
+ProvisioningParameter sshRsaPublicKey = new(nameof(sshRsaPublicKey), typeof(string));
+infra.Add(sshRsaPublicKey);
+
+ContainerServiceManagedCluster aks =
+    new(nameof(aks), ContainerServiceManagedCluster.ResourceVersions.V2024_08_01)
+    {
+        ClusterIdentity = new ManagedClusterIdentity { ResourceIdentityType = ManagedServiceIdentityType.SystemAssigned },
+        DnsPrefix = dnsPrefix,
+        LinuxProfile =
+            new ContainerServiceLinuxProfile
+            {
+                AdminUsername = linuxAdminUsername,
+                SshPublicKeys =
+                {
+                    new ContainerServiceSshPublicKey { KeyData = sshRsaPublicKey }
+                }
+            },
+        AgentPoolProfiles =
+        {
+            new ManagedClusterAgentPoolProfile
+            {
+                Name = "agentpool",
+                VmSize = "standard_d2s_v3",
+                OSDiskSizeInGB = 0, // 0 means default disk size for that agent
+                Count = 3,
+                OSType = ContainerServiceOSType.Linux,
+                Mode = AgentPoolMode.System
+            }
+        }
+    };
+infra.Add(aks);
+```
 
 ## Troubleshooting
 
@@ -58,7 +107,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.ContainerService_1.0.0-beta.4/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.ContainerService_1.0.0-beta.5/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
