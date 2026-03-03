@@ -1,21 +1,17 @@
 <Type Name="ManagedHsmNetworkRuleSet" FullName="Azure.Provisioning.KeyVault.ManagedHsmNetworkRuleSet">
-  <TypeSignature Language="C#" Value="public class ManagedHsmNetworkRuleSet : Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedHsmNetworkRuleSet extends Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class ManagedHsmNetworkRuleSet : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedHsmNetworkRuleSet extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.KeyVault.ManagedHsmNetworkRuleSet" />
-  <TypeSignature Language="VB.NET" Value="Public Class ManagedHsmNetworkRuleSet&#xA;Inherits ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type ManagedHsmNetworkRuleSet = class&#xA;    inherit ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class ManagedHsmNetworkRuleSet : Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedHsmNetworkRuleSet extends Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class ManagedHsmNetworkRuleSet&#xA;Inherits ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type ManagedHsmNetworkRuleSet = class&#xA;    inherit ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedHsmNetworkRuleSet&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ManagedHsmNetworkRuleSet = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -33,8 +29,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,8 +49,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.KeyVault.ManagedHsmNetworkRuleBypassOption&gt;</ReturnType>
@@ -78,8 +74,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.KeyVault.ManagedHsmNetworkRuleAction&gt;</ReturnType>
@@ -104,6 +100,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -125,8 +122,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.KeyVault.ManagedHsmIPRule&gt;</ReturnType>
@@ -134,6 +131,28 @@
       <Docs>
         <summary>
             The list of IP address rules.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceTags">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.KeyVault.ManagedHsmServiceTagRule&gt; ServiceTags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.KeyVault.ManagedHsmServiceTagRule&gt; ServiceTags" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.KeyVault.ManagedHsmNetworkRuleSet.ServiceTags" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceTags As BicepList(Of ManagedHsmServiceTagRule)" />
+      <MemberSignature Language="F#" Value="member this.ServiceTags : Azure.Provisioning.BicepList&lt;Azure.Provisioning.KeyVault.ManagedHsmServiceTagRule&gt; with get, set" Usage="Azure.Provisioning.KeyVault.ManagedHsmNetworkRuleSet.ServiceTags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.KeyVault.ManagedHsmServiceTagRule&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The list of service tags.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -148,8 +167,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.KeyVault.ManagedHsmVirtualNetworkRule&gt;</ReturnType>

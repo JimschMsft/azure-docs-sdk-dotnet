@@ -1,0 +1,142 @@
+<Type Name="ManagedOpsExtensions" FullName="Azure.ResourceManager.ManagedOps.ManagedOpsExtensions">
+  <TypeSignature Language="C#" Value="public static class ManagedOpsExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ManagedOpsExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ManagedOps.ManagedOpsExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ManagedOpsExtensions" />
+  <TypeSignature Language="F#" Value="type ManagedOpsExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ManagedOps</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.ManagedOps. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetManagedOp">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ManagedOps.ManagedOpResource&gt; GetManagedOp (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string managedOpsName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ManagedOps.ManagedOpResource&gt; GetManagedOp(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string managedOpsName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOp(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedOp (subscriptionResource As SubscriptionResource, managedOpsName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ManagedOpResource)" />
+      <MemberSignature Language="F#" Value="static member GetManagedOp : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ManagedOps.ManagedOpResource&gt;" Usage="Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOp (subscriptionResource, managedOpsName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ManagedOps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ManagedOps.ManagedOpResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="managedOpsName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="managedOpsName"> Name of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the information of the ManagedOps instance.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ManagedOps.Mocking.MockableManagedOpsSubscriptionResource.GetManagedOp(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedOpAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ManagedOps.ManagedOpResource&gt;&gt; GetManagedOpAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string managedOpsName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ManagedOps.ManagedOpResource&gt;&gt; GetManagedOpAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, string managedOpsName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOpAsync(Azure.ResourceManager.Resources.SubscriptionResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedOpAsync (subscriptionResource As SubscriptionResource, managedOpsName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ManagedOpResource))" />
+      <MemberSignature Language="F#" Value="static member GetManagedOpAsync : Azure.ResourceManager.Resources.SubscriptionResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ManagedOps.ManagedOpResource&gt;&gt;" Usage="Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOpAsync (subscriptionResource, managedOpsName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ManagedOps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ManagedOps.ManagedOpResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+        <Parameter Name="managedOpsName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="managedOpsName"> Name of the resource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the information of the ManagedOps instance.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ManagedOps.Mocking.MockableManagedOpsSubscriptionResource.GetManagedOpAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedOpResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ManagedOps.ManagedOpResource GetManagedOpResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ManagedOps.ManagedOpResource GetManagedOpResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOpResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedOpResource (client As ArmClient, id As ResourceIdentifier) As ManagedOpResource" />
+      <MemberSignature Language="F#" Value="static member GetManagedOpResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ManagedOps.ManagedOpResource" Usage="Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOpResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ManagedOps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ManagedOps.ManagedOpResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ManagedOps.ManagedOpResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ManagedOps.Mocking.MockableManagedOpsArmClient.GetManagedOpResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ManagedOps.ManagedOpResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedOps">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ManagedOps.ManagedOpCollection GetManagedOps (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ManagedOps.ManagedOpCollection GetManagedOps(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOps(Azure.ResourceManager.Resources.SubscriptionResource)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetManagedOps (subscriptionResource As SubscriptionResource) As ManagedOpCollection" />
+      <MemberSignature Language="F#" Value="static member GetManagedOps : Azure.ResourceManager.Resources.SubscriptionResource -&gt; Azure.ResourceManager.ManagedOps.ManagedOpCollection" Usage="Azure.ResourceManager.ManagedOps.ManagedOpsExtensions.GetManagedOps subscriptionResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ManagedOps</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ManagedOps.ManagedOpCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <summary>
+            Gets a collection of ManagedOps in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ManagedOps.Mocking.MockableManagedOpsSubscriptionResource.GetManagedOps" /> instead. </description></item></summary>
+        <returns> An object representing collection of ManagedOps and their operations over a ManagedOpResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

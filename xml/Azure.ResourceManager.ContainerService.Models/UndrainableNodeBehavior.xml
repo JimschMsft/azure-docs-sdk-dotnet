@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -17,10 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            Defines the behavior for undrainable nodes during upgrade. The most common cause of undrainable nodes is Pod Disruption Budgets (PDBs), but other issues, such as pod termination grace period is exceeding the remaining per-node drain timeout or pod is still being in a running state, can also cause undrainable nodes.
-            Serialized Name: UndrainableNodeBehavior
-            </summary>
+    <summary> Defines the behavior for undrainable nodes during upgrade. The most common cause of undrainable nodes is Pod Disruption Budgets (PDBs), but other issues, such as pod termination grace period is exceeding the remaining per-node drain timeout or pod is still being in a running state, can also cause undrainable nodes. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
@@ -55,16 +53,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.UndrainableNodeBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            AKS will cordon the blocked nodes and replace them with surge nodes during upgrade. The blocked nodes will be cordoned and replaced by surge nodes. The blocked nodes will have label 'kubernetes.azure.com/upgrade-status:Quarantined'. A surge node will be retained for each blocked node. A best-effort attempt will be made to delete all other surge nodes. If there are enough surge nodes to replace blocked nodes, then the upgrade operation and the managed cluster will be in failed state. Otherwise, the upgrade operation and the managed cluster will be in canceled state.
-            Serialized Name: UndrainableNodeBehavior.Cordon
-            </summary>
+        <summary> AKS will cordon the blocked nodes and replace them with surge nodes during upgrade. The blocked nodes will be cordoned and replaced by surge nodes. The blocked nodes will have label 'kubernetes.azure.com/upgrade-status:Quarantined'. A surge node will be retained for each blocked node. A best-effort attempt will be made to delete all other surge nodes. If there are enough surge nodes to replace blocked nodes, then the upgrade operation and the managed cluster will be in failed state. Otherwise, the upgrade operation and the managed cluster will be in canceled state. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +76,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -106,7 +101,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -137,7 +132,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -164,7 +159,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -190,7 +185,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.UndrainableNodeBehavior</ReturnType>
@@ -214,7 +209,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -240,16 +235,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.Models.UndrainableNodeBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            AKS will mark the blocked nodes schedulable, but the blocked nodes are not upgraded. A best-effort attempt will be made to delete all surge nodes. The upgrade operation and the managed cluster will be in failed state if there are any blocked nodes.
-            Serialized Name: UndrainableNodeBehavior.Schedule
-            </summary>
+        <summary> AKS will mark the blocked nodes schedulable, but the blocked nodes are not upgraded. A best-effort attempt will be made to delete all surge nodes. The upgrade operation and the managed cluster will be in failed state if there are any blocked nodes. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,7 +255,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

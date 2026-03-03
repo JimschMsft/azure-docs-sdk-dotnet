@@ -171,7 +171,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the Name.
+            Name of the advanced threat protection settings.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -259,6 +259,16 @@
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.Obsolete("Use Name instead.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use Name instead.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.ThreatProtectionName&gt;</ReturnType>
       </ReturnValue>
