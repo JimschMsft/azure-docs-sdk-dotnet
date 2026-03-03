@@ -1,12 +1,13 @@
 ---
-title: 
+title: Azure Provisioning Communication client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Provisioning.Communication, provisioning
-ms.date: 06/17/2025
+ms.date: 03/03/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure.Provisioning.Communication client library for .NET
+# Azure Provisioning Communication client library for .NET - version 1.0.0-beta.4 
+
 
 Azure.Provisioning.Communication simplifies declarative resource provisioning in .NET.
 
@@ -29,6 +30,31 @@ dotnet add package Azure.Provisioning.Communication --prerelease
 ## Key concepts
 
 This library allows you to specify your infrastructure in a declarative style using dotnet.  You can then use azd to deploy your infrastructure to Azure directly without needing to write or maintain bicep or arm templates.
+
+## Examples
+
+### Create a Basic Communication Service
+
+This example demonstrates how to create an Azure Communication Services resource for adding communication capabilities to applications.
+
+```C# Snippet:CommunicationBasic
+Infrastructure infra = new();
+
+ProvisioningParameter location =
+    new(nameof(location), typeof(string))
+    {
+        Value = "global"
+    };
+infra.Add(location);
+
+CommunicationService comm =
+    new(nameof(comm), "2023-03-31")
+    {
+        Location = location,
+        DataLocation = "unitedstates"
+    };
+infra.Add(comm);
+```
 
 ## Troubleshooting
 
@@ -58,7 +84,7 @@ more information, see the [Code of Conduct FAQ][coc_faq] or contact
 <opencode@microsoft.com> with any other questions or comments.
 
 <!-- LINKS -->
-[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Communication_1.0.0-beta.3/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
+[cg]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.Provisioning.Communication_1.0.0-beta.4/sdk/resourcemanager/Azure.ResourceManager/docs/CONTRIBUTING.md
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
