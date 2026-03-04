@@ -45,6 +45,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestAudioContentPart (string audio);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string audio) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.RequestAudioContentPart.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (audio As String)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.VoiceLive.RequestAudioContentPart : string -&gt; Azure.AI.VoiceLive.RequestAudioContentPart" Usage="new Azure.AI.VoiceLive.RequestAudioContentPart audio" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="audio" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="audio"> Base64-encoded audio bytes, these will be parsed as the format specified in the session input audio type configuration. This defaults to PCM 16-bit 24kHz mono if not specified. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.VoiceLive.RequestAudioContentPart" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="audio" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Audio">
+      <MemberSignature Language="C#" Value="public string Audio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Audio" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.RequestAudioContentPart.Audio" />
+      <MemberSignature Language="VB.NET" Value="Public Property Audio As String" />
+      <MemberSignature Language="F#" Value="member this.Audio : string with get, set" Usage="Azure.AI.VoiceLive.RequestAudioContentPart.Audio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Base64-encoded audio bytes, these will be parsed as the format specified in the session input audio type configuration. This defaults to PCM 16-bit 24kHz mono if not specified. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="JsonModelCreateCore">
       <MemberSignature Language="C#" Value="protected override Azure.AI.VoiceLive.VoiceLiveContentPart JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.AI.VoiceLive.VoiceLiveContentPart JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
@@ -311,7 +353,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Gets or sets the Transcript. </summary>
+        <summary> Optional transcript of the audio content. This is not sent to the model, but will be attached to the message item for reference. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

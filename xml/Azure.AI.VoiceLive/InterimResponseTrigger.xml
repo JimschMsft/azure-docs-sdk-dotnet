@@ -17,9 +17,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-            Defines the triggers that can activate interim responses during voice interactions.
-            </summary>
+    <summary> Triggers that can activate interim response generation. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,13 +36,11 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string value of the trigger.</param>
-        <summary>
-            Initializes a new instance of <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" />.
-            </summary>
+        <param name="value"> The value. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is null.</exception>
+          <paramref name="value" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -148,9 +144,7 @@
         <ReturnType>Azure.AI.VoiceLive.InterimResponseTrigger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Trigger interim responses based on latency thresholds.
-            </summary>
+        <summary> Trigger interim response when response latency exceeds threshold. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,11 +168,9 @@
         <Parameter Name="right" Type="Azure.AI.VoiceLive.InterimResponseTrigger" />
       </Parameters>
       <Docs>
-        <param name="left">The first <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> to compare.</param>
-        <param name="right">The second <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> to compare.</param>
-        <summary>
-            Determines if two <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> values are the same.
-            </summary>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> values are the same. </summary>
         <returns>True if <paramref name="left" /> and <paramref name="right" /> are the same; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,10 +193,32 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string value to convert.</param>
-        <summary>
-            Converts a string to a <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" />.
-            </summary>
+        <param name="value"> The value. </param>
+        <summary> Converts a string to a <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" />. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Azure.AI.VoiceLive.InterimResponseTrigger? (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.InterimResponseTrigger&gt; op_Implicit(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.VoiceLive.InterimResponseTrigger.op_Implicit(System.String)~System.Nullable{Azure.AI.VoiceLive.InterimResponseTrigger}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As Nullable(Of InterimResponseTrigger)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Nullable&lt;Azure.AI.VoiceLive.InterimResponseTrigger&gt;" Usage="Azure.AI.VoiceLive.InterimResponseTrigger.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.InterimResponseTrigger&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,11 +242,9 @@
         <Parameter Name="right" Type="Azure.AI.VoiceLive.InterimResponseTrigger" />
       </Parameters>
       <Docs>
-        <param name="left">The first <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> to compare.</param>
-        <param name="right">The second <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> to compare.</param>
-        <summary>
-            Determines if two <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> values are not the same.
-            </summary>
+        <param name="left"> The left value to compare. </param>
+        <param name="right"> The right value to compare. </param>
+        <summary> Determines if two <see cref="T:Azure.AI.VoiceLive.InterimResponseTrigger" /> values are not the same. </summary>
         <returns>True if <paramref name="left" /> and <paramref name="right" /> are not the same; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,9 +264,7 @@
         <ReturnType>Azure.AI.VoiceLive.InterimResponseTrigger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Trigger interim responses during tool execution.
-            </summary>
+        <summary> Trigger interim response when a tool call is being executed. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

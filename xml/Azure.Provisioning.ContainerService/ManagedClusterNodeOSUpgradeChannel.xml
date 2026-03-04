@@ -13,7 +13,8 @@
   </Base>
   <Docs>
     <summary>
-            Manner in which the OS on your nodes is updated. The default is NodeImage.
+            Node OS Upgrade Channel. Manner in which the OS on your nodes is updated.
+            The default is NodeImage.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -62,6 +63,33 @@
         <summary>
             No attempt to update your machines OS will be made either by OS or by
             rolling VHDs. This means you are responsible for your security updates.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPatch">
+      <MemberSignature Language="C#" Value="SecurityPatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.ManagedClusterNodeOSUpgradeChannel SecurityPatch = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.ManagedClusterNodeOSUpgradeChannel.SecurityPatch" />
+      <MemberSignature Language="VB.NET" Value="SecurityPatch" />
+      <MemberSignature Language="F#" Value="SecurityPatch = 3" Usage="Azure.Provisioning.ContainerService.ManagedClusterNodeOSUpgradeChannel.SecurityPatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.ManagedClusterNodeOSUpgradeChannel</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            AKS downloads and updates the nodes with tested security updates. These
+            updates honor the maintenance window settings and produce a new VHD
+            that is used on new nodes. On some occasions it's not possible to
+            apply the updates in place, in such cases the existing nodes will also
+            be re-imaged to the newly produced VHD in order to apply the changes.
+            This option incurs an extra cost of hosting the new Security Patch
+            VHDs in your resource group for just in time consumption.
             </summary>
       </Docs>
     </Member>

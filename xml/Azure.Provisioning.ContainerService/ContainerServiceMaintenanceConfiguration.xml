@@ -167,7 +167,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The name of the maintenance configuration.
+            The name of the maintenance configuration. Supported values are
+            'default', 'aksManagedAutoUpgradeSchedule', or
+            'aksManagedNodeOSUpgradeSchedule'.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -255,8 +257,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            If two array entries specify the same day of the week, the applied
-            configuration is the union of times in both entries.
+            Time slots during the week when planned maintenance is allowed to
+            proceed. If two array entries specify the same day of the week, the
+            applied configuration is the union of times in both entries.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

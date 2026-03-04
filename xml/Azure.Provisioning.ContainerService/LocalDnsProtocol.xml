@@ -1,0 +1,79 @@
+<Type Name="LocalDnsProtocol" FullName="Azure.Provisioning.ContainerService.LocalDnsProtocol">
+  <TypeSignature Language="C#" Value="public enum LocalDnsProtocol" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LocalDnsProtocol extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.LocalDnsProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LocalDnsProtocol" />
+  <TypeSignature Language="F#" Value="type LocalDnsProtocol = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enforce TCP or prefer UDP protocol for connections from localDNS to
+            upstream DNS server.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ForceTcp">
+      <MemberSignature Language="C#" Value="ForceTcp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.LocalDnsProtocol ForceTcp = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.LocalDnsProtocol.ForceTcp" />
+      <MemberSignature Language="VB.NET" Value="ForceTcp" />
+      <MemberSignature Language="F#" Value="ForceTcp = 1" Usage="Azure.Provisioning.ContainerService.LocalDnsProtocol.ForceTcp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="ForceTCP")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="ForceTCP")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.LocalDnsProtocol</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Enforce TCP protocol for connections from localDNS to upstream DNS
+            server.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferUdp">
+      <MemberSignature Language="C#" Value="PreferUdp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.LocalDnsProtocol PreferUdp = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.LocalDnsProtocol.PreferUdp" />
+      <MemberSignature Language="VB.NET" Value="PreferUdp" />
+      <MemberSignature Language="F#" Value="PreferUdp = 0" Usage="Azure.Provisioning.ContainerService.LocalDnsProtocol.PreferUdp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="PreferUDP")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="PreferUDP")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.LocalDnsProtocol</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Prefer UDP protocol for connections from localDNS to upstream DNS
+            server.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

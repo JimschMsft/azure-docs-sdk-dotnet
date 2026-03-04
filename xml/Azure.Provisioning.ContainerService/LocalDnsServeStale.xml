@@ -1,0 +1,91 @@
+<Type Name="LocalDnsServeStale" FullName="Azure.Provisioning.ContainerService.LocalDnsServeStale">
+  <TypeSignature Language="C#" Value="public enum LocalDnsServeStale" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LocalDnsServeStale extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.LocalDnsServeStale" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LocalDnsServeStale" />
+  <TypeSignature Language="F#" Value="type LocalDnsServeStale = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Policy for serving stale data. See [cache
+            plugin](https://coredns.io/plugins/cache) for more information.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="Disable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.LocalDnsServeStale Disable = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.LocalDnsServeStale.Disable" />
+      <MemberSignature Language="VB.NET" Value="Disable" />
+      <MemberSignature Language="F#" Value="Disable = 2" Usage="Azure.Provisioning.ContainerService.LocalDnsServeStale.Disable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.LocalDnsServeStale</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Disable serving stale data.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Immediate">
+      <MemberSignature Language="C#" Value="Immediate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.LocalDnsServeStale Immediate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.LocalDnsServeStale.Immediate" />
+      <MemberSignature Language="VB.NET" Value="Immediate" />
+      <MemberSignature Language="F#" Value="Immediate = 1" Usage="Azure.Provisioning.ContainerService.LocalDnsServeStale.Immediate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.LocalDnsServeStale</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Serve stale data immediately. Send the expired entry to the client
+            before checking to see if the entry is available from the source. See
+            [cache plugin](https://coredns.io/plugins/cache) for more information.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Verify">
+      <MemberSignature Language="C#" Value="Verify" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.LocalDnsServeStale Verify = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.LocalDnsServeStale.Verify" />
+      <MemberSignature Language="VB.NET" Value="Verify" />
+      <MemberSignature Language="F#" Value="Verify = 0" Usage="Azure.Provisioning.ContainerService.LocalDnsServeStale.Verify" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.LocalDnsServeStale</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Serve stale data with verification. First verify that an entry is still
+            unavailable from the source before sending the expired entry to the
+            client. See [cache plugin](https://coredns.io/plugins/cache) for more
+            information.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

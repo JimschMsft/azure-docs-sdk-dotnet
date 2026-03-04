@@ -1,0 +1,97 @@
+<Type Name="ManagedClusterAdvancedNetworkPolicy" FullName="Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy">
+  <TypeSignature Language="C#" Value="public enum ManagedClusterAdvancedNetworkPolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManagedClusterAdvancedNetworkPolicy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ManagedClusterAdvancedNetworkPolicy" />
+  <TypeSignature Language="F#" Value="type ManagedClusterAdvancedNetworkPolicy = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enable advanced network policies. This allows users to configure Layer 7
+            network policies (FQDN, HTTP, Kafka). Policies themselves must be
+            configured via the Cilium Network Policy resources, see
+            https://docs.cilium.io/en/latest/security/policy/index.html. This can be
+            enabled only on cilium-based clusters. If not specified, the default value
+            is FQDN if security.enabled is set to true.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Fqdn">
+      <MemberSignature Language="C#" Value="Fqdn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy Fqdn = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy.Fqdn" />
+      <MemberSignature Language="VB.NET" Value="Fqdn" />
+      <MemberSignature Language="F#" Value="Fqdn = 1" Usage="Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy.Fqdn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="FQDN")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="FQDN")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Enable FQDN based network policies.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="L7">
+      <MemberSignature Language="C#" Value="L7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy L7 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy.L7" />
+      <MemberSignature Language="VB.NET" Value="L7" />
+      <MemberSignature Language="F#" Value="L7 = 0" Usage="Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy.L7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Enable Layer7 network policies (FQDN, HTTP/S, Kafka). This option is a
+            superset of the FQDN option.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy None = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Disable Layer 7 network policies (FQDN, HTTP/S, Kafka).
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -38,6 +38,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AdvancedNetworking">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworking AdvancedNetworking { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworking AdvancedNetworking" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.AdvancedNetworking" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdvancedNetworking As ManagedClusterAdvancedNetworking" />
+      <MemberSignature Language="F#" Value="member this.AdvancedNetworking : Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworking with get, set" Usage="Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.AdvancedNetworking" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworking</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Advanced Networking profile for enabling observability and security
+            feature suite on a cluster. For more information see
+            aka.ms/aksadvancednetworking.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DefineProvisionableProperties">
       <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
@@ -84,25 +108,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IPFamilies">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ContainerService.IPFamily&gt; IPFamilies { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;valuetype Azure.Provisioning.ContainerService.IPFamily&gt; IPFamilies" />
-      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.IPFamilies" />
-      <MemberSignature Language="VB.NET" Value="Public Property IPFamilies As BicepList(Of IPFamily)" />
-      <MemberSignature Language="F#" Value="member this.IPFamilies : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ContainerService.IPFamily&gt; with get, set" Usage="Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.IPFamilies" />
+    <Member MemberName="IsStaticEgressGatewayAddonEnabled">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsStaticEgressGatewayAddonEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsStaticEgressGatewayAddonEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.IsStaticEgressGatewayAddonEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsStaticEgressGatewayAddonEnabled As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsStaticEgressGatewayAddonEnabled : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.IsStaticEgressGatewayAddonEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ContainerService.IPFamily&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            IP families are used to determine single-stack or dual-stack clusters.
-            For single-stack, the expected value is IPv4. For dual-stack, the
-            expected values are IPv4 and IPv6.
+            Enable Static Egress Gateway addon. Indicates if Static Egress Gateway
+            addon is enabled or not.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -146,7 +169,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The default is 'standard'. See [Azure Load Balancer
+            The load balancer sku for the managed cluster. The default is
+            'standard'. See [Azure Load Balancer
             SKUs](https://docs.microsoft.com/azure/load-balancer/skus) for more
             information about the differences between load balancer SKUs.
             </summary>
@@ -198,6 +222,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NetworkIPFamilies">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ContainerService.ContainerServiceIPFamily&gt; NetworkIPFamilies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;valuetype Azure.Provisioning.ContainerService.ContainerServiceIPFamily&gt; NetworkIPFamilies" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.NetworkIPFamilies" />
+      <MemberSignature Language="VB.NET" Value="Public Property NetworkIPFamilies As BicepList(Of ContainerServiceIPFamily)" />
+      <MemberSignature Language="F#" Value="member this.NetworkIPFamilies : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ContainerService.ContainerServiceIPFamily&gt; with get, set" Usage="Azure.Provisioning.ContainerService.ContainerServiceNetworkProfile.NetworkIPFamilies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ContainerService.ContainerServiceIPFamily&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The IP families used to specify IP versions available to the cluster.
+            IP families are used to determine single-stack or dual-stack clusters.
+            For single-stack, the expected value is IPv4. For dual-stack, the
+            expected values are IPv4 and IPv6.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetworkMode">
       <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.ContainerServiceNetworkMode&gt; NetworkMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.ContainerServiceNetworkMode&gt; NetworkMode" />
@@ -214,8 +263,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            This cannot be specified if networkPlugin is anything other than
-            'azure'.
+            The network mode Azure CNI is configured with. This cannot be specified
+            if networkPlugin is anything other than 'azure'.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -303,8 +352,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            This can only be set at cluster creation time and cannot be changed
-            later. For more information see [egress outbound
+            The outbound (egress) routing method. This can only be set at cluster
+            creation time and cannot be changed later. For more information see
+            [egress outbound
             type](https://docs.microsoft.com/azure/aks/egress-outboundtype).
             </summary>
         <value>To be added.</value>
@@ -350,8 +400,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            One IPv4 CIDR is expected for single-stack networking. Two CIDRs, one
-            for each IP family (IPv4/IPv6), is expected for dual-stack networking.
+            The CIDR notation IP ranges from which to assign pod IPs. One IPv4 CIDR
+            is expected for single-stack networking. Two CIDRs, one for each IP
+            family (IPv4/IPv6), is expected for dual-stack networking.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -396,6 +447,7 @@
       </ReturnValue>
       <Docs>
         <summary>
+            The CIDR notation IP ranges from which to assign service cluster IPs.
             One IPv4 CIDR is expected for single-stack networking. Two CIDRs, one
             for each IP family (IPv4/IPv6), is expected for dual-stack networking.
             They must not overlap with any Subnet IP ranges.

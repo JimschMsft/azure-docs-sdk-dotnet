@@ -18,6 +18,30 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="KataVmIsolation">
+      <MemberSignature Language="C#" Value="KataVmIsolation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.WorkloadRuntime KataVmIsolation = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.WorkloadRuntime.KataVmIsolation" />
+      <MemberSignature Language="VB.NET" Value="KataVmIsolation" />
+      <MemberSignature Language="F#" Value="KataVmIsolation = 2" Usage="Azure.Provisioning.ContainerService.WorkloadRuntime.KataVmIsolation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.WorkloadRuntime</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Nodes can use (Kata + Cloud Hypervisor + Hyper-V) to enable Nested
+            VM-based pods. Due to the use Hyper-V, AKS node OS itself is a nested
+            VM (the root OS) of Hyper-V. Thus it can only be used with VM series
+            that support Nested Virtualization such as Dv3 series.
+            </summary>
+      </Docs>
+    </Member>
     <Member MemberName="OciContainer">
       <MemberSignature Language="C#" Value="OciContainer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.WorkloadRuntime OciContainer = int32(0)" />

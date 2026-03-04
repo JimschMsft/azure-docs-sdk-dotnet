@@ -1,0 +1,155 @@
+<Type Name="LocalDnsProfile" FullName="Azure.Provisioning.ContainerService.LocalDnsProfile">
+  <TypeSignature Language="C#" Value="public class LocalDnsProfile : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalDnsProfile extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.LocalDnsProfile" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalDnsProfile&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type LocalDnsProfile = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Configures the per-node local DNS, with VnetDNS and KubeDNS overrides.
+            LocalDNS helps improve performance and reliability of DNS resolution in an
+            AKS cluster. For more details see aka.ms/aks/localdns.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalDnsProfile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.LocalDnsProfile.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new LocalDnsProfile.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.LocalDnsProfile.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="localDnsProfile.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of LocalDnsProfile.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KubeDnsOverrides">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepDictionary&lt;Azure.Provisioning.ContainerService.LocalDnsOverride&gt; KubeDnsOverrides { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepDictionary`1&lt;class Azure.Provisioning.ContainerService.LocalDnsOverride&gt; KubeDnsOverrides" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsProfile.KubeDnsOverrides" />
+      <MemberSignature Language="VB.NET" Value="Public Property KubeDnsOverrides As BicepDictionary(Of LocalDnsOverride)" />
+      <MemberSignature Language="F#" Value="member this.KubeDnsOverrides : Azure.Provisioning.BicepDictionary&lt;Azure.Provisioning.ContainerService.LocalDnsOverride&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsProfile.KubeDnsOverrides" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepDictionary&lt;Azure.Provisioning.ContainerService.LocalDnsOverride&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            KubeDNS overrides apply to DNS traffic from pods with
+            dnsPolicy:ClusterFirst (referred to as KubeDNS traffic).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsMode&gt; Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.LocalDnsMode&gt; Mode" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsProfile.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As BicepValue(Of LocalDnsMode)" />
+      <MemberSignature Language="F#" Value="member this.Mode : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsMode&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsProfile.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsMode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Mode of enablement for localDNS.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsState&gt; State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.LocalDnsState&gt; State" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsProfile.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As BicepValue(Of LocalDnsState)" />
+      <MemberSignature Language="F#" Value="member this.State : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsState&gt;" Usage="Azure.Provisioning.ContainerService.LocalDnsProfile.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            System-generated state of localDNS.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VnetDnsOverrides">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepDictionary&lt;Azure.Provisioning.ContainerService.LocalDnsOverride&gt; VnetDnsOverrides { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepDictionary`1&lt;class Azure.Provisioning.ContainerService.LocalDnsOverride&gt; VnetDnsOverrides" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsProfile.VnetDnsOverrides" />
+      <MemberSignature Language="VB.NET" Value="Public Property VnetDnsOverrides As BicepDictionary(Of LocalDnsOverride)" />
+      <MemberSignature Language="F#" Value="member this.VnetDnsOverrides : Azure.Provisioning.BicepDictionary&lt;Azure.Provisioning.ContainerService.LocalDnsOverride&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsProfile.VnetDnsOverrides" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepDictionary&lt;Azure.Provisioning.ContainerService.LocalDnsOverride&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            VnetDNS overrides apply to DNS traffic from pods with dnsPolicy:default
+            or kubelet (referred to as VnetDNS traffic).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,13 +13,36 @@
   </Base>
   <Docs>
     <summary>
-            A cluster must have at least one 'System' Agent Pool at all
-            times. For additional information on agent pool restrictions and best
-            practices, see: https://docs.microsoft.com/azure/aks/use-system-pools.
+            The mode of an agent pool. A cluster must have at least one
+            'System' Agent Pool at all times. For additional information on
+            agent pool restrictions and best practices, see:
+            https://docs.microsoft.com/azure/aks/use-system-pools.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="Gateway">
+      <MemberSignature Language="C#" Value="Gateway" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.AgentPoolMode Gateway = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.AgentPoolMode.Gateway" />
+      <MemberSignature Language="VB.NET" Value="Gateway" />
+      <MemberSignature Language="F#" Value="Gateway = 2" Usage="Azure.Provisioning.ContainerService.AgentPoolMode.Gateway" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.AgentPoolMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Gateway agent pools are dedicated to providing static egress IPs to
+            pods. For more details, see https://aka.ms/aks/static-egress-gateway.
+            </summary>
+      </Docs>
+    </Member>
     <Member MemberName="System">
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.AgentPoolMode System = int32(0)" />

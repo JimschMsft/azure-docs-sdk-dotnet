@@ -1,0 +1,65 @@
+<Type Name="NamespaceDeletePolicy" FullName="Azure.Provisioning.ContainerService.NamespaceDeletePolicy">
+  <TypeSignature Language="C#" Value="public enum NamespaceDeletePolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NamespaceDeletePolicy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.NamespaceDeletePolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NamespaceDeletePolicy" />
+  <TypeSignature Language="F#" Value="type NamespaceDeletePolicy = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Delete options of a namespace.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.NamespaceDeletePolicy Delete = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.NamespaceDeletePolicy.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 1" Usage="Azure.Provisioning.ContainerService.NamespaceDeletePolicy.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.NamespaceDeletePolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Delete both the ARM resource and the Kubernetes namespace together.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Keep">
+      <MemberSignature Language="C#" Value="Keep" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.NamespaceDeletePolicy Keep = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.NamespaceDeletePolicy.Keep" />
+      <MemberSignature Language="VB.NET" Value="Keep" />
+      <MemberSignature Language="F#" Value="Keep = 0" Usage="Azure.Provisioning.ContainerService.NamespaceDeletePolicy.Keep" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.NamespaceDeletePolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Only delete the ARM resource, keep the Kubernetes namespace. Also
+            delete the ManagedByARM label.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

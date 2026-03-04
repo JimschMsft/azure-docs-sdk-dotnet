@@ -75,10 +75,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The amount of time (in minutes) to wait on eviction of pods and
-            graceful termination per node. This eviction wait time honors waiting
-            on pod disruption budgets. If this time is exceeded, the upgrade
-            fails. If not specified, the default is 30 minutes.
+            The drain timeout for a node. The amount of time (in minutes) to wait
+            on eviction of pods and graceful termination per node. This eviction
+            wait time honors waiting on pod disruption budgets. If this time is
+            exceeded, the upgrade fails. If not specified, the default is 30
+            minutes.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -100,13 +101,93 @@
       </ReturnValue>
       <Docs>
         <summary>
-            This can either be set to an integer (e.g. '5') or a
-            percentage (e.g. '50%'). If a percentage is specified, it is
-            the percentage of the total agent pool size at the time of the
+            The maximum number or percentage of nodes that are surged during
+            upgrade. This can either be set to an integer (e.g. '5') or
+            a percentage (e.g. '50%'). If a percentage is specified, it
+            is the percentage of the total agent pool size at the time of the
             upgrade. For percentages, fractional nodes are rounded up. If not
-            specified, the default is 1. For more information, including best
+            specified, the default is 10%. For more information, including best
             practices, see:
-            https://docs.microsoft.com/azure/aks/upgrade-cluster#customize-node-surge-upgrade.
+            https://learn.microsoft.com/en-us/azure/aks/upgrade-cluster.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxUnavailable">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; MaxUnavailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; MaxUnavailable" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.AgentPoolUpgradeSettings.MaxUnavailable" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxUnavailable As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MaxUnavailable : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ContainerService.AgentPoolUpgradeSettings.MaxUnavailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The maximum number or percentage of nodes that can be simultaneously
+            unavailable during upgrade. This can either be set to an integer (e.g.
+            '1') or a percentage (e.g. '5%'). If a percentage
+            is specified, it is the percentage of the total agent pool size at the
+            time of the upgrade. For percentages, fractional nodes are rounded up.
+            If not specified, the default is 0. For more information, including
+            best practices, see:
+            https://learn.microsoft.com/en-us/azure/aks/upgrade-cluster.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeSoakDurationInMinutes">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; NodeSoakDurationInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; NodeSoakDurationInMinutes" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.AgentPoolUpgradeSettings.NodeSoakDurationInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeSoakDurationInMinutes As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.NodeSoakDurationInMinutes : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.ContainerService.AgentPoolUpgradeSettings.NodeSoakDurationInMinutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The soak duration for a node. The amount of time (in minutes) to wait
+            after draining a node and before reimaging it and moving on to next
+            node. If not specified, the default is 0 minutes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UndrainableNodeBehavior">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.UndrainableNodeBehavior&gt; UndrainableNodeBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.UndrainableNodeBehavior&gt; UndrainableNodeBehavior" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.AgentPoolUpgradeSettings.UndrainableNodeBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property UndrainableNodeBehavior As BicepValue(Of UndrainableNodeBehavior)" />
+      <MemberSignature Language="F#" Value="member this.UndrainableNodeBehavior : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.UndrainableNodeBehavior&gt; with get, set" Usage="Azure.Provisioning.ContainerService.AgentPoolUpgradeSettings.UndrainableNodeBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.UndrainableNodeBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines the behavior for undrainable nodes during upgrade. The most
+            common cause of undrainable nodes is Pod Disruption Budgets (PDBs),
+            but other issues, such as pod termination grace period is exceeding
+            the remaining per-node drain timeout or pod is still being in a
+            running state, can also cause undrainable nodes.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

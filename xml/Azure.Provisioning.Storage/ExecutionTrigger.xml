@@ -8,6 +8,7 @@
     <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -70,6 +73,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.Storage.ExecutionTriggerParameters</ReturnType>
@@ -77,6 +81,28 @@
       <Docs>
         <summary>
             The trigger parameters of the storage task assignment execution.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskExecutionTriggerType">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.TaskExecutionTriggerType&gt; TaskExecutionTriggerType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Storage.TaskExecutionTriggerType&gt; TaskExecutionTriggerType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.ExecutionTrigger.TaskExecutionTriggerType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TaskExecutionTriggerType As BicepValue(Of TaskExecutionTriggerType)" />
+      <MemberSignature Language="F#" Value="member this.TaskExecutionTriggerType : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.TaskExecutionTriggerType&gt; with get, set" Usage="Azure.Provisioning.Storage.ExecutionTrigger.TaskExecutionTriggerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.TaskExecutionTriggerType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The trigger type of the storage task assignment execution.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -92,14 +118,24 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.ExecutionTriggerType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The trigger type of the storage task assignment execution.
-            </summary>
+             The trigger type of the storage task assignment execution.
+            
+             This property is obsoleted and will be removed in future versions. Please use
+             <see cref="P:Azure.Provisioning.Storage.ExecutionTrigger.TaskExecutionTriggerType" /> instead.
+             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

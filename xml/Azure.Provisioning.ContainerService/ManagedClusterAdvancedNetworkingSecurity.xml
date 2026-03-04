@@ -1,0 +1,115 @@
+<Type Name="ManagedClusterAdvancedNetworkingSecurity" FullName="Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity">
+  <TypeSignature Language="C#" Value="public class ManagedClusterAdvancedNetworkingSecurity : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedClusterAdvancedNetworkingSecurity extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedClusterAdvancedNetworkingSecurity&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ManagedClusterAdvancedNetworkingSecurity = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Security profile to enable security features on cilium based cluster.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagedClusterAdvancedNetworkingSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new ManagedClusterAdvancedNetworkingSecurity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancedNetworkPolicies">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy&gt; AdvancedNetworkPolicies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy&gt; AdvancedNetworkPolicies" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity.AdvancedNetworkPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdvancedNetworkPolicies As BicepValue(Of ManagedClusterAdvancedNetworkPolicy)" />
+      <MemberSignature Language="F#" Value="member this.AdvancedNetworkPolicies : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy&gt; with get, set" Usage="Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity.AdvancedNetworkPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enable advanced network policies. This allows users to configure Layer
+            7 network policies (FQDN, HTTP, Kafka). Policies themselves must be
+            configured via the Cilium Network Policy resources, see
+            https://docs.cilium.io/en/latest/security/policy/index.html. This can
+            be enabled only on cilium-based clusters. If not specified, the
+            default value is FQDN if security.enabled is set to true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="managedClusterAdvancedNetworkingSecurity.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            ManagedClusterAdvancedNetworkingSecurity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ContainerService.ManagedClusterAdvancedNetworkingSecurity.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This feature allows user to configure network policy based on DNS
+            (FQDN) names. It can be enabled only on cilium based clusters. If not
+            specified, the default is false.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,23 +1,19 @@
 <Type Name="StorageActiveDirectoryProperties" FullName="Azure.Provisioning.Storage.StorageActiveDirectoryProperties">
-  <TypeSignature Language="C#" Value="public class StorageActiveDirectoryProperties : Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageActiveDirectoryProperties extends Azure.Provisioning.Primitives.ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class StorageActiveDirectoryProperties : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageActiveDirectoryProperties extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Storage.StorageActiveDirectoryProperties" />
-  <TypeSignature Language="VB.NET" Value="Public Class StorageActiveDirectoryProperties&#xA;Inherits ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type StorageActiveDirectoryProperties = class&#xA;    inherit ProvisionableConstruct" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class StorageActiveDirectoryProperties : Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageActiveDirectoryProperties extends Azure.Provisioning.Primitives.ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class StorageActiveDirectoryProperties&#xA;Inherits ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type StorageActiveDirectoryProperties = class&#xA;    inherit ProvisioningConstruct" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class StorageActiveDirectoryProperties&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type StorageActiveDirectoryProperties = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -35,8 +31,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,15 +51,48 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.ActiveDirectoryAccountType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the Active Directory account type for Azure Storage.
+            Specifies the Active Directory account type for Azure Storage. If
+            directoryServiceOptions is set to AD (AD DS authentication), this
+            property is optional. If provided, samAccountName should also be
+            provided. For directoryServiceOptions AADDS (Entra DS authentication)
+            or AADKERB (Entra authentication), this property can be omitted.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveDirectoryDomainGuid">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Guid&gt; ActiveDirectoryDomainGuid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype System.Guid&gt; ActiveDirectoryDomainGuid" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageActiveDirectoryProperties.ActiveDirectoryDomainGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveDirectoryDomainGuid As BicepValue(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.ActiveDirectoryDomainGuid : Azure.Provisioning.BicepValue&lt;Guid&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageActiveDirectoryProperties.ActiveDirectoryDomainGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies the domain GUID. If directoryServiceOptions is set to AD (AD
+            DS authentication), this property is required. If
+            directoryServiceOptions is set to AADDS (Entra DS authentication),
+            this property can be omitted. If directoryServiceOptions is set to
+            AADKERB (Entra authentication), this property is optional; it is
+            needed to support configuration of directory- and file-level
+            permissions via Windows File Explorer, but is not required for
+            authentication.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -78,15 +107,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the security identifier (SID) for Azure Storage.
+            Specifies the security identifier (SID) for Azure Storage. If
+            directoryServiceOptions is set to AD (AD DS authentication), this
+            property is required. Otherwise, it can be omitted.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -102,6 +133,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -124,16 +156,25 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Guid&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the domain GUID.
-            </summary>
+             Specifies the domain GUID.
+            
+             This property is obsoleted and will be removed in future versions. Please use
+             <see cref="P:Azure.Provisioning.Storage.StorageActiveDirectoryProperties.ActiveDirectoryDomainGuid" /> instead.
+             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,8 +188,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
@@ -156,7 +197,14 @@
       <Docs>
         <summary>
             Specifies the primary domain that the AD DNS server is authoritative
-            for.
+            for. This property is required if directoryServiceOptions is set to AD
+            (AD DS authentication). If directoryServiceOptions is set to AADDS
+            (Entra DS authentication), providing this property is optional, as it
+            will be inferred automatically if omitted. If directoryServiceOptions
+            is set to AADKERB (Entra authentication), this property is optional;
+            it is needed to support configuration of directory- and file-level
+            permissions via Windows File Explorer, but is not required for
+            authentication.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -171,15 +219,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the security identifier (SID).
+            Specifies the security identifier (SID) of the AD domain. If
+            directoryServiceOptions is set to AD (AD DS authentication), this
+            property is required. Otherwise, it can be omitted.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -194,15 +244,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the Active Directory forest to get.
+            Specifies the Active Directory forest to get. If
+            directoryServiceOptions is set to AD (AD DS authentication), this
+            property is required. Otherwise, it can be omitted.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -217,15 +269,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the NetBIOS domain name.
+            Specifies the NetBIOS domain name. If directoryServiceOptions is set to
+            AD (AD DS authentication), this property is required. Otherwise, it
+            can be omitted.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -240,15 +294,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the Active Directory SAMAccountName for Azure Storage.
+            Specifies the Active Directory SAMAccountName for Azure Storage. If
+            directoryServiceOptions is set to AD (AD DS authentication), this
+            property is optional. If provided, accountType should also be
+            provided. For directoryServiceOptions AADDS (Entra DS authentication)
+            or AADKERB (Entra authentication), this property can be omitted.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

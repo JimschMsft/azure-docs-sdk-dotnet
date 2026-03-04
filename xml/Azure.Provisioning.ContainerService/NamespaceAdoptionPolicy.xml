@@ -1,0 +1,88 @@
+<Type Name="NamespaceAdoptionPolicy" FullName="Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy">
+  <TypeSignature Language="C#" Value="public enum NamespaceAdoptionPolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NamespaceAdoptionPolicy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NamespaceAdoptionPolicy" />
+  <TypeSignature Language="F#" Value="type NamespaceAdoptionPolicy = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Action if Kubernetes namespace with same name already exists.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy Always = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 2" Usage="Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Always take over the existing namespace to be managed by ARM, some
+            fields might be overwritten.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IfIdentical">
+      <MemberSignature Language="C#" Value="IfIdentical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy IfIdentical = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy.IfIdentical" />
+      <MemberSignature Language="VB.NET" Value="IfIdentical" />
+      <MemberSignature Language="F#" Value="IfIdentical = 1" Usage="Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy.IfIdentical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Take over the existing namespace to be managed by ARM, if there is no
+            difference.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy Never = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.NamespaceAdoptionPolicy</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            If the namespace already exists in Kubernetes, attempts to create that
+            same namespace in ARM will fail.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

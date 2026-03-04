@@ -1,0 +1,134 @@
+<Type Name="AgentPoolSecurityProfile" FullName="Azure.Provisioning.ContainerService.AgentPoolSecurityProfile">
+  <TypeSignature Language="C#" Value="public class AgentPoolSecurityProfile : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AgentPoolSecurityProfile extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.AgentPoolSecurityProfile" />
+  <TypeSignature Language="VB.NET" Value="Public Class AgentPoolSecurityProfile&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type AgentPoolSecurityProfile = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The security settings of an agent pool.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AgentPoolSecurityProfile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new AgentPoolSecurityProfile.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="agentPoolSecurityProfile.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of AgentPoolSecurityProfile.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSecureBootEnabled">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsSecureBootEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsSecureBootEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.IsSecureBootEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSecureBootEnabled As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsSecureBootEnabled : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.IsSecureBootEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Secure Boot is a feature of Trusted Launch which ensures that only
+            signed operating systems and drivers can boot. For more details, see
+            aka.ms/aks/trustedlaunch.  If not specified, the default is false.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVtpmEnabled">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsVtpmEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsVtpmEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.IsVtpmEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsVtpmEnabled As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsVtpmEnabled : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.IsVtpmEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            vTPM is a Trusted Launch feature for configuring a dedicated secure
+            vault for keys and measurements held locally on the node. For more
+            details, see aka.ms/aks/trustedlaunch. If not specified, the default
+            is false.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SshAccess">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.AgentPoolSshAccess&gt; SshAccess { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.AgentPoolSshAccess&gt; SshAccess" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.SshAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property SshAccess As BicepValue(Of AgentPoolSshAccess)" />
+      <MemberSignature Language="F#" Value="member this.SshAccess : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.AgentPoolSshAccess&gt; with get, set" Usage="Azure.Provisioning.ContainerService.AgentPoolSecurityProfile.SshAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.AgentPoolSshAccess&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SSH access method of an agent pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

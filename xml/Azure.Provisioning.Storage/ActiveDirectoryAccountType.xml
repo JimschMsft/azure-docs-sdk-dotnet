@@ -10,13 +10,18 @@
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
     <summary>
-            Specifies the Active Directory account type for Azure Storage.
+            Specifies the Active Directory account type for Azure Storage. If
+            directoryServiceOptions is set to AD (AD DS authentication), this property
+            is optional. If provided, samAccountName should also be provided. For
+            directoryServiceOptions AADDS (Entra DS authentication) or AADKERB (Entra
+            authentication), this property can be omitted.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,8 +35,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.Storage.ActiveDirectoryAccountType</ReturnType>
@@ -52,8 +57,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.Storage.ActiveDirectoryAccountType</ReturnType>

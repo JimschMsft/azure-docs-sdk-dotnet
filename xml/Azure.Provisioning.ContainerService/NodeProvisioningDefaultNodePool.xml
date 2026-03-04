@@ -1,0 +1,73 @@
+<Type Name="NodeProvisioningDefaultNodePool" FullName="Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool">
+  <TypeSignature Language="C#" Value="public enum NodeProvisioningDefaultNodePool" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NodeProvisioningDefaultNodePool extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NodeProvisioningDefaultNodePool" />
+  <TypeSignature Language="F#" Value="type NodeProvisioningDefaultNodePool = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            The set of default Karpenter NodePools (CRDs) configured for node
+            provisioning. This field has no effect unless mode is 'Auto'.
+            Warning: Changing this from Auto to None on an existing cluster will cause
+            the default Karpenter NodePools to be deleted, which will drain and delete
+            the nodes associated with those pools. It is strongly recommended to not
+            do this unless there are idle nodes ready to take the pods evicted by that
+            action. If not specified, the default is Auto. For more information see
+            aka.ms/aks/nap#node-pools.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool Auto = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 1" Usage="Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            A standard set of Karpenter NodePools are provisioned.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.NodeProvisioningDefaultNodePool</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            No Karpenter NodePools are provisioned automatically. Automatic scaling
+            will not happen unless the user creates one or more NodePool CRD
+            instances.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

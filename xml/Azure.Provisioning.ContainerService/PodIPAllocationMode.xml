@@ -1,0 +1,76 @@
+<Type Name="PodIPAllocationMode" FullName="Azure.Provisioning.ContainerService.PodIPAllocationMode">
+  <TypeSignature Language="C#" Value="public enum PodIPAllocationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PodIPAllocationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.PodIPAllocationMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PodIPAllocationMode" />
+  <TypeSignature Language="F#" Value="type PodIPAllocationMode = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Pod IP Allocation Mode. The IP allocation mode for pods in the agent pool.
+            Must be used with podSubnetId. The default is
+            'DynamicIndividual'.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DynamicIndividual">
+      <MemberSignature Language="C#" Value="DynamicIndividual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.PodIPAllocationMode DynamicIndividual = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.PodIPAllocationMode.DynamicIndividual" />
+      <MemberSignature Language="VB.NET" Value="DynamicIndividual" />
+      <MemberSignature Language="F#" Value="DynamicIndividual = 0" Usage="Azure.Provisioning.ContainerService.PodIPAllocationMode.DynamicIndividual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.PodIPAllocationMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Each node gets allocated with a non-contiguous list of IP addresses
+            assignable to pods. This is better for maximizing a small to medium
+            subnet of size /16 or smaller. The Azure CNI cluster with dynamic IP
+            allocation defaults to this mode if the customer does not explicitly
+            specify a podIPAllocationMode.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticBlock">
+      <MemberSignature Language="C#" Value="StaticBlock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.PodIPAllocationMode StaticBlock = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.PodIPAllocationMode.StaticBlock" />
+      <MemberSignature Language="VB.NET" Value="StaticBlock" />
+      <MemberSignature Language="F#" Value="StaticBlock = 1" Usage="Azure.Provisioning.ContainerService.PodIPAllocationMode.StaticBlock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.PodIPAllocationMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Each node is statically allocated CIDR block(s) of size /28 = 16 IPs
+            per block to satisfy the maxPods per node. Number of CIDR blocks &gt;=
+            (maxPods / 16). The block, rather than a single IP, counts against the
+            Azure Vnet Private IP limit of 65K. Therefore block mode is suitable
+            for running larger workloads with more than the current limit of 65K
+            pods in a cluster. This mode is better suited to scale with larger
+            subnets of /15 or bigger.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

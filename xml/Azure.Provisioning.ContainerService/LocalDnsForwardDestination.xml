@@ -1,0 +1,77 @@
+<Type Name="LocalDnsForwardDestination" FullName="Azure.Provisioning.ContainerService.LocalDnsForwardDestination">
+  <TypeSignature Language="C#" Value="public enum LocalDnsForwardDestination" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LocalDnsForwardDestination extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.LocalDnsForwardDestination" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LocalDnsForwardDestination" />
+  <TypeSignature Language="F#" Value="type LocalDnsForwardDestination = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Destination server for DNS queries to be forwarded from localDNS.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClusterCoreDns">
+      <MemberSignature Language="C#" Value="ClusterCoreDns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.LocalDnsForwardDestination ClusterCoreDns = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.LocalDnsForwardDestination.ClusterCoreDns" />
+      <MemberSignature Language="VB.NET" Value="ClusterCoreDns" />
+      <MemberSignature Language="F#" Value="ClusterCoreDns = 0" Usage="Azure.Provisioning.ContainerService.LocalDnsForwardDestination.ClusterCoreDns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="ClusterCoreDNS")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="ClusterCoreDNS")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.LocalDnsForwardDestination</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Forward DNS queries from localDNS to cluster CoreDNS.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VnetDns">
+      <MemberSignature Language="C#" Value="VnetDns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.LocalDnsForwardDestination VnetDns = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.LocalDnsForwardDestination.VnetDns" />
+      <MemberSignature Language="VB.NET" Value="VnetDns" />
+      <MemberSignature Language="F#" Value="VnetDns = 1" Usage="Azure.Provisioning.ContainerService.LocalDnsForwardDestination.VnetDns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="VnetDNS")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="VnetDNS")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.LocalDnsForwardDestination</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Forward DNS queries from localDNS to DNS server configured in the VNET.
+            A VNET can have multiple DNS servers configured.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

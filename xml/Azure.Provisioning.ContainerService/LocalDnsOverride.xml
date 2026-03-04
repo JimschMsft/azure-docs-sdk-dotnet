@@ -1,0 +1,245 @@
+<Type Name="LocalDnsOverride" FullName="Azure.Provisioning.ContainerService.LocalDnsOverride">
+  <TypeSignature Language="C#" Value="public class LocalDnsOverride : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalDnsOverride extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerService.LocalDnsOverride" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalDnsOverride&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type LocalDnsOverride = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Overrides for localDNS profile.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalDnsOverride ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.LocalDnsOverride.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new LocalDnsOverride.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheDurationInSeconds">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; CacheDurationInSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; CacheDurationInSeconds" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.CacheDurationInSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheDurationInSeconds As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.CacheDurationInSeconds : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.CacheDurationInSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Cache max TTL in seconds. See [cache
+            plugin](https://coredns.io/plugins/cache) for more information.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerService.LocalDnsOverride.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="localDnsOverride.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of LocalDnsOverride.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForwardDestination">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsForwardDestination&gt; ForwardDestination { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.LocalDnsForwardDestination&gt; ForwardDestination" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.ForwardDestination" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForwardDestination As BicepValue(Of LocalDnsForwardDestination)" />
+      <MemberSignature Language="F#" Value="member this.ForwardDestination : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsForwardDestination&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.ForwardDestination" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsForwardDestination&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Destination server for DNS queries to be forwarded from localDNS.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForwardPolicy">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsForwardPolicy&gt; ForwardPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.LocalDnsForwardPolicy&gt; ForwardPolicy" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.ForwardPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForwardPolicy As BicepValue(Of LocalDnsForwardPolicy)" />
+      <MemberSignature Language="F#" Value="member this.ForwardPolicy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsForwardPolicy&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.ForwardPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsForwardPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Forward policy for selecting upstream DNS server. See [forward
+            plugin](https://coredns.io/plugins/forward) for more information.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; MaxConcurrent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; MaxConcurrent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.MaxConcurrent" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrent As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrent : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.MaxConcurrent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximum number of concurrent queries. See [forward
+            plugin](https://coredns.io/plugins/forward) for more information.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocol">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsProtocol&gt; Protocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.LocalDnsProtocol&gt; Protocol" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.Protocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property Protocol As BicepValue(Of LocalDnsProtocol)" />
+      <MemberSignature Language="F#" Value="member this.Protocol : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsProtocol&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.Protocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsProtocol&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enforce TCP or prefer UDP protocol for connections from localDNS to
+            upstream DNS server.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryLogging">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsQueryLogging&gt; QueryLogging { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.LocalDnsQueryLogging&gt; QueryLogging" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.QueryLogging" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryLogging As BicepValue(Of LocalDnsQueryLogging)" />
+      <MemberSignature Language="F#" Value="member this.QueryLogging : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsQueryLogging&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.QueryLogging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsQueryLogging&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Log level for DNS queries in localDNS.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServeStale">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsServeStale&gt; ServeStale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ContainerService.LocalDnsServeStale&gt; ServeStale" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.ServeStale" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServeStale As BicepValue(Of LocalDnsServeStale)" />
+      <MemberSignature Language="F#" Value="member this.ServeStale : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsServeStale&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.ServeStale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerService.LocalDnsServeStale&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Policy for serving stale data. See [cache
+            plugin](https://coredns.io/plugins/cache) for more information.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServeStaleDurationInSeconds">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; ServeStaleDurationInSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; ServeStaleDurationInSeconds" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerService.LocalDnsOverride.ServeStaleDurationInSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServeStaleDurationInSeconds As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ServeStaleDurationInSeconds : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.ContainerService.LocalDnsOverride.ServeStaleDurationInSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Serve stale duration in seconds. See [cache
+            plugin](https://coredns.io/plugins/cache) for more information.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,8 +13,9 @@
   </Base>
   <Docs>
     <summary>
-            This can only be set at cluster creation time and cannot be changed later.
-            For more information see [egress outbound
+            The outbound (egress) routing method. This can only be set at cluster
+            creation time and cannot be changed later. For more information see
+            [egress outbound
             type](https://docs.microsoft.com/azure/aks/egress-outboundtype).
             </summary>
     <remarks>To be added.</remarks>
@@ -74,6 +75,35 @@
       <Docs>
         <summary>
             The AKS-managed NAT gateway is used for egress.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ContainerService.ContainerServiceOutboundType None = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ContainerService.ContainerServiceOutboundType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 4" Usage="Azure.Provisioning.ContainerService.ContainerServiceOutboundType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(Name="none")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(Name="none")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ContainerService.ContainerServiceOutboundType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            The AKS cluster is not set with any outbound-type. All AKS nodes
+            follows Azure VM default outbound behavior. Please refer to
+            https://azure.microsoft.com/en-us/updates/default-outbound-access-for-vms-in-azure-will-be-retired-transition-to-a-new-method-of-internet-access/.
             </summary>
       </Docs>
     </Member>

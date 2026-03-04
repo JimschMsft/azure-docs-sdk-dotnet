@@ -1,13 +1,9 @@
 <Type Name="StorageAccount" FullName="Azure.Provisioning.Storage.StorageAccount">
-  <TypeSignature Language="C#" Value="public class StorageAccount : Azure.Provisioning.Primitives.ProvisionableResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageAccount extends Azure.Provisioning.Primitives.ProvisionableResource" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class StorageAccount : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageAccount extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Storage.StorageAccount" />
-  <TypeSignature Language="VB.NET" Value="Public Class StorageAccount&#xA;Inherits ProvisionableResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type StorageAccount = class&#xA;    inherit ProvisionableResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class StorageAccount : Azure.Provisioning.Primitives.Resource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageAccount extends Azure.Provisioning.Primitives.Resource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class StorageAccount&#xA;Inherits Resource" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type StorageAccount = class&#xA;    inherit Resource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class StorageAccount&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type StorageAccount = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning</AssemblyName>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
@@ -20,10 +16,10 @@
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
     <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.Primitives.Resource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -34,34 +30,23 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StorageAccount (string bicepIdentifier, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public StorageAccount (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Storage.StorageAccount.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.Storage.StorageAccount : string * string -&gt; Azure.Provisioning.Storage.StorageAccount" Usage="new Azure.Provisioning.Storage.StorageAccount (bicepIdentifier, resourceVersion)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public StorageAccount (string identifierName, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.Storage.StorageAccount : string * string -&gt; Azure.Provisioning.Storage.StorageAccount" Usage="new Azure.Provisioning.Storage.StorageAccount (identifierName, resourceVersion)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.Storage.StorageAccount : string * string -&gt; Azure.Provisioning.Storage.StorageAccount" Usage="new Azure.Provisioning.Storage.StorageAccount (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="bicepIdentifier" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="identifierName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceVersion" Type="System.String" Index="1" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="bicepIdentifier">
-            The the Bicep identifier name of the StorageAccount resource.  This can
-            be used to refer to the resource in expressions, but is not the Azure
-            name of the resource.  This value can contain letters, numbers, and
-            underscores.
-            </param>
-        <param name="identifierName">
             The the Bicep identifier name of the StorageAccount resource.  This can
             be used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -83,8 +68,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountAccessTier&gt;</ReturnType>
@@ -109,8 +94,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -133,8 +118,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -160,8 +145,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.AllowedCopyScope&gt;</ReturnType>
@@ -184,8 +169,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -203,24 +188,19 @@
       </Docs>
     </Member>
     <Member MemberName="AzureFilesIdentityBasedAuthentication">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.FilesIdentityBasedAuthentication AzureFilesIdentityBasedAuthentication { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.FilesIdentityBasedAuthentication AzureFilesIdentityBasedAuthentication" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.FilesIdentityBasedAuthentication AzureFilesIdentityBasedAuthentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.FilesIdentityBasedAuthentication AzureFilesIdentityBasedAuthentication" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.AzureFilesIdentityBasedAuthentication" />
-      <MemberSignature Language="VB.NET" Value="Public Property AzureFilesIdentityBasedAuthentication As FilesIdentityBasedAuthentication" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.AzureFilesIdentityBasedAuthentication : Azure.Provisioning.Storage.FilesIdentityBasedAuthentication with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.AzureFilesIdentityBasedAuthentication" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.FilesIdentityBasedAuthentication&gt; AzureFilesIdentityBasedAuthentication { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.FilesIdentityBasedAuthentication&gt; AzureFilesIdentityBasedAuthentication" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property AzureFilesIdentityBasedAuthentication As BicepValue(Of FilesIdentityBasedAuthentication)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.AzureFilesIdentityBasedAuthentication : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.FilesIdentityBasedAuthentication&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.AzureFilesIdentityBasedAuthentication" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureFilesIdentityBasedAuthentication As FilesIdentityBasedAuthentication" />
+      <MemberSignature Language="F#" Value="member this.AzureFilesIdentityBasedAuthentication : Azure.Provisioning.Storage.FilesIdentityBasedAuthentication with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.AzureFilesIdentityBasedAuthentication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.FilesIdentityBasedAuthentication</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.FilesIdentityBasedAuthentication&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.FilesIdentityBasedAuthentication</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -231,24 +211,19 @@
       </Docs>
     </Member>
     <Member MemberName="BlobRestoreStatus">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.BlobRestoreStatus BlobRestoreStatus { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.BlobRestoreStatus BlobRestoreStatus" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.BlobRestoreStatus BlobRestoreStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.BlobRestoreStatus BlobRestoreStatus" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.BlobRestoreStatus" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlobRestoreStatus As BlobRestoreStatus" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.BlobRestoreStatus : Azure.Provisioning.Storage.BlobRestoreStatus" Usage="Azure.Provisioning.Storage.StorageAccount.BlobRestoreStatus" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.BlobRestoreStatus&gt; BlobRestoreStatus { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.BlobRestoreStatus&gt; BlobRestoreStatus" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlobRestoreStatus As BicepValue(Of BlobRestoreStatus)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.BlobRestoreStatus : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.BlobRestoreStatus&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.BlobRestoreStatus" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlobRestoreStatus As BlobRestoreStatus" />
+      <MemberSignature Language="F#" Value="member this.BlobRestoreStatus : Azure.Provisioning.Storage.BlobRestoreStatus" Usage="Azure.Provisioning.Storage.StorageAccount.BlobRestoreStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.BlobRestoreStatus</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.BlobRestoreStatus&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.BlobRestoreStatus</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -267,8 +242,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -290,8 +265,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.Authorization.RoleAssignment</ReturnType>
@@ -312,37 +287,31 @@
       </Docs>
     </Member>
     <Member MemberName="CreateRoleAssignment">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Authorization.RoleAssignment CreateRoleAssignment (Azure.Provisioning.Storage.StorageBuiltInRole role, Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; principalType, Azure.Provisioning.BicepValue&lt;Guid&gt; principalId, string? bicepIdentifierSuffix = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Provisioning.Authorization.RoleAssignment CreateRoleAssignment(valuetype Azure.Provisioning.Storage.StorageBuiltInRole role, class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; principalType, class Azure.Provisioning.BicepValue`1&lt;valuetype System.Guid&gt; principalId, string bicepIdentifierSuffix) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Authorization.RoleAssignment CreateRoleAssignment (Azure.Provisioning.Storage.StorageBuiltInRole role, Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; principalType, Azure.Provisioning.BicepValue&lt;Guid&gt; principalId, string? bicepIdentifierSuffix = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Provisioning.Authorization.RoleAssignment CreateRoleAssignment(valuetype Azure.Provisioning.Storage.StorageBuiltInRole role, class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; principalType, class Azure.Provisioning.BicepValue`1&lt;valuetype System.Guid&gt; principalId, string bicepIdentifierSuffix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Storage.StorageAccount.CreateRoleAssignment(Azure.Provisioning.Storage.StorageBuiltInRole,Azure.Provisioning.BicepValue{Azure.Provisioning.Authorization.RoleManagementPrincipalType},Azure.Provisioning.BicepValue{System.Guid},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function CreateRoleAssignment (role As StorageBuiltInRole, principalType As BicepValue(Of RoleManagementPrincipalType), principalId As BicepValue(Of Guid), Optional bicepIdentifierSuffix As String = Nothing) As RoleAssignment" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.CreateRoleAssignment : Azure.Provisioning.Storage.StorageBuiltInRole * Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; * Azure.Provisioning.BicepValue&lt;Guid&gt; * string -&gt; Azure.Provisioning.Authorization.RoleAssignment" Usage="storageAccount.CreateRoleAssignment (role, principalType, principalId, bicepIdentifierSuffix)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Authorization.RoleAssignment CreateRoleAssignment (Azure.Provisioning.Storage.StorageBuiltInRole role, Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; principalType, Azure.Provisioning.BicepValue&lt;Guid&gt; principalId, string? identifierNameSuffix = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Provisioning.Authorization.RoleAssignment CreateRoleAssignment(valuetype Azure.Provisioning.Storage.StorageBuiltInRole role, class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; principalType, class Azure.Provisioning.BicepValue`1&lt;valuetype System.Guid&gt; principalId, string identifierNameSuffix) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Function CreateRoleAssignment (role As StorageBuiltInRole, principalType As BicepValue(Of RoleManagementPrincipalType), principalId As BicepValue(Of Guid), Optional identifierNameSuffix As String = Nothing) As RoleAssignment" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.CreateRoleAssignment : Azure.Provisioning.Storage.StorageBuiltInRole * Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; * Azure.Provisioning.BicepValue&lt;Guid&gt; * string -&gt; Azure.Provisioning.Authorization.RoleAssignment" Usage="storageAccount.CreateRoleAssignment (role, principalType, principalId, identifierNameSuffix)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateRoleAssignment (role As StorageBuiltInRole, principalType As BicepValue(Of RoleManagementPrincipalType), principalId As BicepValue(Of Guid), Optional bicepIdentifierSuffix As String = Nothing) As RoleAssignment" />
+      <MemberSignature Language="F#" Value="member this.CreateRoleAssignment : Azure.Provisioning.Storage.StorageBuiltInRole * Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt; * Azure.Provisioning.BicepValue&lt;Guid&gt; * string -&gt; Azure.Provisioning.Authorization.RoleAssignment" Usage="storageAccount.CreateRoleAssignment (role, principalType, principalId, bicepIdentifierSuffix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.Authorization.RoleAssignment</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="role" Type="Azure.Provisioning.Storage.StorageBuiltInRole" Index="0" />
-        <Parameter Name="principalType" Type="Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt;" Index="1" />
-        <Parameter Name="principalId" Type="Azure.Provisioning.BicepValue&lt;System.Guid&gt;" Index="2" />
-        <Parameter Name="bicepIdentifierSuffix" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="identifierNameSuffix" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="role" Type="Azure.Provisioning.Storage.StorageBuiltInRole" />
+        <Parameter Name="principalType" Type="Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Authorization.RoleManagementPrincipalType&gt;" />
+        <Parameter Name="principalId" Type="Azure.Provisioning.BicepValue&lt;System.Guid&gt;" />
+        <Parameter Name="bicepIdentifierSuffix" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="role">The role to grant.</param>
         <param name="principalType">The type of the principal to assign to.</param>
         <param name="principalId">The principal to assign to.</param>
         <param name="bicepIdentifierSuffix">Optional role assignment identifier name suffix.</param>
-        <param name="identifierNameSuffix">Optional role assignment identifier name suffix.</param>
         <summary>
             Creates a role assignment for a principal that grants access to this
             StorageAccount.
@@ -352,24 +321,19 @@
       </Docs>
     </Member>
     <Member MemberName="CustomDomain">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageCustomDomain CustomDomain { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageCustomDomain CustomDomain" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageCustomDomain CustomDomain { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageCustomDomain CustomDomain" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.CustomDomain" />
-      <MemberSignature Language="VB.NET" Value="Public Property CustomDomain As StorageCustomDomain" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.CustomDomain : Azure.Provisioning.Storage.StorageCustomDomain with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.CustomDomain" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageCustomDomain&gt; CustomDomain { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageCustomDomain&gt; CustomDomain" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property CustomDomain As BicepValue(Of StorageCustomDomain)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.CustomDomain : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageCustomDomain&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.CustomDomain" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomDomain As StorageCustomDomain" />
+      <MemberSignature Language="F#" Value="member this.CustomDomain : Azure.Provisioning.Storage.StorageCustomDomain with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.CustomDomain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageCustomDomain</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageCustomDomain&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageCustomDomain</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -392,6 +356,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -413,8 +378,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageDnsEndpointType&gt;</ReturnType>
@@ -439,8 +404,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -455,24 +420,19 @@
       </Docs>
     </Member>
     <Member MemberName="Encryption">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountEncryption Encryption { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountEncryption Encryption" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountEncryption Encryption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountEncryption Encryption" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.Encryption" />
-      <MemberSignature Language="VB.NET" Value="Public Property Encryption As StorageAccountEncryption" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.Encryption : Azure.Provisioning.Storage.StorageAccountEncryption with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Encryption" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEncryption&gt; Encryption { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageAccountEncryption&gt; Encryption" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property Encryption As BicepValue(Of StorageAccountEncryption)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.Encryption : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEncryption&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Encryption" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encryption As StorageAccountEncryption" />
+      <MemberSignature Language="F#" Value="member this.Encryption : Azure.Provisioning.Storage.StorageAccountEncryption with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Encryption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageAccountEncryption</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEncryption&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageAccountEncryption</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -484,24 +444,19 @@
       </Docs>
     </Member>
     <Member MemberName="ExtendedLocation">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ExtendedAzureLocation ExtendedLocation { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ExtendedAzureLocation ExtendedLocation" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ExtendedAzureLocation ExtendedLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ExtendedAzureLocation ExtendedLocation" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.ExtendedLocation" />
-      <MemberSignature Language="VB.NET" Value="Public Property ExtendedLocation As ExtendedAzureLocation" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.ExtendedLocation : Azure.Provisioning.Resources.ExtendedAzureLocation with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.ExtendedLocation" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ExtendedAzureLocation&gt; ExtendedLocation { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ExtendedAzureLocation&gt; ExtendedLocation" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property ExtendedLocation As BicepValue(Of ExtendedAzureLocation)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.ExtendedLocation : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ExtendedAzureLocation&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.ExtendedLocation" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedLocation As ExtendedAzureLocation" />
+      <MemberSignature Language="F#" Value="member this.ExtendedLocation : Azure.Provisioning.Resources.ExtendedAzureLocation with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.ExtendedLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Resources.ExtendedAzureLocation</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ExtendedAzureLocation&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ExtendedAzureLocation</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -514,37 +469,26 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Storage.StorageAccount FromExisting (string bicepIdentifier, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Storage.StorageAccount FromExisting(string bicepIdentifier, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Storage.StorageAccount FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Storage.StorageAccount FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Storage.StorageAccount.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As StorageAccount" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Storage.StorageAccount" Usage="Azure.Provisioning.Storage.StorageAccount.FromExisting (bicepIdentifier, resourceVersion)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Storage.StorageAccount FromExisting (string identifierName, string? resourceVersion = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Storage.StorageAccount FromExisting(string identifierName, string resourceVersion) cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As StorageAccount" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Storage.StorageAccount" Usage="Azure.Provisioning.Storage.StorageAccount.FromExisting (identifierName, resourceVersion)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As StorageAccount" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Storage.StorageAccount" Usage="Azure.Provisioning.Storage.StorageAccount.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.Storage.StorageAccount</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bicepIdentifier" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="identifierName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceVersion" Type="System.String" Index="1" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="bicepIdentifier">
-            The the Bicep identifier name of the StorageAccount resource.  This can
-            be used to refer to the resource in expressions, but is not the Azure
-            name of the resource.  This value can contain letters, numbers, and
-            underscores.
-            </param>
-        <param name="identifierName">
             The the Bicep identifier name of the StorageAccount resource.  This can
             be used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -559,24 +503,19 @@
       </Docs>
     </Member>
     <Member MemberName="GeoReplicationStats">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.GeoReplicationStatistics GeoReplicationStats { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.GeoReplicationStatistics GeoReplicationStats" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.GeoReplicationStatistics GeoReplicationStats { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.GeoReplicationStatistics GeoReplicationStats" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.GeoReplicationStats" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeoReplicationStats As GeoReplicationStatistics" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.GeoReplicationStats : Azure.Provisioning.Storage.GeoReplicationStatistics" Usage="Azure.Provisioning.Storage.StorageAccount.GeoReplicationStats" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.GeoReplicationStatistics&gt; GeoReplicationStats { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.GeoReplicationStatistics&gt; GeoReplicationStats" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeoReplicationStats As BicepValue(Of GeoReplicationStatistics)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.GeoReplicationStats : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.GeoReplicationStatistics&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.GeoReplicationStats" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GeoReplicationStats As GeoReplicationStatistics" />
+      <MemberSignature Language="F#" Value="member this.GeoReplicationStats : Azure.Provisioning.Storage.GeoReplicationStatistics" Usage="Azure.Provisioning.Storage.StorageAccount.GeoReplicationStats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.GeoReplicationStatistics</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.GeoReplicationStatistics&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.GeoReplicationStatistics</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -595,8 +534,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Storage.StorageAccountKey&gt;</ReturnType>
@@ -619,8 +558,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -649,8 +588,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
@@ -664,24 +603,19 @@
       </Docs>
     </Member>
     <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ManagedServiceIdentity Identity { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ManagedServiceIdentity Identity" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ManagedServiceIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ManagedServiceIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.Identity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.Resources.ManagedServiceIdentity with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Identity" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt; Identity { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ManagedServiceIdentity&gt; Identity" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property Identity As BicepValue(Of ManagedServiceIdentity)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Identity" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.Resources.ManagedServiceIdentity with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Resources.ManagedServiceIdentity</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ManagedServiceIdentity</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -692,24 +626,19 @@
       </Docs>
     </Member>
     <Member MemberName="ImmutableStorageWithVersioning">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.ImmutableStorageAccount ImmutableStorageWithVersioning { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.ImmutableStorageAccount ImmutableStorageWithVersioning" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.ImmutableStorageAccount ImmutableStorageWithVersioning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.ImmutableStorageAccount ImmutableStorageWithVersioning" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.ImmutableStorageWithVersioning" />
-      <MemberSignature Language="VB.NET" Value="Public Property ImmutableStorageWithVersioning As ImmutableStorageAccount" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.ImmutableStorageWithVersioning : Azure.Provisioning.Storage.ImmutableStorageAccount with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.ImmutableStorageWithVersioning" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.ImmutableStorageAccount&gt; ImmutableStorageWithVersioning { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.ImmutableStorageAccount&gt; ImmutableStorageWithVersioning" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property ImmutableStorageWithVersioning As BicepValue(Of ImmutableStorageAccount)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.ImmutableStorageWithVersioning : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.ImmutableStorageAccount&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.ImmutableStorageWithVersioning" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImmutableStorageWithVersioning As ImmutableStorageAccount" />
+      <MemberSignature Language="F#" Value="member this.ImmutableStorageWithVersioning : Azure.Provisioning.Storage.ImmutableStorageAccount with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.ImmutableStorageWithVersioning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.ImmutableStorageAccount</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.ImmutableStorageAccount&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.ImmutableStorageAccount</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -731,6 +660,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -739,6 +669,29 @@
         <summary>
             If customer initiated account migration is in progress, the value will
             be true else it will be null.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBlobEnabled">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsBlobEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsBlobEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.IsBlobEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsBlobEnabled As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsBlobEnabled : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.IsBlobEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether Blob Geo Priority Replication is enabled for the
+            storage account.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -753,8 +706,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -778,6 +731,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -799,8 +753,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -823,8 +777,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -832,6 +786,29 @@
       <Docs>
         <summary>
             Account HierarchicalNamespace enabled if sets to true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIPv6EndpointToBePublished">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsIPv6EndpointToBePublished { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsIPv6EndpointToBePublished" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.IsIPv6EndpointToBePublished" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsIPv6EndpointToBePublished As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsIPv6EndpointToBePublished : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.IsIPv6EndpointToBePublished" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A boolean flag which indicates whether IPv6 storage endpoints are to be
+            published.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -846,8 +823,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -869,8 +846,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -892,8 +869,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -916,6 +893,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
@@ -930,24 +908,19 @@
       </Docs>
     </Member>
     <Member MemberName="KeyCreationTime">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountKeyCreationTime KeyCreationTime { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountKeyCreationTime KeyCreationTime" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountKeyCreationTime KeyCreationTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountKeyCreationTime KeyCreationTime" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.KeyCreationTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyCreationTime As StorageAccountKeyCreationTime" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.KeyCreationTime : Azure.Provisioning.Storage.StorageAccountKeyCreationTime" Usage="Azure.Provisioning.Storage.StorageAccount.KeyCreationTime" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountKeyCreationTime&gt; KeyCreationTime { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageAccountKeyCreationTime&gt; KeyCreationTime" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyCreationTime As BicepValue(Of StorageAccountKeyCreationTime)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.KeyCreationTime : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountKeyCreationTime&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.KeyCreationTime" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyCreationTime As StorageAccountKeyCreationTime" />
+      <MemberSignature Language="F#" Value="member this.KeyCreationTime : Azure.Provisioning.Storage.StorageAccountKeyCreationTime" Usage="Azure.Provisioning.Storage.StorageAccount.KeyCreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageAccountKeyCreationTime</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountKeyCreationTime&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageAccountKeyCreationTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -966,8 +939,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
@@ -989,8 +962,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageKind&gt;</ReturnType>
@@ -1012,8 +985,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.LargeFileSharesState&gt;</ReturnType>
@@ -1036,8 +1009,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -1062,8 +1035,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -1089,8 +1062,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageMinimumTlsVersion&gt;</ReturnType>
@@ -1113,8 +1086,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
@@ -1130,24 +1103,19 @@
       </Docs>
     </Member>
     <Member MemberName="NetworkRuleSet">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountNetworkRuleSet NetworkRuleSet { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountNetworkRuleSet NetworkRuleSet" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountNetworkRuleSet NetworkRuleSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountNetworkRuleSet NetworkRuleSet" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.NetworkRuleSet" />
-      <MemberSignature Language="VB.NET" Value="Public Property NetworkRuleSet As StorageAccountNetworkRuleSet" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.NetworkRuleSet : Azure.Provisioning.Storage.StorageAccountNetworkRuleSet with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.NetworkRuleSet" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountNetworkRuleSet&gt; NetworkRuleSet { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageAccountNetworkRuleSet&gt; NetworkRuleSet" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property NetworkRuleSet As BicepValue(Of StorageAccountNetworkRuleSet)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.NetworkRuleSet : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountNetworkRuleSet&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.NetworkRuleSet" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property NetworkRuleSet As StorageAccountNetworkRuleSet" />
+      <MemberSignature Language="F#" Value="member this.NetworkRuleSet : Azure.Provisioning.Storage.StorageAccountNetworkRuleSet with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.NetworkRuleSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageAccountNetworkRuleSet</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountNetworkRuleSet&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageAccountNetworkRuleSet</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1158,24 +1126,19 @@
       </Docs>
     </Member>
     <Member MemberName="PrimaryEndpoints">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountEndpoints PrimaryEndpoints { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountEndpoints PrimaryEndpoints" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountEndpoints PrimaryEndpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountEndpoints PrimaryEndpoints" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.PrimaryEndpoints" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryEndpoints As StorageAccountEndpoints" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.PrimaryEndpoints : Azure.Provisioning.Storage.StorageAccountEndpoints" Usage="Azure.Provisioning.Storage.StorageAccount.PrimaryEndpoints" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEndpoints&gt; PrimaryEndpoints { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageAccountEndpoints&gt; PrimaryEndpoints" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryEndpoints As BicepValue(Of StorageAccountEndpoints)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.PrimaryEndpoints : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEndpoints&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.PrimaryEndpoints" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryEndpoints As StorageAccountEndpoints" />
+      <MemberSignature Language="F#" Value="member this.PrimaryEndpoints : Azure.Provisioning.Storage.StorageAccountEndpoints" Usage="Azure.Provisioning.Storage.StorageAccount.PrimaryEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageAccountEndpoints</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEndpoints&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageAccountEndpoints</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1196,8 +1159,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -1205,6 +1168,29 @@
       <Docs>
         <summary>
             Gets the location of the primary data center for the storage account.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateEndpointConnectionResources">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Storage.StoragePrivateEndpointConnection&gt; PrivateEndpointConnectionResources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.Storage.StoragePrivateEndpointConnection&gt; PrivateEndpointConnectionResources" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.PrivateEndpointConnectionResources" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateEndpointConnectionResources As BicepList(Of StoragePrivateEndpointConnection)" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnectionResources : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Storage.StoragePrivateEndpointConnection&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.PrivateEndpointConnectionResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Storage.StoragePrivateEndpointConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of private endpoint connection associated with the specified
+            storage account.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1219,17 +1205,26 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Storage.StoragePrivateEndpointConnectionData&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            List of private endpoint connection associated with the specified
-            storage account.
-            </summary>
+             List of private endpoint connection associated with the specified
+             storage account.
+            
+             This property is obsoleted and will be removed in future versions. Please use
+             <see cref="P:Azure.Provisioning.Storage.StorageAccount.PrivateEndpointConnectionResources" /> instead.
+             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1243,8 +1238,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageProvisioningState&gt;</ReturnType>
@@ -1267,8 +1262,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StoragePublicNetworkAccess&gt;</ReturnType>
@@ -1285,24 +1280,19 @@
       </Docs>
     </Member>
     <Member MemberName="RoutingPreference">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageRoutingPreference RoutingPreference { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageRoutingPreference RoutingPreference" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageRoutingPreference RoutingPreference { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageRoutingPreference RoutingPreference" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.RoutingPreference" />
-      <MemberSignature Language="VB.NET" Value="Public Property RoutingPreference As StorageRoutingPreference" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.RoutingPreference : Azure.Provisioning.Storage.StorageRoutingPreference with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.RoutingPreference" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageRoutingPreference&gt; RoutingPreference { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageRoutingPreference&gt; RoutingPreference" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property RoutingPreference As BicepValue(Of StorageRoutingPreference)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.RoutingPreference : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageRoutingPreference&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.RoutingPreference" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoutingPreference As StorageRoutingPreference" />
+      <MemberSignature Language="F#" Value="member this.RoutingPreference : Azure.Provisioning.Storage.StorageRoutingPreference with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.RoutingPreference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageRoutingPreference</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageRoutingPreference&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageRoutingPreference</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1314,24 +1304,19 @@
       </Docs>
     </Member>
     <Member MemberName="SasPolicy">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountSasPolicy SasPolicy { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountSasPolicy SasPolicy" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountSasPolicy SasPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountSasPolicy SasPolicy" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.SasPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property SasPolicy As StorageAccountSasPolicy" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.SasPolicy : Azure.Provisioning.Storage.StorageAccountSasPolicy with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.SasPolicy" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountSasPolicy&gt; SasPolicy { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageAccountSasPolicy&gt; SasPolicy" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property SasPolicy As BicepValue(Of StorageAccountSasPolicy)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.SasPolicy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountSasPolicy&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.SasPolicy" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property SasPolicy As StorageAccountSasPolicy" />
+      <MemberSignature Language="F#" Value="member this.SasPolicy : Azure.Provisioning.Storage.StorageAccountSasPolicy with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.SasPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageAccountSasPolicy</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountSasPolicy&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageAccountSasPolicy</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1342,24 +1327,19 @@
       </Docs>
     </Member>
     <Member MemberName="SecondaryEndpoints">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountEndpoints SecondaryEndpoints { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountEndpoints SecondaryEndpoints" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountEndpoints SecondaryEndpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountEndpoints SecondaryEndpoints" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.SecondaryEndpoints" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecondaryEndpoints As StorageAccountEndpoints" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.SecondaryEndpoints : Azure.Provisioning.Storage.StorageAccountEndpoints" Usage="Azure.Provisioning.Storage.StorageAccount.SecondaryEndpoints" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEndpoints&gt; SecondaryEndpoints { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageAccountEndpoints&gt; SecondaryEndpoints" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecondaryEndpoints As BicepValue(Of StorageAccountEndpoints)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.SecondaryEndpoints : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEndpoints&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.SecondaryEndpoints" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecondaryEndpoints As StorageAccountEndpoints" />
+      <MemberSignature Language="F#" Value="member this.SecondaryEndpoints : Azure.Provisioning.Storage.StorageAccountEndpoints" Usage="Azure.Provisioning.Storage.StorageAccount.SecondaryEndpoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageAccountEndpoints</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountEndpoints&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageAccountEndpoints</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1380,8 +1360,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt;</ReturnType>
@@ -1397,24 +1377,19 @@
       </Docs>
     </Member>
     <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageSku Sku { get; set; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageSku Sku" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageSku Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageSku Sku" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As StorageSku" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.Storage.StorageSku with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Sku" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageSku&gt; Sku { get; set; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageSku&gt; Sku" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As BicepValue(Of StorageSku)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageSku&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Sku" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As StorageSku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.Storage.StorageSku with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Sku" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageSku</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageSku&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageSku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1433,8 +1408,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountStatus&gt;</ReturnType>
@@ -1457,8 +1432,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountStatus&gt;</ReturnType>
@@ -1483,6 +1458,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountProvisioningState&gt;</ReturnType>
@@ -1497,24 +1473,19 @@
       </Docs>
     </Member>
     <Member MemberName="StorageAccountSkuConversionStatus">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountSkuConversionStatus StorageAccountSkuConversionStatus { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountSkuConversionStatus StorageAccountSkuConversionStatus" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Storage.StorageAccountSkuConversionStatus StorageAccountSkuConversionStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Storage.StorageAccountSkuConversionStatus StorageAccountSkuConversionStatus" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.StorageAccountSkuConversionStatus" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageAccountSkuConversionStatus As StorageAccountSkuConversionStatus" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.StorageAccountSkuConversionStatus : Azure.Provisioning.Storage.StorageAccountSkuConversionStatus" Usage="Azure.Provisioning.Storage.StorageAccount.StorageAccountSkuConversionStatus" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountSkuConversionStatus&gt; StorageAccountSkuConversionStatus { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Storage.StorageAccountSkuConversionStatus&gt; StorageAccountSkuConversionStatus" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageAccountSkuConversionStatus As BicepValue(Of StorageAccountSkuConversionStatus)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.StorageAccountSkuConversionStatus : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountSkuConversionStatus&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.StorageAccountSkuConversionStatus" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageAccountSkuConversionStatus As StorageAccountSkuConversionStatus" />
+      <MemberSignature Language="F#" Value="member this.StorageAccountSkuConversionStatus : Azure.Provisioning.Storage.StorageAccountSkuConversionStatus" Usage="Azure.Provisioning.Storage.StorageAccount.StorageAccountSkuConversionStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Storage.StorageAccountSkuConversionStatus</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountSkuConversionStatus&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Storage.StorageAccountSkuConversionStatus</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1526,24 +1497,19 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.Storage.StorageAccount.SystemData" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.Storage.StorageAccount.SystemData" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.Storage.StorageAccount.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">Azure.Provisioning.Resources.SystemData</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1562,8 +1528,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Provisioning.BicepDictionary&lt;System.String&gt;</ReturnType>
@@ -1575,6 +1541,51 @@
             resource groups). A maximum of 15 tags can be provided for a resource.
             Each tag must have a key with a length no greater than 128 characters
             and a value with a length no greater than 256 characters.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZonePlacementPolicy">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountZonePlacementPolicy&gt; ZonePlacementPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Storage.StorageAccountZonePlacementPolicy&gt; ZonePlacementPolicy" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.ZonePlacementPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ZonePlacementPolicy As BicepValue(Of StorageAccountZonePlacementPolicy)" />
+      <MemberSignature Language="F#" Value="member this.ZonePlacementPolicy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountZonePlacementPolicy&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.ZonePlacementPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Storage.StorageAccountZonePlacementPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The availability zone pinning policy for the storage account.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zones">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; Zones { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; Zones" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Storage.StorageAccount.Zones" />
+      <MemberSignature Language="VB.NET" Value="Public Property Zones As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Zones : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.Storage.StorageAccount.Zones" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optional. Gets or sets the pinned logical availability zone for the
+            storage account.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

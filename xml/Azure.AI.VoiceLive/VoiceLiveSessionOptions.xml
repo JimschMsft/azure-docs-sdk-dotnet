@@ -215,6 +215,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InterimResponse">
+      <MemberSignature Language="C#" Value="public BinaryData InterimResponse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData InterimResponse" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.VoiceLiveSessionOptions.InterimResponse" />
+      <MemberSignature Language="VB.NET" Value="Public Property InterimResponse As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.InterimResponse : BinaryData with get, set" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.InterimResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Configuration for interim response generation during latency or tool calls.
+            <para> To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para><remarks>
+            Supported types:
+            <list type="bullet"><item><description><see cref="T:Azure.AI.VoiceLive.StaticInterimResponseConfig" />. </description></item><item><description><see cref="T:Azure.AI.VoiceLive.LlmInterimResponseConfig" />. </description></item></list></remarks></para><para>
+            Examples:
+            <list type="bullet"><item><term> BinaryData.FromObjectAsJson("foo"). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromString("\"foo\""). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromObjectAsJson(new { key = "value" }). </term><description> Creates a payload of { "key": "value" }. </description></item><item><term> BinaryData.FromString("{\"key\": \"value\"}"). </term><description> Creates a payload of { "key": "value" }. </description></item></list></para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="JsonModelCreateCore">
       <MemberSignature Language="C#" Value="protected virtual Azure.AI.VoiceLive.VoiceLiveSessionOptions JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.AI.VoiceLive.VoiceLiveSessionOptions JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
@@ -424,6 +450,29 @@
         <param name="options"> The client options for reading and writing models. </param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReasoningEffort">
+      <MemberSignature Language="C#" Value="public Azure.AI.VoiceLive.ReasoningEffort? ReasoningEffort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.AI.VoiceLive.ReasoningEffort&gt; ReasoningEffort" />
+      <MemberSignature Language="DocId" Value="P:Azure.AI.VoiceLive.VoiceLiveSessionOptions.ReasoningEffort" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReasoningEffort As Nullable(Of ReasoningEffort)" />
+      <MemberSignature Language="F#" Value="member this.ReasoningEffort : Nullable&lt;Azure.AI.VoiceLive.ReasoningEffort&gt; with get, set" Usage="Azure.AI.VoiceLive.VoiceLiveSessionOptions.ReasoningEffort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.VoiceLive</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.AI.VoiceLive.ReasoningEffort&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constrains effort on reasoning for reasoning models. Check model documentation for supported values for each model.
+            Reducing reasoning effort can result in faster responses and fewer tokens used on reasoning in a response.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
