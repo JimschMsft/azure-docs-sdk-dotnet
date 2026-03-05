@@ -26,26 +26,35 @@
   </Docs>
   <Members>
     <Member MemberName="GetPendingUserInputRequestContents">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,Microsoft.Extensions.AI.UserInputRequestContent&gt;&gt; GetPendingUserInputRequestContents (this Microsoft.Agents.AI.AgentThread agentThread);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Extensions.AI.UserInputRequestContent&gt;&gt; GetPendingUserInputRequestContents(class Microsoft.Agents.AI.AgentThread agentThread) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Converters.HumanInTheLoopExtentions.GetPendingUserInputRequestContents(Microsoft.Agents.AI.AgentThread)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPendingUserInputRequestContents (agentThread As AgentThread) As Task(Of Dictionary(Of String, UserInputRequestContent))" />
-      <MemberSignature Language="F#" Value="static member GetPendingUserInputRequestContents : Microsoft.Agents.AI.AgentThread -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, Microsoft.Extensions.AI.UserInputRequestContent&gt;&gt;" Usage="Azure.AI.AgentServer.AgentFramework.Converters.HumanInTheLoopExtentions.GetPendingUserInputRequestContents agentThread" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;string,Microsoft.Extensions.AI.UserInputRequestContent&gt; GetPendingUserInputRequestContents (Microsoft.Agents.AI.AIAgent agent, Microsoft.Agents.AI.AgentSession? session);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Extensions.AI.UserInputRequestContent&gt; GetPendingUserInputRequestContents(class Microsoft.Agents.AI.AIAgent agent, class Microsoft.Agents.AI.AgentSession session) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.AgentServer.AgentFramework.Converters.HumanInTheLoopExtentions.GetPendingUserInputRequestContents(Microsoft.Agents.AI.AIAgent,Microsoft.Agents.AI.AgentSession)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPendingUserInputRequestContents (agent As AIAgent, session As AgentSession) As Dictionary(Of String, UserInputRequestContent)" />
+      <MemberSignature Language="F#" Value="static member GetPendingUserInputRequestContents : Microsoft.Agents.AI.AIAgent * Microsoft.Agents.AI.AgentSession -&gt; System.Collections.Generic.Dictionary&lt;string, Microsoft.Extensions.AI.UserInputRequestContent&gt;" Usage="Azure.AI.AgentServer.AgentFramework.Converters.HumanInTheLoopExtentions.GetPendingUserInputRequestContents (agent, session)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.AgentServer.AgentFramework</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Extensions.AI.UserInputRequestContent&gt;&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Extensions.AI.UserInputRequestContent&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="agentThread" Type="Microsoft.Agents.AI.AgentThread" RefType="this" />
+        <Parameter Name="agent" Type="Microsoft.Agents.AI.AIAgent" />
+        <Parameter Name="session" Type="Microsoft.Agents.AI.AgentSession">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
-        <param name="agentThread">Thread messages of the conversation.</param>
+        <param name="agent">The AI agent.</param>
+        <param name="session">The agent session.</param>
         <summary>
-            Filter FunctionApprovalRequestContents from an AgentThread's pending user input requests.
+            Filter FunctionApprovalRequestContents from an agent's session messages.
             </summary>
         <returns>A dictionary with function call_id and FunctionApprovalRequests that are pending for approval.</returns>
         <remarks>To be added.</remarks>
