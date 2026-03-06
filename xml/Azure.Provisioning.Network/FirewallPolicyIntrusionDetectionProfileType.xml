@@ -13,7 +13,13 @@
   </Base>
   <Docs>
     <summary>
-            Possible Intrusion Detection profile values.
+            Specifies the Intrusion Detection signature profile to apply.
+            Values:              - Off: IDPS profiles
+            disabled; uses the same signature set that existed before profiles.
+            - Emerging: Signatures of the newest, most recent threats.
+            - Core: Complete, modern, standard set of signatures.
+            - Extended: Core signatures plus older legacy signatures for
+            maximum coverage.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -60,12 +66,56 @@
             </summary>
       </Docs>
     </Member>
+    <Member MemberName="Core">
+      <MemberSignature Language="C#" Value="Core" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType Core = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Core" />
+      <MemberSignature Language="VB.NET" Value="Core" />
+      <MemberSignature Language="F#" Value="Core = 5" Usage="Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Core" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            Core.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Emerging">
+      <MemberSignature Language="C#" Value="Emerging" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType Emerging = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Emerging" />
+      <MemberSignature Language="VB.NET" Value="Emerging" />
+      <MemberSignature Language="F#" Value="Emerging = 4" Usage="Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Emerging" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            Emerging.
+            </summary>
+      </Docs>
+    </Member>
     <Member MemberName="Extended">
       <MemberSignature Language="C#" Value="Extended" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType Extended = int32(3)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType Extended = int32(6)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="F:Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Extended" />
       <MemberSignature Language="VB.NET" Value="Extended" />
-      <MemberSignature Language="F#" Value="Extended = 3" Usage="Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Extended" />
+      <MemberSignature Language="F#" Value="Extended = 6" Usage="Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Extended" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType Extended = int32(3)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="Extended = 3" Usage="Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Extended" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Network</AssemblyName>
@@ -78,6 +128,27 @@
       <Docs>
         <summary>
             Extended.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType Off = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Off" />
+      <MemberSignature Language="VB.NET" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 3" Usage="Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Network.FirewallPolicyIntrusionDetectionProfileType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Off.
             </summary>
       </Docs>
     </Member>
