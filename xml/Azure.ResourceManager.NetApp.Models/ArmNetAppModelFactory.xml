@@ -127,7 +127,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -180,15 +179,16 @@
       </Docs>
     </Member>
     <Member MemberName="CapacityPoolData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, Azure.ETag? etag, Guid? poolId, long size, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel, string provisioningState, float? totalThroughputMibps, float? utilizedThroughputMibps, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType, bool? isCoolAccessEnabled, Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType? encryptionType);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ETag? etag = default, Guid? poolId = default, long size = 0, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel = default, string provisioningState = default, float? totalThroughputMibps = default, float? utilizedThroughputMibps = default, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType = default, bool? isCoolAccessEnabled = default, Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType? encryptionType = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; poolId, int64 size, valuetype Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel, string provisioningState, valuetype System.Nullable`1&lt;float32&gt; totalThroughputMibps, valuetype System.Nullable`1&lt;float32&gt; utilizedThroughputMibps, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; qosType, valuetype System.Nullable`1&lt;bool&gt; isCoolAccessEnabled, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; encryptionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ETag},System.Nullable{System.Guid},System.Int64,Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel,System.String,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolQosType},System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CapacityPoolData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), location As AzureLocation, etag As Nullable(Of ETag), poolId As Nullable(Of Guid), size As Long, serviceLevel As NetAppFileServiceLevel, provisioningState As String, totalThroughputMibps As Nullable(Of Single), utilizedThroughputMibps As Nullable(Of Single), qosType As Nullable(Of CapacityPoolQosType), isCoolAccessEnabled As Nullable(Of Boolean), encryptionType As Nullable(Of CapacityPoolEncryptionType)) As CapacityPoolData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CapacityPoolData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional poolId As Nullable(Of Guid) = Nothing, Optional size As Long = 0, Optional serviceLevel As NetAppFileServiceLevel = Nothing, Optional provisioningState As String = Nothing, Optional totalThroughputMibps As Nullable(Of Single) = Nothing, Optional utilizedThroughputMibps As Nullable(Of Single) = Nothing, Optional qosType As Nullable(Of CapacityPoolQosType) = Nothing, Optional isCoolAccessEnabled As Nullable(Of Boolean) = Nothing, Optional encryptionType As Nullable(Of CapacityPoolEncryptionType) = Nothing) As CapacityPoolData" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member CapacityPoolData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ETag&gt; * Nullable&lt;Guid&gt; * int64 * Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel * string * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; -&gt; Azure.ResourceManager.NetApp.CapacityPoolData" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData (id, name, resourceType, systemData, tags, location, etag, poolId, size, serviceLevel, provisioningState, totalThroughputMibps, utilizedThroughputMibps, qosType, isCoolAccessEnabled, encryptionType)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, Azure.ETag? etag, Guid? poolId, long size, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel, string provisioningState, float? totalThroughputMibps, float? utilizedThroughputMibps, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType, bool? isCoolAccessEnabled, Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType? encryptionType);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CapacityPoolData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), location As AzureLocation, etag As Nullable(Of ETag), poolId As Nullable(Of Guid), size As Long, serviceLevel As NetAppFileServiceLevel, provisioningState As String, totalThroughputMibps As Nullable(Of Single), utilizedThroughputMibps As Nullable(Of Single), qosType As Nullable(Of CapacityPoolQosType), isCoolAccessEnabled As Nullable(Of Boolean), encryptionType As Nullable(Of CapacityPoolEncryptionType)) As CapacityPoolData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -241,63 +241,6 @@
       </Docs>
     </Member>
     <Member MemberName="CapacityPoolData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ETag? etag = default, Guid? poolId = default, long size = 0, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel = default, string provisioningState = default, float? totalThroughputMibps = default, float? utilizedThroughputMibps = default, int? customThroughputMibpsInt = default, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType = default, bool? isCoolAccessEnabled = default, Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType? encryptionType = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; poolId, int64 size, valuetype Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel, string provisioningState, valuetype System.Nullable`1&lt;float32&gt; totalThroughputMibps, valuetype System.Nullable`1&lt;float32&gt; utilizedThroughputMibps, valuetype System.Nullable`1&lt;int32&gt; customThroughputMibpsInt, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; qosType, valuetype System.Nullable`1&lt;bool&gt; isCoolAccessEnabled, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; encryptionType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ETag},System.Nullable{System.Guid},System.Int64,Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel,System.String,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolQosType},System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CapacityPoolData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional poolId As Nullable(Of Guid) = Nothing, Optional size As Long = 0, Optional serviceLevel As NetAppFileServiceLevel = Nothing, Optional provisioningState As String = Nothing, Optional totalThroughputMibps As Nullable(Of Single) = Nothing, Optional utilizedThroughputMibps As Nullable(Of Single) = Nothing, Optional customThroughputMibpsInt As Nullable(Of Integer) = Nothing, Optional qosType As Nullable(Of CapacityPoolQosType) = Nothing, Optional isCoolAccessEnabled As Nullable(Of Boolean) = Nothing, Optional encryptionType As Nullable(Of CapacityPoolEncryptionType) = Nothing) As CapacityPoolData" />
-      <MemberSignature Language="F#" Value="static member CapacityPoolData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ETag&gt; * Nullable&lt;Guid&gt; * int64 * Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel * string * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; -&gt; Azure.ResourceManager.NetApp.CapacityPoolData" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData (id, name, resourceType, systemData, tags, location, etag, poolId, size, serviceLevel, provisioningState, totalThroughputMibps, utilizedThroughputMibps, customThroughputMibpsInt, qosType, isCoolAccessEnabled, encryptionType)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.NetApp.CapacityPoolData</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
-        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" />
-        <Parameter Name="poolId" Type="System.Nullable&lt;System.Guid&gt;" />
-        <Parameter Name="size" Type="System.Int64" />
-        <Parameter Name="serviceLevel" Type="Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel" />
-        <Parameter Name="provisioningState" Type="System.String" />
-        <Parameter Name="totalThroughputMibps" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="utilizedThroughputMibps" Type="System.Nullable&lt;System.Single&gt;" />
-        <Parameter Name="customThroughputMibpsInt" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="qosType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt;" />
-        <Parameter Name="isCoolAccessEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="encryptionType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
-        <param name="etag"> "If etag is provided in the response body, it may also be provided as a header per the normal etag convention.  Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields."). </param>
-        <param name="poolId"> UUID v4 used to identify the Pool. </param>
-        <param name="size"> Provisioned size of the pool (in bytes). Allowed values are in 1TiB chunks (value must be multiple of 1099511627776). </param>
-        <param name="serviceLevel"> The service level of the file system. </param>
-        <param name="provisioningState"> Azure lifecycle management. </param>
-        <param name="totalThroughputMibps"> Total throughput of pool in MiB/s. </param>
-        <param name="utilizedThroughputMibps"> Utilized throughput of pool in MiB/s. </param>
-        <param name="customThroughputMibpsInt"> Maximum throughput in MiB/s that can be achieved by this pool and this will be accepted as input only for manual qosType pool with Flexible service level. </param>
-        <param name="qosType"> The qos type of the pool. </param>
-        <param name="isCoolAccessEnabled"> If enabled (true) the pool can contain cool Access enabled volumes. </param>
-        <param name="encryptionType"> Encryption type of the capacity pool, set encryption type for data at rest for this pool and all volumes in it. This value can only be set when creating new pool. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.CapacityPoolData" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.NetApp.CapacityPoolData" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CapacityPoolData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ETag? etag = default, Guid? poolId = default, long size = 0, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel = default, string provisioningState = default, float? totalThroughputMibps = default, float? utilizedThroughputMibps = default, float? customThroughputMibps = default, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType = default, bool? isCoolAccessEnabled = default, Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType? encryptionType = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; poolId, int64 size, valuetype Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel, string provisioningState, valuetype System.Nullable`1&lt;float32&gt; totalThroughputMibps, valuetype System.Nullable`1&lt;float32&gt; utilizedThroughputMibps, valuetype System.Nullable`1&lt;float32&gt; customThroughputMibps, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; qosType, valuetype System.Nullable`1&lt;bool&gt; isCoolAccessEnabled, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; encryptionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ETag},System.Nullable{System.Guid},System.Int64,Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel,System.String,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolQosType},System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType})" />
@@ -306,9 +249,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.CapacityPoolData</ReturnType>
       </ReturnValue>
@@ -354,6 +302,74 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CapacityPoolData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ETag? etag = default, Guid? poolId = default, long size = 0, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel = default, string provisioningState = default, float? totalThroughputMibps = default, float? utilizedThroughputMibps = default, int? customThroughputMibps = default, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType = default, bool? isCoolAccessEnabled = default, Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType? encryptionType = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; poolId, int64 size, valuetype Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel, string provisioningState, valuetype System.Nullable`1&lt;float32&gt; totalThroughputMibps, valuetype System.Nullable`1&lt;float32&gt; utilizedThroughputMibps, valuetype System.Nullable`1&lt;int32&gt; customThroughputMibps, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; qosType, valuetype System.Nullable`1&lt;bool&gt; isCoolAccessEnabled, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; encryptionType) cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ETag},System.Nullable{System.Guid},System.Int64,Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel,System.String,System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolQosType},System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CapacityPoolData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional poolId As Nullable(Of Guid) = Nothing, Optional size As Long = 0, Optional serviceLevel As NetAppFileServiceLevel = Nothing, Optional provisioningState As String = Nothing, Optional totalThroughputMibps As Nullable(Of Single) = Nothing, Optional utilizedThroughputMibps As Nullable(Of Single) = Nothing, Optional customThroughputMibps As Nullable(Of Integer) = Nothing, Optional qosType As Nullable(Of CapacityPoolQosType) = Nothing, Optional isCoolAccessEnabled As Nullable(Of Boolean) = Nothing, Optional encryptionType As Nullable(Of CapacityPoolEncryptionType) = Nothing) As CapacityPoolData" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member CapacityPoolData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ETag&gt; * Nullable&lt;Guid&gt; * int64 * Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel * string * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; -&gt; Azure.ResourceManager.NetApp.CapacityPoolData" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData (id, name, resourceType, systemData, tags, location, etag, poolId, size, serviceLevel, provisioningState, totalThroughputMibps, utilizedThroughputMibps, customThroughputMibps, qosType, isCoolAccessEnabled, encryptionType)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ETag? etag = default, Guid? poolId = default, long size = 0, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel = default, string provisioningState = default, float? totalThroughputMibps = default, float? utilizedThroughputMibps = default, int? customThroughputMibpsInt = default, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType = default, bool? isCoolAccessEnabled = default, Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType? encryptionType = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.CapacityPoolData CapacityPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; poolId, int64 size, valuetype Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel serviceLevel, string provisioningState, valuetype System.Nullable`1&lt;float32&gt; totalThroughputMibps, valuetype System.Nullable`1&lt;float32&gt; utilizedThroughputMibps, valuetype System.Nullable`1&lt;int32&gt; customThroughputMibpsInt, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; qosType, valuetype System.Nullable`1&lt;bool&gt; isCoolAccessEnabled, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; encryptionType) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CapacityPoolData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional poolId As Nullable(Of Guid) = Nothing, Optional size As Long = 0, Optional serviceLevel As NetAppFileServiceLevel = Nothing, Optional provisioningState As String = Nothing, Optional totalThroughputMibps As Nullable(Of Single) = Nothing, Optional utilizedThroughputMibps As Nullable(Of Single) = Nothing, Optional customThroughputMibpsInt As Nullable(Of Integer) = Nothing, Optional qosType As Nullable(Of CapacityPoolQosType) = Nothing, Optional isCoolAccessEnabled As Nullable(Of Boolean) = Nothing, Optional encryptionType As Nullable(Of CapacityPoolEncryptionType) = Nothing) As CapacityPoolData" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member CapacityPoolData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ETag&gt; * Nullable&lt;Guid&gt; * int64 * Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel * string * Nullable&lt;single&gt; * Nullable&lt;single&gt; * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt; -&gt; Azure.ResourceManager.NetApp.CapacityPoolData" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.CapacityPoolData (id, name, resourceType, systemData, tags, location, etag, poolId, size, serviceLevel, provisioningState, totalThroughputMibps, utilizedThroughputMibps, customThroughputMibpsInt, qosType, isCoolAccessEnabled, encryptionType)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.NetApp.CapacityPoolData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" />
+        <Parameter Name="name" Type="System.String" Index="1" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="6" />
+        <Parameter Name="poolId" Type="System.Nullable&lt;System.Guid&gt;" Index="7" />
+        <Parameter Name="size" Type="System.Int64" Index="8" />
+        <Parameter Name="serviceLevel" Type="Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel" Index="9" />
+        <Parameter Name="provisioningState" Type="System.String" Index="10" />
+        <Parameter Name="totalThroughputMibps" Type="System.Nullable&lt;System.Single&gt;" Index="11" />
+        <Parameter Name="utilizedThroughputMibps" Type="System.Nullable&lt;System.Single&gt;" Index="12" />
+        <Parameter Name="customThroughputMibps" Type="System.Nullable&lt;System.Int32&gt;" Index="13" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="customThroughputMibpsInt" Type="System.Nullable&lt;System.Int32&gt;" Index="13" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="qosType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt;" Index="14" />
+        <Parameter Name="isCoolAccessEnabled" Type="System.Nullable&lt;System.Boolean&gt;" Index="15" />
+        <Parameter Name="encryptionType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.CapacityPoolEncryptionType&gt;" Index="16" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="tags"> The tags. </param>
+        <param name="location"> The location. </param>
+        <param name="etag"> "If etag is provided in the response body, it may also be provided as a header per the normal etag convention.  Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields."). </param>
+        <param name="poolId"> UUID v4 used to identify the Pool. </param>
+        <param name="size"> Provisioned size of the pool (in bytes). Allowed values are in 1TiB chunks (value must be multiple of 1099511627776). </param>
+        <param name="serviceLevel"> The service level of the file system. </param>
+        <param name="provisioningState"> Azure lifecycle management. </param>
+        <param name="totalThroughputMibps"> Total throughput of pool in MiB/s. </param>
+        <param name="utilizedThroughputMibps"> Utilized throughput of pool in MiB/s. </param>
+        <param name="customThroughputMibps">To be added.</param>
+        <param name="customThroughputMibpsInt"> Maximum throughput in MiB/s that can be achieved by this pool and this will be accepted as input only for manual qosType pool with Flexible service level. </param>
+        <param name="qosType"> The qos type of the pool. </param>
+        <param name="isCoolAccessEnabled"> If enabled (true) the pool can contain cool Access enabled volumes. </param>
+        <param name="encryptionType"> Encryption type of the capacity pool, set encryption type for data at rest for this pool and all volumes in it. This value can only be set when creating new pool. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.CapacityPoolData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.NetApp.CapacityPoolData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CapacityPoolPatch">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.CapacityPoolPatch CapacityPoolPatch (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, long? size, Azure.ResourceManager.NetApp.Models.CapacityPoolQosType? qosType, bool? isCoolAccessEnabled);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.CapacityPoolPatch CapacityPoolPatch(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;int64&gt; size, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CapacityPoolQosType&gt; qosType, valuetype System.Nullable`1&lt;bool&gt; isCoolAccessEnabled) cil managed" />
@@ -363,7 +379,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -410,9 +425,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.CapacityPoolPatch</ReturnType>
       </ReturnValue>
@@ -453,9 +473,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.CapacityPoolPatch</ReturnType>
       </ReturnValue>
@@ -524,7 +549,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1191,7 +1215,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1207,6 +1230,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ListQuotaReportResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.ListQuotaReportResult ListQuotaReportResult (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaReport&gt; quotaReportRecords = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.ListQuotaReportResult ListQuotaReportResult(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaReport&gt; quotaReportRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.ListQuotaReportResult(System.Collections.Generic.IEnumerable{Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaReport})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ListQuotaReportResult (Optional quotaReportRecords As IEnumerable(Of NetAppVolumeQuotaReport) = Nothing) As ListQuotaReportResult" />
+      <MemberSignature Language="F#" Value="static member ListQuotaReportResult : seq&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaReport&gt; -&gt; Azure.ResourceManager.NetApp.Models.ListQuotaReportResult" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.ListQuotaReportResult quotaReportRecords" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.NetApp.Models.ListQuotaReportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quotaReportRecords" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaReport&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="quotaReportRecords"> Represents the properties of the ListQuotaReport. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.Models.ListQuotaReportResult" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.NetApp.Models.ListQuotaReportResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetAppAccountActiveDirectory">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppAccountActiveDirectory NetAppAccountActiveDirectory (string activeDirectoryId = default, string username = default, string password = default, string domain = default, string dns = default, Azure.ResourceManager.NetApp.Models.NetAppAccountActiveDirectoryStatus? status = default, string statusDetails = default, string smbServerName = default, string organizationalUnit = default, string site = default, System.Collections.Generic.IEnumerable&lt;string&gt; backupOperators = default, System.Collections.Generic.IEnumerable&lt;string&gt; administrators = default, System.Net.IPAddress kdcIP = default, string adName = default, string serverRootCACertificate = default, bool? isAesEncryptionEnabled = default, bool? isLdapSigningEnabled = default, System.Collections.Generic.IEnumerable&lt;string&gt; securityOperators = default, bool? isLdapOverTlsEnabled = default, bool? allowLocalNfsUsersWithLdap = default, bool? encryptDCConnections = default, Azure.ResourceManager.NetApp.Models.NetAppLdapSearchScopeConfiguration ldapSearchScope = default, string preferredServersForLdapClient = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppAccountActiveDirectory NetAppAccountActiveDirectory(string activeDirectoryId, string username, string password, string domain, string dns, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppAccountActiveDirectoryStatus&gt; status, string statusDetails, string smbServerName, string organizationalUnit, string site, class System.Collections.Generic.IEnumerable`1&lt;string&gt; backupOperators, class System.Collections.Generic.IEnumerable`1&lt;string&gt; administrators, class System.Net.IPAddress kdcIP, string adName, string serverRootCACertificate, valuetype System.Nullable`1&lt;bool&gt; isAesEncryptionEnabled, valuetype System.Nullable`1&lt;bool&gt; isLdapSigningEnabled, class System.Collections.Generic.IEnumerable`1&lt;string&gt; securityOperators, valuetype System.Nullable`1&lt;bool&gt; isLdapOverTlsEnabled, valuetype System.Nullable`1&lt;bool&gt; allowLocalNfsUsersWithLdap, valuetype System.Nullable`1&lt;bool&gt; encryptDCConnections, class Azure.ResourceManager.NetApp.Models.NetAppLdapSearchScopeConfiguration ldapSearchScope, string preferredServersForLdapClient) cil managed" />
@@ -1216,7 +1263,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1285,7 +1331,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1340,7 +1385,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1449,7 +1493,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1502,7 +1545,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1607,7 +1649,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1664,7 +1705,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1723,7 +1763,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1782,7 +1821,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1841,7 +1879,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1894,7 +1931,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1945,7 +1981,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2240,7 +2275,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2271,7 +2305,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2300,7 +2333,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2331,7 +2363,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2364,7 +2395,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2378,7 +2408,7 @@
       <Docs>
         <param name="principalId"> The principal ID (object ID) of the identity used to authenticate with key vault. Read-only. </param>
         <param name="userAssignedIdentity"> The ARM resource identifier of the user assigned identity used to authenticate with key vault. Applicable if identity.type has 'UserAssigned'. It should match key of identity.userAssignedIdentities. </param>
-        <param name="federatedClientId"> ClientId of the multi-tenant AAD Application. Used to access cross-tenant keyvaults. </param>
+        <param name="federatedClientId"> ClientId of the multi-tenant Entra ID Application. Used to access cross-tenant keyvaults. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.Models.NetAppEncryptionIdentity" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.NetApp.Models.NetAppEncryptionIdentity" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
@@ -2393,7 +2423,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2422,7 +2451,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2447,15 +2475,16 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppKeyVaultProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppKeyVaultProperties NetAppKeyVaultProperties (string keyVaultId, Uri keyVaultUri, string keyName, string keyVaultResourceId, Azure.ResourceManager.NetApp.Models.NetAppKeyVaultStatus? status = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppKeyVaultProperties NetAppKeyVaultProperties (string keyVaultId = default, Uri keyVaultUri = default, string keyName = default, string keyVaultResourceId = default, Azure.ResourceManager.NetApp.Models.NetAppKeyVaultStatus? status = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppKeyVaultProperties NetAppKeyVaultProperties(string keyVaultId, class System.Uri keyVaultUri, string keyName, string keyVaultResourceId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppKeyVaultStatus&gt; status) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppKeyVaultProperties(System.String,System.Uri,System.String,System.String,System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppKeyVaultStatus})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppKeyVaultProperties (keyVaultId As String, keyVaultUri As Uri, keyName As String, keyVaultResourceId As String, Optional status As Nullable(Of NetAppKeyVaultStatus) = Nothing) As NetAppKeyVaultProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppKeyVaultProperties (Optional keyVaultId As String = Nothing, Optional keyVaultUri As Uri = Nothing, Optional keyName As String = Nothing, Optional keyVaultResourceId As String = Nothing, Optional status As Nullable(Of NetAppKeyVaultStatus) = Nothing) As NetAppKeyVaultProperties" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NetAppKeyVaultProperties : string * Uri * string * string * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppKeyVaultStatus&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppKeyVaultProperties" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppKeyVaultProperties (keyVaultId, keyVaultUri, keyName, keyVaultResourceId, status)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppKeyVaultProperties NetAppKeyVaultProperties (string keyVaultId, Uri keyVaultUri, string keyName, string keyVaultResourceId, Azure.ResourceManager.NetApp.Models.NetAppKeyVaultStatus? status = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppKeyVaultProperties (keyVaultId As String, keyVaultUri As Uri, keyName As String, keyVaultResourceId As String, Optional status As Nullable(Of NetAppKeyVaultStatus) = Nothing) As NetAppKeyVaultProperties" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2488,7 +2517,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2519,7 +2547,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2546,7 +2573,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2585,7 +2611,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2628,7 +2653,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2715,9 +2739,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus</ReturnType>
       </ReturnValue>
@@ -2742,30 +2771,41 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppRestoreStatus">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus NetAppRestoreStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus? volumeRestoreRelationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string unhealthyReason = default, string errorMessage = default, long? totalTransferBytes = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus NetAppRestoreStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt; volumeRestoreRelationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string unhealthyReason, string errorMessage, valuetype System.Nullable`1&lt;int64&gt; totalTransferBytes) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus NetAppRestoreStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus? relationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string unhealthyReason = default, string errorMessage = default, long? totalTransferBytes = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus NetAppRestoreStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt; relationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string unhealthyReason, string errorMessage, valuetype System.Nullable`1&lt;int64&gt; totalTransferBytes) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppRestoreStatus(System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppMirrorState},System.String,System.String,System.Nullable{System.Int64})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppRestoreStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional volumeRestoreRelationshipStatus As Nullable(Of VolumeRestoreRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional unhealthyReason As String = Nothing, Optional errorMessage As String = Nothing, Optional totalTransferBytes As Nullable(Of Long) = Nothing) As NetAppRestoreStatus" />
-      <MemberSignature Language="F#" Value="static member NetAppRestoreStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppRestoreStatus (isHealthy, volumeRestoreRelationshipStatus, mirrorState, unhealthyReason, errorMessage, totalTransferBytes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppRestoreStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional relationshipStatus As Nullable(Of VolumeRestoreRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional unhealthyReason As String = Nothing, Optional errorMessage As String = Nothing, Optional totalTransferBytes As Nullable(Of Long) = Nothing) As NetAppRestoreStatus" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member NetAppRestoreStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppRestoreStatus (isHealthy, relationshipStatus, mirrorState, unhealthyReason, errorMessage, totalTransferBytes)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus NetAppRestoreStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus? volumeRestoreRelationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string unhealthyReason = default, string errorMessage = default, long? totalTransferBytes = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus NetAppRestoreStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt; volumeRestoreRelationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string unhealthyReason, string errorMessage, valuetype System.Nullable`1&lt;int64&gt; totalTransferBytes) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppRestoreStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional volumeRestoreRelationshipStatus As Nullable(Of VolumeRestoreRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional unhealthyReason As String = Nothing, Optional errorMessage As String = Nothing, Optional totalTransferBytes As Nullable(Of Long) = Nothing) As NetAppRestoreStatus" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member NetAppRestoreStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppRestoreStatus (isHealthy, volumeRestoreRelationshipStatus, mirrorState, unhealthyReason, errorMessage, totalTransferBytes)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppRestoreStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isHealthy" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="volumeRestoreRelationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt;" />
-        <Parameter Name="mirrorState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt;" />
-        <Parameter Name="unhealthyReason" Type="System.String" />
-        <Parameter Name="errorMessage" Type="System.String" />
-        <Parameter Name="totalTransferBytes" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="isHealthy" Type="System.Nullable&lt;System.Boolean&gt;" Index="0" />
+        <Parameter Name="relationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="volumeRestoreRelationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeRestoreRelationshipStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="mirrorState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt;" Index="2" />
+        <Parameter Name="unhealthyReason" Type="System.String" Index="3" />
+        <Parameter Name="errorMessage" Type="System.String" Index="4" />
+        <Parameter Name="totalTransferBytes" Type="System.Nullable&lt;System.Int64&gt;" Index="5" />
       </Parameters>
       <Docs>
         <param name="isHealthy"> Restore health status. </param>
+        <param name="relationshipStatus">To be added.</param>
         <param name="volumeRestoreRelationshipStatus"> Status of the restore SnapMirror relationship. </param>
         <param name="mirrorState"> The status of the restore. </param>
         <param name="unhealthyReason"> Reason for the unhealthy restore relationship. </param>
@@ -2777,15 +2817,16 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppSubscriptionQuotaItem">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppSubscriptionQuotaItem NetAppSubscriptionQuotaItem (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, int? current, int? default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppSubscriptionQuotaItem NetAppSubscriptionQuotaItem (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, int? current = default, int? default = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppSubscriptionQuotaItem NetAppSubscriptionQuotaItem(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;int32&gt; current, valuetype System.Nullable`1&lt;int32&gt; default) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppSubscriptionQuotaItem(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{System.Int32},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppSubscriptionQuotaItem (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, current As Nullable(Of Integer), default As Nullable(Of Integer)) As NetAppSubscriptionQuotaItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppSubscriptionQuotaItem (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional current As Nullable(Of Integer) = Nothing, Optional default As Nullable(Of Integer) = Nothing) As NetAppSubscriptionQuotaItem" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NetAppSubscriptionQuotaItem : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppSubscriptionQuotaItem" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppSubscriptionQuotaItem (id, name, resourceType, systemData, current, default)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppSubscriptionQuotaItem NetAppSubscriptionQuotaItem (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, int? current, int? default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppSubscriptionQuotaItem (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, current As Nullable(Of Integer), default As Nullable(Of Integer)) As NetAppSubscriptionQuotaItem" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2826,9 +2867,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppSubscriptionQuotaItem</ReturnType>
       </ReturnValue>
@@ -2854,6 +2900,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NetAppSubscriptionQuotaItemData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.NetAppSubscriptionQuotaItemData NetAppSubscriptionQuotaItemData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, int? current = default, int? default = default, int? usage = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.NetAppSubscriptionQuotaItemData NetAppSubscriptionQuotaItemData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;int32&gt; current, valuetype System.Nullable`1&lt;int32&gt; default, valuetype System.Nullable`1&lt;int32&gt; usage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppSubscriptionQuotaItemData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppSubscriptionQuotaItemData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional current As Nullable(Of Integer) = Nothing, Optional default As Nullable(Of Integer) = Nothing, Optional usage As Nullable(Of Integer) = Nothing) As NetAppSubscriptionQuotaItemData" />
+      <MemberSignature Language="F#" Value="static member NetAppSubscriptionQuotaItemData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.ResourceManager.NetApp.NetAppSubscriptionQuotaItemData" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppSubscriptionQuotaItemData (id, name, resourceType, systemData, current, default, usage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.NetApp.NetAppSubscriptionQuotaItemData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="current" Type="System.Nullable&lt;System.Int32&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="default" Type="System.Nullable&lt;System.Int32&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="usage" Type="System.Nullable&lt;System.Int32&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="current"> The current quota value. </param>
+        <param name="default"> The default quota value. </param>
+        <param name="usage"> The usage quota value. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.NetAppSubscriptionQuotaItemData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.NetApp.NetAppSubscriptionQuotaItemData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetAppSubvolumeInfoData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.NetAppSubvolumeInfoData NetAppSubvolumeInfoData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string path = default, long? size = default, string parentPath = default, string provisioningState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.NetAppSubvolumeInfoData NetAppSubvolumeInfoData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, string path, valuetype System.Nullable`1&lt;int64&gt; size, string parentPath, string provisioningState) cil managed" />
@@ -2863,7 +2945,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2902,7 +2983,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2953,7 +3033,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2980,7 +3059,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3013,7 +3091,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3042,7 +3119,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3077,7 +3153,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3100,15 +3175,16 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppVolumeBackupStatus">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus (bool? isHealthy, Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus? relationshipStatus, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState, string unhealthyReason, string errorMessage, long? lastTransferSize, string lastTransferType, long? totalTransferBytes);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus? relationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string unhealthyReason = default, string errorMessage = default, long? lastTransferSize = default, string lastTransferType = default, long? totalTransferBytes = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus&gt; relationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string unhealthyReason, string errorMessage, valuetype System.Nullable`1&lt;int64&gt; lastTransferSize, string lastTransferType, valuetype System.Nullable`1&lt;int64&gt; totalTransferBytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeBackupStatus(System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppMirrorState},System.String,System.String,System.Nullable{System.Int64},System.String,System.Nullable{System.Int64})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeBackupStatus (isHealthy As Nullable(Of Boolean), relationshipStatus As Nullable(Of NetAppRelationshipStatus), mirrorState As Nullable(Of NetAppMirrorState), unhealthyReason As String, errorMessage As String, lastTransferSize As Nullable(Of Long), lastTransferType As String, totalTransferBytes As Nullable(Of Long)) As NetAppVolumeBackupStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeBackupStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional relationshipStatus As Nullable(Of NetAppRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional unhealthyReason As String = Nothing, Optional errorMessage As String = Nothing, Optional lastTransferSize As Nullable(Of Long) = Nothing, Optional lastTransferType As String = Nothing, Optional totalTransferBytes As Nullable(Of Long) = Nothing) As NetAppVolumeBackupStatus" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NetAppVolumeBackupStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string * Nullable&lt;int64&gt; * string * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeBackupStatus (isHealthy, relationshipStatus, mirrorState, unhealthyReason, errorMessage, lastTransferSize, lastTransferType, totalTransferBytes)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus (bool? isHealthy, Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus? relationshipStatus, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState, string unhealthyReason, string errorMessage, long? lastTransferSize, string lastTransferType, long? totalTransferBytes);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeBackupStatus (isHealthy As Nullable(Of Boolean), relationshipStatus As Nullable(Of NetAppRelationshipStatus), mirrorState As Nullable(Of NetAppMirrorState), unhealthyReason As String, errorMessage As String, lastTransferSize As Nullable(Of Long), lastTransferType As String, totalTransferBytes As Nullable(Of Long)) As NetAppVolumeBackupStatus" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3153,9 +3229,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus</ReturnType>
       </ReturnValue>
@@ -3186,33 +3267,44 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppVolumeBackupStatus">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus? volumeBackupRelationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string unhealthyReason = default, string errorMessage = default, long? lastTransferSize = default, string lastTransferType = default, long? totalTransferBytes = default, long? transferProgressBytes = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt; volumeBackupRelationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string unhealthyReason, string errorMessage, valuetype System.Nullable`1&lt;int64&gt; lastTransferSize, string lastTransferType, valuetype System.Nullable`1&lt;int64&gt; totalTransferBytes, valuetype System.Nullable`1&lt;int64&gt; transferProgressBytes) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus? relationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string unhealthyReason = default, string errorMessage = default, long? lastTransferSize = default, string lastTransferType = default, long? totalTransferBytes = default, long? transferProgressBytes = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt; relationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string unhealthyReason, string errorMessage, valuetype System.Nullable`1&lt;int64&gt; lastTransferSize, string lastTransferType, valuetype System.Nullable`1&lt;int64&gt; totalTransferBytes, valuetype System.Nullable`1&lt;int64&gt; transferProgressBytes) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeBackupStatus(System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppMirrorState},System.String,System.String,System.Nullable{System.Int64},System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeBackupStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional volumeBackupRelationshipStatus As Nullable(Of VolumeBackupRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional unhealthyReason As String = Nothing, Optional errorMessage As String = Nothing, Optional lastTransferSize As Nullable(Of Long) = Nothing, Optional lastTransferType As String = Nothing, Optional totalTransferBytes As Nullable(Of Long) = Nothing, Optional transferProgressBytes As Nullable(Of Long) = Nothing) As NetAppVolumeBackupStatus" />
-      <MemberSignature Language="F#" Value="static member NetAppVolumeBackupStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string * Nullable&lt;int64&gt; * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeBackupStatus (isHealthy, volumeBackupRelationshipStatus, mirrorState, unhealthyReason, errorMessage, lastTransferSize, lastTransferType, totalTransferBytes, transferProgressBytes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeBackupStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional relationshipStatus As Nullable(Of VolumeBackupRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional unhealthyReason As String = Nothing, Optional errorMessage As String = Nothing, Optional lastTransferSize As Nullable(Of Long) = Nothing, Optional lastTransferType As String = Nothing, Optional totalTransferBytes As Nullable(Of Long) = Nothing, Optional transferProgressBytes As Nullable(Of Long) = Nothing) As NetAppVolumeBackupStatus" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member NetAppVolumeBackupStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string * Nullable&lt;int64&gt; * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeBackupStatus (isHealthy, relationshipStatus, mirrorState, unhealthyReason, errorMessage, lastTransferSize, lastTransferType, totalTransferBytes, transferProgressBytes)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus? volumeBackupRelationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string unhealthyReason = default, string errorMessage = default, long? lastTransferSize = default, string lastTransferType = default, long? totalTransferBytes = default, long? transferProgressBytes = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus NetAppVolumeBackupStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt; volumeBackupRelationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string unhealthyReason, string errorMessage, valuetype System.Nullable`1&lt;int64&gt; lastTransferSize, string lastTransferType, valuetype System.Nullable`1&lt;int64&gt; totalTransferBytes, valuetype System.Nullable`1&lt;int64&gt; transferProgressBytes) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeBackupStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional volumeBackupRelationshipStatus As Nullable(Of VolumeBackupRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional unhealthyReason As String = Nothing, Optional errorMessage As String = Nothing, Optional lastTransferSize As Nullable(Of Long) = Nothing, Optional lastTransferType As String = Nothing, Optional totalTransferBytes As Nullable(Of Long) = Nothing, Optional transferProgressBytes As Nullable(Of Long) = Nothing) As NetAppVolumeBackupStatus" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member NetAppVolumeBackupStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string * Nullable&lt;int64&gt; * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeBackupStatus (isHealthy, volumeBackupRelationshipStatus, mirrorState, unhealthyReason, errorMessage, lastTransferSize, lastTransferType, totalTransferBytes, transferProgressBytes)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeBackupStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isHealthy" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="volumeBackupRelationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt;" />
-        <Parameter Name="mirrorState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt;" />
-        <Parameter Name="unhealthyReason" Type="System.String" />
-        <Parameter Name="errorMessage" Type="System.String" />
-        <Parameter Name="lastTransferSize" Type="System.Nullable&lt;System.Int64&gt;" />
-        <Parameter Name="lastTransferType" Type="System.String" />
-        <Parameter Name="totalTransferBytes" Type="System.Nullable&lt;System.Int64&gt;" />
-        <Parameter Name="transferProgressBytes" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="isHealthy" Type="System.Nullable&lt;System.Boolean&gt;" Index="0" />
+        <Parameter Name="relationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="volumeBackupRelationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeBackupRelationshipStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="mirrorState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt;" Index="2" />
+        <Parameter Name="unhealthyReason" Type="System.String" Index="3" />
+        <Parameter Name="errorMessage" Type="System.String" Index="4" />
+        <Parameter Name="lastTransferSize" Type="System.Nullable&lt;System.Int64&gt;" Index="5" />
+        <Parameter Name="lastTransferType" Type="System.String" Index="6" />
+        <Parameter Name="totalTransferBytes" Type="System.Nullable&lt;System.Int64&gt;" Index="7" />
+        <Parameter Name="transferProgressBytes" Type="System.Nullable&lt;System.Int64&gt;" Index="8" />
       </Parameters>
       <Docs>
         <param name="isHealthy"> Backup health status. </param>
+        <param name="relationshipStatus">To be added.</param>
         <param name="volumeBackupRelationshipStatus"> Status of the backup mirror relationship. </param>
         <param name="mirrorState"> The status of the backup. </param>
         <param name="unhealthyReason"> Reason for the unhealthy backup relationship. </param>
@@ -3235,7 +3327,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3386,7 +3477,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3544,7 +3634,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3704,7 +3793,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -3868,7 +3956,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4209,7 +4296,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4248,7 +4334,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4281,7 +4366,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4322,7 +4406,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -4359,7 +4442,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4502,7 +4584,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4654,7 +4735,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4808,7 +4888,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -4966,7 +5045,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5295,7 +5373,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5318,15 +5395,16 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppVolumePatch">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumePatch NetAppVolumePatch (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel? serviceLevel, long? usageThreshold, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt; exportRules, float? throughputMibps, Azure.Core.ResourceIdentifier snapshotPolicyId = default, bool? isDefaultQuotaEnabled = default, long? defaultUserQuotaInKiBs = default, long? defaultGroupQuotaInKiBs = default, string unixPermissions = default, bool? isCoolAccessEnabled = default, int? coolnessPeriod = default, Azure.ResourceManager.NetApp.Models.CoolAccessRetrievalPolicy? coolAccessRetrievalPolicy = default, bool? isSnapshotDirectoryVisible = default, Azure.ResourceManager.NetApp.Models.SmbAccessBasedEnumeration? smbAccessBasedEnumeration = default, Azure.ResourceManager.NetApp.Models.SmbNonBrowsable? smbNonBrowsable = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumePatch NetAppVolumePatch (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel? serviceLevel = default, long? usageThreshold = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt; exportRules = default, float? throughputMibps = default, Azure.Core.ResourceIdentifier snapshotPolicyId = default, bool? isDefaultQuotaEnabled = default, long? defaultUserQuotaInKiBs = default, long? defaultGroupQuotaInKiBs = default, string unixPermissions = default, bool? isCoolAccessEnabled = default, int? coolnessPeriod = default, Azure.ResourceManager.NetApp.Models.CoolAccessRetrievalPolicy? coolAccessRetrievalPolicy = default, bool? isSnapshotDirectoryVisible = default, Azure.ResourceManager.NetApp.Models.SmbAccessBasedEnumeration? smbAccessBasedEnumeration = default, Azure.ResourceManager.NetApp.Models.SmbNonBrowsable? smbNonBrowsable = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumePatch NetAppVolumePatch(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel&gt; serviceLevel, valuetype System.Nullable`1&lt;int64&gt; usageThreshold, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt; exportRules, valuetype System.Nullable`1&lt;float32&gt; throughputMibps, class Azure.Core.ResourceIdentifier snapshotPolicyId, valuetype System.Nullable`1&lt;bool&gt; isDefaultQuotaEnabled, valuetype System.Nullable`1&lt;int64&gt; defaultUserQuotaInKiBs, valuetype System.Nullable`1&lt;int64&gt; defaultGroupQuotaInKiBs, string unixPermissions, valuetype System.Nullable`1&lt;bool&gt; isCoolAccessEnabled, valuetype System.Nullable`1&lt;int32&gt; coolnessPeriod, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CoolAccessRetrievalPolicy&gt; coolAccessRetrievalPolicy, valuetype System.Nullable`1&lt;bool&gt; isSnapshotDirectoryVisible, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.SmbAccessBasedEnumeration&gt; smbAccessBasedEnumeration, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.SmbNonBrowsable&gt; smbNonBrowsable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumePatch(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel},System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule},System.Nullable{System.Single},Azure.Core.ResourceIdentifier,System.Nullable{System.Boolean},System.Nullable{System.Int64},System.Nullable{System.Int64},System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.NetApp.Models.CoolAccessRetrievalPolicy},System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.SmbAccessBasedEnumeration},System.Nullable{Azure.ResourceManager.NetApp.Models.SmbNonBrowsable})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumePatch (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), location As AzureLocation, serviceLevel As Nullable(Of NetAppFileServiceLevel), usageThreshold As Nullable(Of Long), exportRules As IEnumerable(Of NetAppVolumeExportPolicyRule), throughputMibps As Nullable(Of Single), Optional snapshotPolicyId As ResourceIdentifier = Nothing, Optional isDefaultQuotaEnabled As Nullable(Of Boolean) = Nothing, Optional defaultUserQuotaInKiBs As Nullable(Of Long) = Nothing, Optional defaultGroupQuotaInKiBs As Nullable(Of Long) = Nothing, Optional unixPermissions As String = Nothing, Optional isCoolAccessEnabled As Nullable(Of Boolean) = Nothing, Optional coolnessPeriod As Nullable(Of Integer) = Nothing, Optional coolAccessRetrievalPolicy As Nullable(Of CoolAccessRetrievalPolicy) = Nothing, Optional isSnapshotDirectoryVisible As Nullable(Of Boolean) = Nothing, Optional smbAccessBasedEnumeration As Nullable(Of SmbAccessBasedEnumeration) = Nothing, Optional smbNonBrowsable As Nullable(Of SmbNonBrowsable) = Nothing) As NetAppVolumePatch" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumePatch (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional serviceLevel As Nullable(Of NetAppFileServiceLevel) = Nothing, Optional usageThreshold As Nullable(Of Long) = Nothing, Optional exportRules As IEnumerable(Of NetAppVolumeExportPolicyRule) = Nothing, Optional throughputMibps As Nullable(Of Single) = Nothing, Optional snapshotPolicyId As ResourceIdentifier = Nothing, Optional isDefaultQuotaEnabled As Nullable(Of Boolean) = Nothing, Optional defaultUserQuotaInKiBs As Nullable(Of Long) = Nothing, Optional defaultGroupQuotaInKiBs As Nullable(Of Long) = Nothing, Optional unixPermissions As String = Nothing, Optional isCoolAccessEnabled As Nullable(Of Boolean) = Nothing, Optional coolnessPeriod As Nullable(Of Integer) = Nothing, Optional coolAccessRetrievalPolicy As Nullable(Of CoolAccessRetrievalPolicy) = Nothing, Optional isSnapshotDirectoryVisible As Nullable(Of Boolean) = Nothing, Optional smbAccessBasedEnumeration As Nullable(Of SmbAccessBasedEnumeration) = Nothing, Optional smbNonBrowsable As Nullable(Of SmbNonBrowsable) = Nothing) As NetAppVolumePatch" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NetAppVolumePatch : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel&gt; * Nullable&lt;int64&gt; * seq&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt; * Nullable&lt;single&gt; * Azure.Core.ResourceIdentifier * Nullable&lt;bool&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.CoolAccessRetrievalPolicy&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.SmbAccessBasedEnumeration&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.SmbNonBrowsable&gt; -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumePatch" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumePatch (id, name, resourceType, systemData, tags, location, serviceLevel, usageThreshold, exportRules, throughputMibps, snapshotPolicyId, isDefaultQuotaEnabled, defaultUserQuotaInKiBs, defaultGroupQuotaInKiBs, unixPermissions, isCoolAccessEnabled, coolnessPeriod, coolAccessRetrievalPolicy, isSnapshotDirectoryVisible, smbAccessBasedEnumeration, smbNonBrowsable)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumePatch NetAppVolumePatch (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, Azure.ResourceManager.NetApp.Models.NetAppFileServiceLevel? serviceLevel, long? usageThreshold, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt; exportRules, float? throughputMibps, Azure.Core.ResourceIdentifier snapshotPolicyId = default, bool? isDefaultQuotaEnabled = default, long? defaultUserQuotaInKiBs = default, long? defaultGroupQuotaInKiBs = default, string unixPermissions = default, bool? isCoolAccessEnabled = default, int? coolnessPeriod = default, Azure.ResourceManager.NetApp.Models.CoolAccessRetrievalPolicy? coolAccessRetrievalPolicy = default, bool? isSnapshotDirectoryVisible = default, Azure.ResourceManager.NetApp.Models.SmbAccessBasedEnumeration? smbAccessBasedEnumeration = default, Azure.ResourceManager.NetApp.Models.SmbNonBrowsable? smbNonBrowsable = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumePatch (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), location As AzureLocation, serviceLevel As Nullable(Of NetAppFileServiceLevel), usageThreshold As Nullable(Of Long), exportRules As IEnumerable(Of NetAppVolumeExportPolicyRule), throughputMibps As Nullable(Of Single), Optional snapshotPolicyId As ResourceIdentifier = Nothing, Optional isDefaultQuotaEnabled As Nullable(Of Boolean) = Nothing, Optional defaultUserQuotaInKiBs As Nullable(Of Long) = Nothing, Optional defaultGroupQuotaInKiBs As Nullable(Of Long) = Nothing, Optional unixPermissions As String = Nothing, Optional isCoolAccessEnabled As Nullable(Of Boolean) = Nothing, Optional coolnessPeriod As Nullable(Of Integer) = Nothing, Optional coolAccessRetrievalPolicy As Nullable(Of CoolAccessRetrievalPolicy) = Nothing, Optional isSnapshotDirectoryVisible As Nullable(Of Boolean) = Nothing, Optional smbAccessBasedEnumeration As Nullable(Of SmbAccessBasedEnumeration) = Nothing, Optional smbNonBrowsable As Nullable(Of SmbNonBrowsable) = Nothing) As NetAppVolumePatch" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5402,7 +5480,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5480,7 +5557,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5519,11 +5595,7 @@
         <param name="tags"> The tags. </param>
         <param name="location"> The location. </param>
         <param name="serviceLevel"> The service level of the file system. </param>
-        <param name="usageThreshold">
-            Maximum storage quota allowed for a file system in bytes. This is a soft quota used for alerting only. For regular volumes, valid values are in the range 50GiB to 100TiB.
-            For large volumes, valid values are in the range 100TiB to 500TiB, and on an exceptional basis, from to 2400GiB to 2400TiB.
-            For extra large volumes, valid values are in the range 2400GiB to 7200TiB. Values expressed in bytes as multiples of 1 GiB.
-            </param>
+        <param name="usageThreshold"> Maximum storage quota allowed for a file system in bytes. This is a soft quota used for alerting only. For regular volumes, valid values are in the range 50GiB to 100TiB. For large volumes, valid values are in the range 100TiB to 500TiB, and on an exceptional basis, from to 2400GiB to 2400TiB. Values expressed in bytes as multiples of 1 GiB. </param>
         <param name="exportRules"> Set of export policy rules. </param>
         <param name="protocolTypes"> Set of protocol types, default NFSv3, CIFS for SMB protocol. </param>
         <param name="throughputMibps"> Maximum throughput in MiB/s that can be achieved by this volume and this will be accepted as input only for manual qosType volume. </param>
@@ -5564,12 +5636,12 @@
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaReport</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="quotaType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="quotaTarget" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="quotaLimitUsedInKiBs" Type="System.Nullable&lt;System.Int64&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="quotaLimitTotalInKiBs" Type="System.Nullable&lt;System.Int64&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="percentageUsed" Type="System.Nullable&lt;System.Single&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="isDerivedQuota" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="quotaType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt;" />
+        <Parameter Name="quotaTarget" Type="System.String" />
+        <Parameter Name="quotaLimitUsedInKiBs" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="quotaLimitTotalInKiBs" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="percentageUsed" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="isDerivedQuota" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
         <param name="quotaType"> Type of quota. </param>
@@ -5616,9 +5688,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.NetAppVolumeQuotaRuleData</ReturnType>
       </ReturnValue>
@@ -5650,6 +5727,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NetAppVolumeQuotaRuleData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.NetAppVolumeQuotaRuleData NetAppVolumeQuotaRuleData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState? volumeQuotaRuleProvisioningState = default, long? quotaSizeInKiBs = default, Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType? quotaType = default, string quotaTarget = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.NetAppVolumeQuotaRuleData NetAppVolumeQuotaRuleData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState&gt; volumeQuotaRuleProvisioningState, valuetype System.Nullable`1&lt;int64&gt; quotaSizeInKiBs, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt; quotaType, string quotaTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeQuotaRuleData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState},System.Nullable{System.Int64},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeQuotaRuleData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional volumeQuotaRuleProvisioningState As Nullable(Of NetAppVolumeQuotaRuleProvisioningState) = Nothing, Optional quotaSizeInKiBs As Nullable(Of Long) = Nothing, Optional quotaType As Nullable(Of NetAppVolumeQuotaType) = Nothing, Optional quotaTarget As String = Nothing) As NetAppVolumeQuotaRuleData" />
+      <MemberSignature Language="F#" Value="static member NetAppVolumeQuotaRuleData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState&gt; * Nullable&lt;int64&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt; * string -&gt; Azure.ResourceManager.NetApp.NetAppVolumeQuotaRuleData" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeQuotaRuleData (id, name, resourceType, systemData, tags, location, volumeQuotaRuleProvisioningState, quotaSizeInKiBs, quotaType, quotaTarget)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.NetApp.NetAppVolumeQuotaRuleData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="volumeQuotaRuleProvisioningState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="quotaSizeInKiBs" Type="System.Nullable&lt;System.Int64&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="quotaType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="quotaTarget" Type="System.String" Index="9" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The id. </param>
+        <param name="name"> The name. </param>
+        <param name="resourceType"> The resourceType. </param>
+        <param name="systemData"> The systemData. </param>
+        <param name="tags"> The tags. </param>
+        <param name="location"> The location. </param>
+        <param name="volumeQuotaRuleProvisioningState"> Gets the status of the VolumeQuotaRule at the time the operation was called. </param>
+        <param name="quotaSizeInKiBs"> Size of quota. </param>
+        <param name="quotaType"> Type of quota. </param>
+        <param name="quotaTarget"> UserID/GroupID/SID based on the quota target type. UserID and groupID can be found by running ‘id’ or ‘getent’ command for the user or group and SID can be found by running &lt;wmic useraccount where name='user-name' get sid&gt;. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.NetAppVolumeQuotaRuleData" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.NetApp.NetAppVolumeQuotaRuleData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetAppVolumeQuotaRulePatch">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch NetAppVolumeQuotaRulePatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.NetApp.Models.NetAppProvisioningState? provisioningState = default, long? quotaSizeInKiBs = default, Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType? quotaType = default, string quotaTarget = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch NetAppVolumeQuotaRulePatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;int64&gt; quotaSizeInKiBs, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt; quotaType, string quotaTarget) cil managed" />
@@ -5659,9 +5778,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch</ReturnType>
       </ReturnValue>
@@ -5683,6 +5807,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NetAppVolumeQuotaRulePatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch NetAppVolumeQuotaRulePatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState? volumeQuotaRuleProvisioningState = default, long? quotaSizeInKiBs = default, Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType? quotaType = default, string quotaTarget = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch NetAppVolumeQuotaRulePatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState&gt; volumeQuotaRuleProvisioningState, valuetype System.Nullable`1&lt;int64&gt; quotaSizeInKiBs, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt; quotaType, string quotaTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeQuotaRulePatch(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState},System.Nullable{System.Int64},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeQuotaRulePatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional volumeQuotaRuleProvisioningState As Nullable(Of NetAppVolumeQuotaRuleProvisioningState) = Nothing, Optional quotaSizeInKiBs As Nullable(Of Long) = Nothing, Optional quotaType As Nullable(Of NetAppVolumeQuotaType) = Nothing, Optional quotaTarget As String = Nothing) As NetAppVolumeQuotaRulePatch" />
+      <MemberSignature Language="F#" Value="static member NetAppVolumeQuotaRulePatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState&gt; * Nullable&lt;int64&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt; * string -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeQuotaRulePatch (tags, volumeQuotaRuleProvisioningState, quotaSizeInKiBs, quotaType, quotaTarget)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
+        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="volumeQuotaRuleProvisioningState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRuleProvisioningState&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="quotaSizeInKiBs" Type="System.Nullable&lt;System.Int64&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="quotaType" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaType&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="quotaTarget" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> Resource tags. </param>
+        <param name="volumeQuotaRuleProvisioningState"> Gets the status of the VolumeQuotaRule at the time the operation was called. </param>
+        <param name="quotaSizeInKiBs"> Size of quota. </param>
+        <param name="quotaType"> Type of quota. </param>
+        <param name="quotaTarget"> UserID/GroupID/SID based on the quota target type. UserID and groupID can be found by running ‘id’ or ‘getent’ command for the user or group and SID can be found by running &lt;wmic useraccount where name='user-name' get sid&gt;. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.NetApp.Models.NetAppVolumeQuotaRulePatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetAppVolumeRelocationProperties">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeRelocationProperties NetAppVolumeRelocationProperties (bool? isRelocationRequested = default, bool? isReadyToBeFinalized = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeRelocationProperties NetAppVolumeRelocationProperties(valuetype System.Nullable`1&lt;bool&gt; isRelocationRequested, valuetype System.Nullable`1&lt;bool&gt; isReadyToBeFinalized) cil managed" />
@@ -5692,7 +5848,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5719,7 +5874,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5756,7 +5910,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -5795,7 +5948,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5826,17 +5978,24 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppVolumeReplicationStatus">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus (bool? isHealthy, Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus? relationshipStatus, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string totalProgress = default, string errorMessage = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus? relationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string totalProgress = default, string errorMessage = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus&gt; relationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string totalProgress, string errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeReplicationStatus(System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppMirrorState},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeReplicationStatus (isHealthy As Nullable(Of Boolean), relationshipStatus As Nullable(Of NetAppRelationshipStatus), Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional totalProgress As String = Nothing, Optional errorMessage As String = Nothing) As NetAppVolumeReplicationStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeReplicationStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional relationshipStatus As Nullable(Of NetAppRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional totalProgress As String = Nothing, Optional errorMessage As String = Nothing) As NetAppVolumeReplicationStatus" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member NetAppVolumeReplicationStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeReplicationStatus (isHealthy, relationshipStatus, mirrorState, totalProgress, errorMessage)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus (bool? isHealthy, Azure.ResourceManager.NetApp.Models.NetAppRelationshipStatus? relationshipStatus, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string totalProgress = default, string errorMessage = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeReplicationStatus (isHealthy As Nullable(Of Boolean), relationshipStatus As Nullable(Of NetAppRelationshipStatus), Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional totalProgress As String = Nothing, Optional errorMessage As String = Nothing) As NetAppVolumeReplicationStatus" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus</ReturnType>
       </ReturnValue>
@@ -5859,29 +6018,40 @@
       </Docs>
     </Member>
     <Member MemberName="NetAppVolumeReplicationStatus">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus? volumeReplicationRelationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string totalProgress = default, string errorMessage = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt; volumeReplicationRelationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string totalProgress, string errorMessage) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus? relationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string totalProgress = default, string errorMessage = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt; relationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string totalProgress, string errorMessage) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeReplicationStatus(System.Nullable{System.Boolean},System.Nullable{Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus},System.Nullable{Azure.ResourceManager.NetApp.Models.NetAppMirrorState},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeReplicationStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional volumeReplicationRelationshipStatus As Nullable(Of VolumeReplicationRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional totalProgress As String = Nothing, Optional errorMessage As String = Nothing) As NetAppVolumeReplicationStatus" />
-      <MemberSignature Language="F#" Value="static member NetAppVolumeReplicationStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeReplicationStatus (isHealthy, volumeReplicationRelationshipStatus, mirrorState, totalProgress, errorMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeReplicationStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional relationshipStatus As Nullable(Of VolumeReplicationRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional totalProgress As String = Nothing, Optional errorMessage As String = Nothing) As NetAppVolumeReplicationStatus" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member NetAppVolumeReplicationStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeReplicationStatus (isHealthy, relationshipStatus, mirrorState, totalProgress, errorMessage)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus (bool? isHealthy = default, Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus? volumeReplicationRelationshipStatus = default, Azure.ResourceManager.NetApp.Models.NetAppMirrorState? mirrorState = default, string totalProgress = default, string errorMessage = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus NetAppVolumeReplicationStatus(valuetype System.Nullable`1&lt;bool&gt; isHealthy, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt; volumeReplicationRelationshipStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; mirrorState, string totalProgress, string errorMessage) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NetAppVolumeReplicationStatus (Optional isHealthy As Nullable(Of Boolean) = Nothing, Optional volumeReplicationRelationshipStatus As Nullable(Of VolumeReplicationRelationshipStatus) = Nothing, Optional mirrorState As Nullable(Of NetAppMirrorState) = Nothing, Optional totalProgress As String = Nothing, Optional errorMessage As String = Nothing) As NetAppVolumeReplicationStatus" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member NetAppVolumeReplicationStatus : Nullable&lt;bool&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt; * Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt; * string * string -&gt; Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus" Usage="Azure.ResourceManager.NetApp.Models.ArmNetAppModelFactory.NetAppVolumeReplicationStatus (isHealthy, volumeReplicationRelationshipStatus, mirrorState, totalProgress, errorMessage)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppVolumeReplicationStatus</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isHealthy" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="volumeReplicationRelationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt;" />
-        <Parameter Name="mirrorState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt;" />
-        <Parameter Name="totalProgress" Type="System.String" />
-        <Parameter Name="errorMessage" Type="System.String" />
+        <Parameter Name="isHealthy" Type="System.Nullable&lt;System.Boolean&gt;" Index="0" />
+        <Parameter Name="relationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="volumeReplicationRelationshipStatus" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.VolumeReplicationRelationshipStatus&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="mirrorState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppMirrorState&gt;" Index="2" />
+        <Parameter Name="totalProgress" Type="System.String" Index="3" />
+        <Parameter Name="errorMessage" Type="System.String" Index="4" />
       </Parameters>
       <Docs>
         <param name="isHealthy"> Replication health check. </param>
+        <param name="relationshipStatus">To be added.</param>
         <param name="volumeReplicationRelationshipStatus"> Status of the mirror relationship. </param>
         <param name="mirrorState"> The status of the replication. </param>
         <param name="totalProgress"> The progress of the replication. </param>
@@ -5900,7 +6070,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5939,7 +6108,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -5974,7 +6142,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -6035,8 +6202,8 @@
         <ReturnType>Azure.ResourceManager.NetApp.Models.RansomwareProtectionSettings</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="desiredRansomwareProtectionState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.DesiredRansomwareProtectionState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="actualRansomwareProtectionState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.ActualRansomwareProtectionState&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="desiredRansomwareProtectionState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.DesiredRansomwareProtectionState&gt;" />
+        <Parameter Name="actualRansomwareProtectionState" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.ActualRansomwareProtectionState&gt;" />
       </Parameters>
       <Docs>
         <param name="desiredRansomwareProtectionState"> The desired value of the Advanced Ransomware Protection feature state available to the volume. </param>
@@ -6061,11 +6228,11 @@
         <ReturnType>Azure.ResourceManager.NetApp.RansomwareReportData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="properties" Type="Azure.ResourceManager.NetApp.Models.RansomwareReportProperties" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.NetApp.Models.RansomwareReportProperties" />
       </Parameters>
       <Docs>
         <param name="id"> The id. </param>
@@ -6093,13 +6260,13 @@
         <ReturnType>Azure.ResourceManager.NetApp.Models.RansomwareReportProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="state" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.RansomwareReportState&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="severity" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.RansomwareReportSeverity&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="clearedCount" Type="System.Nullable&lt;System.Int32&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="reportedCount" Type="System.Nullable&lt;System.Int32&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="suspects" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.RansomwareSuspects&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="provisioningState" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="eventOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="state" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.RansomwareReportState&gt;" />
+        <Parameter Name="severity" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.RansomwareReportSeverity&gt;" />
+        <Parameter Name="clearedCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="reportedCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="suspects" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.RansomwareSuspects&gt;" />
+        <Parameter Name="provisioningState" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="eventOn"> The creation date and time of the report. </param>
@@ -6129,10 +6296,10 @@
         <ReturnType>Azure.ResourceManager.NetApp.Models.RansomwareSuspects</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="extension" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resolution" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.RansomwareSuspectResolution&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="fileCount" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="suspectFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.SuspectFile&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="extension" Type="System.String" />
+        <Parameter Name="resolution" Type="System.Nullable&lt;Azure.ResourceManager.NetApp.Models.RansomwareSuspectResolution&gt;" />
+        <Parameter Name="fileCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="suspectFiles" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.NetApp.Models.SuspectFile&gt;" />
       </Parameters>
       <Docs>
         <param name="extension"> Suspect File extension. </param>
@@ -6153,7 +6320,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -6214,7 +6380,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -6263,7 +6428,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -6316,8 +6480,8 @@
         <ReturnType>Azure.ResourceManager.NetApp.Models.SuspectFile</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="suspectFileName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="fileTimestamp" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="suspectFileName" Type="System.String" />
+        <Parameter Name="fileTimestamp" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
         <param name="suspectFileName"> Suspect filename. </param>
@@ -6336,7 +6500,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.14.0.0</AssemblyVersion>
         <AssemblyVersion>1.15.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
