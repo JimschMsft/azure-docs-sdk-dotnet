@@ -24,10 +24,9 @@
   </Interfaces>
   <Docs>
     <summary>
-            A Class representing a DisconnectedOperation along with the instance operations that can be performed on it.
-            If you have a <see cref="T:Azure.Core.ResourceIdentifier" /> you can construct a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />
-            from an instance of <see cref="T:Azure.ResourceManager.ArmClient" /> using the GetDisconnectedOperationResource method.
-            Otherwise you can get one from its parent resource <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> using the GetDisconnectedOperation method.
+            A class representing a DisconnectedOperation along with the instance operations that can be performed on it.
+            If you have a <see cref="T:Azure.Core.ResourceIdentifier" /> you can construct a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /> from an instance of <see cref="T:Azure.ResourceManager.ArmClient" /> using the GetResource method.
+            Otherwise you can get one from its parent resource <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> using the GetDisconnectedOperations method.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -44,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /> class for mocking. </summary>
+        <summary> Initializes a new instance of DisconnectedOperationResource for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +70,7 @@
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Add a tag to the current resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+        <summary> Add a tag to the current resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -103,9 +100,7 @@
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Add a tag to the current resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+        <summary> Add a tag to the current resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -135,7 +130,7 @@
         <param name="subscriptionId"> The subscriptionId. </param>
         <param name="resourceGroupName"> The resourceGroupName. </param>
         <param name="name"> The name. </param>
-        <summary> Generate the resource identifier of a <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /> instance. </summary>
+        <summary> Generate the resource identifier for this resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +180,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Delete a DisconnectedOperation
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Delete</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_Delete. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,7 +209,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Delete a DisconnectedOperation
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Delete</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_Delete. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,7 +235,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get a DisconnectedOperation
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_Get. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,7 +261,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get a DisconnectedOperation
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_Get. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,7 +287,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             get deployment manifest.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}/listDeploymentManifest</description></item><item><term>Operation Id</term><description>DisconnectedOperations_ListDeploymentManifest</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}/listDeploymentManifest. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_ListDeploymentManifest. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -318,8 +313,89 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             get deployment manifest.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}/listDeploymentManifest</description></item><item><term>Operation Id</term><description>DisconnectedOperations_ListDeploymentManifest</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}/listDeploymentManifest. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_ListDeploymentManifest. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationsHardwareSetting">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt; GetDisconnectedOperationsHardwareSetting (string hardwareSettingName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt; GetDisconnectedOperationsHardwareSetting(string hardwareSettingName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource.GetDisconnectedOperationsHardwareSetting(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDisconnectedOperationsHardwareSetting (hardwareSettingName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DisconnectedOperationsHardwareSettingResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDisconnectedOperationsHardwareSetting : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;&#xA;override this.GetDisconnectedOperationsHardwareSetting : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;" Usage="disconnectedOperationResource.GetDisconnectedOperationsHardwareSetting (hardwareSettingName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hardwareSettingName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="hardwareSettingName"> The name of the HardwareSetting. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get the hardware settings resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hardwareSettingName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hardwareSettingName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationsHardwareSettingAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;&gt; GetDisconnectedOperationsHardwareSettingAsync (string hardwareSettingName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;&gt; GetDisconnectedOperationsHardwareSettingAsync(string hardwareSettingName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource.GetDisconnectedOperationsHardwareSettingAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDisconnectedOperationsHardwareSettingAsync (hardwareSettingName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DisconnectedOperationsHardwareSettingResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetDisconnectedOperationsHardwareSettingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;&gt;&#xA;override this.GetDisconnectedOperationsHardwareSettingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;&gt;" Usage="disconnectedOperationResource.GetDisconnectedOperationsHardwareSettingAsync (hardwareSettingName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hardwareSettingName" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="hardwareSettingName"> The name of the HardwareSetting. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> Get the hardware settings resource. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hardwareSettingName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="hardwareSettingName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisconnectedOperationsHardwareSettings">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingCollection GetDisconnectedOperationsHardwareSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingCollection GetDisconnectedOperationsHardwareSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource.GetDisconnectedOperationsHardwareSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDisconnectedOperationsHardwareSettings () As DisconnectedOperationsHardwareSettingCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetDisconnectedOperationsHardwareSettings : unit -&gt; Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingCollection&#xA;override this.GetDisconnectedOperationsHardwareSettings : unit -&gt; Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingCollection" Usage="disconnectedOperationResource.GetDisconnectedOperationsHardwareSettings " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of DisconnectedOperationsHardwareSettings in the <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </summary>
+        <returns> An object representing collection of DisconnectedOperationsHardwareSettings and their operations over a DisconnectedOperationsHardwareSettingResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,9 +420,7 @@
       <Docs>
         <param name="imageName"> The name of the Image. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get the resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}/images/{imageName}</description></item><item><term>Operation Id</term><description>Image_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource" /></description></item></list></summary>
+        <summary> Get the resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -376,9 +450,7 @@
       <Docs>
         <param name="imageName"> The name of the Image. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Get the resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}/images/{imageName}</description></item><item><term>Operation Id</term><description>Image_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageResource" /></description></item></list></summary>
+        <summary> Get the resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -403,8 +475,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of DisconnectedOperationsImageResources in the DisconnectedOperation. </summary>
-        <returns> An object representing collection of DisconnectedOperationsImageResources and their operations over a DisconnectedOperationsImageResource. </returns>
+        <summary> Gets a collection of DisconnectedOperationsImages in the <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </summary>
+        <returns> An object representing collection of DisconnectedOperationsImages and their operations over a DisconnectedOperationsImageResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,9 +521,7 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Removes a tag by key from the resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+        <summary> Removes a tag by key from the resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -479,9 +549,7 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Removes a tag by key from the resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+        <summary> Removes a tag by key from the resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -526,11 +594,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="tags"> The set of tags to use as replacement. </param>
+        <param name="tags"> The tags to set on the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Replace the tags on the resource with the given set.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+        <summary> Replace the tags on the resource with the given set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -556,11 +622,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="tags"> The set of tags to use as replacement. </param>
+        <param name="tags"> The tags to set on the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Replace the tags on the resource with the given set.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Get</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+        <summary> Replace the tags on the resource with the given set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -589,8 +653,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Text.Json.Utf8JsonReader" /> to read.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="reader"> The reader for deserializing the model. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Reads one JSON value (including objects or arrays) from the provided reader and converts it to a model.
             </summary>
@@ -621,8 +685,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Text.Json.Utf8JsonWriter" /> to write into.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="writer"> The writer to serialize the model to. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model to the provided <see cref="T:System.Text.Json.Utf8JsonWriter" />.
             </summary>
@@ -652,8 +716,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="data">The <see cref="T:System.BinaryData" /> to parse.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="data"> The binary data to be processed. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Converts the provided <see cref="T:System.BinaryData" /> into a model.
             </summary>
@@ -683,7 +747,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
@@ -712,7 +776,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model into a <see cref="T:System.BinaryData" />.
             </summary>
@@ -744,7 +808,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a DisconnectedOperation
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Update</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_Update. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -774,7 +838,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a DisconnectedOperation
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}</description></item><item><term>Operation Id</term><description>DisconnectedOperation_Update</description></item><item><term>Default Api Version</term><description>2025-06-01-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/disconnectedOperations/{name}. </description></item><item><term> Operation Id. </term><description> DisconnectedOperations_Update. </description></item><item><term> Default Api Version. </term><description> 2026-03-15. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

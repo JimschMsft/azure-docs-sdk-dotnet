@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Model factory for models. </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,14 +41,14 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationData" />. </summary>
+        <summary> Disconnected operation resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,13 +68,13 @@
         <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="resourceId" Type="Azure.Core.ResourceIdentifier" />
-        <Parameter Name="resourceName" Type="System.String" />
-        <Parameter Name="stampId" Type="System.String" />
-        <Parameter Name="location" Type="System.String" />
-        <Parameter Name="billingModel" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel" />
-        <Parameter Name="connectionIntent" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent" />
-        <Parameter Name="cloud" Type="System.String" />
+        <Parameter Name="resourceId" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="stampId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="location" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="billingModel" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionIntent" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cloud" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="resourceId"> The resource identifier of the disconnected operations resource. </param>
@@ -86,6 +86,72 @@
         <param name="cloud"> The cloud in which the resource is registered. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationDeploymentManifest">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest DisconnectedOperationDeploymentManifest (Azure.Core.ResourceIdentifier resourceId = default, string resourceName = default, string stampId = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel billingModel = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent connectionIntent = default, string cloud = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration billingConfiguration = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans benefitPlans = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest DisconnectedOperationDeploymentManifest(class Azure.Core.ResourceIdentifier resourceId, string resourceName, string stampId, valuetype Azure.Core.AzureLocation location, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel billingModel, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent connectionIntent, string cloud, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration billingConfiguration, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans benefitPlans) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationDeploymentManifest(Azure.Core.ResourceIdentifier,System.String,System.String,Azure.Core.AzureLocation,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent,System.String,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationDeploymentManifest (Optional resourceId As ResourceIdentifier = Nothing, Optional resourceName As String = Nothing, Optional stampId As String = Nothing, Optional location As AzureLocation = Nothing, Optional billingModel As DisconnectedOperationsBillingModel = Nothing, Optional connectionIntent As DisconnectedOperationsConnectionIntent = Nothing, Optional cloud As String = Nothing, Optional billingConfiguration As DisconnectedOperationsBillingConfiguration = Nothing, Optional benefitPlans As DisconnectedOperationsBenefitPlans = Nothing) As DisconnectedOperationDeploymentManifest" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationDeploymentManifest : Azure.Core.ResourceIdentifier * string * string * Azure.Core.AzureLocation * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent * string * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationDeploymentManifest (resourceId, resourceName, stampId, location, billingModel, connectionIntent, cloud, billingConfiguration, benefitPlans)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceId" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="stampId" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="billingModel" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionIntent" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cloud" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="billingConfiguration" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="benefitPlans" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans" Index="8" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="resourceId"> The resource identifier of the disconnected operations resource. </param>
+        <param name="resourceName"> The resource name. </param>
+        <param name="stampId"> The unique GUID of the stamp. </param>
+        <param name="location"> The resource location. </param>
+        <param name="billingModel"> The billing model. </param>
+        <param name="connectionIntent"> The connection intent. </param>
+        <param name="cloud"> The cloud in which the resource is registered. </param>
+        <param name="billingConfiguration"> The billing configuration. </param>
+        <param name="benefitPlans"> The benefit plans. </param>
+        <summary> The disconnected operation manifest. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationDeploymentManifest" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationPatch DisconnectedOperationPatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationUpdateProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationPatch DisconnectedOperationPatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationUpdateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationPatch(System.Collections.Generic.IDictionary{System.String,System.String},Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationPatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional properties As DisconnectedOperationUpdateProperties = Nothing) As DisconnectedOperationPatch" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationPatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationUpdateProperties -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationPatch" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationPatch (tags, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationUpdateProperties" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> Resource tags. </param>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <summary> The type used for update operations of the DisconnectedOperation. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationPatch" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,13 +170,13 @@
         <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" />
-        <Parameter Name="stampId" Type="System.String" />
-        <Parameter Name="billingModel" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel" />
-        <Parameter Name="connectionIntent" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent" />
-        <Parameter Name="connectionStatus" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionStatus&gt;" />
-        <Parameter Name="registrationStatus" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsRegistrationStatus&gt;" />
-        <Parameter Name="deviceVersion" Type="System.String" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="stampId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="billingModel" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionIntent" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionStatus" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionStatus&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="registrationStatus" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsRegistrationStatus&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="deviceVersion" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="provisioningState"> The resource provisioning state. </param>
@@ -121,6 +187,46 @@
         <param name="registrationStatus"> The registration intent. </param>
         <param name="deviceVersion"> The device version. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties DisconnectedOperationProperties (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? provisioningState = default, string stampId = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel billingModel = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent connectionIntent = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionStatus? connectionStatus = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsRegistrationStatus? registrationStatus = default, string deviceVersion = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration billingConfiguration = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans benefitPlans = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties DisconnectedOperationProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; provisioningState, string stampId, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel billingModel, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent connectionIntent, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionStatus&gt; connectionStatus, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsRegistrationStatus&gt; registrationStatus, string deviceVersion, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration billingConfiguration, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans benefitPlans) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationProperties(System.Nullable{Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState},System.String,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent,System.Nullable{Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionStatus},System.Nullable{Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsRegistrationStatus},System.String,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationProperties (Optional provisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState) = Nothing, Optional stampId As String = Nothing, Optional billingModel As DisconnectedOperationsBillingModel = Nothing, Optional connectionIntent As DisconnectedOperationsConnectionIntent = Nothing, Optional connectionStatus As Nullable(Of DisconnectedOperationsConnectionStatus) = Nothing, Optional registrationStatus As Nullable(Of DisconnectedOperationsRegistrationStatus) = Nothing, Optional deviceVersion As String = Nothing, Optional billingConfiguration As DisconnectedOperationsBillingConfiguration = Nothing, Optional benefitPlans As DisconnectedOperationsBenefitPlans = Nothing) As DisconnectedOperationProperties" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationProperties : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; * string * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent * Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionStatus&gt; * Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsRegistrationStatus&gt; * string * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationProperties (provisioningState, stampId, billingModel, connectionIntent, connectionStatus, registrationStatus, deviceVersion, billingConfiguration, benefitPlans)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="stampId" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="billingModel" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingModel" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionIntent" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionIntent" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionStatus" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsConnectionStatus&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="registrationStatus" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsRegistrationStatus&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deviceVersion" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="billingConfiguration" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="benefitPlans" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBenefitPlans" Index="8" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> The resource provisioning state. </param>
+        <param name="stampId"> The unique GUID of the stamp. </param>
+        <param name="billingModel"> The billing model. </param>
+        <param name="connectionIntent"> The connection intent. </param>
+        <param name="connectionStatus"> The connection status. </param>
+        <param name="registrationStatus"> The registration intent. </param>
+        <param name="deviceVersion"> The device version. </param>
+        <param name="billingConfiguration"> The billing configuration. </param>
+        <param name="benefitPlans"> The benefit plans. </param>
+        <summary> The disconnected operation properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,22 +253,26 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactData" />. </summary>
+        <summary> Disconnected operations artifact resource. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsArtifactData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectedOperationsArtifactDownloadResult">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult DisconnectedOperationsArtifactDownloadResult (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? provisioningState = default, int artifactOrder = 0, string title = default, string description = default, long? size = default, Uri downloadLink = default, DateTimeOffset linkExpiry = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult DisconnectedOperationsArtifactDownloadResult(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; provisioningState, int32 artifactOrder, string title, string description, valuetype System.Nullable`1&lt;int64&gt; size, class System.Uri downloadLink, valuetype System.DateTimeOffset linkExpiry) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult DisconnectedOperationsArtifactDownloadResult (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? provisioningState = default, int artifactOrder = 0, string title = default, string description = default, long? size = default, Uri downloadLink = default, DateTimeOffset linkExpiresOn = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult DisconnectedOperationsArtifactDownloadResult(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; provisioningState, int32 artifactOrder, string title, string description, valuetype System.Nullable`1&lt;int64&gt; size, class System.Uri downloadLink, valuetype System.DateTimeOffset linkExpiresOn) cil managed" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsArtifactDownloadResult(System.Nullable{Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState},System.Int32,System.String,System.String,System.Nullable{System.Int64},System.Uri,System.DateTimeOffset)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsArtifactDownloadResult (Optional provisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState) = Nothing, Optional artifactOrder As Integer = 0, Optional title As String = Nothing, Optional description As String = Nothing, Optional size As Nullable(Of Long) = Nothing, Optional downloadLink As Uri = Nothing, Optional linkExpiry As DateTimeOffset = Nothing) As DisconnectedOperationsArtifactDownloadResult" />
-      <MemberSignature Language="F#" Value="static member DisconnectedOperationsArtifactDownloadResult : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; * int * string * string * Nullable&lt;int64&gt; * Uri * DateTimeOffset -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsArtifactDownloadResult (provisioningState, artifactOrder, title, description, size, downloadLink, linkExpiry)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsArtifactDownloadResult (Optional provisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState) = Nothing, Optional artifactOrder As Integer = 0, Optional title As String = Nothing, Optional description As String = Nothing, Optional size As Nullable(Of Long) = Nothing, Optional downloadLink As Uri = Nothing, Optional linkExpiresOn As DateTimeOffset = Nothing) As DisconnectedOperationsArtifactDownloadResult" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsArtifactDownloadResult : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; * int * string * string * Nullable&lt;int64&gt; * Uri * DateTimeOffset -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsArtifactDownloadResult (provisioningState, artifactOrder, title, description, size, downloadLink, linkExpiresOn)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult DisconnectedOperationsArtifactDownloadResult (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? provisioningState = default, int artifactOrder = 0, string title = default, string description = default, long? size = default, Uri downloadLink = default, DateTimeOffset linkExpiry = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult DisconnectedOperationsArtifactDownloadResult(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; provisioningState, int32 artifactOrder, string title, string description, valuetype System.Nullable`1&lt;int64&gt; size, class System.Uri downloadLink, valuetype System.DateTimeOffset linkExpiry) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsArtifactDownloadResult (Optional provisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState) = Nothing, Optional artifactOrder As Integer = 0, Optional title As String = Nothing, Optional description As String = Nothing, Optional size As Nullable(Of Long) = Nothing, Optional downloadLink As Uri = Nothing, Optional linkExpiry As DateTimeOffset = Nothing) As DisconnectedOperationsArtifactDownloadResult" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsArtifactDownloadResult : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; * int * string * string * Nullable&lt;int64&gt; * Uri * DateTimeOffset -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsArtifactDownloadResult (provisioningState, artifactOrder, title, description, size, downloadLink, linkExpiry)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
@@ -172,13 +282,14 @@
         <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" />
-        <Parameter Name="artifactOrder" Type="System.Int32" />
-        <Parameter Name="title" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="size" Type="System.Nullable&lt;System.Int64&gt;" />
-        <Parameter Name="downloadLink" Type="System.Uri" />
-        <Parameter Name="linkExpiry" Type="System.DateTimeOffset" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" />
+        <Parameter Name="artifactOrder" Type="System.Int32" Index="1" />
+        <Parameter Name="title" Type="System.String" Index="2" />
+        <Parameter Name="description" Type="System.String" Index="3" />
+        <Parameter Name="size" Type="System.Nullable&lt;System.Int64&gt;" Index="4" />
+        <Parameter Name="downloadLink" Type="System.Uri" Index="5" />
+        <Parameter Name="linkExpiresOn" Type="System.DateTimeOffset" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="linkExpiry" Type="System.DateTimeOffset" Index="6" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="provisioningState"> The resource provisioning state. </param>
@@ -187,8 +298,9 @@
         <param name="description"> The artifact description. </param>
         <param name="size"> The artifact size in MB. </param>
         <param name="downloadLink"> The download URI. </param>
+        <param name="linkExpiresOn"> The download link expiry time. </param>
         <param name="linkExpiry"> The download link expiry time. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult" />. </summary>
+        <summary> The artifact download properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactDownloadResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -220,8 +332,142 @@
         <param name="title"> The artifact title. </param>
         <param name="description"> The artifact description. </param>
         <param name="size"> The artifact size in MB. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactProperties" />. </summary>
+        <summary> The artifact properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsArtifactProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationsBillingConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration DisconnectedOperationsBillingConfiguration (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsAutoRenew autoRenew = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingStatus billingStatus = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod current = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod upcoming = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration DisconnectedOperationsBillingConfiguration(valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsAutoRenew autoRenew, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingStatus billingStatus, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod current, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod upcoming) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsBillingConfiguration(Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsAutoRenew,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingStatus,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsBillingConfiguration (Optional autoRenew As DisconnectedOperationsAutoRenew = Nothing, Optional billingStatus As DisconnectedOperationsBillingStatus = Nothing, Optional current As DisconnectedOperationsBillingPeriod = Nothing, Optional upcoming As DisconnectedOperationsBillingPeriod = Nothing) As DisconnectedOperationsBillingConfiguration" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsBillingConfiguration : Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsAutoRenew * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingStatus * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsBillingConfiguration (autoRenew, billingStatus, current, upcoming)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="autoRenew" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsAutoRenew" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="billingStatus" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingStatus" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="current" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="upcoming" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="autoRenew"> The auto renew setting. </param>
+        <param name="billingStatus"> The billing status. </param>
+        <param name="current"> The current billing configuration. </param>
+        <param name="upcoming"> The upcoming billing configuration. </param>
+        <summary> The billing configuration. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationsBillingPeriod">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod DisconnectedOperationsBillingPeriod (int cores = 0, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsPricingModel pricingModel = default, DateTimeOffset? startOn = default, DateTimeOffset? endOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod DisconnectedOperationsBillingPeriod(int32 cores, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsPricingModel pricingModel, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsBillingPeriod(System.Int32,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsPricingModel,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsBillingPeriod (Optional cores As Integer = 0, Optional pricingModel As DisconnectedOperationsPricingModel = Nothing, Optional startOn As Nullable(Of DateTimeOffset) = Nothing, Optional endOn As Nullable(Of DateTimeOffset) = Nothing) As DisconnectedOperationsBillingPeriod" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsBillingPeriod : int * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsPricingModel * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsBillingPeriod (cores, pricingModel, startOn, endOn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cores" Type="System.Int32" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="pricingModel" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsPricingModel" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="startOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="endOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="cores"> The number of cores. </param>
+        <param name="pricingModel"> The pricing model. </param>
+        <param name="startOn"> The billing start date. </param>
+        <param name="endOn"> The billing end date. </param>
+        <summary> The billing period. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsBillingPeriod" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationsHardwareSettingData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingData DisconnectedOperationsHardwareSettingData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingData DisconnectedOperationsHardwareSettingData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsHardwareSettingData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsHardwareSettingData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As DisconnectedOperationsHardwareSettingProperties = Nothing) As DisconnectedOperationsHardwareSettingData" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsHardwareSettingData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties -&gt; Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingData" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsHardwareSettingData (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> The resource-specific properties for this resource. </param>
+        <summary> Hardware settings resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsHardwareSettingData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationsHardwareSettingProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties DisconnectedOperationsHardwareSettingProperties (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? provisioningState = default, int totalCores = 0, int diskSpaceInGb = 0, int memoryInGb = 0, string oem = default, string hardwareSku = default, int nodes = 0, string versionAtRegistration = default, string solutionBuilderExtension = default, Guid deviceId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties DisconnectedOperationsHardwareSettingProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; provisioningState, int32 totalCores, int32 diskSpaceInGb, int32 memoryInGb, string oem, string hardwareSku, int32 nodes, string versionAtRegistration, string solutionBuilderExtension, valuetype System.Guid deviceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsHardwareSettingProperties(System.Nullable{Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState},System.Int32,System.Int32,System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsHardwareSettingProperties (Optional provisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState) = Nothing, Optional totalCores As Integer = 0, Optional diskSpaceInGb As Integer = 0, Optional memoryInGb As Integer = 0, Optional oem As String = Nothing, Optional hardwareSku As String = Nothing, Optional nodes As Integer = 0, Optional versionAtRegistration As String = Nothing, Optional solutionBuilderExtension As String = Nothing, Optional deviceId As Guid = Nothing) As DisconnectedOperationsHardwareSettingProperties" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsHardwareSettingProperties : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; * int * int * int * string * string * int * string * string * Guid -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsHardwareSettingProperties (provisioningState, totalCores, diskSpaceInGb, memoryInGb, oem, hardwareSku, nodes, versionAtRegistration, solutionBuilderExtension, deviceId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="totalCores" Type="System.Int32" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="diskSpaceInGb" Type="System.Int32" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="memoryInGb" Type="System.Int32" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="oem" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="hardwareSku" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="nodes" Type="System.Int32" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="versionAtRegistration" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="solutionBuilderExtension" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deviceId" Type="System.Guid" Index="9" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> The resource provisioning state. </param>
+        <param name="totalCores"> The total number of cores. </param>
+        <param name="diskSpaceInGb"> The disk space in GB. </param>
+        <param name="memoryInGb"> The memory in GB. </param>
+        <param name="oem"> The OEM. </param>
+        <param name="hardwareSku"> The hardware SKU. </param>
+        <param name="nodes"> The number of nodes. </param>
+        <param name="versionAtRegistration"> The active version at registration. </param>
+        <param name="solutionBuilderExtension"> The solution builder extension at registration. </param>
+        <param name="deviceId"> The unique Id of the device. </param>
+        <summary> The hardware setting properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,12 +493,12 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="properties"> The resource-specific properties for this resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageData" />. </summary>
+        <summary> Holds the release information of a disconnected operations image. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.DisconnectedOperationsImageData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,16 +518,16 @@
         <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" />
-        <Parameter Name="releaseVersion" Type="System.String" />
-        <Parameter Name="releaseDisplayName" Type="System.String" />
-        <Parameter Name="releaseNotes" Type="System.String" />
-        <Parameter Name="releaseOn" Type="System.DateTimeOffset" />
-        <Parameter Name="releaseType" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType" />
-        <Parameter Name="compatibleVersions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
-        <Parameter Name="transactionId" Type="System.String" />
-        <Parameter Name="downloadLink" Type="System.Uri" />
-        <Parameter Name="linkExpiry" Type="System.DateTimeOffset" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseDisplayName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseNotes" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseOn" Type="System.DateTimeOffset" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseType" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="compatibleVersions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="transactionId" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="downloadLink" Type="System.Uri" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="linkExpiry" Type="System.DateTimeOffset" Index="9" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="provisioningState"> The resource provisioning state. </param>
@@ -295,6 +541,50 @@
         <param name="downloadLink"> The download URI. </param>
         <param name="linkExpiry"> The download link expiry time. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult" />. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationsImageDownloadResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult DisconnectedOperationsImageDownloadResult (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? provisioningState = default, string releaseVersion = default, string releaseDisplayName = default, string releaseNotes = default, DateTimeOffset releaseOn = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType releaseType = default, System.Collections.Generic.IEnumerable&lt;string&gt; compatibleVersions = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties updateProperties = default, string transactionId = default, Uri downloadLink = default, DateTimeOffset linkExpiresOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult DisconnectedOperationsImageDownloadResult(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; provisioningState, string releaseVersion, string releaseDisplayName, string releaseNotes, valuetype System.DateTimeOffset releaseOn, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType releaseType, class System.Collections.Generic.IEnumerable`1&lt;string&gt; compatibleVersions, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties updateProperties, string transactionId, class System.Uri downloadLink, valuetype System.DateTimeOffset linkExpiresOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsImageDownloadResult(System.Nullable{Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState},System.String,System.String,System.String,System.DateTimeOffset,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties,System.String,System.Uri,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsImageDownloadResult (Optional provisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState) = Nothing, Optional releaseVersion As String = Nothing, Optional releaseDisplayName As String = Nothing, Optional releaseNotes As String = Nothing, Optional releaseOn As DateTimeOffset = Nothing, Optional releaseType As DisconnectedOperationsReleaseType = Nothing, Optional compatibleVersions As IEnumerable(Of String) = Nothing, Optional updateProperties As DisconnectedOperationsImageUpdateProperties = Nothing, Optional transactionId As String = Nothing, Optional downloadLink As Uri = Nothing, Optional linkExpiresOn As DateTimeOffset = Nothing) As DisconnectedOperationsImageDownloadResult" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsImageDownloadResult : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; * string * string * string * DateTimeOffset * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType * seq&lt;string&gt; * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties * string * Uri * DateTimeOffset -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsImageDownloadResult (provisioningState, releaseVersion, releaseDisplayName, releaseNotes, releaseOn, releaseType, compatibleVersions, updateProperties, transactionId, downloadLink, linkExpiresOn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseDisplayName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseNotes" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseOn" Type="System.DateTimeOffset" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseType" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="compatibleVersions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="updateProperties" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="transactionId" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="downloadLink" Type="System.Uri" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="linkExpiresOn" Type="System.DateTimeOffset" Index="10" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> The resource provisioning state. </param>
+        <param name="releaseVersion"> The version of the package in the format 1.1.1. </param>
+        <param name="releaseDisplayName"> The release name. </param>
+        <param name="releaseNotes"> The release notes. </param>
+        <param name="releaseOn"> The release date. </param>
+        <param name="releaseType"> The release type. </param>
+        <param name="compatibleVersions"> The versions that are compatible for this update package. </param>
+        <param name="updateProperties"> Image update properties for update release type image. </param>
+        <param name="transactionId"> The unique identifier of the download. </param>
+        <param name="downloadLink"> The download URI. </param>
+        <param name="linkExpiresOn"> The download link expiry time. </param>
+        <summary> The image download properties. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageDownloadResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,13 +604,13 @@
         <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" />
-        <Parameter Name="releaseVersion" Type="System.String" />
-        <Parameter Name="releaseDisplayName" Type="System.String" />
-        <Parameter Name="releaseNotes" Type="System.String" />
-        <Parameter Name="releaseOn" Type="System.DateTimeOffset" />
-        <Parameter Name="releaseType" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType" />
-        <Parameter Name="compatibleVersions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseDisplayName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseNotes" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseOn" Type="System.DateTimeOffset" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="releaseType" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="compatibleVersions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="provisioningState"> The resource provisioning state. </param>
@@ -332,6 +622,76 @@
         <param name="compatibleVersions"> The versions that are compatible for this update package. </param>
         <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties" />. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationsImageProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties DisconnectedOperationsImageProperties (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? provisioningState = default, string releaseVersion = default, string releaseDisplayName = default, string releaseNotes = default, DateTimeOffset releaseOn = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType releaseType = default, System.Collections.Generic.IEnumerable&lt;string&gt; compatibleVersions = default, Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties updateProperties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties DisconnectedOperationsImageProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; provisioningState, string releaseVersion, string releaseDisplayName, string releaseNotes, valuetype System.DateTimeOffset releaseOn, valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType releaseType, class System.Collections.Generic.IEnumerable`1&lt;string&gt; compatibleVersions, class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties updateProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsImageProperties(System.Nullable{Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState},System.String,System.String,System.String,System.DateTimeOffset,Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsImageProperties (Optional provisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState) = Nothing, Optional releaseVersion As String = Nothing, Optional releaseDisplayName As String = Nothing, Optional releaseNotes As String = Nothing, Optional releaseOn As DateTimeOffset = Nothing, Optional releaseType As DisconnectedOperationsReleaseType = Nothing, Optional compatibleVersions As IEnumerable(Of String) = Nothing, Optional updateProperties As DisconnectedOperationsImageUpdateProperties = Nothing) As DisconnectedOperationsImageProperties" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsImageProperties : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; * string * string * string * DateTimeOffset * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType * seq&lt;string&gt; * Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsImageProperties (provisioningState, releaseVersion, releaseDisplayName, releaseNotes, releaseOn, releaseType, compatibleVersions, updateProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseVersion" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseDisplayName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseNotes" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseOn" Type="System.DateTimeOffset" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="releaseType" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsReleaseType" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="compatibleVersions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="updateProperties" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties" Index="7" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> The resource provisioning state. </param>
+        <param name="releaseVersion"> The version of the package in the format 1.1.1. </param>
+        <param name="releaseDisplayName"> The release name. </param>
+        <param name="releaseNotes"> The release notes. </param>
+        <param name="releaseOn"> The release date. </param>
+        <param name="releaseType"> The release type. </param>
+        <param name="compatibleVersions"> The versions that are compatible for this update package. </param>
+        <param name="updateProperties"> Image update properties for update release type image. </param>
+        <summary> The image properties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectedOperationsImageUpdateProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties DisconnectedOperationsImageUpdateProperties (Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsSystemReboot systemReboot = default, string securityUpdates = default, string osVersion = default, string agentVersion = default, string featureUpdates = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties DisconnectedOperationsImageUpdateProperties(valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsSystemReboot systemReboot, string securityUpdates, string osVersion, string agentVersion, string featureUpdates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsImageUpdateProperties(Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsSystemReboot,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DisconnectedOperationsImageUpdateProperties (Optional systemReboot As DisconnectedOperationsSystemReboot = Nothing, Optional securityUpdates As String = Nothing, Optional osVersion As String = Nothing, Optional agentVersion As String = Nothing, Optional featureUpdates As String = Nothing) As DisconnectedOperationsImageUpdateProperties" />
+      <MemberSignature Language="F#" Value="static member DisconnectedOperationsImageUpdateProperties : Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsSystemReboot * string * string * string * string -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties" Usage="Azure.ResourceManager.DisconnectedOperations.Models.ArmDisconnectedOperationsModelFactory.DisconnectedOperationsImageUpdateProperties (systemReboot, securityUpdates, osVersion, agentVersion, featureUpdates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="systemReboot" Type="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsSystemReboot" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="securityUpdates" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="osVersion" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="agentVersion" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="featureUpdates" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="systemReboot"> Indicates if a system reboot is required after applying the update. </param>
+        <param name="securityUpdates"> Details of security updates included in this image release. </param>
+        <param name="osVersion"> The operating system version provided by this image update. </param>
+        <param name="agentVersion"> The version(s) of the agent software included in this image update. </param>
+        <param name="featureUpdates"> Details of feature updates included in this image release. </param>
+        <summary> The update properties of the Update Release type Image. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsImageUpdateProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

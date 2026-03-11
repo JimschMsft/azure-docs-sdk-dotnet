@@ -1,0 +1,510 @@
+<Type Name="DisconnectedOperationsHardwareSettingProperties" FullName="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties">
+  <TypeSignature Language="C#" Value="public class DisconnectedOperationsHardwareSettingProperties : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DisconnectedOperationsHardwareSettingProperties extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Class DisconnectedOperationsHardwareSettingProperties&#xA;Implements IJsonModel(Of DisconnectedOperationsHardwareSettingProperties), IPersistableModel(Of DisconnectedOperationsHardwareSettingProperties)" />
+  <TypeSignature Language="F#" Value="type DisconnectedOperationsHardwareSettingProperties = class&#xA;    interface IJsonModel&lt;DisconnectedOperationsHardwareSettingProperties&gt;&#xA;    interface IPersistableModel&lt;DisconnectedOperationsHardwareSettingProperties&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The hardware setting properties. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DisconnectedOperationsHardwareSettingProperties (int totalCores, int diskSpaceInGb, int memoryInGb, string oem, string hardwareSku, int nodes, string versionAtRegistration, string solutionBuilderExtension, Guid deviceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 totalCores, int32 diskSpaceInGb, int32 memoryInGb, string oem, string hardwareSku, int32 nodes, string versionAtRegistration, string solutionBuilderExtension, valuetype System.Guid deviceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (totalCores As Integer, diskSpaceInGb As Integer, memoryInGb As Integer, oem As String, hardwareSku As String, nodes As Integer, versionAtRegistration As String, solutionBuilderExtension As String, deviceId As Guid)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties : int * int * int * string * string * int * string * string * Guid -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" Usage="new Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties (totalCores, diskSpaceInGb, memoryInGb, oem, hardwareSku, nodes, versionAtRegistration, solutionBuilderExtension, deviceId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="totalCores" Type="System.Int32" />
+        <Parameter Name="diskSpaceInGb" Type="System.Int32" />
+        <Parameter Name="memoryInGb" Type="System.Int32" />
+        <Parameter Name="oem" Type="System.String" />
+        <Parameter Name="hardwareSku" Type="System.String" />
+        <Parameter Name="nodes" Type="System.Int32" />
+        <Parameter Name="versionAtRegistration" Type="System.String" />
+        <Parameter Name="solutionBuilderExtension" Type="System.String" />
+        <Parameter Name="deviceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="totalCores"> The total number of cores. </param>
+        <param name="diskSpaceInGb"> The disk space in GB. </param>
+        <param name="memoryInGb"> The memory in GB. </param>
+        <param name="oem"> The OEM. </param>
+        <param name="hardwareSku"> The hardware SKU. </param>
+        <param name="nodes"> The number of nodes. </param>
+        <param name="versionAtRegistration"> The active version at registration. </param>
+        <param name="solutionBuilderExtension"> The solution builder extension at registration. </param>
+        <param name="deviceId"> The unique Id of the device. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oem" />, <paramref name="hardwareSku" />, <paramref name="versionAtRegistration" /> or <paramref name="solutionBuilderExtension" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceId">
+      <MemberSignature Language="C#" Value="public Guid DeviceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid DeviceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.DeviceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeviceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.DeviceId : Guid with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.DeviceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The unique Id of the device. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiskSpaceInGb">
+      <MemberSignature Language="C#" Value="public int DiskSpaceInGb { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DiskSpaceInGb" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.DiskSpaceInGb" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiskSpaceInGb As Integer" />
+      <MemberSignature Language="F#" Value="member this.DiskSpaceInGb : int with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.DiskSpaceInGb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The disk space in GB. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HardwareSku">
+      <MemberSignature Language="C#" Value="public string HardwareSku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HardwareSku" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.HardwareSku" />
+      <MemberSignature Language="VB.NET" Value="Public Property HardwareSku As String" />
+      <MemberSignature Language="F#" Value="member this.HardwareSku : string with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.HardwareSku" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The hardware SKU. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As DisconnectedOperationsHardwareSettingProperties" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" Usage="disconnectedOperationsHardwareSettingProperties.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="disconnectedOperationsHardwareSettingProperties.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemoryInGb">
+      <MemberSignature Language="C#" Value="public int MemoryInGb { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MemoryInGb" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.MemoryInGb" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemoryInGb As Integer" />
+      <MemberSignature Language="F#" Value="member this.MemoryInGb : int with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.MemoryInGb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The memory in GB. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nodes">
+      <MemberSignature Language="C#" Value="public int Nodes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Nodes" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.Nodes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Nodes As Integer" />
+      <MemberSignature Language="F#" Value="member this.Nodes : int with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.Nodes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The number of nodes. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem">
+      <MemberSignature Language="C#" Value="public string Oem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Oem" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.Oem" />
+      <MemberSignature Language="VB.NET" Value="Public Property Oem As String" />
+      <MemberSignature Language="F#" Value="member this.Oem : string with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.Oem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The OEM. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As DisconnectedOperationsHardwareSettingProperties" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" Usage="disconnectedOperationsHardwareSettingProperties.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="disconnectedOperationsHardwareSettingProperties.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of DisconnectedOperationsResourceProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsResourceProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The resource provisioning state. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SolutionBuilderExtension">
+      <MemberSignature Language="C#" Value="public string SolutionBuilderExtension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SolutionBuilderExtension" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.SolutionBuilderExtension" />
+      <MemberSignature Language="VB.NET" Value="Public Property SolutionBuilderExtension As String" />
+      <MemberSignature Language="F#" Value="member this.SolutionBuilderExtension : string with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.SolutionBuilderExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The solution builder extension at registration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties IJsonModel&lt;DisconnectedOperationsHardwareSettingProperties&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DisconnectedOperations#Models#DisconnectedOperationsHardwareSettingProperties&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As DisconnectedOperationsHardwareSettingProperties Implements IJsonModel(Of DisconnectedOperationsHardwareSettingProperties).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" Usage="disconnectedOperationsHardwareSettingProperties.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;DisconnectedOperationsHardwareSettingProperties&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#DisconnectedOperations#Models#DisconnectedOperationsHardwareSettingProperties&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of DisconnectedOperationsHardwareSettingProperties).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="disconnectedOperationsHardwareSettingProperties.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties IPersistableModel&lt;DisconnectedOperationsHardwareSettingProperties&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DisconnectedOperations#Models#DisconnectedOperationsHardwareSettingProperties&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As DisconnectedOperationsHardwareSettingProperties Implements IPersistableModel(Of DisconnectedOperationsHardwareSettingProperties).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties" Usage="disconnectedOperationsHardwareSettingProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;DisconnectedOperationsHardwareSettingProperties&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DisconnectedOperations#Models#DisconnectedOperationsHardwareSettingProperties&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of DisconnectedOperationsHardwareSettingProperties).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="disconnectedOperationsHardwareSettingProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;DisconnectedOperationsHardwareSettingProperties&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#DisconnectedOperations#Models#DisconnectedOperationsHardwareSettingProperties&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of DisconnectedOperationsHardwareSettingProperties).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="disconnectedOperationsHardwareSettingProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalCores">
+      <MemberSignature Language="C#" Value="public int TotalCores { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalCores" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.TotalCores" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalCores As Integer" />
+      <MemberSignature Language="F#" Value="member this.TotalCores : int with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.TotalCores" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The total number of cores. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionAtRegistration">
+      <MemberSignature Language="C#" Value="public string VersionAtRegistration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VersionAtRegistration" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.VersionAtRegistration" />
+      <MemberSignature Language="VB.NET" Value="Public Property VersionAtRegistration As String" />
+      <MemberSignature Language="F#" Value="member this.VersionAtRegistration : string with get, set" Usage="Azure.ResourceManager.DisconnectedOperations.Models.DisconnectedOperationsHardwareSettingProperties.VersionAtRegistration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DisconnectedOperations</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The active version at registration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
