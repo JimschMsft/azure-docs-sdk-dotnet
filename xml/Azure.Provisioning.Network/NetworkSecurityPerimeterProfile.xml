@@ -1,0 +1,242 @@
+<Type Name="NetworkSecurityPerimeterProfile" FullName="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile">
+  <TypeSignature Language="C#" Value="public class NetworkSecurityPerimeterProfile : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkSecurityPerimeterProfile extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetworkSecurityPerimeterProfile&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type NetworkSecurityPerimeterProfile = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            NetworkSecurityPerimeterProfile.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetworkSecurityPerimeterProfile (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.Network.NetworkSecurityPerimeterProfile : string * string -&gt; Azure.Provisioning.Network.NetworkSecurityPerimeterProfile" Usage="new Azure.Provisioning.Network.NetworkSecurityPerimeterProfile (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the NetworkSecurityPerimeterProfile
+            resource.  This can be used to refer to the resource in expressions,
+            but is not the Azure name of the resource.  This value can contain
+            letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the NetworkSecurityPerimeterProfile.</param>
+        <summary>
+            Creates a new NetworkSecurityPerimeterProfile.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessRulesVersion">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; AccessRulesVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; AccessRulesVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.AccessRulesVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessRulesVersion As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AccessRulesVersion : Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.AccessRulesVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Version number that increases with every update to access rules within
+            the profile.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="networkSecurityPerimeterProfile.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            NetworkSecurityPerimeterProfile.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagnosticSettingsVersion">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; DiagnosticSettingsVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; DiagnosticSettingsVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.DiagnosticSettingsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiagnosticSettingsVersion As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.DiagnosticSettingsVersion : Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.DiagnosticSettingsVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Version number that increases with every update to diagnostic settings
+            within the profile.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Network.NetworkSecurityPerimeterProfile FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Network.NetworkSecurityPerimeterProfile FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As NetworkSecurityPerimeterProfile" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Network.NetworkSecurityPerimeterProfile" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Network.NetworkSecurityPerimeterProfile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the NetworkSecurityPerimeterProfile
+            resource.  This can be used to refer to the resource in expressions,
+            but is not the Azure name of the resource.  This value can contain
+            letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the NetworkSecurityPerimeterProfile.</param>
+        <summary>
+            Creates a reference to an existing NetworkSecurityPerimeterProfile.
+            </summary>
+        <returns>The existing NetworkSecurityPerimeterProfile resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the NSP profile.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Network.NetworkSecurityPerimeter? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Network.NetworkSecurityPerimeter Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As NetworkSecurityPerimeter" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.Network.NetworkSecurityPerimeter with get, set" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Network.NetworkSecurityPerimeter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent NetworkSecurityPerimeter.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterProfile.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

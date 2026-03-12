@@ -1,0 +1,306 @@
+<Type Name="NetworkSecurityPerimeterAssociation" FullName="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation">
+  <TypeSignature Language="C#" Value="public class NetworkSecurityPerimeterAssociation : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkSecurityPerimeterAssociation extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetworkSecurityPerimeterAssociation&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type NetworkSecurityPerimeterAssociation = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            NetworkSecurityPerimeterAssociation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetworkSecurityPerimeterAssociation (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation : string * string -&gt; Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation" Usage="new Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the
+            NetworkSecurityPerimeterAssociation resource.  This can be used to
+            refer to the resource in expressions, but is not the Azure name of the
+            resource.  This value can contain letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the NetworkSecurityPerimeterAssociation.</param>
+        <summary>
+            Creates a new NetworkSecurityPerimeterAssociation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessMode">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Network.NetworkSecurityPerimeterAssociationAccessMode&gt; AccessMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Network.NetworkSecurityPerimeterAssociationAccessMode&gt; AccessMode" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.AccessMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AccessMode As BicepValue(Of NetworkSecurityPerimeterAssociationAccessMode)" />
+      <MemberSignature Language="F#" Value="member this.AccessMode : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Network.NetworkSecurityPerimeterAssociationAccessMode&gt; with get, set" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.AccessMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Network.NetworkSecurityPerimeterAssociationAccessMode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Access mode on the association.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="networkSecurityPerimeterAssociation.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            NetworkSecurityPerimeterAssociation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As NetworkSecurityPerimeterAssociation" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the
+            NetworkSecurityPerimeterAssociation resource.  This can be used to
+            refer to the resource in expressions, but is not the Azure name of the
+            resource.  This value can contain letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the NetworkSecurityPerimeterAssociation.</param>
+        <summary>
+            Creates a reference to an existing NetworkSecurityPerimeterAssociation.
+            </summary>
+        <returns>The existing NetworkSecurityPerimeterAssociation resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasProvisioningIssues">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; HasProvisioningIssues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; HasProvisioningIssues" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.HasProvisioningIssues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProvisioningIssues As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.HasProvisioningIssues : Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.HasProvisioningIssues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies if there are provisioning issues.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the NSP association.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Network.NetworkSecurityPerimeter? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Network.NetworkSecurityPerimeter Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As NetworkSecurityPerimeter" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.Network.NetworkSecurityPerimeter with get, set" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Network.NetworkSecurityPerimeter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent NetworkSecurityPerimeter.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateLinkResourceId">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; PrivateLinkResourceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; PrivateLinkResourceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.PrivateLinkResourceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateLinkResourceId As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkResourceId : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; with get, set" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.PrivateLinkResourceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileId">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; ProfileId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; ProfileId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.ProfileId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProfileId As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.ProfileId : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; with get, set" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.ProfileId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Network.NetworkSecurityPerimeterProvisioningState&gt; ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Network.NetworkSecurityPerimeterProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As BicepValue(Of NetworkSecurityPerimeterProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Network.NetworkSecurityPerimeterProvisioningState&gt;" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Network.NetworkSecurityPerimeterProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The provisioning state of the resource  association resource.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.Network.NetworkSecurityPerimeterAssociation.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Network</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
