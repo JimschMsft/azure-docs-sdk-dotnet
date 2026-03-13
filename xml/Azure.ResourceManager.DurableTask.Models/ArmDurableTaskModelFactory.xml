@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskHubData</ReturnType>
@@ -59,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskHubProperties</ReturnType>
@@ -75,6 +78,96 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DurableTaskPrivateEndpointConnectionData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData DurableTaskPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData DurableTaskPrivateEndpointConnectionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskPrivateEndpointConnectionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskPrivateEndpointConnectionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As DurableTaskPrivateEndpointConnectionProperties = Nothing) As DurableTaskPrivateEndpointConnectionData" />
+      <MemberSignature Language="F#" Value="static member DurableTaskPrivateEndpointConnectionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties -&gt; Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskPrivateEndpointConnectionData (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> The private endpoint connection properties. </param>
+        <summary> A private endpoint connection resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurableTaskPrivateEndpointConnectionProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties DurableTaskPrivateEndpointConnectionProperties (System.Collections.Generic.IEnumerable&lt;string&gt; groupIds = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties DurableTaskPrivateEndpointConnectionProperties(class System.Collections.Generic.IEnumerable`1&lt;string&gt; groupIds, class Azure.Core.ResourceIdentifier privateEndpointId, class Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkServiceConnectionState privateLinkServiceConnectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProvisioningState&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskPrivateEndpointConnectionProperties(System.Collections.Generic.IEnumerable{System.String},Azure.Core.ResourceIdentifier,Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProvisioningState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskPrivateEndpointConnectionProperties (Optional groupIds As IEnumerable(Of String) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional privateLinkServiceConnectionState As DurableTaskPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of DurableTaskPrivateEndpointConnectionProvisioningState) = Nothing) As DurableTaskPrivateEndpointConnectionProperties" />
+      <MemberSignature Language="F#" Value="static member DurableTaskPrivateEndpointConnectionProperties : seq&lt;string&gt; * Azure.Core.ResourceIdentifier * Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProvisioningState&gt; -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskPrivateEndpointConnectionProperties (groupIds, privateEndpointId, privateLinkServiceConnectionState, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointId" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateLinkServiceConnectionState" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkServiceConnectionState" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProvisioningState&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="groupIds"> The group ids for the private endpoint resource. </param>
+        <param name="privateEndpointId"> The resource identifier of the private endpoint. </param>
+        <param name="privateLinkServiceConnectionState"> A collection of information about the state of the connection between service consumer and provider. </param>
+        <param name="provisioningState"> The provisioning state of the private endpoint connection resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateEndpointConnectionProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurableTaskPrivateLinkResourceProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties DurableTaskPrivateLinkResourceProperties (string groupId = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties DurableTaskPrivateLinkResourceProperties(string groupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredMembers, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredZoneNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskPrivateLinkResourceProperties(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskPrivateLinkResourceProperties (Optional groupId As String = Nothing, Optional requiredMembers As IEnumerable(Of String) = Nothing, Optional requiredZoneNames As IEnumerable(Of String) = Nothing) As DurableTaskPrivateLinkResourceProperties" />
+      <MemberSignature Language="F#" Value="static member DurableTaskPrivateLinkResourceProperties : string * seq&lt;string&gt; * seq&lt;string&gt; -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskPrivateLinkResourceProperties (groupId, requiredMembers, requiredZoneNames)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupId" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="requiredMembers" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="requiredZoneNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="groupId"> The private link resource group id. </param>
+        <param name="requiredMembers"> The private link resource required member names. </param>
+        <param name="requiredZoneNames"> The private link resource private link DNS zone name. </param>
+        <summary> Properties of a private link resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DurableTaskRetentionPolicyData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyData DurableTaskRetentionPolicyData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.DurableTask.Models.DurableTaskRetentionPolicyProperties properties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyData DurableTaskRetentionPolicyData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.DurableTask.Models.DurableTaskRetentionPolicyProperties properties) cil managed" />
@@ -85,6 +178,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyData</ReturnType>
@@ -117,6 +211,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskRetentionPolicyProperties</ReturnType>
@@ -143,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskSchedulerData</ReturnType>
@@ -178,7 +274,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatch</ReturnType>
@@ -196,16 +292,25 @@
       </Docs>
     </Member>
     <Member MemberName="DurableTaskSchedulerPatchProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties DurableTaskSchedulerPatchProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState = default, string endpoint = default, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist = default, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate sku = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties DurableTaskSchedulerPatchProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState, string endpoint, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate sku);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties DurableTaskSchedulerPatchProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; provisioningState, string endpoint, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ipAllowlist, class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate sku) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPatchProperties(System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState},System.String,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerPatchProperties (Optional provisioningState As Nullable(Of DurableTaskProvisioningState) = Nothing, Optional endpoint As String = Nothing, Optional ipAllowlist As IEnumerable(Of String) = Nothing, Optional sku As DurableTaskSchedulerSkuUpdate = Nothing) As DurableTaskSchedulerPatchProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerPatchProperties (provisioningState As Nullable(Of DurableTaskProvisioningState), endpoint As String, ipAllowlist As IEnumerable(Of String), sku As DurableTaskSchedulerSkuUpdate) As DurableTaskSchedulerPatchProperties" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member DurableTaskSchedulerPatchProperties : Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; * string * seq&lt;string&gt; * Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPatchProperties (provisioningState, endpoint, ipAllowlist, sku)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties DurableTaskSchedulerPatchProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState = default, string endpoint = default, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist = default, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate sku = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerPatchProperties (Optional provisioningState As Nullable(Of DurableTaskProvisioningState) = Nothing, Optional endpoint As String = Nothing, Optional ipAllowlist As IEnumerable(Of String) = Nothing, Optional sku As DurableTaskSchedulerSkuUpdate = Nothing) As DurableTaskSchedulerPatchProperties" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties</ReturnType>
       </ReturnValue>
@@ -225,17 +330,90 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DurableTaskSchedulerPatchProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties DurableTaskSchedulerPatchProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState = default, string endpoint = default, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist = default, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate sku = default, Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess? publicNetworkAccess = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties DurableTaskSchedulerPatchProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; provisioningState, string endpoint, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ipAllowlist, class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate sku, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess&gt; publicNetworkAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPatchProperties(System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState},System.String,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate,System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerPatchProperties (Optional provisioningState As Nullable(Of DurableTaskProvisioningState) = Nothing, Optional endpoint As String = Nothing, Optional ipAllowlist As IEnumerable(Of String) = Nothing, Optional sku As DurableTaskSchedulerSkuUpdate = Nothing, Optional publicNetworkAccess As Nullable(Of DurableTaskPublicNetworkAccess) = Nothing) As DurableTaskSchedulerPatchProperties" />
+      <MemberSignature Language="F#" Value="static member DurableTaskSchedulerPatchProperties : Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; * string * seq&lt;string&gt; * Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate * Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess&gt; -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPatchProperties (provisioningState, endpoint, ipAllowlist, sku, publicNetworkAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="endpoint" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="ipAllowlist" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sku" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="publicNetworkAccess" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> The status of the last operation. </param>
+        <param name="endpoint"> URL of the durable task scheduler. </param>
+        <param name="ipAllowlist"> IP allow list for durable task scheduler. Values can be IPv4, IPv6 or CIDR. </param>
+        <param name="sku"> SKU of the durable task scheduler. </param>
+        <param name="publicNetworkAccess"> Allow or disallow public network access to durable task scheduler. </param>
+        <summary> The Scheduler resource properties to be updated. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerPatchProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurableTaskSchedulerPrivateLinkResourceData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResourceData DurableTaskSchedulerPrivateLinkResourceData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResourceData DurableTaskSchedulerPrivateLinkResourceData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPrivateLinkResourceData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerPrivateLinkResourceData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional properties As DurableTaskPrivateLinkResourceProperties = Nothing) As DurableTaskSchedulerPrivateLinkResourceData" />
+      <MemberSignature Language="F#" Value="static member DurableTaskSchedulerPrivateLinkResourceData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties -&gt; Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResourceData" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerPrivateLinkResourceData (id, name, resourceType, systemData, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResourceData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskPrivateLinkResourceProperties" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="properties"> Resource properties. </param>
+        <summary> A private link resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResourceData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DurableTaskSchedulerProperties">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties DurableTaskSchedulerProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState = default, string endpoint = default, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist = default, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku sku = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties DurableTaskSchedulerProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState, string endpoint, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku sku);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties DurableTaskSchedulerProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; provisioningState, string endpoint, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ipAllowlist, class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku sku) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerProperties(System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState},System.String,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerProperties (Optional provisioningState As Nullable(Of DurableTaskProvisioningState) = Nothing, Optional endpoint As String = Nothing, Optional ipAllowlist As IEnumerable(Of String) = Nothing, Optional sku As DurableTaskSchedulerSku = Nothing) As DurableTaskSchedulerProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerProperties (provisioningState As Nullable(Of DurableTaskProvisioningState), endpoint As String, ipAllowlist As IEnumerable(Of String), sku As DurableTaskSchedulerSku) As DurableTaskSchedulerProperties" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member DurableTaskSchedulerProperties : Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; * string * seq&lt;string&gt; * Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerProperties (provisioningState, endpoint, ipAllowlist, sku)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties DurableTaskSchedulerProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState = default, string endpoint = default, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist = default, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku sku = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerProperties (Optional provisioningState As Nullable(Of DurableTaskProvisioningState) = Nothing, Optional endpoint As String = Nothing, Optional ipAllowlist As IEnumerable(Of String) = Nothing, Optional sku As DurableTaskSchedulerSku = Nothing) As DurableTaskSchedulerProperties" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties</ReturnType>
       </ReturnValue>
@@ -255,6 +433,40 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DurableTaskSchedulerProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties DurableTaskSchedulerProperties (Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState? provisioningState = default, string endpoint = default, System.Collections.Generic.IEnumerable&lt;string&gt; ipAllowlist = default, Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku sku = default, Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess? publicNetworkAccess = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData&gt; privateEndpointConnections = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties DurableTaskSchedulerProperties(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; provisioningState, string endpoint, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ipAllowlist, class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku sku, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess&gt; publicNetworkAccess, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData&gt; privateEndpointConnections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerProperties(System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState},System.String,System.Collections.Generic.IEnumerable{System.String},Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku,System.Nullable{Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess},System.Collections.Generic.IEnumerable{Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DurableTaskSchedulerProperties (Optional provisioningState As Nullable(Of DurableTaskProvisioningState) = Nothing, Optional endpoint As String = Nothing, Optional ipAllowlist As IEnumerable(Of String) = Nothing, Optional sku As DurableTaskSchedulerSku = Nothing, Optional publicNetworkAccess As Nullable(Of DurableTaskPublicNetworkAccess) = Nothing, Optional privateEndpointConnections As IEnumerable(Of DurableTaskPrivateEndpointConnectionData) = Nothing) As DurableTaskSchedulerProperties" />
+      <MemberSignature Language="F#" Value="static member DurableTaskSchedulerProperties : Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt; * string * seq&lt;string&gt; * Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku * Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess&gt; * seq&lt;Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData&gt; -&gt; Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties" Usage="Azure.ResourceManager.DurableTask.Models.ArmDurableTaskModelFactory.DurableTaskSchedulerProperties (provisioningState, endpoint, ipAllowlist, sku, publicNetworkAccess, privateEndpointConnections)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskProvisioningState&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="endpoint" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="ipAllowlist" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sku" Type="Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="publicNetworkAccess" Type="System.Nullable&lt;Azure.ResourceManager.DurableTask.Models.DurableTaskPublicNetworkAccess&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointConnections" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionData&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="provisioningState"> The status of the last operation. </param>
+        <param name="endpoint"> URL of the durable task scheduler. </param>
+        <param name="ipAllowlist"> IP allow list for durable task scheduler. Values can be IPv4, IPv6 or CIDR. </param>
+        <param name="sku"> SKU of the durable task scheduler. </param>
+        <param name="publicNetworkAccess"> Allow or disallow public network access to durable task scheduler. </param>
+        <param name="privateEndpointConnections"> The private endpoints exposed by this resource. </param>
+        <summary> Details of the Scheduler. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DurableTaskSchedulerSku">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku DurableTaskSchedulerSku (Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName name = default, int? capacity = default, Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState? redundancyState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku DurableTaskSchedulerSku(valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuName name, valuetype System.Nullable`1&lt;int32&gt; capacity, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.DurableTask.Models.DurableTaskResourceRedundancyState&gt; redundancyState) cil managed" />
@@ -264,7 +476,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSku</ReturnType>
@@ -320,7 +532,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.Models.DurableTaskSchedulerSkuUpdate</ReturnType>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskHubResource</ReturnType>
@@ -38,8 +40,40 @@
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskHubResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskHubResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskArmClient.GetDurableTaskHubResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskHubResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDurableTaskPrivateEndpointConnectionResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionResource GetDurableTaskPrivateEndpointConnectionResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionResource GetDurableTaskPrivateEndpointConnectionResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.DurableTaskExtensions.GetDurableTaskPrivateEndpointConnectionResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDurableTaskPrivateEndpointConnectionResource (client As ArmClient, id As ResourceIdentifier) As DurableTaskPrivateEndpointConnectionResource" />
+      <MemberSignature Language="F#" Value="static member GetDurableTaskPrivateEndpointConnectionResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionResource" Usage="Azure.ResourceManager.DurableTask.DurableTaskExtensions.GetDurableTaskPrivateEndpointConnectionResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskArmClient.GetDurableTaskPrivateEndpointConnectionResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskPrivateEndpointConnectionResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="client" /> is null. </exception>
@@ -55,6 +89,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyResource</ReturnType>
@@ -66,7 +101,9 @@
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskArmClient.GetDurableTaskRetentionPolicyResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskRetentionPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -83,6 +120,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource&gt;</ReturnType>
@@ -96,7 +134,9 @@
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="schedulerName"> The name of the Scheduler. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a Scheduler. </summary>
+        <summary>
+            Get a Scheduler
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskResourceGroupResource.GetDurableTaskScheduler(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -115,6 +155,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource&gt;&gt;</ReturnType>
@@ -128,13 +169,45 @@
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="schedulerName"> The name of the Scheduler. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> Get a Scheduler. </summary>
+        <summary>
+            Get a Scheduler
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskResourceGroupResource.GetDurableTaskSchedulerAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="schedulerName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDurableTaskSchedulerPrivateLinkResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResource GetDurableTaskSchedulerPrivateLinkResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResource GetDurableTaskSchedulerPrivateLinkResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DurableTask.DurableTaskExtensions.GetDurableTaskSchedulerPrivateLinkResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDurableTaskSchedulerPrivateLinkResource (client As ArmClient, id As ResourceIdentifier) As DurableTaskSchedulerPrivateLinkResource" />
+      <MemberSignature Language="F#" Value="static member GetDurableTaskSchedulerPrivateLinkResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResource" Usage="Azure.ResourceManager.DurableTask.DurableTaskExtensions.GetDurableTaskSchedulerPrivateLinkResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskArmClient.GetDurableTaskSchedulerPrivateLinkResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerPrivateLinkResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDurableTaskSchedulerResource">
@@ -147,6 +220,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource</ReturnType>
@@ -158,7 +232,9 @@
       <Docs>
         <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskArmClient.GetDurableTaskSchedulerResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -175,6 +251,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DurableTask.DurableTaskSchedulerCollection</ReturnType>
@@ -184,7 +261,8 @@
       </Parameters>
       <Docs>
         <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
-        <summary> Gets a collection of DurableTaskSchedulers in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <summary>
+            Gets a collection of DurableTaskSchedulers in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskResourceGroupResource.GetDurableTaskSchedulers" /> instead. </description></item></summary>
         <returns> An object representing collection of DurableTaskSchedulers and their operations over a DurableTaskSchedulerResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -201,6 +279,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource&gt;</ReturnType>
@@ -212,7 +291,9 @@
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List Schedulers by subscription. </summary>
+        <summary>
+            List Schedulers by subscription
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskSubscriptionResource.GetDurableTaskSchedulers(System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -229,6 +310,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DurableTask</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource&gt;</ReturnType>
@@ -240,7 +322,9 @@
       <Docs>
         <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary> List Schedulers by subscription. </summary>
+        <summary>
+            List Schedulers by subscription
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DurableTask.Mocking.MockableDurableTaskSubscriptionResource.GetDurableTaskSchedulersAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DurableTask.DurableTaskSchedulerResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
