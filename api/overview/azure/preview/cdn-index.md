@@ -1,3 +1,3 @@
 | Reference | Package | Source |
 |---|---|---|
-|[Resource Management - CDN](resourcemanager.cdn-readme.md)|[Azure.ResourceManager.Cdn](https://www.nuget.org/packages/Azure.ResourceManager.Cdn)|[Github](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/cdn/Azure.ResourceManager.Cdn)|
+|[Provisioning - Cdn](provisioning.cdn-readme.md)|[Azure.Provisioning.Cdn](https://www.nuget.org/packages/Azure.Provisioning.Cdn)|[GitHub](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/provisioning/Azure.Provisioning.Cdn)|

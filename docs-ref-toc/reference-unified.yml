@@ -553,6 +553,16 @@
         - Azure.ResourceManager.CarbonOptimization
         - Azure.ResourceManager.CarbonOptimization.Mocking
         - Azure.ResourceManager.CarbonOptimization.Models
+  - name: Cdn
+    href: ~/api/overview/azure/{moniker}/cdn.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Provisioning - Cdn
+        href: ~/api/overview/azure/{moniker}/provisioning.cdn-readme.md
+        children:
+        - Azure.Provisioning.Cdn
   - name: Certificateregistration
     href: ~/api/overview/azure/{moniker}/certificateregistration.md
     landingPageType: Service
@@ -1377,6 +1387,18 @@
         - Azure.ResourceManager.ContainerServiceFleet
         - Azure.ResourceManager.ContainerServiceFleet.Mocking
         - Azure.ResourceManager.ContainerServiceFleet.Models
+  - name: Containerregistry.Tasks
+    href: ~/api/overview/azure/{moniker}/containerregistry.tasks.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Containerregistry.Tasks
+        href: ~/api/overview/azure/{moniker}/resourcemanager.containerregistry.tasks-readme.md
+        children:
+        - Azure.ResourceManager.ContainerRegistry.Tasks
+        - Azure.ResourceManager.ContainerRegistry.Tasks.Mocking
+        - Azure.ResourceManager.ContainerRegistry.Tasks.Models
   - name: Content Delivery Network
     href: ~/api/overview/azure/{moniker}/content-delivery-network.md
     landingPageType: Service
@@ -3380,7 +3402,7 @@
     items:
     - name: Management
       items:
-      - name: Resource Management - Neon Postgres
+      - name: Resource Management - Neon Postgres (deprecated)
         href: ~/api/overview/azure/{moniker}/resourcemanager.neonpostgres-readme.md
         children:
         - Azure.ResourceManager.NeonPostgres
@@ -5535,6 +5557,10 @@
           children:
           - Azure.Core.Amqp
         - name: Core
+          href: ~/api/overview/azure/{moniker}/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
+        - name: Core
           href: ~/api/overview/azure/{moniker}/core-readme.md
           children:
           - Azure
@@ -5546,10 +5572,6 @@
           - Azure.Core.Pipeline
           - Azure.Core.Serialization
           - Azure.Messaging
-        - name: Core
-          href: ~/api/overview/azure/{moniker}/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/{moniker}/microsoft.azure.core.spatial-readme.md
           children:
