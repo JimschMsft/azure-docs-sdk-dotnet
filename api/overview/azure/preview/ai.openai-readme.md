@@ -1,19 +1,22 @@
 ---
 title: Azure OpenAI client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.OpenAI, openai
-ms.date: 12/13/2025
+ms.date: 03/13/2026
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: openai
 ---
-# Azure OpenAI client library for .NET - version 2.8.0-beta.1 
+# Azure OpenAI client library for .NET - version 2.9.0-beta.1 
 
+
+> [!NOTE]
+Consider removing the Azure OpenAI SDK from your application in favor of using the OpenAI SDK only for broader models, unified APIs, latest features, and simpler authentication.
 
 The Azure OpenAI client library for .NET is a companion to the official [OpenAI client library for .NET](https://github.com/openai/openai-dotnet). The Azure OpenAI library configures a client for use with Azure OpenAI and provides additional strongly typed extension support for request and response models specific to Azure OpenAI scenarios.
 
 Azure OpenAI is a managed service that allows developers to deploy, tune, and generate content from OpenAI models on Azure resources.
 
-  [Source code](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/openai/Azure.AI.OpenAI/src) | [Package (NuGet)](https://www.nuget.org/packages/Azure.AI.OpenAI) | [API reference documentation](https://learn.microsoft.com/azure/cognitive-services/openai/reference) | [Product documentation](https://learn.microsoft.com/azure/cognitive-services/openai/) | [Samples](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/openai/Azure.AI.OpenAI/tests/Samples)
+  [Source code](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/openai/Azure.AI.OpenAI/src) | [Package (NuGet)](https://www.nuget.org/packages/Azure.AI.OpenAI) | [API reference documentation](https://learn.microsoft.com/azure/cognitive-services/openai/reference) | [Product documentation](https://learn.microsoft.com/azure/cognitive-services/openai/) | [Samples](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/openai/Azure.AI.OpenAI/tests/Samples)
 
 ## Getting started
 
@@ -142,18 +145,18 @@ We guarantee that all client instance methods are thread-safe and independent of
 ### Additional concepts
 
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/core/Azure.Core/samples/Diagnostics.md) |
 [Mocking](https://learn.microsoft.com/dotnet/azure/sdk/unit-testing-mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
 
 ## Examples
 
-You can familiarize yourself with different APIs using [Samples from OpenAI's .NET library](https://github.com/openai/openai-dotnet/tree/main/examples) or [Azure.AI.OpenAI-specific samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.OpenAI_2.8.0-beta.1/sdk/openai/Azure.AI.OpenAI/tests/Samples). Most OpenAI capabilities are available on both Azure OpenAI and OpenAI using the same scenario clients and methods, so not all scenarios are redundantly covered here.
+You can familiarize yourself with different APIs using [Samples from OpenAI's .NET library](https://github.com/openai/openai-dotnet/tree/main/examples) or [Azure.AI.OpenAI-specific samples](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.OpenAI_2.9.0-beta.1/sdk/openai/Azure.AI.OpenAI/tests/Samples). Most OpenAI capabilities are available on both Azure OpenAI and OpenAI using the same scenario clients and methods, so not all scenarios are redundantly covered here.
 
 ### Get a chat completion
 
@@ -375,35 +378,35 @@ See [the Azure OpenAI using your own data quickstart](https://learn.microsoft.co
 **NOTE:** The concurrent use of [Chat Functions](#use-chat-functions) and Azure Chat Extensions on a single request isn't yet supported. Supplying both will result in the Chat Functions information being ignored and the operation behaving as if only the Azure Chat Extensions were provided. To address this limitation, consider separating the evaluation of Chat Functions and Azure Chat Extensions across multiple requests in your solution design.
 
 ```C# Snippet:ChatUsingYourOwnData
-// Extension methods to use data sources with options are subject to SDK surface changes. Suppress the
-// warning to acknowledge and this and use the subject-to-change AddDataSource method.
+        // Extension methods to use data sources with options are subject to SDK surface changes. Suppress the
+        // warning to acknowledge and this and use the subject-to-change AddDataSource method.
 #pragma warning disable AOAI001
 
-ChatCompletionOptions options = new();
-options.AddDataSource(new AzureSearchChatDataSource()
-{
-    Endpoint = new Uri("https://your-search-resource.search.windows.net"),
-    IndexName = "contoso-products-index",
-    Authentication = DataSourceAuthentication.FromApiKey(
-        Environment.GetEnvironmentVariable("OYD_SEARCH_KEY")),
-});
+        ChatCompletionOptions options = new();
+        options.AddDataSource(new AzureSearchChatDataSource()
+        {
+            Endpoint = new Uri("https://your-search-resource.search.windows.net"),
+            IndexName = "contoso-products-index",
+            Authentication = DataSourceAuthentication.FromApiKey(
+                Environment.GetEnvironmentVariable("OYD_SEARCH_KEY")),
+        });
 
-ChatCompletion completion = chatClient.CompleteChat(
-    [
-        new UserChatMessage("What are the best-selling Contoso products this month?"),
-    ],
-    options);
+        ChatCompletion completion = chatClient.CompleteChat(
+            [
+                new UserChatMessage("What are the best-selling Contoso products this month?"),
+            ],
+            options);
 
-ChatMessageContext onYourDataContext = completion.GetMessageContext();
+        ChatMessageContext onYourDataContext = completion.GetMessageContext();
 
-if (onYourDataContext?.Intent is not null)
-{
-    Console.WriteLine($"Intent: {onYourDataContext.Intent}");
-}
-foreach (ChatCitation citation in onYourDataContext?.Citations ?? [])
-{
-    Console.WriteLine($"Citation: {citation.Content}");
-}
+        if (onYourDataContext?.Intent is not null)
+        {
+            Console.WriteLine($"Intent: {onYourDataContext.Intent}");
+        }
+        foreach (ChatCitation citation in onYourDataContext?.Citations ?? [])
+        {
+            Console.WriteLine($"Citation: {citation.Content}");
+        }
 ```
 
 ### Use Assistants and stream a run
@@ -417,14 +420,14 @@ warning to instantiate a client. This can be done in the `.csproj` file via the 
 the code itself with a `#pragma` directive.
 
 ```C# Snippet:Assistants:CreateClient
-AzureOpenAIClient azureClient = new(
-    new Uri("https://your-azure-openai-resource.com"),
-    new DefaultAzureCredential());
+        AzureOpenAIClient azureClient = new(
+            new Uri("https://your-azure-openai-resource.com"),
+            new DefaultAzureCredential());
 
-// The Assistants feature area is in beta, with API specifics subject to change.
-// Suppress the [Experimental] warning via .csproj or, as here, in the code to acknowledge.
+        // The Assistants feature area is in beta, with API specifics subject to change.
+        // Suppress the [Experimental] warning via .csproj or, as here, in the code to acknowledge.
 #pragma warning disable OPENAI001
-AssistantClient assistantClient = azureClient.GetAssistantClient();
+        AssistantClient assistantClient = azureClient.GetAssistantClient();
 ```
 
 With a client, you can then create Assistants, Threads, and new Messages on a thread in preparation to start a run. As is the case for other shared API surfaces, you should use an Azure OpenAI model deployment name wherever a model name is requested.
@@ -515,11 +518,11 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [msdocs_openai_embedding]: https://learn.microsoft.com/azure/cognitive-services/openai/concepts/understand-embeddings
 [style-guide-msft]: /style-guide/capitalization
 [style-guide-cloud]: https://aka.ms/azsdk/cloud-style-guide
-[azure_openai_client_class]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/sdk/openai/Azure.AI.OpenAI/src/Custom/AzureOpenAIClient.cs
+[azure_openai_client_class]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/sdk/openai/Azure.AI.OpenAI/src/Custom/AzureOpenAIClient.cs
 [openai_rest]: https://learn.microsoft.com/azure/cognitive-services/openai/reference
 [azure_openai_completions_docs]: https://learn.microsoft.com/azure/cognitive-services/openai/how-to/completions
 [azure_openai_embeddings_docs]: https://learn.microsoft.com/azure/cognitive-services/openai/concepts/understand-embeddings
-[openai_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.8.0-beta.1/CONTRIBUTING.md
+[openai_contrib]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.OpenAI_2.9.0-beta.1/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [code_of_conduct_faq]: https://opensource.microsoft.com/codeofconduct/faq/
