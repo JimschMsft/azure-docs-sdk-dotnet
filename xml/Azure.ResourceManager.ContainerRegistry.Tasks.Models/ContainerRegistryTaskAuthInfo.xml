@@ -1,0 +1,396 @@
+<Type Name="ContainerRegistryTaskAuthInfo" FullName="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo">
+  <TypeSignature Language="C#" Value="public class ContainerRegistryTaskAuthInfo : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerRegistryTaskAuthInfo extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerRegistryTaskAuthInfo&#xA;Implements IJsonModel(Of ContainerRegistryTaskAuthInfo), IPersistableModel(Of ContainerRegistryTaskAuthInfo)" />
+  <TypeSignature Language="F#" Value="type ContainerRegistryTaskAuthInfo = class&#xA;    interface IJsonModel&lt;ContainerRegistryTaskAuthInfo&gt;&#xA;    interface IPersistableModel&lt;ContainerRegistryTaskAuthInfo&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The authorization properties for accessing the source code repository. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerRegistryTaskAuthInfo (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType tokenType, string token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType tokenType, string token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.#ctor(Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tokenType As ContainerRegistryTaskTokenType, token As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo" Usage="new Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo (tokenType, token)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tokenType" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType" />
+        <Parameter Name="token" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tokenType"> The type of Auth token. </param>
+        <param name="token"> The access token used to access the source control provider. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpiresInSeconds">
+      <MemberSignature Language="C#" Value="public int? ExpiresInSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ExpiresInSeconds" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.ExpiresInSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpiresInSeconds As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ExpiresInSeconds : Nullable&lt;int&gt; with get, set" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.ExpiresInSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Time in seconds that the token remains valid. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ContainerRegistryTaskAuthInfo" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo" Usage="containerRegistryTaskAuthInfo.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="containerRegistryTaskAuthInfo.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As ContainerRegistryTaskAuthInfo" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo" Usage="containerRegistryTaskAuthInfo.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="containerRegistryTaskAuthInfo.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshToken">
+      <MemberSignature Language="C#" Value="public string RefreshToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RefreshToken" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.RefreshToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshToken As String" />
+      <MemberSignature Language="F#" Value="member this.RefreshToken : string with get, set" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.RefreshToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The refresh token used to refresh the access token. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public string Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As String" />
+      <MemberSignature Language="F#" Value="member this.Scope : string with get, set" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The scope of the access token. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo IJsonModel&lt;ContainerRegistryTaskAuthInfo&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#ContainerRegistryTaskAuthInfo&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ContainerRegistryTaskAuthInfo Implements IJsonModel(Of ContainerRegistryTaskAuthInfo).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo" Usage="containerRegistryTaskAuthInfo.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;ContainerRegistryTaskAuthInfo&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#ContainerRegistryTaskAuthInfo&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of ContainerRegistryTaskAuthInfo).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="containerRegistryTaskAuthInfo.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo IPersistableModel&lt;ContainerRegistryTaskAuthInfo&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#ContainerRegistryTaskAuthInfo&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As ContainerRegistryTaskAuthInfo Implements IPersistableModel(Of ContainerRegistryTaskAuthInfo).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo" Usage="containerRegistryTaskAuthInfo.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;ContainerRegistryTaskAuthInfo&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#ContainerRegistryTaskAuthInfo&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of ContainerRegistryTaskAuthInfo).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="containerRegistryTaskAuthInfo.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;ContainerRegistryTaskAuthInfo&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#ContainerRegistryTaskAuthInfo&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of ContainerRegistryTaskAuthInfo).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="containerRegistryTaskAuthInfo.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Token">
+      <MemberSignature Language="C#" Value="public string Token { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Token" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.Token" />
+      <MemberSignature Language="VB.NET" Value="Public Property Token As String" />
+      <MemberSignature Language="F#" Value="member this.Token : string with get, set" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.Token" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The access token used to access the source control provider. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType TokenType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType TokenType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.TokenType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenType As ContainerRegistryTaskTokenType" />
+      <MemberSignature Language="F#" Value="member this.TokenType : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType with get, set" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskAuthInfo.TokenType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTokenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The type of Auth token. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

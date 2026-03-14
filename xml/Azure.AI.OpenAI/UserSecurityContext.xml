@@ -11,6 +11,7 @@
     <AssemblyVersion>2.5.0.0</AssemblyVersion>
     <AssemblyVersion>2.7.0.0</AssemblyVersion>
     <AssemblyVersion>2.8.0.0</AssemblyVersion>
+    <AssemblyVersion>2.9.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,12 @@
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.TypeSpec.Generator.Customizations.CodeGenType("AzureUserSecurityContext")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.TypeSpec.Generator.Customizations.CodeGenType("AzureUserSecurityContext")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary> User security context contains several parameters that describe the application itself, and the end user that interacts with the application. These fields assist your security operations teams to investigate and mitigate security incidents by providing a comprehensive approach to protecting your AI applications. [Learn more](https://aka.ms/TP4AI/Documentation/EndUserContext) about protecting AI applications using Microsoft Defender for Cloud. </summary>
     <remarks>To be added.</remarks>
@@ -39,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,7 +63,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -76,7 +83,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -96,7 +103,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -116,7 +123,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.UserSecurityContext</ReturnType>
@@ -142,7 +149,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -167,7 +174,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.UserSecurityContext</ReturnType>
@@ -193,7 +200,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -217,8 +224,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Microsoft.TypeSpec.Generator.Customizations.CodeGenMember("SourceIp")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.TypeSpec.Generator.Customizations.CodeGenMember("SourceIp")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -240,7 +253,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.UserSecurityContext</ReturnType>
@@ -272,7 +285,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -303,7 +316,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.UserSecurityContext</ReturnType>
@@ -335,7 +348,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -364,7 +377,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>

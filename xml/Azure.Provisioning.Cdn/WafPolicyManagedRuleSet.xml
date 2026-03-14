@@ -1,0 +1,152 @@
+<Type Name="WafPolicyManagedRuleSet" FullName="Azure.Provisioning.Cdn.WafPolicyManagedRuleSet">
+  <TypeSignature Language="C#" Value="public class WafPolicyManagedRuleSet : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WafPolicyManagedRuleSet extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.WafPolicyManagedRuleSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class WafPolicyManagedRuleSet&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type WafPolicyManagedRuleSet = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines a managed rule set.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WafPolicyManagedRuleSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new WafPolicyManagedRuleSet.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnomalyScore">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; AnomalyScore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; AnomalyScore" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.AnomalyScore" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnomalyScore As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.AnomalyScore : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.AnomalyScore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verizon only : If the rule set supports anomaly detection mode, this
+            describes the threshold for blocking requests.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="wafPolicyManagedRuleSet.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of WafPolicyManagedRuleSet.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleGroupOverrides">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.ManagedRuleGroupOverrideSetting&gt; RuleGroupOverrides { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.Cdn.ManagedRuleGroupOverrideSetting&gt; RuleGroupOverrides" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.RuleGroupOverrides" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuleGroupOverrides As BicepList(Of ManagedRuleGroupOverrideSetting)" />
+      <MemberSignature Language="F#" Value="member this.RuleGroupOverrides : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.ManagedRuleGroupOverrideSetting&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.RuleGroupOverrides" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.ManagedRuleGroupOverrideSetting&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines the rule overrides to apply to the rule set.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSetType">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; RuleSetType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; RuleSetType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.RuleSetType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuleSetType As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.RuleSetType : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.RuleSetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines the rule set type to use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSetVersion">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; RuleSetVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; RuleSetVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.RuleSetVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuleSetVersion As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.RuleSetVersion : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicyManagedRuleSet.RuleSetVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines the version of the rule set to use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

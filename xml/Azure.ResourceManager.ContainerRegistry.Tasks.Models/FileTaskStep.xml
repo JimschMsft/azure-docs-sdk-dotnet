@@ -1,0 +1,354 @@
+<Type Name="FileTaskStep" FullName="Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep">
+  <TypeSignature Language="C#" Value="public class FileTaskStep : Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileTaskStep extends Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileTaskStep&#xA;Inherits TaskStepProperties&#xA;Implements IJsonModel(Of FileTaskStep), IPersistableModel(Of FileTaskStep)" />
+  <TypeSignature Language="F#" Value="type FileTaskStep = class&#xA;    inherit TaskStepProperties&#xA;    interface IJsonModel&lt;FileTaskStep&gt;&#xA;    interface IPersistableModel&lt;FileTaskStep&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The properties of a task step. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileTaskStep (string taskFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string taskFilePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (taskFilePath As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep : string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" Usage="new Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep taskFilePath" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="taskFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskFilePath"> The task template/definition file path relative to the source context. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="taskFilePath" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As TaskStepProperties" />
+      <MemberSignature Language="F#" Value="override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties" Usage="fileTaskStep.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="fileTaskStep.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As TaskStepProperties" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties" Usage="fileTaskStep.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="fileTaskStep.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep IJsonModel&lt;FileTaskStep&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#FileTaskStep&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As FileTaskStep Implements IJsonModel(Of FileTaskStep).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" Usage="fileTaskStep.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;FileTaskStep&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#FileTaskStep&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of FileTaskStep).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="fileTaskStep.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep IPersistableModel&lt;FileTaskStep&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#FileTaskStep&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As FileTaskStep Implements IPersistableModel(Of FileTaskStep).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" Usage="fileTaskStep.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;FileTaskStep&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#FileTaskStep&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of FileTaskStep).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="fileTaskStep.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;FileTaskStep&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#Models#FileTaskStep&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of FileTaskStep).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="fileTaskStep.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskFilePath">
+      <MemberSignature Language="C#" Value="public string TaskFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TaskFilePath" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.TaskFilePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property TaskFilePath As String" />
+      <MemberSignature Language="F#" Value="member this.TaskFilePath : string with get, set" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.TaskFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The task template/definition file path relative to the source context. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; Values" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IList(Of ContainerRegistryTaskSetValue)" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The collection of overridable values that can be passed when running a task. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValuesFilePath">
+      <MemberSignature Language="C#" Value="public string ValuesFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValuesFilePath" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.ValuesFilePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValuesFilePath As String" />
+      <MemberSignature Language="F#" Value="member this.ValuesFilePath : string with get, set" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep.ValuesFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The task values/parameters file path relative to the source context. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

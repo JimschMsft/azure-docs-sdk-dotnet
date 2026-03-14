@@ -1,0 +1,108 @@
+<Type Name="UriSigningActionProperties" FullName="Azure.Provisioning.Cdn.UriSigningActionProperties">
+  <TypeSignature Language="C#" Value="public class UriSigningActionProperties : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UriSigningActionProperties extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.UriSigningActionProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Class UriSigningActionProperties&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type UriSigningActionProperties = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines the parameters for the Url Signing action.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UriSigningActionProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.UriSigningActionProperties.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new UriSigningActionProperties.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Algorithm">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.UriSigningAlgorithm&gt; Algorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.UriSigningAlgorithm&gt; Algorithm" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.UriSigningActionProperties.Algorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property Algorithm As BicepValue(Of UriSigningAlgorithm)" />
+      <MemberSignature Language="F#" Value="member this.Algorithm : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.UriSigningAlgorithm&gt; with get, set" Usage="Azure.Provisioning.Cdn.UriSigningActionProperties.Algorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.UriSigningAlgorithm&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Algorithm to use for URL signing.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.UriSigningActionProperties.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="uriSigningActionProperties.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of UriSigningActionProperties.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterNameOverride">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.UriSigningParamIdentifier&gt; ParameterNameOverride { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.Cdn.UriSigningParamIdentifier&gt; ParameterNameOverride" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.UriSigningActionProperties.ParameterNameOverride" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterNameOverride As BicepList(Of UriSigningParamIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.ParameterNameOverride : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.UriSigningParamIdentifier&gt; with get, set" Usage="Azure.Provisioning.Cdn.UriSigningActionProperties.ParameterNameOverride" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.UriSigningParamIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines which query string parameters in the url to be considered for
+            expires, key id etc.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

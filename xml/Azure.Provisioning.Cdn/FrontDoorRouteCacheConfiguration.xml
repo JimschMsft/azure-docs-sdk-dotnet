@@ -1,0 +1,134 @@
+<Type Name="FrontDoorRouteCacheConfiguration" FullName="Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration">
+  <TypeSignature Language="C#" Value="public class FrontDoorRouteCacheConfiguration : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FrontDoorRouteCacheConfiguration extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class FrontDoorRouteCacheConfiguration&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type FrontDoorRouteCacheConfiguration = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Caching settings for a caching-type route. To disable caching, do not
+            provide a cacheConfiguration object.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrontDoorRouteCacheConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new FrontDoorRouteCacheConfiguration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressionSettings">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.RouteCacheCompressionSettings CompressionSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.RouteCacheCompressionSettings CompressionSettings" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.CompressionSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompressionSettings As RouteCacheCompressionSettings" />
+      <MemberSignature Language="F#" Value="member this.CompressionSettings : Azure.Provisioning.Cdn.RouteCacheCompressionSettings with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.CompressionSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.RouteCacheCompressionSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            compression settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="frontDoorRouteCacheConfiguration.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            FrontDoorRouteCacheConfiguration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryParameters">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; QueryParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; QueryParameters" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.QueryParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryParameters As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.QueryParameters : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.QueryParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            query parameters to include or exclude (comma separated).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryStringCachingBehavior">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorQueryStringCachingBehavior&gt; QueryStringCachingBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.FrontDoorQueryStringCachingBehavior&gt; QueryStringCachingBehavior" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.QueryStringCachingBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryStringCachingBehavior As BicepValue(Of FrontDoorQueryStringCachingBehavior)" />
+      <MemberSignature Language="F#" Value="member this.QueryStringCachingBehavior : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorQueryStringCachingBehavior&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorRouteCacheConfiguration.QueryStringCachingBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorQueryStringCachingBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines how Frontdoor caches requests that include query strings. You
+            can ignore any query strings when caching, ignore specific query
+            strings, cache every request with a unique URL, or cache specific
+            query strings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,6 +13,7 @@
     <AssemblyVersion>2.5.0.0</AssemblyVersion>
     <AssemblyVersion>2.7.0.0</AssemblyVersion>
     <AssemblyVersion>2.8.0.0</AssemblyVersion>
+    <AssemblyVersion>2.9.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.AI.OpenAI.Chat.ChatDataSource</BaseTypeName>
@@ -28,6 +29,16 @@
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
+      <AttributeName Language="C#">[Microsoft.TypeSpec.Generator.Customizations.CodeGenSuppress("CosmosChatDataSource", new System.Type[] { typeof(Azure.AI.OpenAI.Chat.InternalAzureCosmosDBChatDataSourceParameters) })]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.TypeSpec.Generator.Customizations.CodeGenSuppress("CosmosChatDataSource", new System.Type[] { typeof(Azure.AI.OpenAI.Chat.InternalAzureCosmosDBChatDataSourceParameters) })&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
+      <AttributeName Language="C#">[Microsoft.TypeSpec.Generator.Customizations.CodeGenType("AzureCosmosDBChatDataSource")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.TypeSpec.Generator.Customizations.CodeGenType("AzureCosmosDBChatDataSource")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary> Represents a data source configuration that will use an Azure CosmosDB resource. </summary>
     <remarks>To be added.</remarks>
@@ -42,7 +53,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -68,7 +79,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -92,7 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.Chat.DataSourceAuthentication</ReturnType>
@@ -117,7 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -138,7 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -159,7 +170,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.Chat.DataSourceFieldMappings</ReturnType>
@@ -182,7 +193,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -203,7 +214,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -223,7 +234,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.Chat.ChatDataSource</ReturnType>
@@ -249,7 +260,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -275,7 +286,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -299,7 +310,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.AI.OpenAI.Chat.DataSourceOutputContexts&gt;</ReturnType>
@@ -328,7 +339,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.Chat.ChatDataSource</ReturnType>
@@ -354,7 +365,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -379,7 +390,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -406,7 +417,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.Chat.CosmosChatDataSource</ReturnType>
@@ -439,7 +450,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -471,7 +482,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.Chat.CosmosChatDataSource</ReturnType>
@@ -504,7 +515,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -534,7 +545,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -562,7 +573,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -583,7 +594,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.AI.OpenAI</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>2.8.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AI.OpenAI.Chat.DataSourceVectorizer</ReturnType>

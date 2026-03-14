@@ -1,0 +1,113 @@
+<Type Name="RouteCacheCompressionSettings" FullName="Azure.Provisioning.Cdn.RouteCacheCompressionSettings">
+  <TypeSignature Language="C#" Value="public class RouteCacheCompressionSettings : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteCacheCompressionSettings extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.RouteCacheCompressionSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class RouteCacheCompressionSettings&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type RouteCacheCompressionSettings = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            settings for compression.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteCacheCompressionSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.RouteCacheCompressionSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new RouteCacheCompressionSettings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTypesToCompress">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; ContentTypesToCompress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; ContentTypesToCompress" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.RouteCacheCompressionSettings.ContentTypesToCompress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentTypesToCompress As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ContentTypesToCompress : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.RouteCacheCompressionSettings.ContentTypesToCompress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of content types on which compression applies. The value should be
+            a valid MIME type.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.RouteCacheCompressionSettings.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="routeCacheCompressionSettings.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            RouteCacheCompressionSettings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompressionEnabled">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsCompressionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsCompressionEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.RouteCacheCompressionSettings.IsCompressionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCompressionEnabled As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsCompressionEnabled : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.Cdn.RouteCacheCompressionSettings.IsCompressionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indicates whether content compression is enabled on AzureFrontDoor.
+            Default value is false. If compression is enabled, content will be
+            served as compressed if user requests for a compressed version.
+            Content won't be compressed on AzureFrontDoor when requested
+            content is smaller than 1 byte or larger than 1 MB.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

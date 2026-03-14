@@ -1,0 +1,661 @@
+<Type Name="ContainerRegistryTasksExtensions" FullName="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions">
+  <TypeSignature Language="C#" Value="public static class ContainerRegistryTasksExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ContainerRegistryTasksExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ContainerRegistryTasksExtensions" />
+  <TypeSignature Language="F#" Value="type ContainerRegistryTasksExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to Azure.ResourceManager.ContainerRegistry.Tasks. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAgentPool">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt; GetAgentPool (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string agentPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt; GetAgentPool(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string agentPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPool(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAgentPool (resourceGroupResource As ResourceGroupResource, registryName As String, agentPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of AgentPoolResource)" />
+      <MemberSignature Language="F#" Value="static member GetAgentPool : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPool (resourceGroupResource, registryName, agentPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="agentPoolName"> The name of the agent pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the detailed information for a given agent pool.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetAgentPool(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAgentPoolAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt;&gt; GetAgentPoolAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string agentPoolName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt;&gt; GetAgentPoolAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string agentPoolName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPoolAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAgentPoolAsync (resourceGroupResource As ResourceGroupResource, registryName As String, agentPoolName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of AgentPoolResource))" />
+      <MemberSignature Language="F#" Value="static member GetAgentPoolAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt;&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPoolAsync (resourceGroupResource, registryName, agentPoolName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="agentPoolName"> The name of the agent pool. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the detailed information for a given agent pool.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetAgentPoolAsync(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAgentPoolResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource GetAgentPoolResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource GetAgentPoolResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPoolResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAgentPoolResource (client As ArmClient, id As ResourceIdentifier) As AgentPoolResource" />
+      <MemberSignature Language="F#" Value="static member GetAgentPoolResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPoolResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksArmClient.GetAgentPoolResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAgentPools">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolCollection GetAgentPools (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolCollection GetAgentPools(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPools(Azure.ResourceManager.Resources.ResourceGroupResource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAgentPools (resourceGroupResource As ResourceGroupResource, registryName As String) As AgentPoolCollection" />
+      <MemberSignature Language="F#" Value="static member GetAgentPools : Azure.ResourceManager.Resources.ResourceGroupResource * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolCollection" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetAgentPools (resourceGroupResource, registryName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <summary>
+            Gets a collection of AgentPools in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetAgentPools(System.String)" /> instead. </description></item></summary>
+        <returns> An object representing collection of AgentPools and their operations over a AgentPoolResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildSourceUploadUrl">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt; GetBuildSourceUploadUrl (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt; GetBuildSourceUploadUrl(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetBuildSourceUploadUrl(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBuildSourceUploadUrl (resourceGroupResource As ResourceGroupResource, registryName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ContainerRegistryTaskSourceUploadResult)" />
+      <MemberSignature Language="F#" Value="static member GetBuildSourceUploadUrl : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetBuildSourceUploadUrl (resourceGroupResource, registryName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The name of the container registry. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the upload location for the user to be able to upload the source.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetBuildSourceUploadUrl(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildSourceUploadUrlAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt;&gt; GetBuildSourceUploadUrlAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt;&gt; GetBuildSourceUploadUrlAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetBuildSourceUploadUrlAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBuildSourceUploadUrlAsync (resourceGroupResource As ResourceGroupResource, registryName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ContainerRegistryTaskSourceUploadResult))" />
+      <MemberSignature Language="F#" Value="static member GetBuildSourceUploadUrlAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt;&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetBuildSourceUploadUrlAsync (resourceGroupResource, registryName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The name of the container registry. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the upload location for the user to be able to upload the source.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetBuildSourceUploadUrlAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRun">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt; GetRun (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string runId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt; GetRun(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string runId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRun(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRun (resourceGroupResource As ResourceGroupResource, registryName As String, runId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of RunResource)" />
+      <MemberSignature Language="F#" Value="static member GetRun : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRun (resourceGroupResource, registryName, runId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="runId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="runId"> The run ID. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the detailed information for a given run.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetRun(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRunAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt; GetRunAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string runId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt; GetRunAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string runId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRunAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRunAsync (resourceGroupResource As ResourceGroupResource, registryName As String, runId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of RunResource))" />
+      <MemberSignature Language="F#" Value="static member GetRunAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRunAsync (resourceGroupResource, registryName, runId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="runId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="runId"> The run ID. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the detailed information for a given run.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetRunAsync(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRunResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.RunResource GetRunResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.RunResource GetRunResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRunResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRunResource (client As ArmClient, id As ResourceIdentifier) As RunResource" />
+      <MemberSignature Language="F#" Value="static member GetRunResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.RunResource" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRunResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.RunResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.RunResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksArmClient.GetRunResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.RunResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRuns">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.RunCollection GetRuns (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.RunCollection GetRuns(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRuns(Azure.ResourceManager.Resources.ResourceGroupResource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRuns (resourceGroupResource As ResourceGroupResource, registryName As String) As RunCollection" />
+      <MemberSignature Language="F#" Value="static member GetRuns : Azure.ResourceManager.Resources.ResourceGroupResource * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.RunCollection" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetRuns (resourceGroupResource, registryName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.RunCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <summary>
+            Gets a collection of Runs in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetRuns(System.String)" /> instead. </description></item></summary>
+        <returns> An object representing collection of Runs and their operations over a RunResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTask">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt; GetTask (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt; GetTask(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTask(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTask (resourceGroupResource As ResourceGroupResource, registryName As String, taskName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of TaskResource)" />
+      <MemberSignature Language="F#" Value="static member GetTask : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTask (resourceGroupResource, registryName, taskName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="taskName"> The name of the container registry task. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specified task.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetTask(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt;&gt; GetTaskAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt;&gt; GetTaskAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTaskAsync (resourceGroupResource As ResourceGroupResource, registryName As String, taskName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of TaskResource))" />
+      <MemberSignature Language="F#" Value="static member GetTaskAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt;&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskAsync (resourceGroupResource, registryName, taskName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="taskName"> The name of the container registry task. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Get the properties of a specified task.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetTaskAsync(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource GetTaskResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource GetTaskResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTaskResource (client As ArmClient, id As ResourceIdentifier) As TaskResource" />
+      <MemberSignature Language="F#" Value="static member GetTaskResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksArmClient.GetTaskResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.TaskResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskRun">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt; GetTaskRun (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskRunName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt; GetTaskRun(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskRunName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRun(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTaskRun (resourceGroupResource As ResourceGroupResource, registryName As String, taskRunName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of TaskRunResource)" />
+      <MemberSignature Language="F#" Value="static member GetTaskRun : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRun (resourceGroupResource, registryName, taskRunName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="taskRunName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="taskRunName"> The name of the task run. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the detailed information for a given task run.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetTaskRun(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskRunAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt;&gt; GetTaskRunAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskRunName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt;&gt; GetTaskRunAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, string taskRunName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRunAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTaskRunAsync (resourceGroupResource As ResourceGroupResource, registryName As String, taskRunName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of TaskRunResource))" />
+      <MemberSignature Language="F#" Value="static member GetTaskRunAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt;&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRunAsync (resourceGroupResource, registryName, taskRunName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="taskRunName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <param name="taskRunName"> The name of the task run. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the detailed information for a given task run.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetTaskRunAsync(System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskRunResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource GetTaskRunResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource GetTaskRunResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRunResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTaskRunResource (client As ArmClient, id As ResourceIdentifier) As TaskRunResource" />
+      <MemberSignature Language="F#" Value="static member GetTaskRunResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRunResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksArmClient.GetTaskRunResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTaskRuns">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunCollection GetTaskRuns (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunCollection GetTaskRuns(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRuns(Azure.ResourceManager.Resources.ResourceGroupResource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTaskRuns (resourceGroupResource As ResourceGroupResource, registryName As String) As TaskRunCollection" />
+      <MemberSignature Language="F#" Value="static member GetTaskRuns : Azure.ResourceManager.Resources.ResourceGroupResource * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunCollection" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTaskRuns (resourceGroupResource, registryName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <summary>
+            Gets a collection of TaskRuns in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetTaskRuns(System.String)" /> instead. </description></item></summary>
+        <returns> An object representing collection of TaskRuns and their operations over a TaskRunResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTasks">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.TaskCollection GetTasks (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.TaskCollection GetTasks(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTasks(Azure.ResourceManager.Resources.ResourceGroupResource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTasks (resourceGroupResource As ResourceGroupResource, registryName As String) As TaskCollection" />
+      <MemberSignature Language="F#" Value="static member GetTasks : Azure.ResourceManager.Resources.ResourceGroupResource * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.TaskCollection" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.GetTasks (resourceGroupResource, registryName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.TaskCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The registryName for the resource. </param>
+        <summary>
+            Gets a collection of Tasks in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.GetTasks(System.String)" /> instead. </description></item></summary>
+        <returns> An object representing collection of Tasks and their operations over a TaskResource. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleRun">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt; ScheduleRun (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt; ScheduleRun(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.ScheduleRun(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ScheduleRun (resourceGroupResource As ResourceGroupResource, registryName As String, content As RunContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of RunResource)" />
+      <MemberSignature Language="F#" Value="static member ScheduleRun : Azure.ResourceManager.Resources.ResourceGroupResource * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.ScheduleRun (resourceGroupResource, registryName, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="content" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The name of the container registry. </param>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Schedules a new run based on the request parameters and add it to the run queue.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.ScheduleRun(System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleRunAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt; ScheduleRunAsync (this Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt; ScheduleRunAsync(class Azure.ResourceManager.Resources.ResourceGroupResource resourceGroupResource, string registryName, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.ScheduleRunAsync(Azure.ResourceManager.Resources.ResourceGroupResource,System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ScheduleRunAsync (resourceGroupResource As ResourceGroupResource, registryName As String, content As RunContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of RunResource))" />
+      <MemberSignature Language="F#" Value="static member ScheduleRunAsync : Azure.ResourceManager.Resources.ResourceGroupResource * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.ContainerRegistryTasksExtensions.ScheduleRunAsync (resourceGroupResource, registryName, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
+        <Parameter Name="registryName" Type="System.String" />
+        <Parameter Name="content" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
+        <param name="registryName"> The name of the container registry. </param>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Schedules a new run based on the request parameters and add it to the run queue.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.ContainerRegistry.Tasks.Mocking.MockableContainerRegistryTasksResourceGroupResource.ScheduleRunAsync(System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

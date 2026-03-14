@@ -1,0 +1,223 @@
+<Type Name="KeyVaultCertificateSource" FullName="Azure.Provisioning.Cdn.KeyVaultCertificateSource">
+  <TypeSignature Language="C#" Value="public class KeyVaultCertificateSource : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyVaultCertificateSource extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.KeyVaultCertificateSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyVaultCertificateSource&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type KeyVaultCertificateSource = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Describes the parameters for using a user's KeyVault certificate for
+            securing custom domain.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyVaultCertificateSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.KeyVaultCertificateSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new KeyVaultCertificateSource.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.KeyVaultCertificateSource.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="keyVaultCertificateSource.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of KeyVaultCertificateSource.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteRule">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CertificateDeleteAction&gt; DeleteRule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.CertificateDeleteAction&gt; DeleteRule" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.KeyVaultCertificateSource.DeleteRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteRule As BicepValue(Of CertificateDeleteAction)" />
+      <MemberSignature Language="F#" Value="member this.DeleteRule : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CertificateDeleteAction&gt; with get, set" Usage="Azure.Provisioning.Cdn.KeyVaultCertificateSource.DeleteRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CertificateDeleteAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes the action that shall be taken when the certificate is
+            removed from Key Vault.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceGroupName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ResourceGroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ResourceGroupName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.KeyVaultCertificateSource.ResourceGroupName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceGroupName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ResourceGroupName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.KeyVaultCertificateSource.ResourceGroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Resource group of the user's Key Vault containing the SSL
+            certificate.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; SecretName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; SecretName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.KeyVaultCertificateSource.SecretName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecretName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SecretName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.KeyVaultCertificateSource.SecretName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of Key Vault Secret (representing the full certificate PFX) in
+            Key Vault.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecretVersion">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; SecretVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; SecretVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.KeyVaultCertificateSource.SecretVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecretVersion As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SecretVersion : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.KeyVaultCertificateSource.SecretVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The version(GUID) of Key Vault Secret in Key Vault.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriptionId">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; SubscriptionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; SubscriptionId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.KeyVaultCertificateSource.SubscriptionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SubscriptionId : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.KeyVaultCertificateSource.SubscriptionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Subscription Id of the user's Key Vault containing the SSL
+            certificate.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateRule">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CertificateUpdateAction&gt; UpdateRule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.CertificateUpdateAction&gt; UpdateRule" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.KeyVaultCertificateSource.UpdateRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateRule As BicepValue(Of CertificateUpdateAction)" />
+      <MemberSignature Language="F#" Value="member this.UpdateRule : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CertificateUpdateAction&gt; with get, set" Usage="Azure.Provisioning.Cdn.KeyVaultCertificateSource.UpdateRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CertificateUpdateAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes the action that shall be taken when the certificate is
+            updated in Key Vault.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VaultName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; VaultName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; VaultName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.KeyVaultCertificateSource.VaultName" />
+      <MemberSignature Language="VB.NET" Value="Public Property VaultName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.VaultName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.KeyVaultCertificateSource.VaultName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the user's Key Vault containing the SSL certificate.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

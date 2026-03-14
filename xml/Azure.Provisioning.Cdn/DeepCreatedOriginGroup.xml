@@ -1,0 +1,180 @@
+<Type Name="DeepCreatedOriginGroup" FullName="Azure.Provisioning.Cdn.DeepCreatedOriginGroup">
+  <TypeSignature Language="C#" Value="public class DeepCreatedOriginGroup : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeepCreatedOriginGroup extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.DeepCreatedOriginGroup" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeepCreatedOriginGroup&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type DeepCreatedOriginGroup = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The origin group for CDN content which is added when creating a CDN
+            endpoint. Traffic is sent to the origins within the origin group based on
+            origin health.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeepCreatedOriginGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.DeepCreatedOriginGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new DeepCreatedOriginGroup.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.DeepCreatedOriginGroup.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="deepCreatedOriginGroup.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of DeepCreatedOriginGroup.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HealthProbeSettings">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.HealthProbeSettings HealthProbeSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.HealthProbeSettings HealthProbeSettings" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeepCreatedOriginGroup.HealthProbeSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property HealthProbeSettings As HealthProbeSettings" />
+      <MemberSignature Language="F#" Value="member this.HealthProbeSettings : Azure.Provisioning.Cdn.HealthProbeSettings with get, set" Usage="Azure.Provisioning.Cdn.DeepCreatedOriginGroup.HealthProbeSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.HealthProbeSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Health probe settings to the origin that is used to determine the
+            health of the origin.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeepCreatedOriginGroup.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.DeepCreatedOriginGroup.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Origin group name which must be unique within the endpoint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Origins">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Resources.WritableSubResource&gt; Origins { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.Resources.WritableSubResource&gt; Origins" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeepCreatedOriginGroup.Origins" />
+      <MemberSignature Language="VB.NET" Value="Public Property Origins As BicepList(Of WritableSubResource)" />
+      <MemberSignature Language="F#" Value="member this.Origins : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Resources.WritableSubResource&gt; with get, set" Usage="Azure.Provisioning.Cdn.DeepCreatedOriginGroup.Origins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Resources.WritableSubResource&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The source of the content being delivered via CDN within given origin
+            group.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseBasedOriginErrorDetectionSettings">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.ResponseBasedOriginErrorDetectionSettings ResponseBasedOriginErrorDetectionSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.ResponseBasedOriginErrorDetectionSettings ResponseBasedOriginErrorDetectionSettings" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeepCreatedOriginGroup.ResponseBasedOriginErrorDetectionSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseBasedOriginErrorDetectionSettings As ResponseBasedOriginErrorDetectionSettings" />
+      <MemberSignature Language="F#" Value="member this.ResponseBasedOriginErrorDetectionSettings : Azure.Provisioning.Cdn.ResponseBasedOriginErrorDetectionSettings with get, set" Usage="Azure.Provisioning.Cdn.DeepCreatedOriginGroup.ResponseBasedOriginErrorDetectionSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.ResponseBasedOriginErrorDetectionSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The JSON object that contains the properties to determine origin health
+            using real requests/responses.This property is currently not supported.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrafficRestorationTimeToHealedOrNewEndpointsInMinutes">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; TrafficRestorationTimeToHealedOrNewEndpointsInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; TrafficRestorationTimeToHealedOrNewEndpointsInMinutes" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeepCreatedOriginGroup.TrafficRestorationTimeToHealedOrNewEndpointsInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrafficRestorationTimeToHealedOrNewEndpointsInMinutes As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.TrafficRestorationTimeToHealedOrNewEndpointsInMinutes : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.Cdn.DeepCreatedOriginGroup.TrafficRestorationTimeToHealedOrNewEndpointsInMinutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Time in minutes to shift the traffic to the endpoint gradually when an
+            unhealthy endpoint comes healthy or a new endpoint is added. Default
+            is 10 mins. This property is currently not supported.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

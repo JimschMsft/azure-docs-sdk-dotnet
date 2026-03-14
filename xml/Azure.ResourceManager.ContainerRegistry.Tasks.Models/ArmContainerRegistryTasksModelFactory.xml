@@ -1,0 +1,1265 @@
+<Type Name="ArmContainerRegistryTasksModelFactory" FullName="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory">
+  <TypeSignature Language="C#" Value="public static class ArmContainerRegistryTasksModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArmContainerRegistryTasksModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArmContainerRegistryTasksModelFactory" />
+  <TypeSignature Language="F#" Value="type ArmContainerRegistryTasksModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AgentPoolData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolData AgentPoolData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, int? count = default, string tier = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOS? os = default, Azure.Core.ResourceIdentifier virtualNetworkSubnetResourceId = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolData AgentPoolData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;int32&gt; count, string tier, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOS&gt; os, class Azure.Core.ResourceIdentifier virtualNetworkSubnetResourceId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; provisioningState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.AgentPoolData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{System.Int32},System.String,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOS},Azure.Core.ResourceIdentifier,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentPoolData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional count As Nullable(Of Integer) = Nothing, Optional tier As String = Nothing, Optional os As Nullable(Of ContainerRegistryTaskOS) = Nothing, Optional virtualNetworkSubnetResourceId As ResourceIdentifier = Nothing, Optional provisioningState As Nullable(Of ContainerRegistryTaskProvisioningState) = Nothing) As AgentPoolData" />
+      <MemberSignature Language="F#" Value="static member AgentPoolData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;int&gt; * string * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOS&gt; * Azure.Core.ResourceIdentifier * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolData" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.AgentPoolData (id, name, resourceType, systemData, tags, location, count, tier, os, virtualNetworkSubnetResourceId, provisioningState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="tier" Type="System.String" />
+        <Parameter Name="os" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOS&gt;" />
+        <Parameter Name="virtualNetworkSubnetResourceId" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="count"> The count of agent machine. </param>
+        <param name="tier"> The Tier of agent machine. </param>
+        <param name="os"> The OS of agent machine. </param>
+        <param name="virtualNetworkSubnetResourceId"> The Virtual Network Subnet Resource Id of the agent machine. </param>
+        <param name="provisioningState"> The provisioning state of this agent pool. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.AgentPoolData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentPoolPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolPatch AgentPoolPatch (int? count = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolPatch AgentPoolPatch(valuetype System.Nullable`1&lt;int32&gt; count, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.AgentPoolPatch(System.Nullable{System.Int32},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentPoolPatch (Optional count As Nullable(Of Integer) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As AgentPoolPatch" />
+      <MemberSignature Language="F#" Value="static member AgentPoolPatch : Nullable&lt;int&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolPatch" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.AgentPoolPatch (count, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="count"> The count of agent machine. </param>
+        <param name="tags"> The ARM resource tags. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentPoolQueueStatus">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolQueueStatus AgentPoolQueueStatus (int? count = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolQueueStatus AgentPoolQueueStatus(valuetype System.Nullable`1&lt;int32&gt; count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.AgentPoolQueueStatus(System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentPoolQueueStatus (Optional count As Nullable(Of Integer) = Nothing) As AgentPoolQueueStatus" />
+      <MemberSignature Language="F#" Value="static member AgentPoolQueueStatus : Nullable&lt;int&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolQueueStatus" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.AgentPoolQueueStatus count" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolQueueStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="count"> The number of pending runs in the queue. </param>
+        <summary> The QueueStatus of Agent Pool. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.AgentPoolQueueStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskBaseImageDependency">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency ContainerRegistryTaskBaseImageDependency (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependencyType? type = default, string registry = default, string repository = default, string tag = default, string digest = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency ContainerRegistryTaskBaseImageDependency(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependencyType&gt; type, string registry, string repository, string tag, string digest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskBaseImageDependency(System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependencyType},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskBaseImageDependency (Optional type As Nullable(Of ContainerRegistryTaskBaseImageDependencyType) = Nothing, Optional registry As String = Nothing, Optional repository As String = Nothing, Optional tag As String = Nothing, Optional digest As String = Nothing) As ContainerRegistryTaskBaseImageDependency" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskBaseImageDependency : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependencyType&gt; * string * string * string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskBaseImageDependency (type, registry, repository, tag, digest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependencyType&gt;" />
+        <Parameter Name="registry" Type="System.String" />
+        <Parameter Name="repository" Type="System.String" />
+        <Parameter Name="tag" Type="System.String" />
+        <Parameter Name="digest" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The type of the base image dependency. </param>
+        <param name="registry"> The registry login server. </param>
+        <param name="repository"> The repository name. </param>
+        <param name="tag"> The tag name. </param>
+        <param name="digest"> The sha256-based digest of the image manifest. </param>
+        <summary> Properties that describe a base image dependency. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskBaseImageTriggerUpdateContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent ContainerRegistryTaskBaseImageTriggerUpdateContent (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerType? baseImageTriggerType = default, string updateTriggerEndpoint = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUpdateTriggerPayloadType? updateTriggerPayloadType = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus? status = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent ContainerRegistryTaskBaseImageTriggerUpdateContent(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerType&gt; baseImageTriggerType, string updateTriggerEndpoint, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUpdateTriggerPayloadType&gt; updateTriggerPayloadType, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; status, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskBaseImageTriggerUpdateContent(System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerType},System.String,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUpdateTriggerPayloadType},System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskBaseImageTriggerUpdateContent (Optional baseImageTriggerType As Nullable(Of ContainerRegistryTaskBaseImageTriggerType) = Nothing, Optional updateTriggerEndpoint As String = Nothing, Optional updateTriggerPayloadType As Nullable(Of ContainerRegistryTaskUpdateTriggerPayloadType) = Nothing, Optional status As Nullable(Of ContainerRegistryTaskTriggerStatus) = Nothing, Optional name As String = Nothing) As ContainerRegistryTaskBaseImageTriggerUpdateContent" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskBaseImageTriggerUpdateContent : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerType&gt; * string * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUpdateTriggerPayloadType&gt; * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskBaseImageTriggerUpdateContent (baseImageTriggerType, updateTriggerEndpoint, updateTriggerPayloadType, status, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseImageTriggerType" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerType&gt;" />
+        <Parameter Name="updateTriggerEndpoint" Type="System.String" />
+        <Parameter Name="updateTriggerPayloadType" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUpdateTriggerPayloadType&gt;" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt;" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="baseImageTriggerType"> The type of the auto trigger for base image dependency updates. </param>
+        <param name="updateTriggerEndpoint"> The endpoint URL for receiving update triggers. </param>
+        <param name="updateTriggerPayloadType"> Type of Payload body for Base image update triggers. </param>
+        <param name="status"> The current status of trigger. </param>
+        <param name="name"> The name of the trigger. </param>
+        <summary> The properties for updating base image dependency trigger. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskCredentials">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials ContainerRegistryTaskCredentials (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceRegistryCredentials sourceRegistry = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCustomRegistryCredentials&gt; customRegistries = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials ContainerRegistryTaskCredentials(class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceRegistryCredentials sourceRegistry, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCustomRegistryCredentials&gt; customRegistries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskCredentials(Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceRegistryCredentials,System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCustomRegistryCredentials})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskCredentials (Optional sourceRegistry As ContainerRegistryTaskSourceRegistryCredentials = Nothing, Optional customRegistries As IDictionary(Of String, ContainerRegistryTaskCustomRegistryCredentials) = Nothing) As ContainerRegistryTaskCredentials" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskCredentials : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceRegistryCredentials * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCustomRegistryCredentials&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskCredentials (sourceRegistry, customRegistries)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceRegistry" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceRegistryCredentials" />
+        <Parameter Name="customRegistries" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCustomRegistryCredentials&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sourceRegistry"> Describes the credential parameters for accessing the source registry. </param>
+        <param name="customRegistries">
+            Describes the credential parameters for accessing other custom registries. The key
+            for the dictionary item will be the registry login server (myregistry.azurecr.io) and
+            the value of the item will be the registry credentials for accessing the registry.
+            </param>
+        <summary> The parameters that describes a set of credentials that will be used when a run is invoked. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskIdentityProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties ContainerRegistryTaskIdentityProperties (string principalId = default, string tenantId = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskResourceIdentityType? type = default, System.Collections.Generic.IDictionary&lt;string,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties&gt; userAssignedIdentities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties ContainerRegistryTaskIdentityProperties(string principalId, string tenantId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskResourceIdentityType&gt; type, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties&gt; userAssignedIdentities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskIdentityProperties(System.String,System.String,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskResourceIdentityType},System.Collections.Generic.IDictionary{System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskIdentityProperties (Optional principalId As String = Nothing, Optional tenantId As String = Nothing, Optional type As Nullable(Of ContainerRegistryTaskResourceIdentityType) = Nothing, Optional userAssignedIdentities As IDictionary(Of String, ContainerRegistryTaskUserIdentityProperties) = Nothing) As ContainerRegistryTaskIdentityProperties" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskIdentityProperties : string * string * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskResourceIdentityType&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskIdentityProperties (principalId, tenantId, type, userAssignedIdentities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="principalId" Type="System.String" />
+        <Parameter Name="tenantId" Type="System.String" />
+        <Parameter Name="type" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskResourceIdentityType&gt;" />
+        <Parameter Name="userAssignedIdentities" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="principalId"> The principal ID of resource identity. </param>
+        <param name="tenantId"> The tenant ID of resource. </param>
+        <param name="type"> The identity type. </param>
+        <param name="userAssignedIdentities">
+            The list of user identities associated with the resource. The user identity
+            dictionary key references will be ARM resource ids in the form:
+            '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/
+            providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+            </param>
+        <summary> Managed identity for the resource. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskImageDescriptor">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor ContainerRegistryTaskImageDescriptor (string registry = default, string repository = default, string tag = default, string digest = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor ContainerRegistryTaskImageDescriptor(string registry, string repository, string tag, string digest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskImageDescriptor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskImageDescriptor (Optional registry As String = Nothing, Optional repository As String = Nothing, Optional tag As String = Nothing, Optional digest As String = Nothing) As ContainerRegistryTaskImageDescriptor" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskImageDescriptor : string * string * string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskImageDescriptor (registry, repository, tag, digest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="registry" Type="System.String" />
+        <Parameter Name="repository" Type="System.String" />
+        <Parameter Name="tag" Type="System.String" />
+        <Parameter Name="digest" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="registry"> The registry login server. </param>
+        <param name="repository"> The repository name. </param>
+        <param name="tag"> The tag name. </param>
+        <param name="digest"> The sha256-based digest of the image manifest. </param>
+        <summary> Properties for a registry image. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskImageUpdateTrigger">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger ContainerRegistryTaskImageUpdateTrigger (string id = default, DateTimeOffset? occurredOn = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; images = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger ContainerRegistryTaskImageUpdateTrigger(string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; occurredOn, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; images) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskImageUpdateTrigger(System.String,System.Nullable{System.DateTimeOffset},System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskImageUpdateTrigger (Optional id As String = Nothing, Optional occurredOn As Nullable(Of DateTimeOffset) = Nothing, Optional images As IEnumerable(Of ContainerRegistryTaskImageDescriptor) = Nothing) As ContainerRegistryTaskImageUpdateTrigger" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskImageUpdateTrigger : string * Nullable&lt;DateTimeOffset&gt; * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskImageUpdateTrigger (id, occurredOn, images)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="occurredOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="images" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The unique ID of the trigger. </param>
+        <param name="occurredOn"> The timestamp when the image update happened. </param>
+        <param name="images"> The list of image updates that caused the build. </param>
+        <summary> The image update trigger that caused a build. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskOverrideStepProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOverrideStepProperties ContainerRegistryTaskOverrideStepProperties (string contextPath = default, string file = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments = default, string target = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values = default, string updateTriggerToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOverrideStepProperties ContainerRegistryTaskOverrideStepProperties(string contextPath, string file, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments, string target, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values, string updateTriggerToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskOverrideStepProperties(System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument},System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskOverrideStepProperties (Optional contextPath As String = Nothing, Optional file As String = Nothing, Optional arguments As IEnumerable(Of ContainerRegistryTaskArgument) = Nothing, Optional target As String = Nothing, Optional values As IEnumerable(Of ContainerRegistryTaskSetValue) = Nothing, Optional updateTriggerToken As String = Nothing) As ContainerRegistryTaskOverrideStepProperties" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskOverrideStepProperties : string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOverrideStepProperties" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskOverrideStepProperties (contextPath, file, arguments, target, values, updateTriggerToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOverrideStepProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="file" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt;" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" />
+        <Parameter Name="updateTriggerToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contextPath"> The source context against which run has to be queued. </param>
+        <param name="file"> The file against which run has to be queued. </param>
+        <param name="arguments">
+            Gets or sets the collection of override arguments to be used when
+            executing a build step.
+            </param>
+        <param name="target"> The name of the target build stage for the docker build. </param>
+        <param name="values"> The collection of overridable values that can be passed when running a Task. </param>
+        <param name="updateTriggerToken"> Base64 encoded update trigger token that will be attached with the base image trigger webhook. </param>
+        <summary> The ContainerRegistryTaskOverrideStepProperties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskOverrideStepProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskRunLogResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunLogResult ContainerRegistryTaskRunLogResult (string logLink = default, string logArtifactLink = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunLogResult ContainerRegistryTaskRunLogResult(string logLink, string logArtifactLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskRunLogResult(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskRunLogResult (Optional logLink As String = Nothing, Optional logArtifactLink As String = Nothing) As ContainerRegistryTaskRunLogResult" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskRunLogResult : string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunLogResult" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskRunLogResult (logLink, logArtifactLink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunLogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logLink" Type="System.String" />
+        <Parameter Name="logArtifactLink" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="logLink"> The link to logs for a run on a azure container registry. </param>
+        <param name="logArtifactLink"> The link to logs in registry for a run on a azure container registry. </param>
+        <summary> The result of get log link operation. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunLogResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskSourceTrigger">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger ContainerRegistryTaskSourceTrigger (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceProperties sourceRepository = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt; sourceTriggerEvents = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus? status = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger ContainerRegistryTaskSourceTrigger(class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceProperties sourceRepository, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt; sourceTriggerEvents, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; status, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceTrigger(Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceProperties,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent},System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskSourceTrigger (Optional sourceRepository As ContainerRegistryTaskSourceProperties = Nothing, Optional sourceTriggerEvents As IEnumerable(Of ContainerRegistryTaskSourceTriggerEvent) = Nothing, Optional status As Nullable(Of ContainerRegistryTaskTriggerStatus) = Nothing, Optional name As String = Nothing) As ContainerRegistryTaskSourceTrigger" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskSourceTrigger : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceProperties * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt; * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceTrigger (sourceRepository, sourceTriggerEvents, status, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceRepository" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceProperties" />
+        <Parameter Name="sourceTriggerEvents" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt;" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt;" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceRepository"> The properties that describes the source(code) for the task. </param>
+        <param name="sourceTriggerEvents"> The source event corresponding to the trigger. </param>
+        <param name="status"> The current status of trigger. </param>
+        <param name="name"> The name of the trigger. </param>
+        <summary> The properties of a source based trigger. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskSourceTriggerDescriptor">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor ContainerRegistryTaskSourceTriggerDescriptor (string id = default, string eventType = default, string commitId = default, string pullRequestId = default, Uri repositoryUri = default, string branchName = default, string providerType = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor ContainerRegistryTaskSourceTriggerDescriptor(string id, string eventType, string commitId, string pullRequestId, class System.Uri repositoryUri, string branchName, string providerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceTriggerDescriptor(System.String,System.String,System.String,System.String,System.Uri,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskSourceTriggerDescriptor (Optional id As String = Nothing, Optional eventType As String = Nothing, Optional commitId As String = Nothing, Optional pullRequestId As String = Nothing, Optional repositoryUri As Uri = Nothing, Optional branchName As String = Nothing, Optional providerType As String = Nothing) As ContainerRegistryTaskSourceTriggerDescriptor" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskSourceTriggerDescriptor : string * string * string * string * Uri * string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceTriggerDescriptor (id, eventType, commitId, pullRequestId, repositoryUri, branchName, providerType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="eventType" Type="System.String" />
+        <Parameter Name="commitId" Type="System.String" />
+        <Parameter Name="pullRequestId" Type="System.String" />
+        <Parameter Name="repositoryUri" Type="System.Uri" />
+        <Parameter Name="branchName" Type="System.String" />
+        <Parameter Name="providerType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The unique ID of the trigger. </param>
+        <param name="eventType"> The event type of the trigger. </param>
+        <param name="commitId"> The unique ID that identifies a commit. </param>
+        <param name="pullRequestId"> The unique ID that identifies pull request. </param>
+        <param name="repositoryUri"> The repository URL. </param>
+        <param name="branchName"> The branch name in the repository. </param>
+        <param name="providerType"> The source control provider type. </param>
+        <summary> The source trigger that caused a run. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskSourceTriggerUpdateContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent ContainerRegistryTaskSourceTriggerUpdateContent (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUpdateContent sourceRepository = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt; sourceTriggerEvents = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus? status = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent ContainerRegistryTaskSourceTriggerUpdateContent(class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUpdateContent sourceRepository, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt; sourceTriggerEvents, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; status, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceTriggerUpdateContent(Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUpdateContent,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent},System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskSourceTriggerUpdateContent (Optional sourceRepository As ContainerRegistryTaskSourceUpdateContent = Nothing, Optional sourceTriggerEvents As IEnumerable(Of ContainerRegistryTaskSourceTriggerEvent) = Nothing, Optional status As Nullable(Of ContainerRegistryTaskTriggerStatus) = Nothing, Optional name As String = Nothing) As ContainerRegistryTaskSourceTriggerUpdateContent" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskSourceTriggerUpdateContent : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUpdateContent * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt; * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceTriggerUpdateContent (sourceRepository, sourceTriggerEvents, status, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceRepository" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUpdateContent" />
+        <Parameter Name="sourceTriggerEvents" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerEvent&gt;" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt;" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceRepository"> The properties that describes the source(code) for the task. </param>
+        <param name="sourceTriggerEvents"> The source event corresponding to the trigger. </param>
+        <param name="status"> The current status of trigger. </param>
+        <param name="name"> The name of the trigger. </param>
+        <summary> The properties for updating a source based trigger. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskSourceUploadResult">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult ContainerRegistryTaskSourceUploadResult (string uploadUri = default, string relativePath = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult ContainerRegistryTaskSourceUploadResult(string uploadUri, string relativePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceUploadResult(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskSourceUploadResult (Optional uploadUri As String = Nothing, Optional relativePath As String = Nothing) As ContainerRegistryTaskSourceUploadResult" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskSourceUploadResult : string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskSourceUploadResult (uploadUri, relativePath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uploadUri" Type="System.String" />
+        <Parameter Name="relativePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uploadUri"> The URL where the client can upload the source. </param>
+        <param name="relativePath"> The relative path to the source. This is used to submit the subsequent queue build request. </param>
+        <summary> The properties of a response to source upload request. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceUploadResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskTimerTriggerDescriptor">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor ContainerRegistryTaskTimerTriggerDescriptor (string timerTriggerName = default, string scheduleOccurrence = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor ContainerRegistryTaskTimerTriggerDescriptor(string timerTriggerName, string scheduleOccurrence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTimerTriggerDescriptor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskTimerTriggerDescriptor (Optional timerTriggerName As String = Nothing, Optional scheduleOccurrence As String = Nothing) As ContainerRegistryTaskTimerTriggerDescriptor" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskTimerTriggerDescriptor : string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTimerTriggerDescriptor (timerTriggerName, scheduleOccurrence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timerTriggerName" Type="System.String" />
+        <Parameter Name="scheduleOccurrence" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="timerTriggerName"> The timer trigger name that caused the run. </param>
+        <param name="scheduleOccurrence"> The occurrence that triggered the run. </param>
+        <summary> The ContainerRegistryTaskTimerTriggerDescriptor. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskTimerTriggerUpdateContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent ContainerRegistryTaskTimerTriggerUpdateContent (string schedule = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus? status = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent ContainerRegistryTaskTimerTriggerUpdateContent(string schedule, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; status, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTimerTriggerUpdateContent(System.String,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskTimerTriggerUpdateContent (Optional schedule As String = Nothing, Optional status As Nullable(Of ContainerRegistryTaskTriggerStatus) = Nothing, Optional name As String = Nothing) As ContainerRegistryTaskTimerTriggerUpdateContent" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskTimerTriggerUpdateContent : string * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt; * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTimerTriggerUpdateContent (schedule, status, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schedule" Type="System.String" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerStatus&gt;" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="schedule"> The CRON expression for the task schedule. </param>
+        <param name="status"> The current status of trigger. </param>
+        <param name="name"> The name of the trigger. </param>
+        <summary> The properties for updating a timer trigger. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskTriggerProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties ContainerRegistryTaskTriggerProperties (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTrigger&gt; timerTriggers = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger&gt; sourceTriggers = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTrigger baseImageTrigger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties ContainerRegistryTaskTriggerProperties(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTrigger&gt; timerTriggers, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger&gt; sourceTriggers, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTrigger baseImageTrigger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTriggerProperties(System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTrigger},System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTrigger)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskTriggerProperties (Optional timerTriggers As IEnumerable(Of ContainerRegistryTaskTimerTrigger) = Nothing, Optional sourceTriggers As IEnumerable(Of ContainerRegistryTaskSourceTrigger) = Nothing, Optional baseImageTrigger As ContainerRegistryTaskBaseImageTrigger = Nothing) As ContainerRegistryTaskTriggerProperties" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskTriggerProperties : seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTrigger&gt; * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTrigger -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTriggerProperties (timerTriggers, sourceTriggers, baseImageTrigger)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timerTriggers" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTrigger&gt;" />
+        <Parameter Name="sourceTriggers" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTrigger&gt;" />
+        <Parameter Name="baseImageTrigger" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTrigger" />
+      </Parameters>
+      <Docs>
+        <param name="timerTriggers"> The collection of timer triggers. </param>
+        <param name="sourceTriggers"> The collection of triggers based on source code repository. </param>
+        <param name="baseImageTrigger"> The trigger based on base image dependencies. </param>
+        <summary> The properties of a trigger. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskTriggerUpdateContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent ContainerRegistryTaskTriggerUpdateContent (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent&gt; timerTriggers = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent&gt; sourceTriggers = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent baseImageTrigger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent ContainerRegistryTaskTriggerUpdateContent(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent&gt; timerTriggers, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent&gt; sourceTriggers, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent baseImageTrigger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTriggerUpdateContent(System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent},System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskTriggerUpdateContent (Optional timerTriggers As IEnumerable(Of ContainerRegistryTaskTimerTriggerUpdateContent) = Nothing, Optional sourceTriggers As IEnumerable(Of ContainerRegistryTaskSourceTriggerUpdateContent) = Nothing, Optional baseImageTrigger As ContainerRegistryTaskBaseImageTriggerUpdateContent = Nothing) As ContainerRegistryTaskTriggerUpdateContent" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskTriggerUpdateContent : seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent&gt; * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskTriggerUpdateContent (timerTriggers, sourceTriggers, baseImageTrigger)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timerTriggers" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerUpdateContent&gt;" />
+        <Parameter Name="sourceTriggers" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerUpdateContent&gt;" />
+        <Parameter Name="baseImageTrigger" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageTriggerUpdateContent" />
+      </Parameters>
+      <Docs>
+        <param name="timerTriggers"> The collection of timer triggers. </param>
+        <param name="sourceTriggers"> The collection of triggers based on source code repository. </param>
+        <param name="baseImageTrigger"> The trigger based on base image dependencies. </param>
+        <summary> The properties for updating triggers. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerRegistryTaskUserIdentityProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties ContainerRegistryTaskUserIdentityProperties (string principalId = default, string clientId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties ContainerRegistryTaskUserIdentityProperties(string principalId, string clientId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskUserIdentityProperties(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainerRegistryTaskUserIdentityProperties (Optional principalId As String = Nothing, Optional clientId As String = Nothing) As ContainerRegistryTaskUserIdentityProperties" />
+      <MemberSignature Language="F#" Value="static member ContainerRegistryTaskUserIdentityProperties : string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.ContainerRegistryTaskUserIdentityProperties (principalId, clientId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="principalId" Type="System.String" />
+        <Parameter Name="clientId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="principalId"> The principal id of user assigned identity. </param>
+        <param name="clientId"> The client id of user assigned identity. </param>
+        <summary> The ContainerRegistryTaskUserIdentityProperties. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskUserIdentityProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockerBuildContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildContent DockerBuildContent (bool? isArchiveEnabled = default, string agentPoolName = default, string logTemplate = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageNames = default, bool? isPushEnabled = default, bool? isCacheDisabled = default, string dockerFilePath = default, string target = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments = default, int? timeoutInSeconds = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform = default, int? agentCpu = default, string sourceLocation = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildContent DockerBuildContent(valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled, string agentPoolName, string logTemplate, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageNames, valuetype System.Nullable`1&lt;bool&gt; isPushEnabled, valuetype System.Nullable`1&lt;bool&gt; isCacheDisabled, string dockerFilePath, string target, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments, valuetype System.Nullable`1&lt;int32&gt; timeoutInSeconds, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform, valuetype System.Nullable`1&lt;int32&gt; agentCpu, string sourceLocation, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.DockerBuildContent(System.Nullable{System.Boolean},System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument},System.Nullable{System.Int32},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties,System.Nullable{System.Int32},System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DockerBuildContent (Optional isArchiveEnabled As Nullable(Of Boolean) = Nothing, Optional agentPoolName As String = Nothing, Optional logTemplate As String = Nothing, Optional imageNames As IEnumerable(Of String) = Nothing, Optional isPushEnabled As Nullable(Of Boolean) = Nothing, Optional isCacheDisabled As Nullable(Of Boolean) = Nothing, Optional dockerFilePath As String = Nothing, Optional target As String = Nothing, Optional arguments As IEnumerable(Of ContainerRegistryTaskArgument) = Nothing, Optional timeoutInSeconds As Nullable(Of Integer) = Nothing, Optional platform As ContainerRegistryTaskPlatformProperties = Nothing, Optional agentCpu As Nullable(Of Integer) = Nothing, Optional sourceLocation As String = Nothing, Optional credentials As ContainerRegistryTaskCredentials = Nothing) As DockerBuildContent" />
+      <MemberSignature Language="F#" Value="static member DockerBuildContent : Nullable&lt;bool&gt; * string * string * seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; * Nullable&lt;int&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties * Nullable&lt;int&gt; * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.DockerBuildContent (isArchiveEnabled, agentPoolName, logTemplate, imageNames, isPushEnabled, isCacheDisabled, dockerFilePath, target, arguments, timeoutInSeconds, platform, agentCpu, sourceLocation, credentials)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isArchiveEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="logTemplate" Type="System.String" />
+        <Parameter Name="imageNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="isPushEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="isCacheDisabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="dockerFilePath" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt;" />
+        <Parameter Name="timeoutInSeconds" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="platform" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties" />
+        <Parameter Name="agentCpu" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="sourceLocation" Type="System.String" />
+        <Parameter Name="credentials" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="isArchiveEnabled"> The value that indicates whether archiving is enabled for the run or not. </param>
+        <param name="agentPoolName"> The dedicated agent pool for the run. </param>
+        <param name="logTemplate"> The template that describes the repository and tag information for run log artifact. </param>
+        <param name="imageNames"> The fully qualified image names including the repository and tag. </param>
+        <param name="isPushEnabled"> The value of this property indicates whether the image built should be pushed to the registry or not. </param>
+        <param name="isCacheDisabled"> The value of this property indicates whether the image cache is enabled or not. </param>
+        <param name="dockerFilePath"> The Docker file path relative to the source location. </param>
+        <param name="target"> The name of the target build stage for the docker build. </param>
+        <param name="arguments"> The collection of override arguments to be used when executing the run. </param>
+        <param name="timeoutInSeconds"> Run timeout in seconds. </param>
+        <param name="platform"> The platform properties against which the run has to happen. </param>
+        <param name="agentCpu"> The CPU configuration in terms of number of cores required for the run. </param>
+        <param name="sourceLocation">
+            The URL(absolute or relative) of the source context. It can be an URL to a tar or git repository.
+            If it is relative URL, the relative path should be obtained from calling listBuildSourceUploadUrl API.
+            </param>
+        <param name="credentials"> The properties that describes a set of credentials that will be used when this run is invoked. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockerBuildStep">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStep DockerBuildStep (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies = default, string contextPath = default, string contextAccessToken = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageNames = default, bool? isPushEnabled = default, bool? isCacheDisabled = default, string dockerFilePath = default, string target = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStep DockerBuildStep(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies, string contextPath, string contextAccessToken, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageNames, valuetype System.Nullable`1&lt;bool&gt; isPushEnabled, valuetype System.Nullable`1&lt;bool&gt; isCacheDisabled, string dockerFilePath, string target, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.DockerBuildStep(System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency},System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DockerBuildStep (Optional baseImageDependencies As IEnumerable(Of ContainerRegistryTaskBaseImageDependency) = Nothing, Optional contextPath As String = Nothing, Optional contextAccessToken As String = Nothing, Optional imageNames As IEnumerable(Of String) = Nothing, Optional isPushEnabled As Nullable(Of Boolean) = Nothing, Optional isCacheDisabled As Nullable(Of Boolean) = Nothing, Optional dockerFilePath As String = Nothing, Optional target As String = Nothing, Optional arguments As IEnumerable(Of ContainerRegistryTaskArgument) = Nothing) As DockerBuildStep" />
+      <MemberSignature Language="F#" Value="static member DockerBuildStep : seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; * string * string * seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStep" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.DockerBuildStep (baseImageDependencies, contextPath, contextAccessToken, imageNames, isPushEnabled, isCacheDisabled, dockerFilePath, target, arguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseImageDependencies" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt;" />
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="contextAccessToken" Type="System.String" />
+        <Parameter Name="imageNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="isPushEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="isCacheDisabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="dockerFilePath" Type="System.String" />
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="baseImageDependencies"> List of base image dependencies for a step. </param>
+        <param name="contextPath"> The URL(absolute or relative) of the source context for the task step. </param>
+        <param name="contextAccessToken"> The token (git PAT or SAS token of storage account blob) associated with the context for a step. </param>
+        <param name="imageNames"> The fully qualified image names including the repository and tag. </param>
+        <param name="isPushEnabled"> The value of this property indicates whether the image built should be pushed to the registry or not. </param>
+        <param name="isCacheDisabled"> The value of this property indicates whether the image cache is enabled or not. </param>
+        <param name="dockerFilePath"> The Docker file path relative to the source context. </param>
+        <param name="target"> The name of the target build stage for the docker build. </param>
+        <param name="arguments"> The collection of override arguments to be used when executing this build step. </param>
+        <summary> The Docker build step. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStep" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockerBuildStepUpdateContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStepUpdateContent DockerBuildStepUpdateContent (string contextPath = default, string contextAccessToken = default, System.Collections.Generic.IEnumerable&lt;string&gt; imageNames = default, bool? isPushEnabled = default, bool? isCacheDisabled = default, string dockerFilePath = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments = default, string target = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStepUpdateContent DockerBuildStepUpdateContent(string contextPath, string contextAccessToken, class System.Collections.Generic.IEnumerable`1&lt;string&gt; imageNames, valuetype System.Nullable`1&lt;bool&gt; isPushEnabled, valuetype System.Nullable`1&lt;bool&gt; isCacheDisabled, string dockerFilePath, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; arguments, string target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.DockerBuildStepUpdateContent(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DockerBuildStepUpdateContent (Optional contextPath As String = Nothing, Optional contextAccessToken As String = Nothing, Optional imageNames As IEnumerable(Of String) = Nothing, Optional isPushEnabled As Nullable(Of Boolean) = Nothing, Optional isCacheDisabled As Nullable(Of Boolean) = Nothing, Optional dockerFilePath As String = Nothing, Optional arguments As IEnumerable(Of ContainerRegistryTaskArgument) = Nothing, Optional target As String = Nothing) As DockerBuildStepUpdateContent" />
+      <MemberSignature Language="F#" Value="static member DockerBuildStepUpdateContent : string * string * seq&lt;string&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt; * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStepUpdateContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.DockerBuildStepUpdateContent (contextPath, contextAccessToken, imageNames, isPushEnabled, isCacheDisabled, dockerFilePath, arguments, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStepUpdateContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="contextAccessToken" Type="System.String" />
+        <Parameter Name="imageNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="isPushEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="isCacheDisabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="dockerFilePath" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskArgument&gt;" />
+        <Parameter Name="target" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contextPath"> The URL(absolute or relative) of the source context for the task step. </param>
+        <param name="contextAccessToken"> The token (git PAT or SAS token of storage account blob) associated with the context for a step. </param>
+        <param name="imageNames"> The fully qualified image names including the repository and tag. </param>
+        <param name="isPushEnabled"> The value of this property indicates whether the image built should be pushed to the registry or not. </param>
+        <param name="isCacheDisabled"> The value of this property indicates whether the image cache is enabled or not. </param>
+        <param name="dockerFilePath"> The Docker file path relative to the source context. </param>
+        <param name="arguments"> The collection of override arguments to be used when executing this build step. </param>
+        <param name="target"> The name of the target build stage for the docker build. </param>
+        <summary> The properties for updating a docker build step. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStepUpdateContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedTaskRunContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskRunContent EncodedTaskRunContent (bool? isArchiveEnabled = default, string agentPoolName = default, string logTemplate = default, string encodedTaskContent = default, string encodedValuesContent = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values = default, int? timeoutInSeconds = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform = default, int? agentCpu = default, string sourceLocation = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskRunContent EncodedTaskRunContent(valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled, string agentPoolName, string logTemplate, string encodedTaskContent, string encodedValuesContent, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values, valuetype System.Nullable`1&lt;int32&gt; timeoutInSeconds, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform, valuetype System.Nullable`1&lt;int32&gt; agentCpu, string sourceLocation, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.EncodedTaskRunContent(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue},System.Nullable{System.Int32},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties,System.Nullable{System.Int32},System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodedTaskRunContent (Optional isArchiveEnabled As Nullable(Of Boolean) = Nothing, Optional agentPoolName As String = Nothing, Optional logTemplate As String = Nothing, Optional encodedTaskContent As String = Nothing, Optional encodedValuesContent As String = Nothing, Optional values As IEnumerable(Of ContainerRegistryTaskSetValue) = Nothing, Optional timeoutInSeconds As Nullable(Of Integer) = Nothing, Optional platform As ContainerRegistryTaskPlatformProperties = Nothing, Optional agentCpu As Nullable(Of Integer) = Nothing, Optional sourceLocation As String = Nothing, Optional credentials As ContainerRegistryTaskCredentials = Nothing) As EncodedTaskRunContent" />
+      <MemberSignature Language="F#" Value="static member EncodedTaskRunContent : Nullable&lt;bool&gt; * string * string * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; * Nullable&lt;int&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties * Nullable&lt;int&gt; * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskRunContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.EncodedTaskRunContent (isArchiveEnabled, agentPoolName, logTemplate, encodedTaskContent, encodedValuesContent, values, timeoutInSeconds, platform, agentCpu, sourceLocation, credentials)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskRunContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isArchiveEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="logTemplate" Type="System.String" />
+        <Parameter Name="encodedTaskContent" Type="System.String" />
+        <Parameter Name="encodedValuesContent" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" />
+        <Parameter Name="timeoutInSeconds" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="platform" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties" />
+        <Parameter Name="agentCpu" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="sourceLocation" Type="System.String" />
+        <Parameter Name="credentials" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="isArchiveEnabled"> The value that indicates whether archiving is enabled for the run or not. </param>
+        <param name="agentPoolName"> The dedicated agent pool for the run. </param>
+        <param name="logTemplate"> The template that describes the repository and tag information for run log artifact. </param>
+        <param name="encodedTaskContent"> Base64 encoded value of the template/definition file content. </param>
+        <param name="encodedValuesContent"> Base64 encoded value of the parameters/values file content. </param>
+        <param name="values"> The collection of overridable values that can be passed when running a task. </param>
+        <param name="timeoutInSeconds"> Run timeout in seconds. </param>
+        <param name="platform"> The platform properties against which the run has to happen. </param>
+        <param name="agentCpu"> The CPU configuration in terms of number of cores required for the run. </param>
+        <param name="sourceLocation">
+            The URL(absolute or relative) of the source context. It can be an URL to a tar or git repository.
+            If it is relative URL, the relative path should be obtained from calling listBuildSourceUploadUrl API.
+            </param>
+        <param name="credentials"> The properties that describes a set of credentials that will be used when this run is invoked. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskRunContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedTaskStep">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStep EncodedTaskStep (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies = default, string contextPath = default, string contextAccessToken = default, string encodedTaskContent = default, string encodedValuesContent = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStep EncodedTaskStep(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies, string contextPath, string contextAccessToken, string encodedTaskContent, string encodedValuesContent, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.EncodedTaskStep(System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency},System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodedTaskStep (Optional baseImageDependencies As IEnumerable(Of ContainerRegistryTaskBaseImageDependency) = Nothing, Optional contextPath As String = Nothing, Optional contextAccessToken As String = Nothing, Optional encodedTaskContent As String = Nothing, Optional encodedValuesContent As String = Nothing, Optional values As IEnumerable(Of ContainerRegistryTaskSetValue) = Nothing) As EncodedTaskStep" />
+      <MemberSignature Language="F#" Value="static member EncodedTaskStep : seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; * string * string * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStep" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.EncodedTaskStep (baseImageDependencies, contextPath, contextAccessToken, encodedTaskContent, encodedValuesContent, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseImageDependencies" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt;" />
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="contextAccessToken" Type="System.String" />
+        <Parameter Name="encodedTaskContent" Type="System.String" />
+        <Parameter Name="encodedValuesContent" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="baseImageDependencies"> List of base image dependencies for a step. </param>
+        <param name="contextPath"> The URL(absolute or relative) of the source context for the task step. </param>
+        <param name="contextAccessToken"> The token (git PAT or SAS token of storage account blob) associated with the context for a step. </param>
+        <param name="encodedTaskContent"> Base64 encoded value of the template/definition file content. </param>
+        <param name="encodedValuesContent"> Base64 encoded value of the parameters/values file content. </param>
+        <param name="values"> The collection of overridable values that can be passed when running a task. </param>
+        <summary> The properties of a encoded task step. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStep" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedTaskStepUpdateContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStepUpdateContent EncodedTaskStepUpdateContent (string contextPath = default, string contextAccessToken = default, string encodedTaskContent = default, string encodedValuesContent = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStepUpdateContent EncodedTaskStepUpdateContent(string contextPath, string contextAccessToken, string encodedTaskContent, string encodedValuesContent, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.EncodedTaskStepUpdateContent(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EncodedTaskStepUpdateContent (Optional contextPath As String = Nothing, Optional contextAccessToken As String = Nothing, Optional encodedTaskContent As String = Nothing, Optional encodedValuesContent As String = Nothing, Optional values As IEnumerable(Of ContainerRegistryTaskSetValue) = Nothing) As EncodedTaskStepUpdateContent" />
+      <MemberSignature Language="F#" Value="static member EncodedTaskStepUpdateContent : string * string * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStepUpdateContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.EncodedTaskStepUpdateContent (contextPath, contextAccessToken, encodedTaskContent, encodedValuesContent, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStepUpdateContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="contextAccessToken" Type="System.String" />
+        <Parameter Name="encodedTaskContent" Type="System.String" />
+        <Parameter Name="encodedValuesContent" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="contextPath"> The URL(absolute or relative) of the source context for the task step. </param>
+        <param name="contextAccessToken"> The token (git PAT or SAS token of storage account blob) associated with the context for a step. </param>
+        <param name="encodedTaskContent"> Base64 encoded value of the template/definition file content. </param>
+        <param name="encodedValuesContent"> Base64 encoded value of the parameters/values file content. </param>
+        <param name="values"> The collection of overridable values that can be passed when running a task. </param>
+        <summary> The properties for updating encoded task step. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStepUpdateContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTaskRunContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskRunContent FileTaskRunContent (bool? isArchiveEnabled = default, string agentPoolName = default, string logTemplate = default, string taskFilePath = default, string valuesFilePath = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values = default, int? timeoutInSeconds = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform = default, int? agentCpu = default, string sourceLocation = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskRunContent FileTaskRunContent(valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled, string agentPoolName, string logTemplate, string taskFilePath, string valuesFilePath, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values, valuetype System.Nullable`1&lt;int32&gt; timeoutInSeconds, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform, valuetype System.Nullable`1&lt;int32&gt; agentCpu, string sourceLocation, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.FileTaskRunContent(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue},System.Nullable{System.Int32},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties,System.Nullable{System.Int32},System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FileTaskRunContent (Optional isArchiveEnabled As Nullable(Of Boolean) = Nothing, Optional agentPoolName As String = Nothing, Optional logTemplate As String = Nothing, Optional taskFilePath As String = Nothing, Optional valuesFilePath As String = Nothing, Optional values As IEnumerable(Of ContainerRegistryTaskSetValue) = Nothing, Optional timeoutInSeconds As Nullable(Of Integer) = Nothing, Optional platform As ContainerRegistryTaskPlatformProperties = Nothing, Optional agentCpu As Nullable(Of Integer) = Nothing, Optional sourceLocation As String = Nothing, Optional credentials As ContainerRegistryTaskCredentials = Nothing) As FileTaskRunContent" />
+      <MemberSignature Language="F#" Value="static member FileTaskRunContent : Nullable&lt;bool&gt; * string * string * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; * Nullable&lt;int&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties * Nullable&lt;int&gt; * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskRunContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.FileTaskRunContent (isArchiveEnabled, agentPoolName, logTemplate, taskFilePath, valuesFilePath, values, timeoutInSeconds, platform, agentCpu, sourceLocation, credentials)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskRunContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isArchiveEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="logTemplate" Type="System.String" />
+        <Parameter Name="taskFilePath" Type="System.String" />
+        <Parameter Name="valuesFilePath" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" />
+        <Parameter Name="timeoutInSeconds" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="platform" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties" />
+        <Parameter Name="agentCpu" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="sourceLocation" Type="System.String" />
+        <Parameter Name="credentials" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="isArchiveEnabled"> The value that indicates whether archiving is enabled for the run or not. </param>
+        <param name="agentPoolName"> The dedicated agent pool for the run. </param>
+        <param name="logTemplate"> The template that describes the repository and tag information for run log artifact. </param>
+        <param name="taskFilePath"> The template/definition file path relative to the source. </param>
+        <param name="valuesFilePath"> The values/parameters file path relative to the source. </param>
+        <param name="values"> The collection of overridable values that can be passed when running a task. </param>
+        <param name="timeoutInSeconds"> Run timeout in seconds. </param>
+        <param name="platform"> The platform properties against which the run has to happen. </param>
+        <param name="agentCpu"> The CPU configuration in terms of number of cores required for the run. </param>
+        <param name="sourceLocation">
+            The URL(absolute or relative) of the source context. It can be an URL to a tar or git repository.
+            If it is relative URL, the relative path should be obtained from calling listBuildSourceUploadUrl API.
+            </param>
+        <param name="credentials"> The properties that describes a set of credentials that will be used when this run is invoked. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskRunContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTaskStep">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep FileTaskStep (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies = default, string contextPath = default, string contextAccessToken = default, string taskFilePath = default, string valuesFilePath = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep FileTaskStep(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies, string contextPath, string contextAccessToken, string taskFilePath, string valuesFilePath, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.FileTaskStep(System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency},System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FileTaskStep (Optional baseImageDependencies As IEnumerable(Of ContainerRegistryTaskBaseImageDependency) = Nothing, Optional contextPath As String = Nothing, Optional contextAccessToken As String = Nothing, Optional taskFilePath As String = Nothing, Optional valuesFilePath As String = Nothing, Optional values As IEnumerable(Of ContainerRegistryTaskSetValue) = Nothing) As FileTaskStep" />
+      <MemberSignature Language="F#" Value="static member FileTaskStep : seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; * string * string * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.FileTaskStep (baseImageDependencies, contextPath, contextAccessToken, taskFilePath, valuesFilePath, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseImageDependencies" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt;" />
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="contextAccessToken" Type="System.String" />
+        <Parameter Name="taskFilePath" Type="System.String" />
+        <Parameter Name="valuesFilePath" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="baseImageDependencies"> List of base image dependencies for a step. </param>
+        <param name="contextPath"> The URL(absolute or relative) of the source context for the task step. </param>
+        <param name="contextAccessToken"> The token (git PAT or SAS token of storage account blob) associated with the context for a step. </param>
+        <param name="taskFilePath"> The task template/definition file path relative to the source context. </param>
+        <param name="valuesFilePath"> The task values/parameters file path relative to the source context. </param>
+        <param name="values"> The collection of overridable values that can be passed when running a task. </param>
+        <summary> The properties of a task step. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTaskStepUpdateContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStepUpdateContent FileTaskStepUpdateContent (string contextPath = default, string contextAccessToken = default, string taskFilePath = default, string valuesFilePath = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStepUpdateContent FileTaskStepUpdateContent(string contextPath, string contextAccessToken, string taskFilePath, string valuesFilePath, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.FileTaskStepUpdateContent(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FileTaskStepUpdateContent (Optional contextPath As String = Nothing, Optional contextAccessToken As String = Nothing, Optional taskFilePath As String = Nothing, Optional valuesFilePath As String = Nothing, Optional values As IEnumerable(Of ContainerRegistryTaskSetValue) = Nothing) As FileTaskStepUpdateContent" />
+      <MemberSignature Language="F#" Value="static member FileTaskStepUpdateContent : string * string * string * string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStepUpdateContent" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.FileTaskStepUpdateContent (contextPath, contextAccessToken, taskFilePath, valuesFilePath, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStepUpdateContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="contextAccessToken" Type="System.String" />
+        <Parameter Name="taskFilePath" Type="System.String" />
+        <Parameter Name="valuesFilePath" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSetValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="contextPath"> The URL(absolute or relative) of the source context for the task step. </param>
+        <param name="contextAccessToken"> The token (git PAT or SAS token of storage account blob) associated with the context for a step. </param>
+        <param name="taskFilePath"> The task template/definition file path relative to the source context. </param>
+        <param name="valuesFilePath"> The values/parameters file path relative to the source context. </param>
+        <param name="values"> The collection of overridable values that can be passed when running a task. </param>
+        <summary> The properties of updating a task step. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStepUpdateContent" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.RunData RunData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string runId = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus? status = default, DateTimeOffset? lastUpdatedOn = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType? runType = default, string agentPoolName = default, DateTimeOffset? createdOn = default, DateTimeOffset? startOn = default, DateTimeOffset? finishOn = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; outputImages = default, string task = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger imageUpdateTrigger = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor sourceTrigger = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor timerTrigger = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform = default, string sourceRegistryAuth = default, System.Collections.Generic.IEnumerable&lt;string&gt; customRegistries = default, string runErrorMessage = default, string updateTriggerToken = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor logArtifact = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState? provisioningState = default, bool? isArchiveEnabled = default, int? agentCpu = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.RunData RunData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, string runId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus&gt; status, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdatedOn, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType&gt; runType, string agentPoolName, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; finishOn, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; outputImages, string task, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger imageUpdateTrigger, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor sourceTrigger, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor timerTrigger, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform, string sourceRegistryAuth, class System.Collections.Generic.IEnumerable`1&lt;string&gt; customRegistries, string runErrorMessage, string updateTriggerToken, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor logArtifact, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;bool&gt; isArchiveEnabled, valuetype System.Nullable`1&lt;int32&gt; agentCpu) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.RunData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.String,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus},System.Nullable{System.DateTimeOffset},System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor},System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState},System.Nullable{System.Boolean},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional runId As String = Nothing, Optional status As Nullable(Of ContainerRegistryTaskRunStatus) = Nothing, Optional lastUpdatedOn As Nullable(Of DateTimeOffset) = Nothing, Optional runType As Nullable(Of ContainerRegistryTaskRunType) = Nothing, Optional agentPoolName As String = Nothing, Optional createdOn As Nullable(Of DateTimeOffset) = Nothing, Optional startOn As Nullable(Of DateTimeOffset) = Nothing, Optional finishOn As Nullable(Of DateTimeOffset) = Nothing, Optional outputImages As IEnumerable(Of ContainerRegistryTaskImageDescriptor) = Nothing, Optional task As String = Nothing, Optional imageUpdateTrigger As ContainerRegistryTaskImageUpdateTrigger = Nothing, Optional sourceTrigger As ContainerRegistryTaskSourceTriggerDescriptor = Nothing, Optional timerTrigger As ContainerRegistryTaskTimerTriggerDescriptor = Nothing, Optional platform As ContainerRegistryTaskPlatformProperties = Nothing, Optional sourceRegistryAuth As String = Nothing, Optional customRegistries As IEnumerable(Of String) = Nothing, Optional runErrorMessage As String = Nothing, Optional updateTriggerToken As String = Nothing, Optional logArtifact As ContainerRegistryTaskImageDescriptor = Nothing, Optional provisioningState As Nullable(Of ContainerRegistryTaskProvisioningState) = Nothing, Optional isArchiveEnabled As Nullable(Of Boolean) = Nothing, Optional agentCpu As Nullable(Of Integer) = Nothing) As RunData" />
+      <MemberSignature Language="F#" Value="static member RunData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * string * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType&gt; * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties * string * seq&lt;string&gt; * string * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.RunData" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.RunData (id, name, resourceType, systemData, runId, status, lastUpdatedOn, runType, agentPoolName, createdOn, startOn, finishOn, outputImages, task, imageUpdateTrigger, sourceTrigger, timerTrigger, platform, sourceRegistryAuth, customRegistries, runErrorMessage, updateTriggerToken, logArtifact, provisioningState, isArchiveEnabled, agentCpu)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.RunData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="runId" Type="System.String" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus&gt;" />
+        <Parameter Name="lastUpdatedOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="runType" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType&gt;" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="createdOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="startOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="finishOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="outputImages" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt;" />
+        <Parameter Name="task" Type="System.String" />
+        <Parameter Name="imageUpdateTrigger" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger" />
+        <Parameter Name="sourceTrigger" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor" />
+        <Parameter Name="timerTrigger" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor" />
+        <Parameter Name="platform" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties" />
+        <Parameter Name="sourceRegistryAuth" Type="System.String" />
+        <Parameter Name="customRegistries" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="runErrorMessage" Type="System.String" />
+        <Parameter Name="updateTriggerToken" Type="System.String" />
+        <Parameter Name="logArtifact" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt;" />
+        <Parameter Name="isArchiveEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="agentCpu" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="runId"> The unique identifier for the run. </param>
+        <param name="status"> The current status of the run. </param>
+        <param name="lastUpdatedOn"> The last updated time for the run. </param>
+        <param name="runType"> The type of run. </param>
+        <param name="agentPoolName"> The dedicated agent pool for the run. </param>
+        <param name="createdOn"> The time the run was scheduled. </param>
+        <param name="startOn"> The time the run started. </param>
+        <param name="finishOn"> The time the run finished. </param>
+        <param name="outputImages"> The list of all images that were generated from the run. This is applicable if the run generates base image dependencies. </param>
+        <param name="task"> The task against which run was scheduled. </param>
+        <param name="imageUpdateTrigger"> The image update trigger that caused the run. This is applicable if the task has base image trigger configured. </param>
+        <param name="sourceTrigger"> The source trigger that caused the run. </param>
+        <param name="timerTrigger"> The timer trigger that caused the run. </param>
+        <param name="platform"> The platform properties against which the run will happen. </param>
+        <param name="sourceRegistryAuth"> The scope of the credentials that were used to login to the source registry during this run. </param>
+        <param name="customRegistries"> The list of custom registries that were logged in during this run. </param>
+        <param name="runErrorMessage"> The error message received from backend systems after the run is scheduled. </param>
+        <param name="updateTriggerToken"> The update trigger token passed for the Run. </param>
+        <param name="logArtifact"> The image description for the log artifact. </param>
+        <param name="provisioningState"> The provisioning state of a run. </param>
+        <param name="isArchiveEnabled"> The value that indicates whether archiving is enabled or not. </param>
+        <param name="agentCpu"> The CPU configuration in terms of number of cores required for the run. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.RunData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.TaskData TaskData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState? provisioningState = default, DateTimeOffset? createdOn = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus? status = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform = default, string agentPoolName = default, int? timeoutInSeconds = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties step = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties trigger = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials = default, string logTemplate = default, bool? isSystemTask = default, int? agentCpu = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.TaskData TaskData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdOn, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus&gt; status, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties platform, string agentPoolName, valuetype System.Nullable`1&lt;int32&gt; timeoutInSeconds, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties step, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties trigger, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials, string logTemplate, valuetype System.Nullable`1&lt;bool&gt; isSystemTask, valuetype System.Nullable`1&lt;int32&gt; agentCpu, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState},System.Nullable{System.DateTimeOffset},System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties,System.String,System.Nullable{System.Int32},Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TaskData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional provisioningState As Nullable(Of ContainerRegistryTaskProvisioningState) = Nothing, Optional createdOn As Nullable(Of DateTimeOffset) = Nothing, Optional status As Nullable(Of ContainerRegistryTaskStatus) = Nothing, Optional platform As ContainerRegistryTaskPlatformProperties = Nothing, Optional agentPoolName As String = Nothing, Optional timeoutInSeconds As Nullable(Of Integer) = Nothing, Optional step As TaskStepProperties = Nothing, Optional trigger As ContainerRegistryTaskTriggerProperties = Nothing, Optional credentials As ContainerRegistryTaskCredentials = Nothing, Optional logTemplate As String = Nothing, Optional isSystemTask As Nullable(Of Boolean) = Nothing, Optional agentCpu As Nullable(Of Integer) = Nothing, Optional identity As ContainerRegistryTaskIdentityProperties = Nothing) As TaskData" />
+      <MemberSignature Language="F#" Value="static member TaskData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties * string * Nullable&lt;int&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.TaskData" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskData (id, name, resourceType, systemData, tags, location, provisioningState, createdOn, status, platform, agentPoolName, timeoutInSeconds, step, trigger, credentials, logTemplate, isSystemTask, agentCpu, identity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.TaskData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt;" />
+        <Parameter Name="createdOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus&gt;" />
+        <Parameter Name="platform" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="timeoutInSeconds" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="step" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties" />
+        <Parameter Name="trigger" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerProperties" />
+        <Parameter Name="credentials" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials" />
+        <Parameter Name="logTemplate" Type="System.String" />
+        <Parameter Name="isSystemTask" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="agentCpu" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="tags"> Resource tags. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="provisioningState"> The provisioning state of the task. </param>
+        <param name="createdOn"> The creation date of task. </param>
+        <param name="status"> The current status of task. </param>
+        <param name="platform"> The platform properties against which the run has to happen. </param>
+        <param name="agentPoolName"> The dedicated agent pool for the task. </param>
+        <param name="timeoutInSeconds"> Run timeout in seconds. </param>
+        <param name="step"> The properties of a task step. </param>
+        <param name="trigger"> The properties that describe all triggers for the task. </param>
+        <param name="credentials"> The properties that describes a set of credentials that will be used when this run is invoked. </param>
+        <param name="logTemplate"> The template that describes the repository and tag information for run log artifact. </param>
+        <param name="isSystemTask"> The value of this property indicates whether the task resource is system task or not. </param>
+        <param name="agentCpu"> The CPU configuration in terms of number of cores required for the run. </param>
+        <param name="identity"> Identity for the resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.TaskData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskPatch TaskPatch (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus? status = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformUpdateContent platform = default, string agentPoolName = default, int? timeoutInSeconds = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepUpdateContent step = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent trigger = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials = default, string logTemplate = default, int? agentCpu = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskPatch TaskPatch(class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus&gt; status, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformUpdateContent platform, string agentPoolName, valuetype System.Nullable`1&lt;int32&gt; timeoutInSeconds, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepUpdateContent step, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent trigger, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials credentials, string logTemplate, valuetype System.Nullable`1&lt;int32&gt; agentCpu, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskPatch(Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus},Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformUpdateContent,System.String,System.Nullable{System.Int32},Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepUpdateContent,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials,System.String,System.Nullable{System.Int32},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TaskPatch (Optional identity As ContainerRegistryTaskIdentityProperties = Nothing, Optional status As Nullable(Of ContainerRegistryTaskStatus) = Nothing, Optional platform As ContainerRegistryTaskPlatformUpdateContent = Nothing, Optional agentPoolName As String = Nothing, Optional timeoutInSeconds As Nullable(Of Integer) = Nothing, Optional step As TaskStepUpdateContent = Nothing, Optional trigger As ContainerRegistryTaskTriggerUpdateContent = Nothing, Optional credentials As ContainerRegistryTaskCredentials = Nothing, Optional logTemplate As String = Nothing, Optional agentCpu As Nullable(Of Integer) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As TaskPatch" />
+      <MemberSignature Language="F#" Value="static member TaskPatch : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformUpdateContent * string * Nullable&lt;int&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepUpdateContent * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials * string * Nullable&lt;int&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskPatch" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskPatch (identity, status, platform, agentPoolName, timeoutInSeconds, step, trigger, credentials, logTemplate, agentCpu, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskStatus&gt;" />
+        <Parameter Name="platform" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformUpdateContent" />
+        <Parameter Name="agentPoolName" Type="System.String" />
+        <Parameter Name="timeoutInSeconds" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="step" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepUpdateContent" />
+        <Parameter Name="trigger" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTriggerUpdateContent" />
+        <Parameter Name="credentials" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskCredentials" />
+        <Parameter Name="logTemplate" Type="System.String" />
+        <Parameter Name="agentCpu" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="identity"> Identity for the resource. </param>
+        <param name="status"> The current status of task. </param>
+        <param name="platform"> The platform properties against which the run has to happen. </param>
+        <param name="agentPoolName"> The dedicated agent pool for the task. </param>
+        <param name="timeoutInSeconds"> Run timeout in seconds. </param>
+        <param name="step"> The properties for updating a task step. </param>
+        <param name="trigger"> The properties for updating trigger properties. </param>
+        <param name="credentials"> The parameters that describes a set of credentials that will be used when this run is invoked. </param>
+        <param name="logTemplate"> The template that describes the repository and tag information for run log artifact. </param>
+        <param name="agentCpu"> The CPU configuration in terms of number of cores required for the run. </param>
+        <param name="tags"> The ARM resource tags. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskRunData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunData TaskRunData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState? provisioningState = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent runRequest = default, Azure.ResourceManager.ContainerRegistry.Tasks.RunData runResult = default, string forceUpdateTag = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity = default, Azure.Core.AzureLocation? location = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunData TaskRunData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; provisioningState, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent runRequest, class Azure.ResourceManager.ContainerRegistry.Tasks.RunData runResult, string forceUpdateTag, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskRunData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState},Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent,Azure.ResourceManager.ContainerRegistry.Tasks.RunData,System.String,Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties,System.Nullable{Azure.Core.AzureLocation})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TaskRunData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional provisioningState As Nullable(Of ContainerRegistryTaskProvisioningState) = Nothing, Optional runRequest As RunContent = Nothing, Optional runResult As RunData = Nothing, Optional forceUpdateTag As String = Nothing, Optional identity As ContainerRegistryTaskIdentityProperties = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing) As TaskRunData" />
+      <MemberSignature Language="F#" Value="static member TaskRunData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; * Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent * Azure.ResourceManager.ContainerRegistry.Tasks.RunData * string * Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties * Nullable&lt;Azure.Core.AzureLocation&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunData" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskRunData (id, name, resourceType, systemData, provisioningState, runRequest, runResult, forceUpdateTag, identity, location)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt;" />
+        <Parameter Name="runRequest" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent" />
+        <Parameter Name="runResult" Type="Azure.ResourceManager.ContainerRegistry.Tasks.RunData" />
+        <Parameter Name="forceUpdateTag" Type="System.String" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="provisioningState"> The provisioning state of this task run. </param>
+        <param name="runRequest"> The request (parameters) for the run. </param>
+        <param name="runResult"> The result of this task run. </param>
+        <param name="forceUpdateTag"> How the run should be forced to rerun even if the run request configuration has not changed. </param>
+        <param name="identity"> Identity for the resource. </param>
+        <param name="location"> The location of the resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.TaskRunData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskRunPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskRunPatch TaskRunPatch (Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity = default, Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent runRequest = default, string forceUpdateTag = default, string location = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskRunPatch TaskRunPatch(class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties identity, class Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent runRequest, string forceUpdateTag, string location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskRunPatch(Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties,Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TaskRunPatch (Optional identity As ContainerRegistryTaskIdentityProperties = Nothing, Optional runRequest As RunContent = Nothing, Optional forceUpdateTag As String = Nothing, Optional location As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As TaskRunPatch" />
+      <MemberSignature Language="F#" Value="static member TaskRunPatch : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties * Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskRunPatch" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskRunPatch (identity, runRequest, forceUpdateTag, location, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskRunPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskIdentityProperties" />
+        <Parameter Name="runRequest" Type="Azure.ResourceManager.ContainerRegistry.Tasks.Models.RunContent" />
+        <Parameter Name="forceUpdateTag" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="identity"> Identity for the resource. </param>
+        <param name="runRequest"> The request (parameters) for the new run. </param>
+        <param name="forceUpdateTag"> How the run should be forced to rerun even if the run request configuration has not changed. </param>
+        <param name="location"> The location of the resource. </param>
+        <param name="tags"> The ARM resource tags. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskRunPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskStepProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties TaskStepProperties (string type = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies = default, string contextPath = default, string contextAccessToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties TaskStepProperties(string type, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; baseImageDependencies, string contextPath, string contextAccessToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskStepProperties(System.String,System.Collections.Generic.IEnumerable{Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TaskStepProperties (Optional type As String = Nothing, Optional baseImageDependencies As IEnumerable(Of ContainerRegistryTaskBaseImageDependency) = Nothing, Optional contextPath As String = Nothing, Optional contextAccessToken As String = Nothing) As TaskStepProperties" />
+      <MemberSignature Language="F#" Value="static member TaskStepProperties : string * seq&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt; * string * string -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.Models.ArmContainerRegistryTasksModelFactory.TaskStepProperties (type, baseImageDependencies, contextPath, contextAccessToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="baseImageDependencies" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskBaseImageDependency&gt;" />
+        <Parameter Name="contextPath" Type="System.String" />
+        <Parameter Name="contextAccessToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The type of the step. </param>
+        <param name="baseImageDependencies"> List of base image dependencies for a step. </param>
+        <param name="contextPath"> The URL(absolute or relative) of the source context for the task step. </param>
+        <param name="contextAccessToken"> The token (git PAT or SAS token of storage account blob) associated with the context for a step. </param>
+        <summary>
+            Base properties for any task step.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.DockerBuildStep" />, <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.FileTaskStep" />, and <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.EncodedTaskStep" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.ContainerRegistry.Tasks.Models.TaskStepProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,195 @@
+<Type Name="DeliveryRule" FullName="Azure.Provisioning.Cdn.DeliveryRule">
+  <TypeSignature Language="C#" Value="public class DeliveryRule : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeliveryRule extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.DeliveryRule" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeliveryRule&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type DeliveryRule = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A rule that specifies a set of actions and conditions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeliveryRule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.DeliveryRule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new DeliveryRule.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Actions">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.DeliveryRuleAction&gt; Actions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.Cdn.DeliveryRuleAction&gt; Actions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeliveryRule.Actions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Actions As BicepList(Of DeliveryRuleAction)" />
+      <MemberSignature Language="F#" Value="member this.Actions : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.DeliveryRuleAction&gt; with get, set" Usage="Azure.Provisioning.Cdn.DeliveryRule.Actions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.DeliveryRuleAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of actions that are executed when all the conditions of a rule
+            are satisfied.             Please note
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleAction is the base class.
+            According to the scenario, a derived class of the base class might
+            need to be assigned here, or this property needs to be casted to one
+            of the possible derived classes.             The available derived
+            classes include
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleCacheExpirationAction,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleCacheKeyQueryStringAction,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRequestHeaderAction,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleResponseHeaderAction,
+            Azure.ResourceManager.Cdn.Models.OriginGroupOverrideAction,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRouteConfigurationOverrideAction,
+            Azure.ResourceManager.Cdn.Models.UriRedirectAction,
+            Azure.ResourceManager.Cdn.Models.UriRewriteAction and
+            Azure.ResourceManager.Cdn.Models.UriSigningAction.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conditions">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.DeliveryRuleCondition&gt; Conditions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.Cdn.DeliveryRuleCondition&gt; Conditions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeliveryRule.Conditions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Conditions As BicepList(Of DeliveryRuleCondition)" />
+      <MemberSignature Language="F#" Value="member this.Conditions : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.DeliveryRuleCondition&gt; with get, set" Usage="Azure.Provisioning.Cdn.DeliveryRule.Conditions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.DeliveryRuleCondition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of conditions that must be matched for the actions to be
+            executed             Please note
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleCondition is the base
+            class. According to the scenario, a derived class of the base class
+            might need to be assigned here, or this property needs to be casted to
+            one of the possible derived classes.             The available derived
+            classes include
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleClientPortCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleCookiesCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleHostNameCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleHttpVersionCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleIsDeviceCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRulePostArgsCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleQueryStringCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRemoteAddressCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRequestBodyCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRequestHeaderCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRequestMethodCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRequestSchemeCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleRequestUriCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleServerPortCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleSocketAddressCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleSslProtocolCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleUriFileExtensionCondition,
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleUriFileNameCondition and
+            Azure.ResourceManager.Cdn.Models.DeliveryRuleUriPathCondition.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.DeliveryRule.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="deliveryRule.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of DeliveryRule.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeliveryRule.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.DeliveryRule.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of the rule.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; Order" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.DeliveryRule.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Property Order As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Order : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.Cdn.DeliveryRule.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The order in which the rules are applied for the endpoint. Possible
+            values {0,1,2,3,………}. A rule with a lesser order will be applied
+            before a rule with a greater order. Rule with order 0 is a special
+            rule. It does not require any condition and actions listed in it will
+            always be applied.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,114 @@
+<Type Name="CustomDomainHttpsContent" FullName="Azure.Provisioning.Cdn.CustomDomainHttpsContent">
+  <TypeSignature Language="C#" Value="public class CustomDomainHttpsContent : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomDomainHttpsContent extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.CustomDomainHttpsContent" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomDomainHttpsContent&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type CustomDomainHttpsContent = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The JSON object that contains the properties to secure a custom domain.
+            Please note
+            Azure.ResourceManager.Cdn.Models.CustomDomainHttpsContent is the base
+            class. According to the scenario, a derived class of the base class might
+            need to be assigned here, or this property needs to be casted to one of
+            the possible derived classes.             The available derived classes
+            include Azure.ResourceManager.Cdn.Models.UserManagedHttpsContent and
+            Azure.ResourceManager.Cdn.Models.CdnManagedHttpsContent.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomDomainHttpsContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.CustomDomainHttpsContent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new CustomDomainHttpsContent.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.CustomDomainHttpsContent.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="customDomainHttpsContent.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of CustomDomainHttpsContent.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumTlsVersion">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CdnMinimumTlsVersion&gt; MinimumTlsVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.CdnMinimumTlsVersion&gt; MinimumTlsVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CustomDomainHttpsContent.MinimumTlsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumTlsVersion As BicepValue(Of CdnMinimumTlsVersion)" />
+      <MemberSignature Language="F#" Value="member this.MinimumTlsVersion : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CdnMinimumTlsVersion&gt; with get, set" Usage="Azure.Provisioning.Cdn.CustomDomainHttpsContent.MinimumTlsVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CdnMinimumTlsVersion&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TLS protocol version that will be used for Https.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolType">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.SecureDeliveryProtocolType&gt; ProtocolType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.SecureDeliveryProtocolType&gt; ProtocolType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CustomDomainHttpsContent.ProtocolType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtocolType As BicepValue(Of SecureDeliveryProtocolType)" />
+      <MemberSignature Language="F#" Value="member this.ProtocolType : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.SecureDeliveryProtocolType&gt; with get, set" Usage="Azure.Provisioning.Cdn.CustomDomainHttpsContent.ProtocolType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.SecureDeliveryProtocolType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Defines the TLS extension protocol that is used for secure delivery.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

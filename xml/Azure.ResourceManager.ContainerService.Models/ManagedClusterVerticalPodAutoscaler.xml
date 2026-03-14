@@ -1,76 +1,83 @@
 <Type Name="ManagedClusterVerticalPodAutoscaler" FullName="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler">
-  <TypeSignature Language="C#" Value="public class ManagedClusterVerticalPodAutoscaler" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedClusterVerticalPodAutoscaler extends System.Object" />
+  <TypeSignature Language="C#" Value="public class ManagedClusterVerticalPodAutoscaler : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedClusterVerticalPodAutoscaler extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" />
-  <TypeSignature Language="VB.NET" Value="Public Class ManagedClusterVerticalPodAutoscaler" />
-  <TypeSignature Language="F#" Value="type ManagedClusterVerticalPodAutoscaler = class" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedClusterVerticalPodAutoscaler&#xA;Implements IJsonModel(Of ManagedClusterVerticalPodAutoscaler), IPersistableModel(Of ManagedClusterVerticalPodAutoscaler)" />
+  <TypeSignature Language="F#" Value="type ManagedClusterVerticalPodAutoscaler = class&#xA;    interface IJsonModel&lt;ManagedClusterVerticalPodAutoscaler&gt;&#xA;    interface IPersistableModel&lt;ManagedClusterVerticalPodAutoscaler&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
-    <summary> The ManagedClusterVerticalPodAutoscaler. </summary>
+    <summary> VPA (Vertical Pod Autoscaler) settings for the workload auto-scaler profile. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ManagedClusterVerticalPodAutoscaler (bool isEnabled, Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue controlledValues, Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode updateMode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isEnabled, valuetype Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue controlledValues, valuetype Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode updateMode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.#ctor(System.Boolean,Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue,Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (isEnabled As Boolean, controlledValues As ManagedClusterWorkloadAutoScalerControlledValue, updateMode As ManagedClusterVerticalPodAutoscalerUpdateMode)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler : bool * Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue * Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" Usage="new Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler (isEnabled, controlledValues, updateMode)" />
+      <MemberSignature Language="C#" Value="public ManagedClusterVerticalPodAutoscaler (bool isVpaEnabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isVpaEnabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isVpaEnabled As Boolean)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler : bool -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" Usage="new Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler isVpaEnabled" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="isEnabled" Type="System.Boolean" />
-        <Parameter Name="controlledValues" Type="Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue" />
-        <Parameter Name="updateMode" Type="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode" />
+        <Parameter Name="isVpaEnabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isEnabled"> Whether to enable VPA. Default value is false. </param>
-        <param name="controlledValues"> Controls which resource value autoscaler will change. Default value is RequestsAndLimits. </param>
-        <param name="updateMode"> Each update mode level is a superset of the lower levels. Off&lt;Initial&lt;Recreate&lt;=Auto. For example: if UpdateMode is Initial, it means VPA sets the recommended resources in the VerticalPodAutoscaler Custom Resource (from UpdateMode Off) and also assigns resources on pod creation (from Initial). The default value is Off. </param>
-        <summary> Initializes a new instance of ManagedClusterVerticalPodAutoscaler. </summary>
+        <param name="isVpaEnabled"> Whether to enable VPA. Default value is false. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" />. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ControlledValues">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue ControlledValues { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue ControlledValues" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.ControlledValues" />
-      <MemberSignature Language="VB.NET" Value="Public Property ControlledValues As ManagedClusterWorkloadAutoScalerControlledValue" />
-      <MemberSignature Language="F#" Value="member this.ControlledValues : Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.ControlledValues" />
+    <Member MemberName="AddonAutoscaling">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerService.Models.ManagedClusterAddonAutoscaling? AddonAutoscaling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerService.Models.ManagedClusterAddonAutoscaling&gt; AddonAutoscaling" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.AddonAutoscaling" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddonAutoscaling As Nullable(Of ManagedClusterAddonAutoscaling)" />
+      <MemberSignature Language="F#" Value="member this.AddonAutoscaling : Nullable&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterAddonAutoscaling&gt; with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.AddonAutoscaling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterWorkloadAutoScalerControlledValue</ReturnType>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterAddonAutoscaling&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> Controls which resource value autoscaler will change. Default value is RequestsAndLimits. </summary>
+        <summary> Whether VPA add-on is enabled and configured to scale AKS-managed add-ons. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsEnabled">
-      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.IsEnabled" />
-      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
-      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.IsEnabled" />
+    <Member MemberName="IsVpaEnabled">
+      <MemberSignature Language="C#" Value="public bool IsVpaEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVpaEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.IsVpaEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsVpaEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsVpaEnabled : bool with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.IsVpaEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -81,23 +88,244 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UpdateMode">
-      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode UpdateMode { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode UpdateMode" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.UpdateMode" />
-      <MemberSignature Language="VB.NET" Value="Public Property UpdateMode As ManagedClusterVerticalPodAutoscalerUpdateMode" />
-      <MemberSignature Language="F#" Value="member this.UpdateMode : Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.UpdateMode" />
-      <MemberType>Property</MemberType>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ManagedClusterVerticalPodAutoscaler" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" Usage="managedClusterVerticalPodAutoscaler.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscalerUpdateMode</ReturnType>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler</ReturnType>
       </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
       <Docs>
-        <summary> Each update mode level is a superset of the lower levels. Off&lt;Initial&lt;Recreate&lt;=Auto. For example: if UpdateMode is Initial, it means VPA sets the recommended resources in the VerticalPodAutoscaler Custom Resource (from UpdateMode Off) and also assigns resources on pod creation (from Initial). The default value is Off. </summary>
-        <value>To be added.</value>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="managedClusterVerticalPodAutoscaler.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As ManagedClusterVerticalPodAutoscaler" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" Usage="managedClusterVerticalPodAutoscaler.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="managedClusterVerticalPodAutoscaler.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler IJsonModel&lt;ManagedClusterVerticalPodAutoscaler&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterVerticalPodAutoscaler&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ManagedClusterVerticalPodAutoscaler Implements IJsonModel(Of ManagedClusterVerticalPodAutoscaler).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" Usage="managedClusterVerticalPodAutoscaler.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;ManagedClusterVerticalPodAutoscaler&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterVerticalPodAutoscaler&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of ManagedClusterVerticalPodAutoscaler).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="managedClusterVerticalPodAutoscaler.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler IPersistableModel&lt;ManagedClusterVerticalPodAutoscaler&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterVerticalPodAutoscaler&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As ManagedClusterVerticalPodAutoscaler Implements IPersistableModel(Of ManagedClusterVerticalPodAutoscaler).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler" Usage="managedClusterVerticalPodAutoscaler.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;ManagedClusterVerticalPodAutoscaler&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterVerticalPodAutoscaler&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of ManagedClusterVerticalPodAutoscaler).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="managedClusterVerticalPodAutoscaler.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;ManagedClusterVerticalPodAutoscaler&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterVerticalPodAutoscaler&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of ManagedClusterVerticalPodAutoscaler).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="managedClusterVerticalPodAutoscaler.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterVerticalPodAutoscaler&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

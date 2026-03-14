@@ -1,0 +1,359 @@
+<Type Name="CdnCustomDomain" FullName="Azure.Provisioning.Cdn.CdnCustomDomain">
+  <TypeSignature Language="C#" Value="public class CdnCustomDomain : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CdnCustomDomain extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.CdnCustomDomain" />
+  <TypeSignature Language="VB.NET" Value="Public Class CdnCustomDomain&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type CdnCustomDomain = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            CdnCustomDomain.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CdnCustomDomain (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.CdnCustomDomain.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.Cdn.CdnCustomDomain : string * string -&gt; Azure.Provisioning.Cdn.CdnCustomDomain" Usage="new Azure.Provisioning.Cdn.CdnCustomDomain (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the CdnCustomDomain resource.  This
+            can be used to refer to the resource in expressions, but is not the
+            Azure name of the resource.  This value can contain letters, numbers,
+            and underscores.
+            </param>
+        <param name="resourceVersion">Version of the CdnCustomDomain.</param>
+        <summary>
+            Creates a new CdnCustomDomain.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomDomainHttpsContent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.CustomDomainHttpsContent CustomDomainHttpsContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.CustomDomainHttpsContent CustomDomainHttpsContent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.CustomDomainHttpsContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDomainHttpsContent As CustomDomainHttpsContent" />
+      <MemberSignature Language="F#" Value="member this.CustomDomainHttpsContent : Azure.Provisioning.Cdn.CustomDomainHttpsContent" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.CustomDomainHttpsContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.CustomDomainHttpsContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Certificate parameters for securing custom HTTPS             Please
+            note Azure.ResourceManager.Cdn.Models.CustomDomainHttpsContent is the
+            base class. According to the scenario, a derived class of the base
+            class might need to be assigned here, or this property needs to be
+            casted to one of the possible derived classes.             The
+            available derived classes include
+            Azure.ResourceManager.Cdn.Models.UserManagedHttpsContent and
+            Azure.ResourceManager.Cdn.Models.CdnManagedHttpsContent.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomHttpsAvailabilityState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsAvailabilityState&gt; CustomHttpsAvailabilityState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.CustomHttpsAvailabilityState&gt; CustomHttpsAvailabilityState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.CustomHttpsAvailabilityState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomHttpsAvailabilityState As BicepValue(Of CustomHttpsAvailabilityState)" />
+      <MemberSignature Language="F#" Value="member this.CustomHttpsAvailabilityState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsAvailabilityState&gt;" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.CustomHttpsAvailabilityState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsAvailabilityState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Provisioning substate shows the progress of custom HTTPS
+            enabling/disabling process step by step.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomHttpsProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt; CustomHttpsProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt; CustomHttpsProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.CustomHttpsProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomHttpsProvisioningState As BicepValue(Of CustomHttpsProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.CustomHttpsProvisioningState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt;" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.CustomHttpsProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Provisioning status of the custom domain.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.CdnCustomDomain.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="cdnCustomDomain.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of CdnCustomDomain.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Cdn.CdnCustomDomain FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Cdn.CdnCustomDomain FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.CdnCustomDomain.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As CdnCustomDomain" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Cdn.CdnCustomDomain" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.CdnCustomDomain</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the CdnCustomDomain resource.  This
+            can be used to refer to the resource in expressions, but is not the
+            Azure name of the resource.  This value can contain letters, numbers,
+            and underscores.
+            </param>
+        <param name="resourceVersion">Version of the CdnCustomDomain.</param>
+        <summary>
+            Creates a reference to an existing CdnCustomDomain.
+            </summary>
+        <returns>The existing CdnCustomDomain resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; HostName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; HostName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.HostName" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.HostName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.HostName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The host name of the custom domain. Must be a domain name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of the custom domain within an endpoint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.CdnEndpoint? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.CdnEndpoint Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As CdnEndpoint" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.Cdn.CdnEndpoint with get, set" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.CdnEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent CdnEndpoint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt; ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As BicepValue(Of CustomHttpsProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt;" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomHttpsProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Provisioning status of Custom Https of the custom domain.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomDomainResourceState&gt; ResourceState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.CustomDomainResourceState&gt; ResourceState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.ResourceState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceState As BicepValue(Of CustomDomainResourceState)" />
+      <MemberSignature Language="F#" Value="member this.ResourceState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomDomainResourceState&gt;" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.ResourceState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.CustomDomainResourceState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Resource status of the custom domain.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ValidationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ValidationData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.CdnCustomDomain.ValidationData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationData As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ValidationData : Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.Cdn.CdnCustomDomain.ValidationData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Special validation or data may be required when delivering CDN to some
+            regions due to local compliance reasons. E.g. ICP license number of a
+            custom domain is required to deliver content in China.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

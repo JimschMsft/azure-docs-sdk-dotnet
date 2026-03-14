@@ -14,6 +14,7 @@
     <AssemblyVersion>1.2.5.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -32,12 +33,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource" /> class for mocking. </summary>
+        <summary> Initializes a new instance of MockableContainerServiceSubscriptionResource for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +51,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ContainerService.AgentPoolSnapshotResource&gt;</ReturnType>
@@ -63,7 +64,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of snapshots in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/snapshots</description></item><item><term>Operation Id</term><description>Snapshots_List</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ContainerService.AgentPoolSnapshotResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/snapshots. </description></item><item><term> Operation Id. </term><description> Snapshots_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.AgentPoolSnapshotResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,8 +78,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.AgentPoolSnapshotResource&gt;</ReturnType>
@@ -90,60 +91,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of snapshots in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/snapshots</description></item><item><term>Operation Id</term><description>Snapshots_List</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ContainerService.AgentPoolSnapshotResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.ContainerService.AgentPoolSnapshotResource" /> that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetContainerServiceFleets">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt; GetContainerServiceFleets (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt; GetContainerServiceFleets(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetContainerServiceFleets(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetContainerServiceFleets (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ContainerServiceFleetResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetContainerServiceFleets : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt;&#xA;override this.GetContainerServiceFleets : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt;" Usage="mockableContainerServiceSubscriptionResource.GetContainerServiceFleets cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Lists fleets in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/fleets</description></item><item><term>Operation Id</term><description>Fleets_List</description></item></list></summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.ContainerServiceFleetResource" /> that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetContainerServiceFleetsAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt; GetContainerServiceFleetsAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt; GetContainerServiceFleetsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetContainerServiceFleetsAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetContainerServiceFleetsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ContainerServiceFleetResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetContainerServiceFleetsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt;&#xA;override this.GetContainerServiceFleetsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt;" Usage="mockableContainerServiceSubscriptionResource.GetContainerServiceFleetsAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceFleetResource&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Lists fleets in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/fleets</description></item><item><term>Operation Id</term><description>Fleets_List</description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.ContainerService.ContainerServiceFleetResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/snapshots. </description></item><item><term> Operation Id. </term><description> Snapshots_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.AgentPoolSnapshotResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +105,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceManagedClusterResource&gt;</ReturnType>
@@ -169,7 +118,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of managed clusters in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedClusters</description></item><item><term>Operation Id</term><description>ManagedClusters_List</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ContainerService.ContainerServiceManagedClusterResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedClusters. </description></item><item><term> Operation Id. </term><description> ManagedClusters_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.ContainerServiceManagedClusterResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,8 +132,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.ContainerServiceManagedClusterResource&gt;</ReturnType>
@@ -196,8 +145,100 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of managed clusters in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedClusters</description></item><item><term>Operation Id</term><description>ManagedClusters_List</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ContainerService.ContainerServiceManagedClusterResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.ContainerService.ContainerServiceManagedClusterResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedClusters. </description></item><item><term> Operation Id. </term><description> ManagedClusters_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.ContainerServiceManagedClusterResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuardrailsAvailableVersion">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt; GetGuardrailsAvailableVersion (Azure.Core.AzureLocation location, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt; GetGuardrailsAvailableVersion(valuetype Azure.Core.AzureLocation location, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetGuardrailsAvailableVersion(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGuardrailsAvailableVersion (location As AzureLocation, version As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of GuardrailsAvailableVersionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetGuardrailsAvailableVersion : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;&#xA;override this.GetGuardrailsAvailableVersion : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;" Usage="mockableContainerServiceSubscriptionResource.GetGuardrailsAvailableVersion (location, version, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="version"> Safeguards version. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Contains Guardrails version along with its support info and whether it is a default version.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/guardrailsVersions/{version}. </description></item><item><term> Operation Id. </term><description> GuardrailsAvailableVersions_GetGuardrailsVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuardrailsAvailableVersionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;&gt; GetGuardrailsAvailableVersionAsync (Azure.Core.AzureLocation location, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;&gt; GetGuardrailsAvailableVersionAsync(valuetype Azure.Core.AzureLocation location, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetGuardrailsAvailableVersionAsync(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGuardrailsAvailableVersionAsync (location As AzureLocation, version As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of GuardrailsAvailableVersionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetGuardrailsAvailableVersionAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;&gt;&#xA;override this.GetGuardrailsAvailableVersionAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;&gt;" Usage="mockableContainerServiceSubscriptionResource.GetGuardrailsAvailableVersionAsync (location, version, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="version"> Safeguards version. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Contains Guardrails version along with its support info and whether it is a default version.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/guardrailsVersions/{version}. </description></item><item><term> Operation Id. </term><description> GuardrailsAvailableVersions_GetGuardrailsVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuardrailsAvailableVersions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionCollection GetGuardrailsAvailableVersions (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionCollection GetGuardrailsAvailableVersions(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetGuardrailsAvailableVersions(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGuardrailsAvailableVersions (location As AzureLocation) As GuardrailsAvailableVersionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetGuardrailsAvailableVersions : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionCollection&#xA;override this.GetGuardrailsAvailableVersions : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionCollection" Usage="mockableContainerServiceSubscriptionResource.GetGuardrailsAvailableVersions location" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.GuardrailsAvailableVersionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <summary> Gets a collection of GuardrailsAvailableVersions in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of GuardrailsAvailableVersions and their operations over a GuardrailsAvailableVersionResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,20 +252,27 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="location"> The name of the Azure region. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Contains extra metadata on the version, including supported patch versions, capabilities, available upgrades, and details on preview status of the version
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/kubernetesVersions</description></item><item><term>Operation Id</term><description>ManagedClusters_ListKubernetesVersions</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/kubernetesVersions</description></item><item><term>Operation Id</term><description>ManagedClusters_ListKubernetesVersions</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,20 +287,83 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="location"> The name of the Azure region. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Contains extra metadata on the version, including supported patch versions, capabilities, available upgrades, and details on preview status of the version
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/kubernetesVersions</description></item><item><term>Operation Id</term><description>ManagedClusters_ListKubernetesVersions</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/kubernetesVersions</description></item><item><term>Operation Id</term><description>ManagedClusters_ListKubernetesVersions</description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedClusterKubernetesVersions">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt; GetManagedClusterKubernetesVersions (Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt; GetManagedClusterKubernetesVersions(valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetManagedClusterKubernetesVersions(Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetManagedClusterKubernetesVersions (location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Response(Of KubernetesVersionListResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedClusterKubernetesVersions : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;&#xA;override this.GetManagedClusterKubernetesVersions : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;" Usage="mockableContainerServiceSubscriptionResource.GetManagedClusterKubernetesVersions (location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Contains extra metadata on the version, including supported patch versions, capabilities, available upgrades, and details on preview status of the version
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/kubernetesVersions. </description></item><item><term> Operation Id. </term><description> ManagedClustersOperationGroup_ListKubernetesVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedClusterKubernetesVersionsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;&gt; GetManagedClusterKubernetesVersionsAsync (Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;&gt; GetManagedClusterKubernetesVersionsAsync(valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetManagedClusterKubernetesVersionsAsync(Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetManagedClusterKubernetesVersionsAsync (location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of KubernetesVersionListResult))" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedClusterKubernetesVersionsAsync : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;&gt;&#xA;override this.GetManagedClusterKubernetesVersionsAsync : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;&gt;" Usage="mockableContainerServiceSubscriptionResource.GetManagedClusterKubernetesVersionsAsync (location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.Models.KubernetesVersionListResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Contains extra metadata on the version, including supported patch versions, capabilities, available upgrades, and details on preview status of the version
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/kubernetesVersions. </description></item><item><term> Operation Id. </term><description> ManagedClustersOperationGroup_ListKubernetesVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,7 +377,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ContainerService.ManagedClusterSnapshotResource&gt;</ReturnType>
@@ -278,7 +389,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of managed cluster snapshots in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedclustersnapshots</description></item><item><term>Operation Id</term><description>ManagedClusterSnapshots_List</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedclustersnapshots. </description></item><item><term> Operation Id. </term><description> ManagedClusterSnapshots_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.ManagedClusterSnapshotResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,7 +403,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.ManagedClusterSnapshotResource&gt;</ReturnType>
@@ -304,8 +415,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of managed cluster snapshots in the specified subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedclustersnapshots</description></item><item><term>Operation Id</term><description>ManagedClusterSnapshots_List</description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.ContainerService.ManagedClusterSnapshotResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/managedclustersnapshots. </description></item><item><term> Operation Id. </term><description> ManagedClusterSnapshots_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.ManagedClusterSnapshotResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,22 +430,23 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerService.MeshRevisionProfileResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="mode" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="mode" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> The name of the Azure region. </param>
+        <param name="location"> The location for the resource. </param>
         <param name="mode"> The mode of the mesh. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Contains extra metadata on the revision, including supported revisions, cluster compatibility and available upgrades
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/meshRevisionProfiles/{mode}</description></item><item><term>Operation Id</term><description>ManagedClusters_GetMeshRevisionProfile</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ContainerService.MeshRevisionProfileResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/meshRevisionProfiles/{mode}. </description></item><item><term> Operation Id. </term><description> MeshRevisionProfiles_GetMeshRevisionProfile. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -353,22 +465,23 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.MeshRevisionProfileResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="mode" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="mode" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> The name of the Azure region. </param>
+        <param name="location"> The location for the resource. </param>
         <param name="mode"> The mode of the mesh. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Contains extra metadata on the revision, including supported revisions, cluster compatibility and available upgrades
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/meshRevisionProfiles/{mode}</description></item><item><term>Operation Id</term><description>ManagedClusters_GetMeshRevisionProfile</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.ContainerService.MeshRevisionProfileResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/meshRevisionProfiles/{mode}. </description></item><item><term> Operation Id. </term><description> MeshRevisionProfiles_GetMeshRevisionProfile. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -387,17 +500,74 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ContainerService.MeshRevisionProfileCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <summary> Gets a collection of MeshRevisionProfiles in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of MeshRevisionProfiles and their operations over a MeshRevisionProfileResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNodeImageVersions">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt; GetNodeImageVersions (Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt; GetNodeImageVersions(valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetNodeImageVersions(Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNodeImageVersions (location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of NodeImageVersion)" />
+      <MemberSignature Language="F#" Value="abstract member GetNodeImageVersions : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt;&#xA;override this.GetNodeImageVersions : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt;" Usage="mockableContainerServiceSubscriptionResource.GetNodeImageVersions (location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="location"> The name of the Azure region. </param>
-        <summary> Gets a collection of MeshRevisionProfileResources in the SubscriptionResource. </summary>
-        <returns> An object representing collection of MeshRevisionProfileResources and their operations over a MeshRevisionProfileResource. </returns>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Only returns the latest version of each node image. For example there may be an AKSUbuntu-1804gen2containerd-2024.01.26, but only AKSUbuntu-1804gen2containerd-2024.02.02 is visible in this list.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/nodeImageVersions. </description></item><item><term> Operation Id. </term><description> ContainerServiceOperationGroup_ListNodeImageVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.Models.NodeImageVersion" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNodeImageVersionsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt; GetNodeImageVersionsAsync (Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt; GetNodeImageVersionsAsync(valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetNodeImageVersionsAsync(Azure.Core.AzureLocation,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNodeImageVersionsAsync (location As AzureLocation, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of NodeImageVersion)" />
+      <MemberSignature Language="F#" Value="abstract member GetNodeImageVersionsAsync : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt;&#xA;override this.GetNodeImageVersionsAsync : Azure.Core.AzureLocation * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt;" Usage="mockableContainerServiceSubscriptionResource.GetNodeImageVersionsAsync (location, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.NodeImageVersion&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Only returns the latest version of each node image. For example there may be an AKSUbuntu-1804gen2containerd-2024.01.26, but only AKSUbuntu-1804gen2containerd-2024.02.02 is visible in this list.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/nodeImageVersions. </description></item><item><term> Operation Id. </term><description> ContainerServiceOperationGroup_ListNodeImageVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.Models.NodeImageVersion" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,15 +580,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[System.Obsolete("This function is obsolete and will be removed in a future release", false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("This function is obsolete and will be removed in a future release", false)&gt;]</AttributeName>
         </Attribute>
@@ -436,6 +606,98 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSafeguardsAvailableVersion">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt; GetSafeguardsAvailableVersion (Azure.Core.AzureLocation location, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt; GetSafeguardsAvailableVersion(valuetype Azure.Core.AzureLocation location, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetSafeguardsAvailableVersion(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSafeguardsAvailableVersion (location As AzureLocation, version As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of SafeguardsAvailableVersionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetSafeguardsAvailableVersion : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;&#xA;override this.GetSafeguardsAvailableVersion : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;" Usage="mockableContainerServiceSubscriptionResource.GetSafeguardsAvailableVersion (location, version, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="version"> Safeguards version. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Contains Safeguards version along with its support info and whether it is a default version.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/safeguardsVersions/{version}. </description></item><item><term> Operation Id. </term><description> SafeguardsAvailableVersions_GetSafeguardsVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSafeguardsAvailableVersionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;&gt; GetSafeguardsAvailableVersionAsync (Azure.Core.AzureLocation location, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;&gt; GetSafeguardsAvailableVersionAsync(valuetype Azure.Core.AzureLocation location, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetSafeguardsAvailableVersionAsync(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSafeguardsAvailableVersionAsync (location As AzureLocation, version As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of SafeguardsAvailableVersionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetSafeguardsAvailableVersionAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;&gt;&#xA;override this.GetSafeguardsAvailableVersionAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;&gt;" Usage="mockableContainerServiceSubscriptionResource.GetSafeguardsAvailableVersionAsync (location, version, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="version"> Safeguards version. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Contains Safeguards version along with its support info and whether it is a default version.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/safeguardsVersions/{version}. </description></item><item><term> Operation Id. </term><description> SafeguardsAvailableVersions_GetSafeguardsVersions. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="version" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="version" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSafeguardsAvailableVersions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionCollection GetSafeguardsAvailableVersions (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionCollection GetSafeguardsAvailableVersions(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetSafeguardsAvailableVersions(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSafeguardsAvailableVersions (location As AzureLocation) As SafeguardsAvailableVersionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetSafeguardsAvailableVersions : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionCollection&#xA;override this.GetSafeguardsAvailableVersions : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionCollection" Usage="mockableContainerServiceSubscriptionResource.GetSafeguardsAvailableVersions location" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.SafeguardsAvailableVersionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <summary> Gets a collection of SafeguardsAvailableVersions in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of SafeguardsAvailableVersions and their operations over a SafeguardsAvailableVersionResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetTrustedAccessRoles">
       <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceTrustedAccessRole&gt; GetTrustedAccessRoles (Azure.Core.AzureLocation location, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.ContainerService.Models.ContainerServiceTrustedAccessRole&gt; GetTrustedAccessRoles(valuetype Azure.Core.AzureLocation location, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -445,8 +707,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceTrustedAccessRole&gt;</ReturnType>
@@ -460,7 +722,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List supported trusted access roles.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/trustedAccessRoles</description></item><item><term>Operation Id</term><description>TrustedAccessRoles_List</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/trustedAccessRoles. </description></item><item><term> Operation Id. </term><description> TrustedAccessRolesOperationGroup_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.Models.ContainerServiceTrustedAccessRole" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,8 +736,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceTrustedAccessRole&gt;</ReturnType>
@@ -489,8 +751,68 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             List supported trusted access roles.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/trustedAccessRoles</description></item><item><term>Operation Id</term><description>TrustedAccessRoles_List</description></item><item><term>Default Api Version</term><description>2025-10-01</description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.ContainerService.Models.ContainerServiceTrustedAccessRole" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/trustedAccessRoles. </description></item><item><term> Operation Id. </term><description> TrustedAccessRolesOperationGroup_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.Models.ContainerServiceTrustedAccessRole" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVmSkus">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt; GetVmSkus (Azure.Core.AzureLocation location, bool? includeExtendedLocations = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt; GetVmSkus(valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;bool&gt; includeExtendedLocations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetVmSkus(Azure.Core.AzureLocation,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVmSkus (location As AzureLocation, Optional includeExtendedLocations As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of ContainerServiceVmSku)" />
+      <MemberSignature Language="F#" Value="abstract member GetVmSkus : Azure.Core.AzureLocation * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt;&#xA;override this.GetVmSkus : Azure.Core.AzureLocation * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt;" Usage="mockableContainerServiceSubscriptionResource.GetVmSkus (location, includeExtendedLocations, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="includeExtendedLocations" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="includeExtendedLocations"> To Include Extended Locations information or not in the response. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the list of VM SKUs accepted by AKS when creating node pools in a specified location. AKS will perform a best effort approach to provision the requested VM SKUs, but availability is not guaranteed.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/vmSkus. </description></item><item><term> Operation Id. </term><description> VmSkusOperationGroup_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVmSkusAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt; GetVmSkusAsync (Azure.Core.AzureLocation location, bool? includeExtendedLocations = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt; GetVmSkusAsync(valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;bool&gt; includeExtendedLocations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Mocking.MockableContainerServiceSubscriptionResource.GetVmSkusAsync(Azure.Core.AzureLocation,System.Nullable{System.Boolean},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVmSkusAsync (location As AzureLocation, Optional includeExtendedLocations As Nullable(Of Boolean) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of ContainerServiceVmSku)" />
+      <MemberSignature Language="F#" Value="abstract member GetVmSkusAsync : Azure.Core.AzureLocation * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt;&#xA;override this.GetVmSkusAsync : Azure.Core.AzureLocation * Nullable&lt;bool&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt;" Usage="mockableContainerServiceSubscriptionResource.GetVmSkusAsync (location, includeExtendedLocations, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="includeExtendedLocations" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="includeExtendedLocations"> To Include Extended Locations information or not in the response. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets the list of VM SKUs accepted by AKS when creating node pools in a specified location. AKS will perform a best effort approach to provision the requested VM SKUs, but availability is not guaranteed.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/vmSkus. </description></item><item><term> Operation Id. </term><description> VmSkusOperationGroup_List. </description></item><item><term> Default Api Version. </term><description> 2026-01-02-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.ContainerService.Models.ContainerServiceVmSku" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

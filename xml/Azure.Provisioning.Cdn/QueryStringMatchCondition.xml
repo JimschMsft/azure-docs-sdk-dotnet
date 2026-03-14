@@ -1,0 +1,151 @@
+<Type Name="QueryStringMatchCondition" FullName="Azure.Provisioning.Cdn.QueryStringMatchCondition">
+  <TypeSignature Language="C#" Value="public class QueryStringMatchCondition : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryStringMatchCondition extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.QueryStringMatchCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryStringMatchCondition&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type QueryStringMatchCondition = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines the parameters for QueryString match conditions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryStringMatchCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.QueryStringMatchCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new QueryStringMatchCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.QueryStringMatchCondition.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="queryStringMatchCondition.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of QueryStringMatchCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchValues">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; MatchValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; MatchValues" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.QueryStringMatchCondition.MatchValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchValues As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MatchValues : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.QueryStringMatchCondition.MatchValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The match value for the condition of the delivery rule.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NegateCondition">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; NegateCondition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; NegateCondition" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.QueryStringMatchCondition.NegateCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property NegateCondition As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.NegateCondition : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.Cdn.QueryStringMatchCondition.NegateCondition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes if this is negate condition or not.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryStringOperator">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.QueryStringOperator&gt; QueryStringOperator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.QueryStringOperator&gt; QueryStringOperator" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.QueryStringMatchCondition.QueryStringOperator" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryStringOperator As BicepValue(Of QueryStringOperator)" />
+      <MemberSignature Language="F#" Value="member this.QueryStringOperator : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.QueryStringOperator&gt; with get, set" Usage="Azure.Provisioning.Cdn.QueryStringMatchCondition.QueryStringOperator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.QueryStringOperator&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes operator to be matched.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transforms">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.PreTransformCategory&gt; Transforms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;valuetype Azure.Provisioning.Cdn.PreTransformCategory&gt; Transforms" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.QueryStringMatchCondition.Transforms" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transforms As BicepList(Of PreTransformCategory)" />
+      <MemberSignature Language="F#" Value="member this.Transforms : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.PreTransformCategory&gt; with get, set" Usage="Azure.Provisioning.Cdn.QueryStringMatchCondition.Transforms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.PreTransformCategory&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of transforms.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

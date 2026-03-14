@@ -1,0 +1,374 @@
+<Type Name="ManagedClusterJwtAuthenticatorClaimMappings" FullName="Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings">
+  <TypeSignature Language="C#" Value="public class ManagedClusterJwtAuthenticatorClaimMappings : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagedClusterJwtAuthenticatorClaimMappings extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManagedClusterJwtAuthenticatorClaimMappings&#xA;Implements IJsonModel(Of ManagedClusterJwtAuthenticatorClaimMappings), IPersistableModel(Of ManagedClusterJwtAuthenticatorClaimMappings)" />
+  <TypeSignature Language="F#" Value="type ManagedClusterJwtAuthenticatorClaimMappings = class&#xA;    interface IJsonModel&lt;ManagedClusterJwtAuthenticatorClaimMappings&gt;&#xA;    interface IPersistableModel&lt;ManagedClusterJwtAuthenticatorClaimMappings&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The claim mappings for JWTAuthenticator. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagedClusterJwtAuthenticatorClaimMappings (string usernameExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string usernameExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (usernameExpression As String)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings : string -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings" Usage="new Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings usernameExpression" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="usernameExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="usernameExpression"> The CEL expression used to access token claims. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="usernameExpression" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Extra">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorExtraClaimMappingExpression&gt; Extra { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorExtraClaimMappingExpression&gt; Extra" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.Extra" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extra As IList(Of ManagedClusterJwtAuthenticatorExtraClaimMappingExpression)" />
+      <MemberSignature Language="F#" Value="member this.Extra : System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorExtraClaimMappingExpression&gt;" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.Extra" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorExtraClaimMappingExpression&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The expression to extract extra attribute from the token claims. When not provided, no extra attributes are extracted from the token claims. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsExpression">
+      <MemberSignature Language="C#" Value="public string GroupsExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GroupsExpression" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.GroupsExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupsExpression As String" />
+      <MemberSignature Language="F#" Value="member this.GroupsExpression : string with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.GroupsExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The CEL expression used to access token claims. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ManagedClusterJwtAuthenticatorClaimMappings" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings" Usage="managedClusterJwtAuthenticatorClaimMappings.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="managedClusterJwtAuthenticatorClaimMappings.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As ManagedClusterJwtAuthenticatorClaimMappings" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings" Usage="managedClusterJwtAuthenticatorClaimMappings.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="managedClusterJwtAuthenticatorClaimMappings.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings IJsonModel&lt;ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterJwtAuthenticatorClaimMappings&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ManagedClusterJwtAuthenticatorClaimMappings Implements IJsonModel(Of ManagedClusterJwtAuthenticatorClaimMappings).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings" Usage="managedClusterJwtAuthenticatorClaimMappings.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterJwtAuthenticatorClaimMappings&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of ManagedClusterJwtAuthenticatorClaimMappings).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="managedClusterJwtAuthenticatorClaimMappings.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings IPersistableModel&lt;ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterJwtAuthenticatorClaimMappings&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As ManagedClusterJwtAuthenticatorClaimMappings Implements IPersistableModel(Of ManagedClusterJwtAuthenticatorClaimMappings).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings" Usage="managedClusterJwtAuthenticatorClaimMappings.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;ManagedClusterJwtAuthenticatorClaimMappings&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterJwtAuthenticatorClaimMappings&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of ManagedClusterJwtAuthenticatorClaimMappings).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="managedClusterJwtAuthenticatorClaimMappings.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerService#Models#ManagedClusterJwtAuthenticatorClaimMappings&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of ManagedClusterJwtAuthenticatorClaimMappings).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="managedClusterJwtAuthenticatorClaimMappings.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UidExpression">
+      <MemberSignature Language="C#" Value="public string UidExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UidExpression" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.UidExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property UidExpression As String" />
+      <MemberSignature Language="F#" Value="member this.UidExpression : string with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.UidExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The CEL expression used to access token claims. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsernameExpression">
+      <MemberSignature Language="C#" Value="public string UsernameExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UsernameExpression" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.UsernameExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property UsernameExpression As String" />
+      <MemberSignature Language="F#" Value="member this.UsernameExpression : string with get, set" Usage="Azure.ResourceManager.ContainerService.Models.ManagedClusterJwtAuthenticatorClaimMappings.UsernameExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerService</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The CEL expression used to access token claims. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

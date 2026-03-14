@@ -1,0 +1,109 @@
+<Type Name="ProfileLogScrubbing" FullName="Azure.Provisioning.Cdn.ProfileLogScrubbing">
+  <TypeSignature Language="C#" Value="public class ProfileLogScrubbing : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileLogScrubbing extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.ProfileLogScrubbing" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProfileLogScrubbing&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ProfileLogScrubbing = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines rules that scrub sensitive fields in the Azure Front Door profile
+            logs.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileLogScrubbing ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.ProfileLogScrubbing.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new ProfileLogScrubbing.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.ProfileLogScrubbing.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="profileLogScrubbing.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ProfileLogScrubbing.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrubbingRules">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.ProfileScrubbingRules&gt; ScrubbingRules { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.Cdn.ProfileScrubbingRules&gt; ScrubbingRules" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.ProfileLogScrubbing.ScrubbingRules" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrubbingRules As BicepList(Of ProfileScrubbingRules)" />
+      <MemberSignature Language="F#" Value="member this.ScrubbingRules : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.ProfileScrubbingRules&gt; with get, set" Usage="Azure.Provisioning.Cdn.ProfileLogScrubbing.ScrubbingRules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.ProfileScrubbingRules&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of log scrubbing rules applied to the Azure Front Door profile
+            logs.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.ProfileScrubbingState&gt; State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.ProfileScrubbingState&gt; State" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.ProfileLogScrubbing.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As BicepValue(Of ProfileScrubbingState)" />
+      <MemberSignature Language="F#" Value="member this.State : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.ProfileScrubbingState&gt; with get, set" Usage="Azure.Provisioning.Cdn.ProfileLogScrubbing.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.ProfileScrubbingState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            State of the log scrubbing config. Default value is Enabled.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

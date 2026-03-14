@@ -1,0 +1,492 @@
+<Type Name="FrontDoorOrigin" FullName="Azure.Provisioning.Cdn.FrontDoorOrigin">
+  <TypeSignature Language="C#" Value="public class FrontDoorOrigin : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FrontDoorOrigin extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.FrontDoorOrigin" />
+  <TypeSignature Language="VB.NET" Value="Public Class FrontDoorOrigin&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type FrontDoorOrigin = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            FrontDoorOrigin.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrontDoorOrigin (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.FrontDoorOrigin.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.Cdn.FrontDoorOrigin : string * string -&gt; Azure.Provisioning.Cdn.FrontDoorOrigin" Usage="new Azure.Provisioning.Cdn.FrontDoorOrigin (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the FrontDoorOrigin resource.  This
+            can be used to refer to the resource in expressions, but is not the
+            Azure name of the resource.  This value can contain letters, numbers,
+            and underscores.
+            </param>
+        <param name="resourceVersion">Version of the FrontDoorOrigin.</param>
+        <summary>
+            Creates a new FrontDoorOrigin.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.FrontDoorOrigin.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="frontDoorOrigin.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of FrontDoorOrigin.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentStatus">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorDeploymentStatus&gt; DeploymentStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.FrontDoorDeploymentStatus&gt; DeploymentStatus" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.DeploymentStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeploymentStatus As BicepValue(Of FrontDoorDeploymentStatus)" />
+      <MemberSignature Language="F#" Value="member this.DeploymentStatus : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorDeploymentStatus&gt;" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.DeploymentStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorDeploymentStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the deployment status.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnabledState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.EnabledState&gt; EnabledState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.EnabledState&gt; EnabledState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.EnabledState" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnabledState As BicepValue(Of EnabledState)" />
+      <MemberSignature Language="F#" Value="member this.EnabledState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.EnabledState&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.EnabledState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.EnabledState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Whether to enable health probes to be made against backends defined
+            under backendPools. Health probes can only be disabled if there is a
+            single enabled backend in single enabled backend pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnforceCertificateNameCheck">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; EnforceCertificateNameCheck { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; EnforceCertificateNameCheck" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.EnforceCertificateNameCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnforceCertificateNameCheck As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnforceCertificateNameCheck : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.EnforceCertificateNameCheck" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Whether to enable certificate name check at origin level.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Cdn.FrontDoorOrigin FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Cdn.FrontDoorOrigin FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.FrontDoorOrigin.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As FrontDoorOrigin" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Cdn.FrontDoorOrigin" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.FrontDoorOrigin</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the FrontDoorOrigin resource.  This
+            can be used to refer to the resource in expressions, but is not the
+            Azure name of the resource.  This value can contain letters, numbers,
+            and underscores.
+            </param>
+        <param name="resourceVersion">Version of the FrontDoorOrigin.</param>
+        <summary>
+            Creates a reference to an existing FrontDoorOrigin.
+            </summary>
+        <returns>The existing FrontDoorOrigin resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; HostName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; HostName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.HostName" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.HostName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.HostName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The address of the origin. Domain names, IPv4 addresses, and IPv6
+            addresses are supported.This should be unique across all origins in an
+            endpoint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpPort">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; HttpPort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; HttpPort" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.HttpPort" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpPort As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.HttpPort : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.HttpPort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The value of the HTTP port. Must be between 1 and 65535.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpsPort">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; HttpsPort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; HttpsPort" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.HttpsPort" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpsPort As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.HttpsPort : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.HttpsPort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The value of the HTTPS port. Must be between 1 and 65535.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of the origin that is unique within the profile.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginGroupName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; OriginGroupName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; OriginGroupName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.OriginGroupName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginGroupName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.OriginGroupName : Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.OriginGroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the origin group which contains this origin.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginHostHeader">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; OriginHostHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; OriginHostHeader" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.OriginHostHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginHostHeader As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.OriginHostHeader : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.OriginHostHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The host header value sent to the origin with each request. If you
+            leave this blank, the request hostname determines this value. Azure
+            Front Door origins, such as Web Apps, Blob Storage, and Cloud Services
+            require this host header value to match the origin hostname by
+            default. This overrides the host header defined at Endpoint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginId">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; OriginId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; OriginId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.OriginId" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginId As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.OriginId : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.OriginId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.FrontDoorOriginGroup? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.FrontDoorOriginGroup Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As FrontDoorOriginGroup" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.Cdn.FrontDoorOriginGroup with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.FrontDoorOriginGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent FrontDoorOriginGroup.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; Priority" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Priority : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Priority of origin in given origin group for load balancing. Higher
+            priorities will not be used for load balancing if any lower priority
+            origin is healthy.Must be between 1 and 5.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorProvisioningState&gt; ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.FrontDoorProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As BicepValue(Of FrontDoorProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorProvisioningState&gt;" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.FrontDoorProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Provisioning status.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharedPrivateLinkResource">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.SharedPrivateLinkResourceProperties SharedPrivateLinkResource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.SharedPrivateLinkResourceProperties SharedPrivateLinkResource" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.SharedPrivateLinkResource" />
+      <MemberSignature Language="VB.NET" Value="Public Property SharedPrivateLinkResource As SharedPrivateLinkResourceProperties" />
+      <MemberSignature Language="F#" Value="member this.SharedPrivateLinkResource : Azure.Provisioning.Cdn.SharedPrivateLinkResourceProperties with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.SharedPrivateLinkResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.SharedPrivateLinkResourceProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The properties of the private link resource for private origin.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Weight">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;int&gt; Weight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int32&gt; Weight" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.FrontDoorOrigin.Weight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Weight As BicepValue(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Weight : Azure.Provisioning.BicepValue&lt;int&gt; with get, set" Usage="Azure.Provisioning.Cdn.FrontDoorOrigin.Weight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Weight of the origin in given origin group for load balancing. Must be
+            between 1 and 1000.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

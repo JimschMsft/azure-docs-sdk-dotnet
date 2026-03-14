@@ -1,0 +1,189 @@
+<Type Name="WafPolicySettings" FullName="Azure.Provisioning.Cdn.WafPolicySettings">
+  <TypeSignature Language="C#" Value="public class WafPolicySettings : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WafPolicySettings extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.WafPolicySettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class WafPolicySettings&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type WafPolicySettings = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines contents of a web application firewall global configuration.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WafPolicySettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.WafPolicySettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new WafPolicySettings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCustomBlockResponseBody">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;BinaryData&gt; DefaultCustomBlockResponseBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.BinaryData&gt; DefaultCustomBlockResponseBody" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicySettings.DefaultCustomBlockResponseBody" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultCustomBlockResponseBody As BicepValue(Of BinaryData)" />
+      <MemberSignature Language="F#" Value="member this.DefaultCustomBlockResponseBody : Azure.Provisioning.BicepValue&lt;BinaryData&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicySettings.DefaultCustomBlockResponseBody" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.BinaryData&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the action type is block, customer can override the response body.
+            The body must be specified in base64 encoding.
+            To assign an object to this property use
+            System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions).
+            To assign an already formatted json string to
+            this property use System.BinaryData.FromString(System.String).
+            Examples:
+            BinaryData.FromObjectAsJson("foo")Creates a
+            payload of
+            "foo".BinaryData.FromString("\"foo\"")Creates
+            a payload of "foo".BinaryData.FromObjectAsJson(new { key =
+            "value" })Creates a payload of { "key":
+            "value" }.BinaryData.FromString("{\"key\":
+            \"value\"}")Creates a payload of { "key":
+            "value" }.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCustomBlockResponseStatusCode">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Cdn.PolicySettingsDefaultCustomBlockResponseStatusCode DefaultCustomBlockResponseStatusCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Cdn.PolicySettingsDefaultCustomBlockResponseStatusCode DefaultCustomBlockResponseStatusCode" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicySettings.DefaultCustomBlockResponseStatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultCustomBlockResponseStatusCode As PolicySettingsDefaultCustomBlockResponseStatusCode" />
+      <MemberSignature Language="F#" Value="member this.DefaultCustomBlockResponseStatusCode : Azure.Provisioning.Cdn.PolicySettingsDefaultCustomBlockResponseStatusCode with get, set" Usage="Azure.Provisioning.Cdn.WafPolicySettings.DefaultCustomBlockResponseStatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Cdn.PolicySettingsDefaultCustomBlockResponseStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If the action type is block, this field defines the default customer
+            overridable http response status code.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRedirectUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; DefaultRedirectUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; DefaultRedirectUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicySettings.DefaultRedirectUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRedirectUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.DefaultRedirectUri : Azure.Provisioning.BicepValue&lt;Uri&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicySettings.DefaultRedirectUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If action type is redirect, this field represents the default redirect
+            URL for the client.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.WafPolicySettings.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="wafPolicySettings.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of WafPolicySettings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnabledState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.PolicyEnabledState&gt; EnabledState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.PolicyEnabledState&gt; EnabledState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicySettings.EnabledState" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnabledState As BicepValue(Of PolicyEnabledState)" />
+      <MemberSignature Language="F#" Value="member this.EnabledState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.PolicyEnabledState&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicySettings.EnabledState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.PolicyEnabledState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            describes if the policy is in enabled state or disabled state.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.PolicyMode&gt; Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.PolicyMode&gt; Mode" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.WafPolicySettings.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As BicepValue(Of PolicyMode)" />
+      <MemberSignature Language="F#" Value="member this.Mode : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.PolicyMode&gt; with get, set" Usage="Azure.Provisioning.Cdn.WafPolicySettings.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.PolicyMode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes if it is in detection mode or prevention mode at policy level.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

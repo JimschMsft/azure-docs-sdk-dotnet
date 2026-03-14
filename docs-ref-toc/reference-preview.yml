@@ -357,6 +357,16 @@
         - Azure.ResourceManager.CarbonOptimization
         - Azure.ResourceManager.CarbonOptimization.Mocking
         - Azure.ResourceManager.CarbonOptimization.Models
+  - name: Cdn
+    href: ~/api/overview/azure/preview/cdn.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Provisioning - Cdn
+        href: ~/api/overview/azure/preview/provisioning.cdn-readme.md
+        children:
+        - Azure.Provisioning.Cdn
   - name: Certificateregistration
     href: ~/api/overview/azure/preview/certificateregistration.md
     landingPageType: Service
@@ -918,6 +928,18 @@
         - Azure.ResourceManager.ContainerServiceFleet
         - Azure.ResourceManager.ContainerServiceFleet.Mocking
         - Azure.ResourceManager.ContainerServiceFleet.Models
+  - name: Containerregistry.Tasks
+    href: ~/api/overview/azure/preview/containerregistry.tasks.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Containerregistry.Tasks
+        href: ~/api/overview/azure/preview/resourcemanager.containerregistry.tasks-readme.md
+        children:
+        - Azure.ResourceManager.ContainerRegistry.Tasks
+        - Azure.ResourceManager.ContainerRegistry.Tasks.Mocking
+        - Azure.ResourceManager.ContainerRegistry.Tasks.Models
   - name: Content Delivery Network
     href: ~/api/overview/azure/preview/content-delivery-network.md
     landingPageType: Service
@@ -2222,12 +2244,12 @@
     items:
     - name: Management
       items:
-      - name: Resource Management - Neon Postgres
-        href: ~/api/overview/azure/preview/resourcemanager.neonpostgres-readme.md
+      - name: Resource Management - Neon Postgres (deprecated)
         children:
         - Azure.ResourceManager.NeonPostgres
         - Azure.ResourceManager.NeonPostgres.Mocking
         - Azure.ResourceManager.NeonPostgres.Models
+        landingPageType: Service
   - name: NetApp Files
     href: ~/api/overview/azure/preview/netapp-files.md
     landingPageType: Service
@@ -3469,6 +3491,10 @@
         landingPageType: Service
         items:
         - name: Core
+          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
+        - name: Core
           children:
           - Azure
           - Azure.Core
@@ -3480,10 +3506,6 @@
           - Azure.Core.Serialization
           - Azure.Messaging
           landingPageType: Service
-        - name: Core
-          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/preview/microsoft.azure.core.spatial-readme.md
           children:

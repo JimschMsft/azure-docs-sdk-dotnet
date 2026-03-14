@@ -1,0 +1,173 @@
+<Type Name="RequestHeaderMatchCondition" FullName="Azure.Provisioning.Cdn.RequestHeaderMatchCondition">
+  <TypeSignature Language="C#" Value="public class RequestHeaderMatchCondition : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestHeaderMatchCondition extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Cdn.RequestHeaderMatchCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Class RequestHeaderMatchCondition&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type RequestHeaderMatchCondition = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines the parameters for RequestHeader match conditions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestHeaderMatchCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.RequestHeaderMatchCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new RequestHeaderMatchCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Cdn.RequestHeaderMatchCondition.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="requestHeaderMatchCondition.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of RequestHeaderMatchCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchValues">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; MatchValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; MatchValues" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.RequestHeaderMatchCondition.MatchValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchValues As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MatchValues : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.RequestHeaderMatchCondition.MatchValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The match value for the condition of the delivery rule.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NegateCondition">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; NegateCondition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; NegateCondition" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.RequestHeaderMatchCondition.NegateCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property NegateCondition As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.NegateCondition : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.Cdn.RequestHeaderMatchCondition.NegateCondition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes if this is negate condition or not.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestHeaderOperator">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.RequestHeaderOperator&gt; RequestHeaderOperator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.Cdn.RequestHeaderOperator&gt; RequestHeaderOperator" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.RequestHeaderMatchCondition.RequestHeaderOperator" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestHeaderOperator As BicepValue(Of RequestHeaderOperator)" />
+      <MemberSignature Language="F#" Value="member this.RequestHeaderOperator : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.RequestHeaderOperator&gt; with get, set" Usage="Azure.Provisioning.Cdn.RequestHeaderMatchCondition.RequestHeaderOperator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Cdn.RequestHeaderOperator&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Describes operator to be matched.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selector">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Selector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Selector" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.RequestHeaderMatchCondition.Selector" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selector As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Selector : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.Cdn.RequestHeaderMatchCondition.Selector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of Header to be matched.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transforms">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.PreTransformCategory&gt; Transforms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;valuetype Azure.Provisioning.Cdn.PreTransformCategory&gt; Transforms" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Cdn.RequestHeaderMatchCondition.Transforms" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transforms As BicepList(Of PreTransformCategory)" />
+      <MemberSignature Language="F#" Value="member this.Transforms : Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.PreTransformCategory&gt; with get, set" Usage="Azure.Provisioning.Cdn.RequestHeaderMatchCondition.Transforms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.Cdn</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.Cdn.PreTransformCategory&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of transforms.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,712 @@
+<Type Name="RunData" FullName="Azure.ResourceManager.ContainerRegistry.Tasks.RunData">
+  <TypeSignature Language="C#" Value="public class RunData : Azure.ResourceManager.Models.ResourceData, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunData extends Azure.ResourceManager.Models.ResourceData implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.ContainerRegistry.Tasks.RunData" />
+  <TypeSignature Language="VB.NET" Value="Public Class RunData&#xA;Inherits ResourceData&#xA;Implements IJsonModel(Of RunData), IPersistableModel(Of RunData)" />
+  <TypeSignature Language="F#" Value="type RunData = class&#xA;    inherit ResourceData&#xA;    interface IJsonModel&lt;RunData&gt;&#xA;    interface IPersistableModel&lt;RunData&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.Models.ResourceData</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> Run resource properties. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AgentCpu">
+      <MemberSignature Language="C#" Value="public int? AgentCpu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; AgentCpu" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.AgentCpu" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AgentCpu As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.AgentCpu : Nullable&lt;int&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.AgentCpu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The CPU configuration in terms of number of cores required for the run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentPoolName">
+      <MemberSignature Language="C#" Value="public string AgentPoolName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AgentPoolName" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.AgentPoolName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AgentPoolName As String" />
+      <MemberSignature Language="F#" Value="member this.AgentPoolName : string" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.AgentPoolName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The dedicated agent pool for the run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? CreatedOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreatedOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.CreatedOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.CreatedOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.CreatedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The time the run was scheduled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomRegistries">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; CustomRegistries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; CustomRegistries" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.CustomRegistries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomRegistries As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.CustomRegistries : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.CustomRegistries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The list of custom registries that were logged in during this run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? FinishOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; FinishOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.FinishOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinishOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.FinishOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.FinishOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The time the run finished. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageUpdateTrigger">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger ImageUpdateTrigger { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger ImageUpdateTrigger" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.ImageUpdateTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageUpdateTrigger As ContainerRegistryTaskImageUpdateTrigger" />
+      <MemberSignature Language="F#" Value="member this.ImageUpdateTrigger : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.ImageUpdateTrigger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageUpdateTrigger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The image update trigger that caused the run. This is applicable if the task has base image trigger configured. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArchiveEnabled">
+      <MemberSignature Language="C#" Value="public bool? IsArchiveEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsArchiveEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.IsArchiveEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsArchiveEnabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsArchiveEnabled : Nullable&lt;bool&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.IsArchiveEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The value that indicates whether archiving is enabled or not. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.Models.ResourceData JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.Models.ResourceData JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ResourceData" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Models.ResourceData&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Models.ResourceData" Usage="runData.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Models.ResourceData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="runData.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastUpdatedOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastUpdatedOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastUpdatedOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.LastUpdatedOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastUpdatedOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.LastUpdatedOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.LastUpdatedOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The last updated time for the run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogArtifact">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor LogArtifact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor LogArtifact" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.LogArtifact" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogArtifact As ContainerRegistryTaskImageDescriptor" />
+      <MemberSignature Language="F#" Value="member this.LogArtifact : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.LogArtifact" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The image description for the log artifact. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputImages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; OutputImages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt; OutputImages" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.OutputImages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputImages As IList(Of ContainerRegistryTaskImageDescriptor)" />
+      <MemberSignature Language="F#" Value="member this.OutputImages : System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.OutputImages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskImageDescriptor&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The list of all images that were generated from the run. This is applicable if the run generates base image dependencies. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.Models.ResourceData PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.Models.ResourceData PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As ResourceData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Models.ResourceData&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Models.ResourceData" Usage="runData.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Models.ResourceData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="runData.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platform">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties Platform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties Platform" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.Platform" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Platform As ContainerRegistryTaskPlatformProperties" />
+      <MemberSignature Language="F#" Value="member this.Platform : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.Platform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskPlatformProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The platform properties against which the run will happen. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState? ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of ContainerRegistryTaskProvisioningState)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskProvisioningState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The provisioning state of a run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunErrorMessage">
+      <MemberSignature Language="C#" Value="public string RunErrorMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RunErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.RunErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RunErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.RunErrorMessage : string" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.RunErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The error message received from backend systems after the run is scheduled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunId">
+      <MemberSignature Language="C#" Value="public string RunId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RunId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.RunId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RunId As String" />
+      <MemberSignature Language="F#" Value="member this.RunId : string" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.RunId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The unique identifier for the run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunType">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType? RunType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType&gt; RunType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.RunType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RunType As Nullable(Of ContainerRegistryTaskRunType)" />
+      <MemberSignature Language="F#" Value="member this.RunType : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.RunType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The type of run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceRegistryAuth">
+      <MemberSignature Language="C#" Value="public string SourceRegistryAuth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceRegistryAuth" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.SourceRegistryAuth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceRegistryAuth As String" />
+      <MemberSignature Language="F#" Value="member this.SourceRegistryAuth : string" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.SourceRegistryAuth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The scope of the credentials that were used to login to the source registry during this run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceTrigger">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor SourceTrigger { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor SourceTrigger" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.SourceTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceTrigger As ContainerRegistryTaskSourceTriggerDescriptor" />
+      <MemberSignature Language="F#" Value="member this.SourceTrigger : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.SourceTrigger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskSourceTriggerDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The source trigger that caused the run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? StartOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StartOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.StartOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.StartOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.StartOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The time the run started. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus? Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus&gt; Status" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As Nullable(Of ContainerRegistryTaskRunStatus)" />
+      <MemberSignature Language="F#" Value="member this.Status : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus&gt;" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskRunStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The current status of the run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerRegistry.Tasks.RunData IJsonModel&lt;RunData&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.RunData System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#RunData&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As RunData Implements IJsonModel(Of RunData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.RunData&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.RunData" Usage="runData.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.RunData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;RunData&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#RunData&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of RunData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="runData.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.ContainerRegistry.Tasks.RunData IPersistableModel&lt;RunData&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.ContainerRegistry.Tasks.RunData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#RunData&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As RunData Implements IPersistableModel(Of RunData).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.RunData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.ContainerRegistry.Tasks.RunData" Usage="runData.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.RunData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;RunData&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#RunData&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of RunData).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="runData.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;RunData&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#ContainerRegistry#Tasks#RunData&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of RunData).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="runData.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.ContainerRegistry.Tasks.RunData&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Task">
+      <MemberSignature Language="C#" Value="public string Task { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Task" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.Task" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As String" />
+      <MemberSignature Language="F#" Value="member this.Task : string" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.Task" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The task against which run was scheduled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimerTrigger">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor TimerTrigger { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor TimerTrigger" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.TimerTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimerTrigger As ContainerRegistryTaskTimerTriggerDescriptor" />
+      <MemberSignature Language="F#" Value="member this.TimerTrigger : Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.TimerTrigger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ContainerRegistry.Tasks.Models.ContainerRegistryTaskTimerTriggerDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The timer trigger that caused the run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTriggerToken">
+      <MemberSignature Language="C#" Value="public string UpdateTriggerToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UpdateTriggerToken" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.Tasks.RunData.UpdateTriggerToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateTriggerToken As String" />
+      <MemberSignature Language="F#" Value="member this.UpdateTriggerToken : string" Usage="Azure.ResourceManager.ContainerRegistry.Tasks.RunData.UpdateTriggerToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry.Tasks</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The update trigger token passed for the Run. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
