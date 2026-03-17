@@ -1,0 +1,346 @@
+<Type Name="MockableDomainRegistrationSubscriptionResource" FullName="Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource">
+  <TypeSignature Language="C#" Value="public class MockableDomainRegistrationSubscriptionResource : Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MockableDomainRegistrationSubscriptionResource extends Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class MockableDomainRegistrationSubscriptionResource&#xA;Inherits ArmResource" />
+  <TypeSignature Language="F#" Value="type MockableDomainRegistrationSubscriptionResource = class&#xA;    inherit ArmResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MockableDomainRegistrationSubscriptionResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of MockableDomainRegistrationSubscriptionResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckAppServiceDomainRegistrationAvailability">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt; CheckAppServiceDomainRegistrationAvailability (Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier identifier, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt; CheckAppServiceDomainRegistrationAvailability(class Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier identifier, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.CheckAppServiceDomainRegistrationAvailability(Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckAppServiceDomainRegistrationAvailability (identifier As AppServiceDomainNameIdentifier, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DomainAvailabilityCheckResult)" />
+      <MemberSignature Language="F#" Value="abstract member CheckAppServiceDomainRegistrationAvailability : Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;&#xA;override this.CheckAppServiceDomainRegistrationAvailability : Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;" Usage="mockableDomainRegistrationSubscriptionResource.CheckAppServiceDomainRegistrationAvailability (identifier, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identifier" Type="Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="identifier"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Check if a domain is available for registration.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/checkDomainAvailability. </description></item><item><term> Operation Id. </term><description> DomainsOperationGroup_CheckAvailability. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identifier" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckAppServiceDomainRegistrationAvailabilityAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;&gt; CheckAppServiceDomainRegistrationAvailabilityAsync (Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier identifier, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;&gt; CheckAppServiceDomainRegistrationAvailabilityAsync(class Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier identifier, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.CheckAppServiceDomainRegistrationAvailabilityAsync(Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckAppServiceDomainRegistrationAvailabilityAsync (identifier As AppServiceDomainNameIdentifier, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DomainAvailabilityCheckResult))" />
+      <MemberSignature Language="F#" Value="abstract member CheckAppServiceDomainRegistrationAvailabilityAsync : Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;&gt;&#xA;override this.CheckAppServiceDomainRegistrationAvailabilityAsync : Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;&gt;" Usage="mockableDomainRegistrationSubscriptionResource.CheckAppServiceDomainRegistrationAvailabilityAsync (identifier, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainAvailabilityCheckResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identifier" Type="Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="identifier"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Check if a domain is available for registration.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/checkDomainAvailability. </description></item><item><term> Operation Id. </term><description> DomainsOperationGroup_CheckAvailability. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identifier" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceDomains">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt; GetAppServiceDomains (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt; GetAppServiceDomains(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetAppServiceDomains(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAppServiceDomains (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of AppServiceDomainResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetAppServiceDomains : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt;&#xA;override this.GetAppServiceDomains : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetAppServiceDomains cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get all domains in a subscription.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/domains. </description></item><item><term> Operation Id. </term><description> Domains_List. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DomainRegistration.AppServiceDomainResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppServiceDomainsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt; GetAppServiceDomainsAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt; GetAppServiceDomainsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetAppServiceDomainsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAppServiceDomainsAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of AppServiceDomainResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetAppServiceDomainsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt;&#xA;override this.GetAppServiceDomainsAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetAppServiceDomainsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.AppServiceDomainResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get all domains in a subscription.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/domains. </description></item><item><term> Operation Id. </term><description> Domains_List. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DomainRegistration.AppServiceDomainResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetControlCenterSsoRequest">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt; GetControlCenterSsoRequest (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt; GetControlCenterSsoRequest(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetControlCenterSsoRequest(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetControlCenterSsoRequest (Optional cancellationToken As CancellationToken = Nothing) As Response(Of DomainControlCenterSsoRequestInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetControlCenterSsoRequest : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;&#xA;override this.GetControlCenterSsoRequest : System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetControlCenterSsoRequest cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Generate a single sign-on request for the domain management portal.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/generateSsoRequest. </description></item><item><term> Operation Id. </term><description> DomainsOperationGroup_GetControlCenterSsoRequest. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetControlCenterSsoRequestAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;&gt; GetControlCenterSsoRequestAsync (System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;&gt; GetControlCenterSsoRequestAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetControlCenterSsoRequestAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetControlCenterSsoRequestAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DomainControlCenterSsoRequestInfo))" />
+      <MemberSignature Language="F#" Value="abstract member GetControlCenterSsoRequestAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;&gt;&#xA;override this.GetControlCenterSsoRequestAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetControlCenterSsoRequestAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.Models.DomainControlCenterSsoRequestInfo&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Generate a single sign-on request for the domain management portal.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/generateSsoRequest. </description></item><item><term> Operation Id. </term><description> DomainsOperationGroup_GetControlCenterSsoRequest. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecommendations">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt; GetRecommendations (Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt; GetRecommendations(class Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetRecommendations(Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecommendations (content As DomainRecommendationSearchContent, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of AppServiceDomainNameIdentifier)" />
+      <MemberSignature Language="F#" Value="abstract member GetRecommendations : Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt;&#xA;override this.GetRecommendations : Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetRecommendations (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get domain name recommendations based on keywords.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/listDomainRecommendations. </description></item><item><term> Operation Id. </term><description> DomainsOperationGroup_ListRecommendations. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecommendationsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt; GetRecommendationsAsync (Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt; GetRecommendationsAsync(class Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetRecommendationsAsync(Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecommendationsAsync (content As DomainRecommendationSearchContent, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of AppServiceDomainNameIdentifier)" />
+      <MemberSignature Language="F#" Value="abstract member GetRecommendationsAsync : Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt;&#xA;override this.GetRecommendationsAsync : Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetRecommendationsAsync (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.DomainRegistration.Models.DomainRecommendationSearchContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get domain name recommendations based on keywords.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/listDomainRecommendations. </description></item><item><term> Operation Id. </term><description> DomainsOperationGroup_ListRecommendations. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DomainRegistration.Models.AppServiceDomainNameIdentifier" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTopLevelDomain">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt; GetTopLevelDomain (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt; GetTopLevelDomain(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetTopLevelDomain(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTopLevelDomain (name As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of TopLevelDomainResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetTopLevelDomain : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;&#xA;override this.GetTopLevelDomain : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetTopLevelDomain (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Name of the top-level domain. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get details of a top-level domain.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/topLevelDomains/{name}. </description></item><item><term> Operation Id. </term><description> TopLevelDomains_Get. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTopLevelDomainAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;&gt; GetTopLevelDomainAsync (string name, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;&gt; GetTopLevelDomainAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetTopLevelDomainAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTopLevelDomainAsync (name As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of TopLevelDomainResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetTopLevelDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;&gt;&#xA;override this.GetTopLevelDomainAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;&gt;" Usage="mockableDomainRegistrationSubscriptionResource.GetTopLevelDomainAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DomainRegistration.TopLevelDomainResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Name of the top-level domain. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Description for Get details of a top-level domain.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DomainRegistration/topLevelDomains/{name}. </description></item><item><term> Operation Id. </term><description> TopLevelDomains_Get. </description></item><item><term> Default Api Version. </term><description> 2024-11-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTopLevelDomains">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DomainRegistration.TopLevelDomainCollection GetTopLevelDomains ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DomainRegistration.TopLevelDomainCollection GetTopLevelDomains() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DomainRegistration.Mocking.MockableDomainRegistrationSubscriptionResource.GetTopLevelDomains" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTopLevelDomains () As TopLevelDomainCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetTopLevelDomains : unit -&gt; Azure.ResourceManager.DomainRegistration.TopLevelDomainCollection&#xA;override this.GetTopLevelDomains : unit -&gt; Azure.ResourceManager.DomainRegistration.TopLevelDomainCollection" Usage="mockableDomainRegistrationSubscriptionResource.GetTopLevelDomains " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DomainRegistration</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DomainRegistration.TopLevelDomainCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of TopLevelDomains in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of TopLevelDomains and their operations over a TopLevelDomainResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
