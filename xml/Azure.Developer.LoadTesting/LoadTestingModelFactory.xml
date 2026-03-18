@@ -7,13 +7,14 @@
   <AssemblyInfo>
     <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary> Model factory for models. </summary>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +27,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.ArtifactsContainerInfo</ReturnType>
@@ -38,8 +39,90 @@
       <Docs>
         <param name="uri"> This is a SAS URI to an Azure Storage Container that contains the test run artifacts. </param>
         <param name="expiresOn"> Expiry time of the container (RFC 3339 literal format). </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.ArtifactsContainerInfo" />. </summary>
+        <summary> Artifacts container info. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.ArtifactsContainerInfo" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoStopCriteria">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.AutoStopCriteria AutoStopCriteria (bool? autoStopDisabled = default, float? errorRate = default, TimeSpan? errorRateTimeWindow = default, int? maximumVirtualUsersPerEngine = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.AutoStopCriteria AutoStopCriteria(valuetype System.Nullable`1&lt;bool&gt; autoStopDisabled, valuetype System.Nullable`1&lt;float32&gt; errorRate, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; errorRateTimeWindow, valuetype System.Nullable`1&lt;int32&gt; maximumVirtualUsersPerEngine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.AutoStopCriteria(System.Nullable{System.Boolean},System.Nullable{System.Single},System.Nullable{System.TimeSpan},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AutoStopCriteria (Optional autoStopDisabled As Nullable(Of Boolean) = Nothing, Optional errorRate As Nullable(Of Single) = Nothing, Optional errorRateTimeWindow As Nullable(Of TimeSpan) = Nothing, Optional maximumVirtualUsersPerEngine As Nullable(Of Integer) = Nothing) As AutoStopCriteria" />
+      <MemberSignature Language="F#" Value="static member AutoStopCriteria : Nullable&lt;bool&gt; * Nullable&lt;single&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;int&gt; -&gt; Azure.Developer.LoadTesting.AutoStopCriteria" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.AutoStopCriteria (autoStopDisabled, errorRate, errorRateTimeWindow, maximumVirtualUsersPerEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.AutoStopCriteria</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="autoStopDisabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="errorRate" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="errorRateTimeWindow" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="maximumVirtualUsersPerEngine" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="autoStopDisabled"> Whether auto-stop should be disabled. The default value is false. </param>
+        <param name="errorRate"> Threshold percentage of errors on which test run should be automatically stopped. Allowed values are in range of 0.0-100.0. </param>
+        <param name="errorRateTimeWindow"> Time window during which the error percentage should be evaluated in seconds. </param>
+        <param name="maximumVirtualUsersPerEngine"> Maximum number of virtual users per load testing engine, at which the test run should be automatically stopped. </param>
+        <summary> Auto stop criteria for a test. This will automatically stop a load test if the error percentage is high for a certain time window. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.AutoStopCriteria" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DailyRecurrence">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.DailyRecurrence DailyRecurrence (Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd = default, int interval = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.DailyRecurrence DailyRecurrence(class Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd, int32 interval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.DailyRecurrence(Azure.Developer.LoadTesting.RecurrenceEnd,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DailyRecurrence (Optional recurrenceEnd As RecurrenceEnd = Nothing, Optional interval As Integer = 0) As DailyRecurrence" />
+      <MemberSignature Language="F#" Value="static member DailyRecurrence : Azure.Developer.LoadTesting.RecurrenceEnd * int -&gt; Azure.Developer.LoadTesting.DailyRecurrence" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.DailyRecurrence (recurrenceEnd, interval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.DailyRecurrence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recurrenceEnd" Type="Azure.Developer.LoadTesting.RecurrenceEnd" />
+        <Parameter Name="interval" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="recurrenceEnd"> Recurrence end model. You can specify the end either by providing a numberOfOccurrences (which will end the recurrence after the specified number of occurrences) or by providing an endDateTime (which will end the recurrence after the specified date). If neither value is provided, the recurrence will continue until it is manually ended. However, if both values are provided, an error will be thrown. </param>
+        <param name="interval"> The interval at which the recurrence should repeat. It signifies the number of days between each recurrence. </param>
+        <summary> Recurrence model when frequency is set as Daily. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.DailyRecurrence" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DimensionFilter">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.DimensionFilter DimensionFilter (string name = default, System.Collections.Generic.IEnumerable&lt;string&gt; values = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.DimensionFilter DimensionFilter(string name, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.DimensionFilter(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DimensionFilter (Optional name As String = Nothing, Optional values As IEnumerable(Of String) = Nothing) As DimensionFilter" />
+      <MemberSignature Language="F#" Value="static member DimensionFilter : string * seq&lt;string&gt; -&gt; Azure.Developer.LoadTesting.DimensionFilter" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.DimensionFilter (name, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.DimensionFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The dimension name. </param>
+        <param name="values"> The dimension values. Maximum values can be 20. </param>
+        <summary> Dimension name and values to filter. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.DimensionFilter" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,7 +135,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.DimensionValue</ReturnType>
@@ -64,45 +147,125 @@
       <Docs>
         <param name="name"> The name of the dimension. </param>
         <param name="value"> The value of the dimension. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.DimensionValue" />. </summary>
+        <summary> Represents a metric dimension value. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.DimensionValue" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorDetails">
-      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.ErrorDetails ErrorDetails (string message = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.ErrorDetails ErrorDetails(string message) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.ErrorDetails(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ErrorDetails (Optional message As String = Nothing) As ErrorDetails" />
-      <MemberSignature Language="F#" Value="static member ErrorDetails : string -&gt; Azure.Developer.LoadTesting.ErrorDetails" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.ErrorDetails message" />
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.ErrorDetails ErrorDetails (string code = default, string message = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,System.Collections.Generic.IList&lt;string&gt;&gt; properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.ErrorDetails ErrorDetails(string code, string message, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class System.Collections.Generic.IList`1&lt;string&gt;&gt; properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.ErrorDetails(System.String,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IList{System.String}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ErrorDetails (Optional code As String = Nothing, Optional message As String = Nothing, Optional properties As IReadOnlyDictionary(Of String, IList(Of String)) = Nothing) As ErrorDetails" />
+      <MemberSignature Language="F#" Value="static member ErrorDetails : string * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, System.Collections.Generic.IList&lt;string&gt;&gt; -&gt; Azure.Developer.LoadTesting.ErrorDetails" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.ErrorDetails (code, message, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.ErrorDetails</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="code" Type="System.String" />
         <Parameter Name="message" Type="System.String" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Collections.Generic.IList&lt;System.String&gt;&gt;" />
       </Parameters>
       <Docs>
+        <param name="code"> Error code if there is any failure in load test run. </param>
         <param name="message"> Error details in case test run was not successfully run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.ErrorDetails" />. </summary>
+        <param name="properties"> A dictionary for storing additional error information for better context. Each key is a property name (e.g., "Description", "Resolution", "Category", "Region"), and its value is an array of strings with relevant details. </param>
+        <summary> Error details if there is any failure in load test run. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.ErrorDetails" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LoadTest">
-      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.LoadTest LoadTest (Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria = default, Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria = default, System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.TestSecret&gt; secrets = default, Azure.Developer.LoadTesting.TestCertificate certificate = default, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentVariables = default, Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration = default, string baselineTestRunId = default, Azure.Developer.LoadTesting.TestInputArtifacts inputArtifacts = default, string testId = default, string description = default, string displayName = default, string subnetId = default, Azure.Developer.LoadTesting.LoadTestKind? kind = default, bool? publicIpDisabled = default, string keyvaultReferenceIdentityType = default, string keyvaultReferenceIdentityId = default, Azure.Developer.LoadTesting.LoadTestingManagedIdentityType? metricsReferenceIdentityType = default, string metricsReferenceIdentityId = default, Azure.Developer.LoadTesting.LoadTestingManagedIdentityType? engineBuiltInIdentityType = default, System.Collections.Generic.IEnumerable&lt;string&gt; engineBuiltInIdentityIds = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.LoadTest LoadTest(class Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria, class Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestSecret&gt; secrets, class Azure.Developer.LoadTesting.TestCertificate certificate, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentVariables, class Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration, string baselineTestRunId, class Azure.Developer.LoadTesting.TestInputArtifacts inputArtifacts, string testId, string description, string displayName, string subnetId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestKind&gt; kind, valuetype System.Nullable`1&lt;bool&gt; publicIpDisabled, string keyvaultReferenceIdentityType, string keyvaultReferenceIdentityId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; metricsReferenceIdentityType, string metricsReferenceIdentityId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; engineBuiltInIdentityType, class System.Collections.Generic.IEnumerable`1&lt;string&gt; engineBuiltInIdentityIds, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTest(Azure.Developer.LoadTesting.PassFailCriteria,Azure.Developer.LoadTesting.AutoStopCriteria,System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.TestSecret},Azure.Developer.LoadTesting.TestCertificate,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Developer.LoadTesting.LoadTestConfiguration,System.String,Azure.Developer.LoadTesting.TestInputArtifacts,System.String,System.String,System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestKind},System.Nullable{System.Boolean},System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestingManagedIdentityType},System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestingManagedIdentityType},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadTest (Optional passFailCriteria As PassFailCriteria = Nothing, Optional autoStopCriteria As AutoStopCriteria = Nothing, Optional secrets As IDictionary(Of String, TestSecret) = Nothing, Optional certificate As TestCertificate = Nothing, Optional environmentVariables As IDictionary(Of String, String) = Nothing, Optional loadTestConfiguration As LoadTestConfiguration = Nothing, Optional baselineTestRunId As String = Nothing, Optional inputArtifacts As TestInputArtifacts = Nothing, Optional testId As String = Nothing, Optional description As String = Nothing, Optional displayName As String = Nothing, Optional subnetId As String = Nothing, Optional kind As Nullable(Of LoadTestKind) = Nothing, Optional publicIpDisabled As Nullable(Of Boolean) = Nothing, Optional keyvaultReferenceIdentityType As String = Nothing, Optional keyvaultReferenceIdentityId As String = Nothing, Optional metricsReferenceIdentityType As Nullable(Of LoadTestingManagedIdentityType) = Nothing, Optional metricsReferenceIdentityId As String = Nothing, Optional engineBuiltInIdentityType As Nullable(Of LoadTestingManagedIdentityType) = Nothing, Optional engineBuiltInIdentityIds As IEnumerable(Of String) = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing) As LoadTest" />
-      <MemberSignature Language="F#" Value="static member LoadTest : Azure.Developer.LoadTesting.PassFailCriteria * Azure.Developer.LoadTesting.AutoStopCriteria * System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.TestSecret&gt; * Azure.Developer.LoadTesting.TestCertificate * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Developer.LoadTesting.LoadTestConfiguration * string * Azure.Developer.LoadTesting.TestInputArtifacts * string * string * string * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestKind&gt; * Nullable&lt;bool&gt; * string * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string -&gt; Azure.Developer.LoadTesting.LoadTest" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTest (passFailCriteria, autoStopCriteria, secrets, certificate, environmentVariables, loadTestConfiguration, baselineTestRunId, inputArtifacts, testId, description, displayName, subnetId, kind, publicIpDisabled, keyvaultReferenceIdentityType, keyvaultReferenceIdentityId, metricsReferenceIdentityType, metricsReferenceIdentityId, engineBuiltInIdentityType, engineBuiltInIdentityIds, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy)" />
+    <Member MemberName="FunctionFlexConsumptionResourceConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration FunctionFlexConsumptionResourceConfiguration (long instanceMemoryMB = 0, long? httpConcurrency = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration FunctionFlexConsumptionResourceConfiguration(int64 instanceMemoryMB, valuetype System.Nullable`1&lt;int64&gt; httpConcurrency) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.FunctionFlexConsumptionResourceConfiguration(System.Int64,System.Nullable{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FunctionFlexConsumptionResourceConfiguration (Optional instanceMemoryMB As Long = 0, Optional httpConcurrency As Nullable(Of Long) = Nothing) As FunctionFlexConsumptionResourceConfiguration" />
+      <MemberSignature Language="F#" Value="static member FunctionFlexConsumptionResourceConfiguration : int64 * Nullable&lt;int64&gt; -&gt; Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.FunctionFlexConsumptionResourceConfiguration (instanceMemoryMB, httpConcurrency)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceMemoryMB" Type="System.Int64" />
+        <Parameter Name="httpConcurrency" Type="System.Nullable&lt;System.Int64&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="instanceMemoryMB"> Memory size of the instance. Supported values are 2048, 4096. </param>
+        <param name="httpConcurrency"> HTTP Concurrency for the function app. </param>
+        <summary> Resource configuration instance for a Flex Consumption based Azure Function App. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionFlexConsumptionTargetResourceConfigurations">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations FunctionFlexConsumptionTargetResourceConfigurations (System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration&gt; configurations = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations FunctionFlexConsumptionTargetResourceConfigurations(class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration&gt; configurations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.FunctionFlexConsumptionTargetResourceConfigurations(System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FunctionFlexConsumptionTargetResourceConfigurations (Optional configurations As IDictionary(Of String, FunctionFlexConsumptionResourceConfiguration) = Nothing) As FunctionFlexConsumptionTargetResourceConfigurations" />
+      <MemberSignature Language="F#" Value="static member FunctionFlexConsumptionTargetResourceConfigurations : System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration&gt; -&gt; Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.FunctionFlexConsumptionTargetResourceConfigurations configurations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configurations" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.Developer.LoadTesting.FunctionFlexConsumptionResourceConfiguration&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="configurations"> A map of configurations for a Function app using Flex Consumption Plan. </param>
+        <summary> Configurations for a Function App using Flex Consumption Plan. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HourlyRecurrence">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.HourlyRecurrence HourlyRecurrence (Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd = default, int interval = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.HourlyRecurrence HourlyRecurrence(class Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd, int32 interval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.HourlyRecurrence(Azure.Developer.LoadTesting.RecurrenceEnd,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HourlyRecurrence (Optional recurrenceEnd As RecurrenceEnd = Nothing, Optional interval As Integer = 0) As HourlyRecurrence" />
+      <MemberSignature Language="F#" Value="static member HourlyRecurrence : Azure.Developer.LoadTesting.RecurrenceEnd * int -&gt; Azure.Developer.LoadTesting.HourlyRecurrence" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.HourlyRecurrence (recurrenceEnd, interval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.HourlyRecurrence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recurrenceEnd" Type="Azure.Developer.LoadTesting.RecurrenceEnd" />
+        <Parameter Name="interval" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="recurrenceEnd"> Recurrence end model. You can specify the end either by providing a numberOfOccurrences (which will end the recurrence after the specified number of occurrences) or by providing an endDateTime (which will end the recurrence after the specified date). If neither value is provided, the recurrence will continue until it is manually ended. However, if both values are provided, an error will be thrown. </param>
+        <param name="interval"> The interval at which the recurrence should repeat. It signifies the number of hours between each recurrence. </param>
+        <summary> Recurrence model when frequency is set as Hourly. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.HourlyRecurrence" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadTest">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.LoadTest LoadTest (Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria = default, Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria = default, System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.TestSecret&gt; secrets = default, Azure.Developer.LoadTesting.TestCertificate certificate = default, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentVariables = default, Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration = default, string baselineTestRunId = default, Azure.Developer.LoadTesting.TestInputArtifacts inputArtifacts = default, string testId = default, string description = default, string displayName = default, string subnetId = default, Azure.Developer.LoadTesting.LoadTestKind? kind = default, bool? publicIpDisabled = default, string keyvaultReferenceIdentityType = default, string keyvaultReferenceIdentityId = default, Azure.Developer.LoadTesting.LoadTestingManagedIdentityType? metricsReferenceIdentityType = default, string metricsReferenceIdentityId = default, Azure.Developer.LoadTesting.LoadTestingManagedIdentityType? engineBuiltInIdentityType = default, System.Collections.Generic.IEnumerable&lt;string&gt; engineBuiltInIdentityIds = default, double? estimatedVirtualUserHours = default, Azure.Developer.LoadTesting.TestPreferences preferences = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.LoadTest LoadTest(class Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria, class Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestSecret&gt; secrets, class Azure.Developer.LoadTesting.TestCertificate certificate, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentVariables, class Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration, string baselineTestRunId, class Azure.Developer.LoadTesting.TestInputArtifacts inputArtifacts, string testId, string description, string displayName, string subnetId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestKind&gt; kind, valuetype System.Nullable`1&lt;bool&gt; publicIpDisabled, string keyvaultReferenceIdentityType, string keyvaultReferenceIdentityId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; metricsReferenceIdentityType, string metricsReferenceIdentityId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; engineBuiltInIdentityType, class System.Collections.Generic.IEnumerable`1&lt;string&gt; engineBuiltInIdentityIds, valuetype System.Nullable`1&lt;float64&gt; estimatedVirtualUserHours, class Azure.Developer.LoadTesting.TestPreferences preferences, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTest(Azure.Developer.LoadTesting.PassFailCriteria,Azure.Developer.LoadTesting.AutoStopCriteria,System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.TestSecret},Azure.Developer.LoadTesting.TestCertificate,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Developer.LoadTesting.LoadTestConfiguration,System.String,Azure.Developer.LoadTesting.TestInputArtifacts,System.String,System.String,System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestKind},System.Nullable{System.Boolean},System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestingManagedIdentityType},System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestingManagedIdentityType},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Double},Azure.Developer.LoadTesting.TestPreferences,System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadTest (Optional passFailCriteria As PassFailCriteria = Nothing, Optional autoStopCriteria As AutoStopCriteria = Nothing, Optional secrets As IDictionary(Of String, TestSecret) = Nothing, Optional certificate As TestCertificate = Nothing, Optional environmentVariables As IDictionary(Of String, String) = Nothing, Optional loadTestConfiguration As LoadTestConfiguration = Nothing, Optional baselineTestRunId As String = Nothing, Optional inputArtifacts As TestInputArtifacts = Nothing, Optional testId As String = Nothing, Optional description As String = Nothing, Optional displayName As String = Nothing, Optional subnetId As String = Nothing, Optional kind As Nullable(Of LoadTestKind) = Nothing, Optional publicIpDisabled As Nullable(Of Boolean) = Nothing, Optional keyvaultReferenceIdentityType As String = Nothing, Optional keyvaultReferenceIdentityId As String = Nothing, Optional metricsReferenceIdentityType As Nullable(Of LoadTestingManagedIdentityType) = Nothing, Optional metricsReferenceIdentityId As String = Nothing, Optional engineBuiltInIdentityType As Nullable(Of LoadTestingManagedIdentityType) = Nothing, Optional engineBuiltInIdentityIds As IEnumerable(Of String) = Nothing, Optional estimatedVirtualUserHours As Nullable(Of Double) = Nothing, Optional preferences As TestPreferences = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing) As LoadTest" />
+      <MemberSignature Language="F#" Value="static member LoadTest : Azure.Developer.LoadTesting.PassFailCriteria * Azure.Developer.LoadTesting.AutoStopCriteria * System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.TestSecret&gt; * Azure.Developer.LoadTesting.TestCertificate * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Developer.LoadTesting.LoadTestConfiguration * string * Azure.Developer.LoadTesting.TestInputArtifacts * string * string * string * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestKind&gt; * Nullable&lt;bool&gt; * string * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt; * seq&lt;string&gt; * Nullable&lt;double&gt; * Azure.Developer.LoadTesting.TestPreferences * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string -&gt; Azure.Developer.LoadTesting.LoadTest" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTest (passFailCriteria, autoStopCriteria, secrets, certificate, environmentVariables, loadTestConfiguration, baselineTestRunId, inputArtifacts, testId, description, displayName, subnetId, kind, publicIpDisabled, keyvaultReferenceIdentityType, keyvaultReferenceIdentityId, metricsReferenceIdentityType, metricsReferenceIdentityId, engineBuiltInIdentityType, engineBuiltInIdentityIds, estimatedVirtualUserHours, preferences, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.LoadTest</ReturnType>
@@ -128,6 +291,8 @@
         <Parameter Name="metricsReferenceIdentityId" Type="System.String" />
         <Parameter Name="engineBuiltInIdentityType" Type="System.Nullable&lt;Azure.Developer.LoadTesting.LoadTestingManagedIdentityType&gt;" />
         <Parameter Name="engineBuiltInIdentityIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="estimatedVirtualUserHours" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="preferences" Type="Azure.Developer.LoadTesting.TestPreferences" />
         <Parameter Name="createdDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
         <Parameter Name="createdBy" Type="System.String" />
         <Parameter Name="lastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
@@ -160,12 +325,54 @@
         <param name="metricsReferenceIdentityId"> Resource Id of the managed identity referencing the metrics. </param>
         <param name="engineBuiltInIdentityType"> Type of the managed identity built in load test engines. </param>
         <param name="engineBuiltInIdentityIds"> Resource Ids of the managed identity built in to load test engines. Required if engineBuiltInIdentityType is UserAssigned. </param>
+        <param name="estimatedVirtualUserHours"> Estimated virtual user hours for the test. </param>
+        <param name="preferences"> Preferences for the test. </param>
         <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.LoadTest" />. </summary>
+        <summary> Load test model. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.LoadTest" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadTestConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.LoadTestConfiguration LoadTestConfiguration (int? engineInstances = default, bool? splitAllCsvs = default, bool? quickStartTest = default, Azure.Developer.LoadTesting.OptionalLoadTestConfiguration optionalLoadTestConfiguration = default, System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.RegionalConfiguration&gt; regionalLoadTestConfiguration = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.LoadTestConfiguration LoadTestConfiguration(valuetype System.Nullable`1&lt;int32&gt; engineInstances, valuetype System.Nullable`1&lt;bool&gt; splitAllCsvs, valuetype System.Nullable`1&lt;bool&gt; quickStartTest, class Azure.Developer.LoadTesting.OptionalLoadTestConfiguration optionalLoadTestConfiguration, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Developer.LoadTesting.RegionalConfiguration&gt; regionalLoadTestConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestConfiguration(System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},Azure.Developer.LoadTesting.OptionalLoadTestConfiguration,System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.RegionalConfiguration})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadTestConfiguration (Optional engineInstances As Nullable(Of Integer) = Nothing, Optional splitAllCsvs As Nullable(Of Boolean) = Nothing, Optional quickStartTest As Nullable(Of Boolean) = Nothing, Optional optionalLoadTestConfiguration As OptionalLoadTestConfiguration = Nothing, Optional regionalLoadTestConfiguration As IEnumerable(Of RegionalConfiguration) = Nothing) As LoadTestConfiguration" />
+      <MemberSignature Language="F#" Value="static member LoadTestConfiguration : Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Azure.Developer.LoadTesting.OptionalLoadTestConfiguration * seq&lt;Azure.Developer.LoadTesting.RegionalConfiguration&gt; -&gt; Azure.Developer.LoadTesting.LoadTestConfiguration" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestConfiguration (engineInstances, splitAllCsvs, quickStartTest, optionalLoadTestConfiguration, regionalLoadTestConfiguration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.LoadTestConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="engineInstances" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="splitAllCsvs" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="quickStartTest" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="optionalLoadTestConfiguration" Type="Azure.Developer.LoadTesting.OptionalLoadTestConfiguration" />
+        <Parameter Name="regionalLoadTestConfiguration" Type="System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.RegionalConfiguration&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="engineInstances"> The number of engine instances to execute load test. Supported values are in range of 1-400. Required for creating a new test. </param>
+        <param name="splitAllCsvs">
+            If false, Azure Load Testing copies and processes your input files unmodified
+            across all test engine instances. If true, Azure Load Testing splits the CSV
+            input data evenly across all engine instances. If you provide multiple CSV
+            files, each file will be split evenly.
+            </param>
+        <param name="quickStartTest">
+            If true, optionalLoadTestConfig is required and JMX script for the load test is
+            not required to upload.
+            </param>
+        <param name="optionalLoadTestConfiguration"> Configuration for quick load test. </param>
+        <param name="regionalLoadTestConfiguration"> Region distribution configuration for the load test. </param>
+        <summary> Configurations for the load test. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.LoadTestConfiguration" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,7 +385,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.LoadTestingAppComponent</ReturnType>
@@ -200,21 +407,95 @@
         <param name="resourceGroup"> Resource group name of the Azure resource. </param>
         <param name="subscriptionId"> Subscription Id of the Azure resource. </param>
         <param name="kind"> Kind of Azure resource type. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.LoadTestingAppComponent" />. </summary>
+        <summary> An Azure resource object (Refer azure generic resource model :https://learn.microsoft.com/en-us/rest/api/resources/resources/get-by-id#genericresource). </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.LoadTestingAppComponent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LoadTestRun">
-      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.LoadTestRun LoadTestRun (string testRunId = default, Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria = default, Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria = default, System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.TestSecret&gt; secrets = default, Azure.Developer.LoadTesting.TestCertificate certificate = default, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentVariables = default, System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.ErrorDetails&gt; errorDetails = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.Developer.LoadTesting.TestRunStatistics&gt; testRunStatistics = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.Developer.LoadTesting.TestRunStatistics&gt; regionalStatistics = default, Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration = default, Azure.Developer.LoadTesting.TestRunArtifacts testArtifacts = default, Azure.Developer.LoadTesting.PassFailTestResult? testResult = default, int? virtualUsers = default, string displayName = default, string testId = default, string description = default, Azure.Developer.LoadTesting.TestRunStatus? status = default, DateTimeOffset? startDateTime = default, DateTimeOffset? endDateTime = default, DateTimeOffset? executedDateTime = default, Uri portalUri = default, long? duration = default, double? virtualUserHours = default, string subnetId = default, Azure.Developer.LoadTesting.LoadTestKind? kind = default, Azure.Developer.LoadTesting.RequestDataLevel? requestDataLevel = default, bool? debugLogsEnabled = default, bool? publicIpDisabled = default, Azure.Developer.LoadTesting.CreatedByType? createdByType = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.LoadTestRun LoadTestRun(string testRunId, class Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria, class Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestSecret&gt; secrets, class Azure.Developer.LoadTesting.TestCertificate certificate, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentVariables, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Developer.LoadTesting.ErrorDetails&gt; errorDetails, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestRunStatistics&gt; testRunStatistics, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestRunStatistics&gt; regionalStatistics, class Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration, class Azure.Developer.LoadTesting.TestRunArtifacts testArtifacts, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.PassFailTestResult&gt; testResult, valuetype System.Nullable`1&lt;int32&gt; virtualUsers, string displayName, string testId, string description, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.TestRunStatus&gt; status, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; executedDateTime, class System.Uri portalUri, valuetype System.Nullable`1&lt;int64&gt; duration, valuetype System.Nullable`1&lt;float64&gt; virtualUserHours, string subnetId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestKind&gt; kind, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.RequestDataLevel&gt; requestDataLevel, valuetype System.Nullable`1&lt;bool&gt; debugLogsEnabled, valuetype System.Nullable`1&lt;bool&gt; publicIpDisabled, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.CreatedByType&gt; createdByType, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestRun(System.String,Azure.Developer.LoadTesting.PassFailCriteria,Azure.Developer.LoadTesting.AutoStopCriteria,System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.TestSecret},Azure.Developer.LoadTesting.TestCertificate,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.ErrorDetails},System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.Developer.LoadTesting.TestRunStatistics},System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.Developer.LoadTesting.TestRunStatistics},Azure.Developer.LoadTesting.LoadTestConfiguration,Azure.Developer.LoadTesting.TestRunArtifacts,System.Nullable{Azure.Developer.LoadTesting.PassFailTestResult},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.TestRunStatus},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Uri,System.Nullable{System.Int64},System.Nullable{System.Double},System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestKind},System.Nullable{Azure.Developer.LoadTesting.RequestDataLevel},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Azure.Developer.LoadTesting.CreatedByType},System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadTestRun (Optional testRunId As String = Nothing, Optional passFailCriteria As PassFailCriteria = Nothing, Optional autoStopCriteria As AutoStopCriteria = Nothing, Optional secrets As IDictionary(Of String, TestSecret) = Nothing, Optional certificate As TestCertificate = Nothing, Optional environmentVariables As IDictionary(Of String, String) = Nothing, Optional errorDetails As IEnumerable(Of ErrorDetails) = Nothing, Optional testRunStatistics As IReadOnlyDictionary(Of String, TestRunStatistics) = Nothing, Optional regionalStatistics As IReadOnlyDictionary(Of String, TestRunStatistics) = Nothing, Optional loadTestConfiguration As LoadTestConfiguration = Nothing, Optional testArtifacts As TestRunArtifacts = Nothing, Optional testResult As Nullable(Of PassFailTestResult) = Nothing, Optional virtualUsers As Nullable(Of Integer) = Nothing, Optional displayName As String = Nothing, Optional testId As String = Nothing, Optional description As String = Nothing, Optional status As Nullable(Of TestRunStatus) = Nothing, Optional startDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional endDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional executedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional portalUri As Uri = Nothing, Optional duration As Nullable(Of Long) = Nothing, Optional virtualUserHours As Nullable(Of Double) = Nothing, Optional subnetId As String = Nothing, Optional kind As Nullable(Of LoadTestKind) = Nothing, Optional requestDataLevel As Nullable(Of RequestDataLevel) = Nothing, Optional debugLogsEnabled As Nullable(Of Boolean) = Nothing, Optional publicIpDisabled As Nullable(Of Boolean) = Nothing, Optional createdByType As Nullable(Of CreatedByType) = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing) As LoadTestRun" />
-      <MemberSignature Language="F#" Value="static member LoadTestRun : string * Azure.Developer.LoadTesting.PassFailCriteria * Azure.Developer.LoadTesting.AutoStopCriteria * System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.TestSecret&gt; * Azure.Developer.LoadTesting.TestCertificate * System.Collections.Generic.IDictionary&lt;string, string&gt; * seq&lt;Azure.Developer.LoadTesting.ErrorDetails&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.Developer.LoadTesting.TestRunStatistics&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.Developer.LoadTesting.TestRunStatistics&gt; * Azure.Developer.LoadTesting.LoadTestConfiguration * Azure.Developer.LoadTesting.TestRunArtifacts * Nullable&lt;Azure.Developer.LoadTesting.PassFailTestResult&gt; * Nullable&lt;int&gt; * string * string * string * Nullable&lt;Azure.Developer.LoadTesting.TestRunStatus&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Uri * Nullable&lt;int64&gt; * Nullable&lt;double&gt; * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestKind&gt; * Nullable&lt;Azure.Developer.LoadTesting.RequestDataLevel&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.Developer.LoadTesting.CreatedByType&gt; * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string -&gt; Azure.Developer.LoadTesting.LoadTestRun" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestRun (testRunId, passFailCriteria, autoStopCriteria, secrets, certificate, environmentVariables, errorDetails, testRunStatistics, regionalStatistics, loadTestConfiguration, testArtifacts, testResult, virtualUsers, displayName, testId, description, status, startDateTime, endDateTime, executedDateTime, portalUri, duration, virtualUserHours, subnetId, kind, requestDataLevel, debugLogsEnabled, publicIpDisabled, createdByType, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy)" />
+    <Member MemberName="LoadTestingRecurrence">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.LoadTestingRecurrence LoadTestingRecurrence (string frequency = default, Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.LoadTestingRecurrence LoadTestingRecurrence(string frequency, class Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestingRecurrence(System.String,Azure.Developer.LoadTesting.RecurrenceEnd)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadTestingRecurrence (Optional frequency As String = Nothing, Optional recurrenceEnd As RecurrenceEnd = Nothing) As LoadTestingRecurrence" />
+      <MemberSignature Language="F#" Value="static member LoadTestingRecurrence : string * Azure.Developer.LoadTesting.RecurrenceEnd -&gt; Azure.Developer.LoadTesting.LoadTestingRecurrence" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestingRecurrence (frequency, recurrenceEnd)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.LoadTestingRecurrence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="frequency" Type="System.String" />
+        <Parameter Name="recurrenceEnd" Type="Azure.Developer.LoadTesting.RecurrenceEnd" />
+      </Parameters>
+      <Docs>
+        <param name="frequency"> Frequency of the recurrence. </param>
+        <param name="recurrenceEnd"> Recurrence end model. You can specify the end either by providing a numberOfOccurrences (which will end the recurrence after the specified number of occurrences) or by providing an endDateTime (which will end the recurrence after the specified date). If neither value is provided, the recurrence will continue until it is manually ended. However, if both values are provided, an error will be thrown. </param>
+        <summary>
+            Recurrence model.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.Developer.LoadTesting.DailyRecurrence" />, <see cref="T:Azure.Developer.LoadTesting.HourlyRecurrence" />, <see cref="T:Azure.Developer.LoadTesting.MonthlyRecurrenceByWeekDays" />, <see cref="T:Azure.Developer.LoadTesting.MonthlyRecurrenceByDates" />, <see cref="T:Azure.Developer.LoadTesting.RecurrenceWithCron" />, and <see cref="T:Azure.Developer.LoadTesting.WeeklyRecurrence" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.LoadTestingRecurrence" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadTestingTrigger">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.LoadTestingTrigger LoadTestingTrigger (string triggerId = default, string displayName = default, string description = default, string kind = default, Azure.Developer.LoadTesting.TriggerState? state = default, Azure.Developer.LoadTesting.StateDetails stateDetails = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.LoadTestingTrigger LoadTestingTrigger(string triggerId, string displayName, string description, string kind, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.TriggerState&gt; state, class Azure.Developer.LoadTesting.StateDetails stateDetails, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestingTrigger(System.String,System.String,System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.TriggerState},Azure.Developer.LoadTesting.StateDetails,System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadTestingTrigger (Optional triggerId As String = Nothing, Optional displayName As String = Nothing, Optional description As String = Nothing, Optional kind As String = Nothing, Optional state As Nullable(Of TriggerState) = Nothing, Optional stateDetails As StateDetails = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing) As LoadTestingTrigger" />
+      <MemberSignature Language="F#" Value="static member LoadTestingTrigger : string * string * string * string * Nullable&lt;Azure.Developer.LoadTesting.TriggerState&gt; * Azure.Developer.LoadTesting.StateDetails * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string -&gt; Azure.Developer.LoadTesting.LoadTestingTrigger" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestingTrigger (triggerId, displayName, description, kind, state, stateDetails, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.LoadTestingTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="triggerId" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="state" Type="System.Nullable&lt;Azure.Developer.LoadTesting.TriggerState&gt;" />
+        <Parameter Name="stateDetails" Type="Azure.Developer.LoadTesting.StateDetails" />
+        <Parameter Name="createdDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="createdBy" Type="System.String" />
+        <Parameter Name="lastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastModifiedBy" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="triggerId"> The unique identifier of the trigger. </param>
+        <param name="displayName"> The name of the trigger. </param>
+        <param name="description"> The description of the trigger. </param>
+        <param name="kind"> The type of the trigger. </param>
+        <param name="state"> The current state of the trigger. </param>
+        <param name="stateDetails"> Details of current state of the trigger. </param>
+        <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
+        <param name="createdBy"> The user that created. </param>
+        <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
+        <param name="lastModifiedBy"> The user that last modified. </param>
+        <summary>
+            Trigger model.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.Developer.LoadTesting.ScheduleTestsTrigger" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.LoadTestingTrigger" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadTestRun">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.LoadTestRun LoadTestRun (string testRunId = default, Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria = default, Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria = default, System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.TestSecret&gt; secrets = default, Azure.Developer.LoadTesting.TestCertificate certificate = default, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentVariables = default, System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.ErrorDetails&gt; errorDetails = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.Developer.LoadTesting.TestRunStatistics&gt; testRunStatistics = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,Azure.Developer.LoadTesting.TestRunStatistics&gt; regionalStatistics = default, Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration = default, Azure.Developer.LoadTesting.TestRunArtifacts testArtifacts = default, Azure.Developer.LoadTesting.PassFailTestResult? testResult = default, int? virtualUsers = default, string displayName = default, string testId = default, string description = default, Azure.Developer.LoadTesting.TestRunStatus? status = default, DateTimeOffset? startDateTime = default, DateTimeOffset? endDateTime = default, DateTimeOffset? executedDateTime = default, Uri portalUri = default, long? duration = default, double? virtualUserHours = default, string subnetId = default, Azure.Developer.LoadTesting.LoadTestKind? kind = default, Azure.Developer.LoadTesting.RequestDataLevel? requestDataLevel = default, bool? debugLogsEnabled = default, bool? publicIpDisabled = default, Azure.Developer.LoadTesting.CreatedByType? createdByType = default, Uri createdByUri = default, double? estimatedVirtualUserHours = default, DateTimeOffset? executionStartDateTime = default, DateTimeOffset? executionEndDateTime = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.LoadTestRun LoadTestRun(string testRunId, class Azure.Developer.LoadTesting.PassFailCriteria passFailCriteria, class Azure.Developer.LoadTesting.AutoStopCriteria autoStopCriteria, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestSecret&gt; secrets, class Azure.Developer.LoadTesting.TestCertificate certificate, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentVariables, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Developer.LoadTesting.ErrorDetails&gt; errorDetails, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestRunStatistics&gt; testRunStatistics, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestRunStatistics&gt; regionalStatistics, class Azure.Developer.LoadTesting.LoadTestConfiguration loadTestConfiguration, class Azure.Developer.LoadTesting.TestRunArtifacts testArtifacts, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.PassFailTestResult&gt; testResult, valuetype System.Nullable`1&lt;int32&gt; virtualUsers, string displayName, string testId, string description, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.TestRunStatus&gt; status, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; executedDateTime, class System.Uri portalUri, valuetype System.Nullable`1&lt;int64&gt; duration, valuetype System.Nullable`1&lt;float64&gt; virtualUserHours, string subnetId, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.LoadTestKind&gt; kind, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.RequestDataLevel&gt; requestDataLevel, valuetype System.Nullable`1&lt;bool&gt; debugLogsEnabled, valuetype System.Nullable`1&lt;bool&gt; publicIpDisabled, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.CreatedByType&gt; createdByType, class System.Uri createdByUri, valuetype System.Nullable`1&lt;float64&gt; estimatedVirtualUserHours, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; executionStartDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; executionEndDateTime, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestRun(System.String,Azure.Developer.LoadTesting.PassFailCriteria,Azure.Developer.LoadTesting.AutoStopCriteria,System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.TestSecret},Azure.Developer.LoadTesting.TestCertificate,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.ErrorDetails},System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.Developer.LoadTesting.TestRunStatistics},System.Collections.Generic.IReadOnlyDictionary{System.String,Azure.Developer.LoadTesting.TestRunStatistics},Azure.Developer.LoadTesting.LoadTestConfiguration,Azure.Developer.LoadTesting.TestRunArtifacts,System.Nullable{Azure.Developer.LoadTesting.PassFailTestResult},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.TestRunStatus},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Uri,System.Nullable{System.Int64},System.Nullable{System.Double},System.String,System.Nullable{Azure.Developer.LoadTesting.LoadTestKind},System.Nullable{Azure.Developer.LoadTesting.RequestDataLevel},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Azure.Developer.LoadTesting.CreatedByType},System.Uri,System.Nullable{System.Double},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadTestRun (Optional testRunId As String = Nothing, Optional passFailCriteria As PassFailCriteria = Nothing, Optional autoStopCriteria As AutoStopCriteria = Nothing, Optional secrets As IDictionary(Of String, TestSecret) = Nothing, Optional certificate As TestCertificate = Nothing, Optional environmentVariables As IDictionary(Of String, String) = Nothing, Optional errorDetails As IEnumerable(Of ErrorDetails) = Nothing, Optional testRunStatistics As IReadOnlyDictionary(Of String, TestRunStatistics) = Nothing, Optional regionalStatistics As IReadOnlyDictionary(Of String, TestRunStatistics) = Nothing, Optional loadTestConfiguration As LoadTestConfiguration = Nothing, Optional testArtifacts As TestRunArtifacts = Nothing, Optional testResult As Nullable(Of PassFailTestResult) = Nothing, Optional virtualUsers As Nullable(Of Integer) = Nothing, Optional displayName As String = Nothing, Optional testId As String = Nothing, Optional description As String = Nothing, Optional status As Nullable(Of TestRunStatus) = Nothing, Optional startDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional endDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional executedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional portalUri As Uri = Nothing, Optional duration As Nullable(Of Long) = Nothing, Optional virtualUserHours As Nullable(Of Double) = Nothing, Optional subnetId As String = Nothing, Optional kind As Nullable(Of LoadTestKind) = Nothing, Optional requestDataLevel As Nullable(Of RequestDataLevel) = Nothing, Optional debugLogsEnabled As Nullable(Of Boolean) = Nothing, Optional publicIpDisabled As Nullable(Of Boolean) = Nothing, Optional createdByType As Nullable(Of CreatedByType) = Nothing, Optional createdByUri As Uri = Nothing, Optional estimatedVirtualUserHours As Nullable(Of Double) = Nothing, Optional executionStartDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional executionEndDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing) As LoadTestRun" />
+      <MemberSignature Language="F#" Value="static member LoadTestRun : string * Azure.Developer.LoadTesting.PassFailCriteria * Azure.Developer.LoadTesting.AutoStopCriteria * System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.TestSecret&gt; * Azure.Developer.LoadTesting.TestCertificate * System.Collections.Generic.IDictionary&lt;string, string&gt; * seq&lt;Azure.Developer.LoadTesting.ErrorDetails&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.Developer.LoadTesting.TestRunStatistics&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, Azure.Developer.LoadTesting.TestRunStatistics&gt; * Azure.Developer.LoadTesting.LoadTestConfiguration * Azure.Developer.LoadTesting.TestRunArtifacts * Nullable&lt;Azure.Developer.LoadTesting.PassFailTestResult&gt; * Nullable&lt;int&gt; * string * string * string * Nullable&lt;Azure.Developer.LoadTesting.TestRunStatus&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Uri * Nullable&lt;int64&gt; * Nullable&lt;double&gt; * string * Nullable&lt;Azure.Developer.LoadTesting.LoadTestKind&gt; * Nullable&lt;Azure.Developer.LoadTesting.RequestDataLevel&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Azure.Developer.LoadTesting.CreatedByType&gt; * Uri * Nullable&lt;double&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string -&gt; Azure.Developer.LoadTesting.LoadTestRun" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.LoadTestRun (testRunId, passFailCriteria, autoStopCriteria, secrets, certificate, environmentVariables, errorDetails, testRunStatistics, regionalStatistics, loadTestConfiguration, testArtifacts, testResult, virtualUsers, displayName, testId, description, status, startDateTime, endDateTime, executedDateTime, portalUri, duration, virtualUserHours, subnetId, kind, requestDataLevel, debugLogsEnabled, publicIpDisabled, createdByType, createdByUri, estimatedVirtualUserHours, executionStartDateTime, executionEndDateTime, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.LoadTestRun</ReturnType>
@@ -249,6 +530,10 @@
         <Parameter Name="debugLogsEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="publicIpDisabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="createdByType" Type="System.Nullable&lt;Azure.Developer.LoadTesting.CreatedByType&gt;" />
+        <Parameter Name="createdByUri" Type="System.Uri" />
+        <Parameter Name="estimatedVirtualUserHours" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="executionStartDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="executionEndDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
         <Parameter Name="createdDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
         <Parameter Name="createdBy" Type="System.String" />
         <Parameter Name="lastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
@@ -288,7 +573,7 @@
         <param name="status"> The test run status. </param>
         <param name="startDateTime"> The test run start DateTime(RFC 3339 literal format). </param>
         <param name="endDateTime"> The test run end DateTime(RFC 3339 literal format). </param>
-        <param name="executedDateTime"> Test run initiated time. </param>
+        <param name="executedDateTime"> Test run initiated time. This is legacy, new developments should use createdDateTime. </param>
         <param name="portalUri"> Portal url. </param>
         <param name="duration"> Test run duration in milliseconds. </param>
         <param name="virtualUserHours"> Virtual user hours consumed by the test run. </param>
@@ -298,11 +583,15 @@
         <param name="debugLogsEnabled"> Enable or disable debug level logging. True if debug logs are enabled for the test run. False otherwise. </param>
         <param name="publicIpDisabled"> Inject load test engines without deploying public IP for outbound access. </param>
         <param name="createdByType"> The type of the entity that created the test run. (E.x. User, ScheduleTrigger, etc). </param>
+        <param name="createdByUri"> The URI pointing to the entity that created the test run. </param>
+        <param name="estimatedVirtualUserHours"> Estimated virtual user hours for the test run. </param>
+        <param name="executionStartDateTime"> The test run execution start DateTime(RFC 3339 literal format). </param>
+        <param name="executionEndDateTime"> The test run execution end DateTime(RFC 3339 literal format). </param>
         <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.LoadTestRun" />. </summary>
+        <summary> Load test run model. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.LoadTestRun" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +605,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.MetricAvailability</ReturnType>
@@ -329,7 +618,7 @@
             The time grain specifies the aggregation interval for the metric. Expressed as
             a duration 'PT1M', 'PT1H', etc.
             </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.MetricAvailability" />. </summary>
+        <summary> Metric availability specifies the time grain (aggregation interval or frequency). </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.MetricAvailability" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,7 +632,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.MetricDefinition</ReturnType>
@@ -370,7 +659,7 @@
             Metric availability specifies the time grain (aggregation interval or
             frequency).
             </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.MetricDefinition" />. </summary>
+        <summary> Metric definition. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.MetricDefinition" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,7 +673,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.MetricDefinitions</ReturnType>
@@ -394,7 +683,7 @@
       </Parameters>
       <Docs>
         <param name="value"> the values for the metric definitions. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.MetricDefinitions" />. </summary>
+        <summary> Represents collection of metric definitions. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.MetricDefinitions" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,7 +697,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.MetricNamespace</ReturnType>
@@ -420,7 +709,7 @@
       <Docs>
         <param name="description"> The namespace description. </param>
         <param name="name"> The metric namespace name. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.MetricNamespace" />. </summary>
+        <summary> Metric namespace class specifies the metadata for a metric namespace. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.MetricNamespace" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,7 +723,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.MetricNamespaces</ReturnType>
@@ -444,8 +733,37 @@
       </Parameters>
       <Docs>
         <param name="value"> The values for the metric namespaces. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.MetricNamespaces" />. </summary>
+        <summary> Represents collection of metric namespaces. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.MetricNamespaces" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetricsFilters">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.MetricsFilters MetricsFilters (System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.DimensionFilter&gt; filters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.MetricsFilters MetricsFilters(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Developer.LoadTesting.DimensionFilter&gt; filters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.MetricsFilters(System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.DimensionFilter})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MetricsFilters (Optional filters As IEnumerable(Of DimensionFilter) = Nothing) As MetricsFilters" />
+      <MemberSignature Language="F#" Value="static member MetricsFilters : seq&lt;Azure.Developer.LoadTesting.DimensionFilter&gt; -&gt; Azure.Developer.LoadTesting.MetricsFilters" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.MetricsFilters filters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.MetricsFilters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filters" Type="System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.DimensionFilter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="filters">
+            Get metrics for specific dimension values. Example: Metric contains dimension
+            like SamplerName, Error. To retrieve all the time series data where SamplerName
+            is equals to HTTPRequest1 or HTTPRequest2, the DimensionFilter value will be
+            {"SamplerName", ["HTTPRequest1", "HTTPRequest2"}
+            </param>
+        <summary> Filters to fetch the set of metric. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.MetricsFilters" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,7 +776,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.MetricValue</ReturnType>
@@ -470,8 +788,66 @@
       <Docs>
         <param name="timestamp"> The timestamp for the metric value in RFC 3339 format. </param>
         <param name="value"> The metric value. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.MetricValue" />. </summary>
+        <summary> Represents a metric value. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.MetricValue" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MonthlyRecurrenceByDates">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.MonthlyRecurrenceByDates MonthlyRecurrenceByDates (Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd = default, System.Collections.Generic.IEnumerable&lt;int&gt; datesInMonth = default, int? interval = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.MonthlyRecurrenceByDates MonthlyRecurrenceByDates(class Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; datesInMonth, valuetype System.Nullable`1&lt;int32&gt; interval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.MonthlyRecurrenceByDates(Azure.Developer.LoadTesting.RecurrenceEnd,System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MonthlyRecurrenceByDates (Optional recurrenceEnd As RecurrenceEnd = Nothing, Optional datesInMonth As IEnumerable(Of Integer) = Nothing, Optional interval As Nullable(Of Integer) = Nothing) As MonthlyRecurrenceByDates" />
+      <MemberSignature Language="F#" Value="static member MonthlyRecurrenceByDates : Azure.Developer.LoadTesting.RecurrenceEnd * seq&lt;int&gt; * Nullable&lt;int&gt; -&gt; Azure.Developer.LoadTesting.MonthlyRecurrenceByDates" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.MonthlyRecurrenceByDates (recurrenceEnd, datesInMonth, interval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.MonthlyRecurrenceByDates</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recurrenceEnd" Type="Azure.Developer.LoadTesting.RecurrenceEnd" />
+        <Parameter Name="datesInMonth" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="interval" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="recurrenceEnd"> Recurrence end model. You can specify the end either by providing a numberOfOccurrences (which will end the recurrence after the specified number of occurrences) or by providing an endDateTime (which will end the recurrence after the specified date). If neither value is provided, the recurrence will continue until it is manually ended. However, if both values are provided, an error will be thrown. </param>
+        <param name="datesInMonth"> Recurrence set to repeat on the specified dates of the month. Value of dates can be 1 to 31 and -1. -1 represents the last day of the month. </param>
+        <param name="interval"> The interval at which the recurrence should repeat. It signifies the number of months between each recurrence. </param>
+        <summary> Recurrence model when frequency is set as MonthlyByDates. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.MonthlyRecurrenceByDates" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MonthlyRecurrenceByWeekDays">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.MonthlyRecurrenceByWeekDays MonthlyRecurrenceByWeekDays (Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd = default, System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.WeekDays&gt; weekDaysInMonth = default, int index = 0, int interval = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.MonthlyRecurrenceByWeekDays MonthlyRecurrenceByWeekDays(class Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Developer.LoadTesting.WeekDays&gt; weekDaysInMonth, int32 index, int32 interval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.MonthlyRecurrenceByWeekDays(Azure.Developer.LoadTesting.RecurrenceEnd,System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.WeekDays},System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MonthlyRecurrenceByWeekDays (Optional recurrenceEnd As RecurrenceEnd = Nothing, Optional weekDaysInMonth As IEnumerable(Of WeekDays) = Nothing, Optional index As Integer = 0, Optional interval As Integer = 0) As MonthlyRecurrenceByWeekDays" />
+      <MemberSignature Language="F#" Value="static member MonthlyRecurrenceByWeekDays : Azure.Developer.LoadTesting.RecurrenceEnd * seq&lt;Azure.Developer.LoadTesting.WeekDays&gt; * int * int -&gt; Azure.Developer.LoadTesting.MonthlyRecurrenceByWeekDays" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.MonthlyRecurrenceByWeekDays (recurrenceEnd, weekDaysInMonth, index, interval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.MonthlyRecurrenceByWeekDays</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recurrenceEnd" Type="Azure.Developer.LoadTesting.RecurrenceEnd" />
+        <Parameter Name="weekDaysInMonth" Type="System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.WeekDays&gt;" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="interval" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="recurrenceEnd"> Recurrence end model. You can specify the end either by providing a numberOfOccurrences (which will end the recurrence after the specified number of occurrences) or by providing an endDateTime (which will end the recurrence after the specified date). If neither value is provided, the recurrence will continue until it is manually ended. However, if both values are provided, an error will be thrown. </param>
+        <param name="weekDaysInMonth"> Specific days of the week when the recurrence should repeat. </param>
+        <param name="index"> Index of the week in a month at which the recurrence should repeat. For example, if the index is '2', weekDay is 'Monday', interval is 3 and frequency is 'Month', the recurrence will run every second Monday of the month and repeat every 3 months. Value of index can be 1 to 5. </param>
+        <param name="interval"> The interval at which the recurrence should repeat. It signifies the number of months between each recurrence. </param>
+        <summary> Recurrence model when frequency is set as MonthlyByDays . </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.MonthlyRecurrenceByWeekDays" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,7 +860,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.NameAndDescription</ReturnType>
@@ -496,8 +872,139 @@
       <Docs>
         <param name="description"> The description. </param>
         <param name="name"> The name. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.NameAndDescription" />. </summary>
+        <summary> The name and description. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.NameAndDescription" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationRule">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.NotificationRule NotificationRule (string notificationRuleId = default, string displayName = default, System.Collections.Generic.IEnumerable&lt;string&gt; actionGroupIds = default, string scope = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.NotificationRule NotificationRule(string notificationRuleId, string displayName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; actionGroupIds, string scope, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.NotificationRule(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NotificationRule (Optional notificationRuleId As String = Nothing, Optional displayName As String = Nothing, Optional actionGroupIds As IEnumerable(Of String) = Nothing, Optional scope As String = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing) As NotificationRule" />
+      <MemberSignature Language="F#" Value="static member NotificationRule : string * string * seq&lt;string&gt; * string * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string -&gt; Azure.Developer.LoadTesting.NotificationRule" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.NotificationRule (notificationRuleId, displayName, actionGroupIds, scope, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.NotificationRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notificationRuleId" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="actionGroupIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="scope" Type="System.String" />
+        <Parameter Name="createdDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="createdBy" Type="System.String" />
+        <Parameter Name="lastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastModifiedBy" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="notificationRuleId"> The unique identifier of the notification rule. </param>
+        <param name="displayName"> The name of the notification rule. </param>
+        <param name="actionGroupIds"> The action groups to notify. </param>
+        <param name="scope"> The scope of the notification rule. </param>
+        <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
+        <param name="createdBy"> The user that created. </param>
+        <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
+        <param name="lastModifiedBy"> The user that last modified. </param>
+        <summary>
+            Notification rule model.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.Developer.LoadTesting.TestsNotificationRule" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.NotificationRule" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationStatus">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.OperationStatus OperationStatus (string id = default, Azure.Developer.LoadTesting.OperationState status = default, Azure.Developer.LoadTesting.OperationKind kind = default, Azure.ResponseError error = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.OperationStatus OperationStatus(string id, valuetype Azure.Developer.LoadTesting.OperationState status, valuetype Azure.Developer.LoadTesting.OperationKind kind, class Azure.ResponseError error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.OperationStatus(System.String,Azure.Developer.LoadTesting.OperationState,Azure.Developer.LoadTesting.OperationKind,Azure.ResponseError)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OperationStatus (Optional id As String = Nothing, Optional status As OperationState = Nothing, Optional kind As OperationKind = Nothing, Optional error As ResponseError = Nothing) As OperationStatus" />
+      <MemberSignature Language="F#" Value="static member OperationStatus : string * Azure.Developer.LoadTesting.OperationState * Azure.Developer.LoadTesting.OperationKind * Azure.ResponseError -&gt; Azure.Developer.LoadTesting.OperationStatus" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.OperationStatus (id, status, kind, error)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="status" Type="Azure.Developer.LoadTesting.OperationState" />
+        <Parameter Name="kind" Type="Azure.Developer.LoadTesting.OperationKind" />
+        <Parameter Name="error" Type="Azure.ResponseError" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The unique ID of the operation. </param>
+        <param name="status"> The state of the operation. </param>
+        <param name="kind"> The kind of the operation. </param>
+        <param name="error"> Error object that describes the error when status is "Failed". </param>
+        <summary> Status of a long running operation. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.OperationStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionalLoadTestConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.OptionalLoadTestConfiguration OptionalLoadTestConfiguration (Uri endpointUri = default, int? requestsPerSecond = default, int? maxResponseTimeInMs = default, int? virtualUsers = default, int? rampUpTime = default, TimeSpan? duration = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.OptionalLoadTestConfiguration OptionalLoadTestConfiguration(class System.Uri endpointUri, valuetype System.Nullable`1&lt;int32&gt; requestsPerSecond, valuetype System.Nullable`1&lt;int32&gt; maxResponseTimeInMs, valuetype System.Nullable`1&lt;int32&gt; virtualUsers, valuetype System.Nullable`1&lt;int32&gt; rampUpTime, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.OptionalLoadTestConfiguration(System.Uri,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.TimeSpan})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OptionalLoadTestConfiguration (Optional endpointUri As Uri = Nothing, Optional requestsPerSecond As Nullable(Of Integer) = Nothing, Optional maxResponseTimeInMs As Nullable(Of Integer) = Nothing, Optional virtualUsers As Nullable(Of Integer) = Nothing, Optional rampUpTime As Nullable(Of Integer) = Nothing, Optional duration As Nullable(Of TimeSpan) = Nothing) As OptionalLoadTestConfiguration" />
+      <MemberSignature Language="F#" Value="static member OptionalLoadTestConfiguration : Uri * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;TimeSpan&gt; -&gt; Azure.Developer.LoadTesting.OptionalLoadTestConfiguration" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.OptionalLoadTestConfiguration (endpointUri, requestsPerSecond, maxResponseTimeInMs, virtualUsers, rampUpTime, duration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.OptionalLoadTestConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointUri" Type="System.Uri" />
+        <Parameter Name="requestsPerSecond" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="maxResponseTimeInMs" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="virtualUsers" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="rampUpTime" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="duration" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="endpointUri"> Test URL. Provide the complete HTTP URL. For example, https://contoso-app.azurewebsites.net/login. </param>
+        <param name="requestsPerSecond"> Target throughput (requests per second). This may not be necessarily achieved. The actual throughput will be lower if the application is not capable of handling it. </param>
+        <param name="maxResponseTimeInMs"> Maximum response time in milliseconds of the API/endpoint. </param>
+        <param name="virtualUsers"> No of concurrent virtual users. </param>
+        <param name="rampUpTime"> Ramp up time in seconds. </param>
+        <param name="duration"> Test run duration in seconds. </param>
+        <summary> Configuration for quick load test. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.OptionalLoadTestConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PassFailCriteria">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.PassFailCriteria PassFailCriteria (System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.PassFailMetric&gt; passFailMetrics = default, System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.PassFailServerMetric&gt; passFailServerMetrics = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.PassFailCriteria PassFailCriteria(class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.PassFailMetric&gt; passFailMetrics, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.PassFailServerMetric&gt; passFailServerMetrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.PassFailCriteria(System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.PassFailMetric},System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.PassFailServerMetric})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PassFailCriteria (Optional passFailMetrics As IDictionary(Of String, PassFailMetric) = Nothing, Optional passFailServerMetrics As IDictionary(Of String, PassFailServerMetric) = Nothing) As PassFailCriteria" />
+      <MemberSignature Language="F#" Value="static member PassFailCriteria : System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.PassFailMetric&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.PassFailServerMetric&gt; -&gt; Azure.Developer.LoadTesting.PassFailCriteria" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.PassFailCriteria (passFailMetrics, passFailServerMetrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.PassFailCriteria</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="passFailMetrics" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.Developer.LoadTesting.PassFailMetric&gt;" />
+        <Parameter Name="passFailServerMetrics" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.Developer.LoadTesting.PassFailServerMetric&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="passFailMetrics"> Map of id and pass fail metrics { id  : pass fail metrics }. </param>
+        <param name="passFailServerMetrics"> Map of id and pass fail server metrics { id  : pass fail metrics }. </param>
+        <summary> Pass fail criteria for a test. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.PassFailCriteria" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,7 +1017,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.PassFailMetric</ReturnType>
@@ -529,12 +1036,12 @@
         <param name="clientMetric"> The client metric on which the criteria should be applied. </param>
         <param name="aggregate">
             The aggregation function to be applied on the client metric. Allowed functions
-            - ‘percentage’ - for error metric , ‘avg’, percentiles like ‘p50’, ‘p90’, &amp; so on, ‘min’,
+            <list type="bullet"><item><description>‘percentage’ - for error metric , ‘avg’, percentiles like ‘p50’, ‘p90’, &amp; so on, ‘min’,</description></item></list>
             ‘max’ - for response_time_ms and latency metric, ‘avg’ - for requests_per_sec,
             ‘count’ - for requests
             </param>
-        <param name="condition"> The comparison operator. Supported types ‘&gt;’, ‘&lt;’. </param>
-        <param name="requestName"> Request name for which the Pass fail criteria has to be applied. </param>
+        <param name="condition"> The comparison operator. Supported types ‘&gt;’, ‘&lt;’ . </param>
+        <param name="requestName"> Request name for which the Pass fail criteria has to be applied . </param>
         <param name="value">
             The value to compare with the client metric. Allowed values - ‘error : [0.0 ,
             100.0] unit- % ’, response_time_ms and latency : any integer value unit- ms.
@@ -542,7 +1049,7 @@
         <param name="action"> Action taken after the threshold is met. Default is ‘continue’. </param>
         <param name="actualValue"> The actual value of the client metric for the test run. </param>
         <param name="result"> Outcome of the test run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.PassFailMetric" />. </summary>
+        <summary> Pass fail metric. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.PassFailMetric" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -556,7 +1063,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.PassFailServerMetric</ReturnType>
@@ -577,13 +1084,121 @@
         <param name="metricNamespace"> The server metric namespace. </param>
         <param name="metricName"> The server metric name. </param>
         <param name="aggregation"> Aggregation Type. </param>
-        <param name="condition"> The comparison operator. Supported types ‘&gt;’, ‘&lt;’. </param>
+        <param name="condition"> The comparison operator. Supported types ‘&gt;’, ‘&lt;’ . </param>
         <param name="value"> The value to compare with the server metric. </param>
         <param name="action"> Action taken after the threshold is met. Default is ‘continue’. </param>
-        <param name="actualValue"> The actual value of the server metric. </param>
+        <param name="actualValue"> The actual value of the server metric . </param>
         <param name="result"> Outcome of the test run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.PassFailServerMetric" />. </summary>
+        <summary> Pass fail server metric. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.PassFailServerMetric" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecurrenceEnd">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.RecurrenceEnd RecurrenceEnd (int? numberOfOccurrences = default, DateTimeOffset? endDateTime = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.RecurrenceEnd RecurrenceEnd(valuetype System.Nullable`1&lt;int32&gt; numberOfOccurrences, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.RecurrenceEnd(System.Nullable{System.Int32},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RecurrenceEnd (Optional numberOfOccurrences As Nullable(Of Integer) = Nothing, Optional endDateTime As Nullable(Of DateTimeOffset) = Nothing) As RecurrenceEnd" />
+      <MemberSignature Language="F#" Value="static member RecurrenceEnd : Nullable&lt;int&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.Developer.LoadTesting.RecurrenceEnd" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.RecurrenceEnd (numberOfOccurrences, endDateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.RecurrenceEnd</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="numberOfOccurrences" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="endDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="numberOfOccurrences"> Number of occurrences after which the recurrence will end. </param>
+        <param name="endDateTime"> The date after which the recurrence will end. (RFC 3339 literal format). </param>
+        <summary> Recurrence end model. Either provide numberOfOccurrences if you want recurrence to end after a specified number of occurrences or provide endDate if you want recurrence to end after a specified end date. If both values are provided, a validation error will be thrown indicating that only one field should be provided. If neither value is provided, the recurrence will end when manually ended. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.RecurrenceEnd" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecurrenceStatus">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.RecurrenceStatus RecurrenceStatus (int? remainingOccurrences = default, System.Collections.Generic.IEnumerable&lt;DateTimeOffset&gt; nextScheduledDateTimes = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.RecurrenceStatus RecurrenceStatus(valuetype System.Nullable`1&lt;int32&gt; remainingOccurrences, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.DateTimeOffset&gt; nextScheduledDateTimes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.RecurrenceStatus(System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RecurrenceStatus (Optional remainingOccurrences As Nullable(Of Integer) = Nothing, Optional nextScheduledDateTimes As IEnumerable(Of DateTimeOffset) = Nothing) As RecurrenceStatus" />
+      <MemberSignature Language="F#" Value="static member RecurrenceStatus : Nullable&lt;int&gt; * seq&lt;DateTimeOffset&gt; -&gt; Azure.Developer.LoadTesting.RecurrenceStatus" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.RecurrenceStatus (remainingOccurrences, nextScheduledDateTimes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.RecurrenceStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="remainingOccurrences" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="nextScheduledDateTimes" Type="System.Collections.Generic.IEnumerable&lt;System.DateTimeOffset&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="remainingOccurrences"> The number of occurrences remaining for the trigger. Null if recurrence end has end date instead of number of occurrences. </param>
+        <param name="nextScheduledDateTimes"> The next three execution times of the trigger. (RFC 3339 literal format). </param>
+        <summary> Actual state of the recurrence for the trigger. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.RecurrenceStatus" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecurrenceWithCron">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.RecurrenceWithCron RecurrenceWithCron (Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd = default, string cronExpression = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.RecurrenceWithCron RecurrenceWithCron(class Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd, string cronExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.RecurrenceWithCron(Azure.Developer.LoadTesting.RecurrenceEnd,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RecurrenceWithCron (Optional recurrenceEnd As RecurrenceEnd = Nothing, Optional cronExpression As String = Nothing) As RecurrenceWithCron" />
+      <MemberSignature Language="F#" Value="static member RecurrenceWithCron : Azure.Developer.LoadTesting.RecurrenceEnd * string -&gt; Azure.Developer.LoadTesting.RecurrenceWithCron" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.RecurrenceWithCron (recurrenceEnd, cronExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.RecurrenceWithCron</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recurrenceEnd" Type="Azure.Developer.LoadTesting.RecurrenceEnd" />
+        <Parameter Name="cronExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="recurrenceEnd"> Recurrence end model. You can specify the end either by providing a numberOfOccurrences (which will end the recurrence after the specified number of occurrences) or by providing an endDateTime (which will end the recurrence after the specified date). If neither value is provided, the recurrence will continue until it is manually ended. However, if both values are provided, an error will be thrown. </param>
+        <param name="cronExpression"> Cron expression for the recurrence. </param>
+        <summary> Recurrence is set based on cron expression. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.RecurrenceWithCron" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegionalConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.RegionalConfiguration RegionalConfiguration (int engineInstances = 0, Azure.Core.AzureLocation region = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.RegionalConfiguration RegionalConfiguration(int32 engineInstances, valuetype Azure.Core.AzureLocation region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.RegionalConfiguration(System.Int32,Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegionalConfiguration (Optional engineInstances As Integer = 0, Optional region As AzureLocation = Nothing) As RegionalConfiguration" />
+      <MemberSignature Language="F#" Value="static member RegionalConfiguration : int * Azure.Core.AzureLocation -&gt; Azure.Developer.LoadTesting.RegionalConfiguration" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.RegionalConfiguration (engineInstances, region)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.RegionalConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="engineInstances" Type="System.Int32" />
+        <Parameter Name="region" Type="Azure.Core.AzureLocation" />
+      </Parameters>
+      <Docs>
+        <param name="engineInstances">   The number of engine instances to execute load test in specified region. Supported values are in range of 1-400. </param>
+        <param name="region">
+            Azure region name.
+            The region name should of format accepted by ARM, and should be a region supported by Azure Load Testing. For example, East US should be passed as "eastus".
+            The region name must match one of the strings in the "Name" column returned from running the "az account list-locations -o table" Azure CLI command.
+            </param>
+        <summary> Region distribution configuration for the load test. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.RegionalConfiguration" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,7 +1211,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.ResourceMetric</ReturnType>
@@ -620,8 +1235,111 @@
         <param name="aggregation"> Metric aggregation. </param>
         <param name="unit"> Metric unit. </param>
         <param name="resourceType"> Azure resource type. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.ResourceMetric" />. </summary>
+        <summary>
+            Associated metric definition for particular metrics of the azure resource (
+            Refer :
+            https://learn.microsoft.com/en-us/rest/api/monitor/metric-definitions/list#metricdefinition).
+            </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.ResourceMetric" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleTestsTrigger">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.ScheduleTestsTrigger ScheduleTestsTrigger (string triggerId = default, string displayName = default, string description = default, Azure.Developer.LoadTesting.TriggerState? state = default, Azure.Developer.LoadTesting.StateDetails stateDetails = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default, System.Collections.Generic.IEnumerable&lt;string&gt; testIds = default, DateTimeOffset? startDateTime = default, Azure.Developer.LoadTesting.RecurrenceStatus recurrenceStatus = default, Azure.Developer.LoadTesting.LoadTestingRecurrence recurrence = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.ScheduleTestsTrigger ScheduleTestsTrigger(string triggerId, string displayName, string description, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.TriggerState&gt; state, class Azure.Developer.LoadTesting.StateDetails stateDetails, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy, class System.Collections.Generic.IEnumerable`1&lt;string&gt; testIds, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDateTime, class Azure.Developer.LoadTesting.RecurrenceStatus recurrenceStatus, class Azure.Developer.LoadTesting.LoadTestingRecurrence recurrence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.ScheduleTestsTrigger(System.String,System.String,System.String,System.Nullable{Azure.Developer.LoadTesting.TriggerState},Azure.Developer.LoadTesting.StateDetails,System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTimeOffset},Azure.Developer.LoadTesting.RecurrenceStatus,Azure.Developer.LoadTesting.LoadTestingRecurrence)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ScheduleTestsTrigger (Optional triggerId As String = Nothing, Optional displayName As String = Nothing, Optional description As String = Nothing, Optional state As Nullable(Of TriggerState) = Nothing, Optional stateDetails As StateDetails = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing, Optional testIds As IEnumerable(Of String) = Nothing, Optional startDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional recurrenceStatus As RecurrenceStatus = Nothing, Optional recurrence As LoadTestingRecurrence = Nothing) As ScheduleTestsTrigger" />
+      <MemberSignature Language="F#" Value="static member ScheduleTestsTrigger : string * string * string * Nullable&lt;Azure.Developer.LoadTesting.TriggerState&gt; * Azure.Developer.LoadTesting.StateDetails * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * Azure.Developer.LoadTesting.RecurrenceStatus * Azure.Developer.LoadTesting.LoadTestingRecurrence -&gt; Azure.Developer.LoadTesting.ScheduleTestsTrigger" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.ScheduleTestsTrigger (triggerId, displayName, description, state, stateDetails, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy, testIds, startDateTime, recurrenceStatus, recurrence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.ScheduleTestsTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="triggerId" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="state" Type="System.Nullable&lt;Azure.Developer.LoadTesting.TriggerState&gt;" />
+        <Parameter Name="stateDetails" Type="Azure.Developer.LoadTesting.StateDetails" />
+        <Parameter Name="createdDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="createdBy" Type="System.String" />
+        <Parameter Name="lastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastModifiedBy" Type="System.String" />
+        <Parameter Name="testIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="startDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="recurrenceStatus" Type="Azure.Developer.LoadTesting.RecurrenceStatus" />
+        <Parameter Name="recurrence" Type="Azure.Developer.LoadTesting.LoadTestingRecurrence" />
+      </Parameters>
+      <Docs>
+        <param name="triggerId"> The unique identifier of the trigger. </param>
+        <param name="displayName"> The name of the trigger. </param>
+        <param name="description"> The description of the trigger. </param>
+        <param name="state"> The current state of the trigger. </param>
+        <param name="stateDetails"> Details of current state of the trigger. </param>
+        <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
+        <param name="createdBy"> The user that created. </param>
+        <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
+        <param name="lastModifiedBy"> The user that last modified. </param>
+        <param name="testIds"> The test id of test to be triggered by this schedule trigger. Currently only one test is supported for a trigger. </param>
+        <param name="startDateTime"> Start date time of the trigger in UTC timezone. (RFC 3339 literal format). </param>
+        <param name="recurrenceStatus" />
+        <param name="recurrence"> Recurrence details of the trigger. Null if schedule is not recurring. </param>
+        <summary> ScheduleTestsTrigger model. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.ScheduleTestsTrigger" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateDetails">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.StateDetails StateDetails (string message = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.StateDetails StateDetails(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.StateDetails(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StateDetails (Optional message As String = Nothing) As StateDetails" />
+      <MemberSignature Language="F#" Value="static member StateDetails : string -&gt; Azure.Developer.LoadTesting.StateDetails" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.StateDetails message" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.StateDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message"> The error message if the trigger is in disabled state. </param>
+        <summary> State details of the trigger. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.StateDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetResourceConfigurations">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TargetResourceConfigurations TargetResourceConfigurations (string kind = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TargetResourceConfigurations TargetResourceConfigurations(string kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TargetResourceConfigurations(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TargetResourceConfigurations (Optional kind As String = Nothing) As TargetResourceConfigurations" />
+      <MemberSignature Language="F#" Value="static member TargetResourceConfigurations : string -&gt; Azure.Developer.LoadTesting.TargetResourceConfigurations" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TargetResourceConfigurations kind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TargetResourceConfigurations</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> Kind of the resource for which the configurations apply. </param>
+        <summary>
+            Configurations of a target resource. This varies with the kind of resource.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TargetResourceConfigurations" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,7 +1352,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestAppComponents</ReturnType>
@@ -651,15 +1369,43 @@
         <param name="components">
             Azure resource collection { resource id (fully qualified resource Id e.g
             subscriptions/{subId}/resourceGroups/{rg}/providers/Microsoft.LoadTestService/loadtests/{resName})
-            : resource object }
+            : resource object } 
             </param>
         <param name="testId"> Test identifier. </param>
         <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestAppComponents" />. </summary>
+        <summary> Test app components. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestAppComponents" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestCertificate">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestCertificate TestCertificate (string value = default, Azure.Developer.LoadTesting.CertificateType? certificateKind = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestCertificate TestCertificate(string value, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.CertificateType&gt; certificateKind, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestCertificate(System.String,System.Nullable{Azure.Developer.LoadTesting.CertificateType},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestCertificate (Optional value As String = Nothing, Optional certificateKind As Nullable(Of CertificateType) = Nothing, Optional name As String = Nothing) As TestCertificate" />
+      <MemberSignature Language="F#" Value="static member TestCertificate : string * Nullable&lt;Azure.Developer.LoadTesting.CertificateType&gt; * string -&gt; Azure.Developer.LoadTesting.TestCertificate" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestCertificate (value, certificateKind, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestCertificate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="certificateKind" Type="System.Nullable&lt;Azure.Developer.LoadTesting.CertificateType&gt;" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value of the certificate for respective type. </param>
+        <param name="certificateKind"> Type of certificate. </param>
+        <param name="name"> Name of the certificate. </param>
+        <summary> Certificates metadata. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestCertificate" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -672,7 +1418,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestFileInfo</ReturnType>
@@ -692,7 +1438,7 @@
         <param name="expiresOn"> Expiry time of the file (RFC 3339 literal format). </param>
         <param name="validationStatus"> Validation status of the file. </param>
         <param name="validationFailureDetails"> Validation failure error details. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestFileInfo" />. </summary>
+        <summary> Test file info. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestFileInfo" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -706,7 +1452,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestInputArtifacts</ReturnType>
@@ -726,8 +1472,32 @@
         <param name="inputArtifactsZipFileInfo"> The zip file with all input artifacts. </param>
         <param name="urlTestConfigFileInfo"> The config json file for url based test. </param>
         <param name="additionalFileInfo"> Additional supported files for the test run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestInputArtifacts" />. </summary>
+        <summary> The input artifacts for the test. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestInputArtifacts" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestPreferences">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestPreferences TestPreferences (bool? enableAIErrorInsights = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestPreferences TestPreferences(valuetype System.Nullable`1&lt;bool&gt; enableAIErrorInsights) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestPreferences(System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestPreferences (Optional enableAIErrorInsights As Nullable(Of Boolean) = Nothing) As TestPreferences" />
+      <MemberSignature Language="F#" Value="static member TestPreferences : Nullable&lt;bool&gt; -&gt; Azure.Developer.LoadTesting.TestPreferences" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestPreferences enableAIErrorInsights" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestPreferences</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enableAIErrorInsights" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="enableAIErrorInsights"> Enable or disable AI based insights on Test Run Errors. </param>
+        <summary> Preferences for the test. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestPreferences" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,7 +1510,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestProfile</ReturnType>
@@ -763,16 +1533,12 @@
         <param name="description"> Description for the test profile. </param>
         <param name="testId"> Associated test ID for the test profile. This property is required for creating a Test Profile and it's not allowed to be updated. </param>
         <param name="targetResourceId"> Target resource ID on which the test profile is created. This property is required for creating a Test Profile and it's not allowed to be updated. </param>
-        <param name="targetResourceConfigurations">
-            Configurations of the target resource on which testing would be done.
-            Please note <see cref="T:Azure.Developer.LoadTesting.TargetResourceConfigurations" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations" />.
-            </param>
+        <param name="targetResourceConfigurations"> Configurations of the target resource on which testing would be done. </param>
         <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestProfile" />. </summary>
+        <summary> Test Profile Model. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestProfile" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -786,7 +1552,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestProfileRun</ReturnType>
@@ -816,11 +1582,7 @@
         <param name="description"> The test profile run description. </param>
         <param name="testProfileId"> Associated test profile ID for the test profile run. This is required to create a test profile run and can't be updated. </param>
         <param name="targetResourceId"> Target resource ID on which the test profile run is created. </param>
-        <param name="targetResourceConfigurations">
-            Configurations of the target resource on which the test profile ran.
-            Please note <see cref="T:Azure.Developer.LoadTesting.TargetResourceConfigurations" /> is the base class. According to the scenario, a derived class of the base class might need to be assigned here, or this property needs to be casted to one of the possible derived classes.
-            The available derived classes include <see cref="T:Azure.Developer.LoadTesting.FunctionFlexConsumptionTargetResourceConfigurations" />.
-            </param>
+        <param name="targetResourceConfigurations"> Configurations of the target resource on which the test profile ran. </param>
         <param name="status"> The test profile run status. </param>
         <param name="errorDetails"> Error details if there is any failure in test profile run. These errors are specific to the Test Profile Run. </param>
         <param name="startDateTime"> The test profile run start DateTime(RFC 3339 literal format). </param>
@@ -835,7 +1597,7 @@
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestProfileRun" />. </summary>
+        <summary> Test Profile Run model. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestProfileRun" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -849,7 +1611,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestProfileRunRecommendation</ReturnType>
@@ -861,7 +1623,7 @@
       <Docs>
         <param name="category"> Category of the recommendation. </param>
         <param name="configurations"> List of configurations IDs for which the recommendation is applicable. These are a subset of the provided target resource configurations. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestProfileRunRecommendation" />. </summary>
+        <summary> A recommendation object that provides a list of configuration that optimizes its category. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestProfileRunRecommendation" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -875,7 +1637,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunAppComponents</ReturnType>
@@ -892,14 +1654,14 @@
         <param name="components">
             Azure resource collection { resource id (fully qualified resource Id e.g
             subscriptions/{subId}/resourceGroups/{rg}/providers/Microsoft.LoadTestService/loadtests/{resName})
-            : resource object }
+            : resource object } 
             </param>
         <param name="testRunId"> Test run identifier. </param>
         <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunAppComponents" />. </summary>
+        <summary> Test run app component. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunAppComponents" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -913,7 +1675,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunArtifacts</ReturnType>
@@ -925,21 +1687,21 @@
       <Docs>
         <param name="inputArtifacts"> The input artifacts for the test run. </param>
         <param name="outputArtifacts"> The output artifacts for the test run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunArtifacts" />. </summary>
+        <summary> Collection of test run artifacts. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunArtifacts" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TestRunDetail">
-      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestRunDetail TestRunDetail (Azure.Developer.LoadTesting.TestRunStatus status = default, string configurationId = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; properties = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestRunDetail TestRunDetail(valuetype Azure.Developer.LoadTesting.TestRunStatus status, string configurationId, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; properties) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunDetail(Azure.Developer.LoadTesting.TestRunStatus,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function TestRunDetail (Optional status As TestRunStatus = Nothing, Optional configurationId As String = Nothing, Optional properties As IReadOnlyDictionary(Of String, String) = Nothing) As TestRunDetail" />
-      <MemberSignature Language="F#" Value="static member TestRunDetail : Azure.Developer.LoadTesting.TestRunStatus * string * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.Developer.LoadTesting.TestRunDetail" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunDetail (status, configurationId, properties)" />
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestRunDetail TestRunDetail (Azure.Developer.LoadTesting.TestRunStatus status = default, string configurationId = default, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestRunDetail TestRunDetail(valuetype Azure.Developer.LoadTesting.TestRunStatus status, string configurationId, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunDetail(Azure.Developer.LoadTesting.TestRunStatus,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestRunDetail (Optional status As TestRunStatus = Nothing, Optional configurationId As String = Nothing, Optional properties As IDictionary(Of String, String) = Nothing) As TestRunDetail" />
+      <MemberSignature Language="F#" Value="static member TestRunDetail : Azure.Developer.LoadTesting.TestRunStatus * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.Developer.LoadTesting.TestRunDetail" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunDetail (status, configurationId, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunDetail</ReturnType>
@@ -947,14 +1709,64 @@
       <Parameters>
         <Parameter Name="status" Type="Azure.Developer.LoadTesting.TestRunStatus" />
         <Parameter Name="configurationId" Type="System.String" />
-        <Parameter Name="properties" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
         <param name="status"> Status of the test run. </param>
         <param name="configurationId"> ID of the configuration on which the test ran. </param>
         <param name="properties"> Key value pair of extra properties associated with the test run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunDetail" />. </summary>
+        <summary> Details of a particular test run for a test profile run. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunDetail" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestRunEndedEventCondition">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestRunEndedEventCondition TestRunEndedEventCondition (System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.TestRunStatus&gt; testRunStatuses = default, System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.PassFailTestResult&gt; testRunResults = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestRunEndedEventCondition TestRunEndedEventCondition(class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Developer.LoadTesting.TestRunStatus&gt; testRunStatuses, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Developer.LoadTesting.PassFailTestResult&gt; testRunResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunEndedEventCondition(System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.TestRunStatus},System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.PassFailTestResult})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestRunEndedEventCondition (Optional testRunStatuses As IEnumerable(Of TestRunStatus) = Nothing, Optional testRunResults As IEnumerable(Of PassFailTestResult) = Nothing) As TestRunEndedEventCondition" />
+      <MemberSignature Language="F#" Value="static member TestRunEndedEventCondition : seq&lt;Azure.Developer.LoadTesting.TestRunStatus&gt; * seq&lt;Azure.Developer.LoadTesting.PassFailTestResult&gt; -&gt; Azure.Developer.LoadTesting.TestRunEndedEventCondition" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunEndedEventCondition (testRunStatuses, testRunResults)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestRunEndedEventCondition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="testRunStatuses" Type="System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.TestRunStatus&gt;" />
+        <Parameter Name="testRunResults" Type="System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.PassFailTestResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="testRunStatuses"> The test run statuses to send notification for. </param>
+        <param name="testRunResults"> The test run results to send notification for. </param>
+        <summary> TestRunEnded Event condition. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunEndedEventCondition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestRunEndedNotificationEventFilter">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestRunEndedNotificationEventFilter TestRunEndedNotificationEventFilter (Azure.Developer.LoadTesting.TestRunEndedEventCondition condition = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestRunEndedNotificationEventFilter TestRunEndedNotificationEventFilter(class Azure.Developer.LoadTesting.TestRunEndedEventCondition condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunEndedNotificationEventFilter(Azure.Developer.LoadTesting.TestRunEndedEventCondition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestRunEndedNotificationEventFilter (Optional condition As TestRunEndedEventCondition = Nothing) As TestRunEndedNotificationEventFilter" />
+      <MemberSignature Language="F#" Value="static member TestRunEndedNotificationEventFilter : Azure.Developer.LoadTesting.TestRunEndedEventCondition -&gt; Azure.Developer.LoadTesting.TestRunEndedNotificationEventFilter" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunEndedNotificationEventFilter condition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestRunEndedNotificationEventFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="condition" Type="Azure.Developer.LoadTesting.TestRunEndedEventCondition" />
+      </Parameters>
+      <Docs>
+        <param name="condition"> Event filtering condition. </param>
+        <summary> The notification event filter when the event type is TestRunEnded and scope is Tests. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunEndedNotificationEventFilter" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -967,7 +1779,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunFileInfo</ReturnType>
@@ -987,7 +1799,7 @@
         <param name="expiresOn"> Expiry time of the file (RFC 3339 literal format). </param>
         <param name="validationStatus"> Validation status of the file. </param>
         <param name="validationFailureDetails"> Validation failure error details. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunFileInfo" />. </summary>
+        <summary> Test run file info. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunFileInfo" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1001,7 +1813,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunInputArtifacts</ReturnType>
@@ -1021,8 +1833,64 @@
         <param name="inputArtifactsZipFileInfo"> The zip file for all input artifacts. </param>
         <param name="urlTestConfigFileInfo"> The config json file for url based test. </param>
         <param name="additionalFileInfo"> Additional supported files for the test run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunInputArtifacts" />. </summary>
+        <summary> The input artifacts for the test run. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunInputArtifacts" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestRunInsightColumn">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestRunInsightColumn TestRunInsightColumn (string name = default, string dataType = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestRunInsightColumn TestRunInsightColumn(string name, string dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunInsightColumn(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestRunInsightColumn (Optional name As String = Nothing, Optional dataType As String = Nothing) As TestRunInsightColumn" />
+      <MemberSignature Language="F#" Value="static member TestRunInsightColumn : string * string -&gt; Azure.Developer.LoadTesting.TestRunInsightColumn" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunInsightColumn (name, dataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestRunInsightColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name"> Name of the column. </param>
+        <param name="dataType"> The data type of the column. </param>
+        <summary> Represents a column of the test run insight. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunInsightColumn" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestRunInsights">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestRunInsights TestRunInsights (System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.TestRunInsightColumn&gt; columns = default, System.Collections.Generic.IDictionary&lt;string,System.Collections.Generic.IDictionary&lt;string,string&gt;&gt; rows = default, long? version = default, Azure.Developer.LoadTesting.OperationState? status = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestRunInsights TestRunInsights(class System.Collections.Generic.IEnumerable`1&lt;class Azure.Developer.LoadTesting.TestRunInsightColumn&gt; columns, class System.Collections.Generic.IDictionary`2&lt;string, class System.Collections.Generic.IDictionary`2&lt;string, string&gt;&gt; rows, valuetype System.Nullable`1&lt;int64&gt; version, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.OperationState&gt; status) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunInsights(System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.TestRunInsightColumn},System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IDictionary{System.String,System.String}},System.Nullable{System.Int64},System.Nullable{Azure.Developer.LoadTesting.OperationState})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestRunInsights (Optional columns As IEnumerable(Of TestRunInsightColumn) = Nothing, Optional rows As IDictionary(Of String, IDictionary(Of String, String)) = Nothing, Optional version As Nullable(Of Long) = Nothing, Optional status As Nullable(Of OperationState) = Nothing) As TestRunInsights" />
+      <MemberSignature Language="F#" Value="static member TestRunInsights : seq&lt;Azure.Developer.LoadTesting.TestRunInsightColumn&gt; * System.Collections.Generic.IDictionary&lt;string, System.Collections.Generic.IDictionary&lt;string, string&gt;&gt; * Nullable&lt;int64&gt; * Nullable&lt;Azure.Developer.LoadTesting.OperationState&gt; -&gt; Azure.Developer.LoadTesting.TestRunInsights" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunInsights (columns, rows, version, status)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestRunInsights</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columns" Type="System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.TestRunInsightColumn&gt;" />
+        <Parameter Name="rows" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="version" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="status" Type="System.Nullable&lt;Azure.Developer.LoadTesting.OperationState&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="columns"> The columns of the insights. </param>
+        <param name="rows"> The rows of the insights. </param>
+        <param name="version"> The version of the insights. </param>
+        <param name="status"> The status of the insights. </param>
+        <summary> Represents insights for the test run. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunInsights" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1035,7 +1903,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunOutputArtifacts</ReturnType>
@@ -1051,7 +1919,7 @@
         <param name="logsFileInfo"> The test run report with metrics. </param>
         <param name="artifactsContainerInfo"> The container for test run artifacts. </param>
         <param name="reportFileInfo"> The report file for the test run. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunOutputArtifacts" />. </summary>
+        <summary> The output artifacts for the test run. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunOutputArtifacts" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1065,7 +1933,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunServerMetricsConfiguration</ReturnType>
@@ -1089,8 +1957,29 @@
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunServerMetricsConfiguration" />. </summary>
+        <summary> Test run server metrics configuration. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunServerMetricsConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestRunStartedNotificationEventFilter">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestRunStartedNotificationEventFilter TestRunStartedNotificationEventFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestRunStartedNotificationEventFilter TestRunStartedNotificationEventFilter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunStartedNotificationEventFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestRunStartedNotificationEventFilter () As TestRunStartedNotificationEventFilter" />
+      <MemberSignature Language="F#" Value="static member TestRunStartedNotificationEventFilter : unit -&gt; Azure.Developer.LoadTesting.TestRunStartedNotificationEventFilter" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestRunStartedNotificationEventFilter " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestRunStartedNotificationEventFilter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> The notification event filter when the event type is TestRunStarted and scope is Tests. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunStartedNotificationEventFilter" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1103,7 +1992,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestRunStatistics</ReturnType>
@@ -1151,8 +2040,34 @@
         <param name="throughput"> Throughput. </param>
         <param name="receivedKBytesPerSec"> Received network bytes. </param>
         <param name="sentKBytesPerSec"> Send network bytes. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestRunStatistics" />. </summary>
+        <summary> Test run statistics. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestRunStatistics" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestSecret">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestSecret TestSecret (string value = default, Azure.Developer.LoadTesting.SecretType? secretKind = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestSecret TestSecret(string value, valuetype System.Nullable`1&lt;valuetype Azure.Developer.LoadTesting.SecretType&gt; secretKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestSecret(System.String,System.Nullable{Azure.Developer.LoadTesting.SecretType})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestSecret (Optional value As String = Nothing, Optional secretKind As Nullable(Of SecretType) = Nothing) As TestSecret" />
+      <MemberSignature Language="F#" Value="static member TestSecret : string * Nullable&lt;Azure.Developer.LoadTesting.SecretType&gt; -&gt; Azure.Developer.LoadTesting.TestSecret" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestSecret (value, secretKind)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestSecret</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="secretKind" Type="System.Nullable&lt;Azure.Developer.LoadTesting.SecretType&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The value of the secret for the respective type. </param>
+        <param name="secretKind"> Type of secret. </param>
+        <summary> Secret. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestSecret" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1165,7 +2080,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TestServerMetricsConfiguration</ReturnType>
@@ -1189,8 +2104,78 @@
         <param name="createdBy"> The user that created. </param>
         <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
         <param name="lastModifiedBy"> The user that last modified. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TestServerMetricsConfiguration" />. </summary>
+        <summary> Test server metrics configuration. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestServerMetricsConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestsNotificationEventFilter">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestsNotificationEventFilter TestsNotificationEventFilter (string kind = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestsNotificationEventFilter TestsNotificationEventFilter(string kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestsNotificationEventFilter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestsNotificationEventFilter (Optional kind As String = Nothing) As TestsNotificationEventFilter" />
+      <MemberSignature Language="F#" Value="static member TestsNotificationEventFilter : string -&gt; Azure.Developer.LoadTesting.TestsNotificationEventFilter" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestsNotificationEventFilter kind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestsNotificationEventFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="kind"> The event type. </param>
+        <summary>
+            The notification event filter for Tests scope.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.Developer.LoadTesting.TestRunEndedNotificationEventFilter" />, <see cref="T:Azure.Developer.LoadTesting.TestRunStartedNotificationEventFilter" />, <see cref="T:Azure.Developer.LoadTesting.TriggerCompletedNotificationEventFilter" />, and <see cref="T:Azure.Developer.LoadTesting.TriggerDisabledNotificationEventFilter" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestsNotificationEventFilter" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestsNotificationRule">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TestsNotificationRule TestsNotificationRule (string notificationRuleId = default, string displayName = default, System.Collections.Generic.IEnumerable&lt;string&gt; actionGroupIds = default, DateTimeOffset? createdDateTime = default, string createdBy = default, DateTimeOffset? lastModifiedDateTime = default, string lastModifiedBy = default, System.Collections.Generic.IEnumerable&lt;string&gt; testIds = default, System.Collections.Generic.IDictionary&lt;string,Azure.Developer.LoadTesting.TestsNotificationEventFilter&gt; eventFilters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TestsNotificationRule TestsNotificationRule(string notificationRuleId, string displayName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; actionGroupIds, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; createdDateTime, string createdBy, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModifiedDateTime, string lastModifiedBy, class System.Collections.Generic.IEnumerable`1&lt;string&gt; testIds, class System.Collections.Generic.IDictionary`2&lt;string, class Azure.Developer.LoadTesting.TestsNotificationEventFilter&gt; eventFilters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TestsNotificationRule(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.DateTimeOffset},System.String,System.Nullable{System.DateTimeOffset},System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IDictionary{System.String,Azure.Developer.LoadTesting.TestsNotificationEventFilter})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TestsNotificationRule (Optional notificationRuleId As String = Nothing, Optional displayName As String = Nothing, Optional actionGroupIds As IEnumerable(Of String) = Nothing, Optional createdDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional createdBy As String = Nothing, Optional lastModifiedDateTime As Nullable(Of DateTimeOffset) = Nothing, Optional lastModifiedBy As String = Nothing, Optional testIds As IEnumerable(Of String) = Nothing, Optional eventFilters As IDictionary(Of String, TestsNotificationEventFilter) = Nothing) As TestsNotificationRule" />
+      <MemberSignature Language="F#" Value="static member TestsNotificationRule : string * string * seq&lt;string&gt; * Nullable&lt;DateTimeOffset&gt; * string * Nullable&lt;DateTimeOffset&gt; * string * seq&lt;string&gt; * System.Collections.Generic.IDictionary&lt;string, Azure.Developer.LoadTesting.TestsNotificationEventFilter&gt; -&gt; Azure.Developer.LoadTesting.TestsNotificationRule" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TestsNotificationRule (notificationRuleId, displayName, actionGroupIds, createdDateTime, createdBy, lastModifiedDateTime, lastModifiedBy, testIds, eventFilters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TestsNotificationRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notificationRuleId" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="actionGroupIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="createdDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="createdBy" Type="System.String" />
+        <Parameter Name="lastModifiedDateTime" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="lastModifiedBy" Type="System.String" />
+        <Parameter Name="testIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="eventFilters" Type="System.Collections.Generic.IDictionary&lt;System.String,Azure.Developer.LoadTesting.TestsNotificationEventFilter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="notificationRuleId"> The unique identifier of the notification rule. </param>
+        <param name="displayName"> The name of the notification rule. </param>
+        <param name="actionGroupIds"> The action groups to notify. </param>
+        <param name="createdDateTime"> The creation datetime(RFC 3339 literal format). </param>
+        <param name="createdBy"> The user that created. </param>
+        <param name="lastModifiedDateTime"> The last Modified datetime(RFC 3339 literal format). </param>
+        <param name="lastModifiedBy"> The user that last modified. </param>
+        <param name="testIds"> The test ids to include. If not provided, notification will be sent for all testIds. </param>
+        <param name="eventFilters">
+            The event to receive notifications for along with filtering conditions.
+            Key is a user-assigned identifier for the event filter.
+            </param>
+        <summary> Tests Notification rule model. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TestsNotificationRule" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1203,7 +2188,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Developer.LoadTesting.TimeSeriesElement</ReturnType>
@@ -1214,9 +2199,79 @@
       </Parameters>
       <Docs>
         <param name="data"> An array of data points representing the metric values. </param>
-        <param name="dimensionValues"> The dimension values. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.TimeSeriesElement" />. </summary>
+        <param name="dimensionValues"> The dimension values . </param>
+        <summary> The time series returned when a data query is performed. </summary>
         <returns> A new <see cref="T:Azure.Developer.LoadTesting.TimeSeriesElement" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerCompletedNotificationEventFilter">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TriggerCompletedNotificationEventFilter TriggerCompletedNotificationEventFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TriggerCompletedNotificationEventFilter TriggerCompletedNotificationEventFilter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TriggerCompletedNotificationEventFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TriggerCompletedNotificationEventFilter () As TriggerCompletedNotificationEventFilter" />
+      <MemberSignature Language="F#" Value="static member TriggerCompletedNotificationEventFilter : unit -&gt; Azure.Developer.LoadTesting.TriggerCompletedNotificationEventFilter" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TriggerCompletedNotificationEventFilter " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TriggerCompletedNotificationEventFilter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> The notification event filter when the event type is TriggerCompleted. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TriggerCompletedNotificationEventFilter" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerDisabledNotificationEventFilter">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.TriggerDisabledNotificationEventFilter TriggerDisabledNotificationEventFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.TriggerDisabledNotificationEventFilter TriggerDisabledNotificationEventFilter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.TriggerDisabledNotificationEventFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TriggerDisabledNotificationEventFilter () As TriggerDisabledNotificationEventFilter" />
+      <MemberSignature Language="F#" Value="static member TriggerDisabledNotificationEventFilter : unit -&gt; Azure.Developer.LoadTesting.TriggerDisabledNotificationEventFilter" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.TriggerDisabledNotificationEventFilter " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.TriggerDisabledNotificationEventFilter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> The notification event filter when the event type is TriggerDisabled. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.TriggerDisabledNotificationEventFilter" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WeeklyRecurrence">
+      <MemberSignature Language="C#" Value="public static Azure.Developer.LoadTesting.WeeklyRecurrence WeeklyRecurrence (Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd = default, System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.WeekDays&gt; daysOfWeek = default, int? interval = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Developer.LoadTesting.WeeklyRecurrence WeeklyRecurrence(class Azure.Developer.LoadTesting.RecurrenceEnd recurrenceEnd, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.Developer.LoadTesting.WeekDays&gt; daysOfWeek, valuetype System.Nullable`1&lt;int32&gt; interval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.LoadTestingModelFactory.WeeklyRecurrence(Azure.Developer.LoadTesting.RecurrenceEnd,System.Collections.Generic.IEnumerable{Azure.Developer.LoadTesting.WeekDays},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WeeklyRecurrence (Optional recurrenceEnd As RecurrenceEnd = Nothing, Optional daysOfWeek As IEnumerable(Of WeekDays) = Nothing, Optional interval As Nullable(Of Integer) = Nothing) As WeeklyRecurrence" />
+      <MemberSignature Language="F#" Value="static member WeeklyRecurrence : Azure.Developer.LoadTesting.RecurrenceEnd * seq&lt;Azure.Developer.LoadTesting.WeekDays&gt; * Nullable&lt;int&gt; -&gt; Azure.Developer.LoadTesting.WeeklyRecurrence" Usage="Azure.Developer.LoadTesting.LoadTestingModelFactory.WeeklyRecurrence (recurrenceEnd, daysOfWeek, interval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.WeeklyRecurrence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recurrenceEnd" Type="Azure.Developer.LoadTesting.RecurrenceEnd" />
+        <Parameter Name="daysOfWeek" Type="System.Collections.Generic.IEnumerable&lt;Azure.Developer.LoadTesting.WeekDays&gt;" />
+        <Parameter Name="interval" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="recurrenceEnd"> Recurrence end model. You can specify the end either by providing a numberOfOccurrences (which will end the recurrence after the specified number of occurrences) or by providing an endDateTime (which will end the recurrence after the specified date). If neither value is provided, the recurrence will continue until it is manually ended. However, if both values are provided, an error will be thrown. </param>
+        <param name="daysOfWeek"> Recurrence set to repeat on the specified days of the week. </param>
+        <param name="interval"> The interval at which the recurrence should repeat. It signifies the number of weeks between each recurrence. </param>
+        <summary> Recurrence model when frequency is set as weekly. </summary>
+        <returns> A new <see cref="T:Azure.Developer.LoadTesting.WeeklyRecurrence" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

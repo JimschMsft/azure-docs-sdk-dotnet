@@ -21,6 +21,7 @@
     <AssemblyVersion>1.8.0.0</AssemblyVersion>
     <AssemblyVersion>1.8.1.0</AssemblyVersion>
     <AssemblyVersion>1.9.0.0</AssemblyVersion>
+    <AssemblyVersion>1.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -54,7 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ClientModel</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -72,6 +73,51 @@
             dispose the return value. </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FromPages">
+      <MemberSignature Language="C#" Value="public static System.ClientModel.CollectionResult&lt;T&gt; FromPages (System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt; pages);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ClientModel.CollectionResult`1&lt;!T&gt; FromPages(class System.Collections.Generic.IEnumerable`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!T&gt;&gt; pages) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ClientModel.CollectionResult`1.FromPages(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromPages (pages As IEnumerable(Of IEnumerable(Of T))) As CollectionResult(Of T)" />
+      <MemberSignature Language="F#" Value="static member FromPages : seq&lt;seq&lt;'T&gt;&gt; -&gt; System.ClientModel.CollectionResult&lt;'T&gt;" Usage="System.ClientModel.CollectionResult&lt;'T&gt;.FromPages pages" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ClientModel</AssemblyName>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ClientModel.CollectionResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pages" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="pages">The pages of values to include in the collection.
+            Each element in <paramref name="pages" /> represents a single page of
+            values.</param>
+        <summary>
+            Creates an instance of <see cref="T:System.ClientModel.CollectionResult`1" /> using the
+            provided pages of values.
+            </summary>
+        <returns>A new instance of <see cref="T:System.ClientModel.CollectionResult`1" />.</returns>
+        <remarks>
+          <para>
+            This factory method eagerly materializes all of the provided pages by
+            buffering their contents into in-memory lists. As a result, the entire
+            sequence of values will be loaded into memory up-front. This behavior
+            makes the method suitable for testing or mocking scenarios, or for
+            small data sets where the additional memory usage is acceptable.
+            </para>
+          <para>
+            The raw pages returned by <see cref="M:System.ClientModel.Primitives.CollectionResult.GetRawPages" /> and the
+            <see cref="T:System.ClientModel.ContinuationToken" /> instances returned by
+            <see cref="M:System.ClientModel.Primitives.CollectionResult.GetContinuationToken(System.ClientModel.ClientResult)" /> are synthetic and are
+            not derived from real service responses. They are constructed from
+            in-memory data solely to provide a paged-programming model over the
+            supplied values.
+            </para>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;T&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; GetEnumerator() cil managed" />
@@ -85,10 +131,14 @@
       <AssemblyInfo>
         <AssemblyName>System.ClientModel</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.ClientModel.CollectionResult&lt;&gt;+&lt;GetEnumerator&gt;d__2))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.ClientModel.CollectionResult&lt;&gt;+&lt;GetEnumerator&gt;d__2))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.ClientModel.CollectionResult&lt;&gt;+&lt;GetEnumerator&gt;d__1))]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.ClientModel.CollectionResult&lt;&gt;+&lt;GetEnumerator&gt;d__1))&gt;]</AttributeName>
         </Attribute>
@@ -113,7 +163,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ClientModel</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
@@ -149,7 +199,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ClientModel</AssemblyName>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
-        <AssemblyVersion>1.9.0.0</AssemblyVersion>
+        <AssemblyVersion>1.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>

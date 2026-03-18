@@ -1,0 +1,376 @@
+<Type Name="ScheduleTestsTrigger" FullName="Azure.Developer.LoadTesting.ScheduleTestsTrigger">
+  <TypeSignature Language="C#" Value="public class ScheduleTestsTrigger : Azure.Developer.LoadTesting.LoadTestingTrigger, System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScheduleTestsTrigger extends Azure.Developer.LoadTesting.LoadTestingTrigger implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.Developer.LoadTesting.ScheduleTestsTrigger" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScheduleTestsTrigger&#xA;Inherits LoadTestingTrigger&#xA;Implements IJsonModel(Of ScheduleTestsTrigger), IPersistableModel(Of ScheduleTestsTrigger)" />
+  <TypeSignature Language="F#" Value="type ScheduleTestsTrigger = class&#xA;    inherit LoadTestingTrigger&#xA;    interface IJsonModel&lt;ScheduleTestsTrigger&gt;&#xA;    interface IPersistableModel&lt;ScheduleTestsTrigger&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Developer.LoadTesting.LoadTestingTrigger</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> ScheduleTestsTrigger model. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScheduleTestsTrigger (string displayName, System.Collections.Generic.IEnumerable&lt;string&gt; testIds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; testIds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, testIds As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="new Azure.Developer.LoadTesting.ScheduleTestsTrigger : string * seq&lt;string&gt; -&gt; Azure.Developer.LoadTesting.ScheduleTestsTrigger" Usage="new Azure.Developer.LoadTesting.ScheduleTestsTrigger (displayName, testIds)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="testIds" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="displayName"> The name of the trigger. </param>
+        <param name="testIds"> The test id of test to be triggered by this schedule trigger. Currently only one test is supported for a trigger. </param>
+        <summary> Initializes a new instance of <see cref="T:Azure.Developer.LoadTesting.ScheduleTestsTrigger" />. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="displayName" /> or <paramref name="testIds" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.Developer.LoadTesting.LoadTestingTrigger JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.Developer.LoadTesting.LoadTestingTrigger JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As LoadTestingTrigger" />
+      <MemberSignature Language="F#" Value="override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Developer.LoadTesting.LoadTestingTrigger" Usage="scheduleTestsTrigger.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.LoadTestingTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="scheduleTestsTrigger.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected override Azure.Developer.LoadTesting.LoadTestingTrigger PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Azure.Developer.LoadTesting.LoadTestingTrigger PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As LoadTestingTrigger" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Developer.LoadTesting.LoadTestingTrigger" Usage="scheduleTestsTrigger.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.LoadTestingTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected override BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="scheduleTestsTrigger.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recurrence">
+      <MemberSignature Language="C#" Value="public Azure.Developer.LoadTesting.LoadTestingRecurrence Recurrence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Developer.LoadTesting.LoadTestingRecurrence Recurrence" />
+      <MemberSignature Language="DocId" Value="P:Azure.Developer.LoadTesting.ScheduleTestsTrigger.Recurrence" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recurrence As LoadTestingRecurrence" />
+      <MemberSignature Language="F#" Value="member this.Recurrence : Azure.Developer.LoadTesting.LoadTestingRecurrence with get, set" Usage="Azure.Developer.LoadTesting.ScheduleTestsTrigger.Recurrence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.LoadTestingRecurrence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Recurrence details of the trigger. Null if schedule is not recurring. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecurrenceStatus">
+      <MemberSignature Language="C#" Value="public Azure.Developer.LoadTesting.RecurrenceStatus RecurrenceStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Developer.LoadTesting.RecurrenceStatus RecurrenceStatus" />
+      <MemberSignature Language="DocId" Value="P:Azure.Developer.LoadTesting.ScheduleTestsTrigger.RecurrenceStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecurrenceStatus As RecurrenceStatus" />
+      <MemberSignature Language="F#" Value="member this.RecurrenceStatus : Azure.Developer.LoadTesting.RecurrenceStatus" Usage="Azure.Developer.LoadTesting.ScheduleTestsTrigger.RecurrenceStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.RecurrenceStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Gets the RecurrenceStatus. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDateTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? StartDateTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StartDateTime" />
+      <MemberSignature Language="DocId" Value="P:Azure.Developer.LoadTesting.ScheduleTestsTrigger.StartDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartDateTime As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.StartDateTime : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Azure.Developer.LoadTesting.ScheduleTestsTrigger.StartDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Start date time of the trigger in UTC timezone. (RFC 3339 literal format). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.Developer.LoadTesting.ScheduleTestsTrigger IJsonModel&lt;ScheduleTestsTrigger&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.Developer.LoadTesting.ScheduleTestsTrigger System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.System#ClientModel#Primitives#IJsonModel&lt;Azure#Developer#LoadTesting#ScheduleTestsTrigger&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As ScheduleTestsTrigger Implements IJsonModel(Of ScheduleTestsTrigger).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Developer.LoadTesting.ScheduleTestsTrigger&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Developer.LoadTesting.ScheduleTestsTrigger" Usage="scheduleTestsTrigger.System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.ScheduleTestsTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;ScheduleTestsTrigger&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.System#ClientModel#Primitives#IJsonModel&lt;Azure#Developer#LoadTesting#ScheduleTestsTrigger&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of ScheduleTestsTrigger).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="scheduleTestsTrigger.System.ClientModel.Primitives.IJsonModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.Developer.LoadTesting.ScheduleTestsTrigger IPersistableModel&lt;ScheduleTestsTrigger&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.Developer.LoadTesting.ScheduleTestsTrigger System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.System#ClientModel#Primitives#IPersistableModel&lt;Azure#Developer#LoadTesting#ScheduleTestsTrigger&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As ScheduleTestsTrigger Implements IPersistableModel(Of ScheduleTestsTrigger).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Developer.LoadTesting.ScheduleTestsTrigger&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.Developer.LoadTesting.ScheduleTestsTrigger" Usage="scheduleTestsTrigger.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Developer.LoadTesting.ScheduleTestsTrigger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;ScheduleTestsTrigger&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.System#ClientModel#Primitives#IPersistableModel&lt;Azure#Developer#LoadTesting#ScheduleTestsTrigger&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of ScheduleTestsTrigger).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="scheduleTestsTrigger.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;ScheduleTestsTrigger&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Developer.LoadTesting.ScheduleTestsTrigger.System#ClientModel#Primitives#IPersistableModel&lt;Azure#Developer#LoadTesting#ScheduleTestsTrigger&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of ScheduleTestsTrigger).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="scheduleTestsTrigger.System.ClientModel.Primitives.IPersistableModel&lt;Azure.Developer.LoadTesting.ScheduleTestsTrigger&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestIds">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; TestIds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; TestIds" />
+      <MemberSignature Language="DocId" Value="P:Azure.Developer.LoadTesting.ScheduleTestsTrigger.TestIds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestIds As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.TestIds : System.Collections.Generic.IList&lt;string&gt;" Usage="Azure.Developer.LoadTesting.ScheduleTestsTrigger.TestIds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Developer.LoadTesting</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The test id of test to be triggered by this schedule trigger. Currently only one test is supported for a trigger. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
