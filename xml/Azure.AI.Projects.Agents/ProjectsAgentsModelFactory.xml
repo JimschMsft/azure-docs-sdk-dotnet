@@ -1,0 +1,1379 @@
+<Type Name="ProjectsAgentsModelFactory" FullName="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory">
+  <TypeSignature Language="C#" Value="public static class ProjectsAgentsModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProjectsAgentsModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProjectsAgentsModelFactory" />
+  <TypeSignature Language="F#" Value="type ProjectsAgentsModelFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A factory class for creating instances of the models for mocking. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="A2APreviewTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.A2APreviewTool A2APreviewTool (Uri baseUri = default, string agentCardPath = default, string projectConnectionId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.A2APreviewTool A2APreviewTool(class System.Uri baseUri, string agentCardPath, string projectConnectionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.A2APreviewTool(System.Uri,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function A2APreviewTool (Optional baseUri As Uri = Nothing, Optional agentCardPath As String = Nothing, Optional projectConnectionId As String = Nothing) As A2APreviewTool" />
+      <MemberSignature Language="F#" Value="static member A2APreviewTool : Uri * string * string -&gt; Azure.AI.Projects.Agents.A2APreviewTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.A2APreviewTool (baseUri, agentCardPath, projectConnectionId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.A2APreviewTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseUri" Type="System.Uri" />
+        <Parameter Name="agentCardPath" Type="System.String" />
+        <Parameter Name="projectConnectionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="baseUri"> Base URL of the agent. </param>
+        <param name="agentCardPath">
+            The path to the agent card relative to the `base_url`.
+            If not provided, defaults to  `/.well-known/agent-card.json`
+            </param>
+        <param name="projectConnectionId">
+            The connection ID in the project for the A2A server.
+            The connection stores authentication and other connection details needed to connect to the A2A server.
+            </param>
+        <summary> An agent implementing the A2A protocol. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.A2APreviewTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AgentDefinition AgentDefinition (string kind = default, Azure.AI.Projects.Agents.ContentFilterConfiguration contentFilterConfiguration = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AgentDefinition AgentDefinition(string kind, class Azure.AI.Projects.Agents.ContentFilterConfiguration contentFilterConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentDefinition(System.String,Azure.AI.Projects.Agents.ContentFilterConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentDefinition (Optional kind As String = Nothing, Optional contentFilterConfiguration As ContentFilterConfiguration = Nothing) As AgentDefinition" />
+      <MemberSignature Language="F#" Value="static member AgentDefinition : string * Azure.AI.Projects.Agents.ContentFilterConfiguration -&gt; Azure.AI.Projects.Agents.AgentDefinition" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentDefinition (kind, contentFilterConfiguration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AgentDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="contentFilterConfiguration" Type="Azure.AI.Projects.Agents.ContentFilterConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="kind" />
+        <param name="contentFilterConfiguration"> Configuration for Responsible AI (RAI) content filtering and safety features. </param>
+        <summary>
+            The AgentDefinition.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.Agents.PromptAgentDefinition" />, <see cref="T:Azure.AI.Projects.Agents.WorkflowAgentDefinition" />, and <see cref="T:Azure.AI.Projects.Agents.HostedAgentDefinition" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AgentDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentManifestOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AgentManifestOptions AgentManifestOptions (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string description = default, string manifestId = default, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; parameterValues = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AgentManifestOptions AgentManifestOptions(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string description, string manifestId, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; parameterValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentManifestOptions(System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentManifestOptions (Optional metadata As IDictionary(Of String, String) = Nothing, Optional description As String = Nothing, Optional manifestId As String = Nothing, Optional parameterValues As IDictionary(Of String, BinaryData) = Nothing) As AgentManifestOptions" />
+      <MemberSignature Language="F#" Value="static member AgentManifestOptions : System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; -&gt; Azure.AI.Projects.Agents.AgentManifestOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentManifestOptions (metadata, description, manifestId, parameterValues)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AgentManifestOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="manifestId" Type="System.String" />
+        <Parameter Name="parameterValues" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">
+            Set of 16 key-value pairs that can be attached to an object. This can be
+            useful for storing additional information about the object in a structured
+            format, and querying for objects via API or the dashboard.
+            Keys are strings with a maximum length of 64 characters. Values are strings
+            with a maximum length of 512 characters.
+            </param>
+        <param name="description"> A human-readable description of the agent. </param>
+        <param name="manifestId"> The manifest ID to import the agent version from. </param>
+        <param name="parameterValues"> The inputs to the manifest that will result in a fully materialized Agent. </param>
+        <summary> The AgentManifestOptions. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AgentManifestOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentRecord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AgentRecord AgentRecord (string id = default, string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AgentRecord AgentRecord(string id, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentRecord(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentRecord (Optional id As String = Nothing, Optional name As String = Nothing) As AgentRecord" />
+      <MemberSignature Language="F#" Value="static member AgentRecord : string * string -&gt; Azure.AI.Projects.Agents.AgentRecord" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentRecord (id, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AgentRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AgentTool AgentTool (string type = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AgentTool AgentTool(string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentTool(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentTool (Optional type As String = Nothing) As AgentTool" />
+      <MemberSignature Language="F#" Value="static member AgentTool : string -&gt; Azure.AI.Projects.Agents.AgentTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentTool type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AgentTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type" />
+        <summary>
+            A tool that can be used to generate a response.
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.Agents.BingGroundingTool" />, <see cref="T:Azure.AI.Projects.Agents.MicrosoftFabricPreviewTool" />, <see cref="T:Azure.AI.Projects.Agents.SharepointPreviewTool" />, <see cref="T:Azure.AI.Projects.Agents.AzureAISearchTool" />, <see cref="T:Azure.AI.Projects.Agents.OpenAPITool" />, <see cref="T:Azure.AI.Projects.Agents.BingCustomSearchPreviewTool" />, <see cref="T:Azure.AI.Projects.Agents.BrowserAutomationPreviewTool" />, <see cref="T:Azure.AI.Projects.Agents.AzureFunctionTool" />, <see cref="T:Azure.AI.Projects.Agents.CaptureStructuredOutputsTool" />, <see cref="T:Azure.AI.Projects.Agents.A2APreviewTool" />, and <see cref="T:Azure.AI.Projects.Agents.MemorySearchPreviewTool" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AgentTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentVersion">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AgentVersion AgentVersion (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string id = default, string name = default, string version = default, string description = default, DateTimeOffset createdAt = default, Azure.AI.Projects.Agents.AgentDefinition definition = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AgentVersion AgentVersion(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string id, string name, string version, string description, valuetype System.DateTimeOffset createdAt, class Azure.AI.Projects.Agents.AgentDefinition definition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentVersion(System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.String,System.String,System.DateTimeOffset,Azure.AI.Projects.Agents.AgentDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentVersion (Optional metadata As IDictionary(Of String, String) = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional version As String = Nothing, Optional description As String = Nothing, Optional createdAt As DateTimeOffset = Nothing, Optional definition As AgentDefinition = Nothing) As AgentVersion" />
+      <MemberSignature Language="F#" Value="static member AgentVersion : System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * string * string * DateTimeOffset * Azure.AI.Projects.Agents.AgentDefinition -&gt; Azure.AI.Projects.Agents.AgentVersion" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentVersion (metadata, id, name, version, description, createdAt, definition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AgentVersion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="createdAt" Type="System.DateTimeOffset" />
+        <Parameter Name="definition" Type="Azure.AI.Projects.Agents.AgentDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">
+            Set of 16 key-value pairs that can be attached to an object. This can be
+            useful for storing additional information about the object in a structured
+            format, and querying for objects via API or the dashboard.
+            Keys are strings with a maximum length of 64 characters. Values are strings
+            with a maximum length of 512 characters.
+            </param>
+        <param name="id"> The unique identifier of the agent version. </param>
+        <param name="name"> The name of the agent. Name can be used to retrieve/update/delete the agent. </param>
+        <param name="version"> The version identifier of the agent. Agents are immutable and every update creates a new version while keeping the name same. </param>
+        <param name="description"> A human-readable description of the agent. </param>
+        <param name="createdAt"> The Unix timestamp (seconds) when the agent was created. </param>
+        <param name="definition" />
+        <summary> The AgentVersion. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AgentVersion" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentVersionCreationOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AgentVersionCreationOptions AgentVersionCreationOptions (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string description = default, Azure.AI.Projects.Agents.AgentDefinition definition = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AgentVersionCreationOptions AgentVersionCreationOptions(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string description, class Azure.AI.Projects.Agents.AgentDefinition definition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentVersionCreationOptions(System.Collections.Generic.IDictionary{System.String,System.String},System.String,Azure.AI.Projects.Agents.AgentDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AgentVersionCreationOptions (Optional metadata As IDictionary(Of String, String) = Nothing, Optional description As String = Nothing, Optional definition As AgentDefinition = Nothing) As AgentVersionCreationOptions" />
+      <MemberSignature Language="F#" Value="static member AgentVersionCreationOptions : System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Azure.AI.Projects.Agents.AgentDefinition -&gt; Azure.AI.Projects.Agents.AgentVersionCreationOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AgentVersionCreationOptions (metadata, description, definition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AgentVersionCreationOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="definition" Type="Azure.AI.Projects.Agents.AgentDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">
+            Set of 16 key-value pairs that can be attached to an object. This can be
+            useful for storing additional information about the object in a structured
+            format, and querying for objects via API or the dashboard.
+            Keys are strings with a maximum length of 64 characters. Values are strings
+            with a maximum length of 512 characters.
+            </param>
+        <param name="description"> A human-readable description of the agent. </param>
+        <param name="definition"> The agent definition. This can be a workflow, hosted agent, or a simple agent definition. </param>
+        <summary> The AgentVersionCreationOptions. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AgentVersionCreationOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureAISearchTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureAISearchTool AzureAISearchTool (Azure.AI.Projects.Agents.AzureAISearchToolOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureAISearchTool AzureAISearchTool(class Azure.AI.Projects.Agents.AzureAISearchToolOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureAISearchTool(Azure.AI.Projects.Agents.AzureAISearchToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureAISearchTool (Optional options As AzureAISearchToolOptions = Nothing) As AzureAISearchTool" />
+      <MemberSignature Language="F#" Value="static member AzureAISearchTool : Azure.AI.Projects.Agents.AzureAISearchToolOptions -&gt; Azure.AI.Projects.Agents.AzureAISearchTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureAISearchTool options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureAISearchTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="Azure.AI.Projects.Agents.AzureAISearchToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The azure ai search index resource. </param>
+        <summary> The input definition information for an Azure AI search tool as used to configure an agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureAISearchTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureAISearchToolIndex">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureAISearchToolIndex AzureAISearchToolIndex (string projectConnectionId = default, string indexName = default, Azure.AI.Projects.Agents.AzureAISearchQueryType? queryType = default, int? topK = default, string filter = default, string indexAssetId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureAISearchToolIndex AzureAISearchToolIndex(string projectConnectionId, string indexName, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.Agents.AzureAISearchQueryType&gt; queryType, valuetype System.Nullable`1&lt;int32&gt; topK, string filter, string indexAssetId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureAISearchToolIndex(System.String,System.String,System.Nullable{Azure.AI.Projects.Agents.AzureAISearchQueryType},System.Nullable{System.Int32},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureAISearchToolIndex (Optional projectConnectionId As String = Nothing, Optional indexName As String = Nothing, Optional queryType As Nullable(Of AzureAISearchQueryType) = Nothing, Optional topK As Nullable(Of Integer) = Nothing, Optional filter As String = Nothing, Optional indexAssetId As String = Nothing) As AzureAISearchToolIndex" />
+      <MemberSignature Language="F#" Value="static member AzureAISearchToolIndex : string * string * Nullable&lt;Azure.AI.Projects.Agents.AzureAISearchQueryType&gt; * Nullable&lt;int&gt; * string * string -&gt; Azure.AI.Projects.Agents.AzureAISearchToolIndex" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureAISearchToolIndex (projectConnectionId, indexName, queryType, topK, filter, indexAssetId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureAISearchToolIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnectionId" Type="System.String" />
+        <Parameter Name="indexName" Type="System.String" />
+        <Parameter Name="queryType" Type="System.Nullable&lt;Azure.AI.Projects.Agents.AzureAISearchQueryType&gt;" />
+        <Parameter Name="topK" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="indexAssetId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnectionId"> An index connection ID in an IndexResource attached to this agent. </param>
+        <param name="indexName"> The name of an index in an IndexResource attached to this agent. </param>
+        <param name="queryType"> Type of query in an AIIndexResource attached to this agent. </param>
+        <param name="topK"> Number of documents to retrieve from search and present to the model. </param>
+        <param name="filter"> filter string for search resource. [Learn more here](https://learn.microsoft.com/azure/search/search-filters). </param>
+        <param name="indexAssetId"> Index asset id for search resource. </param>
+        <summary> A AI Search Index resource. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureAISearchToolIndex" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureAISearchToolOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureAISearchToolOptions AzureAISearchToolOptions (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.AzureAISearchToolIndex&gt; indexes = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureAISearchToolOptions AzureAISearchToolOptions(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.AzureAISearchToolIndex&gt; indexes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureAISearchToolOptions(System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.AzureAISearchToolIndex})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureAISearchToolOptions (Optional indexes As IEnumerable(Of AzureAISearchToolIndex) = Nothing) As AzureAISearchToolOptions" />
+      <MemberSignature Language="F#" Value="static member AzureAISearchToolOptions : seq&lt;Azure.AI.Projects.Agents.AzureAISearchToolIndex&gt; -&gt; Azure.AI.Projects.Agents.AzureAISearchToolOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureAISearchToolOptions indexes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureAISearchToolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="indexes" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.AzureAISearchToolIndex&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="indexes">
+            The indices attached to this agent. There can be a maximum of 1 index
+            resource attached to the agent.
+            </param>
+        <summary> A set of index resources used by the `azure_ai_search` tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureAISearchToolOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureFunctionBinding">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureFunctionBinding AzureFunctionBinding (Azure.AI.Projects.Agents.AzureFunctionStorageQueue storageQueue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureFunctionBinding AzureFunctionBinding(class Azure.AI.Projects.Agents.AzureFunctionStorageQueue storageQueue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionBinding(Azure.AI.Projects.Agents.AzureFunctionStorageQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureFunctionBinding (Optional storageQueue As AzureFunctionStorageQueue = Nothing) As AzureFunctionBinding" />
+      <MemberSignature Language="F#" Value="static member AzureFunctionBinding : Azure.AI.Projects.Agents.AzureFunctionStorageQueue -&gt; Azure.AI.Projects.Agents.AzureFunctionBinding" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionBinding storageQueue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureFunctionBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storageQueue" Type="Azure.AI.Projects.Agents.AzureFunctionStorageQueue" />
+      </Parameters>
+      <Docs>
+        <param name="storageQueue"> Storage queue. </param>
+        <summary> The structure for keeping storage queue name and URI. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureFunctionBinding" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureFunctionDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureFunctionDefinition AzureFunctionDefinition (Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction function = default, Azure.AI.Projects.Agents.AzureFunctionBinding inputBinding = default, Azure.AI.Projects.Agents.AzureFunctionBinding outputBinding = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureFunctionDefinition AzureFunctionDefinition(class Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction function, class Azure.AI.Projects.Agents.AzureFunctionBinding inputBinding, class Azure.AI.Projects.Agents.AzureFunctionBinding outputBinding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionDefinition(Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction,Azure.AI.Projects.Agents.AzureFunctionBinding,Azure.AI.Projects.Agents.AzureFunctionBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureFunctionDefinition (Optional function As AzureFunctionDefinitionFunction = Nothing, Optional inputBinding As AzureFunctionBinding = Nothing, Optional outputBinding As AzureFunctionBinding = Nothing) As AzureFunctionDefinition" />
+      <MemberSignature Language="F#" Value="static member AzureFunctionDefinition : Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction * Azure.AI.Projects.Agents.AzureFunctionBinding * Azure.AI.Projects.Agents.AzureFunctionBinding -&gt; Azure.AI.Projects.Agents.AzureFunctionDefinition" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionDefinition (function, inputBinding, outputBinding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureFunctionDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="function" Type="Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction" />
+        <Parameter Name="inputBinding" Type="Azure.AI.Projects.Agents.AzureFunctionBinding" />
+        <Parameter Name="outputBinding" Type="Azure.AI.Projects.Agents.AzureFunctionBinding" />
+      </Parameters>
+      <Docs>
+        <param name="function"> The definition of azure function and its parameters. </param>
+        <param name="inputBinding"> Input storage queue. The queue storage trigger runs a function as messages are added to it. </param>
+        <param name="outputBinding"> Output storage queue. The function writes output to this queue when the input items are processed. </param>
+        <summary> The definition of Azure function. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureFunctionDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureFunctionDefinitionFunction">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction AzureFunctionDefinitionFunction (string name = default, string description = default, BinaryData parameters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction AzureFunctionDefinitionFunction(string name, string description, class System.BinaryData parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionDefinitionFunction(System.String,System.String,System.BinaryData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureFunctionDefinitionFunction (Optional name As String = Nothing, Optional description As String = Nothing, Optional parameters As BinaryData = Nothing) As AzureFunctionDefinitionFunction" />
+      <MemberSignature Language="F#" Value="static member AzureFunctionDefinitionFunction : string * string * BinaryData -&gt; Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionDefinitionFunction (name, description, parameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="parameters" Type="System.BinaryData" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the function to be called. </param>
+        <param name="description"> A description of what the function does, used by the model to choose when and how to call the function. </param>
+        <param name="parameters"> The parameters the functions accepts, described as a JSON Schema object. </param>
+        <summary> The AzureFunctionDefinitionFunction. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureFunctionDefinitionFunction" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureFunctionStorageQueue">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureFunctionStorageQueue AzureFunctionStorageQueue (string queueServiceEndpoint = default, string queueName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureFunctionStorageQueue AzureFunctionStorageQueue(string queueServiceEndpoint, string queueName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionStorageQueue(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureFunctionStorageQueue (Optional queueServiceEndpoint As String = Nothing, Optional queueName As String = Nothing) As AzureFunctionStorageQueue" />
+      <MemberSignature Language="F#" Value="static member AzureFunctionStorageQueue : string * string -&gt; Azure.AI.Projects.Agents.AzureFunctionStorageQueue" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionStorageQueue (queueServiceEndpoint, queueName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureFunctionStorageQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueServiceEndpoint" Type="System.String" />
+        <Parameter Name="queueName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="queueServiceEndpoint"> URI to the Azure Storage Queue service allowing you to manipulate a queue. </param>
+        <param name="queueName"> The name of an Azure function storage queue. </param>
+        <summary> The structure for keeping storage queue name and URI. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureFunctionStorageQueue" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureFunctionTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.AzureFunctionTool AzureFunctionTool (Azure.AI.Projects.Agents.AzureFunctionDefinition azureFunction = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.AzureFunctionTool AzureFunctionTool(class Azure.AI.Projects.Agents.AzureFunctionDefinition azureFunction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionTool(Azure.AI.Projects.Agents.AzureFunctionDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AzureFunctionTool (Optional azureFunction As AzureFunctionDefinition = Nothing) As AzureFunctionTool" />
+      <MemberSignature Language="F#" Value="static member AzureFunctionTool : Azure.AI.Projects.Agents.AzureFunctionDefinition -&gt; Azure.AI.Projects.Agents.AzureFunctionTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.AzureFunctionTool azureFunction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.AzureFunctionTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="azureFunction" Type="Azure.AI.Projects.Agents.AzureFunctionDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="azureFunction"> The Azure Function Tool definition. </param>
+        <summary> The input definition information for an Azure Function Tool, as used to configure an Agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.AzureFunctionTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BingCustomSearchConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BingCustomSearchConfiguration BingCustomSearchConfiguration (string projectConnectionId = default, string instanceName = default, string market = default, string setLang = default, long? count = default, string freshness = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BingCustomSearchConfiguration BingCustomSearchConfiguration(string projectConnectionId, string instanceName, string market, string setLang, valuetype System.Nullable`1&lt;int64&gt; count, string freshness) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingCustomSearchConfiguration(System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BingCustomSearchConfiguration (Optional projectConnectionId As String = Nothing, Optional instanceName As String = Nothing, Optional market As String = Nothing, Optional setLang As String = Nothing, Optional count As Nullable(Of Long) = Nothing, Optional freshness As String = Nothing) As BingCustomSearchConfiguration" />
+      <MemberSignature Language="F#" Value="static member BingCustomSearchConfiguration : string * string * string * string * Nullable&lt;int64&gt; * string -&gt; Azure.AI.Projects.Agents.BingCustomSearchConfiguration" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingCustomSearchConfiguration (projectConnectionId, instanceName, market, setLang, count, freshness)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BingCustomSearchConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnectionId" Type="System.String" />
+        <Parameter Name="instanceName" Type="System.String" />
+        <Parameter Name="market" Type="System.String" />
+        <Parameter Name="setLang" Type="System.String" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="freshness" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnectionId"> Project connection id for grounding with bing search. </param>
+        <param name="instanceName"> Name of the custom configuration instance given to config. </param>
+        <param name="market"> The market where the results come from. </param>
+        <param name="setLang"> The language to use for user interface strings when calling Bing API. </param>
+        <param name="count"> The number of search results to return in the bing api response. </param>
+        <param name="freshness"> Filter search results by a specific time range. See [accepted values here](https://learn.microsoft.com/bing/search-apis/bing-web-search/reference/query-parameters). </param>
+        <summary> A bing custom search configuration. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BingCustomSearchConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BingCustomSearchPreviewTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BingCustomSearchPreviewTool BingCustomSearchPreviewTool (Azure.AI.Projects.Agents.BingCustomSearchToolOptions bingCustomSearchPreview = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BingCustomSearchPreviewTool BingCustomSearchPreviewTool(class Azure.AI.Projects.Agents.BingCustomSearchToolOptions bingCustomSearchPreview) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingCustomSearchPreviewTool(Azure.AI.Projects.Agents.BingCustomSearchToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BingCustomSearchPreviewTool (Optional bingCustomSearchPreview As BingCustomSearchToolOptions = Nothing) As BingCustomSearchPreviewTool" />
+      <MemberSignature Language="F#" Value="static member BingCustomSearchPreviewTool : Azure.AI.Projects.Agents.BingCustomSearchToolOptions -&gt; Azure.AI.Projects.Agents.BingCustomSearchPreviewTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingCustomSearchPreviewTool bingCustomSearchPreview" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BingCustomSearchPreviewTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bingCustomSearchPreview" Type="Azure.AI.Projects.Agents.BingCustomSearchToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="bingCustomSearchPreview"> The bing custom search tool parameters. </param>
+        <summary> The input definition information for a Bing custom search tool as used to configure an agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BingCustomSearchPreviewTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BingCustomSearchToolOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BingCustomSearchToolOptions BingCustomSearchToolOptions (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.BingCustomSearchConfiguration&gt; searchConfigurations = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BingCustomSearchToolOptions BingCustomSearchToolOptions(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.BingCustomSearchConfiguration&gt; searchConfigurations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingCustomSearchToolOptions(System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.BingCustomSearchConfiguration})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BingCustomSearchToolOptions (Optional searchConfigurations As IEnumerable(Of BingCustomSearchConfiguration) = Nothing) As BingCustomSearchToolOptions" />
+      <MemberSignature Language="F#" Value="static member BingCustomSearchToolOptions : seq&lt;Azure.AI.Projects.Agents.BingCustomSearchConfiguration&gt; -&gt; Azure.AI.Projects.Agents.BingCustomSearchToolOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingCustomSearchToolOptions searchConfigurations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BingCustomSearchToolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchConfigurations" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.BingCustomSearchConfiguration&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="searchConfigurations">
+            The project connections attached to this tool. There can be a maximum of 1 connection
+            resource attached to the tool.
+            </param>
+        <summary> The bing custom search tool parameters. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BingCustomSearchToolOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BingGroundingSearchConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BingGroundingSearchConfiguration BingGroundingSearchConfiguration (string projectConnectionId = default, string market = default, string bingUserInterfaceLanguage = default, long? count = default, string freshness = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BingGroundingSearchConfiguration BingGroundingSearchConfiguration(string projectConnectionId, string market, string bingUserInterfaceLanguage, valuetype System.Nullable`1&lt;int64&gt; count, string freshness) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingGroundingSearchConfiguration(System.String,System.String,System.String,System.Nullable{System.Int64},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BingGroundingSearchConfiguration (Optional projectConnectionId As String = Nothing, Optional market As String = Nothing, Optional bingUserInterfaceLanguage As String = Nothing, Optional count As Nullable(Of Long) = Nothing, Optional freshness As String = Nothing) As BingGroundingSearchConfiguration" />
+      <MemberSignature Language="F#" Value="static member BingGroundingSearchConfiguration : string * string * string * Nullable&lt;int64&gt; * string -&gt; Azure.AI.Projects.Agents.BingGroundingSearchConfiguration" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingGroundingSearchConfiguration (projectConnectionId, market, bingUserInterfaceLanguage, count, freshness)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BingGroundingSearchConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnectionId" Type="System.String" />
+        <Parameter Name="market" Type="System.String" />
+        <Parameter Name="bingUserInterfaceLanguage" Type="System.String" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="freshness" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnectionId"> Project connection id for grounding with bing search. </param>
+        <param name="market"> The market where the results come from. </param>
+        <param name="bingUserInterfaceLanguage"> The language to use for user interface strings when calling Bing API. </param>
+        <param name="count"> The number of search results to return in the bing api response. </param>
+        <param name="freshness"> Filter search results by a specific time range. See [accepted values here](https://learn.microsoft.com/bing/search-apis/bing-web-search/reference/query-parameters). </param>
+        <summary> Search configuration for Bing Grounding. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BingGroundingSearchConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BingGroundingSearchToolOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BingGroundingSearchToolOptions BingGroundingSearchToolOptions (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.BingGroundingSearchConfiguration&gt; searchConfigurations = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BingGroundingSearchToolOptions BingGroundingSearchToolOptions(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.BingGroundingSearchConfiguration&gt; searchConfigurations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingGroundingSearchToolOptions(System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.BingGroundingSearchConfiguration})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BingGroundingSearchToolOptions (Optional searchConfigurations As IEnumerable(Of BingGroundingSearchConfiguration) = Nothing) As BingGroundingSearchToolOptions" />
+      <MemberSignature Language="F#" Value="static member BingGroundingSearchToolOptions : seq&lt;Azure.AI.Projects.Agents.BingGroundingSearchConfiguration&gt; -&gt; Azure.AI.Projects.Agents.BingGroundingSearchToolOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingGroundingSearchToolOptions searchConfigurations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BingGroundingSearchToolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchConfigurations" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.BingGroundingSearchConfiguration&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="searchConfigurations">
+            The search configurations attached to this tool. There can be a maximum of 1
+            search configuration resource attached to the tool.
+            </param>
+        <summary> The bing grounding search tool parameters. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BingGroundingSearchToolOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BingGroundingTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BingGroundingTool BingGroundingTool (Azure.AI.Projects.Agents.BingGroundingSearchToolOptions searchToolOptions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BingGroundingTool BingGroundingTool(class Azure.AI.Projects.Agents.BingGroundingSearchToolOptions searchToolOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingGroundingTool(Azure.AI.Projects.Agents.BingGroundingSearchToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BingGroundingTool (Optional searchToolOptions As BingGroundingSearchToolOptions = Nothing) As BingGroundingTool" />
+      <MemberSignature Language="F#" Value="static member BingGroundingTool : Azure.AI.Projects.Agents.BingGroundingSearchToolOptions -&gt; Azure.AI.Projects.Agents.BingGroundingTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BingGroundingTool searchToolOptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BingGroundingTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchToolOptions" Type="Azure.AI.Projects.Agents.BingGroundingSearchToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="searchToolOptions"> The bing grounding search tool parameters. </param>
+        <summary> The input definition information for a bing grounding search tool as used to configure an agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BingGroundingTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserAutomationPreviewTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BrowserAutomationPreviewTool BrowserAutomationPreviewTool (Azure.AI.Projects.Agents.BrowserAutomationToolOptions toolParameters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BrowserAutomationPreviewTool BrowserAutomationPreviewTool(class Azure.AI.Projects.Agents.BrowserAutomationToolOptions toolParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BrowserAutomationPreviewTool(Azure.AI.Projects.Agents.BrowserAutomationToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BrowserAutomationPreviewTool (Optional toolParameters As BrowserAutomationToolOptions = Nothing) As BrowserAutomationPreviewTool" />
+      <MemberSignature Language="F#" Value="static member BrowserAutomationPreviewTool : Azure.AI.Projects.Agents.BrowserAutomationToolOptions -&gt; Azure.AI.Projects.Agents.BrowserAutomationPreviewTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BrowserAutomationPreviewTool toolParameters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BrowserAutomationPreviewTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolParameters" Type="Azure.AI.Projects.Agents.BrowserAutomationToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="toolParameters"> The Browser Automation Tool parameters. </param>
+        <summary> The input definition information for a Browser Automation Tool, as used to configure an Agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BrowserAutomationPreviewTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserAutomationToolConnectionParameters">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters BrowserAutomationToolConnectionParameters (string projectConnectionId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters BrowserAutomationToolConnectionParameters(string projectConnectionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BrowserAutomationToolConnectionParameters(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BrowserAutomationToolConnectionParameters (Optional projectConnectionId As String = Nothing) As BrowserAutomationToolConnectionParameters" />
+      <MemberSignature Language="F#" Value="static member BrowserAutomationToolConnectionParameters : string -&gt; Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BrowserAutomationToolConnectionParameters projectConnectionId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnectionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnectionId"> The ID of the project connection to your Azure Playwright resource. </param>
+        <summary> Definition of input parameters for the connection used by the Browser Automation Tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserAutomationToolOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.BrowserAutomationToolOptions BrowserAutomationToolOptions (Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters toolConnectionParameters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.BrowserAutomationToolOptions BrowserAutomationToolOptions(class Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters toolConnectionParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BrowserAutomationToolOptions(Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BrowserAutomationToolOptions (Optional toolConnectionParameters As BrowserAutomationToolConnectionParameters = Nothing) As BrowserAutomationToolOptions" />
+      <MemberSignature Language="F#" Value="static member BrowserAutomationToolOptions : Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters -&gt; Azure.AI.Projects.Agents.BrowserAutomationToolOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.BrowserAutomationToolOptions toolConnectionParameters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.BrowserAutomationToolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolConnectionParameters" Type="Azure.AI.Projects.Agents.BrowserAutomationToolConnectionParameters" />
+      </Parameters>
+      <Docs>
+        <param name="toolConnectionParameters"> The project connection parameters associated with the Browser Automation Tool. </param>
+        <summary> Definition of input parameters for the Browser Automation Tool. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.BrowserAutomationToolOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptureStructuredOutputsTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.CaptureStructuredOutputsTool CaptureStructuredOutputsTool (Azure.AI.Projects.Agents.StructuredOutputDefinition outputDefinition = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.CaptureStructuredOutputsTool CaptureStructuredOutputsTool(class Azure.AI.Projects.Agents.StructuredOutputDefinition outputDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.CaptureStructuredOutputsTool(Azure.AI.Projects.Agents.StructuredOutputDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CaptureStructuredOutputsTool (Optional outputDefinition As StructuredOutputDefinition = Nothing) As CaptureStructuredOutputsTool" />
+      <MemberSignature Language="F#" Value="static member CaptureStructuredOutputsTool : Azure.AI.Projects.Agents.StructuredOutputDefinition -&gt; Azure.AI.Projects.Agents.CaptureStructuredOutputsTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.CaptureStructuredOutputsTool outputDefinition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.CaptureStructuredOutputsTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputDefinition" Type="Azure.AI.Projects.Agents.StructuredOutputDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="outputDefinition"> The structured outputs to capture from the model. </param>
+        <summary> A tool for capturing structured outputs. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.CaptureStructuredOutputsTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentFilterConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.ContentFilterConfiguration ContentFilterConfiguration (string raiPolicyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.ContentFilterConfiguration ContentFilterConfiguration(string raiPolicyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ContentFilterConfiguration(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentFilterConfiguration (Optional raiPolicyName As String = Nothing) As ContentFilterConfiguration" />
+      <MemberSignature Language="F#" Value="static member ContentFilterConfiguration : string -&gt; Azure.AI.Projects.Agents.ContentFilterConfiguration" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ContentFilterConfiguration raiPolicyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.ContentFilterConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raiPolicyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="raiPolicyName"> The name of the RAI policy to apply. </param>
+        <summary> Configuration for Responsible AI (RAI) content filtering and safety features. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.ContentFilterConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAgentVersionFromManifestRequest">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.CreateAgentVersionFromManifestRequest CreateAgentVersionFromManifestRequest (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = default, string description = default, string manifestId = default, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; parameterValues = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.CreateAgentVersionFromManifestRequest CreateAgentVersionFromManifestRequest(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata, string description, string manifestId, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; parameterValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.CreateAgentVersionFromManifestRequest(System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAgentVersionFromManifestRequest (Optional metadata As IDictionary(Of String, String) = Nothing, Optional description As String = Nothing, Optional manifestId As String = Nothing, Optional parameterValues As IDictionary(Of String, BinaryData) = Nothing) As CreateAgentVersionFromManifestRequest" />
+      <MemberSignature Language="F#" Value="static member CreateAgentVersionFromManifestRequest : System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; -&gt; Azure.AI.Projects.Agents.CreateAgentVersionFromManifestRequest" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.CreateAgentVersionFromManifestRequest (metadata, description, manifestId, parameterValues)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.CreateAgentVersionFromManifestRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="manifestId" Type="System.String" />
+        <Parameter Name="parameterValues" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">
+            Set of 16 key-value pairs that can be attached to an object. This can be
+            useful for storing additional information about the object in a structured
+            format, and querying for objects via API or the dashboard.
+            Keys are strings with a maximum length of 64 characters. Values are strings
+            with a maximum length of 512 characters.
+            </param>
+        <param name="description"> A human-readable description of the agent. </param>
+        <param name="manifestId"> The manifest ID to import the agent version from. </param>
+        <param name="parameterValues"> The inputs to the manifest that will result in a fully materialized Agent. </param>
+        <summary> The CreateAgentVersionFromManifestRequest. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.CreateAgentVersionFromManifestRequest" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FabricDataAgentToolOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.FabricDataAgentToolOptions FabricDataAgentToolOptions (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.ToolProjectConnection&gt; projectConnections = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.FabricDataAgentToolOptions FabricDataAgentToolOptions(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.ToolProjectConnection&gt; projectConnections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.FabricDataAgentToolOptions(System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.ToolProjectConnection})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FabricDataAgentToolOptions (Optional projectConnections As IEnumerable(Of ToolProjectConnection) = Nothing) As FabricDataAgentToolOptions" />
+      <MemberSignature Language="F#" Value="static member FabricDataAgentToolOptions : seq&lt;Azure.AI.Projects.Agents.ToolProjectConnection&gt; -&gt; Azure.AI.Projects.Agents.FabricDataAgentToolOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.FabricDataAgentToolOptions projectConnections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.FabricDataAgentToolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnections" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.ToolProjectConnection&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnections">
+            The project connections attached to this tool. There can be a maximum of 1 connection
+            resource attached to the tool.
+            </param>
+        <summary> The fabric data agent tool parameters. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.FabricDataAgentToolOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostedAgentDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.HostedAgentDefinition HostedAgentDefinition (Azure.AI.Projects.Agents.ContentFilterConfiguration contentFilterConfiguration = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.AgentTool&gt; tools = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.ProtocolVersionRecord&gt; versions = default, string cpu = default, string memory = default, System.Collections.Generic.IDictionary&lt;string,string&gt; environmentVariables = default, string image = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.HostedAgentDefinition HostedAgentDefinition(class Azure.AI.Projects.Agents.ContentFilterConfiguration contentFilterConfiguration, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.AgentTool&gt; tools, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.ProtocolVersionRecord&gt; versions, string cpu, string memory, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; environmentVariables, string image) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.HostedAgentDefinition(Azure.AI.Projects.Agents.ContentFilterConfiguration,System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.AgentTool},System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.ProtocolVersionRecord},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HostedAgentDefinition (Optional contentFilterConfiguration As ContentFilterConfiguration = Nothing, Optional tools As IEnumerable(Of AgentTool) = Nothing, Optional versions As IEnumerable(Of ProtocolVersionRecord) = Nothing, Optional cpu As String = Nothing, Optional memory As String = Nothing, Optional environmentVariables As IDictionary(Of String, String) = Nothing, Optional image As String = Nothing) As HostedAgentDefinition" />
+      <MemberSignature Language="F#" Value="static member HostedAgentDefinition : Azure.AI.Projects.Agents.ContentFilterConfiguration * seq&lt;Azure.AI.Projects.Agents.AgentTool&gt; * seq&lt;Azure.AI.Projects.Agents.ProtocolVersionRecord&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string -&gt; Azure.AI.Projects.Agents.HostedAgentDefinition" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.HostedAgentDefinition (contentFilterConfiguration, tools, versions, cpu, memory, environmentVariables, image)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.HostedAgentDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentFilterConfiguration" Type="Azure.AI.Projects.Agents.ContentFilterConfiguration" />
+        <Parameter Name="tools" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.AgentTool&gt;" />
+        <Parameter Name="versions" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.ProtocolVersionRecord&gt;" />
+        <Parameter Name="cpu" Type="System.String" />
+        <Parameter Name="memory" Type="System.String" />
+        <Parameter Name="environmentVariables" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="image" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contentFilterConfiguration"> Configuration for Responsible AI (RAI) content filtering and safety features. </param>
+        <param name="tools">
+            An array of tools the hosted agent's model may call while generating a response. You
+            can specify which tool to use by setting the `tool_choice` parameter.
+            </param>
+        <param name="versions"> The protocols that the agent supports for ingress communication of the containers. </param>
+        <param name="cpu"> The CPU configuration for the hosted agent. </param>
+        <param name="memory"> The memory configuration for the hosted agent. </param>
+        <param name="environmentVariables"> Environment variables to set in the hosted agent container. </param>
+        <param name="image"> The image ID for the agent, applicable to image-based hosted agents. </param>
+        <summary> The hosted agent definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.HostedAgentDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemorySearchPreviewTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.MemorySearchPreviewTool MemorySearchPreviewTool (string memoryStoreName = default, string scope = default, Azure.AI.Projects.Agents.MemorySearchToolOptions searchOptions = default, int? updateDelayInSecs = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.MemorySearchPreviewTool MemorySearchPreviewTool(string memoryStoreName, string scope, class Azure.AI.Projects.Agents.MemorySearchToolOptions searchOptions, valuetype System.Nullable`1&lt;int32&gt; updateDelayInSecs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.MemorySearchPreviewTool(System.String,System.String,Azure.AI.Projects.Agents.MemorySearchToolOptions,System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MemorySearchPreviewTool (Optional memoryStoreName As String = Nothing, Optional scope As String = Nothing, Optional searchOptions As MemorySearchToolOptions = Nothing, Optional updateDelayInSecs As Nullable(Of Integer) = Nothing) As MemorySearchPreviewTool" />
+      <MemberSignature Language="F#" Value="static member MemorySearchPreviewTool : string * string * Azure.AI.Projects.Agents.MemorySearchToolOptions * Nullable&lt;int&gt; -&gt; Azure.AI.Projects.Agents.MemorySearchPreviewTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.MemorySearchPreviewTool (memoryStoreName, scope, searchOptions, updateDelayInSecs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.MemorySearchPreviewTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memoryStoreName" Type="System.String" />
+        <Parameter Name="scope" Type="System.String" />
+        <Parameter Name="searchOptions" Type="Azure.AI.Projects.Agents.MemorySearchToolOptions" />
+        <Parameter Name="updateDelayInSecs" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="memoryStoreName"> The name of the memory store to use. </param>
+        <param name="scope">
+            The namespace used to group and isolate memories, such as a user ID.
+            Limits which memories can be retrieved or updated.
+            Use special variable `{{$userId}}` to scope memories to the current signed-in user.
+            </param>
+        <param name="searchOptions"> Options for searching the memory store. </param>
+        <param name="updateDelayInSecs"> Time to wait before updating memories after inactivity (seconds). Default 300. </param>
+        <summary> A tool for integrating memories into the agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.MemorySearchPreviewTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemorySearchToolOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.MemorySearchToolOptions MemorySearchToolOptions (int? maxMemories = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.MemorySearchToolOptions MemorySearchToolOptions(valuetype System.Nullable`1&lt;int32&gt; maxMemories) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.MemorySearchToolOptions(System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MemorySearchToolOptions (Optional maxMemories As Nullable(Of Integer) = Nothing) As MemorySearchToolOptions" />
+      <MemberSignature Language="F#" Value="static member MemorySearchToolOptions : Nullable&lt;int&gt; -&gt; Azure.AI.Projects.Agents.MemorySearchToolOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.MemorySearchToolOptions maxMemories" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.MemorySearchToolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxMemories" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="maxMemories"> Maximum number of memory items to return. </param>
+        <summary> Memory search options. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.MemorySearchToolOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MicrosoftFabricPreviewTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.MicrosoftFabricPreviewTool MicrosoftFabricPreviewTool (Azure.AI.Projects.Agents.FabricDataAgentToolOptions toolOptions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.MicrosoftFabricPreviewTool MicrosoftFabricPreviewTool(class Azure.AI.Projects.Agents.FabricDataAgentToolOptions toolOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.MicrosoftFabricPreviewTool(Azure.AI.Projects.Agents.FabricDataAgentToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MicrosoftFabricPreviewTool (Optional toolOptions As FabricDataAgentToolOptions = Nothing) As MicrosoftFabricPreviewTool" />
+      <MemberSignature Language="F#" Value="static member MicrosoftFabricPreviewTool : Azure.AI.Projects.Agents.FabricDataAgentToolOptions -&gt; Azure.AI.Projects.Agents.MicrosoftFabricPreviewTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.MicrosoftFabricPreviewTool toolOptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.MicrosoftFabricPreviewTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolOptions" Type="Azure.AI.Projects.Agents.FabricDataAgentToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="toolOptions"> The fabric data agent tool parameters. </param>
+        <summary> The input definition information for a Microsoft Fabric tool as used to configure an agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.MicrosoftFabricPreviewTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAPIAnonymousAuthenticationDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenAPIAnonymousAuthenticationDetails OpenAPIAnonymousAuthenticationDetails ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenAPIAnonymousAuthenticationDetails OpenAPIAnonymousAuthenticationDetails() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIAnonymousAuthenticationDetails" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAPIAnonymousAuthenticationDetails () As OpenAPIAnonymousAuthenticationDetails" />
+      <MemberSignature Language="F#" Value="static member OpenAPIAnonymousAuthenticationDetails : unit -&gt; Azure.AI.Projects.Agents.OpenAPIAnonymousAuthenticationDetails" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIAnonymousAuthenticationDetails " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenAPIAnonymousAuthenticationDetails</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Security details for OpenApi anonymous authentication. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenAPIAnonymousAuthenticationDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenApiAuthenticationDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenApiAuthenticationDetails OpenApiAuthenticationDetails (string type = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenApiAuthenticationDetails OpenApiAuthenticationDetails(string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiAuthenticationDetails(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenApiAuthenticationDetails (Optional type As String = Nothing) As OpenApiAuthenticationDetails" />
+      <MemberSignature Language="F#" Value="static member OpenApiAuthenticationDetails : string -&gt; Azure.AI.Projects.Agents.OpenApiAuthenticationDetails" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiAuthenticationDetails type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenApiAuthenticationDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type"> The type of authentication, must be anonymous/project_connection/managed_identity. </param>
+        <summary>
+            authentication details for OpenApiFunctionDefinition
+            Please note this is the abstract base class. The derived classes available for instantiation are: <see cref="T:Azure.AI.Projects.Agents.OpenAPIAnonymousAuthenticationDetails" />, <see cref="T:Azure.AI.Projects.Agents.OpenApiProjectConnectionAuthenticationDetails" />, and <see cref="T:Azure.AI.Projects.Agents.OpenAPIManagedAuthenticationDetails" />.
+            </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenApiAuthenticationDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenApiFunctionDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenApiFunctionDefinition OpenApiFunctionDefinition (string name = default, string description = default, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; spec = default, Azure.AI.Projects.Agents.OpenApiAuthenticationDetails authenticationDetails = default, System.Collections.Generic.IEnumerable&lt;string&gt; defaultParams = default, System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.OpenAPIFunctionEntry&gt; functions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenApiFunctionDefinition OpenApiFunctionDefinition(string name, string description, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; spec, class Azure.AI.Projects.Agents.OpenApiAuthenticationDetails authenticationDetails, class System.Collections.Generic.IEnumerable`1&lt;string&gt; defaultParams, class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.OpenAPIFunctionEntry&gt; functions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiFunctionDefinition(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData},Azure.AI.Projects.Agents.OpenApiAuthenticationDetails,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.OpenAPIFunctionEntry})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenApiFunctionDefinition (Optional name As String = Nothing, Optional description As String = Nothing, Optional spec As IDictionary(Of String, BinaryData) = Nothing, Optional authenticationDetails As OpenApiAuthenticationDetails = Nothing, Optional defaultParams As IEnumerable(Of String) = Nothing, Optional functions As IEnumerable(Of OpenAPIFunctionEntry) = Nothing) As OpenApiFunctionDefinition" />
+      <MemberSignature Language="F#" Value="static member OpenApiFunctionDefinition : string * string * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; * Azure.AI.Projects.Agents.OpenApiAuthenticationDetails * seq&lt;string&gt; * seq&lt;Azure.AI.Projects.Agents.OpenAPIFunctionEntry&gt; -&gt; Azure.AI.Projects.Agents.OpenApiFunctionDefinition" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiFunctionDefinition (name, description, spec, authenticationDetails, defaultParams, functions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenApiFunctionDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="spec" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+        <Parameter Name="authenticationDetails" Type="Azure.AI.Projects.Agents.OpenApiAuthenticationDetails" />
+        <Parameter Name="defaultParams" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="functions" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.OpenAPIFunctionEntry&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the function to be called. </param>
+        <param name="description"> A description of what the function does, used by the model to choose when and how to call the function. </param>
+        <param name="spec"> The openapi function shape, described as a JSON Schema object. </param>
+        <param name="authenticationDetails"> Open API authentication details. </param>
+        <param name="defaultParams"> List of OpenAPI spec parameters that will use user-provided defaults. </param>
+        <param name="functions"> List of function definitions used by OpenApi tool. </param>
+        <summary> The input definition information for an openapi function. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenApiFunctionDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAPIFunctionEntry">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenAPIFunctionEntry OpenAPIFunctionEntry (string name = default, string description = default, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; parameters = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenAPIFunctionEntry OpenAPIFunctionEntry(string name, string description, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIFunctionEntry(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAPIFunctionEntry (Optional name As String = Nothing, Optional description As String = Nothing, Optional parameters As IDictionary(Of String, BinaryData) = Nothing) As OpenAPIFunctionEntry" />
+      <MemberSignature Language="F#" Value="static member OpenAPIFunctionEntry : string * string * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; -&gt; Azure.AI.Projects.Agents.OpenAPIFunctionEntry" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIFunctionEntry (name, description, parameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenAPIFunctionEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the function to be called. </param>
+        <param name="description"> A description of what the function does, used by the model to choose when and how to call the function. </param>
+        <param name="parameters"> The parameters the functions accepts, described as a JSON Schema object. </param>
+        <summary> The OpenAPIFunctionEntry. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenAPIFunctionEntry" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAPIManagedAuthenticationDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenAPIManagedAuthenticationDetails OpenAPIManagedAuthenticationDetails (Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme securityScheme = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenAPIManagedAuthenticationDetails OpenAPIManagedAuthenticationDetails(class Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme securityScheme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIManagedAuthenticationDetails(Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAPIManagedAuthenticationDetails (Optional securityScheme As OpenAPIManagedSecurityScheme = Nothing) As OpenAPIManagedAuthenticationDetails" />
+      <MemberSignature Language="F#" Value="static member OpenAPIManagedAuthenticationDetails : Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme -&gt; Azure.AI.Projects.Agents.OpenAPIManagedAuthenticationDetails" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIManagedAuthenticationDetails securityScheme" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenAPIManagedAuthenticationDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityScheme" Type="Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme" />
+      </Parameters>
+      <Docs>
+        <param name="securityScheme"> Connection auth security details. </param>
+        <summary> Security details for OpenApi managed_identity authentication. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenAPIManagedAuthenticationDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAPIManagedSecurityScheme">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme OpenAPIManagedSecurityScheme (string audience = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme OpenAPIManagedSecurityScheme(string audience) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIManagedSecurityScheme(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAPIManagedSecurityScheme (Optional audience As String = Nothing) As OpenAPIManagedSecurityScheme" />
+      <MemberSignature Language="F#" Value="static member OpenAPIManagedSecurityScheme : string -&gt; Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPIManagedSecurityScheme audience" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audience" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="audience"> Authentication scope for managed_identity auth type. </param>
+        <summary> Security scheme for OpenApi managed_identity authentication. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenAPIManagedSecurityScheme" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenApiProjectConnectionAuthenticationDetails">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenApiProjectConnectionAuthenticationDetails OpenApiProjectConnectionAuthenticationDetails (Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme securityScheme = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenApiProjectConnectionAuthenticationDetails OpenApiProjectConnectionAuthenticationDetails(class Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme securityScheme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiProjectConnectionAuthenticationDetails(Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenApiProjectConnectionAuthenticationDetails (Optional securityScheme As OpenApiProjectConnectionSecurityScheme = Nothing) As OpenApiProjectConnectionAuthenticationDetails" />
+      <MemberSignature Language="F#" Value="static member OpenApiProjectConnectionAuthenticationDetails : Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme -&gt; Azure.AI.Projects.Agents.OpenApiProjectConnectionAuthenticationDetails" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiProjectConnectionAuthenticationDetails securityScheme" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenApiProjectConnectionAuthenticationDetails</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityScheme" Type="Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme" />
+      </Parameters>
+      <Docs>
+        <param name="securityScheme"> Project connection auth security details. </param>
+        <summary> Security details for OpenApi project connection authentication. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenApiProjectConnectionAuthenticationDetails" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenApiProjectConnectionSecurityScheme">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme OpenApiProjectConnectionSecurityScheme (string projectConnectionId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme OpenApiProjectConnectionSecurityScheme(string projectConnectionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiProjectConnectionSecurityScheme(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenApiProjectConnectionSecurityScheme (Optional projectConnectionId As String = Nothing) As OpenApiProjectConnectionSecurityScheme" />
+      <MemberSignature Language="F#" Value="static member OpenApiProjectConnectionSecurityScheme : string -&gt; Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenApiProjectConnectionSecurityScheme projectConnectionId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnectionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnectionId"> Project connection id for Project Connection auth type. </param>
+        <summary> Security scheme for OpenApi managed_identity authentication. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenApiProjectConnectionSecurityScheme" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenAPITool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.OpenAPITool OpenAPITool (Azure.AI.Projects.Agents.OpenApiFunctionDefinition functionDefinition = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.OpenAPITool OpenAPITool(class Azure.AI.Projects.Agents.OpenApiFunctionDefinition functionDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPITool(Azure.AI.Projects.Agents.OpenApiFunctionDefinition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAPITool (Optional functionDefinition As OpenApiFunctionDefinition = Nothing) As OpenAPITool" />
+      <MemberSignature Language="F#" Value="static member OpenAPITool : Azure.AI.Projects.Agents.OpenApiFunctionDefinition -&gt; Azure.AI.Projects.Agents.OpenAPITool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.OpenAPITool functionDefinition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.OpenAPITool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functionDefinition" Type="Azure.AI.Projects.Agents.OpenApiFunctionDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="functionDefinition"> The openapi function definition. </param>
+        <summary> The input definition information for an OpenAPI tool as used to configure an agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.OpenAPITool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectWebSearchConfiguration">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.ProjectWebSearchConfiguration ProjectWebSearchConfiguration (string projectConnectionId = default, string instanceName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.ProjectWebSearchConfiguration ProjectWebSearchConfiguration(string projectConnectionId, string instanceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ProjectWebSearchConfiguration(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ProjectWebSearchConfiguration (Optional projectConnectionId As String = Nothing, Optional instanceName As String = Nothing) As ProjectWebSearchConfiguration" />
+      <MemberSignature Language="F#" Value="static member ProjectWebSearchConfiguration : string * string -&gt; Azure.AI.Projects.Agents.ProjectWebSearchConfiguration" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ProjectWebSearchConfiguration (projectConnectionId, instanceName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.ProjectWebSearchConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnectionId" Type="System.String" />
+        <Parameter Name="instanceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnectionId"> Project connection id for grounding with bing custom search. </param>
+        <param name="instanceName"> Name of the custom configuration instance given to config. </param>
+        <summary> A web search configuration for bing custom search. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.ProjectWebSearchConfiguration" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolVersionRecord">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.ProtocolVersionRecord ProtocolVersionRecord (Azure.AI.Projects.Agents.AgentProtocol protocol = default, string version = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.ProtocolVersionRecord ProtocolVersionRecord(valuetype Azure.AI.Projects.Agents.AgentProtocol protocol, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ProtocolVersionRecord(Azure.AI.Projects.Agents.AgentProtocol,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ProtocolVersionRecord (Optional protocol As AgentProtocol = Nothing, Optional version As String = Nothing) As ProtocolVersionRecord" />
+      <MemberSignature Language="F#" Value="static member ProtocolVersionRecord : Azure.AI.Projects.Agents.AgentProtocol * string -&gt; Azure.AI.Projects.Agents.ProtocolVersionRecord" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ProtocolVersionRecord (protocol, version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.ProtocolVersionRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="protocol" Type="Azure.AI.Projects.Agents.AgentProtocol" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="protocol"> The protocol type. </param>
+        <param name="version"> The version string for the protocol, e.g. 'v0.1.1'. </param>
+        <summary> A record mapping for a single protocol and its version. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.ProtocolVersionRecord" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharePointGroundingToolOptions">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.SharePointGroundingToolOptions SharePointGroundingToolOptions (System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.ToolProjectConnection&gt; projectConnections = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.SharePointGroundingToolOptions SharePointGroundingToolOptions(class System.Collections.Generic.IEnumerable`1&lt;class Azure.AI.Projects.Agents.ToolProjectConnection&gt; projectConnections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.SharePointGroundingToolOptions(System.Collections.Generic.IEnumerable{Azure.AI.Projects.Agents.ToolProjectConnection})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SharePointGroundingToolOptions (Optional projectConnections As IEnumerable(Of ToolProjectConnection) = Nothing) As SharePointGroundingToolOptions" />
+      <MemberSignature Language="F#" Value="static member SharePointGroundingToolOptions : seq&lt;Azure.AI.Projects.Agents.ToolProjectConnection&gt; -&gt; Azure.AI.Projects.Agents.SharePointGroundingToolOptions" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.SharePointGroundingToolOptions projectConnections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.SharePointGroundingToolOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnections" Type="System.Collections.Generic.IEnumerable&lt;Azure.AI.Projects.Agents.ToolProjectConnection&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnections">
+            The project connections attached to this tool. There can be a maximum of 1 connection
+            resource attached to the tool.
+            </param>
+        <summary> The sharepoint grounding tool parameters. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.SharePointGroundingToolOptions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharepointPreviewTool">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.SharepointPreviewTool SharepointPreviewTool (Azure.AI.Projects.Agents.SharePointGroundingToolOptions toolOptions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.SharepointPreviewTool SharepointPreviewTool(class Azure.AI.Projects.Agents.SharePointGroundingToolOptions toolOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.SharepointPreviewTool(Azure.AI.Projects.Agents.SharePointGroundingToolOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SharepointPreviewTool (Optional toolOptions As SharePointGroundingToolOptions = Nothing) As SharepointPreviewTool" />
+      <MemberSignature Language="F#" Value="static member SharepointPreviewTool : Azure.AI.Projects.Agents.SharePointGroundingToolOptions -&gt; Azure.AI.Projects.Agents.SharepointPreviewTool" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.SharepointPreviewTool toolOptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.SharepointPreviewTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolOptions" Type="Azure.AI.Projects.Agents.SharePointGroundingToolOptions" />
+      </Parameters>
+      <Docs>
+        <param name="toolOptions"> The sharepoint grounding tool parameters. </param>
+        <summary> The input definition information for a sharepoint tool as used to configure an agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.SharepointPreviewTool" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StructuredInputDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.StructuredInputDefinition StructuredInputDefinition (string description = default, BinaryData defaultValue = default, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; schema = default, bool? isRequired = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.StructuredInputDefinition StructuredInputDefinition(string description, class System.BinaryData defaultValue, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; schema, valuetype System.Nullable`1&lt;bool&gt; isRequired) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.StructuredInputDefinition(System.String,System.BinaryData,System.Collections.Generic.IDictionary{System.String,System.BinaryData},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StructuredInputDefinition (Optional description As String = Nothing, Optional defaultValue As BinaryData = Nothing, Optional schema As IDictionary(Of String, BinaryData) = Nothing, Optional isRequired As Nullable(Of Boolean) = Nothing) As StructuredInputDefinition" />
+      <MemberSignature Language="F#" Value="static member StructuredInputDefinition : string * BinaryData * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.Projects.Agents.StructuredInputDefinition" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.StructuredInputDefinition (description, defaultValue, schema, isRequired)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.StructuredInputDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.BinaryData" />
+        <Parameter Name="schema" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+        <Parameter Name="isRequired" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="description"> A human-readable description of the input. </param>
+        <param name="defaultValue"> The default value for the input if no run-time value is provided. </param>
+        <param name="schema"> The JSON schema for the structured input (optional). </param>
+        <param name="isRequired"> Whether the input property is required when the agent is invoked. </param>
+        <summary> An structured input that can participate in prompt template substitutions and tool argument binding. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.StructuredInputDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StructuredOutputDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.StructuredOutputDefinition StructuredOutputDefinition (string name = default, string description = default, System.Collections.Generic.IDictionary&lt;string,BinaryData&gt; schema = default, bool? strict = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.StructuredOutputDefinition StructuredOutputDefinition(string name, string description, class System.Collections.Generic.IDictionary`2&lt;string, class System.BinaryData&gt; schema, valuetype System.Nullable`1&lt;bool&gt; strict) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.StructuredOutputDefinition(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StructuredOutputDefinition (Optional name As String = Nothing, Optional description As String = Nothing, Optional schema As IDictionary(Of String, BinaryData) = Nothing, Optional strict As Nullable(Of Boolean) = Nothing) As StructuredOutputDefinition" />
+      <MemberSignature Language="F#" Value="static member StructuredOutputDefinition : string * string * System.Collections.Generic.IDictionary&lt;string, BinaryData&gt; * Nullable&lt;bool&gt; -&gt; Azure.AI.Projects.Agents.StructuredOutputDefinition" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.StructuredOutputDefinition (name, description, schema, strict)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.StructuredOutputDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="schema" Type="System.Collections.Generic.IDictionary&lt;System.String,System.BinaryData&gt;" />
+        <Parameter Name="strict" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name of the structured output. </param>
+        <param name="description"> A description of the output to emit. Used by the model to determine when to emit the output. </param>
+        <param name="schema"> The JSON schema for the structured output. </param>
+        <param name="strict"> Whether to enforce strict validation. Default `true`. </param>
+        <summary> A structured output that can be produced by the agent. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.StructuredOutputDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolProjectConnection">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.ToolProjectConnection ToolProjectConnection (string projectConnectionId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.ToolProjectConnection ToolProjectConnection(string projectConnectionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ToolProjectConnection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToolProjectConnection (Optional projectConnectionId As String = Nothing) As ToolProjectConnection" />
+      <MemberSignature Language="F#" Value="static member ToolProjectConnection : string -&gt; Azure.AI.Projects.Agents.ToolProjectConnection" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.ToolProjectConnection projectConnectionId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.ToolProjectConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectConnectionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectConnectionId"> A project connection in a ToolProjectConnectionList attached to this tool. </param>
+        <summary> A project connection resource. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.ToolProjectConnection" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowAgentDefinition">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Projects.Agents.WorkflowAgentDefinition WorkflowAgentDefinition (Azure.AI.Projects.Agents.ContentFilterConfiguration contentFilterConfiguration = default, string workflowYaml = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.Agents.WorkflowAgentDefinition WorkflowAgentDefinition(class Azure.AI.Projects.Agents.ContentFilterConfiguration contentFilterConfiguration, string workflowYaml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.WorkflowAgentDefinition(Azure.AI.Projects.Agents.ContentFilterConfiguration,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WorkflowAgentDefinition (Optional contentFilterConfiguration As ContentFilterConfiguration = Nothing, Optional workflowYaml As String = Nothing) As WorkflowAgentDefinition" />
+      <MemberSignature Language="F#" Value="static member WorkflowAgentDefinition : Azure.AI.Projects.Agents.ContentFilterConfiguration * string -&gt; Azure.AI.Projects.Agents.WorkflowAgentDefinition" Usage="Azure.AI.Projects.Agents.ProjectsAgentsModelFactory.WorkflowAgentDefinition (contentFilterConfiguration, workflowYaml)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects.Agents</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Projects.Agents.WorkflowAgentDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentFilterConfiguration" Type="Azure.AI.Projects.Agents.ContentFilterConfiguration" />
+        <Parameter Name="workflowYaml" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contentFilterConfiguration"> Configuration for Responsible AI (RAI) content filtering and safety features. </param>
+        <param name="workflowYaml"> The CSDL YAML definition of the workflow. </param>
+        <summary> The workflow agent definition. </summary>
+        <returns> A new <see cref="T:Azure.AI.Projects.Agents.WorkflowAgentDefinition" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

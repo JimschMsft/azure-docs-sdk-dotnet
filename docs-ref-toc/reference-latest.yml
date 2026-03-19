@@ -415,7 +415,7 @@
       href: ~/api/overview/azure/latest/ai.projects-readme.md
       children:
       - Azure.AI.Projects
-      - Azure.Core.Foundations
+      - Azure.Core
       - OpenAI
     - name: AI Projects - OpenAI
       children:
@@ -1061,7 +1061,7 @@
         - Azure.ResourceManager.DisconnectedOperations
         - Azure.ResourceManager.DisconnectedOperations.Mocking
         - Azure.ResourceManager.DisconnectedOperations.Models
-  - name: Dns
+  - name: DNS
     href: ~/api/overview/azure/latest/dns.md
     landingPageType: Service
     items:
@@ -2798,6 +2798,15 @@
         - Azure.ResourceManager.TrafficManager
         - Azure.ResourceManager.TrafficManager.Mocking
         - Azure.ResourceManager.TrafficManager.Models
+  - name: unknown
+    href: ~/api/overview/azure/latest/unknown.md
+    landingPageType: Service
+    items:
+    - name: unknown
+      children:
+      - Azure.AI.Extensions.OpenAI
+      - Azure.AI.Projects
+      landingPageType: Service
   - name: Voice Services
     href: ~/api/overview/azure/latest/voice-services.md
     landingPageType: Service
@@ -2900,10 +2909,6 @@
           children:
           - Azure.Core.Amqp
         - name: Core
-          href: ~/api/overview/azure/latest/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
-        - name: Core
           href: ~/api/overview/azure/latest/core-readme.md
           children:
           - Azure
@@ -2915,6 +2920,10 @@
           - Azure.Core.Pipeline
           - Azure.Core.Serialization
           - Azure.Messaging
+        - name: Core
+          href: ~/api/overview/azure/latest/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/latest/microsoft.azure.core.spatial-readme.md
           children:

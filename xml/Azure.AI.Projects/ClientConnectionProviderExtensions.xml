@@ -9,6 +9,10 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Azure.AI.Extensions.OpenAI</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -18,6 +22,32 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="GetProjectOpenAIClient">
+      <MemberSignature Language="C#" Value="public static Azure.AI.Extensions.OpenAI.ProjectOpenAIClient GetProjectOpenAIClient (this System.ClientModel.Primitives.ClientConnectionProvider connectionProvider, Azure.AI.Extensions.OpenAI.ProjectOpenAIClientOptions options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Extensions.OpenAI.ProjectOpenAIClient GetProjectOpenAIClient(class System.ClientModel.Primitives.ClientConnectionProvider connectionProvider, class Azure.AI.Extensions.OpenAI.ProjectOpenAIClientOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.ClientConnectionProviderExtensions.GetProjectOpenAIClient(System.ClientModel.Primitives.ClientConnectionProvider,Azure.AI.Extensions.OpenAI.ProjectOpenAIClientOptions)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProjectOpenAIClient (connectionProvider As ClientConnectionProvider, Optional options As ProjectOpenAIClientOptions = Nothing) As ProjectOpenAIClient" />
+      <MemberSignature Language="F#" Value="static member GetProjectOpenAIClient : System.ClientModel.Primitives.ClientConnectionProvider * Azure.AI.Extensions.OpenAI.ProjectOpenAIClientOptions -&gt; Azure.AI.Extensions.OpenAI.ProjectOpenAIClient" Usage="Azure.AI.Projects.ClientConnectionProviderExtensions.GetProjectOpenAIClient (connectionProvider, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Extensions.OpenAI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AI.Extensions.OpenAI.ProjectOpenAIClient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionProvider" Type="System.ClientModel.Primitives.ClientConnectionProvider" RefType="this" />
+        <Parameter Name="options" Type="Azure.AI.Extensions.OpenAI.ProjectOpenAIClientOptions" />
+      </Parameters>
+      <Docs>
+        <param name="connectionProvider">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetProjectOpenAIClient">
       <MemberSignature Language="C#" Value="public static Azure.AI.Projects.OpenAI.ProjectOpenAIClient GetProjectOpenAIClient (this System.ClientModel.Primitives.ClientConnectionProvider connectionProvider, Azure.AI.Projects.OpenAI.ProjectOpenAIClientOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.AI.Projects.OpenAI.ProjectOpenAIClient GetProjectOpenAIClient(class System.ClientModel.Primitives.ClientConnectionProvider connectionProvider, class Azure.AI.Projects.OpenAI.ProjectOpenAIClientOptions options) cil managed" />

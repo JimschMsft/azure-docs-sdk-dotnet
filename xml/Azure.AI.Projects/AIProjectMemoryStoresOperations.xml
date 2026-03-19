@@ -563,11 +563,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMemoryStores">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.MemoryStore&gt; GetMemoryStores (int? limit = default, Azure.AI.Projects.AgentListOrder? order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.MemoryStore&gt; GetMemoryStores(valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AgentListOrder&gt; order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectMemoryStoresOperations.GetMemoryStores(System.Nullable{System.Int32},System.Nullable{Azure.AI.Projects.AgentListOrder},System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMemoryStores (Optional limit As Nullable(Of Integer) = Nothing, Optional order As Nullable(Of AgentListOrder) = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of MemoryStore)" />
-      <MemberSignature Language="F#" Value="abstract member GetMemoryStores : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.AgentListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;&#xA;override this.GetMemoryStores : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.AgentListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;" Usage="aIProjectMemoryStoresOperations.GetMemoryStores (limit, order, after, before, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.CollectionResult&lt;Azure.AI.Projects.MemoryStore&gt; GetMemoryStores (int? limit = default, Azure.AI.Projects.MemoryStoreListOrder? order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.CollectionResult`1&lt;class Azure.AI.Projects.MemoryStore&gt; GetMemoryStores(valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.MemoryStoreListOrder&gt; order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectMemoryStoresOperations.GetMemoryStores(System.Nullable{System.Int32},System.Nullable{Azure.AI.Projects.MemoryStoreListOrder},System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMemoryStores (Optional limit As Nullable(Of Integer) = Nothing, Optional order As Nullable(Of MemoryStoreListOrder) = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As CollectionResult(Of MemoryStore)" />
+      <MemberSignature Language="F#" Value="abstract member GetMemoryStores : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.MemoryStoreListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;&#xA;override this.GetMemoryStores : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.MemoryStoreListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.CollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;" Usage="aIProjectMemoryStoresOperations.GetMemoryStores (limit, order, after, before, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -578,7 +578,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="order" Type="System.Nullable&lt;Azure.AI.Projects.AgentListOrder&gt;" />
+        <Parameter Name="order" Type="System.Nullable&lt;Azure.AI.Projects.MemoryStoreListOrder&gt;" />
         <Parameter Name="after" Type="System.String" />
         <Parameter Name="before" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -610,11 +610,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetMemoryStoresAsync">
-      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.MemoryStore&gt; GetMemoryStoresAsync (int? limit = default, Azure.AI.Projects.AgentListOrder? order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.MemoryStore&gt; GetMemoryStoresAsync(valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.AgentListOrder&gt; order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectMemoryStoresOperations.GetMemoryStoresAsync(System.Nullable{System.Int32},System.Nullable{Azure.AI.Projects.AgentListOrder},System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMemoryStoresAsync (Optional limit As Nullable(Of Integer) = Nothing, Optional order As Nullable(Of AgentListOrder) = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of MemoryStore)" />
-      <MemberSignature Language="F#" Value="abstract member GetMemoryStoresAsync : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.AgentListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;&#xA;override this.GetMemoryStoresAsync : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.AgentListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;" Usage="aIProjectMemoryStoresOperations.GetMemoryStoresAsync (limit, order, after, before, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.MemoryStore&gt; GetMemoryStoresAsync (int? limit = default, Azure.AI.Projects.MemoryStoreListOrder? order = default, string after = default, string before = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ClientModel.AsyncCollectionResult`1&lt;class Azure.AI.Projects.MemoryStore&gt; GetMemoryStoresAsync(valuetype System.Nullable`1&lt;int32&gt; limit, valuetype System.Nullable`1&lt;valuetype Azure.AI.Projects.MemoryStoreListOrder&gt; order, string after, string before, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectMemoryStoresOperations.GetMemoryStoresAsync(System.Nullable{System.Int32},System.Nullable{Azure.AI.Projects.MemoryStoreListOrder},System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMemoryStoresAsync (Optional limit As Nullable(Of Integer) = Nothing, Optional order As Nullable(Of MemoryStoreListOrder) = Nothing, Optional after As String = Nothing, Optional before As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncCollectionResult(Of MemoryStore)" />
+      <MemberSignature Language="F#" Value="abstract member GetMemoryStoresAsync : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.MemoryStoreListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;&#xA;override this.GetMemoryStoresAsync : Nullable&lt;int&gt; * Nullable&lt;Azure.AI.Projects.MemoryStoreListOrder&gt; * string * string * System.Threading.CancellationToken -&gt; System.ClientModel.AsyncCollectionResult&lt;Azure.AI.Projects.MemoryStore&gt;" Usage="aIProjectMemoryStoresOperations.GetMemoryStoresAsync (limit, order, after, before, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
@@ -625,7 +625,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="order" Type="System.Nullable&lt;Azure.AI.Projects.AgentListOrder&gt;" />
+        <Parameter Name="order" Type="System.Nullable&lt;Azure.AI.Projects.MemoryStoreListOrder&gt;" />
         <Parameter Name="after" Type="System.String" />
         <Parameter Name="before" Type="System.String" />
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />

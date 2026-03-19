@@ -38,6 +38,26 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AIProjectClient (Azure.AI.Projects.AIProjectClientSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.AI.Projects.AIProjectClientSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectClient.#ctor(Azure.AI.Projects.AIProjectClientSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As AIProjectClientSettings)" />
+      <MemberSignature Language="F#" Value="new Azure.AI.Projects.AIProjectClient : Azure.AI.Projects.AIProjectClientSettings -&gt; Azure.AI.Projects.AIProjectClient" Usage="new Azure.AI.Projects.AIProjectClient settings" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.AI.Projects</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="Azure.AI.Projects.AIProjectClientSettings" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="settings"> The settings for AIProjectClient. </param>
+        <summary> Initializes a new instance of AIProjectClient from a <see cref="T:Azure.AI.Projects.AIProjectClientSettings" />. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AIProjectClient (Uri endpoint, System.ClientModel.AuthenticationTokenProvider tokenProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri endpoint, class System.ClientModel.AuthenticationTokenProvider tokenProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.AI.Projects.AIProjectClient.#ctor(System.Uri,System.ClientModel.AuthenticationTokenProvider)" />
@@ -90,18 +110,18 @@
       </Docs>
     </Member>
     <Member MemberName="Agents">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.AIProjectAgentsOperations Agents { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.AIProjectAgentsOperations Agents" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.Agents.AgentsClient Agents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.Agents.AgentsClient Agents" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectClient.Agents" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Agents As AIProjectAgentsOperations" />
-      <MemberSignature Language="F#" Value="member this.Agents : Azure.AI.Projects.AIProjectAgentsOperations" Usage="Azure.AI.Projects.AIProjectClient.Agents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Agents As AgentsClient" />
+      <MemberSignature Language="F#" Value="member this.Agents : Azure.AI.Projects.Agents.AgentsClient" Usage="Azure.AI.Projects.AIProjectClient.Agents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.AIProjectAgentsOperations</ReturnType>
+        <ReturnType>Azure.AI.Projects.Agents.AgentsClient</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -357,18 +377,18 @@
       </Docs>
     </Member>
     <Member MemberName="OpenAI">
-      <MemberSignature Language="C#" Value="public virtual Azure.AI.Projects.OpenAI.ProjectOpenAIClient OpenAI { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Projects.OpenAI.ProjectOpenAIClient OpenAI" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AI.Extensions.OpenAI.ProjectOpenAIClient OpenAI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.AI.Extensions.OpenAI.ProjectOpenAIClient OpenAI" />
       <MemberSignature Language="DocId" Value="P:Azure.AI.Projects.AIProjectClient.OpenAI" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OpenAI As ProjectOpenAIClient" />
-      <MemberSignature Language="F#" Value="member this.OpenAI : Azure.AI.Projects.OpenAI.ProjectOpenAIClient" Usage="Azure.AI.Projects.AIProjectClient.OpenAI" />
+      <MemberSignature Language="F#" Value="member this.OpenAI : Azure.AI.Extensions.OpenAI.ProjectOpenAIClient" Usage="Azure.AI.Projects.AIProjectClient.OpenAI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.AI.Projects</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.AI.Projects.OpenAI.ProjectOpenAIClient</ReturnType>
+        <ReturnType>Azure.AI.Extensions.OpenAI.ProjectOpenAIClient</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
