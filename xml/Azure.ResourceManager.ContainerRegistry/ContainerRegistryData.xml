@@ -148,6 +148,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EndpointProtocol">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryEndpointProtocol? EndpointProtocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryEndpointProtocol&gt; EndpointProtocol" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.EndpointProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointProtocol As Nullable(Of ContainerRegistryEndpointProtocol)" />
+      <MemberSignature Language="F#" Value="member this.EndpointProtocol : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryEndpointProtocol&gt; with get, set" Usage="Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.EndpointProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryEndpointProtocol&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The connectivity protocol for the registry, such as IPv4 or dual stack (IPv4 and IPv6). </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Identity">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.Models.ManagedServiceIdentity Identity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Models.ManagedServiceIdentity Identity" />
@@ -300,6 +320,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MetadataSearch">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryMetadataSearch? MetadataSearch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryMetadataSearch&gt; MetadataSearch" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.MetadataSearch" />
+      <MemberSignature Language="VB.NET" Value="Public Property MetadataSearch As Nullable(Of ContainerRegistryMetadataSearch)" />
+      <MemberSignature Language="F#" Value="member this.MetadataSearch : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryMetadataSearch&gt; with get, set" Usage="Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.MetadataSearch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryMetadataSearch&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Determines whether registry artifacts are indexed for metadata search. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetworkRuleBypassOptions">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryNetworkRuleBypassOption? NetworkRuleBypassOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Models.ContainerRegistryNetworkRuleBypassOption&gt; NetworkRuleBypassOptions" />
@@ -422,6 +462,46 @@
       </ReturnValue>
       <Docs>
         <summary> Whether or not public network access is allowed for the container registry. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegionalEndpointHostNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; RegionalEndpointHostNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; RegionalEndpointHostNames" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.RegionalEndpointHostNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegionalEndpointHostNames As IReadOnlyList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.RegionalEndpointHostNames : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.RegionalEndpointHostNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> List of host names that will serve registry when RegionalEndpoints is enabled. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegionalEndpoints">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.ContainerRegistry.Models.RegionalEndpoint? RegionalEndpoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ContainerRegistry.Models.RegionalEndpoint&gt; RegionalEndpoints" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.RegionalEndpoints" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegionalEndpoints As Nullable(Of RegionalEndpoint)" />
+      <MemberSignature Language="F#" Value="member this.RegionalEndpoints : Nullable&lt;Azure.ResourceManager.ContainerRegistry.Models.RegionalEndpoint&gt; with get, set" Usage="Azure.ResourceManager.ContainerRegistry.ContainerRegistryData.RegionalEndpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.ContainerRegistry.Models.RegionalEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Enable per-region endpoints for accessing registry. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

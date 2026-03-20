@@ -9,13 +9,14 @@
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary> A class to add extension methods to ArmClient. </summary>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.ArmClient" />. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,10 +29,35 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Confluent</AssemblyName>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.Confluent.Mocking.MockableConfluentArmClient" /> class for mocking. </summary>
+        <summary> Initializes a new instance of MockableConfluentArmClient for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfluentConnectorResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Confluent.ConfluentConnectorResource GetConfluentConnectorResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Confluent.ConfluentConnectorResource GetConfluentConnectorResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Confluent.Mocking.MockableConfluentArmClient.GetConfluentConnectorResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConfluentConnectorResource (id As ResourceIdentifier) As ConfluentConnectorResource" />
+      <MemberSignature Language="F#" Value="abstract member GetConfluentConnectorResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.ConfluentConnectorResource&#xA;override this.GetConfluentConnectorResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.ConfluentConnectorResource" Usage="mockableConfluentArmClient.GetConfluentConnectorResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Confluent</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Confluent.ConfluentConnectorResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Confluent.ConfluentConnectorResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Confluent.ConfluentConnectorResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,6 +71,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Confluent</AssemblyName>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Confluent.ConfluentOrganizationResource</ReturnType>
@@ -54,11 +81,80 @@
       </Parameters>
       <Docs>
         <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.Confluent.ConfluentOrganizationResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Confluent.ConfluentOrganizationResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Confluent.ConfluentOrganizationResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            </summary>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Confluent.ConfluentOrganizationResource" /> along with the instance operations that can be performed on it but with no data. </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Confluent.ConfluentOrganizationResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSCClusterRecordResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Confluent.SCClusterRecordResource GetSCClusterRecordResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Confluent.SCClusterRecordResource GetSCClusterRecordResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Confluent.Mocking.MockableConfluentArmClient.GetSCClusterRecordResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSCClusterRecordResource (id As ResourceIdentifier) As SCClusterRecordResource" />
+      <MemberSignature Language="F#" Value="abstract member GetSCClusterRecordResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.SCClusterRecordResource&#xA;override this.GetSCClusterRecordResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.SCClusterRecordResource" Usage="mockableConfluentArmClient.GetSCClusterRecordResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Confluent</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Confluent.SCClusterRecordResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Confluent.SCClusterRecordResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Confluent.SCClusterRecordResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSCEnvironmentRecordResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Confluent.SCEnvironmentRecordResource GetSCEnvironmentRecordResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Confluent.SCEnvironmentRecordResource GetSCEnvironmentRecordResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Confluent.Mocking.MockableConfluentArmClient.GetSCEnvironmentRecordResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSCEnvironmentRecordResource (id As ResourceIdentifier) As SCEnvironmentRecordResource" />
+      <MemberSignature Language="F#" Value="abstract member GetSCEnvironmentRecordResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.SCEnvironmentRecordResource&#xA;override this.GetSCEnvironmentRecordResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.SCEnvironmentRecordResource" Usage="mockableConfluentArmClient.GetSCEnvironmentRecordResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Confluent</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Confluent.SCEnvironmentRecordResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Confluent.SCEnvironmentRecordResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Confluent.SCEnvironmentRecordResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTopicRecordResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Confluent.TopicRecordResource GetTopicRecordResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Confluent.TopicRecordResource GetTopicRecordResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Confluent.Mocking.MockableConfluentArmClient.GetTopicRecordResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTopicRecordResource (id As ResourceIdentifier) As TopicRecordResource" />
+      <MemberSignature Language="F#" Value="abstract member GetTopicRecordResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.TopicRecordResource&#xA;override this.GetTopicRecordResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Confluent.TopicRecordResource" Usage="mockableConfluentArmClient.GetTopicRecordResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Confluent</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Confluent.TopicRecordResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Confluent.TopicRecordResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Confluent.TopicRecordResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
