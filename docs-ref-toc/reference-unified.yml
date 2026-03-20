@@ -113,6 +113,16 @@
         - Microsoft.Azure.Management.ApiManagement
         - Microsoft.Azure.Management.ApiManagement.Customization.Models
         - Microsoft.Azure.Management.ApiManagement.Models
+  - name: Apimanagement
+    href: ~/api/overview/azure/{moniker}/apimanagement.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Provisioning - Apimanagement
+        href: ~/api/overview/azure/{moniker}/provisioning.apimanagement-readme.md
+        children:
+        - Azure.Provisioning.ApiManagement
   - name: App Compliance Automation
     href: ~/api/overview/azure/{moniker}/app-compliance-automation.md
     landingPageType: Service
@@ -1873,7 +1883,7 @@
         - Azure.ResourceManager.DisconnectedOperations
         - Azure.ResourceManager.DisconnectedOperations.Mocking
         - Azure.ResourceManager.DisconnectedOperations.Models
-  - name: DNS
+  - name: Dns
     href: ~/api/overview/azure/{moniker}/dns.md
     landingPageType: Service
     items:
@@ -4435,6 +4445,18 @@
         - Azure.ResourceManager.Resources.DeploymentStacks
         - Azure.ResourceManager.Resources.DeploymentStacks.Mocking
         - Azure.ResourceManager.Resources.DeploymentStacks.Models
+  - name: Resources.Policy
+    href: ~/api/overview/azure/{moniker}/resources.policy.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Resources.Policy
+        href: ~/api/overview/azure/{moniker}/resourcemanager.resources.policy-readme.md
+        children:
+        - Azure.ResourceManager.Resources.Policy
+        - Azure.ResourceManager.Resources.Policy.Mocking
+        - Azure.ResourceManager.Resources.Policy.Models
   - name: Scheduler
     href: ~/api/overview/azure/{moniker}/scheduler.md
     landingPageType: Service
@@ -5582,6 +5604,10 @@
           children:
           - Azure.Core.Amqp
         - name: Core
+          href: ~/api/overview/azure/{moniker}/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
+        - name: Core
           href: ~/api/overview/azure/{moniker}/core-readme.md
           children:
           - Azure
@@ -5593,10 +5619,6 @@
           - Azure.Core.Pipeline
           - Azure.Core.Serialization
           - Azure.Messaging
-        - name: Core
-          href: ~/api/overview/azure/{moniker}/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/{moniker}/microsoft.azure.core.spatial-readme.md
           children:
