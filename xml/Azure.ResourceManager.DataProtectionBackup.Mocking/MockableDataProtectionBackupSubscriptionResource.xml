@@ -11,13 +11,14 @@
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
     <AssemblyVersion>1.7.0.0</AssemblyVersion>
+    <AssemblyVersion>1.7.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary> A class to add extension methods to SubscriptionResource. </summary>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,11 +31,11 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource" /> class for mocking. </summary>
+        <summary> Initializes a new instance of MockableDataProtectionBackupSubscriptionResource for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationResultBase&gt;</ReturnType>
@@ -64,7 +65,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates if a feature is supported
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/checkFeatureSupport</description></item><item><term>Operation Id</term><description>DataProtection_CheckFeatureSupport</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/checkFeatureSupport. </description></item><item><term> Operation Id. </term><description> DataProtectionOperationGroup_CheckFeatureSupport. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -81,7 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationResultBase&gt;&gt;</ReturnType>
@@ -97,7 +98,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates if a feature is supported
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/checkFeatureSupport</description></item><item><term>Operation Id</term><description>DataProtection_CheckFeatureSupport</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/checkFeatureSupport. </description></item><item><term> Operation Id. </term><description> DataProtectionOperationGroup_CheckFeatureSupport. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,7 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -126,7 +127,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns resource collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/backupVaults</description></item><item><term>Operation Id</term><description>BackupVaults_GetInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/backupVaults. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_GetInSubscription. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,7 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -153,8 +154,100 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns resource collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/backupVaults</description></item><item><term>Operation Id</term><description>BackupVaults_GetInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/backupVaults. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_GetInSubscription. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataProtectionDeletedBackupVault">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt; GetDataProtectionDeletedBackupVault (Azure.Core.AzureLocation location, string deletedVaultName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt; GetDataProtectionDeletedBackupVault(valuetype Azure.Core.AzureLocation location, string deletedVaultName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVault(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataProtectionDeletedBackupVault (location As AzureLocation, deletedVaultName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DataProtectionDeletedBackupVaultResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDataProtectionDeletedBackupVault : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&#xA;override this.GetDataProtectionDeletedBackupVault : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;" Usage="mockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVault (location, deletedVaultName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deletedVaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="deletedVaultName"> The name of the DeletedBackupVaultResource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deleted backup vault
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/deletedVaults/{deletedVaultName}. </description></item><item><term> Operation Id. </term><description> DeletedBackupVaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deletedVaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deletedVaultName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataProtectionDeletedBackupVaultAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt; GetDataProtectionDeletedBackupVaultAsync (Azure.Core.AzureLocation location, string deletedVaultName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt; GetDataProtectionDeletedBackupVaultAsync(valuetype Azure.Core.AzureLocation location, string deletedVaultName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVaultAsync(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataProtectionDeletedBackupVaultAsync (location As AzureLocation, deletedVaultName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DataProtectionDeletedBackupVaultResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetDataProtectionDeletedBackupVaultAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt;&#xA;override this.GetDataProtectionDeletedBackupVaultAsync : Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt;" Usage="mockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVaultAsync (location, deletedVaultName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deletedVaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <param name="deletedVaultName"> The name of the DeletedBackupVaultResource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deleted backup vault
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/deletedVaults/{deletedVaultName}. </description></item><item><term> Operation Id. </term><description> DeletedBackupVaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="deletedVaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="deletedVaultName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataProtectionDeletedBackupVaults">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection GetDataProtectionDeletedBackupVaults (Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection GetDataProtectionDeletedBackupVaults(valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVaults(Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataProtectionDeletedBackupVaults (location As AzureLocation) As DataProtectionDeletedBackupVaultCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetDataProtectionDeletedBackupVaults : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection&#xA;override this.GetDataProtectionDeletedBackupVaults : Azure.Core.AzureLocation -&gt; Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection" Usage="mockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVaults location" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="location"> The location for the resource. </param>
+        <summary> Gets a collection of DataProtectionDeletedBackupVaults in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of DataProtectionDeletedBackupVaults and their operations over a DataProtectionDeletedBackupVaultResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +261,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource&gt;</ReturnType>
@@ -180,7 +273,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns ResourceGuards collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceGuards</description></item><item><term>Operation Id</term><description>ResourceGuards_GetResourcesInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceGuards. </description></item><item><term> Operation Id. </term><description> ResourceGuardResources_GetResourcesInSubscription. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +288,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource&gt;</ReturnType>
@@ -207,8 +300,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns ResourceGuards collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceGuards</description></item><item><term>Operation Id</term><description>ResourceGuards_GetResourcesInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceGuards. </description></item><item><term> Operation Id. </term><description> ResourceGuardResources_GetResourcesInSubscription. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

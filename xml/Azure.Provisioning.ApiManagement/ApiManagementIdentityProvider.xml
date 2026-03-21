@@ -1,0 +1,446 @@
+<Type Name="ApiManagementIdentityProvider" FullName="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider">
+  <TypeSignature Language="C#" Value="public class ApiManagementIdentityProvider : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApiManagementIdentityProvider extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApiManagementIdentityProvider&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type ApiManagementIdentityProvider = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ApiManagementIdentityProvider.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApiManagementIdentityProvider (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider : string * string -&gt; Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider" Usage="new Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ApiManagementIdentityProvider
+            resource.  This can be used to refer to the resource in expressions,
+            but is not the Azure name of the resource.  This value can contain
+            letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ApiManagementIdentityProvider.</param>
+        <summary>
+            Creates a new ApiManagementIdentityProvider.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedTenants">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; AllowedTenants { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; AllowedTenants" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.AllowedTenants" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowedTenants As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.AllowedTenants : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.AllowedTenants" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of Allowed Tenants when configuring Azure Active Directory login.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authority">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Authority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Authority" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Authority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authority As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Authority : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Authority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            OpenID Connect discovery endpoint hostname for AAD or AAD B2C.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientId">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ClientId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ClientId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ClientId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientId As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ClientId : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ClientId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Client Id of the Application in the external Identity Provider. It is
+            App ID for Facebook login, Client ID for Google login, App ID for
+            Microsoft.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientLibrary">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ClientLibrary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ClientLibrary" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ClientLibrary" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientLibrary As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ClientLibrary : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ClientLibrary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The client library to be used in the developer portal. Only applies to
+            AAD and AAD B2C Identity Provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientSecret">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ClientSecret { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ClientSecret" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ClientSecret" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientSecret As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ClientSecret : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ClientSecret" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Client secret of the Application in external Identity Provider, used to
+            authenticate login request. For example, it is App Secret for Facebook
+            login, API Key for Google login, Public Key for Microsoft. This
+            property will not be filled on 'GET' operations! Use
+            '/listSecrets' POST request to get the value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="apiManagementIdentityProvider.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            ApiManagementIdentityProvider.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As ApiManagementIdentityProvider" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ApiManagementIdentityProvider
+            resource.  This can be used to refer to the resource in expressions,
+            but is not the Azure name of the resource.  This value can contain
+            letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ApiManagementIdentityProvider.</param>
+        <summary>
+            Creates a reference to an existing ApiManagementIdentityProvider.
+            </summary>
+        <returns>The existing ApiManagementIdentityProvider resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityProviderType">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.IdentityProviderType&gt; IdentityProviderType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.IdentityProviderType&gt; IdentityProviderType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.IdentityProviderType" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdentityProviderType As BicepValue(Of IdentityProviderType)" />
+      <MemberSignature Language="F#" Value="member this.IdentityProviderType : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.IdentityProviderType&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.IdentityProviderType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.IdentityProviderType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identity Provider Type identifier.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.ApiManagementService? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.ApiManagementService Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As ApiManagementService" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.ApiManagement.ApiManagementService with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ApiManagementService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent ApiManagementService.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordResetPolicyName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; PasswordResetPolicyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; PasswordResetPolicyName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.PasswordResetPolicyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PasswordResetPolicyName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PasswordResetPolicyName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.PasswordResetPolicyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Password Reset Policy Name. Only applies to AAD B2C Identity Provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileEditingPolicyName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ProfileEditingPolicyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ProfileEditingPolicyName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ProfileEditingPolicyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProfileEditingPolicyName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ProfileEditingPolicyName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.ProfileEditingPolicyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Profile Editing Policy Name. Only applies to AAD B2C Identity Provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInPolicyName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; SignInPolicyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; SignInPolicyName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SignInPolicyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignInPolicyName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SignInPolicyName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SignInPolicyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Signin Policy Name. Only applies to AAD B2C Identity Provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInTenant">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; SignInTenant { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; SignInTenant" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SignInTenant" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignInTenant As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SignInTenant : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SignInTenant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The TenantId to use instead of Common when logging into Active
+            Directory.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignUpPolicyName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; SignUpPolicyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; SignUpPolicyName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SignUpPolicyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignUpPolicyName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SignUpPolicyName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SignUpPolicyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Signup Policy Name. Only applies to AAD B2C Identity Provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.ApiManagement.ApiManagementIdentityProvider.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

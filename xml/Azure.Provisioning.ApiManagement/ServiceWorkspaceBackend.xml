@@ -1,0 +1,460 @@
+<Type Name="ServiceWorkspaceBackend" FullName="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend">
+  <TypeSignature Language="C#" Value="public class ServiceWorkspaceBackend : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceWorkspaceBackend extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceWorkspaceBackend&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type ServiceWorkspaceBackend = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ServiceWorkspaceBackend.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceWorkspaceBackend (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend : string * string -&gt; Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend" Usage="new Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ServiceWorkspaceBackend resource.
+            This can be used to refer to the resource in expressions, but is not
+            the Azure name of the resource.  This value can contain letters,
+            numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ServiceWorkspaceBackend.</param>
+        <summary>
+            Creates a new ServiceWorkspaceBackend.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackendServiceFabricCluster">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.BackendServiceFabricClusterProperties BackendServiceFabricCluster { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.BackendServiceFabricClusterProperties BackendServiceFabricCluster" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.BackendServiceFabricCluster" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackendServiceFabricCluster As BackendServiceFabricClusterProperties" />
+      <MemberSignature Language="F#" Value="member this.BackendServiceFabricCluster : Azure.Provisioning.ApiManagement.BackendServiceFabricClusterProperties with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.BackendServiceFabricCluster" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.BackendServiceFabricClusterProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Backend Service Fabric Cluster Properties.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CircuitBreakerRules">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.CircuitBreakerRule&gt; CircuitBreakerRules { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.ApiManagement.CircuitBreakerRule&gt; CircuitBreakerRules" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.CircuitBreakerRules" />
+      <MemberSignature Language="VB.NET" Value="Public Property CircuitBreakerRules As BicepList(Of CircuitBreakerRule)" />
+      <MemberSignature Language="F#" Value="member this.CircuitBreakerRules : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.CircuitBreakerRule&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.CircuitBreakerRules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.CircuitBreakerRule&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The rules for tripping the backend.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.BackendCredentialsContract Credentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.BackendCredentialsContract Credentials" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property Credentials As BackendCredentialsContract" />
+      <MemberSignature Language="F#" Value="member this.Credentials : Azure.Provisioning.ApiManagement.BackendCredentialsContract with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.BackendCredentialsContract</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Backend Credentials Contract Properties.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="serviceWorkspaceBackend.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ServiceWorkspaceBackend.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Description" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Description : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Backend Description.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As ServiceWorkspaceBackend" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ServiceWorkspaceBackend resource.
+            This can be used to refer to the resource in expressions, but is not
+            the Azure name of the resource.  This value can contain letters,
+            numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ServiceWorkspaceBackend.</param>
+        <summary>
+            Creates a reference to an existing ServiceWorkspaceBackend.
+            </summary>
+        <returns>The existing ServiceWorkspaceBackend resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.WorkspaceContract? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.WorkspaceContract Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As WorkspaceContract" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.ApiManagement.WorkspaceContract with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.WorkspaceContract</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent WorkspaceContract.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PoolServices">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.BackendPoolItem&gt; PoolServices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.ApiManagement.BackendPoolItem&gt; PoolServices" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.PoolServices" />
+      <MemberSignature Language="VB.NET" Value="Public Property PoolServices As BicepList(Of BackendPoolItem)" />
+      <MemberSignature Language="F#" Value="member this.PoolServices : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.BackendPoolItem&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.PoolServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.BackendPoolItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The list of backend entities belonging to a pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocol">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.BackendProtocol&gt; Protocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.BackendProtocol&gt; Protocol" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Protocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property Protocol As BicepValue(Of BackendProtocol)" />
+      <MemberSignature Language="F#" Value="member this.Protocol : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.BackendProtocol&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Protocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.BackendProtocol&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Backend communication protocol.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Proxy">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.BackendProxyContract Proxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.BackendProxyContract Proxy" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Proxy" />
+      <MemberSignature Language="VB.NET" Value="Public Property Proxy As BackendProxyContract" />
+      <MemberSignature Language="F#" Value="member this.Proxy : Azure.Provisioning.ApiManagement.BackendProxyContract with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Proxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.BackendProxyContract</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Backend gateway Contract Properties.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; ResourceUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; ResourceUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.ResourceUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.ResourceUri : Azure.Provisioning.BicepValue&lt;Uri&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.ResourceUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Management Uri of the Resource in External System. This URL can be the
+            Arm Resource Id of Logic Apps, Function Apps or API Apps.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Title" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Title : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Backend Title.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tls">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.BackendTlsProperties Tls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.BackendTlsProperties Tls" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Tls" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tls As BackendTlsProperties" />
+      <MemberSignature Language="F#" Value="member this.Tls : Azure.Provisioning.ApiManagement.BackendTlsProperties with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Tls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.BackendTlsProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Backend TLS Properties.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypePropertiesType">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.BackendType&gt; TypePropertiesType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.BackendType&gt; TypePropertiesType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.TypePropertiesType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypePropertiesType As BicepValue(Of BackendType)" />
+      <MemberSignature Language="F#" Value="member this.TypePropertiesType : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.BackendType&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.TypePropertiesType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.BackendType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Type of the backend. A backend can be either Single or Pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; Uri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; Uri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public Property Uri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.Uri : Azure.Provisioning.BicepValue&lt;Uri&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceBackend.Uri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Runtime Url of the Backend.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

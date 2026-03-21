@@ -1,0 +1,433 @@
+<Type Name="MockableResourcesPolicyArmClient" FullName="Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient">
+  <TypeSignature Language="C#" Value="public class MockableResourcesPolicyArmClient : Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MockableResourcesPolicyArmClient extends Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class MockableResourcesPolicyArmClient&#xA;Inherits ArmResource" />
+  <TypeSignature Language="F#" Value="type MockableResourcesPolicyArmClient = class&#xA;    inherit ArmResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.ArmClient" />. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MockableResourcesPolicyArmClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of MockableResourcesPolicyArmClient for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataPolicyManifestResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.DataPolicyManifestResource GetDataPolicyManifestResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.DataPolicyManifestResource GetDataPolicyManifestResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetDataPolicyManifestResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataPolicyManifestResource (id As ResourceIdentifier) As DataPolicyManifestResource" />
+      <MemberSignature Language="F#" Value="abstract member GetDataPolicyManifestResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.DataPolicyManifestResource&#xA;override this.GetDataPolicyManifestResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.DataPolicyManifestResource" Usage="mockableResourcesPolicyArmClient.GetDataPolicyManifestResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.DataPolicyManifestResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.DataPolicyManifestResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.DataPolicyManifestResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyAssignment">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt; GetPolicyAssignment (Azure.Core.ResourceIdentifier scope, string policyAssignmentName, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt; GetPolicyAssignment(class Azure.Core.ResourceIdentifier scope, string policyAssignmentName, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyAssignment(Azure.Core.ResourceIdentifier,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyAssignment (scope As ResourceIdentifier, policyAssignmentName As String, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PolicyAssignmentResource)" />
+      <MemberSignature Language="F#" Value="override this.GetPolicyAssignment : Azure.Core.ResourceIdentifier * string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;" Usage="mockableResourcesPolicyArmClient.GetPolicyAssignment (scope, policyAssignmentName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="policyAssignmentName" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="policyAssignmentName"> The name of the policy assignment to get. </param>
+        <param name="expand"> Comma-separated list of additional properties to be included in the response. Supported values are 'LatestDefinitionVersion, EffectiveDefinitionVersion'. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> This operation retrieves a single policy assignment, given its name and the scope it was created at. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyAssignmentName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyAssignmentName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyAssignmentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;&gt; GetPolicyAssignmentAsync (Azure.Core.ResourceIdentifier scope, string policyAssignmentName, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;&gt; GetPolicyAssignmentAsync(class Azure.Core.ResourceIdentifier scope, string policyAssignmentName, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyAssignmentAsync(Azure.Core.ResourceIdentifier,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyAssignmentAsync (scope As ResourceIdentifier, policyAssignmentName As String, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PolicyAssignmentResource))" />
+      <MemberSignature Language="F#" Value="override this.GetPolicyAssignmentAsync : Azure.Core.ResourceIdentifier * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;&gt;" Usage="mockableResourcesPolicyArmClient.GetPolicyAssignmentAsync (scope, policyAssignmentName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="policyAssignmentName" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="policyAssignmentName"> The name of the policy assignment to get. </param>
+        <param name="expand"> Comma-separated list of additional properties to be included in the response. Supported values are 'LatestDefinitionVersion, EffectiveDefinitionVersion'. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> This operation retrieves a single policy assignment, given its name and the scope it was created at. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyAssignmentName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyAssignmentName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyAssignmentResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource GetPolicyAssignmentResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource GetPolicyAssignmentResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyAssignmentResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyAssignmentResource (id As ResourceIdentifier) As PolicyAssignmentResource" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyAssignmentResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&#xA;override this.GetPolicyAssignmentResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource" Usage="mockableResourcesPolicyArmClient.GetPolicyAssignmentResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyAssignments">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicyAssignmentCollection GetPolicyAssignments (Azure.Core.ResourceIdentifier scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicyAssignmentCollection GetPolicyAssignments(class Azure.Core.ResourceIdentifier scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyAssignments(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyAssignments (scope As ResourceIdentifier) As PolicyAssignmentCollection" />
+      <MemberSignature Language="F#" Value="override this.GetPolicyAssignments : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyAssignmentCollection" Usage="mockableResourcesPolicyArmClient.GetPolicyAssignments scope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicyAssignmentCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <summary> Gets a collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyAssignmentCollection" /> objects within the specified scope. </summary>
+        <returns> Returns a collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource" /> objects. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyDefinitionResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource GetPolicyDefinitionResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource GetPolicyDefinitionResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyDefinitionResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyDefinitionResource (id As ResourceIdentifier) As PolicyDefinitionResource" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyDefinitionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&#xA;override this.GetPolicyDefinitionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource" Usage="mockableResourcesPolicyArmClient.GetPolicyDefinitionResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyDefinitionVersionResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicyDefinitionVersionResource GetPolicyDefinitionVersionResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicyDefinitionVersionResource GetPolicyDefinitionVersionResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyDefinitionVersionResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyDefinitionVersionResource (id As ResourceIdentifier) As PolicyDefinitionVersionResource" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyDefinitionVersionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyDefinitionVersionResource&#xA;override this.GetPolicyDefinitionVersionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyDefinitionVersionResource" Usage="mockableResourcesPolicyArmClient.GetPolicyDefinitionVersionResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicyDefinitionVersionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyDefinitionVersionResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyDefinitionVersionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyExemption">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt; GetPolicyExemption (Azure.Core.ResourceIdentifier scope, string policyExemptionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt; GetPolicyExemption(class Azure.Core.ResourceIdentifier scope, string policyExemptionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyExemption(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyExemption (scope As ResourceIdentifier, policyExemptionName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PolicyExemptionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyExemption : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&#xA;override this.GetPolicyExemption : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;" Usage="mockableResourcesPolicyArmClient.GetPolicyExemption (scope, policyExemptionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="policyExemptionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="policyExemptionName"> The name of the policy exemption to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> This operation retrieves a single policy exemption, given its name and the scope it was created at. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyExemptionName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyExemptionName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyExemptionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&gt; GetPolicyExemptionAsync (Azure.Core.ResourceIdentifier scope, string policyExemptionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&gt; GetPolicyExemptionAsync(class Azure.Core.ResourceIdentifier scope, string policyExemptionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyExemptionAsync(Azure.Core.ResourceIdentifier,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyExemptionAsync (scope As ResourceIdentifier, policyExemptionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PolicyExemptionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyExemptionAsync : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&gt;&#xA;override this.GetPolicyExemptionAsync : Azure.Core.ResourceIdentifier * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&gt;" Usage="mockableResourcesPolicyArmClient.GetPolicyExemptionAsync (scope, policyExemptionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="policyExemptionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <param name="policyExemptionName"> The name of the policy exemption to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary> This operation retrieves a single policy exemption, given its name and the scope it was created at. </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyExemptionName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyExemptionName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyExemptionResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicyExemptionResource GetPolicyExemptionResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicyExemptionResource GetPolicyExemptionResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyExemptionResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyExemptionResource (id As ResourceIdentifier) As PolicyExemptionResource" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyExemptionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&#xA;override this.GetPolicyExemptionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyExemptionResource" Usage="mockableResourcesPolicyArmClient.GetPolicyExemptionResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicyExemptionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyExemptionResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyExemptionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyExemptions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicyExemptionCollection GetPolicyExemptions (Azure.Core.ResourceIdentifier scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicyExemptionCollection GetPolicyExemptions(class Azure.Core.ResourceIdentifier scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicyExemptions(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyExemptions (scope As ResourceIdentifier) As PolicyExemptionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyExemptions : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyExemptionCollection&#xA;override this.GetPolicyExemptions : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicyExemptionCollection" Usage="mockableResourcesPolicyArmClient.GetPolicyExemptions scope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicyExemptionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="scope"> The scope of the resource collection to get. </param>
+        <summary> Gets a collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyExemptionCollection" /> objects within the specified scope. </summary>
+        <returns> Returns a collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyExemptionResource" /> objects. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicySetDefinitionResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource GetPolicySetDefinitionResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource GetPolicySetDefinitionResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicySetDefinitionResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicySetDefinitionResource (id As ResourceIdentifier) As PolicySetDefinitionResource" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicySetDefinitionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&#xA;override this.GetPolicySetDefinitionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource" Usage="mockableResourcesPolicyArmClient.GetPolicySetDefinitionResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicySetDefinitionVersionResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicySetDefinitionVersionResource GetPolicySetDefinitionVersionResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicySetDefinitionVersionResource GetPolicySetDefinitionVersionResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetPolicySetDefinitionVersionResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicySetDefinitionVersionResource (id As ResourceIdentifier) As PolicySetDefinitionVersionResource" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicySetDefinitionVersionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicySetDefinitionVersionResource&#xA;override this.GetPolicySetDefinitionVersionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.PolicySetDefinitionVersionResource" Usage="mockableResourcesPolicyArmClient.GetPolicySetDefinitionVersionResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicySetDefinitionVersionResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicySetDefinitionVersionResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.PolicySetDefinitionVersionResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariableResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.VariableResource GetVariableResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.VariableResource GetVariableResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetVariableResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVariableResource (id As ResourceIdentifier) As VariableResource" />
+      <MemberSignature Language="F#" Value="abstract member GetVariableResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.VariableResource&#xA;override this.GetVariableResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.VariableResource" Usage="mockableResourcesPolicyArmClient.GetVariableResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.VariableResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.VariableResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.VariableResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariableValueResource">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.VariableValueResource GetVariableValueResource (Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.VariableValueResource GetVariableValueResource(class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicyArmClient.GetVariableValueResource(Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVariableValueResource (id As ResourceIdentifier) As VariableValueResource" />
+      <MemberSignature Language="F#" Value="abstract member GetVariableValueResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.VariableValueResource&#xA;override this.GetVariableValueResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.Policy.VariableValueResource" Usage="mockableResourcesPolicyArmClient.GetVariableValueResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.VariableValueResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary> Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.Policy.VariableValueResource" /> along with the instance operations that can be performed on it but with no data. </summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.Policy.VariableValueResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

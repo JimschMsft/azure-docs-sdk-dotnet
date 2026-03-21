@@ -14,13 +14,14 @@
     <AssemblyVersion>1.3.1.0</AssemblyVersion>
     <AssemblyVersion>1.3.2.0</AssemblyVersion>
     <AssemblyVersion>1.3.3.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary> A class to add extension methods to SubscriptionResource. </summary>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,11 +33,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.KeyVault.Mocking.MockableKeyVaultSubscriptionResource" /> class for mocking. </summary>
+        <summary> Initializes a new instance of MockableKeyVaultSubscriptionResource for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,7 +50,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityResult&gt;</ReturnType>
@@ -63,7 +64,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks that the vault name is valid and is not already in use.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkNameAvailability</description></item><item><term>Operation Id</term><description>Vaults_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.KeyVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkNameAvailability. </description></item><item><term> Operation Id. </term><description> VaultsOperationGroup_CheckNameAvailability. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -79,7 +80,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityResult&gt;&gt;</ReturnType>
@@ -93,7 +94,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks that the vault name is valid and is not already in use.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkNameAvailability</description></item><item><term>Operation Id</term><description>Vaults_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.KeyVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkNameAvailability. </description></item><item><term> Operation Id. </term><description> VaultsOperationGroup_CheckNameAvailability. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -109,7 +110,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityResult&gt;</ReturnType>
@@ -123,7 +124,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks that the managed hsm name is valid and is not already in use.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkMhsmNameAvailability</description></item><item><term>Operation Id</term><description>ManagedHsms_CheckManagedHsmNameAvailability</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkMhsmNameAvailability. </description></item><item><term> Operation Id. </term><description> ManagedHsmsOperationGroup_CheckMhsmNameAvailability. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -139,7 +140,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityResult&gt;&gt;</ReturnType>
@@ -153,7 +154,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks that the managed hsm name is valid and is not already in use.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkMhsmNameAvailability</description></item><item><term>Operation Id</term><description>ManagedHsms_CheckManagedHsmNameAvailability</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/checkMhsmNameAvailability. </description></item><item><term> Operation Id. </term><description> ManagedHsmsOperationGroup_CheckMhsmNameAvailability. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -169,7 +170,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;</ReturnType>
@@ -185,7 +186,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the deleted Azure key vault.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedVaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_GetDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.DeletedKeyVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> DeletedVaults_GetDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -203,7 +204,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;&gt;</ReturnType>
@@ -219,7 +220,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the deleted Azure key vault.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedVaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_GetDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.DeletedKeyVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> DeletedVaults_GetDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -237,15 +238,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedKeyVaultCollection</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of DeletedKeyVaultResources in the SubscriptionResource. </summary>
-        <returns> An object representing collection of DeletedKeyVaultResources and their operations over a DeletedKeyVaultResource. </returns>
+        <summary> Gets a collection of DeletedKeyVaults in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of DeletedKeyVaults and their operations over a DeletedKeyVaultResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,7 +259,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;</ReturnType>
@@ -270,7 +271,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets information about the deleted vaults in a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedVaults</description></item><item><term>Operation Id</term><description>Vaults_ListDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedVaults. </description></item><item><term> Operation Id. </term><description> VaultsOperationGroup_ListDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedKeyVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,7 +285,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.DeletedKeyVaultResource&gt;</ReturnType>
@@ -296,8 +297,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets information about the deleted vaults in a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedVaults</description></item><item><term>Operation Id</term><description>Vaults_ListDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedKeyVaultResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedVaults. </description></item><item><term> Operation Id. </term><description> VaultsOperationGroup_ListDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedKeyVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +311,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;</ReturnType>
@@ -326,7 +327,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the specified deleted managed HSM.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}</description></item><item><term>Operation Id</term><description>ManagedHsms_GetDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}. </description></item><item><term> Operation Id. </term><description> DeletedManagedHsms_GetDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -344,7 +345,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;&gt;</ReturnType>
@@ -360,7 +361,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets the specified deleted managed HSM.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}</description></item><item><term>Operation Id</term><description>ManagedHsms_GetDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/locations/{location}/deletedManagedHSMs/{name}. </description></item><item><term> Operation Id. </term><description> DeletedManagedHsms_GetDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -378,15 +379,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedManagedHsmCollection</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of DeletedManagedHsmResources in the SubscriptionResource. </summary>
-        <returns> An object representing collection of DeletedManagedHsmResources and their operations over a DeletedManagedHsmResource. </returns>
+        <summary> Gets a collection of DeletedManagedHsms in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of DeletedManagedHsms and their operations over a DeletedManagedHsmResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,7 +400,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;</ReturnType>
@@ -411,7 +412,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             The List operation gets information about the deleted managed HSMs associated with the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedManagedHSMs</description></item><item><term>Operation Id</term><description>ManagedHsms_ListDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedManagedHSMs. </description></item><item><term> Operation Id. </term><description> ManagedHsmsOperationGroup_ListDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -425,7 +426,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.DeletedManagedHsmResource&gt;</ReturnType>
@@ -437,8 +438,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             The List operation gets information about the deleted managed HSMs associated with the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedManagedHSMs</description></item><item><term>Operation Id</term><description>ManagedHsms_ListDeleted</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/deletedManagedHSMs. </description></item><item><term> Operation Id. </term><description> ManagedHsmsOperationGroup_ListDeleted. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,7 +452,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.KeyVaultResource&gt;</ReturnType>
@@ -465,7 +466,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             The List operation gets information about the vaults associated with the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/vaults</description></item><item><term>Operation Id</term><description>Vaults_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.KeyVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/vaults. </description></item><item><term> Operation Id. </term><description> Vaults_ListBySubscription. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.KeyVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -479,7 +480,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.KeyVaultResource&gt;</ReturnType>
@@ -493,8 +494,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             The List operation gets information about the vaults associated with the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/vaults</description></item><item><term>Operation Id</term><description>Vaults_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.KeyVaultResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.KeyVaultResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/vaults. </description></item><item><term> Operation Id. </term><description> Vaults_ListBySubscription. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.KeyVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,7 +508,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -521,7 +522,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             The List operation gets information about the managed HSM Pools associated with the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/managedHSMs</description></item><item><term>Operation Id</term><description>ManagedHsms_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/managedHSMs. </description></item><item><term> Operation Id. </term><description> ManagedHsms_ListBySubscription. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -535,7 +536,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.KeyVault.ManagedHsmResource&gt;</ReturnType>
@@ -549,8 +550,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             The List operation gets information about the managed HSM Pools associated with the subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/managedHSMs</description></item><item><term>Operation Id</term><description>ManagedHsms_ListBySubscription</description></item><item><term>Default Api Version</term><description>2025-05-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.KeyVault/managedHSMs. </description></item><item><term> Operation Id. </term><description> ManagedHsms_ListBySubscription. </description></item><item><term> Default Api Version. </term><description> 2026-02-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

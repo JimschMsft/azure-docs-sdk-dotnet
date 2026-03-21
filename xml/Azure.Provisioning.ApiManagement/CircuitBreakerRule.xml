@@ -1,0 +1,151 @@
+<Type Name="CircuitBreakerRule" FullName="Azure.Provisioning.ApiManagement.CircuitBreakerRule">
+  <TypeSignature Language="C#" Value="public class CircuitBreakerRule : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CircuitBreakerRule extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.CircuitBreakerRule" />
+  <TypeSignature Language="VB.NET" Value="Public Class CircuitBreakerRule&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type CircuitBreakerRule = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Rule configuration to trip the backend.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CircuitBreakerRule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.CircuitBreakerRule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new CircuitBreakerRule.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptRetryAfter">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; AcceptRetryAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; AcceptRetryAfter" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerRule.AcceptRetryAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptRetryAfter As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AcceptRetryAfter : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerRule.AcceptRetryAfter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            flag to accept Retry-After header from the backend.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.CircuitBreakerRule.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="circuitBreakerRule.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of CircuitBreakerRule.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailureCondition">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition FailureCondition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition FailureCondition" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerRule.FailureCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property FailureCondition As CircuitBreakerFailureCondition" />
+      <MemberSignature Language="F#" Value="member this.FailureCondition : Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerRule.FailureCondition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The conditions for tripping the circuit breaker.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerRule.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerRule.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The rule name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TripDuration">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;TimeSpan&gt; TripDuration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype System.TimeSpan&gt; TripDuration" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerRule.TripDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Property TripDuration As BicepValue(Of TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.TripDuration : Azure.Provisioning.BicepValue&lt;TimeSpan&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerRule.TripDuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The duration for which the circuit will be tripped.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

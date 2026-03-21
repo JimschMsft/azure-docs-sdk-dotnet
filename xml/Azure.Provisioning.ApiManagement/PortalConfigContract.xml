@@ -1,0 +1,327 @@
+<Type Name="PortalConfigContract" FullName="Azure.Provisioning.ApiManagement.PortalConfigContract">
+  <TypeSignature Language="C#" Value="public class PortalConfigContract : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PortalConfigContract extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.PortalConfigContract" />
+  <TypeSignature Language="VB.NET" Value="Public Class PortalConfigContract&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type PortalConfigContract = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            PortalConfigContract.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PortalConfigContract (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.PortalConfigContract.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.ApiManagement.PortalConfigContract : string * string -&gt; Azure.Provisioning.ApiManagement.PortalConfigContract" Usage="new Azure.Provisioning.ApiManagement.PortalConfigContract (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the PortalConfigContract resource.
+            This can be used to refer to the resource in expressions, but is not
+            the Azure name of the resource.  This value can contain letters,
+            numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the PortalConfigContract.</param>
+        <summary>
+            Creates a new PortalConfigContract.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorsAllowedOrigins">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; CorsAllowedOrigins { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; CorsAllowedOrigins" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.CorsAllowedOrigins" />
+      <MemberSignature Language="VB.NET" Value="Public Property CorsAllowedOrigins As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.CorsAllowedOrigins : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.CorsAllowedOrigins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Allowed origins, e.g. `https://trusted.com`.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Csp">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.PortalConfigCspProperties Csp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.PortalConfigCspProperties Csp" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.Csp" />
+      <MemberSignature Language="VB.NET" Value="Public Property Csp As PortalConfigCspProperties" />
+      <MemberSignature Language="F#" Value="member this.Csp : Azure.Provisioning.ApiManagement.PortalConfigCspProperties with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.Csp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.PortalConfigCspProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The developer portal Content Security Policy (CSP) settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.PortalConfigContract.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="portalConfigContract.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of PortalConfigContract.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delegation">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.PortalConfigDelegationProperties Delegation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.PortalConfigDelegationProperties Delegation" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.Delegation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delegation As PortalConfigDelegationProperties" />
+      <MemberSignature Language="F#" Value="member this.Delegation : Azure.Provisioning.ApiManagement.PortalConfigDelegationProperties with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.Delegation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.PortalConfigDelegationProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The developer portal delegation settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableBasicAuth">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; EnableBasicAuth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; EnableBasicAuth" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.EnableBasicAuth" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableBasicAuth As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableBasicAuth : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.EnableBasicAuth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enable or disable Basic authentication method.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.ApiManagement.PortalConfigContract FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.ApiManagement.PortalConfigContract FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.PortalConfigContract.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As PortalConfigContract" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.ApiManagement.PortalConfigContract" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.PortalConfigContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the PortalConfigContract resource.
+            This can be used to refer to the resource in expressions, but is not
+            the Azure name of the resource.  This value can contain letters,
+            numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the PortalConfigContract.</param>
+        <summary>
+            Creates a reference to an existing PortalConfigContract.
+            </summary>
+        <returns>The existing PortalConfigContract resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.ApiManagementService? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.ApiManagementService Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As ApiManagementService" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.ApiManagement.ApiManagementService with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ApiManagementService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent ApiManagementService.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Require">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; Require { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; Require" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.Require" />
+      <MemberSignature Language="VB.NET" Value="Public Property Require As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Require : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.Require" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Redirect anonymous users to the sign-in page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignupTermsOfService">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.PortalConfigTermsOfServiceProperties SignupTermsOfService { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.PortalConfigTermsOfServiceProperties SignupTermsOfService" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.SignupTermsOfService" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignupTermsOfService As PortalConfigTermsOfServiceProperties" />
+      <MemberSignature Language="F#" Value="member this.SignupTermsOfService : Azure.Provisioning.ApiManagement.PortalConfigTermsOfServiceProperties with get, set" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.SignupTermsOfService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.PortalConfigTermsOfServiceProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Terms of service settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.PortalConfigContract.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.ApiManagement.PortalConfigContract.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

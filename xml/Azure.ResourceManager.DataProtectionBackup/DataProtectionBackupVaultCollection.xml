@@ -16,6 +16,7 @@
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
     <AssemblyVersion>1.7.0.0</AssemblyVersion>
+    <AssemblyVersion>1.7.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmCollection</BaseTypeName>
@@ -49,11 +50,11 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultCollection" /> class for mocking. </summary>
+        <summary> Initializes a new instance of DataProtectionBackupVaultCollection for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +68,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,17 +103,25 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DataProtectionBackupVaultResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, xMsAuthorizationAuxiliary As String, cancellationToken As CancellationToken) As ArmOperation(Of DataProtectionBackupVaultResource)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;" Usage="dataProtectionBackupVaultCollection.CreateOrUpdate (waitUntil, vaultName, data, xMsAuthorizationAuxiliary, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DataProtectionBackupVaultResource)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
       </ReturnValue>
@@ -131,14 +140,55 @@
         <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Creates or updates a BackupVault resource belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            Backward compatibility overload with single xMsAuthorizationAuxiliary parameter.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary = default, string xMsDeletedVaultId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary, string xMsDeletedVaultId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional xMsDeletedVaultId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of DataProtectionBackupVaultResource)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;" Usage="dataProtectionBackupVaultCollection.CreateOrUpdate (waitUntil, vaultName, data, xMsAuthorizationAuxiliary, xMsDeletedVaultId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="vaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="data" Type="Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="xMsAuthorizationAuxiliary" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="xMsDeletedVaultId" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="vaultName"> The name of the BackupVaultResource. </param>
+        <param name="data"> Request body for operation. </param>
+        <param name="xMsAuthorizationAuxiliary" />
+        <param name="xMsDeletedVaultId"> The ID of the deleted backup vault to restore from during undelete flow. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates or updates a BackupVault resource belonging to a resource group.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
@@ -151,7 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -186,17 +236,25 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DataProtectionBackupVaultResource))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, xMsAuthorizationAuxiliary As String, cancellationToken As CancellationToken) As Task(Of ArmOperation(Of DataProtectionBackupVaultResource))" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;" Usage="dataProtectionBackupVaultCollection.CreateOrUpdateAsync (waitUntil, vaultName, data, xMsAuthorizationAuxiliary, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DataProtectionBackupVaultResource))" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -215,14 +273,55 @@
         <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Creates or updates a BackupVault resource belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            Backward compatibility overload with single xMsAuthorizationAuxiliary parameter.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary = default, string xMsDeletedVaultId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData data, string xMsAuthorizationAuxiliary, string xMsDeletedVaultId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As DataProtectionBackupVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional xMsDeletedVaultId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of DataProtectionBackupVaultResource))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;" Usage="dataProtectionBackupVaultCollection.CreateOrUpdateAsync (waitUntil, vaultName, data, xMsAuthorizationAuxiliary, xMsDeletedVaultId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="vaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="data" Type="Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultData" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="xMsAuthorizationAuxiliary" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="xMsDeletedVaultId" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="vaultName"> The name of the BackupVaultResource. </param>
+        <param name="data"> Request body for operation. </param>
+        <param name="xMsAuthorizationAuxiliary" />
+        <param name="xMsDeletedVaultId"> The ID of the deleted backup vault to restore from during undelete flow. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates or updates a BackupVault resource belonging to a resource group.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -235,7 +334,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;System.Boolean&gt;</ReturnType>
@@ -249,13 +348,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExistsAsync">
@@ -268,7 +367,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -282,13 +381,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -301,7 +400,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -315,13 +414,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a resource belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -334,7 +433,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -346,7 +445,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns resource collection belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults</description></item><item><term>Operation Id</term><description>BackupVaults_GetInResourceGroup</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults. </description></item><item><term> Operation Id. </term><description> BackupVaultOperationResults_GetInResourceGroup. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -361,7 +460,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -373,8 +472,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns resource collection belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults</description></item><item><term>Operation Id</term><description>BackupVaults_GetInResourceGroup</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults. </description></item><item><term> Operation Id. </term><description> BackupVaultOperationResults_GetInResourceGroup. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,7 +487,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;</ReturnType>
@@ -402,13 +501,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a resource belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExists">
@@ -421,7 +520,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.NullableResponse&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -435,13 +534,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExistsAsync">
@@ -454,7 +553,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.NullableResponse&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;</ReturnType>
@@ -468,13 +567,13 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> BackupVaultResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;.GetAsyncEnumerator">
@@ -490,7 +589,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IAsyncEnumerator&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -499,7 +598,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> that may be used to cancel the asynchronous iteration.</param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>Returns an enumerator that iterates asynchronously through the collection.</summary>
         <returns>An enumerator that can be used to iterate asynchronously through the collection.</returns>
         <remarks>To be added.</remarks>
@@ -518,7 +617,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -543,7 +642,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>

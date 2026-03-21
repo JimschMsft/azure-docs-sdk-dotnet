@@ -1,0 +1,484 @@
+<Type Name="PolicyExternalEvaluationEndpointInvocationResult" FullName="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult">
+  <TypeSignature Language="C#" Value="public class PolicyExternalEvaluationEndpointInvocationResult : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolicyExternalEvaluationEndpointInvocationResult extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class PolicyExternalEvaluationEndpointInvocationResult&#xA;Implements IJsonModel(Of PolicyExternalEvaluationEndpointInvocationResult), IPersistableModel(Of PolicyExternalEvaluationEndpointInvocationResult)" />
+  <TypeSignature Language="F#" Value="type PolicyExternalEvaluationEndpointInvocationResult = class&#xA;    interface IJsonModel&lt;PolicyExternalEvaluationEndpointInvocationResult&gt;&#xA;    interface IPersistableModel&lt;PolicyExternalEvaluationEndpointInvocationResult&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary> The external evaluation endpoint invocation results. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdditionalInfo">
+      <MemberSignature Language="C#" Value="public BinaryData AdditionalInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData AdditionalInfo" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.AdditionalInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalInfo As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.AdditionalInfo : BinaryData" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.AdditionalInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The endpoint specific metadata.
+            <para> To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para>
+            Examples:
+            <list type="bullet"><item><term> BinaryData.FromObjectAsJson("foo"). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromString("\"foo\""). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromObjectAsJson(new { key = "value" }). </term><description> Creates a payload of { "key": "value" }. </description></item><item><term> BinaryData.FromString("{\"key\": \"value\"}"). </term><description> Creates a payload of { "key": "value" }. </description></item></list></para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Claims">
+      <MemberSignature Language="C#" Value="public BinaryData Claims { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData Claims" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.Claims" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Claims As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.Claims : BinaryData" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.Claims" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The set of claims that will be attached to the policy token as an attestation for the result of the endpoint invocation.
+            <para> To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para>
+            Examples:
+            <list type="bullet"><item><term> BinaryData.FromObjectAsJson("foo"). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromString("\"foo\""). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromObjectAsJson(new { key = "value" }). </term><description> Creates a payload of { "key": "value" }. </description></item><item><term> BinaryData.FromString("{\"key\": \"value\"}"). </term><description> Creates a payload of { "key": "value" }. </description></item></list></para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointKind">
+      <MemberSignature Language="C#" Value="public string EndpointKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EndpointKind" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.EndpointKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointKind As String" />
+      <MemberSignature Language="F#" Value="member this.EndpointKind : string" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.EndpointKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The external evaluation endpoint kind. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpiresOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? ExpiresOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; ExpiresOn" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.ExpiresOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpiresOn As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.ExpiresOn : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.ExpiresOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The expiration of the results. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult JsonModelCreateCore (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult JsonModelCreateCore(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.JsonModelCreateCore(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function JsonModelCreateCore (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As PolicyExternalEvaluationEndpointInvocationResult" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&#xA;override this.JsonModelCreateCore : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult" Usage="policyExternalEvaluationEndpointInvocationResult.JsonModelCreateCore (reader, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="policyExternalEvaluationEndpointInvocationResult.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The status message with additional details about the invocation result. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelCreateCore">
+      <MemberSignature Language="C#" Value="protected virtual Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult PersistableModelCreateCore (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult PersistableModelCreateCore(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PersistableModelCreateCore(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelCreateCore (data As BinaryData, options As ModelReaderWriterOptions) As PolicyExternalEvaluationEndpointInvocationResult" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&#xA;override this.PersistableModelCreateCore : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult" Usage="policyExternalEvaluationEndpointInvocationResult.PersistableModelCreateCore (data, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistableModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual BinaryData PersistableModelWriteCore (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.BinaryData PersistableModelWriteCore(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PersistableModelWriteCore(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function PersistableModelWriteCore (options As ModelReaderWriterOptions) As BinaryData" />
+      <MemberSignature Language="F#" Value="abstract member PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.PersistableModelWriteCore : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="policyExternalEvaluationEndpointInvocationResult.PersistableModelWriteCore options" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyAction">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Policy.Models.PolicyAction? PolicyAction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Policy.Models.PolicyAction&gt; PolicyAction" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PolicyAction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyAction As Nullable(Of PolicyAction)" />
+      <MemberSignature Language="F#" Value="member this.PolicyAction : Nullable&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyAction&gt;" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PolicyAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The effective outcome of the policy evaluation based on both the policy effect and evaluation result. Possible values are Unknown, Allow, Audit, Deny, Error. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyEvaluationDetails">
+      <MemberSignature Language="C#" Value="public BinaryData PolicyEvaluationDetails { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.BinaryData PolicyEvaluationDetails" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PolicyEvaluationDetails" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyEvaluationDetails As BinaryData" />
+      <MemberSignature Language="F#" Value="member this.PolicyEvaluationDetails : BinaryData" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PolicyEvaluationDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The evaluation details returned by the policy evaluation engine.
+            <para> To assign an object to this property use <see cref="M:System.BinaryData.FromObjectAsJson``1(``0,System.Text.Json.JsonSerializerOptions)" />. </para><para> To assign an already formatted json string to this property use <see cref="M:System.BinaryData.FromString(System.String)" />. </para><para>
+            Examples:
+            <list type="bullet"><item><term> BinaryData.FromObjectAsJson("foo"). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromString("\"foo\""). </term><description> Creates a payload of "foo". </description></item><item><term> BinaryData.FromObjectAsJson(new { key = "value" }). </term><description> Creates a payload of { "key": "value" }. </description></item><item><term> BinaryData.FromString("{\"key\": \"value\"}"). </term><description> Creates a payload of { "key": "value" }. </description></item></list></para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyInfo">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Policy.Models.PolicyLogInfo PolicyInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.Resources.Policy.Models.PolicyLogInfo PolicyInfo" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PolicyInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyInfo As PolicyLogInfo" />
+      <MemberSignature Language="F#" Value="member this.PolicyInfo : Azure.ResourceManager.Resources.Policy.Models.PolicyLogInfo" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.PolicyInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.Models.PolicyLogInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The details of the policy requiring the external endpoint invocation. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEndpointResult? Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEndpointResult&gt; Result" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As Nullable(Of PolicyExternalEndpointResult)" />
+      <MemberSignature Language="F#" Value="member this.Result : Nullable&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEndpointResult&gt;" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEndpointResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The result of the external endpoint. Possible values are Succeeded and Failed. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryAfter">
+      <MemberSignature Language="C#" Value="public DateTimeOffset? RetryAfter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; RetryAfter" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.RetryAfter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RetryAfter As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.RetryAfter : Nullable&lt;DateTimeOffset&gt;" Usage="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.RetryAfter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The date and time after which a failed endpoint invocation can be retried. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult IJsonModel&lt;PolicyExternalEvaluationEndpointInvocationResult&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#Resources#Policy#Models#PolicyExternalEvaluationEndpointInvocationResult&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As PolicyExternalEvaluationEndpointInvocationResult Implements IJsonModel(Of PolicyExternalEvaluationEndpointInvocationResult).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult" Usage="policyExternalEvaluationEndpointInvocationResult.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create (reader, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="reader"> The JSON reader. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;PolicyExternalEvaluationEndpointInvocationResult&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#Resources#Policy#Models#PolicyExternalEvaluationEndpointInvocationResult&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of PolicyExternalEvaluationEndpointInvocationResult).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="policyExternalEvaluationEndpointInvocationResult.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write (writer, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult IPersistableModel&lt;PolicyExternalEvaluationEndpointInvocationResult&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#Resources#Policy#Models#PolicyExternalEvaluationEndpointInvocationResult&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As PolicyExternalEvaluationEndpointInvocationResult Implements IPersistableModel(Of PolicyExternalEvaluationEndpointInvocationResult).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult" Usage="policyExternalEvaluationEndpointInvocationResult.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Create (data, options)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data"> The data to parse. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;PolicyExternalEvaluationEndpointInvocationResult&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#Resources#Policy#Models#PolicyExternalEvaluationEndpointInvocationResult&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of PolicyExternalEvaluationEndpointInvocationResult).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="policyExternalEvaluationEndpointInvocationResult.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.GetFormatFromOptions options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;PolicyExternalEvaluationEndpointInvocationResult&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#Resources#Policy#Models#PolicyExternalEvaluationEndpointInvocationResult&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of PolicyExternalEvaluationEndpointInvocationResult).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="policyExternalEvaluationEndpointInvocationResult.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyExternalEvaluationEndpointInvocationResult&gt;.Write options" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.BinaryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

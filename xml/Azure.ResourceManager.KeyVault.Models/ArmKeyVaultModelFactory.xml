@@ -14,6 +14,7 @@
     <AssemblyVersion>1.3.1.0</AssemblyVersion>
     <AssemblyVersion>1.3.2.0</AssemblyVersion>
     <AssemblyVersion>1.3.3.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,7 +35,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedKeyVaultData</ReturnType>
@@ -47,12 +48,12 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.KeyVault.Models.DeletedKeyVaultProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="properties"> Properties of the vault. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.DeletedKeyVaultData" />. </summary>
+        <summary> Deleted vault information with extended details. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.DeletedKeyVaultData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,7 +68,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.DeletedKeyVaultProperties</ReturnType>
@@ -87,7 +88,7 @@
         <param name="scheduledPurgeOn"> The scheduled purged date. </param>
         <param name="tags"> Tags of the original vault. </param>
         <param name="purgeProtectionEnabled"> Purge protection status of the original vault. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.DeletedKeyVaultProperties" />. </summary>
+        <summary> Properties of the deleted vault. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.DeletedKeyVaultProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.DeletedManagedHsmData</ReturnType>
@@ -115,12 +116,12 @@
         <Parameter Name="properties" Type="Azure.ResourceManager.KeyVault.Models.DeletedManagedHsmProperties" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="properties"> Properties of the deleted managed HSM. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmData" />. </summary>
+        <summary> Concrete proxy resource types can be created by aliasing this type using a specific property type. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.DeletedManagedHsmData" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +136,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.DeletedManagedHsmProperties</ReturnType>
@@ -155,22 +156,88 @@
         <param name="scheduledPurgeOn"> The scheduled purged date. </param>
         <param name="purgeProtectionEnabled"> Purge protection status of the original managed HSM. </param>
         <param name="tags"> Tags of the original managed HSM. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.DeletedManagedHsmProperties" />. </summary>
+        <summary> Properties of the deleted managed HSM. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.DeletedManagedHsmProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IdentityAccessPermissions">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.IdentityAccessPermissions IdentityAccessPermissions (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessKeyPermission&gt; keys = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessSecretPermission&gt; secrets = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessCertificatePermission&gt; certificates = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessStoragePermission&gt; storage = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.IdentityAccessPermissions IdentityAccessPermissions(class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.IdentityAccessKeyPermission&gt; keys, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.IdentityAccessSecretPermission&gt; secrets, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.IdentityAccessCertificatePermission&gt; certificates, class System.Collections.Generic.IEnumerable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.IdentityAccessStoragePermission&gt; storage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.IdentityAccessPermissions(System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.IdentityAccessKeyPermission},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.IdentityAccessSecretPermission},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.IdentityAccessCertificatePermission},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.IdentityAccessStoragePermission})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IdentityAccessPermissions (Optional keys As IEnumerable(Of IdentityAccessKeyPermission) = Nothing, Optional secrets As IEnumerable(Of IdentityAccessSecretPermission) = Nothing, Optional certificates As IEnumerable(Of IdentityAccessCertificatePermission) = Nothing, Optional storage As IEnumerable(Of IdentityAccessStoragePermission) = Nothing) As IdentityAccessPermissions" />
+      <MemberSignature Language="F#" Value="static member IdentityAccessPermissions : seq&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessKeyPermission&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessSecretPermission&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessCertificatePermission&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessStoragePermission&gt; -&gt; Azure.ResourceManager.KeyVault.Models.IdentityAccessPermissions" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.IdentityAccessPermissions (keys, secrets, certificates, storage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.IdentityAccessPermissions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessKeyPermission&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="secrets" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessSecretPermission&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="certificates" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessCertificatePermission&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="storage" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.IdentityAccessStoragePermission&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="keys"> Permissions to keys. </param>
+        <param name="secrets"> Permissions to secrets. </param>
+        <param name="certificates"> Permissions to certificates. </param>
+        <param name="storage"> Permissions to storage accounts. </param>
+        <summary> Permissions the identity has for keys, secrets, certificates and storage. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.IdentityAccessPermissions" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="KeyVaultAccessPolicyParameters">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters KeyVaultAccessPolicyParameters (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters KeyVaultAccessPolicyParameters (Azure.Core.ResourceIdentifier id = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string name = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters KeyVaultAccessPolicyParameters(class Azure.Core.ResourceIdentifier id, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, string name, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultAccessPolicyParameters(Azure.Core.ResourceIdentifier,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.String,System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultAccessPolicyParameters (Optional id As ResourceIdentifier = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional name As String = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional accessPolicies As IEnumerable(Of KeyVaultAccessPolicy) = Nothing) As KeyVaultAccessPolicyParameters" />
+      <MemberSignature Language="F#" Value="static member KeyVaultAccessPolicyParameters : Azure.Core.ResourceIdentifier * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * string * Nullable&lt;Azure.Core.AzureLocation&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultAccessPolicyParameters (id, resourceType, systemData, name, location, accessPolicies)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="accessPolicies" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="name"> The resource name of the access policy. </param>
+        <param name="location"> The resource type of the access policy. </param>
+        <param name="accessPolicies"> An array of 0 to 16 identities that have access to the key vault. All identities in the array must use the same tenant ID as the key vault's tenant ID. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultAccessPolicyParameters">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters KeyVaultAccessPolicyParameters (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters KeyVaultAccessPolicyParameters(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultAccessPolicyParameters(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultAccessPolicyParameters (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional accessPolicies As IEnumerable(Of KeyVaultAccessPolicy) = Nothing) As KeyVaultAccessPolicyParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultAccessPolicyParameters (id As ResourceIdentifier, name As String, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional accessPolicies As IEnumerable(Of KeyVaultAccessPolicy) = Nothing) As KeyVaultAccessPolicyParameters" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member KeyVaultAccessPolicyParameters : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.Core.AzureLocation&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultAccessPolicyParameters (id, name, resourceType, systemData, location, accessPolicies)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters KeyVaultAccessPolicyParameters (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultAccessPolicyParameters (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional accessPolicies As IEnumerable(Of KeyVaultAccessPolicy) = Nothing) As KeyVaultAccessPolicyParameters" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyParameters</ReturnType>
@@ -195,6 +262,30 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="KeyVaultAccessPolicyProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyProperties KeyVaultAccessPolicyProperties (System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyProperties KeyVaultAccessPolicyProperties(class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultAccessPolicyProperties(System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultAccessPolicyProperties (Optional accessPolicies As IEnumerable(Of KeyVaultAccessPolicy) = Nothing) As KeyVaultAccessPolicyProperties" />
+      <MemberSignature Language="F#" Value="static member KeyVaultAccessPolicyProperties : seq&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyProperties" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultAccessPolicyProperties accessPolicies" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accessPolicies" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="accessPolicies"> An array of 0 to 16 identities that have access to the key vault. All identities in the array must use the same tenant ID as the key vault's tenant ID. </param>
+        <summary> Properties of the vault access policy. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicyProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="KeyVaultCreateOrUpdateContent">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultCreateOrUpdateContent KeyVaultCreateOrUpdateContent (Azure.Core.AzureLocation location = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultCreateOrUpdateContent KeyVaultCreateOrUpdateContent(valuetype Azure.Core.AzureLocation location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties) cil managed" />
@@ -204,7 +295,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultCreateOrUpdateContent</ReturnType>
@@ -218,22 +309,60 @@
         <param name="location"> The supported Azure location where the key vault should be created. </param>
         <param name="tags"> The tags that will be assigned to the key vault. </param>
         <param name="properties"> Properties of the vault. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultCreateOrUpdateContent" />. </summary>
+        <summary> Parameters for creating or updating a vault. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultCreateOrUpdateContent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyVaultData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.KeyVaultData KeyVaultData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.KeyVaultData KeyVaultData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.KeyVaultData KeyVaultData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.Core.AzureLocation,Azure.ResourceManager.KeyVault.Models.KeyVaultProperties,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As AzureLocation = Nothing, Optional properties As KeyVaultProperties = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As KeyVaultData" />
+      <MemberSignature Language="F#" Value="static member KeyVaultData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.Core.AzureLocation * Azure.ResourceManager.KeyVault.Models.KeyVaultProperties * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.KeyVault.KeyVaultData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultData (id, name, resourceType, systemData, location, properties, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultProperties" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="properties"> Properties of the vault. </param>
+        <param name="tags"> Tags assigned to the key vault resource. </param>
+        <summary> Resource information with extended details. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.KeyVaultData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.KeyVaultData KeyVaultData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.KeyVaultData KeyVaultData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.KeyVault.Models.KeyVaultProperties)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As KeyVaultProperties = Nothing) As KeyVaultData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), Optional location As AzureLocation = Nothing, Optional properties As KeyVaultProperties = Nothing) As KeyVaultData" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member KeyVaultData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.KeyVault.Models.KeyVaultProperties -&gt; Azure.ResourceManager.KeyVault.KeyVaultData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultData (id, name, resourceType, systemData, tags, location, properties)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.KeyVaultData KeyVaultData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.KeyVaultProperties properties = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As KeyVaultProperties = Nothing) As KeyVaultData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultData</ReturnType>
@@ -269,7 +398,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityContent</ReturnType>
@@ -281,7 +410,7 @@
       <Docs>
         <param name="name"> The vault name. </param>
         <param name="resourceType"> The type of resource, Microsoft.KeyVault/vaults. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityContent" />. </summary>
+        <summary> The parameters used to check the availability of the vault name. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityContent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,7 +425,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityResult</ReturnType>
@@ -310,21 +439,167 @@
         <param name="nameAvailable"> A boolean value that indicates whether the name is available for you to use. If true, the name is available. If false, the name has already been taken or is invalid and cannot be used. </param>
         <param name="reason"> The reason that a vault name could not be used. The Reason element is only returned if NameAvailable is false. </param>
         <param name="message"> An error message explaining the Reason value in more detail. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityResult" />. </summary>
+        <summary> The CheckNameAvailability operation response. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultNameAvailabilityResult" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="KeyVaultNetworkRuleSet">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet KeyVaultNetworkRuleSet (Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleBypassOption? bypass = default, Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleAction? defaultAction = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultIPRule&gt; ipRules = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultVirtualNetworkRule&gt; virtualNetworkRules = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet KeyVaultNetworkRuleSet(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleBypassOption&gt; bypass, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleAction&gt; defaultAction, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.KeyVaultIPRule&gt; ipRules, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.KeyVaultVirtualNetworkRule&gt; virtualNetworkRules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultNetworkRuleSet(System.Nullable{Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleBypassOption},System.Nullable{Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleAction},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.KeyVaultIPRule},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.KeyVaultVirtualNetworkRule})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultNetworkRuleSet (Optional bypass As Nullable(Of KeyVaultNetworkRuleBypassOption) = Nothing, Optional defaultAction As Nullable(Of KeyVaultNetworkRuleAction) = Nothing, Optional ipRules As IEnumerable(Of KeyVaultIPRule) = Nothing, Optional virtualNetworkRules As IEnumerable(Of KeyVaultVirtualNetworkRule) = Nothing) As KeyVaultNetworkRuleSet" />
+      <MemberSignature Language="F#" Value="static member KeyVaultNetworkRuleSet : Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleBypassOption&gt; * Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleAction&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultIPRule&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultVirtualNetworkRule&gt; -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultNetworkRuleSet (bypass, defaultAction, ipRules, virtualNetworkRules)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bypass" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleBypassOption&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="defaultAction" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleAction&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="ipRules" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultIPRule&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="virtualNetworkRules" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultVirtualNetworkRule&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="bypass"> Tells what traffic can bypass network rules. This can be 'AzureServices' or 'None'.  If not specified the default is 'AzureServices'. </param>
+        <param name="defaultAction"> The default action when no rule from ipRules and from virtualNetworkRules match. This is only used after the bypass property has been evaluated. </param>
+        <param name="ipRules"> The list of IP address rules. </param>
+        <param name="virtualNetworkRules"> The list of virtual network rules. </param>
+        <summary> A set of rules governing the network accessibility of a vault. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPatch KeyVaultPatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultPatch KeyVaultPatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPatch(System.Collections.Generic.IDictionary{System.String,System.String},Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional properties As KeyVaultPatchProperties = Nothing) As KeyVaultPatch" />
+      <MemberSignature Language="F#" Value="static member KeyVaultPatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultPatch" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPatch (tags, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The tags that will be assigned to the key vault. </param>
+        <param name="properties"> Properties of the vault. </param>
+        <summary> Parameters for creating or updating a vault. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultPatch" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultPatchProperties">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties KeyVaultPatchProperties (Guid? tenantId = default, Azure.ResourceManager.KeyVault.Models.KeyVaultSku sku = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies = default, bool? enabledForDeployment = default, bool? enabledForDiskEncryption = default, bool? enabledForTemplateDeployment = default, bool? enableSoftDelete = default, bool? enableRbacAuthorization = default, int? softDeleteRetentionInDays = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPatchMode? createMode = default, bool? enablePurgeProtection = default, Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet networkRuleSet = default, string publicNetworkAccess = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties KeyVaultPatchProperties(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; tenantId, class Azure.ResourceManager.KeyVault.Models.KeyVaultSku sku, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; accessPolicies, valuetype System.Nullable`1&lt;bool&gt; enabledForDeployment, valuetype System.Nullable`1&lt;bool&gt; enabledForDiskEncryption, valuetype System.Nullable`1&lt;bool&gt; enabledForTemplateDeployment, valuetype System.Nullable`1&lt;bool&gt; enableSoftDelete, valuetype System.Nullable`1&lt;bool&gt; enableRbacAuthorization, valuetype System.Nullable`1&lt;int32&gt; softDeleteRetentionInDays, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultPatchMode&gt; createMode, valuetype System.Nullable`1&lt;bool&gt; enablePurgeProtection, class Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet networkRuleSet, string publicNetworkAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPatchProperties(System.Nullable{System.Guid},Azure.ResourceManager.KeyVault.Models.KeyVaultSku,System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{Azure.ResourceManager.KeyVault.Models.KeyVaultPatchMode},System.Nullable{System.Boolean},Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPatchProperties (Optional tenantId As Nullable(Of Guid) = Nothing, Optional sku As KeyVaultSku = Nothing, Optional accessPolicies As IEnumerable(Of KeyVaultAccessPolicy) = Nothing, Optional enabledForDeployment As Nullable(Of Boolean) = Nothing, Optional enabledForDiskEncryption As Nullable(Of Boolean) = Nothing, Optional enabledForTemplateDeployment As Nullable(Of Boolean) = Nothing, Optional enableSoftDelete As Nullable(Of Boolean) = Nothing, Optional enableRbacAuthorization As Nullable(Of Boolean) = Nothing, Optional softDeleteRetentionInDays As Nullable(Of Integer) = Nothing, Optional createMode As Nullable(Of KeyVaultPatchMode) = Nothing, Optional enablePurgeProtection As Nullable(Of Boolean) = Nothing, Optional networkRuleSet As KeyVaultNetworkRuleSet = Nothing, Optional publicNetworkAccess As String = Nothing) As KeyVaultPatchProperties" />
+      <MemberSignature Language="F#" Value="static member KeyVaultPatchProperties : Nullable&lt;Guid&gt; * Azure.ResourceManager.KeyVault.Models.KeyVaultSku * seq&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPatchMode&gt; * Nullable&lt;bool&gt; * Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet * string -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPatchProperties (tenantId, sku, accessPolicies, enabledForDeployment, enabledForDiskEncryption, enabledForTemplateDeployment, enableSoftDelete, enableRbacAuthorization, softDeleteRetentionInDays, createMode, enablePurgeProtection, networkRuleSet, publicNetworkAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tenantId" Type="System.Nullable&lt;System.Guid&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sku" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultSku" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="accessPolicies" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultAccessPolicy&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="enabledForDeployment" Type="System.Nullable&lt;System.Boolean&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="enabledForDiskEncryption" Type="System.Nullable&lt;System.Boolean&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="enabledForTemplateDeployment" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="enableSoftDelete" Type="System.Nullable&lt;System.Boolean&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="enableRbacAuthorization" Type="System.Nullable&lt;System.Boolean&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="softDeleteRetentionInDays" Type="System.Nullable&lt;System.Int32&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="createMode" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPatchMode&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="enablePurgeProtection" Type="System.Nullable&lt;System.Boolean&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="networkRuleSet" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultNetworkRuleSet" Index="11" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="publicNetworkAccess" Type="System.String" Index="12" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tenantId"> The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault. </param>
+        <param name="sku"> SKU details. </param>
+        <param name="accessPolicies"> An array of 0 to 16 identities that have access to the key vault. All identities in the array must use the same tenant ID as the key vault's tenant ID. </param>
+        <param name="enabledForDeployment"> Property to specify whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault. </param>
+        <param name="enabledForDiskEncryption"> Property to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys. </param>
+        <param name="enabledForTemplateDeployment"> Property to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault. </param>
+        <param name="enableSoftDelete"> Property to specify whether the 'soft delete' functionality is enabled for this key vault. Once set to true, it cannot be reverted to false. </param>
+        <param name="enableRbacAuthorization"> Property that controls how data actions are authorized. When true, the key vault will use Role Based Access Control (RBAC) for authorization of data actions, and the access policies specified in vault properties will be  ignored. When false, the key vault will use the access policies specified in vault properties, and any policy stored on Azure Resource Manager will be ignored. If null or not specified, the value of this property will not change. </param>
+        <param name="softDeleteRetentionInDays"> softDelete data retention days. It accepts &gt;=7 and &lt;=90. </param>
+        <param name="createMode"> The vault's create mode to indicate whether the vault need to be recovered or not. </param>
+        <param name="enablePurgeProtection"> Property specifying whether protection against purge is enabled for this vault. Setting this property to true activates protection against purge for this vault and its content - only the Key Vault service may initiate a hard, irrecoverable deletion. The setting is effective only if soft delete is also enabled. Enabling this functionality is irreversible - that is, the property does not accept false as its value. </param>
+        <param name="networkRuleSet"> A collection of rules governing the accessibility of the vault from specific network locations. </param>
+        <param name="publicNetworkAccess"> Property to specify whether the vault will accept traffic from public internet. If set to 'disabled' all traffic except private endpoint traffic and that that originates from trusted services will be blocked. This will override the set firewall rules, meaning that even if the firewall rules are present we will not honor the rules. </param>
+        <summary> Properties of the vault. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultPatchProperties" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="KeyVaultPrivateEndpointConnectionData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData KeyVaultPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData KeyVaultPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? provisioningState = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, Azure.ETag? etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData KeyVaultPrivateEndpointConnectionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; provisioningState, class Azure.Core.ResourceIdentifier privateEndpointId, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState},Azure.Core.ResourceIdentifier,System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Nullable{Azure.ETag})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateEndpointConnectionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional connectionState As KeyVaultPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional etag As Nullable(Of ETag) = Nothing) As KeyVaultPrivateEndpointConnectionData" />
+      <MemberSignature Language="F#" Value="static member KeyVaultPrivateEndpointConnectionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; * Azure.Core.ResourceIdentifier * Nullable&lt;Azure.Core.AzureLocation&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * Nullable&lt;Azure.ETag&gt; -&gt; Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionData (id, name, resourceType, systemData, connectionState, provisioningState, privateEndpointId, location, tags, etag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionState" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt;" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointId" Type="Azure.Core.ResourceIdentifier" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="connectionState"> Approval state of the private link connection. </param>
+        <param name="provisioningState"> Provisioning state of the private endpoint connection. </param>
+        <param name="privateEndpointId"> Full identifier of the private endpoint resource. </param>
+        <param name="location"> Azure location of the key vault resource. </param>
+        <param name="tags"> Tags assigned to the key vault resource. </param>
+        <param name="etag"> Modified whenever there is a change in the state of private endpoint connection. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultPrivateEndpointConnectionData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData KeyVaultPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, Azure.Core.AzureLocation? location, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? provisioningState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData KeyVaultPrivateEndpointConnectionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class Azure.Core.ResourceIdentifier privateEndpointId, class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; provisioningState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Nullable{Azure.ETag},Azure.Core.ResourceIdentifier,Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateEndpointConnectionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional connectionState As KeyVaultPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState) = Nothing) As KeyVaultPrivateEndpointConnectionData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateEndpointConnectionData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, location As Nullable(Of AzureLocation), Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional connectionState As KeyVaultPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState) = Nothing) As KeyVaultPrivateEndpointConnectionData" />
       <MemberSignature Language="F#" Value="static member KeyVaultPrivateEndpointConnectionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.Core.AzureLocation&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * Nullable&lt;Azure.ETag&gt; * Azure.Core.ResourceIdentifier * Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; -&gt; Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionData (id, name, resourceType, systemData, location, tags, etag, privateEndpointId, connectionState, provisioningState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultPrivateEndpointConnectionData</ReturnType>
@@ -369,7 +644,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -409,16 +684,18 @@
       </Docs>
     </Member>
     <Member MemberName="KeyVaultPrivateEndpointConnectionItemData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData KeyVaultPrivateEndpointConnectionItemData (string id = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData KeyVaultPrivateEndpointConnectionItemData (string id, Azure.ETag? etag, Azure.Core.ResourceIdentifier privateEndpointId, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? provisioningState = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData KeyVaultPrivateEndpointConnectionItemData(string id, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class Azure.Core.ResourceIdentifier privateEndpointId, class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; provisioningState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionItemData(System.String,System.Nullable{Azure.ETag},Azure.Core.ResourceIdentifier,Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateEndpointConnectionItemData (Optional id As String = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional connectionState As KeyVaultPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState) = Nothing) As KeyVaultPrivateEndpointConnectionItemData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateEndpointConnectionItemData (id As String, etag As Nullable(Of ETag), privateEndpointId As ResourceIdentifier, Optional connectionState As KeyVaultPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState) = Nothing) As KeyVaultPrivateEndpointConnectionItemData" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member KeyVaultPrivateEndpointConnectionItemData : string * Nullable&lt;Azure.ETag&gt; * Azure.Core.ResourceIdentifier * Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionItemData (id, etag, privateEndpointId, connectionState, provisioningState)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData KeyVaultPrivateEndpointConnectionItemData (string id = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? provisioningState = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateEndpointConnectionItemData (Optional id As String = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional connectionState As KeyVaultPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState) = Nothing) As KeyVaultPrivateEndpointConnectionItemData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData</ReturnType>
@@ -441,16 +718,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="KeyVaultPrivateEndpointConnectionItemData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData KeyVaultPrivateEndpointConnectionItemData (string id = default, Azure.ETag? etag = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState = default, Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState? provisioningState = default, Azure.Core.ResourceIdentifier privateEndpointId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData KeyVaultPrivateEndpointConnectionItemData(string id, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState connectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; provisioningState, class Azure.Core.ResourceIdentifier privateEndpointId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionItemData(System.String,System.Nullable{Azure.ETag},Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState},Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateEndpointConnectionItemData (Optional id As String = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional connectionState As KeyVaultPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of KeyVaultPrivateEndpointConnectionProvisioningState) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing) As KeyVaultPrivateEndpointConnectionItemData" />
+      <MemberSignature Language="F#" Value="static member KeyVaultPrivateEndpointConnectionItemData : string * Nullable&lt;Azure.ETag&gt; * Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt; * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateEndpointConnectionItemData (id, etag, connectionState, provisioningState, privateEndpointId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="connectionState" Type="Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkServiceConnectionState" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionProvisioningState&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointId" Type="Azure.Core.ResourceIdentifier" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Id of private endpoint connection. </param>
+        <param name="etag"> Modified whenever there is a change in the state of private endpoint connection. </param>
+        <param name="connectionState"> Approval state of the private link connection. </param>
+        <param name="provisioningState"> Provisioning state of the private endpoint connection. </param>
+        <param name="privateEndpointId"> Full identifier of the private endpoint resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateEndpointConnectionItemData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="KeyVaultPrivateLinkResourceData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData KeyVaultPrivateLinkResourceData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, string groupId = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData KeyVaultPrivateLinkResourceData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, Azure.Core.AzureLocation? location, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default, string groupId = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData KeyVaultPrivateLinkResourceData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags, string groupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredMembers, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredZoneNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateLinkResourceData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateLinkResourceData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional groupId As String = Nothing, Optional requiredMembers As IEnumerable(Of String) = Nothing, Optional requiredZoneNames As IEnumerable(Of String) = Nothing) As KeyVaultPrivateLinkResourceData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateLinkResourceData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, location As Nullable(Of AzureLocation), Optional tags As IReadOnlyDictionary(Of String, String) = Nothing, Optional groupId As String = Nothing, Optional requiredMembers As IEnumerable(Of String) = Nothing, Optional requiredZoneNames As IEnumerable(Of String) = Nothing) As KeyVaultPrivateLinkResourceData" />
       <MemberSignature Language="F#" Value="static member KeyVaultPrivateLinkResourceData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Azure.Core.AzureLocation&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; * string * seq&lt;string&gt; * seq&lt;string&gt; -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateLinkResourceData (id, name, resourceType, systemData, location, tags, groupId, requiredMembers, requiredZoneNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData</ReturnType>
@@ -482,25 +791,17 @@
       </Docs>
     </Member>
     <Member MemberName="KeyVaultPrivateLinkResourceData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData KeyVaultPrivateLinkResourceData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, string groupId, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames, Azure.Core.AzureLocation? location, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData KeyVaultPrivateLinkResourceData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string groupId = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData KeyVaultPrivateLinkResourceData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, string groupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredMembers, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredZoneNames, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateLinkResourceData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{Azure.Core.AzureLocation},System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateLinkResourceData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, groupId As String, requiredMembers As IEnumerable(Of String), requiredZoneNames As IEnumerable(Of String), location As Nullable(Of AzureLocation), tags As IReadOnlyDictionary(Of String, String)) As KeyVaultPrivateLinkResourceData" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateLinkResourceData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional groupId As String = Nothing, Optional requiredMembers As IEnumerable(Of String) = Nothing, Optional requiredZoneNames As IEnumerable(Of String) = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing) As KeyVaultPrivateLinkResourceData" />
       <MemberSignature Language="F#" Value="static member KeyVaultPrivateLinkResourceData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * string * seq&lt;string&gt; * seq&lt;string&gt; * Nullable&lt;Azure.Core.AzureLocation&gt; * System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultPrivateLinkResourceData (id, name, resourceType, systemData, groupId, requiredMembers, requiredZoneNames, location, tags)" />
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData KeyVaultPrivateLinkResourceData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, string groupId = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers = default, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames = default, Azure.Core.AzureLocation? location = default, System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt; tags = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultPrivateLinkResourceData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional groupId As String = Nothing, Optional requiredMembers As IEnumerable(Of String) = Nothing, Optional requiredZoneNames As IEnumerable(Of String) = Nothing, Optional location As Nullable(Of AzureLocation) = Nothing, Optional tags As IReadOnlyDictionary(Of String, String) = Nothing) As KeyVaultPrivateLinkResourceData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
-          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultPrivateLinkResourceData</ReturnType>
       </ReturnValue>
@@ -516,10 +817,10 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="groupId"> Group identifier of private link resource. </param>
         <param name="requiredMembers"> Required member names of private link resource. </param>
         <param name="requiredZoneNames"> Required DNS zone names of the the private link resource. </param>
@@ -540,7 +841,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultProperties</ReturnType>
@@ -582,7 +883,7 @@
         <param name="provisioningState"> Provisioning state of the vault. </param>
         <param name="privateEndpointConnections"> List of private endpoint connections associated with the key vault. </param>
         <param name="publicNetworkAccess"> Property to specify whether the vault will accept traffic from public internet. If set to 'disabled' all traffic except private endpoint traffic and that that originates from trusted services will be blocked. This will override the set firewall rules, meaning that even if the firewall rules are present we will not honor the rules. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultProperties" />. </summary>
+        <summary> Properties of the vault. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,7 +897,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultSecretCreateOrUpdateContent</ReturnType>
@@ -608,7 +909,7 @@
       <Docs>
         <param name="tags"> The tags that will be assigned to the secret. </param>
         <param name="properties"> Properties of the secret. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultSecretCreateOrUpdateContent" />. </summary>
+        <summary> Parameters for creating or updating a secret. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultSecretCreateOrUpdateContent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -623,7 +924,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.KeyVaultSecretData</ReturnType>
@@ -638,15 +939,41 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
         <param name="properties"> Properties of the secret. </param>
         <param name="location"> Azure location of the key vault resource. </param>
         <param name="tags"> Tags assigned to the key vault resource. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.KeyVaultSecretData" />. </summary>
+        <summary> Resource information with extended details. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.KeyVaultSecretData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyVaultSecretPatch">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.KeyVaultSecretPatch KeyVaultSecretPatch (System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.ResourceManager.KeyVault.Models.SecretPatchProperties properties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.KeyVaultSecretPatch KeyVaultSecretPatch(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Azure.ResourceManager.KeyVault.Models.SecretPatchProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultSecretPatch(System.Collections.Generic.IDictionary{System.String,System.String},Azure.ResourceManager.KeyVault.Models.SecretPatchProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyVaultSecretPatch (Optional tags As IDictionary(Of String, String) = Nothing, Optional properties As SecretPatchProperties = Nothing) As KeyVaultSecretPatch" />
+      <MemberSignature Language="F#" Value="static member KeyVaultSecretPatch : System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.ResourceManager.KeyVault.Models.SecretPatchProperties -&gt; Azure.ResourceManager.KeyVault.Models.KeyVaultSecretPatch" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.KeyVaultSecretPatch (tags, properties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.KeyVaultSecretPatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.KeyVault.Models.SecretPatchProperties" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="tags"> The tags that will be assigned to the secret. </param>
+        <param name="properties"> Properties of the secret. </param>
+        <summary> Parameters for patching a secret. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.KeyVaultSecretPatch" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,7 +989,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -698,15 +1025,55 @@
       </Docs>
     </Member>
     <Member MemberName="ManagedHsmData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.ManagedHsmData ManagedHsmData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties properties = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.ManagedHsmData ManagedHsmData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties properties = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.ManagedHsmData ManagedHsmData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties properties, class Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku, class Azure.ResourceManager.Models.ManagedServiceIdentity identity, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.Core.AzureLocation,Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties,Azure.ResourceManager.KeyVault.Models.ManagedHsmSku,Azure.ResourceManager.Models.ManagedServiceIdentity,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As AzureLocation = Nothing, Optional properties As ManagedHsmProperties = Nothing, Optional sku As ManagedHsmSku = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As ManagedHsmData" />
+      <MemberSignature Language="F#" Value="static member ManagedHsmData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.Core.AzureLocation * Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties * Azure.ResourceManager.KeyVault.Models.ManagedHsmSku * Azure.ResourceManager.Models.ManagedServiceIdentity * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.KeyVault.ManagedHsmData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmData (id, name, resourceType, systemData, location, properties, sku, identity, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sku" Type="Azure.ResourceManager.KeyVault.Models.ManagedHsmSku" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="properties"> Properties of the managed HSM. </param>
+        <param name="sku"> SKU details. </param>
+        <param name="identity"> Managed service identity. </param>
+        <param name="tags"> Resource tags. </param>
+        <summary> Resource information with extended details. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedHsmData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.ManagedHsmData ManagedHsmData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties properties = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.ManagedHsmData ManagedHsmData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties properties, class Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku, class Azure.ResourceManager.Models.ManagedServiceIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties,Azure.ResourceManager.KeyVault.Models.ManagedHsmSku,Azure.ResourceManager.Models.ManagedServiceIdentity)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional properties As ManagedHsmProperties = Nothing, Optional sku As ManagedHsmSku = Nothing, Optional identity As ManagedServiceIdentity = Nothing) As ManagedHsmData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), Optional location As AzureLocation = Nothing, Optional properties As ManagedHsmProperties = Nothing, Optional sku As ManagedHsmSku = Nothing, Optional identity As ManagedServiceIdentity = Nothing) As ManagedHsmData" />
       <MemberSignature Language="F#" Value="static member ManagedHsmData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties * Azure.ResourceManager.KeyVault.Models.ManagedHsmSku * Azure.ResourceManager.Models.ManagedServiceIdentity -&gt; Azure.ResourceManager.KeyVault.ManagedHsmData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmData (id, name, resourceType, systemData, tags, location, properties, sku, identity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmData</ReturnType>
@@ -747,7 +1114,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmGeoReplicatedRegion</ReturnType>
@@ -761,8 +1128,32 @@
         <param name="name"> Name of the geo replicated region. </param>
         <param name="provisioningState"> Provisioning state of the geo replicated region. </param>
         <param name="isPrimary"> A boolean value that indicates whether the region is the primary region or a secondary region. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmGeoReplicatedRegion" />. </summary>
+        <summary> A region that this managed HSM Pool has been extended to. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmGeoReplicatedRegion" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedHsmNameAvailabilityContent">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityContent ManagedHsmNameAvailabilityContent (string name = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityContent ManagedHsmNameAvailabilityContent(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmNameAvailabilityContent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmNameAvailabilityContent (Optional name As String = Nothing) As ManagedHsmNameAvailabilityContent" />
+      <MemberSignature Language="F#" Value="static member ManagedHsmNameAvailabilityContent : string -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityContent" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmNameAvailabilityContent name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityContent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The managed hsm name. </param>
+        <summary> The parameters used to check the availability of the managed hsm name. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityContent" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,7 +1167,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityResult</ReturnType>
@@ -790,8 +1181,40 @@
         <param name="isNameAvailable"> A boolean value that indicates whether the name is available for you to use. If true, the name is available. If false, the name has already been taken or is invalid and cannot be used. </param>
         <param name="reason"> The reason that a managed hsm name could not be used. The reason element is only returned if NameAvailable is false. </param>
         <param name="message"> An error message explaining the Reason value in more detail. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityResult" />. </summary>
+        <summary> The CheckMhsmNameAvailability operation response. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmNameAvailabilityResult" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedHsmNetworkRuleSet">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleSet ManagedHsmNetworkRuleSet (Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleBypassOption? bypass = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleAction? defaultAction = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmIPRule&gt; ipRules = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmServiceTagRule&gt; serviceTags = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmVirtualNetworkRule&gt; virtualNetworkRules = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleSet ManagedHsmNetworkRuleSet(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleBypassOption&gt; bypass, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleAction&gt; defaultAction, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.ManagedHsmIPRule&gt; ipRules, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.ManagedHsmServiceTagRule&gt; serviceTags, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.KeyVault.Models.ManagedHsmVirtualNetworkRule&gt; virtualNetworkRules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmNetworkRuleSet(System.Nullable{Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleBypassOption},System.Nullable{Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleAction},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.ManagedHsmIPRule},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.ManagedHsmServiceTagRule},System.Collections.Generic.IEnumerable{Azure.ResourceManager.KeyVault.Models.ManagedHsmVirtualNetworkRule})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmNetworkRuleSet (Optional bypass As Nullable(Of ManagedHsmNetworkRuleBypassOption) = Nothing, Optional defaultAction As Nullable(Of ManagedHsmNetworkRuleAction) = Nothing, Optional ipRules As IEnumerable(Of ManagedHsmIPRule) = Nothing, Optional serviceTags As IEnumerable(Of ManagedHsmServiceTagRule) = Nothing, Optional virtualNetworkRules As IEnumerable(Of ManagedHsmVirtualNetworkRule) = Nothing) As ManagedHsmNetworkRuleSet" />
+      <MemberSignature Language="F#" Value="static member ManagedHsmNetworkRuleSet : Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleBypassOption&gt; * Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleAction&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmIPRule&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmServiceTagRule&gt; * seq&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmVirtualNetworkRule&gt; -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleSet" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmNetworkRuleSet (bypass, defaultAction, ipRules, serviceTags, virtualNetworkRules)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bypass" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleBypassOption&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="defaultAction" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleAction&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="ipRules" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmIPRule&gt;" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="serviceTags" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmServiceTagRule&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="virtualNetworkRules" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmVirtualNetworkRule&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="bypass"> Tells what traffic can bypass network rules. This can be 'AzureServices' or 'None'.  If not specified the default is 'AzureServices'. </param>
+        <param name="defaultAction"> The default action when no rule from ipRules and from virtualNetworkRules match. This is only used after the bypass property has been evaluated. </param>
+        <param name="ipRules"> The list of IP address rules. </param>
+        <param name="serviceTags"> The list of service tags. </param>
+        <param name="virtualNetworkRules"> The list of virtual network rules. </param>
+        <summary> A set of rules governing the network accessibility of a managed hsm pool. </summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmNetworkRuleSet" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -807,7 +1230,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -849,15 +1272,61 @@
       </Docs>
     </Member>
     <Member MemberName="ManagedHsmPrivateEndpointConnectionData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData ManagedHsmPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData ManagedHsmPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState? provisioningState = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, Azure.ETag? etag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData ManagedHsmPrivateEndpointConnectionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; provisioningState, class Azure.Core.ResourceIdentifier privateEndpointId, class Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku, class Azure.ResourceManager.Models.ManagedServiceIdentity identity, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,Azure.Core.AzureLocation,Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState},Azure.Core.ResourceIdentifier,Azure.ResourceManager.KeyVault.Models.ManagedHsmSku,Azure.ResourceManager.Models.ManagedServiceIdentity,System.Nullable{Azure.ETag},System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmPrivateEndpointConnectionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional location As AzureLocation = Nothing, Optional privateLinkServiceConnectionState As ManagedHsmPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of ManagedHsmPrivateEndpointConnectionProvisioningState) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional sku As ManagedHsmSku = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional tags As IDictionary(Of String, String) = Nothing) As ManagedHsmPrivateEndpointConnectionData" />
+      <MemberSignature Language="F#" Value="static member ManagedHsmPrivateEndpointConnectionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Azure.Core.AzureLocation * Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; * Azure.Core.ResourceIdentifier * Azure.ResourceManager.KeyVault.Models.ManagedHsmSku * Azure.ResourceManager.Models.ManagedServiceIdentity * Nullable&lt;Azure.ETag&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionData (id, name, resourceType, systemData, location, privateLinkServiceConnectionState, provisioningState, privateEndpointId, sku, identity, etag, tags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="4" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateLinkServiceConnectionState" Type="Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState" Index="5" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointId" Type="Azure.Core.ResourceIdentifier" Index="7" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="sku" Type="Azure.ResourceManager.KeyVault.Models.ManagedHsmSku" Index="8" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="identity" Type="Azure.ResourceManager.Models.ManagedServiceIdentity" Index="9" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="11" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}. </param>
+        <param name="name"> The name of the resource. </param>
+        <param name="resourceType"> The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts". </param>
+        <param name="systemData"> Azure Resource Manager metadata containing createdBy and modifiedBy information. </param>
+        <param name="location"> The geo-location where the resource lives. </param>
+        <param name="privateLinkServiceConnectionState"> Approval state of the private link connection. </param>
+        <param name="provisioningState"> Provisioning state of the private endpoint connection. </param>
+        <param name="privateEndpointId"> Full identifier of the private endpoint resource. </param>
+        <param name="sku"> SKU details. </param>
+        <param name="identity"> Managed service identity. </param>
+        <param name="etag"> Modified whenever there is a change in the state of private endpoint connection. </param>
+        <param name="tags"> Resource tags. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedHsmPrivateEndpointConnectionData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData ManagedHsmPrivateEndpointConnectionData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku = default, Azure.ResourceManager.Models.ManagedServiceIdentity identity = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState? provisioningState = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData ManagedHsmPrivateEndpointConnectionData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku, class Azure.ResourceManager.Models.ManagedServiceIdentity identity, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class Azure.Core.ResourceIdentifier privateEndpointId, class Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; provisioningState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.KeyVault.Models.ManagedHsmSku,Azure.ResourceManager.Models.ManagedServiceIdentity,System.Nullable{Azure.ETag},Azure.Core.ResourceIdentifier,Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmPrivateEndpointConnectionData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional sku As ManagedHsmSku = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional privateLinkServiceConnectionState As ManagedHsmPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of ManagedHsmPrivateEndpointConnectionProvisioningState) = Nothing) As ManagedHsmPrivateEndpointConnectionData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmPrivateEndpointConnectionData (id As ResourceIdentifier, name As String, resourceType As ResourceType, systemData As SystemData, tags As IDictionary(Of String, String), Optional location As AzureLocation = Nothing, Optional sku As ManagedHsmSku = Nothing, Optional identity As ManagedServiceIdentity = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional privateLinkServiceConnectionState As ManagedHsmPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of ManagedHsmPrivateEndpointConnectionProvisioningState) = Nothing) As ManagedHsmPrivateEndpointConnectionData" />
       <MemberSignature Language="F#" Value="static member ManagedHsmPrivateEndpointConnectionData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.KeyVault.Models.ManagedHsmSku * Azure.ResourceManager.Models.ManagedServiceIdentity * Nullable&lt;Azure.ETag&gt; * Azure.Core.ResourceIdentifier * Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; -&gt; Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionData (id, name, resourceType, systemData, tags, location, sku, identity, etag, privateEndpointId, privateLinkServiceConnectionState, provisioningState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.ManagedHsmPrivateEndpointConnectionData</ReturnType>
@@ -903,7 +1372,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -947,16 +1416,18 @@
       </Docs>
     </Member>
     <Member MemberName="ManagedHsmPrivateEndpointConnectionItemData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData ManagedHsmPrivateEndpointConnectionItemData (Azure.Core.ResourceIdentifier id = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState? provisioningState = default);" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData ManagedHsmPrivateEndpointConnectionItemData (Azure.Core.ResourceIdentifier id, Azure.ETag? etag, Azure.Core.ResourceIdentifier privateEndpointId, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState? provisioningState = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData ManagedHsmPrivateEndpointConnectionItemData(class Azure.Core.ResourceIdentifier id, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class Azure.Core.ResourceIdentifier privateEndpointId, class Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; provisioningState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionItemData(Azure.Core.ResourceIdentifier,System.Nullable{Azure.ETag},Azure.Core.ResourceIdentifier,Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmPrivateEndpointConnectionItemData (Optional id As ResourceIdentifier = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional privateLinkServiceConnectionState As ManagedHsmPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of ManagedHsmPrivateEndpointConnectionProvisioningState) = Nothing) As ManagedHsmPrivateEndpointConnectionItemData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmPrivateEndpointConnectionItemData (id As ResourceIdentifier, etag As Nullable(Of ETag), privateEndpointId As ResourceIdentifier, Optional privateLinkServiceConnectionState As ManagedHsmPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of ManagedHsmPrivateEndpointConnectionProvisioningState) = Nothing) As ManagedHsmPrivateEndpointConnectionItemData" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="static member ManagedHsmPrivateEndpointConnectionItemData : Azure.Core.ResourceIdentifier * Nullable&lt;Azure.ETag&gt; * Azure.Core.ResourceIdentifier * Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionItemData (id, etag, privateEndpointId, privateLinkServiceConnectionState, provisioningState)" />
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData ManagedHsmPrivateEndpointConnectionItemData (Azure.Core.ResourceIdentifier id = default, Azure.ETag? etag = default, Azure.Core.ResourceIdentifier privateEndpointId = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState? provisioningState = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmPrivateEndpointConnectionItemData (Optional id As ResourceIdentifier = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing, Optional privateLinkServiceConnectionState As ManagedHsmPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of ManagedHsmPrivateEndpointConnectionProvisioningState) = Nothing) As ManagedHsmPrivateEndpointConnectionItemData" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData</ReturnType>
@@ -979,6 +1450,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ManagedHsmPrivateEndpointConnectionItemData">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData ManagedHsmPrivateEndpointConnectionItemData (Azure.Core.ResourceIdentifier id = default, Azure.ETag? etag = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState = default, Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState? provisioningState = default, Azure.Core.ResourceIdentifier privateEndpointId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData ManagedHsmPrivateEndpointConnectionItemData(class Azure.Core.ResourceIdentifier id, valuetype System.Nullable`1&lt;valuetype Azure.ETag&gt; etag, class Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState privateLinkServiceConnectionState, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; provisioningState, class Azure.Core.ResourceIdentifier privateEndpointId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionItemData(Azure.Core.ResourceIdentifier,System.Nullable{Azure.ETag},Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState,System.Nullable{Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState},Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ManagedHsmPrivateEndpointConnectionItemData (Optional id As ResourceIdentifier = Nothing, Optional etag As Nullable(Of ETag) = Nothing, Optional privateLinkServiceConnectionState As ManagedHsmPrivateLinkServiceConnectionState = Nothing, Optional provisioningState As Nullable(Of ManagedHsmPrivateEndpointConnectionProvisioningState) = Nothing, Optional privateEndpointId As ResourceIdentifier = Nothing) As ManagedHsmPrivateEndpointConnectionItemData" />
+      <MemberSignature Language="F#" Value="static member ManagedHsmPrivateEndpointConnectionItemData : Azure.Core.ResourceIdentifier * Nullable&lt;Azure.ETag&gt; * Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState * Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt; * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData" Usage="Azure.ResourceManager.KeyVault.Models.ArmKeyVaultModelFactory.ManagedHsmPrivateEndpointConnectionItemData (id, etag, privateLinkServiceConnectionState, provisioningState, privateEndpointId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="etag" Type="System.Nullable&lt;Azure.ETag&gt;" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateLinkServiceConnectionState" Type="Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkServiceConnectionState" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionProvisioningState&gt;" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="privateEndpointId" Type="Azure.Core.ResourceIdentifier" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="id"> Id of private endpoint connection. </param>
+        <param name="etag"> Modified whenever there is a change in the state of private endpoint connection. </param>
+        <param name="privateLinkServiceConnectionState"> Approval state of the private link connection. </param>
+        <param name="provisioningState"> Provisioning state of the private endpoint connection. </param>
+        <param name="privateEndpointId"> Full identifier of the private endpoint resource. </param>
+        <summary>To be added.</summary>
+        <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateEndpointConnectionItemData" /> instance for mocking. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ManagedHsmPrivateLinkResourceData">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkResourceData ManagedHsmPrivateLinkResourceData (Azure.Core.ResourceIdentifier id, string name, Azure.Core.ResourceType resourceType, Azure.ResourceManager.Models.SystemData systemData, System.Collections.Generic.IDictionary&lt;string,string&gt; tags, Azure.Core.AzureLocation location, string groupId, System.Collections.Generic.IEnumerable&lt;string&gt; requiredMembers, System.Collections.Generic.IEnumerable&lt;string&gt; requiredZoneNames, Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkResourceData ManagedHsmPrivateLinkResourceData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, string groupId, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredMembers, class System.Collections.Generic.IEnumerable`1&lt;string&gt; requiredZoneNames, class Azure.ResourceManager.KeyVault.Models.ManagedHsmSku sku) cil managed" />
@@ -991,7 +1494,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="azure-dotnet">
@@ -1039,7 +1542,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmPrivateLinkResourceData</ReturnType>
@@ -1084,7 +1587,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties</ReturnType>
@@ -1122,7 +1625,7 @@
         <param name="publicNetworkAccess"> Control permission to the managed HSM from public networks. </param>
         <param name="scheduledPurgeOn"> The scheduled purge date in UTC. </param>
         <param name="securityDomainProperties"> Managed HSM security domain properties. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties" />. </summary>
+        <summary> Properties of the managed HSM Pool. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHsmProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1137,7 +1640,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.ManagedHSMSecurityDomainProperties</ReturnType>
@@ -1149,7 +1652,7 @@
       <Docs>
         <param name="activationStatus"> Activation Status. </param>
         <param name="activationStatusMessage"> Activation Status Message. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHSMSecurityDomainProperties" />. </summary>
+        <summary> The security domain properties of the managed hsm. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.ManagedHSMSecurityDomainProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1164,7 +1667,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.SecretAttributes</ReturnType>
@@ -1182,7 +1685,7 @@
         <param name="expires"> Expiry date in seconds since 1970-01-01T00:00:00Z. </param>
         <param name="created"> Creation time in seconds since 1970-01-01T00:00:00Z. </param>
         <param name="updated"> Last updated time in seconds since 1970-01-01T00:00:00Z. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.SecretAttributes" />. </summary>
+        <summary> The secret management attributes. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.SecretAttributes" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1197,7 +1700,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.SecretBaseAttributes</ReturnType>
@@ -1215,7 +1718,7 @@
         <param name="expires"> Expiry date in seconds since 1970-01-01T00:00:00Z. </param>
         <param name="created"> Creation time in seconds since 1970-01-01T00:00:00Z. </param>
         <param name="updated"> Last updated time in seconds since 1970-01-01T00:00:00Z. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.SecretBaseAttributes" />. </summary>
+        <summary> The object attributes managed by the KeyVault service. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.SecretBaseAttributes" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1230,7 +1733,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.KeyVault</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.KeyVault.Models.SecretProperties</ReturnType>
@@ -1248,7 +1751,7 @@
         <param name="attributes"> The attributes of the secret. </param>
         <param name="secretUri"> The URI to retrieve the current version of the secret. </param>
         <param name="secretUriWithVersion"> The URI to retrieve the specific version of the secret. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.KeyVault.Models.SecretProperties" />. </summary>
+        <summary> Properties of the secret. </summary>
         <returns> A new <see cref="T:Azure.ResourceManager.KeyVault.Models.SecretProperties" /> instance for mocking. </returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,0 +1,174 @@
+<Type Name="CircuitBreakerFailureCondition" FullName="Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition">
+  <TypeSignature Language="C#" Value="public class CircuitBreakerFailureCondition : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CircuitBreakerFailureCondition extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Class CircuitBreakerFailureCondition&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type CircuitBreakerFailureCondition = class&#xA;    inherit ProvisionableConstruct" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The trip conditions of the circuit breaker.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CircuitBreakerFailureCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a new CircuitBreakerFailureCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;long&gt; Count { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int64&gt; Count" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Property Count As BicepValue(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.Count : Azure.Provisioning.BicepValue&lt;int64&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The threshold for opening the circuit.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="circuitBreakerFailureCondition.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            CircuitBreakerFailureCondition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorReasons">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; ErrorReasons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; ErrorReasons" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.ErrorReasons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorReasons As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ErrorReasons : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.ErrorReasons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The error reasons which are considered as failure.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interval">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;TimeSpan&gt; Interval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype System.TimeSpan&gt; Interval" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.Interval" />
+      <MemberSignature Language="VB.NET" Value="Public Property Interval As BicepValue(Of TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Interval : Azure.Provisioning.BicepValue&lt;TimeSpan&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.Interval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The interval during which the failures are counted.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Percentage">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;long&gt; Percentage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;int64&gt; Percentage" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.Percentage" />
+      <MemberSignature Language="VB.NET" Value="Public Property Percentage As BicepValue(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.Percentage : Azure.Provisioning.BicepValue&lt;int64&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.Percentage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The threshold for opening the circuit.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusCodeRanges">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.FailureStatusCodeRange&gt; StatusCodeRanges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.ApiManagement.FailureStatusCodeRange&gt; StatusCodeRanges" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.StatusCodeRanges" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusCodeRanges As BicepList(Of FailureStatusCodeRange)" />
+      <MemberSignature Language="F#" Value="member this.StatusCodeRanges : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.FailureStatusCodeRange&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.CircuitBreakerFailureCondition.StatusCodeRanges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.FailureStatusCodeRange&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The status code ranges which are considered as failure.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

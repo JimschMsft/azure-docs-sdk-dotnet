@@ -86,6 +86,16 @@
         - Azure.ResourceManager.ApiManagement
         - Azure.ResourceManager.ApiManagement.Mocking
         - Azure.ResourceManager.ApiManagement.Models
+  - name: Apimanagement
+    href: ~/api/overview/azure/preview/apimanagement.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Provisioning - Apimanagement
+        href: ~/api/overview/azure/preview/provisioning.apimanagement-readme.md
+        children:
+        - Azure.Provisioning.ApiManagement
   - name: App Compliance Automation
     href: ~/api/overview/azure/preview/app-compliance-automation.md
     landingPageType: Service
@@ -1245,7 +1255,7 @@
         - Azure.ResourceManager.DisconnectedOperations
         - Azure.ResourceManager.DisconnectedOperations.Mocking
         - Azure.ResourceManager.DisconnectedOperations.Models
-  - name: DNS
+  - name: Dns
     href: ~/api/overview/azure/preview/dns.md
     landingPageType: Service
     items:
@@ -2884,6 +2894,18 @@
         - Azure.ResourceManager.ResourceMover
         - Azure.ResourceManager.ResourceMover.Mocking
         - Azure.ResourceManager.ResourceMover.Models
+  - name: Resources.Policy
+    href: ~/api/overview/azure/preview/resources.policy.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Resources.Policy
+        href: ~/api/overview/azure/preview/resourcemanager.resources.policy-readme.md
+        children:
+        - Azure.ResourceManager.Resources.Policy
+        - Azure.ResourceManager.Resources.Policy.Mocking
+        - Azure.ResourceManager.Resources.Policy.Models
   - name: Schema Registry
     href: ~/api/overview/azure/preview/schema-registry.md
     landingPageType: Service
@@ -3516,6 +3538,10 @@
         landingPageType: Service
         items:
         - name: Core
+          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
+          children:
+          - Azure.Core.Expressions.DataFactory
+        - name: Core
           children:
           - Azure
           - Azure.Core
@@ -3527,10 +3553,6 @@
           - Azure.Core.Serialization
           - Azure.Messaging
           landingPageType: Service
-        - name: Core
-          href: ~/api/overview/azure/preview/core.expressions.datafactory-readme.md
-          children:
-          - Azure.Core.Expressions.DataFactory
         - name: Spatial
           href: ~/api/overview/azure/preview/microsoft.azure.core.spatial-readme.md
           children:

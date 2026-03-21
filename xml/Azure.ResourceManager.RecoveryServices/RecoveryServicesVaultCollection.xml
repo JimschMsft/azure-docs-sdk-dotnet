@@ -42,27 +42,33 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultCollection" /> class for mocking. </summary>
+        <summary> Initializes a new instance of RecoveryServicesVaultCollection for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdate">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of RecoveryServicesVaultResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, cancellationToken As CancellationToken) As ArmOperation(Of RecoveryServicesVaultResource)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;" Usage="recoveryServicesVaultCollection.CreateOrUpdate (waitUntil, vaultName, data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of RecoveryServicesVaultResource)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;</ReturnType>
       </ReturnValue>
@@ -75,12 +81,12 @@
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="data"> Recovery Services Vault to be created. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Creates or updates a Recovery Services vault.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vault_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-02-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -89,18 +95,64 @@
           <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
       </Docs>
     </Member>
-    <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of RecoveryServicesVaultResource))" />
-      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;" Usage="recoveryServicesVaultCollection.CreateOrUpdateAsync (waitUntil, vaultName, data, cancellationToken)" />
+    <Member MemberName="CreateOrUpdate">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt; CreateOrUpdate (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, string xMsAuthorizationAuxiliary = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt; CreateOrUpdate(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, string xMsAuthorizationAuxiliary, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultCollection.CreateOrUpdate(Azure.WaitUntil,System.String,Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdate (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of RecoveryServicesVaultResource)" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&#xA;override this.CreateOrUpdate : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * string * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;" Usage="recoveryServicesVaultCollection.CreateOrUpdate (waitUntil, vaultName, data, xMsAuthorizationAuxiliary, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="vaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="data" Type="Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="xMsAuthorizationAuxiliary" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="vaultName"> The name of the Vault. </param>
+        <param name="data"> Recovery Services Vault to be created. </param>
+        <param name="xMsAuthorizationAuxiliary" />
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates or updates a Recovery Services vault.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, cancellationToken As CancellationToken) As Task(Of ArmOperation(Of RecoveryServicesVaultResource))" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;" Usage="recoveryServicesVaultCollection.CreateOrUpdateAsync (waitUntil, vaultName, data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of RecoveryServicesVaultResource))" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -113,18 +165,57 @@
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="data"> Recovery Services Vault to be created. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Creates or updates a Recovery Services vault.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vault_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-02-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrUpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt; CreateOrUpdateAsync (Azure.WaitUntil waitUntil, string vaultName, Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, string xMsAuthorizationAuxiliary = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt; CreateOrUpdateAsync(valuetype Azure.WaitUntil waitUntil, string vaultName, class Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData data, string xMsAuthorizationAuxiliary, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultCollection.CreateOrUpdateAsync(Azure.WaitUntil,System.String,Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateOrUpdateAsync (waitUntil As WaitUntil, vaultName As String, data As RecoveryServicesVaultData, Optional xMsAuthorizationAuxiliary As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of RecoveryServicesVaultResource))" />
+      <MemberSignature Language="F#" Value="abstract member CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;&#xA;override this.CreateOrUpdateAsync : Azure.WaitUntil * string * Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;" Usage="recoveryServicesVaultCollection.CreateOrUpdateAsync (waitUntil, vaultName, data, xMsAuthorizationAuxiliary, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="vaultName" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="data" Type="Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultData" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="xMsAuthorizationAuxiliary" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="4" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="waitUntil">
+          <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
+        <param name="vaultName"> The name of the Vault. </param>
+        <param name="data"> Recovery Services Vault to be created. </param>
+        <param name="xMsAuthorizationAuxiliary" />
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Creates or updates a Recovery Services vault.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="vaultName" /> or <paramref name="data" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -136,7 +227,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,17 +237,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="ExistsAsync">
@@ -169,7 +259,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,17 +269,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Checks to see if the resource exists in azure.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -202,7 +291,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,17 +301,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the Vault details.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
@@ -235,7 +323,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,7 +335,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve a list of Vaults.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults</description></item><item><term>Operation Id</term><description>Vaults_ListByResourceGroup</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults. </description></item><item><term> Operation Id. </term><description> GetOperationResult_ListByResourceGroup. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,7 +349,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,8 +361,8 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Retrieve a list of Vaults.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults</description></item><item><term>Operation Id</term><description>Vaults_ListByResourceGroup</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /> that may take multiple service requests to iterate over. </returns>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults. </description></item><item><term> Operation Id. </term><description> GetOperationResult_ListByResourceGroup. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,7 +375,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,17 +385,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the Vault details.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExists">
@@ -322,7 +407,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,17 +417,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIfExistsAsync">
@@ -355,7 +439,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -366,17 +449,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Tries to get details for this resource from the service.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="vaultName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IAsyncEnumerable&lt;Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource&gt;.GetAsyncEnumerator">
@@ -391,7 +474,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -401,7 +483,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> that may be used to cancel the asynchronous iteration.</param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>Returns an enumerator that iterates asynchronously through the collection.</summary>
         <returns>An enumerator that can be used to iterate asynchronously through the collection.</returns>
         <remarks>To be added.</remarks>
@@ -419,7 +501,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -444,7 +525,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

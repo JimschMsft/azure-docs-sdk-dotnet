@@ -16,6 +16,7 @@
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
     <AssemblyVersion>1.7.0.0</AssemblyVersion>
+    <AssemblyVersion>1.7.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,7 +37,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationResultBase&gt;</ReturnType>
@@ -48,17 +49,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> The request body. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates if a feature is supported
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/checkFeatureSupport</description></item><item><term>Operation Id</term><description>DataProtection_CheckFeatureSupport</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.CheckDataProtectionBackupFeatureSupport(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationContentBase,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.CheckDataProtectionBackupFeatureSupport(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationContentBase,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckDataProtectionBackupFeatureSupportAsync">
@@ -71,7 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationResultBase&gt;&gt;</ReturnType>
@@ -83,17 +84,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> The request body. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates if a feature is supported
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/checkFeatureSupport</description></item><item><term>Operation Id</term><description>DataProtection_CheckFeatureSupport</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.CheckDataProtectionBackupFeatureSupport(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationContentBase,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.CheckDataProtectionBackupFeatureSupportAsync(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.BackupFeatureValidationContentBase,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subscriptionResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="subscriptionResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckDataProtectionBackupVaultNameAvailability">
@@ -106,7 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionBackupNameAvailabilityResult&gt;</ReturnType>
@@ -118,17 +119,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Check name availability request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             API to check for resource name availability
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>BackupVaults_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.CheckDataProtectionBackupVaultNameAvailability(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionBackupNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.CheckDataProtectionBackupVaultNameAvailability(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionBackupNameAvailabilityContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="CheckDataProtectionBackupVaultNameAvailabilityAsync">
@@ -141,7 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionBackupNameAvailabilityResult&gt;&gt;</ReturnType>
@@ -153,17 +154,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Check name availability request. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             API to check for resource name availability
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>BackupVaults_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.CheckDataProtectionBackupVaultNameAvailability(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionBackupNameAvailabilityContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.CheckDataProtectionBackupVaultNameAvailabilityAsync(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionBackupNameAvailabilityContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCrossRegionRestoreJob">
@@ -176,7 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource&gt;</ReturnType>
@@ -188,17 +189,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Request body for operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Fetches the Cross Region Restore Job
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/fetchCrossRegionRestoreJob</description></item><item><term>Operation Id</term><description>FetchCrossRegionRestoreJob_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJob(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJob(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCrossRegionRestoreJobAsync">
@@ -211,7 +212,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource&gt;&gt;</ReturnType>
@@ -223,17 +224,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Request body for operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Fetches the Cross Region Restore Job
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/fetchCrossRegionRestoreJob</description></item><item><term>Operation Id</term><description>FetchCrossRegionRestoreJob_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJob(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobContent,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJobAsync(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobContent,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCrossRegionRestoreJobs">
@@ -246,7 +247,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource&gt;</ReturnType>
@@ -259,18 +260,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Request body for operation. </param>
         <param name="filter"> OData filter options. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Fetches list of Cross Region Restore job belonging to the vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/fetchCrossRegionRestoreJobs</description></item><item><term>Operation Id</term><description>FetchCrossRegionRestoreJobs_List</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJobs(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobsContent,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJobs(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobsContent,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetCrossRegionRestoreJobsAsync">
@@ -283,7 +284,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource&gt;</ReturnType>
@@ -296,18 +297,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Request body for operation. </param>
         <param name="filter"> OData filter options. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Fetches list of Cross Region Restore job belonging to the vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/fetchCrossRegionRestoreJobs</description></item><item><term>Operation Id</term><description>FetchCrossRegionRestoreJobs_List</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJobs(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobsContent,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource" /> that may take multiple service requests to iterate over. </returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetCrossRegionRestoreJobsAsync(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreJobsContent,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDataProtectionBackupInstanceResource">
@@ -320,7 +321,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource</ReturnType>
@@ -330,12 +331,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupInstanceResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupInstanceResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -352,7 +352,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;</ReturnType>
@@ -363,13 +363,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
-        <param name="scope"> The scope that the resource will apply against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> ARM path of the resource to be protected using Microsoft.DataProtection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of backup instances associated with a tracked resource
-            <list type="bullet"><item><term>Request Path</term><description>/{resourceId}/providers/Microsoft.DataProtection/backupInstances</description></item><item><term>Operation Id</term><description>BackupInstancesExtensionRouting_List</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupInstances(Azure.Core.ResourceIdentifier,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns>To be added.</returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupInstances(Azure.Core.ResourceIdentifier,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="client" /> is null. </exception>
@@ -385,7 +385,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;</ReturnType>
@@ -396,13 +396,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
-        <param name="scope"> The scope that the resource will apply against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="scope"> ARM path of the resource to be protected using Microsoft.DataProtection. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a list of backup instances associated with a tracked resource
-            <list type="bullet"><item><term>Request Path</term><description>/{resourceId}/providers/Microsoft.DataProtection/backupInstances</description></item><item><term>Operation Id</term><description>BackupInstancesExtensionRouting_List</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupInstances(Azure.Core.ResourceIdentifier,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns>To be added.</returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupInstancesAsync(Azure.Core.ResourceIdentifier,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="client" /> is null. </exception>
@@ -418,7 +418,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource</ReturnType>
@@ -428,12 +428,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupJobResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupJobResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupJobResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -450,7 +449,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupPolicyResource</ReturnType>
@@ -460,12 +459,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupPolicyResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupPolicyResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupPolicyResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupPolicyResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupPolicyResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupPolicyResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -482,7 +480,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource</ReturnType>
@@ -492,12 +490,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupRecoveryPointResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupRecoveryPointResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -514,7 +511,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -525,18 +522,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="vaultName"> The name of the BackupVaultResource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a resource belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetDataProtectionBackupVault(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetDataProtectionBackupVault(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="vaultName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDataProtectionBackupVaultAsync">
@@ -549,7 +546,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;&gt;</ReturnType>
@@ -560,18 +557,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="vaultName"> The name of the BackupVaultResource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a resource belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}</description></item><item><term>Operation Id</term><description>BackupVaults_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetDataProtectionBackupVaultAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetDataProtectionBackupVaultAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="vaultName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="vaultName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDataProtectionBackupVaultResource">
@@ -584,7 +581,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource</ReturnType>
@@ -594,12 +591,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupVaultResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionBackupVaultResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -616,7 +612,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultCollection</ReturnType>
@@ -625,11 +621,10 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <summary>
-            Gets a collection of DataProtectionBackupVaultResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetDataProtectionBackupVaults" /> instead.</description></item></summary>
-        <returns> An object representing collection of DataProtectionBackupVaultResources and their operations over a DataProtectionBackupVaultResource. </returns>
+            Gets a collection of DataProtectionBackupVaults in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetDataProtectionBackupVaults" /> instead. </description></item></summary>
+        <returns> An object representing collection of DataProtectionBackupVaults and their operations over a DataProtectionBackupVaultResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -645,7 +640,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -655,11 +650,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns resource collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/backupVaults</description></item><item><term>Operation Id</term><description>BackupVaults_GetInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionBackupVaults(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionBackupVaults(System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -676,7 +671,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource&gt;</ReturnType>
@@ -686,12 +681,139 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns resource collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/backupVaults</description></item><item><term>Operation Id</term><description>BackupVaults_GetInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionBackupVaults(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionBackupVaultsAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataProtectionDeletedBackupVault">
+      <MemberSignature Language="C#" Value="public static Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt; GetDataProtectionDeletedBackupVault (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, string deletedVaultName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Response`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt; GetDataProtectionDeletedBackupVault(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, string deletedVaultName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVault(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataProtectionDeletedBackupVault (subscriptionResource As SubscriptionResource, location As AzureLocation, deletedVaultName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of DataProtectionDeletedBackupVaultResource)" />
+      <MemberSignature Language="F#" Value="static member GetDataProtectionDeletedBackupVault : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;" Usage="Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVault (subscriptionResource, location, deletedVaultName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deletedVaultName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The location for the resource. </param>
+        <param name="deletedVaultName"> The name of the DeletedBackupVaultResource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deleted backup vault
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVault(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataProtectionDeletedBackupVaultAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt; GetDataProtectionDeletedBackupVaultAsync (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location, string deletedVaultName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt; GetDataProtectionDeletedBackupVaultAsync(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location, string deletedVaultName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVaultAsync(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataProtectionDeletedBackupVaultAsync (subscriptionResource As SubscriptionResource, location As AzureLocation, deletedVaultName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of DataProtectionDeletedBackupVaultResource))" />
+      <MemberSignature Language="F#" Value="static member GetDataProtectionDeletedBackupVaultAsync : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt;" Usage="Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVaultAsync (subscriptionResource, location, deletedVaultName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="deletedVaultName" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The location for the resource. </param>
+        <param name="deletedVaultName"> The name of the DeletedBackupVaultResource. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Gets a deleted backup vault
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVaultAsync(Azure.Core.AzureLocation,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subscriptionResource" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataProtectionDeletedBackupVaultResource">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource GetDataProtectionDeletedBackupVaultResource (this Azure.ResourceManager.ArmClient client, Azure.Core.ResourceIdentifier id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource GetDataProtectionDeletedBackupVaultResource(class Azure.ResourceManager.ArmClient client, class Azure.Core.ResourceIdentifier id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVaultResource(Azure.ResourceManager.ArmClient,Azure.Core.ResourceIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataProtectionDeletedBackupVaultResource (client As ArmClient, id As ResourceIdentifier) As DataProtectionDeletedBackupVaultResource" />
+      <MemberSignature Language="F#" Value="static member GetDataProtectionDeletedBackupVaultResource : Azure.ResourceManager.ArmClient * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource" Usage="Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVaultResource (client, id)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="client" Type="Azure.ResourceManager.ArmClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
+        <param name="id"> The resource ID of the resource to get. </param>
+        <summary>
+            Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource" /> along with the instance operations that can be performed on it but with no data.
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDataProtectionDeletedBackupVaultResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
+        <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultResource" /> object. </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="client" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataProtectionDeletedBackupVaults">
+      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection GetDataProtectionDeletedBackupVaults (this Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, Azure.Core.AzureLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection GetDataProtectionDeletedBackupVaults(class Azure.ResourceManager.Resources.SubscriptionResource subscriptionResource, valuetype Azure.Core.AzureLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVaults(Azure.ResourceManager.Resources.SubscriptionResource,Azure.Core.AzureLocation)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataProtectionDeletedBackupVaults (subscriptionResource As SubscriptionResource, location As AzureLocation) As DataProtectionDeletedBackupVaultCollection" />
+      <MemberSignature Language="F#" Value="static member GetDataProtectionDeletedBackupVaults : Azure.ResourceManager.Resources.SubscriptionResource * Azure.Core.AzureLocation -&gt; Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection" Usage="Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupExtensions.GetDataProtectionDeletedBackupVaults (subscriptionResource, location)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionDeletedBackupVaultCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subscriptionResource" Type="Azure.ResourceManager.Resources.SubscriptionResource" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
+        <param name="location"> The location for the resource. </param>
+        <summary>
+            Gets a collection of DataProtectionDeletedBackupVaults in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetDataProtectionDeletedBackupVaults(Azure.Core.AzureLocation)" /> instead. </description></item></summary>
+        <returns> An object representing collection of DataProtectionDeletedBackupVaults and their operations over a DataProtectionDeletedBackupVaultResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -707,7 +829,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DeletedDataProtectionBackupInstanceResource</ReturnType>
@@ -717,12 +839,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DeletedDataProtectionBackupInstanceResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.DeletedDataProtectionBackupInstanceResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DeletedDataProtectionBackupInstanceResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDeletedDataProtectionBackupInstanceResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetDeletedDataProtectionBackupInstanceResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DeletedDataProtectionBackupInstanceResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -739,7 +860,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource&gt;</ReturnType>
@@ -750,18 +871,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="resourceGuardsName"> The name of ResourceGuard. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a ResourceGuard belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceGuards/{resourceGuardsName}</description></item><item><term>Operation Id</term><description>ResourceGuards_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetResourceGuard(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetResourceGuard(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="resourceGuardsName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="resourceGuardsName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetResourceGuardAsync">
@@ -774,7 +895,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource&gt;&gt;</ReturnType>
@@ -785,18 +906,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="resourceGuardsName"> The name of ResourceGuard. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a ResourceGuard belonging to a resource group.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceGuards/{resourceGuardsName}</description></item><item><term>Operation Id</term><description>ResourceGuards_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetResourceGuardAsync(System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetResourceGuardAsync(System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="resourceGuardsName" /> is null. </exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="resourceGuardsName" /> is an empty string, and was expected to be non-empty. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetResourceGuardProxyBaseResource">
@@ -809,7 +930,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.ResourceGuardProxyBaseResource</ReturnType>
@@ -819,12 +940,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardProxyBaseResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.ResourceGuardProxyBaseResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardProxyBaseResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetResourceGuardProxyBaseResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetResourceGuardProxyBaseResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardProxyBaseResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -841,7 +961,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource</ReturnType>
@@ -851,12 +971,11 @@
         <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
-        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> instance the method will execute against. </param>
+        <param name="client"> The <see cref="T:Azure.ResourceManager.ArmClient" /> the method will execute against. </param>
         <param name="id"> The resource ID of the resource to get. </param>
         <summary>
             Gets an object representing a <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetResourceGuardResource(Azure.Core.ResourceIdentifier)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupArmClient.GetResourceGuardResource(Azure.Core.ResourceIdentifier)" /> instead. </description></item></summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> object. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -873,7 +992,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.ResourceGuardCollection</ReturnType>
@@ -882,11 +1001,10 @@
         <Parameter Name="resourceGroupResource" Type="Azure.ResourceManager.Resources.ResourceGroupResource" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <summary>
-            Gets a collection of ResourceGuardResources in the ResourceGroupResource.
-            <item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetResourceGuards" /> instead.</description></item></summary>
-        <returns> An object representing collection of ResourceGuardResources and their operations over a ResourceGuardResource. </returns>
+            Gets a collection of ResourceGuards in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetResourceGuards" /> instead. </description></item></summary>
+        <returns> An object representing collection of ResourceGuards and their operations over a ResourceGuardResource. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="resourceGroupResource" /> is null. </exception>
@@ -902,7 +1020,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource&gt;</ReturnType>
@@ -912,11 +1030,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns ResourceGuards collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceGuards</description></item><item><term>Operation Id</term><description>ResourceGuards_GetResourcesInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetResourceGuards(System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetResourceGuards(System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -933,7 +1051,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource&gt;</ReturnType>
@@ -943,12 +1061,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> instance the method will execute against. </param>
+        <param name="subscriptionResource"> The <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" /> the method will execute against. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns ResourceGuards collection belonging to a subscription.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceGuards</description></item><item><term>Operation Id</term><description>ResourceGuards_GetResourcesInSubscription</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetResourceGuards(System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> that may take multiple service requests to iterate over. </returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupSubscriptionResource.GetResourceGuardsAsync(System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.ResourceGuardResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subscriptionResource" /> is null. </exception>
@@ -964,7 +1082,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource&gt;</ReturnType>
@@ -978,7 +1096,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Request body for operation. </param>
         <param name="filter"> OData filter options. </param>
@@ -986,11 +1104,11 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a list of Secondary Recovery Points for a DataSource in a vault, that can be used for Cross Region Restore.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/fetchSecondaryRecoveryPoints</description></item><item><term>Operation Id</term><description>FetchSecondaryRecoveryPoints_List</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetSecondaryRecoveryPoints(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.FetchSecondaryRPsRequestContent,System.String,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetSecondaryRecoveryPoints(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.FetchSecondaryRPsRequestContent,System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSecondaryRecoveryPointsAsync">
@@ -1003,7 +1121,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource&gt;</ReturnType>
@@ -1017,7 +1135,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="location"> The name of the Azure region. </param>
         <param name="content"> Request body for operation. </param>
         <param name="filter"> OData filter options. </param>
@@ -1025,11 +1143,11 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Returns a list of Secondary Recovery Points for a DataSource in a vault, that can be used for Cross Region Restore.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/fetchSecondaryRecoveryPoints</description></item><item><term>Operation Id</term><description>FetchSecondaryRecoveryPoints_List</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetSecondaryRecoveryPoints(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.FetchSecondaryRPsRequestContent,System.String,System.String,System.Threading.CancellationToken)" /> instead.</description></item></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /> that may take multiple service requests to iterate over. </returns>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.GetSecondaryRecoveryPointsAsync(Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.FetchSecondaryRPsRequestContent,System.String,System.String,System.Threading.CancellationToken)" /> instead. </description></item></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="content" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="TriggerCrossRegionRestoreBackupInstance">
@@ -1042,7 +1160,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;</ReturnType>
@@ -1055,7 +1173,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="location"> The name of the Azure region. </param>
@@ -1063,11 +1181,11 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Triggers Cross Region Restore for BackupInstance.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/crossRegionRestore</description></item><item><term>Operation Id</term><description>BackupInstances_TriggerCrossRegionRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.TriggerCrossRegionRestoreBackupInstance(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.TriggerCrossRegionRestoreBackupInstance(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="crossRegionRestoreRequestObject" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="TriggerCrossRegionRestoreBackupInstanceAsync">
@@ -1080,7 +1198,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;&gt;</ReturnType>
@@ -1093,7 +1211,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="location"> The name of the Azure region. </param>
@@ -1101,11 +1219,11 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Triggers Cross Region Restore for BackupInstance.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/crossRegionRestore</description></item><item><term>Operation Id</term><description>BackupInstances_TriggerCrossRegionRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.TriggerCrossRegionRestoreBackupInstance(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.TriggerCrossRegionRestoreBackupInstanceAsync(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.CrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="crossRegionRestoreRequestObject" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateCrossRegionRestoreBackupInstance">
@@ -1118,7 +1236,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;</ReturnType>
@@ -1131,7 +1249,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="location"> The name of the Azure region. </param>
@@ -1139,11 +1257,11 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates whether Cross Region Restore can be triggered for DataSource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/validateCrossRegionRestore</description></item><item><term>Operation Id</term><description>BackupInstances_ValidateCrossRegionRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.ValidateCrossRegionRestoreBackupInstance(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.ValidateCrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.ValidateCrossRegionRestoreBackupInstance(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.ValidateCrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="validateCrossRegionRestoreRequestObject" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateCrossRegionRestoreBackupInstanceAsync">
@@ -1156,7 +1274,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;&gt;</ReturnType>
@@ -1169,7 +1287,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> instance the method will execute against. </param>
+        <param name="resourceGroupResource"> The <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> the method will execute against. </param>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="location"> The name of the Azure region. </param>
@@ -1177,11 +1295,11 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates whether Cross Region Restore can be triggered for DataSource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/validateCrossRegionRestore</description></item><item><term>Operation Id</term><description>BackupInstances_ValidateCrossRegionRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list><item><term>Mocking</term><description>To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.ValidateCrossRegionRestoreBackupInstance(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.ValidateCrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead.</description></item></summary>
+            <item><term> Mocking. </term><description> To mock this method, please mock <see cref="M:Azure.ResourceManager.DataProtectionBackup.Mocking.MockableDataProtectionBackupResourceGroupResource.ValidateCrossRegionRestoreBackupInstanceAsync(Azure.WaitUntil,Azure.Core.AzureLocation,Azure.ResourceManager.DataProtectionBackup.Models.ValidateCrossRegionRestoreRequestObject,System.Threading.CancellationToken)" /> instead. </description></item></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceGroupResource" /> or <paramref name="validateCrossRegionRestoreRequestObject" /> is null. </exception>
+          <paramref name="resourceGroupResource" /> is null. </exception>
       </Docs>
     </Member>
   </Members>

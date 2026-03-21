@@ -1,13 +1,9 @@
 <Type Name="NginxConfigurationResource" FullName="Azure.ResourceManager.Nginx.NginxConfigurationResource">
-  <TypeSignature Language="C#" Value="public class NginxConfigurationResource : Azure.ResourceManager.ArmResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NginxConfigurationResource extends Azure.ResourceManager.ArmResource" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class NginxConfigurationResource : Azure.ResourceManager.ArmResource, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Nginx.NginxConfigurationData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Nginx.NginxConfigurationData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NginxConfigurationResource extends Azure.ResourceManager.ArmResource implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.Nginx.NginxConfigurationData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.Nginx.NginxConfigurationData&gt;" />
   <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />
-  <TypeSignature Language="VB.NET" Value="Public Class NginxConfigurationResource&#xA;Inherits ArmResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="F#" Value="type NginxConfigurationResource = class&#xA;    inherit ArmResource" FrameworkAlternate="azure-dotnet" />
-  <TypeSignature Language="C#" Value="public class NginxConfigurationResource : Azure.ResourceManager.ArmResource, System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Nginx.NginxConfigurationData&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Nginx.NginxConfigurationData&gt;" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NginxConfigurationResource extends Azure.ResourceManager.ArmResource implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.Nginx.NginxConfigurationData&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.Nginx.NginxConfigurationData&gt;" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="VB.NET" Value="Public Class NginxConfigurationResource&#xA;Inherits ArmResource&#xA;Implements IJsonModel(Of NginxConfigurationData), IPersistableModel(Of NginxConfigurationData)" FrameworkAlternate="azure-dotnet-preview" />
-  <TypeSignature Language="F#" Value="type NginxConfigurationResource = class&#xA;    inherit ArmResource&#xA;    interface IJsonModel&lt;NginxConfigurationData&gt;&#xA;    interface IPersistableModel&lt;NginxConfigurationData&gt;" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class NginxConfigurationResource&#xA;Inherits ArmResource&#xA;Implements IJsonModel(Of NginxConfigurationData), IPersistableModel(Of NginxConfigurationData)" />
+  <TypeSignature Language="F#" Value="type NginxConfigurationResource = class&#xA;    inherit ArmResource&#xA;    interface IJsonModel&lt;NginxConfigurationData&gt;&#xA;    interface IPersistableModel&lt;NginxConfigurationData&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -17,13 +13,13 @@
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface FrameworkAlternate="azure-dotnet-preview">
+    <Interface>
       <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.Nginx.NginxConfigurationData&gt;</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="azure-dotnet-preview">
+    <Interface>
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.Nginx.NginxConfigurationData&gt;</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="azure-dotnet-preview">
+    <Interface>
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
@@ -44,7 +40,6 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -68,15 +63,15 @@
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxAnalysisResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxAnalysisContent" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxAnalysisContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="content"> The NGINX configuration to analyze. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Analyze an NGINX configuration without applying it to the NGINXaaS deployment
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}/analyze. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Analysis. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}/analyze. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Analysis. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,15 +91,15 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxAnalysisResult&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxAnalysisContent" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxAnalysisContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="content"> The NGINX configuration to analyze. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Analyze an NGINX configuration without applying it to the NGINXaaS deployment
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}/analyze. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Analysis. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}/analyze. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Analysis. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +113,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,7 +143,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,7 +164,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,7 +179,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Reset the NGINX configuration of given NGINX deployment to default
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,7 +193,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,7 +208,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Reset the NGINX configuration of given NGINX deployment to default
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +222,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,7 +234,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the NGINX configuration of given NGINX deployment
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +248,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,7 +260,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the NGINX configuration of given NGINX deployment
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,7 +274,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,7 +294,6 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -335,8 +322,8 @@
         <ReturnType>Azure.ResourceManager.Nginx.NginxConfigurationData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="reader"> The reader for deserializing the model. </param>
@@ -367,8 +354,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="writer"> The writer to serialize the model to. </param>
@@ -398,8 +385,8 @@
         <ReturnType>Azure.ResourceManager.Nginx.NginxConfigurationData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="System.BinaryData" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="data" Type="System.BinaryData" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="data"> The binary data to be processed. </param>
@@ -430,7 +417,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="options"> The client options for reading and writing models. </param>
@@ -459,7 +446,7 @@
         <ReturnType>System.BinaryData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
         <param name="options"> The client options for reading and writing models. </param>
@@ -472,11 +459,13 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Nginx.NginxConfigurationResource&gt; Update(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxConfigurationResource.Update(Azure.WaitUntil,Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, Optional content As NginxConfigurationCreateOrUpdateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxConfigurationResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, content As NginxConfigurationCreateOrUpdateContent, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxConfigurationResource)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member Update : Azure.WaitUntil * Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&#xA;override this.Update : Azure.WaitUntil * Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;" Usage="nginxConfigurationResource.Update (waitUntil, content, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, Optional content As NginxConfigurationCreateOrUpdateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxConfigurationResource)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -486,9 +475,9 @@
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
@@ -497,7 +486,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a NginxConfiguration.
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -513,7 +502,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -539,11 +527,13 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&gt; UpdateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxConfigurationResource.UpdateAsync(Azure.WaitUntil,Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, Optional content As NginxConfigurationCreateOrUpdateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxConfigurationResource))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, content As NginxConfigurationCreateOrUpdateContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxConfigurationResource))" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&gt;" Usage="nginxConfigurationResource.UpdateAsync (waitUntil, content, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent content = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, Optional content As NginxConfigurationCreateOrUpdateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxConfigurationResource))" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -553,9 +543,9 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxConfigurationResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxConfigurationCreateOrUpdateContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
@@ -564,7 +554,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a NginxConfiguration.
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/configurations/{configurationName}. </description></item><item><term> Operation Id. </term><description> NginxConfigurationResponses_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxConfigurationResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -580,7 +570,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

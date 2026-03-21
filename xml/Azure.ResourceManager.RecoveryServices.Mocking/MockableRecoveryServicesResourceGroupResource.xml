@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary> A class to add extension methods to ResourceGroupResource. </summary>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,12 +26,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.RecoveryServices.Mocking.MockableRecoveryServicesResourceGroupResource" /> class for mocking. </summary>
+        <summary> Initializes a new instance of MockableRecoveryServicesResourceGroupResource for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,7 +43,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,14 +54,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> Location of the resource. </param>
+        <param name="location"> The name of the Azure region. </param>
         <param name="content"> Contains information about Resource type and Resource name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             API to check for resource name availability.
             A name is available if no other resource exists that has the same SubscriptionId, Resource Name and Type
             or if one or more such resources exist, each of these must be GC'd and their time of deletion be more than 24 Hours Ago
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>RecoveryServices_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/locations/{location}/checkNameAvailability. </description></item><item><term> Operation Id. </term><description> RecoveryServicesOperationGroup_CheckNameAvailability. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -79,7 +77,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,14 +88,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> Location of the resource. </param>
+        <param name="location"> The name of the Azure region. </param>
         <param name="content"> Contains information about Resource type and Resource name. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             API to check for resource name availability.
             A name is available if no other resource exists that has the same SubscriptionId, Resource Name and Type
             or if one or more such resources exist, each of these must be GC'd and their time of deletion be more than 24 Hours Ago
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/locations/{location}/checkNameAvailability</description></item><item><term>Operation Id</term><description>RecoveryServices_CheckNameAvailability</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/locations/{location}/checkNameAvailability. </description></item><item><term> Operation Id. </term><description> RecoveryServicesOperationGroup_CheckNameAvailability. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,7 +111,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,11 +121,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the Vault details.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -147,7 +143,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,11 +153,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="vaultName"> The name of the recovery services vault. </param>
+        <param name="vaultName"> The name of the Vault. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the Vault details.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}</description></item><item><term>Operation Id</term><description>Vaults_Get</description></item><item><term>Default Api Version</term><description>2023-04-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.RecoveryServices.RecoveryServicesVaultResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RecoveryServices/vaults/{vaultName}. </description></item><item><term> Operation Id. </term><description> Vaults_Get. </description></item><item><term> Default Api Version. </term><description> 2025-08-01. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -180,7 +175,6 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.RecoveryServices</AssemblyName>
-        <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,8 +182,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of RecoveryServicesVaultResources in the ResourceGroupResource. </summary>
-        <returns> An object representing collection of RecoveryServicesVaultResources and their operations over a RecoveryServicesVaultResource. </returns>
+        <summary> Gets a collection of RecoveryServicesVaults in the <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" />. </summary>
+        <returns> An object representing collection of RecoveryServicesVaults and their operations over a RecoveryServicesVaultResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

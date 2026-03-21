@@ -1,0 +1,87 @@
+<Type Name="HttpCorrelationProtocol" FullName="Azure.Provisioning.ApiManagement.HttpCorrelationProtocol">
+  <TypeSignature Language="C#" Value="public enum HttpCorrelationProtocol" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCorrelationProtocol extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.HttpCorrelationProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HttpCorrelationProtocol" />
+  <TypeSignature Language="F#" Value="type HttpCorrelationProtocol = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Sets correlation protocol to use for Application Insights diagnostics.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Legacy">
+      <MemberSignature Language="C#" Value="Legacy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ApiManagement.HttpCorrelationProtocol Legacy = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ApiManagement.HttpCorrelationProtocol.Legacy" />
+      <MemberSignature Language="VB.NET" Value="Legacy" />
+      <MemberSignature Language="F#" Value="Legacy = 1" Usage="Azure.Provisioning.ApiManagement.HttpCorrelationProtocol.Legacy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.HttpCorrelationProtocol</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Inject Request-Id and Request-Context headers with request correlation
+            data. See
+            https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/HttpCorrelationProtocol.md.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ApiManagement.HttpCorrelationProtocol None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ApiManagement.HttpCorrelationProtocol.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Azure.Provisioning.ApiManagement.HttpCorrelationProtocol.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.HttpCorrelationProtocol</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Do not read and inject correlation headers.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="W3C">
+      <MemberSignature Language="C#" Value="W3C" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Provisioning.ApiManagement.HttpCorrelationProtocol W3C = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.ApiManagement.HttpCorrelationProtocol.W3C" />
+      <MemberSignature Language="VB.NET" Value="W3C" />
+      <MemberSignature Language="F#" Value="W3C = 2" Usage="Azure.Provisioning.ApiManagement.HttpCorrelationProtocol.W3C" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.HttpCorrelationProtocol</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Inject Trace Context headers. See https://w3c.github.io/trace-context.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

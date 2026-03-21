@@ -16,6 +16,7 @@
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
     <AssemblyVersion>1.7.0.0</AssemblyVersion>
+    <AssemblyVersion>1.7.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -33,10 +34,9 @@
   </Interfaces>
   <Docs>
     <summary>
-            A Class representing a DataProtectionBackupInstance along with the instance operations that can be performed on it.
-            If you have a <see cref="T:Azure.Core.ResourceIdentifier" /> you can construct a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />
-            from an instance of <see cref="T:Azure.ResourceManager.ArmClient" /> using the GetDataProtectionBackupInstanceResource method.
-            Otherwise you can get one from its parent resource <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> using the GetDataProtectionBackupInstance method.
+            A class representing a DataProtectionBackupInstance along with the instance operations that can be performed on it.
+            If you have a <see cref="T:Azure.Core.ResourceIdentifier" /> you can construct a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /> from an instance of <see cref="T:Azure.ResourceManager.ArmClient" /> using the GetResource method.
+            Otherwise you can get one from its parent resource <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupVaultResource" /> using the GetDataProtectionBackupInstances method.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -50,11 +50,11 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary> Initializes a new instance of the <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /> class for mocking. </summary>
+        <summary> Initializes a new instance of DataProtectionBackupInstanceResource for mocking. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +68,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;</ReturnType>
@@ -82,9 +82,7 @@
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Add a tag to the current resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+        <summary> Add a tag to the current resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -101,7 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;&gt;</ReturnType>
@@ -115,9 +113,7 @@
         <param name="key"> The key for the tag. </param>
         <param name="value"> The value for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Add a tag to the current resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+        <summary> Add a tag to the current resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -134,7 +130,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -150,7 +146,7 @@
         <param name="resourceGroupName"> The resourceGroupName. </param>
         <param name="vaultName"> The vaultName. </param>
         <param name="backupInstanceName"> The backupInstanceName. </param>
-        <summary> Generate the resource identifier of a <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /> instance. </summary>
+        <summary> Generate the resource identifier for this resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,7 +161,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceData</ReturnType>
@@ -187,14 +183,14 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
           <AttributeName Language="C#">[System.Obsolete("This method is obsolete and will be removed in a future release. Please use UpdateAsync(WaitUntil waitUntil, DataProtectionBackupVaultPatch patch, CancellationToken cancellationToken) instead.", false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete and will be removed in a future release. Please use UpdateAsync(WaitUntil waitUntil, DataProtectionBackupVaultPatch patch, CancellationToken cancellationToken) instead.", false)&gt;]</AttributeName>
         </Attribute>
@@ -227,7 +223,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -240,11 +236,11 @@
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Delete a backup instance in a backup vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Delete</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,7 +255,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -295,7 +291,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -308,11 +304,11 @@
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Delete a backup instance in a backup vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Delete</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,7 +323,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.BackupFindRestorableTimeRangeResult&gt;</ReturnType>
@@ -340,21 +336,8 @@
         <param name="content"> Request body for operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-          <list type="bullet">
-            <item>
-              <term>Request Path</term>
-              <description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/findRestorableTimeRanges</description>
-            </item>
-            <item>
-              <term>Operation Id</term>
-              <description>RestorableTimeRanges_Find</description>
-            </item>
-            <item>
-              <term>Default Api Version</term>
-              <description>2025-07-01</description>
-            </item>
-          </list>
-        </summary>
+            FindRestorableTimeRange
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/findRestorableTimeRanges. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_Find. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -371,7 +354,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.Models.BackupFindRestorableTimeRangeResult&gt;&gt;</ReturnType>
@@ -384,21 +367,8 @@
         <param name="content"> Request body for operation. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-          <list type="bullet">
-            <item>
-              <term>Request Path</term>
-              <description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/findRestorableTimeRanges</description>
-            </item>
-            <item>
-              <term>Operation Id</term>
-              <description>RestorableTimeRanges_Find</description>
-            </item>
-            <item>
-              <term>Default Api Version</term>
-              <description>2025-07-01</description>
-            </item>
-          </list>
-        </summary>
+            FindRestorableTimeRange
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/findRestorableTimeRanges. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_Find. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -415,7 +385,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;</ReturnType>
@@ -427,7 +397,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a backup instance with name in a backup vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -442,7 +412,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;&gt;</ReturnType>
@@ -454,7 +424,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Gets a backup instance with name in a backup vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_Get. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -469,7 +439,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource&gt;</ReturnType>
@@ -479,11 +449,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="recoveryPointId"> The <see cref="T:System.String" /> to use. </param>
+        <param name="recoveryPointId" />
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Gets a Recovery Point using recoveryPointId for a Datasource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/recoveryPoints/{recoveryPointId}</description></item><item><term>Operation Id</term><description>RecoveryPoints_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /></description></item></list></summary>
+        <summary> Gets a Recovery Point using recoveryPointId for a Datasource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -502,7 +470,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource&gt;&gt;</ReturnType>
@@ -512,11 +480,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="recoveryPointId"> The <see cref="T:System.String" /> to use. </param>
+        <param name="recoveryPointId" />
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Gets a Recovery Point using recoveryPointId for a Datasource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/recoveryPoints/{recoveryPointId}</description></item><item><term>Operation Id</term><description>RecoveryPoints_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointResource" /></description></item></list></summary>
+        <summary> Gets a Recovery Point using recoveryPointId for a Datasource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -535,15 +501,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupRecoveryPointCollection</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary> Gets a collection of DataProtectionBackupRecoveryPointResources in the DataProtectionBackupInstance. </summary>
-        <returns> An object representing collection of DataProtectionBackupRecoveryPointResources and their operations over a DataProtectionBackupRecoveryPointResource. </returns>
+        <summary> Gets a collection of DataProtectionBackupRecoveryPoints in the <see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </summary>
+        <returns> An object representing collection of DataProtectionBackupRecoveryPoints and their operations over a DataProtectionBackupRecoveryPointResource. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -557,7 +523,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -578,7 +544,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;</ReturnType>
@@ -590,9 +556,7 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Removes a tag by key from the resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+        <summary> Removes a tag by key from the resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -609,7 +573,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;&gt;</ReturnType>
@@ -621,9 +585,7 @@
       <Docs>
         <param name="key"> The key for the tag. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Removes a tag by key from the resource.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+        <summary> Removes a tag by key from the resource. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -640,7 +602,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceType</ReturnType>
@@ -660,7 +622,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -675,7 +637,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will resume backups for backup instance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeBackups</description></item><item><term>Operation Id</term><description>BackupInstances_ResumeBackups</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeBackups. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ResumeBackups. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -690,7 +652,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -705,7 +667,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will resume backups for backup instance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeBackups</description></item><item><term>Operation Id</term><description>BackupInstances_ResumeBackups</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeBackups. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ResumeBackups. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -720,7 +682,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -735,7 +697,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will resume protection for a stopped backup instance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeProtection</description></item><item><term>Operation Id</term><description>BackupInstances_ResumeProtection</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeProtection. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ResumeProtection. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -750,7 +712,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -765,7 +727,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will resume protection for a stopped backup instance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeProtection</description></item><item><term>Operation Id</term><description>BackupInstances_ResumeProtection</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/resumeProtection. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ResumeProtection. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -780,7 +742,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;</ReturnType>
@@ -790,11 +752,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="tags"> The set of tags to use as replacement. </param>
+        <param name="tags"> The tags to set on the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Replace the tags on the resource with the given set.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+        <summary> Replace the tags on the resource with the given set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -811,7 +771,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;&gt;</ReturnType>
@@ -821,11 +781,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="tags"> The set of tags to use as replacement. </param>
+        <param name="tags"> The tags to set on the resource. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Replace the tags on the resource with the given set.
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_Get</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+        <summary> Replace the tags on the resource with the given set. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -842,7 +800,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -878,7 +836,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -893,11 +851,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> The content of the action request. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will stop protection of a backup instance and data will be held forever
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/stopProtection</description></item><item><term>Operation Id</term><description>BackupInstances_StopProtection</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/stopProtection. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_StopProtection. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -912,7 +870,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -948,7 +906,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -963,11 +921,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> The content of the action request. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will stop protection of a backup instance and data will be held forever
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/stopProtection</description></item><item><term>Operation Id</term><description>BackupInstances_StopProtection</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/stopProtection. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_StopProtection. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -982,7 +940,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1018,7 +976,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -1033,11 +991,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> The content of the action request. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will stop backup for a backup instance and retains the backup data as per the policy (except latest Recovery point, which will be retained forever)
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/suspendBackups</description></item><item><term>Operation Id</term><description>BackupInstances_SuspendBackups</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/suspendBackups. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_SuspendBackups. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1052,7 +1010,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1088,7 +1046,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -1103,11 +1061,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> The content of the action request. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             This operation will stop backup for a backup instance and retains the backup data as per the policy (except latest Recovery point, which will be retained forever)
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/suspendBackups</description></item><item><term>Operation Id</term><description>BackupInstances_SuspendBackups</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/suspendBackups. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_SuspendBackups. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1122,7 +1080,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -1140,7 +1098,7 @@
         <summary>
             Sync backup instance again in case of failure
             This action will retry last failed operation and will bring backup instance to valid state
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/sync</description></item><item><term>Operation Id</term><description>BackupInstances_SyncBackupInstance</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/sync. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_SyncBackupInstance. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1157,7 +1115,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -1175,7 +1133,7 @@
         <summary>
             Sync backup instance again in case of failure
             This action will retry last failed operation and will bring backup instance to valid state
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/sync</description></item><item><term>Operation Id</term><description>BackupInstances_SyncBackupInstance</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/sync. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_SyncBackupInstance. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1195,7 +1153,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceData</ReturnType>
@@ -1205,8 +1163,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="reader">The <see cref="T:System.Text.Json.Utf8JsonReader" /> to read.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="reader"> The reader for deserializing the model. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Reads one JSON value (including objects or arrays) from the provided reader and converts it to a model.
             </summary>
@@ -1228,7 +1186,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1238,8 +1196,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Text.Json.Utf8JsonWriter" /> to write into.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="writer"> The writer to serialize the model to. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model to the provided <see cref="T:System.Text.Json.Utf8JsonWriter" />.
             </summary>
@@ -1260,7 +1218,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceData</ReturnType>
@@ -1270,8 +1228,8 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="data">The <see cref="T:System.BinaryData" /> to parse.</param>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="data"> The binary data to be processed. </param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Converts the provided <see cref="T:System.BinaryData" /> into a model.
             </summary>
@@ -1293,7 +1251,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1302,7 +1260,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
             </summary>
@@ -1323,7 +1281,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -1332,7 +1290,7 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param>
+        <param name="options"> The client options for reading and writing models. </param>
         <summary>
             Writes the model into a <see cref="T:System.BinaryData" />.
             </summary>
@@ -1351,7 +1309,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;</ReturnType>
@@ -1368,7 +1326,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Trigger adhoc backup
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/backup</description></item><item><term>Operation Id</term><description>BackupInstances_AdhocBackup</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/backup. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_AdhocBackup. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1385,7 +1343,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;&gt;</ReturnType>
@@ -1402,7 +1360,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Trigger adhoc backup
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/backup</description></item><item><term>Operation Id</term><description>BackupInstances_AdhocBackup</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/backup. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_AdhocBackup. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1419,7 +1377,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -1436,7 +1394,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             rehydrate recovery point for restore for a BackupInstance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/rehydrate</description></item><item><term>Operation Id</term><description>BackupInstances_TriggerRehydrate</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/rehydrate. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_TriggerRehydrate. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1453,7 +1411,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -1470,7 +1428,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             rehydrate recovery point for restore for a BackupInstance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/rehydrate</description></item><item><term>Operation Id</term><description>BackupInstances_TriggerRehydrate</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/rehydrate. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_TriggerRehydrate. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1487,7 +1445,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1527,7 +1485,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;</ReturnType>
@@ -1542,11 +1500,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> Request body for operation. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Triggers restore for a BackupInstance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/restore</description></item><item><term>Operation Id</term><description>BackupInstances_TriggerRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/restore. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_TriggerRestore. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1563,7 +1521,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1603,7 +1561,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;&gt;</ReturnType>
@@ -1618,11 +1576,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="content"> Request body for operation. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Triggers restore for a BackupInstance
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/restore</description></item><item><term>Operation Id</term><description>BackupInstances_TriggerRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/restore. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_TriggerRestore. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1639,7 +1597,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1679,7 +1637,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;</ReturnType>
@@ -1694,11 +1652,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="data"> Request body for operation. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Create or update a backup instance in a backup vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            Update a DataProtectionBackupInstance.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1715,7 +1673,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1755,7 +1713,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource&gt;&gt;</ReturnType>
@@ -1770,11 +1728,11 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="data"> Request body for operation. </param>
-        <param name="xMsAuthorizationAuxiliary"> The <see cref="T:System.String" /> to use. </param>
+        <param name="xMsAuthorizationAuxiliary" />
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            Create or update a backup instance in a backup vault
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}</description></item><item><term>Operation Id</term><description>BackupInstances_CreateOrUpdate</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            Update a DataProtectionBackupInstance.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_CreateOrUpdate. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1790,7 +1748,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation</ReturnType>
@@ -1807,7 +1765,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validate whether update for backup instance will be successful or not
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateForModifyBackup</description></item><item><term>Operation Id</term><description>BackupInstances_ValidateForModifyBackup</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateForModifyBackup. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ValidateForModifyBackup. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1823,7 +1781,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&gt;</ReturnType>
@@ -1840,7 +1798,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validate whether update for backup instance will be successful or not
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateForModifyBackup</description></item><item><term>Operation Id</term><description>BackupInstances_ValidateForModifyBackup</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateForModifyBackup. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ValidateForModifyBackup. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1857,7 +1815,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;</ReturnType>
@@ -1874,7 +1832,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates if Restore can be triggered for a DataSource
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateRestore</description></item><item><term>Operation Id</term><description>BackupInstances_ValidateForRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateRestore. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ValidateForRestore. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1891,7 +1849,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.DataProtectionBackup</AssemblyName>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
-        <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.DataProtectionBackup.Models.DataProtectionOperationJobExtendedInfo&gt;&gt;</ReturnType>
@@ -1908,7 +1866,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Validates if Restore can be triggered for a DataSource
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateRestore</description></item><item><term>Operation Id</term><description>BackupInstances_ValidateForRestore</description></item><item><term>Default Api Version</term><description>2025-07-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" /></description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateRestore. </description></item><item><term> Operation Id. </term><description> BackupInstanceResources_ValidateForRestore. </description></item><item><term> Default Api Version. </term><description> 2025-09-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.DataProtectionBackup.DataProtectionBackupInstanceResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

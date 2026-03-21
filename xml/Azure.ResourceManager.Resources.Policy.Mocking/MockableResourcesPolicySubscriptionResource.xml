@@ -1,0 +1,476 @@
+<Type Name="MockableResourcesPolicySubscriptionResource" FullName="Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource">
+  <TypeSignature Language="C#" Value="public class MockableResourcesPolicySubscriptionResource : Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MockableResourcesPolicySubscriptionResource extends Azure.ResourceManager.ArmResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class MockableResourcesPolicySubscriptionResource&#xA;Inherits ArmResource" />
+  <TypeSignature Language="F#" Value="type MockableResourcesPolicySubscriptionResource = class&#xA;    inherit ArmResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> A class to add extension methods to <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MockableResourcesPolicySubscriptionResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary> Initializes a new instance of MockableResourcesPolicySubscriptionResource for mocking. </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Acquire">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt; Acquire (Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt; Acquire(class Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.Acquire(Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Acquire (content As PolicyTokenRequestContent, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PolicyTokenAcquisitionResult)" />
+      <MemberSignature Language="F#" Value="abstract member Acquire : Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;&#xA;override this.Acquire : Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;" Usage="mockableResourcesPolicySubscriptionResource.Acquire (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation acquires a policy token in the given subscription for the given request body.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/acquirePolicyToken. </description></item><item><term> Operation Id. </term><description> PolicyTokensOperationGroup_Acquire. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;&gt; AcquireAsync (Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent content, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;&gt; AcquireAsync(class Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.AcquireAsync(Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AcquireAsync (content As PolicyTokenRequestContent, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PolicyTokenAcquisitionResult))" />
+      <MemberSignature Language="F#" Value="abstract member AcquireAsync : Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;&gt;&#xA;override this.AcquireAsync : Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;&gt;" Usage="mockableResourcesPolicySubscriptionResource.AcquireAsync (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.Models.PolicyTokenAcquisitionResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.Resources.Policy.Models.PolicyTokenRequestContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The request body. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation acquires a policy token in the given subscription for the given request body.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/acquirePolicyToken. </description></item><item><term> Operation Id. </term><description> PolicyTokensOperationGroup_Acquire. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyAssignments">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt; GetPolicyAssignments (string filter = default, string expand = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt; GetPolicyAssignments(string filter, string expand, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicyAssignments(System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyAssignments (Optional filter As String = Nothing, Optional expand As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of PolicyAssignmentResource)" />
+      <MemberSignature Language="F#" Value="override this.GetPolicyAssignments : string * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicyAssignments (filter, expand, top, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="filter"> The filter to apply on the operation. Valid values for $filter are: 'atScope()', 'atExactScope()' or 'policyDefinitionId eq '{value}''. If $filter is not provided, no filtering is performed. If $filter=atScope() is provided, the returned list only includes all policy assignments that apply to the scope, which is everything in the unfiltered list except those applied to sub scopes contained within the given scope. If $filter=atExactScope() is provided, the returned list only includes all policy assignments that at the given scope. If $filter=policyDefinitionId eq '{value}' is provided, the returned list includes all policy assignments of the policy definition whose id is {value}. </param>
+        <param name="expand"> Comma-separated list of additional properties to be included in the response. Supported values are 'LatestDefinitionVersion, EffectiveDefinitionVersion'. </param>
+        <param name="top"> Maximum number of records to return. When the $top filter is not provided, it will return 500 records. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the list of all policy assignments associated with the given subscription that match the optional given $filter. Valid values for $filter are: 'atScope()', 'atExactScope()' or 'policyDefinitionId eq '{value}''. If $filter is not provided, the unfiltered list includes all policy assignments associated with the subscription, including those that apply directly or from management groups that contain the given subscription, as well as any applied to objects contained within the subscription. If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the subscription, which is everything in the unfiltered list except those applied to objects contained within the subscription. If $filter=atExactScope() is provided, the returned list only includes all policy assignments that at the subscription. If $filter=policyDefinitionId eq '{value}' is provided, the returned list includes all policy assignments of the policy definition whose id is {value}.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policyAssignments. </description></item><item><term> Operation Id. </term><description> PolicyAssignments_List. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyAssignmentsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt; GetPolicyAssignmentsAsync (string filter = default, string expand = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt; GetPolicyAssignmentsAsync(string filter, string expand, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicyAssignmentsAsync(System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyAssignmentsAsync (Optional filter As String = Nothing, Optional expand As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of PolicyAssignmentResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyAssignmentsAsync : string * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;&#xA;override this.GetPolicyAssignmentsAsync : string * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicyAssignmentsAsync (filter, expand, top, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="top" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="filter"> The filter to apply on the operation. Valid values for $filter are: 'atScope()', 'atExactScope()' or 'policyDefinitionId eq '{value}''. If $filter is not provided, no filtering is performed. If $filter=atScope() is provided, the returned list only includes all policy assignments that apply to the scope, which is everything in the unfiltered list except those applied to sub scopes contained within the given scope. If $filter=atExactScope() is provided, the returned list only includes all policy assignments that at the given scope. If $filter=policyDefinitionId eq '{value}' is provided, the returned list includes all policy assignments of the policy definition whose id is {value}. </param>
+        <param name="expand"> Comma-separated list of additional properties to be included in the response. Supported values are 'LatestDefinitionVersion, EffectiveDefinitionVersion'. </param>
+        <param name="top"> Maximum number of records to return. When the $top filter is not provided, it will return 500 records. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the list of all policy assignments associated with the given subscription that match the optional given $filter. Valid values for $filter are: 'atScope()', 'atExactScope()' or 'policyDefinitionId eq '{value}''. If $filter is not provided, the unfiltered list includes all policy assignments associated with the subscription, including those that apply directly or from management groups that contain the given subscription, as well as any applied to objects contained within the subscription. If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the subscription, which is everything in the unfiltered list except those applied to objects contained within the subscription. If $filter=atExactScope() is provided, the returned list only includes all policy assignments that at the subscription. If $filter=policyDefinitionId eq '{value}' is provided, the returned list includes all policy assignments of the policy definition whose id is {value}.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policyAssignments. </description></item><item><term> Operation Id. </term><description> PolicyAssignments_List. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyAssignmentResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyDefinition">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt; GetPolicyDefinition (string policyDefinitionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt; GetPolicyDefinition(string policyDefinitionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicyDefinition(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyDefinition (policyDefinitionName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PolicyDefinitionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyDefinition : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;&#xA;override this.GetPolicyDefinition : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicyDefinition (policyDefinitionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyDefinitionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="policyDefinitionName"> The name of the policy definition to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the policy definition in the given subscription with the given name.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}. </description></item><item><term> Operation Id. </term><description> PolicyDefinitions_Get. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyDefinitionName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyDefinitionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;&gt; GetPolicyDefinitionAsync (string policyDefinitionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;&gt; GetPolicyDefinitionAsync(string policyDefinitionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicyDefinitionAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyDefinitionAsync (policyDefinitionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PolicyDefinitionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyDefinitionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;&gt;&#xA;override this.GetPolicyDefinitionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicyDefinitionAsync (policyDefinitionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicyDefinitionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyDefinitionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="policyDefinitionName"> The name of the policy definition to get. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the policy definition in the given subscription with the given name.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policyDefinitions/{policyDefinitionName}. </description></item><item><term> Operation Id. </term><description> PolicyDefinitions_Get. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyDefinitionName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policyDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyDefinitions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicyDefinitionCollection GetPolicyDefinitions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicyDefinitionCollection GetPolicyDefinitions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicyDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyDefinitions () As PolicyDefinitionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyDefinitions : unit -&gt; Azure.ResourceManager.Resources.Policy.PolicyDefinitionCollection&#xA;override this.GetPolicyDefinitions : unit -&gt; Azure.ResourceManager.Resources.Policy.PolicyDefinitionCollection" Usage="mockableResourcesPolicySubscriptionResource.GetPolicyDefinitions " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicyDefinitionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of PolicyDefinitions in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of PolicyDefinitions and their operations over a PolicyDefinitionResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyExemptions">
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt; GetPolicyExemptions (string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt; GetPolicyExemptions(string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicyExemptions(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyExemptions (Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of PolicyExemptionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyExemptions : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&#xA;override this.GetPolicyExemptions : string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicyExemptions (filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="filter"> The filter to apply on the operation. Valid values for $filter are: 'atScope()', 'atExactScope()', 'excludeExpired()' or 'policyAssignmentId eq '{value}''. If $filter is not provided, no filtering is performed. If $filter is not provided, the unfiltered list includes all policy exemptions associated with the scope, including those that apply directly or apply from containing scopes. If $filter=atScope() is provided, the returned list only includes all policy exemptions that apply to the scope, which is everything in the unfiltered list except those applied to sub scopes contained within the given scope. If $filter=atExactScope() is provided, the returned list only includes all policy exemptions that at the given scope. If $filter=excludeExpired() is provided, the returned list only includes all policy exemptions that either haven't expired or didn't set expiration date. If $filter=policyAssignmentId eq '{value}' is provided. the returned list only includes all policy exemptions that are associated with the give policyAssignmentId. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the list of all policy exemptions associated with the given subscription that match the optional given $filter. Valid values for $filter are: 'atScope()', 'atExactScope()', 'excludeExpired()' or 'policyAssignmentId eq '{value}''. If $filter is not provided, the unfiltered list includes all policy exemptions associated with the subscription, including those that apply directly or from management groups that contain the given subscription, as well as any applied to objects contained within the subscription.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policyExemptions. </description></item><item><term> Operation Id. </term><description> PolicyExemptions_List. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyExemptionResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicyExemptionsAsync">
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt; GetPolicyExemptionsAsync (string filter = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt; GetPolicyExemptionsAsync(string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicyExemptionsAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyExemptionsAsync (Optional filter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of PolicyExemptionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicyExemptionsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;&#xA;override this.GetPolicyExemptionsAsync : string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicyExemptionsAsync (filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Policy.PolicyExemptionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="filter"> The filter to apply on the operation. Valid values for $filter are: 'atScope()', 'atExactScope()', 'excludeExpired()' or 'policyAssignmentId eq '{value}''. If $filter is not provided, no filtering is performed. If $filter is not provided, the unfiltered list includes all policy exemptions associated with the scope, including those that apply directly or apply from containing scopes. If $filter=atScope() is provided, the returned list only includes all policy exemptions that apply to the scope, which is everything in the unfiltered list except those applied to sub scopes contained within the given scope. If $filter=atExactScope() is provided, the returned list only includes all policy exemptions that at the given scope. If $filter=excludeExpired() is provided, the returned list only includes all policy exemptions that either haven't expired or didn't set expiration date. If $filter=policyAssignmentId eq '{value}' is provided. the returned list only includes all policy exemptions that are associated with the give policyAssignmentId. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the list of all policy exemptions associated with the given subscription that match the optional given $filter. Valid values for $filter are: 'atScope()', 'atExactScope()', 'excludeExpired()' or 'policyAssignmentId eq '{value}''. If $filter is not provided, the unfiltered list includes all policy exemptions associated with the subscription, including those that apply directly or from management groups that contain the given subscription, as well as any applied to objects contained within the subscription.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policyExemptions. </description></item><item><term> Operation Id. </term><description> PolicyExemptions_List. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns> A collection of <see cref="T:Azure.ResourceManager.Resources.Policy.PolicyExemptionResource" /> that may take multiple service requests to iterate over. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicySetDefinition">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt; GetPolicySetDefinition (string policySetDefinitionName, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt; GetPolicySetDefinition(string policySetDefinitionName, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicySetDefinition(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicySetDefinition (policySetDefinitionName As String, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of PolicySetDefinitionResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicySetDefinition : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;&#xA;override this.GetPolicySetDefinition : string * string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicySetDefinition (policySetDefinitionName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policySetDefinitionName" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="policySetDefinitionName"> The name of the policy set definition to get. </param>
+        <param name="expand"> Comma-separated list of additional properties to be included in the response. Supported values are 'LatestDefinitionVersion, EffectiveDefinitionVersion'. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the policy set definition in the given subscription with the given name.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policySetDefinitions/{policySetDefinitionName}. </description></item><item><term> Operation Id. </term><description> PolicySetDefinitions_Get. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policySetDefinitionName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policySetDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicySetDefinitionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;&gt; GetPolicySetDefinitionAsync (string policySetDefinitionName, string expand = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;&gt; GetPolicySetDefinitionAsync(string policySetDefinitionName, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicySetDefinitionAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicySetDefinitionAsync (policySetDefinitionName As String, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of PolicySetDefinitionResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicySetDefinitionAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;&gt;&#xA;override this.GetPolicySetDefinitionAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetPolicySetDefinitionAsync (policySetDefinitionName, expand, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.PolicySetDefinitionResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policySetDefinitionName" Type="System.String" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="policySetDefinitionName"> The name of the policy set definition to get. </param>
+        <param name="expand"> Comma-separated list of additional properties to be included in the response. Supported values are 'LatestDefinitionVersion, EffectiveDefinitionVersion'. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves the policy set definition in the given subscription with the given name.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/policySetDefinitions/{policySetDefinitionName}. </description></item><item><term> Operation Id. </term><description> PolicySetDefinitions_Get. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policySetDefinitionName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="policySetDefinitionName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPolicySetDefinitions">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.PolicySetDefinitionCollection GetPolicySetDefinitions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.PolicySetDefinitionCollection GetPolicySetDefinitions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetPolicySetDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicySetDefinitions () As PolicySetDefinitionCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetPolicySetDefinitions : unit -&gt; Azure.ResourceManager.Resources.Policy.PolicySetDefinitionCollection&#xA;override this.GetPolicySetDefinitions : unit -&gt; Azure.ResourceManager.Resources.Policy.PolicySetDefinitionCollection" Usage="mockableResourcesPolicySubscriptionResource.GetPolicySetDefinitions " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.PolicySetDefinitionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of PolicySetDefinitions in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of PolicySetDefinitions and their operations over a PolicySetDefinitionResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariable">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt; GetVariable (string variableName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.VariableResource&gt; GetVariable(string variableName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetVariable(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVariable (variableName As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of VariableResource)" />
+      <MemberSignature Language="F#" Value="abstract member GetVariable : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt;&#xA;override this.GetVariable : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetVariable (variableName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="variableName"> The name of the variable to operate on. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves a single variable, given its name and the subscription it was created at.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/variables/{variableName}. </description></item><item><term> Operation Id. </term><description> Variables_Get. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="variableName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="variableName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariableAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt;&gt; GetVariableAsync (string variableName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.Policy.VariableResource&gt;&gt; GetVariableAsync(string variableName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetVariableAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVariableAsync (variableName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of VariableResource))" />
+      <MemberSignature Language="F#" Value="abstract member GetVariableAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt;&gt;&#xA;override this.GetVariableAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt;&gt;" Usage="mockableResourcesPolicySubscriptionResource.GetVariableAsync (variableName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Policy.VariableResource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="variableName"> The name of the variable to operate on. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            This operation retrieves a single variable, given its name and the subscription it was created at.
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/providers/Microsoft.Authorization/variables/{variableName}. </description></item><item><term> Operation Id. </term><description> Variables_Get. </description></item><item><term> Default Api Version. </term><description> 2025-12-01-preview. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="variableName" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="variableName" /> is an empty string, and was expected to be non-empty. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariables">
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.Policy.VariableCollection GetVariables ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.Policy.VariableCollection GetVariables() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.Policy.Mocking.MockableResourcesPolicySubscriptionResource.GetVariables" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVariables () As VariableCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetVariables : unit -&gt; Azure.ResourceManager.Resources.Policy.VariableCollection&#xA;override this.GetVariables : unit -&gt; Azure.ResourceManager.Resources.Policy.VariableCollection" Usage="mockableResourcesPolicySubscriptionResource.GetVariables " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Resources.Policy</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.ResourceManager.Resources.Policy.VariableCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary> Gets a collection of Variables in the <see cref="T:Azure.ResourceManager.Resources.SubscriptionResource" />. </summary>
+        <returns> An object representing collection of Variables and their operations over a VariableResource. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

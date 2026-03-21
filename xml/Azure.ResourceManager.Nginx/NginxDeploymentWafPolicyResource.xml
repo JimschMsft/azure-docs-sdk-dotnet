@@ -47,6 +47,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Analysis">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt; Analysis (Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent content = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt; Analysis(class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource.Analysis(Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Analysis (Optional content As NginxDeploymentWafPolicyAnalysisCreateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of NginxDeploymentWafPolicyAnalysisResult)" />
+      <MemberSignature Language="F#" Value="abstract member Analysis : Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;&#xA;override this.Analysis : Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;" Usage="nginxDeploymentWafPolicyResource.Analysis (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The content of the action request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Analyze an Nginx Waf Policy
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}/analyzeWafPolicy. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Analysis. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalysisAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;&gt; AnalysisAsync (Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent content = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;&gt; AnalysisAsync(class Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource.AnalysisAsync(Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AnalysisAsync (Optional content As NginxDeploymentWafPolicyAnalysisCreateContent = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of NginxDeploymentWafPolicyAnalysisResult))" />
+      <MemberSignature Language="F#" Value="abstract member AnalysisAsync : Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;&gt;&#xA;override this.AnalysisAsync : Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;&gt;" Usage="nginxDeploymentWafPolicyResource.AnalysisAsync (content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="Azure.ResourceManager.Nginx.Models.NginxDeploymentWafPolicyAnalysisCreateContent" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="content"> The content of the action request. </param>
+        <param name="cancellationToken"> The cancellation token to use. </param>
+        <summary>
+            Analyze an Nginx Waf Policy
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}/analyzeWafPolicy. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Analysis. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateResourceIdentifier">
       <MemberSignature Language="C#" Value="public static Azure.Core.ResourceIdentifier CreateResourceIdentifier (string subscriptionId, string resourceGroupName, string deploymentName, string wafPolicyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Core.ResourceIdentifier CreateResourceIdentifier(string subscriptionId, string resourceGroupName, string deploymentName, string wafPolicyName) cil managed" />
@@ -121,7 +177,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Reset the Nginx Waf Policy of given Nginx deployment to default
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +206,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Reset the Nginx Waf Policy of given Nginx deployment to default
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Delete. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +232,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the Nginx Waf Policy of given Nginx deployment
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +258,7 @@
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Get the Nginx Waf Policy of given Nginx deployment
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Get. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Get. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,11 +443,13 @@
       </Docs>
     </Member>
     <Member MemberName="Update">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt; Update(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource.Update(Azure.WaitUntil,Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, Optional data As NginxDeploymentWafPolicyData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxDeploymentWafPolicyResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, data As NginxDeploymentWafPolicyData, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxDeploymentWafPolicyResource)" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member Update : Azure.WaitUntil * Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;&#xA;override this.Update : Azure.WaitUntil * Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData * System.Threading.CancellationToken -&gt; Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;" Usage="nginxDeploymentWafPolicyResource.Update (waitUntil, data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt; Update (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Update (waitUntil As WaitUntil, Optional data As NginxDeploymentWafPolicyData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As ArmOperation(Of NginxDeploymentWafPolicyResource)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -408,21 +466,23 @@
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="data"> The Nginx Deployment Waf Policy. </param>
+        <param name="data"> Resource create parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a NginxDeploymentWafPolicy.
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Create. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Create. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.ResourceManager.ArmOperation`1&lt;class Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;&gt; UpdateAsync(valuetype Azure.WaitUntil waitUntil, class Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource.UpdateAsync(Azure.WaitUntil,Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, Optional data As NginxDeploymentWafPolicyData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxDeploymentWafPolicyResource))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, data As NginxDeploymentWafPolicyData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxDeploymentWafPolicyResource))" FrameworkAlternate="azure-dotnet" />
       <MemberSignature Language="F#" Value="abstract member UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;&gt;&#xA;override this.UpdateAsync : Azure.WaitUntil * Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;&gt;" Usage="nginxDeploymentWafPolicyResource.UpdateAsync (waitUntil, data, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource&gt;&gt; UpdateAsync (Azure.WaitUntil waitUntil, Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyData data = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (waitUntil As WaitUntil, Optional data As NginxDeploymentWafPolicyData = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ArmOperation(Of NginxDeploymentWafPolicyResource))" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Nginx</AssemblyName>
@@ -439,11 +499,11 @@
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="data"> The Nginx Deployment Waf Policy. </param>
+        <param name="data"> Resource create parameters. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Update a NginxDeploymentWafPolicy.
-            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Create. </description></item><item><term> Default Api Version. </term><description> 2025-03-01-preview. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
+            <list type="bullet"><item><term> Request Path. </term><description> /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}/wafPolicies/{wafPolicyName}. </description></item><item><term> Operation Id. </term><description> NginxDeploymentWafPolicies_Create. </description></item><item><term> Default Api Version. </term><description> 2025-11-01. </description></item><item><term> Resource. </term><description><see cref="T:Azure.ResourceManager.Nginx.NginxDeploymentWafPolicyResource" />. </description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,0 +1,1102 @@
+<Type Name="ApiManagementService" FullName="Azure.Provisioning.ApiManagement.ApiManagementService">
+  <TypeSignature Language="C#" Value="public class ApiManagementService : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApiManagementService extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.ApiManagementService" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApiManagementService&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type ApiManagementService = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ApiManagementService.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApiManagementService (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ApiManagementService.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.ApiManagement.ApiManagementService : string * string -&gt; Azure.Provisioning.ApiManagement.ApiManagementService" Usage="new Azure.Provisioning.ApiManagement.ApiManagementService (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ApiManagementService resource.
+            This can be used to refer to the resource in expressions, but is not
+            the Azure name of the resource.  This value can contain letters,
+            numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ApiManagementService.</param>
+        <summary>
+            Creates a new ApiManagementService.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalLocations">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.AdditionalLocation&gt; AdditionalLocations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.ApiManagement.AdditionalLocation&gt; AdditionalLocations" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.AdditionalLocations" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalLocations As BicepList(Of AdditionalLocation)" />
+      <MemberSignature Language="F#" Value="member this.AdditionalLocations : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.AdditionalLocation&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.AdditionalLocations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.AdditionalLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Additional datacenter locations of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Certificates">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.CertificateConfiguration&gt; Certificates { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.ApiManagement.CertificateConfiguration&gt; Certificates" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Certificates" />
+      <MemberSignature Language="VB.NET" Value="Public Property Certificates As BicepList(Of CertificateConfiguration)" />
+      <MemberSignature Language="F#" Value="member this.Certificates : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.CertificateConfiguration&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Certificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.CertificateConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of Certificates that need to be installed in the API Management
+            service. Max supported certificates that can be installed is 10.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedAtUtc">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;DateTimeOffset&gt; CreatedAtUtc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype System.DateTimeOffset&gt; CreatedAtUtc" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.CreatedAtUtc" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedAtUtc As BicepValue(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.CreatedAtUtc : Azure.Provisioning.BicepValue&lt;DateTimeOffset&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.CreatedAtUtc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Creation UTC date of the API Management service.The date conforms to
+            the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO
+            8601 standard.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomProperties">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepDictionary&lt;string&gt; CustomProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepDictionary`1&lt;string&gt; CustomProperties" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.CustomProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomProperties As BicepDictionary(Of String)" />
+      <MemberSignature Language="F#" Value="member this.CustomProperties : Azure.Provisioning.BicepDictionary&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.CustomProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepDictionary&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Custom properties of the API Management service.&lt;/br&gt;Setting
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TripleDes168`
+            will disable the cipher TLS_RSA_WITH_3DES_EDE_CBC_SHA for all TLS(1.0,
+            1.1 and 1.2).&lt;/br&gt;Setting
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls11`
+            can be used to disable just TLS 1.1.&lt;/br&gt;Setting
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls10`
+            can be used to disable TLS 1.0 on an API Management
+            service.&lt;/br&gt;Setting
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls11`
+            can be used to disable just TLS 1.1 for communications with
+            backends.&lt;/br&gt;Setting
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls10`
+            can be used to disable TLS 1.0 for communications with
+            backends.&lt;/br&gt;Setting
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Protocols.Server.Http2`
+            can be used to enable HTTP2 protocol on an API Management
+            service.&lt;/br&gt;Not specifying any of these properties on PATCH
+            operation will reset omitted properties' values to their
+            defaults. For all the settings except Http2 the default value is
+            `True` if the service was created on or before April 1, 2018 and
+            `False` otherwise. Http2 setting's default value is
+            `False`.&lt;/br&gt;&lt;/br&gt;You can disable any of the following
+            ciphers by using settings
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.[cipher_name]`:
+            TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA,
+            TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA,
+            TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,
+            TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256,
+            TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256,
+            TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA. For
+            example,
+            `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TLS_RSA_WITH_AES_128_CBC_SHA256`:`false`.
+            The default value is `true` for them.&lt;/br&gt; Note: The following
+            ciphers can't be disabled since they are required by internal
+            platform components:
+            TLS_AES_256_GCM_SHA384,TLS_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ApiManagementService.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="apiManagementService.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ApiManagementService.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeveloperPortalStatus">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.DeveloperPortalStatus&gt; DeveloperPortalStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.DeveloperPortalStatus&gt; DeveloperPortalStatus" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.DeveloperPortalStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeveloperPortalStatus As BicepValue(Of DeveloperPortalStatus)" />
+      <MemberSignature Language="F#" Value="member this.DeveloperPortalStatus : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.DeveloperPortalStatus&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.DeveloperPortalStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.DeveloperPortalStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status of developer portal in this API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeveloperPortalUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; DeveloperPortalUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; DeveloperPortalUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.DeveloperPortalUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeveloperPortalUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.DeveloperPortalUri : Azure.Provisioning.BicepValue&lt;Uri&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.DeveloperPortalUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DEveloper Portal endpoint URL of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableGateway">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; DisableGateway { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; DisableGateway" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.DisableGateway" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableGateway As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DisableGateway : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.DisableGateway" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Property only valid for an Api Management service deployed in multiple
+            locations. This can be used to disable the gateway in master region.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableClientCertificate">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; EnableClientCertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; EnableClientCertificate" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.EnableClientCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableClientCertificate As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableClientCertificate : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.EnableClientCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Property only meant to be used for Consumption SKU Service. This
+            enforces a client certificate to be presented on each request to the
+            gateway. This also enables the ability to authenticate the certificate
+            in the policy on the gateway.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.ETag&gt; ETag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.ETag&gt; ETag" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.ETag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ETag As BicepValue(Of ETag)" />
+      <MemberSignature Language="F#" Value="member this.ETag : Azure.Provisioning.BicepValue&lt;Azure.ETag&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.ETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.ETag&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ETag of the resource.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.ApiManagement.ApiManagementService FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.ApiManagement.ApiManagementService FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ApiManagementService.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As ApiManagementService" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.ApiManagement.ApiManagementService" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ApiManagementService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ApiManagementService resource.
+            This can be used to refer to the resource in expressions, but is not
+            the Azure name of the resource.  This value can contain letters,
+            numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ApiManagementService.</param>
+        <summary>
+            Creates a reference to an existing ApiManagementService.
+            </summary>
+        <returns>The existing ApiManagementService resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GatewayRegionalUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; GatewayRegionalUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; GatewayRegionalUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.GatewayRegionalUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GatewayRegionalUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.GatewayRegionalUri : Azure.Provisioning.BicepValue&lt;Uri&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.GatewayRegionalUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gateway URL of the API Management service in the Default Region.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GatewayUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; GatewayUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; GatewayUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.GatewayUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GatewayUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.GatewayUri : Azure.Provisioning.BicepValue&lt;Uri&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.GatewayUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gateway URL of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostnameConfigurations">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.HostnameConfiguration&gt; HostnameConfigurations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.ApiManagement.HostnameConfiguration&gt; HostnameConfigurations" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.HostnameConfigurations" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostnameConfigurations As BicepList(Of HostnameConfiguration)" />
+      <MemberSignature Language="F#" Value="member this.HostnameConfigurations : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.HostnameConfiguration&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.HostnameConfigurations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.HostnameConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Custom hostname configuration of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ManagedServiceIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ManagedServiceIdentity Identity" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.Resources.ManagedServiceIdentity with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.ManagedServiceIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Managed service identity of the Api Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegacyApi">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.LegacyApiState&gt; LegacyApi { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.LegacyApiState&gt; LegacyApi" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.LegacyApi" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegacyApi As BicepValue(Of LegacyApiState)" />
+      <MemberSignature Language="F#" Value="member this.LegacyApi : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.LegacyApiState&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.LegacyApi" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.LegacyApiState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Indication whether or not the legacy Configuration API (v1) should be
+            exposed on the API Management service. Value is optional but must be
+            'Enabled' or 'Disabled'. If 'Disabled',
+            legacy Configuration API (v1) will not be available for self-hosted
+            gateways. Default value is 'Enabled'.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegacyPortalStatus">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.LegacyPortalStatus&gt; LegacyPortalStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.LegacyPortalStatus&gt; LegacyPortalStatus" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.LegacyPortalStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegacyPortalStatus As BicepValue(Of LegacyPortalStatus)" />
+      <MemberSignature Language="F#" Value="member this.LegacyPortalStatus : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.LegacyPortalStatus&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.LegacyPortalStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.LegacyPortalStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status of legacy portal in the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt; Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Core.AzureLocation&gt; Location" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As BicepValue(Of AzureLocation)" />
+      <MemberSignature Language="F#" Value="member this.Location : Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.AzureLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Location.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagementApiUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; ManagementApiUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; ManagementApiUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.ManagementApiUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagementApiUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.ManagementApiUri : Azure.Provisioning.BicepValue&lt;Uri&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.ManagementApiUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Management API endpoint URL of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinApiVersion">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; MinApiVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; MinApiVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.MinApiVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinApiVersion As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MinApiVersion : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.MinApiVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Limit control plane API calls to API Management service with version
+            equal to or newer than this value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The name of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NatGatewayState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.ApiManagementNatGatewayState&gt; NatGatewayState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.ApiManagementNatGatewayState&gt; NatGatewayState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.NatGatewayState" />
+      <MemberSignature Language="VB.NET" Value="Public Property NatGatewayState As BicepValue(Of ApiManagementNatGatewayState)" />
+      <MemberSignature Language="F#" Value="member this.NatGatewayState : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.ApiManagementNatGatewayState&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.NatGatewayState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.ApiManagementNatGatewayState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Property can be used to enable NAT Gateway for this API Management
+            service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationSenderEmail">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; NotificationSenderEmail { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; NotificationSenderEmail" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.NotificationSenderEmail" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotificationSenderEmail As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.NotificationSenderEmail : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.NotificationSenderEmail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Email address from which the notification will be sent.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutboundPublicIPAddresses">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; OutboundPublicIPAddresses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; OutboundPublicIPAddresses" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.OutboundPublicIPAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutboundPublicIPAddresses As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.OutboundPublicIPAddresses : Azure.Provisioning.BicepList&lt;string&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.OutboundPublicIPAddresses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Outbound public IPV4 address prefixes associated with NAT Gateway
+            deployed service. Available only for Premium SKU on stv2 platform.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformVersion">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.PlatformVersion&gt; PlatformVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.PlatformVersion&gt; PlatformVersion" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PlatformVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlatformVersion As BicepValue(Of PlatformVersion)" />
+      <MemberSignature Language="F#" Value="member this.PlatformVersion : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.PlatformVersion&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PlatformVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.PlatformVersion&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Compute Platform Version running the service in this location.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortalUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; PortalUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; PortalUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PortalUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PortalUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.PortalUri : Azure.Provisioning.BicepValue&lt;Uri&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PortalUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Publisher portal endpoint Url of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateEndpointConnections">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.RemotePrivateEndpointConnectionWrapper&gt; PrivateEndpointConnections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.ApiManagement.RemotePrivateEndpointConnectionWrapper&gt; PrivateEndpointConnections" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PrivateEndpointConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateEndpointConnections As BicepList(Of RemotePrivateEndpointConnectionWrapper)" />
+      <MemberSignature Language="F#" Value="member this.PrivateEndpointConnections : Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.RemotePrivateEndpointConnectionWrapper&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PrivateEndpointConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;Azure.Provisioning.ApiManagement.RemotePrivateEndpointConnectionWrapper&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            List of Private Endpoint Connections of this service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateIPAddresses">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;System.Net.IPAddress&gt; PrivateIPAddresses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class System.Net.IPAddress&gt; PrivateIPAddresses" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PrivateIPAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateIPAddresses As BicepList(Of IPAddress)" />
+      <MemberSignature Language="F#" Value="member this.PrivateIPAddresses : Azure.Provisioning.BicepList&lt;System.Net.IPAddress&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PrivateIPAddresses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.Net.IPAddress&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Private Static Load Balanced IP addresses of the API Management service
+            in Primary region which is deployed in an Internal Virtual Network.
+            Available only for Basic, Standard, Premium and Isolated SKU.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.ProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.ProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The current provisioning state of the API Management service which can
+            be one of the following:
+            Created/Activating/Succeeded/Updating/Failed/Stopped/Terminating/TerminationFailed/Deleted.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicIPAddresses">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;System.Net.IPAddress&gt; PublicIPAddresses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class System.Net.IPAddress&gt; PublicIPAddresses" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PublicIPAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicIPAddresses As BicepList(Of IPAddress)" />
+      <MemberSignature Language="F#" Value="member this.PublicIPAddresses : Azure.Provisioning.BicepList&lt;System.Net.IPAddress&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PublicIPAddresses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.Net.IPAddress&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Public Static Load Balanced IP addresses of the API Management service
+            in Primary region. Available only for Basic, Standard, Premium and
+            Isolated SKU.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicIPAddressId">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; PublicIPAddressId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; PublicIPAddressId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PublicIPAddressId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicIPAddressId As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.PublicIPAddressId : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PublicIPAddressId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Public Standard SKU IP V4 based IP address to be associated with
+            Virtual Network deployed service in the region. Supported only for
+            Developer and Premium SKU being deployed in Virtual Network.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicNetworkAccess">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.PublicNetworkAccess&gt; PublicNetworkAccess { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.PublicNetworkAccess&gt; PublicNetworkAccess" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PublicNetworkAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicNetworkAccess As BicepValue(Of PublicNetworkAccess)" />
+      <MemberSignature Language="F#" Value="member this.PublicNetworkAccess : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.PublicNetworkAccess&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PublicNetworkAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.PublicNetworkAccess&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Whether or not public endpoint access is allowed for this API
+            Management service.  Value is optional but if passed in, must be
+            'Enabled' or 'Disabled'. If 'Disabled',
+            private endpoints are the exclusive access method. Default value is
+            'Enabled'.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublisherEmail">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; PublisherEmail { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; PublisherEmail" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PublisherEmail" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublisherEmail As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PublisherEmail : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PublisherEmail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Publisher email.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublisherName">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; PublisherName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; PublisherName" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.PublisherName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublisherName As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PublisherName : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.PublisherName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Publisher name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restore">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; Restore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; Restore" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Restore" />
+      <MemberSignature Language="VB.NET" Value="Public Property Restore As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Restore : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Restore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Undelete Api Management Service if it was previously soft-deleted. If
+            this flag is specified and set to True all other properties will be
+            ignored.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScmUri">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Uri&gt; ScmUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class System.Uri&gt; ScmUri" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.ScmUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScmUri As BicepValue(Of Uri)" />
+      <MemberSignature Language="F#" Value="member this.ScmUri : Azure.Provisioning.BicepValue&lt;Uri&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.ScmUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SCM endpoint URL of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sku">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.ApiManagementServiceSkuProperties Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.ApiManagementServiceSkuProperties Sku" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Sku" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As ApiManagementServiceSkuProperties" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.ApiManagement.ApiManagementServiceSkuProperties with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Sku" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ApiManagementServiceSkuProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SKU properties of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tags">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepDictionary&lt;string&gt; Tags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepDictionary`1&lt;string&gt; Tags" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tags As BicepDictionary(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Tags : Azure.Provisioning.BicepDictionary&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Tags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepDictionary&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Tags.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProvisioningState">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; TargetProvisioningState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; TargetProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.TargetProvisioningState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetProvisioningState As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.TargetProvisioningState : Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.TargetProvisioningState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The provisioning state of the API Management service, which is targeted
+            by the long running operation started on the service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualNetworkConfiguration">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.VirtualNetworkConfiguration VirtualNetworkConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.VirtualNetworkConfiguration VirtualNetworkConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.VirtualNetworkConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkConfiguration As VirtualNetworkConfiguration" />
+      <MemberSignature Language="F#" Value="member this.VirtualNetworkConfiguration : Azure.Provisioning.ApiManagement.VirtualNetworkConfiguration with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.VirtualNetworkConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.VirtualNetworkConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Virtual network configuration of the API Management service.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualNetworkType">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.VirtualNetworkType&gt; VirtualNetworkType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.VirtualNetworkType&gt; VirtualNetworkType" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.VirtualNetworkType" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkType As BicepValue(Of VirtualNetworkType)" />
+      <MemberSignature Language="F#" Value="member this.VirtualNetworkType : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.VirtualNetworkType&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.VirtualNetworkType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.VirtualNetworkType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The type of VPN in which API Management service needs to be configured
+            in. None (Default Value) means the API Management service is not part
+            of any Virtual Network, External means the API Management deployment
+            is set up inside a Virtual Network having an Internet Facing Endpoint,
+            and Internal means that API Management deployment is setup inside a
+            Virtual Network having an Intranet Facing Endpoint only.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zones">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;string&gt; Zones { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;string&gt; Zones" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ApiManagementService.Zones" />
+      <MemberSignature Language="VB.NET" Value="Public Property Zones As BicepList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Zones : Azure.Provisioning.BicepList&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ApiManagementService.Zones" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of availability zones denoting where the resource needs to come
+            from.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

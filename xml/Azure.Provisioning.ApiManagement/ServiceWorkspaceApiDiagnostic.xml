@@ -1,0 +1,418 @@
+<Type Name="ServiceWorkspaceApiDiagnostic" FullName="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic">
+  <TypeSignature Language="C#" Value="public class ServiceWorkspaceApiDiagnostic : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceWorkspaceApiDiagnostic extends Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceWorkspaceApiDiagnostic&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type ServiceWorkspaceApiDiagnostic = class&#xA;    inherit ProvisionableResource" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ServiceWorkspaceApiDiagnostic.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceWorkspaceApiDiagnostic (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic : string * string -&gt; Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic" Usage="new Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic (bicepIdentifier, resourceVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ServiceWorkspaceApiDiagnostic
+            resource.  This can be used to refer to the resource in expressions,
+            but is not the Azure name of the resource.  This value can contain
+            letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ServiceWorkspaceApiDiagnostic.</param>
+        <summary>
+            Creates a new ServiceWorkspaceApiDiagnostic.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysLog">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.AlwaysLog&gt; AlwaysLog { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.AlwaysLog&gt; AlwaysLog" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.AlwaysLog" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysLog As BicepValue(Of AlwaysLog)" />
+      <MemberSignature Language="F#" Value="member this.AlwaysLog : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.AlwaysLog&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.AlwaysLog" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.AlwaysLog&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies for what type of messages sampling settings should not apply.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Backend">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings Backend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings Backend" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Backend" />
+      <MemberSignature Language="VB.NET" Value="Public Property Backend As PipelineDiagnosticSettings" />
+      <MemberSignature Language="F#" Value="member this.Backend : Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Backend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Diagnostic settings for incoming/outgoing HTTP messages to the Backend.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="serviceWorkspaceApiDiagnostic.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            ServiceWorkspaceApiDiagnostic.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.FromExisting(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As ServiceWorkspaceApiDiagnostic" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.FromExisting (bicepIdentifier, resourceVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bicepIdentifier" Type="System.String" />
+        <Parameter Name="resourceVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bicepIdentifier">
+            The the Bicep identifier name of the ServiceWorkspaceApiDiagnostic
+            resource.  This can be used to refer to the resource in expressions,
+            but is not the Azure name of the resource.  This value can contain
+            letters, numbers, and underscores.
+            </param>
+        <param name="resourceVersion">Version of the ServiceWorkspaceApiDiagnostic.</param>
+        <summary>
+            Creates a reference to an existing ServiceWorkspaceApiDiagnostic.
+            </summary>
+        <returns>The existing ServiceWorkspaceApiDiagnostic resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Frontend">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings Frontend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings Frontend" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Frontend" />
+      <MemberSignature Language="VB.NET" Value="Public Property Frontend As PipelineDiagnosticSettings" />
+      <MemberSignature Language="F#" Value="member this.Frontend : Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Frontend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.PipelineDiagnosticSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Diagnostic settings for incoming/outgoing HTTP messages to the Gateway.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpCorrelationProtocol">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.HttpCorrelationProtocol&gt; HttpCorrelationProtocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.HttpCorrelationProtocol&gt; HttpCorrelationProtocol" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.HttpCorrelationProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpCorrelationProtocol As BicepValue(Of HttpCorrelationProtocol)" />
+      <MemberSignature Language="F#" Value="member this.HttpCorrelationProtocol : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.HttpCorrelationProtocol&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.HttpCorrelationProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.HttpCorrelationProtocol&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sets correlation protocol to use for Application Insights diagnostics.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt; Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Core.ResourceIdentifier&gt; Id" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As BicepValue(Of ResourceIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.Id : Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Core.ResourceIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLogClientIPEnabled">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; IsLogClientIPEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; IsLogClientIPEnabled" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.IsLogClientIPEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLogClientIPEnabled As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsLogClientIPEnabled : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.IsLogClientIPEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Log the ClientIP. Default is false.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoggerId">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; LoggerId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; LoggerId" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.LoggerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoggerId As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.LoggerId : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.LoggerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Resource Id of a target logger.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Metrics">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;bool&gt; Metrics { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;bool&gt; Metrics" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Metrics" />
+      <MemberSignature Language="VB.NET" Value="Public Property Metrics As BicepValue(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Metrics : Azure.Provisioning.BicepValue&lt;bool&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Metrics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Emit custom metrics via emit-metric policy. Applicable only to
+            Application Insights diagnostic settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Name : Azure.Provisioning.BicepValue&lt;string&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationNameFormat">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.OperationNameFormat&gt; OperationNameFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.OperationNameFormat&gt; OperationNameFormat" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.OperationNameFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationNameFormat As BicepValue(Of OperationNameFormat)" />
+      <MemberSignature Language="F#" Value="member this.OperationNameFormat : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.OperationNameFormat&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.OperationNameFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.OperationNameFormat&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The format of the Operation Name for Application Insights telemetries.
+            Default is Name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.ServiceWorkspaceApi? Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.ServiceWorkspaceApi Parent" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As ServiceWorkspaceApi" />
+      <MemberSignature Language="F#" Value="member this.Parent : Azure.Provisioning.ApiManagement.ServiceWorkspaceApi with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.ServiceWorkspaceApi</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a reference to the parent ServiceWorkspaceApi.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sampling">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ApiManagement.SamplingSettings Sampling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ApiManagement.SamplingSettings Sampling" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Sampling" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sampling As SamplingSettings" />
+      <MemberSignature Language="F#" Value="member this.Sampling : Azure.Provisioning.ApiManagement.SamplingSettings with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Sampling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.ApiManagement.SamplingSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sampling settings for Diagnostic.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemData">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.SystemData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SystemData.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbosity">
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.TraceVerbosityLevel&gt; Verbosity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype Azure.Provisioning.ApiManagement.TraceVerbosityLevel&gt; Verbosity" />
+      <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Verbosity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbosity As BicepValue(Of TraceVerbosityLevel)" />
+      <MemberSignature Language="F#" Value="member this.Verbosity : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.TraceVerbosityLevel&gt; with get, set" Usage="Azure.Provisioning.ApiManagement.ServiceWorkspaceApiDiagnostic.Verbosity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ApiManagement</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ApiManagement.TraceVerbosityLevel&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The verbosity level applied to traces emitted by trace policies.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
