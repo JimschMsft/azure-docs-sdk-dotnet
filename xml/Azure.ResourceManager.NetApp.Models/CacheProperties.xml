@@ -1,22 +1,22 @@
-<Type Name="NetAppCacheProperties" FullName="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties">
-  <TypeSignature Language="C#" Value="public class NetAppCacheProperties : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetAppCacheProperties extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;" />
-  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties" />
-  <TypeSignature Language="VB.NET" Value="Public Class NetAppCacheProperties&#xA;Implements IJsonModel(Of NetAppCacheProperties), IPersistableModel(Of NetAppCacheProperties)" />
-  <TypeSignature Language="F#" Value="type NetAppCacheProperties = class&#xA;    interface IJsonModel&lt;NetAppCacheProperties&gt;&#xA;    interface IPersistableModel&lt;NetAppCacheProperties&gt;" />
+<Type Name="CacheProperties" FullName="Azure.ResourceManager.NetApp.Models.CacheProperties">
+  <TypeSignature Language="C#" Value="public class CacheProperties : System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;, System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CacheProperties extends System.Object implements class System.ClientModel.Primitives.IJsonModel`1&lt;class Azure.ResourceManager.NetApp.Models.CacheProperties&gt;, class System.ClientModel.Primitives.IPersistableModel`1&lt;class Azure.ResourceManager.NetApp.Models.CacheProperties&gt;" />
+  <TypeSignature Language="DocId" Value="T:Azure.ResourceManager.NetApp.Models.CacheProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Class CacheProperties&#xA;Implements IJsonModel(Of CacheProperties), IPersistableModel(Of CacheProperties)" />
+  <TypeSignature Language="F#" Value="type CacheProperties = class&#xA;    interface IJsonModel&lt;CacheProperties&gt;&#xA;    interface IPersistableModel&lt;CacheProperties&gt;" />
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-    <AssemblyVersion>1.15.0.0</AssemblyVersion>
+    <AssemblyVersion>1.16.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;</InterfaceName>
+      <InterfaceName>System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;</InterfaceName>
+      <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ClientModel.Primitives.IPersistableModel&lt;T&gt;</InterfaceName>
@@ -28,18 +28,18 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NetAppCacheProperties (string filepath, long size, Azure.Core.ResourceIdentifier cacheSubnetResourceId, Azure.Core.ResourceIdentifier peeringSubnetResourceId, Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource encryptionKeySource, Azure.ResourceManager.NetApp.Models.OriginClusterInformation originClusterInformation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filepath, int64 size, class Azure.Core.ResourceIdentifier cacheSubnetResourceId, class Azure.Core.ResourceIdentifier peeringSubnetResourceId, valuetype Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource encryptionKeySource, class Azure.ResourceManager.NetApp.Models.OriginClusterInformation originClusterInformation) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.#ctor(System.String,System.Int64,Azure.Core.ResourceIdentifier,Azure.Core.ResourceIdentifier,Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource,Azure.ResourceManager.NetApp.Models.OriginClusterInformation)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (filepath As String, size As Long, cacheSubnetResourceId As ResourceIdentifier, peeringSubnetResourceId As ResourceIdentifier, encryptionKeySource As NetAppEncryptionKeySource, originClusterInformation As OriginClusterInformation)" />
-      <MemberSignature Language="F#" Value="new Azure.ResourceManager.NetApp.Models.NetAppCacheProperties : string * int64 * Azure.Core.ResourceIdentifier * Azure.Core.ResourceIdentifier * Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource * Azure.ResourceManager.NetApp.Models.OriginClusterInformation -&gt; Azure.ResourceManager.NetApp.Models.NetAppCacheProperties" Usage="new Azure.ResourceManager.NetApp.Models.NetAppCacheProperties (filepath, size, cacheSubnetResourceId, peeringSubnetResourceId, encryptionKeySource, originClusterInformation)" />
+      <MemberSignature Language="C#" Value="public CacheProperties (string filePath, long size, Azure.Core.ResourceIdentifier cacheSubnetResourceId, Azure.Core.ResourceIdentifier peeringSubnetResourceId, Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource encryptionKeySource, Azure.ResourceManager.NetApp.Models.OriginClusterInformation originClusterInformation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filePath, int64 size, class Azure.Core.ResourceIdentifier cacheSubnetResourceId, class Azure.Core.ResourceIdentifier peeringSubnetResourceId, valuetype Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource encryptionKeySource, class Azure.ResourceManager.NetApp.Models.OriginClusterInformation originClusterInformation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.CacheProperties.#ctor(System.String,System.Int64,Azure.Core.ResourceIdentifier,Azure.Core.ResourceIdentifier,Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource,Azure.ResourceManager.NetApp.Models.OriginClusterInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filePath As String, size As Long, cacheSubnetResourceId As ResourceIdentifier, peeringSubnetResourceId As ResourceIdentifier, encryptionKeySource As NetAppEncryptionKeySource, originClusterInformation As OriginClusterInformation)" />
+      <MemberSignature Language="F#" Value="new Azure.ResourceManager.NetApp.Models.CacheProperties : string * int64 * Azure.Core.ResourceIdentifier * Azure.Core.ResourceIdentifier * Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource * Azure.ResourceManager.NetApp.Models.OriginClusterInformation -&gt; Azure.ResourceManager.NetApp.Models.CacheProperties" Usage="new Azure.ResourceManager.NetApp.Models.CacheProperties (filePath, size, cacheSubnetResourceId, peeringSubnetResourceId, encryptionKeySource, originClusterInformation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="filepath" Type="System.String" />
+        <Parameter Name="filePath" Type="System.String" />
         <Parameter Name="size" Type="System.Int64" />
         <Parameter Name="cacheSubnetResourceId" Type="Azure.Core.ResourceIdentifier" />
         <Parameter Name="peeringSubnetResourceId" Type="Azure.Core.ResourceIdentifier" />
@@ -47,28 +47,28 @@
         <Parameter Name="originClusterInformation" Type="Azure.ResourceManager.NetApp.Models.OriginClusterInformation" />
       </Parameters>
       <Docs>
-        <param name="filepath"> The file path of the Cache. </param>
+        <param name="filePath"> The file path of the Cache. </param>
         <param name="size"> Maximum storage quota allowed for a file system in bytes. Valid values are in the range 50GiB to 1PiB. Values expressed in bytes as multiples of 1GiB. </param>
         <param name="cacheSubnetResourceId"> The Azure Resource URI for a delegated cache subnet that will be used to allocate data IPs. </param>
         <param name="peeringSubnetResourceId"> The Azure Resource URI for a delegated subnet that will be used for ANF Intercluster Interface IP addresses. </param>
         <param name="encryptionKeySource"> Source of key used to encrypt data in the cache. Applicable if NetApp account has encryption.keySource = 'Microsoft.KeyVault'. Possible values (case-insensitive) are: 'Microsoft.NetApp, Microsoft.KeyVault'. </param>
         <param name="originClusterInformation"> Origin cluster information. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties" />. </summary>
+        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.NetApp.Models.CacheProperties" />. </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="filepath" />, <paramref name="cacheSubnetResourceId" />, <paramref name="peeringSubnetResourceId" /> or <paramref name="originClusterInformation" /> is null. </exception>
+          <paramref name="filePath" />, <paramref name="cacheSubnetResourceId" />, <paramref name="peeringSubnetResourceId" /> or <paramref name="originClusterInformation" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="ActualThroughputMibps">
       <MemberSignature Language="C#" Value="public float? ActualThroughputMibps { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; ActualThroughputMibps" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ActualThroughputMibps" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.ActualThroughputMibps" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActualThroughputMibps As Nullable(Of Single)" />
-      <MemberSignature Language="F#" Value="member this.ActualThroughputMibps : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ActualThroughputMibps" />
+      <MemberSignature Language="F#" Value="member this.ActualThroughputMibps : Nullable&lt;single&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.ActualThroughputMibps" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
@@ -82,13 +82,13 @@
     <Member MemberName="CacheState">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.CacheLifeCycleState? CacheState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CacheLifeCycleState&gt; CacheState" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.CacheState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.CacheState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheState As Nullable(Of CacheLifeCycleState)" />
-      <MemberSignature Language="F#" Value="member this.CacheState : Nullable&lt;Azure.ResourceManager.NetApp.Models.CacheLifeCycleState&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.CacheState" />
+      <MemberSignature Language="F#" Value="member this.CacheState : Nullable&lt;Azure.ResourceManager.NetApp.Models.CacheLifeCycleState&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.CacheState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.CacheLifeCycleState&gt;</ReturnType>
@@ -102,13 +102,13 @@
     <Member MemberName="CacheSubnetResourceId">
       <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier CacheSubnetResourceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier CacheSubnetResourceId" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.CacheSubnetResourceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.CacheSubnetResourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheSubnetResourceId As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="member this.CacheSubnetResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.CacheSubnetResourceId" />
+      <MemberSignature Language="F#" Value="member this.CacheSubnetResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.CacheSubnetResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -122,13 +122,13 @@
     <Member MemberName="CifsChangeNotifications">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.CifsChangeNotifyState? CifsChangeNotifications { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CifsChangeNotifyState&gt; CifsChangeNotifications" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.CifsChangeNotifications" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.CifsChangeNotifications" />
       <MemberSignature Language="VB.NET" Value="Public Property CifsChangeNotifications As Nullable(Of CifsChangeNotifyState)" />
-      <MemberSignature Language="F#" Value="member this.CifsChangeNotifications : Nullable&lt;Azure.ResourceManager.NetApp.Models.CifsChangeNotifyState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.CifsChangeNotifications" />
+      <MemberSignature Language="F#" Value="member this.CifsChangeNotifications : Nullable&lt;Azure.ResourceManager.NetApp.Models.CifsChangeNotifyState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.CifsChangeNotifications" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.CifsChangeNotifyState&gt;</ReturnType>
@@ -142,13 +142,13 @@
     <Member MemberName="Encryption">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.EncryptionState? Encryption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.EncryptionState&gt; Encryption" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Encryption" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.Encryption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encryption As Nullable(Of EncryptionState)" />
-      <MemberSignature Language="F#" Value="member this.Encryption : Nullable&lt;Azure.ResourceManager.NetApp.Models.EncryptionState&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Encryption" />
+      <MemberSignature Language="F#" Value="member this.Encryption : Nullable&lt;Azure.ResourceManager.NetApp.Models.EncryptionState&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.Encryption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.EncryptionState&gt;</ReturnType>
@@ -162,13 +162,13 @@
     <Member MemberName="EncryptionKeySource">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource EncryptionKeySource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource EncryptionKeySource" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.EncryptionKeySource" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.EncryptionKeySource" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptionKeySource As NetAppEncryptionKeySource" />
-      <MemberSignature Language="F#" Value="member this.EncryptionKeySource : Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.EncryptionKeySource" />
+      <MemberSignature Language="F#" Value="member this.EncryptionKeySource : Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.EncryptionKeySource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppEncryptionKeySource</ReturnType>
@@ -182,13 +182,13 @@
     <Member MemberName="ExportRules">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt; ExportRules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt; ExportRules" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ExportRules" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.ExportRules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExportRules As IList(Of NetAppVolumeExportPolicyRule)" />
-      <MemberSignature Language="F#" Value="member this.ExportRules : System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ExportRules" />
+      <MemberSignature Language="F#" Value="member this.ExportRules : System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.ExportRules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeExportPolicyRule&gt;</ReturnType>
@@ -199,16 +199,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Filepath">
-      <MemberSignature Language="C#" Value="public string Filepath { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Filepath" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Filepath" />
-      <MemberSignature Language="VB.NET" Value="Public Property Filepath As String" />
-      <MemberSignature Language="F#" Value="member this.Filepath : string with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Filepath" />
+    <Member MemberName="FilePath">
+      <MemberSignature Language="C#" Value="public string FilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilePath" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.FilePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilePath As String" />
+      <MemberSignature Language="F#" Value="member this.FilePath : string with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.FilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -222,13 +222,13 @@
     <Member MemberName="GlobalFileLocking">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.GlobalFileLockingState? GlobalFileLocking { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.GlobalFileLockingState&gt; GlobalFileLocking" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.GlobalFileLocking" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.GlobalFileLocking" />
       <MemberSignature Language="VB.NET" Value="Public Property GlobalFileLocking As Nullable(Of GlobalFileLockingState)" />
-      <MemberSignature Language="F#" Value="member this.GlobalFileLocking : Nullable&lt;Azure.ResourceManager.NetApp.Models.GlobalFileLockingState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.GlobalFileLocking" />
+      <MemberSignature Language="F#" Value="member this.GlobalFileLocking : Nullable&lt;Azure.ResourceManager.NetApp.Models.GlobalFileLockingState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.GlobalFileLocking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.GlobalFileLockingState&gt;</ReturnType>
@@ -242,13 +242,13 @@
     <Member MemberName="JsonModelWriteCore">
       <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.CacheProperties.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
-      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="netAppCacheProperties.JsonModelWriteCore (writer, options)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="cacheProperties.JsonModelWriteCore (writer, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -267,13 +267,13 @@
     <Member MemberName="Kerberos">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.KerberosState? Kerberos { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.KerberosState&gt; Kerberos" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Kerberos" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.Kerberos" />
       <MemberSignature Language="VB.NET" Value="Public Property Kerberos As Nullable(Of KerberosState)" />
-      <MemberSignature Language="F#" Value="member this.Kerberos : Nullable&lt;Azure.ResourceManager.NetApp.Models.KerberosState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Kerberos" />
+      <MemberSignature Language="F#" Value="member this.Kerberos : Nullable&lt;Azure.ResourceManager.NetApp.Models.KerberosState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.Kerberos" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.KerberosState&gt;</ReturnType>
@@ -287,13 +287,13 @@
     <Member MemberName="KeyVaultPrivateEndpointResourceId">
       <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier KeyVaultPrivateEndpointResourceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier KeyVaultPrivateEndpointResourceId" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.KeyVaultPrivateEndpointResourceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.KeyVaultPrivateEndpointResourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyVaultPrivateEndpointResourceId As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="member this.KeyVaultPrivateEndpointResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.KeyVaultPrivateEndpointResourceId" />
+      <MemberSignature Language="F#" Value="member this.KeyVaultPrivateEndpointResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.KeyVaultPrivateEndpointResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -307,13 +307,13 @@
     <Member MemberName="Language">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.NetAppVolumeLanguage? Language { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.NetAppVolumeLanguage&gt; Language" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Language" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As Nullable(Of NetAppVolumeLanguage)" />
-      <MemberSignature Language="F#" Value="member this.Language : Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeLanguage&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Language" />
+      <MemberSignature Language="F#" Value="member this.Language : Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeLanguage&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.NetAppVolumeLanguage&gt;</ReturnType>
@@ -327,13 +327,13 @@
     <Member MemberName="Ldap">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.LdapState? Ldap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.LdapState&gt; Ldap" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Ldap" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.Ldap" />
       <MemberSignature Language="VB.NET" Value="Public Property Ldap As Nullable(Of LdapState)" />
-      <MemberSignature Language="F#" Value="member this.Ldap : Nullable&lt;Azure.ResourceManager.NetApp.Models.LdapState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Ldap" />
+      <MemberSignature Language="F#" Value="member this.Ldap : Nullable&lt;Azure.ResourceManager.NetApp.Models.LdapState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.Ldap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.LdapState&gt;</ReturnType>
@@ -347,13 +347,13 @@
     <Member MemberName="LdapServerType">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.LdapServerType? LdapServerType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.LdapServerType&gt; LdapServerType" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.LdapServerType" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.LdapServerType" />
       <MemberSignature Language="VB.NET" Value="Public Property LdapServerType As Nullable(Of LdapServerType)" />
-      <MemberSignature Language="F#" Value="member this.LdapServerType : Nullable&lt;Azure.ResourceManager.NetApp.Models.LdapServerType&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.LdapServerType" />
+      <MemberSignature Language="F#" Value="member this.LdapServerType : Nullable&lt;Azure.ResourceManager.NetApp.Models.LdapServerType&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.LdapServerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.LdapServerType&gt;</ReturnType>
@@ -367,13 +367,13 @@
     <Member MemberName="MaximumNumberOfFiles">
       <MemberSignature Language="C#" Value="public long? MaximumNumberOfFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; MaximumNumberOfFiles" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.MaximumNumberOfFiles" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.MaximumNumberOfFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumNumberOfFiles As Nullable(Of Long)" />
-      <MemberSignature Language="F#" Value="member this.MaximumNumberOfFiles : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.MaximumNumberOfFiles" />
+      <MemberSignature Language="F#" Value="member this.MaximumNumberOfFiles : Nullable&lt;int64&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.MaximumNumberOfFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -387,13 +387,13 @@
     <Member MemberName="MountTargets">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.NetApp.Models.CacheMountTargetProperties&gt; MountTargets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.ResourceManager.NetApp.Models.CacheMountTargetProperties&gt; MountTargets" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.MountTargets" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.MountTargets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MountTargets As IReadOnlyList(Of CacheMountTargetProperties)" />
-      <MemberSignature Language="F#" Value="member this.MountTargets : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.NetApp.Models.CacheMountTargetProperties&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.MountTargets" />
+      <MemberSignature Language="F#" Value="member this.MountTargets : System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.NetApp.Models.CacheMountTargetProperties&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.MountTargets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.ResourceManager.NetApp.Models.CacheMountTargetProperties&gt;</ReturnType>
@@ -407,13 +407,13 @@
     <Member MemberName="OriginClusterInformation">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.OriginClusterInformation OriginClusterInformation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.NetApp.Models.OriginClusterInformation OriginClusterInformation" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.OriginClusterInformation" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.OriginClusterInformation" />
       <MemberSignature Language="VB.NET" Value="Public Property OriginClusterInformation As OriginClusterInformation" />
-      <MemberSignature Language="F#" Value="member this.OriginClusterInformation : Azure.ResourceManager.NetApp.Models.OriginClusterInformation with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.OriginClusterInformation" />
+      <MemberSignature Language="F#" Value="member this.OriginClusterInformation : Azure.ResourceManager.NetApp.Models.OriginClusterInformation with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.OriginClusterInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.OriginClusterInformation</ReturnType>
@@ -427,13 +427,13 @@
     <Member MemberName="PeeringSubnetResourceId">
       <MemberSignature Language="C#" Value="public Azure.Core.ResourceIdentifier PeeringSubnetResourceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResourceIdentifier PeeringSubnetResourceId" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.PeeringSubnetResourceId" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.PeeringSubnetResourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property PeeringSubnetResourceId As ResourceIdentifier" />
-      <MemberSignature Language="F#" Value="member this.PeeringSubnetResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.PeeringSubnetResourceId" />
+      <MemberSignature Language="F#" Value="member this.PeeringSubnetResourceId : Azure.Core.ResourceIdentifier with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.PeeringSubnetResourceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -447,13 +447,13 @@
     <Member MemberName="ProtocolTypes">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.ProtocolType&gt; ProtocolTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.ResourceManager.NetApp.Models.ProtocolType&gt; ProtocolTypes" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ProtocolTypes" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.ProtocolTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtocolTypes As IList(Of ProtocolType)" />
-      <MemberSignature Language="F#" Value="member this.ProtocolTypes : System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.ProtocolType&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ProtocolTypes" />
+      <MemberSignature Language="F#" Value="member this.ProtocolTypes : System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.ProtocolType&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.ProtocolTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.NetApp.Models.ProtocolType&gt;</ReturnType>
@@ -467,13 +467,13 @@
     <Member MemberName="ProvisioningState">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.CacheProvisioningState? ProvisioningState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.CacheProvisioningState&gt; ProvisioningState" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ProvisioningState" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.ProvisioningState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of CacheProvisioningState)" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.NetApp.Models.CacheProvisioningState&gt;" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ProvisioningState" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Azure.ResourceManager.NetApp.Models.CacheProvisioningState&gt;" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.CacheProvisioningState&gt;</ReturnType>
@@ -487,13 +487,13 @@
     <Member MemberName="Size">
       <MemberSignature Language="C#" Value="public long Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Size" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Size" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Long" />
-      <MemberSignature Language="F#" Value="member this.Size : int64 with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.Size" />
+      <MemberSignature Language="F#" Value="member this.Size : int64 with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -507,13 +507,13 @@
     <Member MemberName="SmbSettings">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.SmbSettings SmbSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.ResourceManager.NetApp.Models.SmbSettings SmbSettings" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.SmbSettings" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.SmbSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property SmbSettings As SmbSettings" />
-      <MemberSignature Language="F#" Value="member this.SmbSettings : Azure.ResourceManager.NetApp.Models.SmbSettings with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.SmbSettings" />
+      <MemberSignature Language="F#" Value="member this.SmbSettings : Azure.ResourceManager.NetApp.Models.SmbSettings with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.SmbSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.SmbSettings</ReturnType>
@@ -524,22 +524,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create">
-      <MemberSignature Language="C#" Value="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties IJsonModel&lt;NetAppCacheProperties&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.NetApp.Models.NetAppCacheProperties System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#NetApp#Models#NetAppCacheProperties&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As NetAppCacheProperties Implements IJsonModel(Of NetAppCacheProperties).Create" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.NetAppCacheProperties" Usage="netAppCacheProperties.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create (reader, options)" />
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.NetApp.Models.CacheProperties IJsonModel&lt;CacheProperties&gt;.Create (ref System.Text.Json.Utf8JsonReader reader, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.NetApp.Models.CacheProperties System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create(valuetype System.Text.Json.Utf8JsonReader&amp; reader, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.CacheProperties.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#NetApp#Models#CacheProperties&gt;#Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (ByRef reader As Utf8JsonReader, options As ModelReaderWriterOptions) As CacheProperties Implements IJsonModel(Of CacheProperties).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.CacheProperties&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create : Utf8JsonReader * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.CacheProperties" Usage="cacheProperties.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create (reader, options)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Create(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppCacheProperties</ReturnType>
+        <ReturnType>Azure.ResourceManager.NetApp.Models.CacheProperties</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
@@ -556,19 +556,19 @@
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write">
-      <MemberSignature Language="C#" Value="void IJsonModel&lt;NetAppCacheProperties&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#NetApp#Models#NetAppCacheProperties&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of NetAppCacheProperties).Write" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="netAppCacheProperties.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write (writer, options)" />
+    <Member MemberName="System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write">
+      <MemberSignature Language="C#" Value="void IJsonModel&lt;CacheProperties&gt;.Write (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.CacheProperties.System#ClientModel#Primitives#IJsonModel&lt;Azure#ResourceManager#NetApp#Models#CacheProperties&gt;#Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Sub Write (writer As Utf8JsonWriter, options As ModelReaderWriterOptions) Implements IJsonModel(Of CacheProperties).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="cacheProperties.System.ClientModel.Primitives.IJsonModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write (writer, options)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IJsonModel`1.Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -587,22 +587,22 @@
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create">
-      <MemberSignature Language="C#" Value="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties IPersistableModel&lt;NetAppCacheProperties&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.NetApp.Models.NetAppCacheProperties System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#NetApp#Models#NetAppCacheProperties&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As NetAppCacheProperties Implements IPersistableModel(Of NetAppCacheProperties).Create" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.NetAppCacheProperties" Usage="netAppCacheProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Create (data, options)" />
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create">
+      <MemberSignature Language="C#" Value="Azure.ResourceManager.NetApp.Models.CacheProperties IPersistableModel&lt;CacheProperties&gt;.Create (BinaryData data, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.ResourceManager.NetApp.Models.CacheProperties System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create(class System.BinaryData data, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.CacheProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#NetApp#Models#CacheProperties&gt;#Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (data As BinaryData, options As ModelReaderWriterOptions) As CacheProperties Implements IPersistableModel(Of CacheProperties).Create" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.CacheProperties&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create : BinaryData * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; Azure.ResourceManager.NetApp.Models.CacheProperties" Usage="cacheProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Create (data, options)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppCacheProperties</ReturnType>
+        <ReturnType>Azure.ResourceManager.NetApp.Models.CacheProperties</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="data" Type="System.BinaryData" />
@@ -619,19 +619,19 @@
         <exception cref="T:System.FormatException">If the model does not support the requested <see cref="P:System.ClientModel.Primitives.ModelReaderWriterOptions.Format" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.GetFormatFromOptions">
-      <MemberSignature Language="C#" Value="string IPersistableModel&lt;NetAppCacheProperties&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#NetApp#Models#NetAppCacheProperties&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of NetAppCacheProperties).GetFormatFromOptions" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="netAppCacheProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.GetFormatFromOptions options" />
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.GetFormatFromOptions">
+      <MemberSignature Language="C#" Value="string IPersistableModel&lt;CacheProperties&gt;.GetFormatFromOptions (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.GetFormatFromOptions(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.CacheProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#NetApp#Models#CacheProperties&gt;#GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function GetFormatFromOptions (options As ModelReaderWriterOptions) As String Implements IPersistableModel(Of CacheProperties).GetFormatFromOptions" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.GetFormatFromOptions : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; string" Usage="cacheProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.GetFormatFromOptions options" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -648,19 +648,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write">
-      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;NetAppCacheProperties&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#NetApp#Models#NetAppCacheProperties&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of NetAppCacheProperties).Write" />
-      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="netAppCacheProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.NetAppCacheProperties&gt;.Write options" />
+    <Member MemberName="System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write">
+      <MemberSignature Language="C#" Value="BinaryData IPersistableModel&lt;CacheProperties&gt;.Write (System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.BinaryData System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write(class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.NetApp.Models.CacheProperties.System#ClientModel#Primitives#IPersistableModel&lt;Azure#ResourceManager#NetApp#Models#CacheProperties&gt;#Write(System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Function Write (options As ModelReaderWriterOptions) As BinaryData Implements IPersistableModel(Of CacheProperties).Write" />
+      <MemberSignature Language="F#" Value="abstract member System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData&#xA;override this.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write : System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; BinaryData" Usage="cacheProperties.System.ClientModel.Primitives.IPersistableModel&lt;Azure.ResourceManager.NetApp.Models.CacheProperties&gt;.Write options" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ClientModel.Primitives.IPersistableModel`1.Write(System.ClientModel.Primitives.ModelReaderWriterOptions)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -681,13 +681,13 @@
     <Member MemberName="ThroughputMibps">
       <MemberSignature Language="C#" Value="public float? ThroughputMibps { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float32&gt; ThroughputMibps" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ThroughputMibps" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.ThroughputMibps" />
       <MemberSignature Language="VB.NET" Value="Public Property ThroughputMibps As Nullable(Of Single)" />
-      <MemberSignature Language="F#" Value="member this.ThroughputMibps : Nullable&lt;single&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.ThroughputMibps" />
+      <MemberSignature Language="F#" Value="member this.ThroughputMibps : Nullable&lt;single&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.ThroughputMibps" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Single&gt;</ReturnType>
@@ -701,13 +701,13 @@
     <Member MemberName="WriteBack">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.NetApp.Models.EnableWriteBackState? WriteBack { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.NetApp.Models.EnableWriteBackState&gt; WriteBack" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.WriteBack" />
+      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.NetApp.Models.CacheProperties.WriteBack" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteBack As Nullable(Of EnableWriteBackState)" />
-      <MemberSignature Language="F#" Value="member this.WriteBack : Nullable&lt;Azure.ResourceManager.NetApp.Models.EnableWriteBackState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.NetAppCacheProperties.WriteBack" />
+      <MemberSignature Language="F#" Value="member this.WriteBack : Nullable&lt;Azure.ResourceManager.NetApp.Models.EnableWriteBackState&gt; with get, set" Usage="Azure.ResourceManager.NetApp.Models.CacheProperties.WriteBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.NetApp.Models.EnableWriteBackState&gt;</ReturnType>
